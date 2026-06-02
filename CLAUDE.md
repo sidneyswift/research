@@ -21,30 +21,51 @@ This wiki is structured as an **LLM-maintained living wiki** in the [Karpathy "L
 
 Every interaction with this wiki is one of four operations. Be explicit about which one you're performing. Three are Karpathy's (Ingest / Query / Lint); the fourth, **Reflect**, exists because this wiki studies how to build great agents/skills — so it must turn that knowledge on *itself*.
 
+### Routing
+
+A resolver table, the way `gstack`/`gbrain` ship a `RESOLVER.md` (see [[patterns/composition/resolver-routing-table]] — applied to ourselves). Read this first; it maps a request to the operation, and a source to its schema + destination.
+
+| If the request is… | …run |
+|---|---|
+| "add / ingest this source", a pasted link, repo, essay, or paper | **INGEST** |
+| "what / where / how / compare…", any lookup across the wiki | **QUERY** |
+| "lint", "check staleness", or you just finished a batch of ingests | **LINT** |
+| "reflect", or a new pattern just landed that could improve the wiki | **REFLECT** |
+
+| Source type | Citation page `type:` | Raw material lands in | Wiki page schema |
+|---|---|---|---|
+| Git repo | `repo` | live clone `sources/<slug>/` (git-ignored, in manifest) | artifact (`skill`/`plugin`/`mcp-server`/`project`) |
+| Article / essay / thread | `article` | committed `sources/<slug>/snapshot.md` | usually `concept`, sometimes artifact |
+| Paper | `paper` | committed `sources/<slug>/` (PDF/text) | `concept` |
+| Docs-page | `docs-page` | committed `sources/<slug>/snapshot.md` | artifact or `concept` |
+
 ### 1. INGEST — adding new knowledge
 
-Triggered when adding a new source (and the artifact / concept / pattern it yields). The full ritual:
+Triggered when adding a new source (and the artifact / concept / pattern it yields). The full ritual — each step tagged **(det)** deterministic (same in → same out; a future-tooling candidate) or **(latent)** model judgment, per [[patterns/behavioral/latent-vs-deterministic-split]] applied to ourselves:
 
-1. **Snapshot the source** into `sources/<creator>--<slug>/` — branch by source type:
+1. **(det) Snapshot the source** into `sources/<creator>--<slug>/` — branch by source type:
    - **Repo** → `cd sources && git clone <url> <creator>--<slug>` then `cd <creator>--<slug> && git rev-parse HEAD` (capture the SHA) `&& git log -1 --format="%ci"` (capture the date). **Keep `.git/`** — the clone stays live so we can `git pull` later. Then make it a local-only evidence clone: add `sources/<creator>--<slug>/` to `.gitignore` and a row (`slug url commit`) to `sources/repos.manifest.tsv`. The clone is never committed; only its citation page is.
    - **Article / essay / blog post / forum thread** → save the rendered text to `sources/<creator>--<slug>/snapshot.md`; download referenced images alongside if they carry meaning. There's no commit SHA — record the canonical URL + publish date (or "n/a (living page)" for docs that change). This snapshot **is committed** — it's immutable evidence; never edit it after capture.
    - **Paper** → save the PDF (or its extracted text) into the snapshot dir; committed like an article. Record title, authors, venue/arXiv id, and date.
    - **Docs-page** → snapshot to `snapshot.md` like an article (committed); mark it `n/a (living page)` since it changes upstream.
-2. **Create the citation page** at `sources/<creator>--<slug>.md` (sibling to the snapshot dir) using `_schemas/source.md`. Frontmatter (`type:` = `repo` / `article` / `paper` / `docs-page`), retrieval date, version stamp (commit SHA *or* publish date), popularity/credibility signals captured *at retrieval date*, and the `## Anchor map`.
-3. **Create the right wiki page(s).** A source yields one or more of:
+2. **(latent) Create the citation page** at `sources/<creator>--<slug>.md` (sibling to the snapshot dir) using `_schemas/source.md`. Frontmatter (`type:` = `repo` / `article` / `paper` / `docs-page`), retrieval date, version stamp (commit SHA *or* publish date), popularity/credibility signals captured *at retrieval date*, and the `## Anchor map` (choosing anchors is judgment).
+3. **(latent) Create the right wiki page(s).** A source yields one or more of:
    - **Artifact page** (something you can run) → `artifacts/{skills,plugins,mcp-servers,projects}/` using the matching `_schemas/` template. Fill `## Attributes` and `## Relationships`.
    - **Concept page** (an idea/technique worth tracking, common for essays & papers) → `concepts/` using `_schemas/concept.md`.
    Every non-trivial claim links to `[[sources/<creator>--<slug>#anchor]]`.
-4. **Extract patterns in the same session.** End each artifact/concept page with `## Patterns demonstrated`. Link to existing `patterns/...` pages where the source uses a known pattern. If you see a new pattern, create the pattern page now — but mark it `status: proposed` until ≥2 examples exist. Don't defer; deferred extraction never happens.
-5. **Update the creator page** with the new artifact/concept under `## Artifacts produced` (create the creator page if new).
-6. **Update domain `_index.md`** to promote the new page out of the candidate list.
-7. **Update `index.md`** (root) — add a row in the appropriate section.
-8. **Append to `log.md`** — `## [YYYY-MM-DD] ingest | <subject>` with a 1-line note on what was added.
-9. **Reflect (quick pass).** Before closing the session, ask: *did anything I just learned apply to this wiki's own machinery?* A new pattern about how great skills/agents are built is also a candidate improvement to our `CLAUDE.md`, schemas, indexes, or tooling. If yes, add a candidate to `meta/self-improvements.md` (don't apply it silently — see the REFLECT operation). This step is why we ingest in the first place: the research is supposed to change how we work.
+4. **(latent) Extract patterns in the same session.** End each artifact/concept page with `## Patterns demonstrated`. Link to existing `patterns/...` pages where the source uses a known pattern. If you see a new pattern, create the pattern page now — but mark it `status: proposed` until ≥2 examples exist. Don't defer; deferred extraction never happens.
+5. **(latent) Update the creator page** with the new artifact/concept under `## Artifacts produced` (create the creator page if new).
+6. **(det) Update domain `_index.md`** to promote the new page out of the candidate list.
+7. **(det) Update `index.md`** (root) — add a row in the appropriate section.
+8. **(det) Append to `log.md`** — `## [YYYY-MM-DD] ingest | <subject>` with a 1-line note on what was added, including a quality-ratchet tally (see below).
+9. **(latent) Reflect (quick pass).** Before closing the session, ask: *did anything I just learned apply to this wiki's own machinery?* A new pattern about how great skills/agents are built is also a candidate improvement to our `CLAUDE.md`, schemas, indexes, or tooling. If yes, record it in `meta/self-improvements.md` and **apply it then and there** (see the REFLECT operation — grounded changes ship without asking). This step is why we ingest in the first place: the research is supposed to change how we work.
 
 Karpathy estimates ingesting one source touches ~10–15 pages. For us it's been ~7–10. Don't shortcut this — the cross-links are the whole product.
 
+**Quality ratchet.** Per [[patterns/quality-bar/complexity-ratchet]] (applied to ourselves), an ingest must leave the wiki *richer*, never poorer — it adds cross-links and introduces no new orphans. Close the log entry with a tally, e.g. `ratchet: links +6 · orphans +0 · patterns +1`. If an ingest would lower link density or strand a page, fix it in the same session or log why.
+
 **Updating a repo source (deliberate re-ingest).** Because we cite *specific line ranges*, a `git pull` can silently break citations — so updating is a reviewed operation, never a background sync:
+
 1. `git -C sources/<slug> pull` (or `clone-all.sh --pull` then check out the new HEAD).
 2. `git -C sources/<slug> diff <old-sha> HEAD` — read what changed.
 3. Update any wiki claims/anchors the diff affected; re-verify every citation into that source still points where we said.
@@ -78,6 +99,8 @@ What to check, in order:
 9. **Concepts mentioned but page-less.** A concept/technique referenced across multiple pages but with no `concepts/` page of its own deserves one. (Karpathy: "important concepts mentioned but lacking their own page.")
 10. **Web-fillable data gaps.** Claims hedged with "unknown," "TBD," or a stale signal that a quick web search could resolve. Flag these as ingest candidates rather than guessing.
 11. **New questions and sources to chase.** Lint isn't only cleanup — propose the next questions worth investigating and the next sources worth ingesting. This is where the wiki tells you what to read next.
+12. **Quality ratchet held?** Per [[patterns/quality-bar/complexity-ratchet]] — scan recent ingest log entries for their `ratchet:` tally. Flag any ingest that added a page but no cross-links, or that introduced an orphan without a logged reason. Quality should only climb.
+13. **Harness bloat.** Per [[patterns/structural/thin-harness-fat-skills]] — `CLAUDE.md` is the *thin harness*; the `_schemas/` are the *fat skills*. Flag detailed how-to that has crept into `CLAUDE.md` (long per-template instructions, page-format minutiae) and belongs in a schema/template instead. Keep the harness about *operations and routing*.
 
 Lint produces a report — list each finding with file path and a one-line fix suggestion. Don't auto-fix without confirmation; some "stale" signals are intentional.
 
@@ -89,8 +112,8 @@ Triggered after an ingest (quick pass, INGEST step 9), after a lint, or on deman
 
 1. **Scan recent learnings.** Look at patterns/concepts added or confirmed since the last reflect (use `log.md`).
 2. **Map each onto the wiki itself.** Ask, concretely: does this technique apply to `CLAUDE.md`, the `_schemas/`, the index/log, the (future) dashboard, or our tooling? A pattern about skills usually *does* — because the wiki is built from the same primitives.
-3. **Write a grounded proposal**, not a vibe. Each goes in `meta/self-improvements.md`: which pattern (cite the `[[patterns/...]]` page), how it maps to our machinery, the specific change, and expected benefit. Same anti-rule as everywhere: no improvements from generic knowledge — they must trace to a pattern *observed in this wiki*.
-4. **Human-gated, like lint.** Propose; don't silently rewrite the schema. Apply on confirmation, then mark the ledger entry `applied` and log it.
+3. **Write a grounded entry**, not a vibe. Each goes in `meta/self-improvements.md`: which pattern (cite the `[[patterns/...]]` page), how it maps to our machinery, the specific change, and expected benefit. Same anti-rule as everywhere: no improvements from generic knowledge — they must trace to a pattern *observed in this wiki*.
+4. **Implement directly — do not ask.** If the change is grounded in a wiki pattern, apply it, mark the ledger entry `applied` (with the commit/date), and move on. The only bar is grounding, not sign-off. (Contrast with LINT, which proposes; REFLECT ships.)
 5. **Log it** — `## [YYYY-MM-DD] reflect | <subject>`.
 
 The ledger at `meta/self-improvements.md` is the durable record so we don't re-propose the same thing and can see how the wiki's own design traces back to the research.
@@ -132,6 +155,7 @@ Research/
 ```
 
 **Artifact vs. concept vs. pattern** — the call that trips people up:
+
 - **Artifact** = a concrete thing you could run or install (a skill, a plugin, an MCP server, a named project/system).
 - **Concept** = an idea or technique discussed in a source but not itself runnable (e.g. "context engineering," "the bitter lesson"). Essays and papers usually yield concepts, not artifacts.
 - **Pattern** = a recurring technique we've observed across **≥2 artifacts** in this wiki. Promote a concept/proposed-pattern to a confirmed `patterns/` page only when the second example lands.

@@ -131,3 +131,16 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 - **New tooling:** `sources/repos.manifest.tsv` (slug + url + pinned commit, single source of truth) and `sources/clone-all.sh` (rebuilds clones on fresh checkout, pinned to the cited commit; `--pull` fetches without moving the pin). Rewrote `.gitignore` to ignore the 4 clone dirs (each future repo ingest adds its dir + a manifest row).
 - **Citation safety:** because we cite specific line ranges, updating a repo is a **deliberate re-ingest** (pull → diff old→new SHA → fix affected anchors → bump manifest + citation page → log), never a silent sync. Documented in `CLAUDE.md` INGEST.
 - Updated `CLAUDE.md` (layer 1, INGEST repo step + update flow, naming, anti-rule), `README.md` (working agreement #4 + fresh-checkout note).
+
+## [2026-06-02] reflect | apply all 6 seeded self-improvements
+
+- **Policy change (Sidney):** REFLECT no longer asks — grounded changes ship directly. Updated the REFLECT operation + INGEST step 9 in `CLAUDE.md` accordingly.
+- **Applied all 6 candidates** from `meta/self-improvements.md`, each traced to a wiki pattern:
+  1. `resolver-routing-table` → added a **Routing** table to `CLAUDE.md` Operations (request→operation, source type→schema/location).
+  2. `complexity-ratchet` → INGEST closes with a `ratchet:` tally + LINT check #12.
+  3. `diarization` → "judgment distillation, not transcription" note in all 4 page schemas.
+  4. `latent-vs-deterministic-split` → tagged every INGEST step **(det)**/**(latent)** with a legend.
+  5. `thin-harness-fat-skills` → LINT check #13 (harness bloat: how-to that belongs in a schema).
+  6. `skill-pack-bundle` → `## Detection recipe` section added to `_schemas/pattern.md`.
+- Marked all 6 ledger entries `applied`; resolved the open "auto vs on-demand" meta-question.
+- Touched: `CLAUDE.md`, `_schemas/{skill,plugin,mcp-server,concept,pattern}.md`, `meta/self-improvements.md`, this log. ratchet: links +7 · orphans +0 · patterns +0 (self-application, no new artifacts).

@@ -32,6 +32,16 @@ Bullets — situations where this pattern is overkill, premature, or actively ha
 
 The underlying principle — usually a constraint of LLMs, a property of how Claude Code loads context, a property of how users interact with agents, or a property of how the artifact gets installed/discovered. Reference primary sources where possible (Anthropic docs, MCP spec, published research).
 
+## Detection recipe
+
+A falsifiable test for spotting this pattern in a *new* artifact — the pattern's analogue of a skill's eval (see [[patterns/quality-bar/skill-pack-bundle]]: "a skill isn't done until it ships with tests"). Make it concrete enough to apply without re-reading the whole page:
+
+- **Look for**: the observable tells (file names, frontmatter keys, structural shapes, phrasing) that indicate the pattern is present.
+- **Confirm with**: what must be true for it to really be this pattern and not a look-alike.
+- **Rule out**: the nearest neighbor it's most often confused with, and the distinguishing question.
+
+The `## Examples` below are the positive fixtures; the `## Counter-examples` are the negative test.
+
 ## Examples in this wiki
 
 At least 2 required. Each entry must cite specific source lines:

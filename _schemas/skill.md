@@ -19,6 +19,8 @@ popularity-signals:
 
 > **One-line:** what this skill does in plain English.
 
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the skill, then write distilled judgment — not a transcription of its README.*
+
 ## Attributes
 
 - **What it does**: 1–3 sentences. Behavioral, not just descriptive.

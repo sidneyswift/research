@@ -17,6 +17,8 @@ popularity-signals:
 
 > **One-line:** the idea in plain English. If a teammate reads only this, they get the gist.
 
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the idea across sources, then write distilled judgment — not a summary of any single source.*
+
 ## What it is
 
 3–6 sentences. The claim or technique, what it operates on, and why it matters. A concept is an *idea* (not something you can install) — if it turns out you can run it, it belongs in `artifacts/` instead.

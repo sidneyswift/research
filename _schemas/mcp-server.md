@@ -22,6 +22,8 @@ popularity-signals:
 
 > **One-line:** what external system this MCP server connects Claude to, and what it lets Claude do with it.
 
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the server, then write distilled judgment — not a transcription of its README.*
+
 ## Attributes
 
 - **External system**: the underlying API/service (e.g., Slack, Linear, Postgres, custom internal).

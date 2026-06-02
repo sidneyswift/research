@@ -26,6 +26,8 @@ popularity-signals:
 
 > **One-line:** what this plugin gives a Claude Code installation in plain English.
 
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the plugin, then write distilled judgment — not a transcription of its README.*
+
 ## Attributes
 
 - **What it does**: the user-facing capability, not the component inventory.
