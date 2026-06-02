@@ -17,6 +17,7 @@ A research wiki cataloging the most important and talked-about work across the A
 - **For browsing artifacts:** [artifacts/skills/](artifacts/skills/), [artifacts/plugins/](artifacts/plugins/), [artifacts/mcp-servers/](artifacts/mcp-servers/), [artifacts/projects/](artifacts/projects/).
 - **For browsing concepts:** [concepts/](concepts/) — ideas and techniques (often from essays & papers) that aren't runnable artifacts.
 - **For evidence:** [sources/](sources/) — every claim in the wiki points here.
+- **For tooling:** [scripts/](scripts/) — `wiki-search.sh` (search), `wiki-doctor.py` (health check + score). Run `python3 scripts/wiki-doctor.py` anytime to see wiki health.
 
 ## Status
 

@@ -98,6 +98,8 @@ Triggered when the user (or you) need to look something up *or* draw a compariso
 
 Triggered explicitly (user asks "lint the wiki" or "check for staleness") or after a large batch of ingests. **This is the operation that makes the wiki actually durable** — without it, the wiki ages the same way human wikis do.
 
+**Run `scripts/wiki-doctor.py` first.** It mechanizes the deterministic checks (#1 broken links, #2 orphans, #3 missing sections, #4–5 staleness, #14 gitlinks, #17 TODO backlog) and prints a 0–100 **health score** (target 90, per gbrain's `doctor`). Then do the judgment-only checks (#6, #7 contradictions, #9–11, #13 harness bloat, #16 DRY) by hand — the doctor flags those as "not automated."
+
 What to check, in order:
 
 1. **Broken wikilinks.** Every `[[...]]` should resolve to a file that exists. Especially watch for: links to source anchors that aren't in the source's `## Anchor map` (those are *de facto* broken even if the file exists).
@@ -170,7 +172,8 @@ Research/
 ├── creators/          # people, orgs, and labs behind the work — context
 ├── sources/           # cloned repos + snapshotted articles/papers/pages + their .md citation pages
 ├── analyses/          # synthesis pieces — wait until ≥5 artifacts/concepts of relevant type
-└── meta/              # the wiki applied to itself — self-improvements.md ledger (see REFLECT)
+├── meta/              # the wiki applied to itself — self-improvements.md ledger (see REFLECT)
+└── scripts/           # the (det) tooling — wiki-search.sh, wiki-doctor.py (+ sources/clone-all.sh)
 ```
 
 **Artifact vs. concept vs. pattern** — the call that trips people up:
@@ -186,6 +189,15 @@ Research/
 - **Citation anchors**: `[[sources/<creator>--<slug>#anchor-name]]` where `anchor-name` is registered in the source page's `## Anchor map`.
 - **Dates**: ISO format (`2026-05-21`). Convert any relative dates ("yesterday") to absolute before writing.
 - **`log.md` is grep-able**: every entry starts with `## [YYYY-MM-DD] <op> | <subject>`, so `grep "^## \[" log.md | tail -5` shows recent activity (Karpathy's tip).
+
+## Tooling
+
+The deterministic `(det)` operations now have scripts so the model spends judgment only where it must (latent-vs-deterministic, applied to ourselves). All are dependency-free (bash + system Python):
+
+- **`scripts/wiki-search.sh "<query>"`** — grep over wiki pages, grouped by page + title (`-s` includes `sources/`, `-l` lists files). The cheap stand-in for embedding search until the wiki outgrows it.
+- **`scripts/wiki-doctor.py`** — the LINT autopilot: mechanical health checks + a 0–100 health score (`--json`, `--strict`, `--target N`). Reports only — never edits pages.
+- **`sources/clone-all.sh`** — rebuild the git-ignored source clones from `repos.manifest.tsv`, pinned to cited commits (`--pull` to fetch).
+- **`analyses/_eval-rubric.md`** — the cross-modal (multi-model) review gate every `analyses/` page passes before shipping.
 
 ## Dashboard (not yet built)
 

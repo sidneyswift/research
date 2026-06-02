@@ -4,13 +4,13 @@ type: pattern
 name: single-source-multi-surface-distribution
 category: composition
 status: confirmed
-last-reviewed: 2026-06-01
-example-count: 2
+last-reviewed: 2026-06-02
+example-count: 3
 ---
 
 # single-source-multi-surface-distribution
 
-> Author the capability **once** — a system prompt, a skill set, an engine — then package it for several *runtime surfaces* (Cowork plugin, Managed Agents API, CLI, MCP server) that reference the same source rather than forking it. One definition, many places it can run.
+> Author the capability **once** — a system prompt, a skill set, an engine — then make it run on several *surfaces* without hand-forking: a Cowork plugin, a Managed Agents API template, a CLI, an MCP server, **or a competing third-party agent harness** (Codex, Cursor, Gemini, …). The wrapper differs; the brains don't. Two mechanisms qualify: the surface **references** the one source (resolved at build/deploy), *or* a converter **transforms** the one source into each surface's format — either way there is a single source of truth and a drift guard.
 
 ## Longer definition
 
@@ -26,6 +26,8 @@ Concretely, in `anthropics/financial-services` ([[sources/anthropic--financial-s
 4. A **drift guard** keeps the surfaces honest: `scripts/check.py` fails if a bundled skill copy has diverged from its vertical source ([[sources/anthropic--financial-services#scripts-check]]); `sync-agent-skills.py` re-propagates the source ([[sources/anthropic--financial-services#scripts-sync]]).
 
 gbrain reaches the same end differently — one engine, three install shapes (skillpack scaffold, standalone CLI, MCP server) generated from one codebase ([[sources/garrytan--gbrain#README]]). The unifying move is identical: **the capability is defined once; the surface is a packaging choice, not a rewrite.**
+
+`compound-engineering` extends the pattern along a third axis — **competing harnesses you don't own**, via *conversion* rather than *reference*. The skills/agents are authored once in Claude format; `src/parsers/claude.ts` reads them and `src/converters/claude-to-<target>.ts` + `src/targets/<target>.ts` emit the native layout for ~11 platforms (Codex, Cursor, Copilot, Droid, Qwen, OpenCode, Pi, Gemini, Kiro) ([[sources/every--compound-engineering-plugin#converter]], `#install-matrix`). The drift guard is `bun run release:validate`, which fails the build if the Claude/Cursor/Codex *marketplace manifests* fall out of parity ([[sources/every--compound-engineering-plugin#release-automation]]). The distinction worth noting: FSI/gbrain keep a live *reference* the deploy step resolves; CE produces *transformed copies* per target — so CE also needs **portability rules at authoring time** (no unguarded platform env vars; per-platform tool-equivalent names) so the one source survives conversion intact ([[sources/every--compound-engineering-plugin#cross-platform-authoring]]).
 
 ## When to use
 
@@ -49,6 +51,7 @@ Drift is the tax on duplicated agent content, and it compounds silently — a pr
 
 - [[artifacts/plugins/anthropic-financial-services-marketplace]] — every named agent ships as a Cowork/Claude Code plugin **and** a Managed Agents API template; the `agent.yaml` references the plugin's system prompt + skills, resolved at deploy. — citation: [[sources/anthropic--financial-services#cookbooks-README]], [[sources/anthropic--financial-services#cookbook-agent-yaml]], [[sources/anthropic--financial-services#scripts-deploy]]
 - [[artifacts/plugins/gbrain]] — one memory engine packaged as three install shapes (skillpack scaffold / standalone CLI / MCP server) from a single codebase. — citation: [[sources/garrytan--gbrain#README]]
+- [[artifacts/plugins/compound-engineering]] — one Claude-format skill pack **converted** to ~11 competing agent harnesses by a Bun/TS CLI, with manifest-parity drift caught by `release:validate`. The new axis (competing third-party tools) and the new mechanism (conversion + authoring-time portability rules, not live reference). — citation: [[sources/every--compound-engineering-plugin#converter]], [[sources/every--compound-engineering-plugin#release-automation]], [[sources/every--compound-engineering-plugin#cross-platform-authoring]]
 
 ## Counter-examples or anti-pattern
 

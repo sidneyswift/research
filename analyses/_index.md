@@ -10,6 +10,8 @@ Synthesis pieces. Different from pattern pages — analyses are *narrative*, dra
 
 Don't write an analysis until at least 5 artifacts of the same type are cataloged. Premature synthesis is the failure mode this directory exists to avoid.
 
+**Before any analysis ships**, run it through the cross-modal review gate: [_eval-rubric.md](_eval-rubric.md) (a second/third model judges the draft — the practice that caught gbrain's book-mirror errors).
+
 ## Active analyses
 
 *(none yet)*

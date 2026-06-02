@@ -13,6 +13,8 @@ last-reviewed: 2026-06-01
 
 > President & CEO of Y Combinator. Ships opinionated open-source agent tooling (gstack, gbrain) co-authored with Claude Opus 4.6. Brings distribution scale to the agent ecosystem — when he ships something, the agent community pays attention.
 
+*Page shape (gbrain's brain-page schema, per [[patterns/behavioral/diarization]]): the sections below are **compiled truth** (current best understanding, edited in place); the **append-only [`## Timeline`](#timeline-append-only)** at the bottom records dated events — the arc, not just the snapshot.*
+
 ## Attributes
 
 - **Background** (per [[sources/garrytan--gstack#README]]): Twenty years building products. Cofounder Posterous (sold to Twitter). Early eng/PM/designer at Palantir. Built Bookface (YC's internal social network) in 2013.
@@ -62,6 +64,18 @@ last-reviewed: 2026-06-01
 - **Skills are parameterized method calls.** One `/investigate` (TARGET/QUESTION/DATASET) is a medical analyst or a forensic investigator depending on what you pass. → [[patterns/behavioral/skill-as-method-call]] ([[sources/garrytan--thin-harness-fat-skills#skill-as-method-call]]).
 - **The complexity ratchet: tests make quality forward-only.** Every session adds tests+docs+evals that reload into the next session's context; 90% coverage is "free" now that agents "don't experience effort." → [[patterns/quality-bar/complexity-ratchet]] ([[sources/garrytan--complexity-ratchet#ratchet-three-things]]).
 - **Open harnesses you own beat corporate SaaS AI.** "The brain is a git repo you own… if any piece disappeared tomorrow, your knowledge survives as plain text." Open source is also *why verification works* — only an open skill lets the user write the check ([[sources/garrytan--naked-models#open-harness]], [[sources/garrytan--resolvers#build-your-own-brain]]).
+
+## Timeline (append-only)
+
+Dated arc of Garry's agent-tooling run. Append newest at the bottom; don't rewrite past entries. The star time-series is the headline signal — it climbs across the essay series.
+
+- 2026-03 — Quoted Karpathy on the No Priors podcast; "haven't typed code since December" ([[sources/garrytan--gstack#README]]).
+- 2026-03-11 — `gstack` repo created (per `gh api repos/garrytan/gstack`).
+- 2026-04-05 — `gbrain` launched; ~5,000 stars in the first 24 hours ([[sources/garrytan--gbrain#README]]).
+- 2026-04 → 2026-05 — published the 8-essay **"AI Explainer" series**; `gstack` stars climbed 72K → 87K → 105K across the run ([[sources/garrytan--meta-meta-prompting]], [[sources/garrytan--foxconn-factories#gstack-stars]]).
+- 2026-05 — `gbrain` ~14,000 stars (Vectorize.io review) ([[sources/garrytan--gbrain#README]]).
+- 2026-05-21 — first wiki snapshot of `gstack` (`029356e`) and `gbrain` (`1580c6d`).
+- 2026-06-01 — measured via `gh api`: `gstack` **105,761** stars (self-claim of "~105,000 in <3 months" confirmed), `gbrain` **20,403** stars (up from the stale ~14K).
 
 ## Source citations
 

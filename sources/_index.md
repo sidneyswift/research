@@ -24,6 +24,7 @@ Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` strippe
 - [[sources/garrytan--gstack]] — `garrytan/gstack` (41 MB, commit `029356e` of 2026-05-20). Garry Tan's 23-skill engineering-team pack.
 - [[sources/garrytan--gbrain]] — `garrytan/gbrain` (71 MB, commit `1580c6d` of 2026-05-20, version 0.36.4.0). Garry Tan's memory system.
 - [[sources/anthropic--financial-services]] — `anthropics/financial-services` (2.7 MB, commit `120a31d` of 2026-05-29, Apache 2.0). Anthropic's FSI reference marketplace — 20 plugins, dual-runtime (Cowork plugin + Managed Agents API), 10 managed-agent cookbooks with trust-tiered subagents.
+- [[sources/every--compound-engineering-plugin]] — `everyinc/compound-engineering-plugin` (11 MB, commit `3e77a7b` of 2026-06-01, MIT). Every's official Compound Engineering plugin — 38 skills + 43 sub-agents authored once in Claude format and converted to ~11 agent platforms; dogfoods its own loop (27 brainstorms + 57 plans + 30 solutions). The wiki's first **non-Garry tested skill pack**.
 
 ## Articles, posts, threads
 
@@ -39,6 +40,10 @@ External writing we cite. Always include retrieval date and a snapshot path (PDF
 - [[sources/garrytan--meta-meta-prompting]] — **#6** *"Meta-Meta-Prompting"* — compounding skills + diarization at scale (book-mirror, 100K-page brain). Credits Karpathy's LLM Wiki (this wiki's own pattern) as GBrain's inspiration. (gstack 87K stars.)
 - [[sources/garrytan--complexity-ratchet]] — **#7** *"The AI Agent Complexity Ratchet"* — 90% coverage as the AI-affordable threshold; everything-harnessable-is-testable. (2026-05-12; gstack 93K stars / 701K LOC.)
 - [[sources/garrytan--foxconn-factories]] — **#8** *"Stop building Foxconn factories for your agents"* — the skill-pack primitive, "just-in-time software," "tokenmaxxing," the verified ~105K-star figure, and the OpenClaw=Steinberger correction.
+
+**Every — compound engineering.** Kieran Klaassen (GM of Cora) + Dan Shipper (CEO); the methodology's origin and home. ⚠ Partial captures (`every.to` is a subscription publication) — confirmed metadata + verbatim fragments + outline; full-text paste is TODO.
+
+- [[sources/every--compound-engineering-gets-an-upgrade]] — **article**, Kieran Klaassen, 2026-05-29 (updated 2026-06-01). The 4-step → 8-step evolution; "AI is the stuff in the middle. Humans are the bread on either end."
 
 ## Marketplace listings
 
@@ -57,3 +62,5 @@ Tweets, Reddit threads, HN comments. Capture full text + author + date.
 Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages — pin claims to the retrieval date.
 
 - [[sources/anthropic--plugins-reference]] — Claude Code "Plugins reference" (`code.claude.com/docs`, retrieved 2026-05-31). The mechanism layer: `plugin.json` schema, `${CLAUDE_PLUGIN_ROOT}` file resolution, and the `~/.claude/plugins/cache` caching behavior. Partial verbatim snapshot.
+- [[sources/every--compound-engineering]] — Every's living "Compound Engineering" guide (`every.to/guides`, retrieved 2026-06-02; **partial capture**). The loop, the 80/20 + 50/50 rules, the eight beliefs to "unlearn," "taste belongs in systems, not review," the 5-stage adoption ladder.
+- [[sources/openai--using-goals-in-codex]] — OpenAI Cookbook guide *"Using Goals in Codex"* (`developers.openai.com/cookbook`, retrieved 2026-06-02; captured verbatim from the notebook source). Pinned to `openai/openai-cookbook` commit `9b4e627` (2026-05-13; page published 2026-05-09, authors Raj Pathak & Stefano Fabbri). Documents Codex **Goals** — persistent, evidence-gated objectives via `/goal`. The wiki's first **OpenAI** source.

@@ -22,10 +22,14 @@ Claude Code plugins cataloged. Each page uses [../../\_schemas/plugin.md](../../
 - [[artifacts/plugins/gstack]] — Garry Tan's opinionated 23-skill engineering-team pack
 - [[artifacts/plugins/gbrain]] — Garry Tan's three-shape (CLI + MCP + skillpack) memory system
 
+### Every (Kieran Klaassen)
+- [[artifacts/plugins/compound-engineering]] — the official Compound Engineering plugin; 38 skills + 43 sub-agents, authored once in Claude format and **converted to ~11 agent platforms**; dogfoods its own loop. The wiki's first **non-Garry tested skill pack**. (Marketplace also ships `coding-tutor` by Nityesh Agarwal — candidate below.)
+
 ## By target user
 
 ### Engineering
 - [[artifacts/plugins/gstack]]
+- [[artifacts/plugins/compound-engineering]] — agent-coding workflow loop (brainstorm → plan → work → review → compound)
 
 ### Vertical (domain-specific workflows)
 - [[artifacts/plugins/gbrain]] — agent memory
@@ -48,6 +52,11 @@ Promote candidates to full pages above when deep-dived. Otherwise leave as one-l
 - `investment-banking` / `equity-research` / `private-equity` / `wealth-management` / `fund-admin` / `operations` (verticals) — domain skill+command bundles.
 - `lseg` / `sp-global` (partner-built) — partner-authored; LSEG wraps its own MCP into command↔skill pairs, S&P ships per-skill licensing + audience-segmented `tear-sheet`.
 - `claude-for-msft-365-install` — Claude-Code-only admin installer; the deliberate single-surface counter-example.
+
+**`compound-engineering-plugin` children/siblings** (inside [[sources/every--compound-engineering-plugin]]; the plugin is paged, these are not yet):
+
+- `coding-tutor` (plugin, by **Nityesh Agarwal**) — the 2nd plugin in Every's marketplace; 3 commands (`teach-me` / `quiz-me` / `sync-tutorials`) + 1 skill; spaced-repetition coding tutorials. A non-Kieran, non-workflow plugin in the same repo — useful contrast.
+- High-value CE skills to deep-dive: `ce-compound` (the compounding mechanism; worked example on the marketplace page), `ce-code-review` (parallel persona lenses → JSON → dedup → confidence gate), `ce-plan`, `ce-work`, `ce-strategy` (the `STRATEGY.md` anchor).
 
 - `garrytan/openclaw` — agent platform that gbrain primarily targets (referenced in gbrain manifest)
 - `garrytan/hermes` — sibling agent deployment to OpenClaw

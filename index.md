@@ -40,6 +40,10 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/garrytan--skillify-manifesto]] | article | 2026-06-01 | n/a (essay #5) |
 | [[sources/garrytan--meta-meta-prompting]] | article | 2026-06-01 | n/a (essay #6) |
 | [[sources/garrytan--complexity-ratchet]] | article | 2026-06-01 | n/a (essay #7) |
+| [[sources/every--compound-engineering-plugin]] | repo | 2026-06-02 | `3e77a7b` |
+| [[sources/every--compound-engineering]] | docs-page | 2026-06-02 | n/a (living page) |
+| [[sources/every--compound-engineering-gets-an-upgrade]] | article | 2026-06-02 | 2026-05-29 |
+| [[sources/openai--using-goals-in-codex]] | docs-page | 2026-06-02 | `9b4e627` (pub 2026-05-09) |
 
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
@@ -49,6 +53,8 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 |---|---|---|
 | [[creators/anthropic]] | org | Sets the Agent Skills spec; ships demonstration skills + plugins + the Claude API |
 | [[creators/garry-tan]] | individual | President & CEO of Y Combinator; ships `gstack` and `gbrain` |
+| [[creators/every]] | org | Media+software company; origin/home of compound engineering. Kieran Klaassen (plugin author, GM of Cora) + Dan Shipper (CEO) |
+| [[creators/openai]] | org | Frontier lab; ships GPT + the **Codex** CLI. First OpenAI entry, via Codex **Goals** ([[artifacts/projects/codex-goals]]) |
 
 ## Artifacts — Plugins
 
@@ -58,6 +64,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[artifacts/plugins/gstack]] | Garry Tan | speedrun | Virtual engineering team (CEO, Designer, QA Lead, etc.); 23 skills |
 | [[artifacts/plugins/gbrain]] | Garry Tan | speedrun | Hybrid vector+graph memory; ships as CLI + MCP + skillpack |
 | [[artifacts/plugins/anthropic-financial-services-marketplace]] | Anthropic (FSI) | full | FSI marketplace; 20 plugins, dual-runtime (Cowork + Managed Agents API), trust-tiered subagents |
+| [[artifacts/plugins/compound-engineering]] | Every (Kieran Klaassen) | full | Compound-engineering loop; 38 skills + 43 agents, converted to ~11 harnesses; dogfoods its own loop; **first non-Garry tested pack** |
 
 Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/plugins/_index.md).
 
@@ -77,7 +84,9 @@ Candidate queue: see [artifacts/mcp-servers/_index.md](artifacts/mcp-servers/_in
 
 Frontier projects/systems/products that aren't reducible to a single skill, plugin, or MCP server.
 
-*(none ingested yet)*
+| Project | Creator | Status | One-line |
+|---|---|---|---|
+| [[artifacts/projects/codex-goals]] | OpenAI | feature-deep-dive | Codex CLI's **Goals** feature — persistent, evidence-gated `/goal` objectives (≥ 0.128.0); embodies [[concepts/completion-contract]], grounds [[patterns/behavioral/evidence-gated-completion]] |
 
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
@@ -85,7 +94,10 @@ Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md
 
 Ideas and techniques worth their own page — especially from essays, papers, and threads. A concept graduates to a [pattern](#patterns) once observed across ≥2 artifacts.
 
-*(none paged yet; candidates from the Garry Tan essay series are currently tracked as proposed patterns below)*
+**Paged:**
+
+- [[concepts/compound-engineering]] — Every's (Kieran Klaassen's) methodology: each unit of work makes the next easier; 80/20 planning + 50/50 features-vs-systems; "taste belongs in systems, not review." The independently-named twin of [[patterns/quality-bar/complexity-ratchet]]; embodied by [[artifacts/plugins/compound-engineering]].
+- [[concepts/completion-contract]] — an agent objective as a persistent, evidence-verified *contract* ("done" decided by evidence, not confidence). OpenAI's term, productized as Codex Goals; embodied by [[artifacts/projects/codex-goals]].
 
 Candidate queue: see [concepts/_index.md](concepts/_index.md).
 

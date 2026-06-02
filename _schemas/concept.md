@@ -17,7 +17,7 @@ popularity-signals:
 
 > **One-line:** the idea in plain English. If a teammate reads only this, they get the gist.
 
-*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the idea across sources, then write distilled judgment — not a summary of any single source. Done when it passes the [page checklist](_definition-of-done.md).*
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the idea across sources, then write distilled judgment — not a summary of any single source. Shape: **compiled truth on top** (edited in place) + an **append-only `## Timeline`** below (gbrain's brain-page schema). Done when it passes the [page checklist](_definition-of-done.md).*
 
 ## What it is
 
@@ -46,6 +46,12 @@ The specific claims made about it, each with a citation. Flag claims that are as
 ## Tensions & counter-arguments
 
 Who disagrees, and why. A concept page without the other side of the debate is incomplete. Cite the dissent.
+
+## Timeline (append-only)
+
+Dated moments in the idea's life — when it was coined/popularized, when a major source shifted it, when it was challenged or superseded. Append newest at the bottom; don't rewrite past entries. Format: `- YYYY-MM-DD — what happened ([[sources/...#anchor]])`.
+
+- {YYYY-MM-DD} — {event} ([[sources/...#anchor]])
 
 ## Related
 

@@ -13,10 +13,10 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 ## Cataloged projects
 
-*(none paged yet)*
+- [[artifacts/projects/codex-goals]] — OpenAI Codex CLI's **Goals** feature: persistent, thread-scoped, evidence-gated objectives via the `/goal` command surface (Codex ≥ 0.128.0). Embodies [[concepts/completion-contract]]; grounds [[patterns/behavioral/evidence-gated-completion]] and supplied the non-Garry 2nd example that promoted [[patterns/behavioral/skill-as-method-call]]. Source: [[sources/openai--using-goals-in-codex]].
 
 ## Candidate list (not yet deep-dived)
 
 Add candidates here as one-line entries before promoting to a full page. Keep a `source:` URL on each.
 
-- *(none queued yet)*
+- **Codex CLI** (OpenAI) — the broader agentic-coding tool; only its Goals feature is studied so far (see [[artifacts/projects/codex-goals]]). A full ingest would enable a Codex-vs-Claude-Code comparison. Source: `https://developers.openai.com/codex`.

@@ -12,7 +12,8 @@ A concept becomes a **pattern** (in `patterns/`) once we've observed it as a con
 
 ## Cataloged concepts
 
-*(none paged yet)*
+- [[concepts/compound-engineering]] — **the wiki's first concept page.** Every's (Kieran Klaassen's) AI-native development methodology: structure work so each unit makes the next easier; 80/20 planning-vs-execution, the 50/50 features-vs-systems budget, "taste belongs in systems, not review." The named, productized, *independently-arrived-at* twin of [[patterns/quality-bar/complexity-ratchet]]; embodied by [[artifacts/plugins/compound-engineering]]. Sources: [[sources/every--compound-engineering]], [[sources/every--compound-engineering-gets-an-upgrade]].
+- [[concepts/completion-contract]] — an agent objective specified as a persistent, evidence-verified *contract* (outcome + verification surface + constraints + boundaries + iteration policy + blocked stop condition), so the agent runs "work → check → continue or complete" and "done" is decided by **evidence, not confidence**. OpenAI's term, productized as Codex Goals; embodied by [[artifacts/projects/codex-goals]]. Source: [[sources/openai--using-goals-in-codex]].
 
 ## Candidate list (not yet paged)
 

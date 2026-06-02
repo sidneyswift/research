@@ -13,6 +13,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 ## Orgs
 
 - [[creators/anthropic]] — sets the Agent Skills spec; ships demonstration skills + plugins + Cowork marketplace + the Claude API + the Managed Agents API + the financial-services reference marketplace
+- [[creators/every]] — a media-and-software company that both writes about and builds with agents; origin and home of **compound engineering**. Ships [[artifacts/plugins/compound-engineering]] (Kieran Klaassen, GM of Cora) + the essays/guide behind it (amplified by CEO Dan Shipper). The wiki's first non-Garry tested skill pack.
+- [[creators/openai]] — frontier lab behind GPT and the **Codex** agentic-coding CLI. The wiki's first OpenAI entry, via the Codex **Goals** feature ([[artifacts/projects/codex-goals]]) and the cookbook guide documenting it; supplied the non-Garry example that confirmed [[patterns/behavioral/skill-as-method-call]]. Counterweight to Anthropic for testing whether a "pattern" is field-level or one ecosystem's house style.
 
 ## Individuals
 

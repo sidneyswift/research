@@ -170,3 +170,14 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
   - **#21 skillify the verb.** Named **skillify** as a reflex in the REFLECT operation: a *repetition* trigger (3rd time you do an ad-hoc move → codify it as a schema/operation/Routing row/`(det)` script with a definition of done). Grounds: [[patterns/quality-bar/skill-pack-bundle]] + [[patterns/composition/resolver-routing-table]].
 - Both ledger rows flipped proposed → applied. Remaining proposed: #15 timeline schema, #16 health score, #18 search tool, #19 doctor autopilot, #20 cross-modal eval.
 - Touched: `_schemas/_definition-of-done.md` (new), `_schemas/{source,skill,plugin,mcp-server,concept,pattern}.md`, `CLAUDE.md`, `meta/self-improvements.md`, this log. ratchet: links +9 · orphans +0 · patterns +0.
+
+## [2026-06-02] reflect | build the 5 remaining proposed items (#15, #16, #18, #19, #20)
+
+- "Build it all" — shipped every remaining `proposed` ledger item; all 21 self-improvements now `applied`/`embodied`.
+- **#18 `scripts/wiki-search.sh`** — grep-based search over git-tracked pages (auto-excludes ignored clones), grouped by page + title; `-s` includes sources, `-l` lists files. (`rg` isn't on PATH, so built on portable grep.)
+- **#19 + #16 `scripts/wiki-doctor.py`** — the LINT autopilot: deterministic checks (broken links, orphans, missing sections, staleness, gitlinks, TODO backlog) + a 0–100 **health score** (target 90). `--json`/`--strict`/`--target`. Report-only by design. First run = **76/100**: caught 9 pattern pages predating the `## Detection recipe` requirement (real backlog) + fixed 2 of my own parser bugs (Obsidian `|alias`, and `[[...]]` inside code spans).
+- **#15 compiled-truth + timeline** — added gbrain's brain-page shape to `creator.md`/`concept.md` schemas; retrofitted [[creators/garry-tan]] with the star/essay time-series (72K→105K; gbrain 5K→20K).
+- **#20 `analyses/_eval-rubric.md`** — cross-modal (multi-model, different families) review gate for analyses; 5-dimension rubric + procedure.
+- Wired tooling into `CLAUDE.md` (LINT → run doctor first; new `## Tooling` section; layout), `README.md`, `analyses/_index.md`.
+- **Open backlog (doctor-surfaced):** 9 pattern pages need a `## Detection recipe` to reach the 90 health target. Not done here (each is careful per-pattern content work) — next focused pass.
+- Touched ~14 files. ratchet: links +10 · orphans +0 · patterns +0.
