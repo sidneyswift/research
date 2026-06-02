@@ -1,0 +1,83 @@
+---
+domain: patterns
+type: pattern
+name: latent-vs-deterministic-split
+category: behavioral
+status: confirmed
+last-reviewed: 2026-06-01
+example-count: 2
+---
+
+# latent-vs-deterministic-split
+
+> Every step in an agent system is either **latent** (needs the model's judgment — read, interpret, decide, synthesize) or **deterministic** (same input → same output, every time — SQL, compiled code, arithmetic). Put each step on the side it belongs. The most common failure isn't a wrong *answer* — it's a wrong *side*: deterministic work (timezone math, calendar lookup, combinatorial seating) done in latent space, where the model improvises and gets it plausibly, confidently wrong.
+
+## Longer definition
+
+This is a **triage discipline**, not a tool. Before building any step, you ask one question: *does this require judgment, or is it exact and repeatable?* Latent space is where intelligence lives; deterministic space is where trust lives. The rule is to force combinatorial / exact / must-never-hallucinate work down into code, and reserve the model for ambiguity-resolution, synthesis, and pattern-recognition — the things no SQL query can produce. Garry Tan states the binary directly and calls confusing the two "the most common mistake in agent design" ([[sources/garrytan--thin-harness-fat-skills#latent-vs-deterministic]]); the diagnostic reframe — *"That's the bug. Not a wrong answer. A wrong side."* — is the whole pattern in one line ([[sources/garrytan--skillify-manifesto#wrong-side-not-wrong-answer]]).
+
+The load-bearing move is a **loop**, not a static partition: the latent model *writes* the deterministic tool, and then the deterministic tool *constrains* the latent model. "The latent space builds the deterministic tool, then the deterministic tool constrains the latent space… The model's intelligence created the constraint that prevents the model from being stupid" ([[sources/garrytan--skillify-manifesto#latent-builds-deterministic]]). The agent itself wrote the calendar-recall script; afterward the skill *forces* it to run that script instead of reasoning about dates freehand, making the old failure path "structurally unreachable." This is why the split is behavioral rather than purely structural — it governs *where the model is allowed to think* and where it must defer to code it (or you) wrote earlier.
+
+## Mechanism
+
+The split shows up two ways in the real repos: drawn **between** files (gstack), and drawn **inside** one engine (gbrain).
+
+**gstack draws the line in real code.** `BROWSER.md` makes the loop literal: `/scrape <intent>` drives a page *once* using model judgment (latent exploration), then `/skillify` "codifies the flow into a deterministic Playwright script, and the next `/scrape` on the same intent runs in ~200ms instead of ~30 seconds of agent re-exploration" ([[sources/garrytan--gstack#BROWSER.md]]). The codified output is a per-task `browser-skills/<name>/` directory whose payload is `script.ts` ("deterministic Playwright-via-browse-client logic") plus a `script.test.ts` that asserts against a captured `fixtures/` page — i.e. once the flow is deterministic, it gets unit-tested like any other code ([[sources/garrytan--gstack#BROWSER.md]]). The deterministic side is also where the system *enforces*: `ARCHITECTURE.md` describes the L5 canary-token check as a "Deterministic BLOCK — if the token leaks… the session ends," and BROWSER.md echoes "Canary leak always BLOCKs (deterministic)" ([[sources/garrytan--gstack#ARCHITECTURE.md]]). Below all the markdown skills sits `bin/` — a directory the source page registers as ~62 narrow deterministic CLIs ([[sources/garrytan--gstack#bin]]) — the execution floor that the latent skills call down into. Judgment lives in markdown; exactness lives in compiled binaries and CLIs.
+
+**gbrain draws the line inside one engine.** Its substrate is deterministic by construction: "Every page write extracts entity references and creates typed links (`attended`, `works_at`, `invested_in`, `founded`, `advises`) with **zero LLM calls**" — "pure pattern matching" on wikilink syntax, "No LLM calls; pure pattern matching" ([[sources/garrytan--gbrain#README]]). The self-wiring graph and the timeline are deterministic; the *latent* work is the search ranking and the page synthesis (the diarized "intelligence dossier"). The graph is what produces gbrain's measured retrieval lift (+31.4 P@5 over vector-only RAG) precisely because the edges are computed, not guessed ([[sources/garrytan--gbrain#README]]).
+
+**Caveat on the label (a real provenance boundary the wiki tracks):** "latent" is the *essays'* vocabulary, not the repos'. The literal word **"latent" has zero hits** in gstack's `CLAUDE.md` / `ARCHITECTURE.md` / `BROWSER.md` / `SKILL.md`; "deterministic" appears throughout ([[sources/garrytan--gstack#ARCHITECTURE.md]], [[sources/garrytan--skillify-manifesto#latent-vs-deterministic]]). The *split* is demonstrably real and named in code on the deterministic side; the *"latent vs deterministic"* framing is Garry's gloss layered over it. Cite the discipline to the essays, ground the machinery in the files.
+
+## When to use
+
+- The step is **exact or combinatorial** — arithmetic, timezone conversion, scheduling/seating optimization, sorting, comparisons, letter-counting. Push it into code. (8-person seating is judgment; 800-person seating is an optimization the model must not "feel" its way through — [[sources/garrytan--thin-harness-fat-skills#latent-vs-deterministic]].)
+- The step is **data retrieval or I/O** — fetching, querying a DB, hitting an API, reading files. The model "decides what to look up; the code decides how" ([[sources/garrytan--naked-models#stock-data-fix]]).
+- The result **must never hallucinate** — anything a user will trust as fact (numbers, dates, citations). Deterministic code can be asserted on; that assertion is your trust boundary.
+- You catch the agent **"being clever"** about something a 3-line script would settle outright — the tell that a deterministic step is currently running in latent space (the calendar grep, the UTC→PT math).
+- You've run the same latent exploration **more than once** and it's stable — that's the cue to graduate it into a deterministic, tested tool (the `/scrape` → `/skillify` codification).
+
+## When NOT to use
+
+- **Don't force genuinely judgment-laden work into deterministic code.** Seating 8 people "accounting for personalities" is *correctly* latent; only the 800-person optimization belongs in code ([[sources/garrytan--thin-harness-fat-skills#latent-vs-deterministic]]). Reclassifying a founder's company from "developer tools" to "FinTech/RegTech" is a judgment call — "no embedding captures the Kim reclassification" — and hard-coding it would be the *inverse* error ([[sources/garrytan--thin-harness-fat-skills#match-skills]]).
+- **Don't over-engineer a one-off into a deterministic tool before it's proven worth keeping.** Codifying a flow you'll run once is pure cost; the discipline is to do it manually first, confirm it's repeatable, *then* skillify it — the graduation step, not the default ([[sources/garrytan--skillify-manifesto#skillify-as-verb]]).
+- **Don't build a wall of deterministic code to "police" a capable model.** If the deterministic side balloons into hundreds of lines written to distrust the model rather than to do exact work, you've crossed into the "Foxconn factory" anti-pattern — same author's explicit warning ([[patterns/quality-bar/skill-pack-bundle]] counter-example). The deterministic side should be *thin* and *exact*, not a cage.
+- **Don't treat the line as fixed.** A step that's latent today (a novel synthesis) may become deterministic tomorrow once its pattern stabilizes; forcing a premature partition freezes an abstraction you don't understand yet.
+
+## Why it works
+
+It works because it routes each task to the substrate that has the right *failure mode*. A naked model "produces plausible text"; a harnessed system "produces verified text" ([[sources/garrytan--naked-models#stock-data-fix]] frames this as the stock-graph fix — the model "claimed to download stock prices and graphed random numbers because it has no tools, no HTTP client, no API keys"). The model's failure mode on exact work is *confident fabrication*, which is undetectable from the output alone; deterministic code's failure mode is a *crash or a failed assertion*, which is loud and catchable. By moving exact work to the side where failure is observable, you make the whole system testable — "if you can harness it… observe it… assert on it… you can ratchet it" ([[sources/garrytan--complexity-ratchet#everything-harnessable-testable]]). The deterministic side is, definitionally, the side you can write unit tests against; the latent side gets LLM-as-judge evals instead. That maps one-to-one onto how a tested skill bundle is built ([[patterns/quality-bar/skill-pack-bundle]]).
+
+The deeper reason is the **compounding loop**: because the latent model writes the deterministic constraint, the system's own intelligence is what removes its own unreliability over time. Each codified tool is a permanent upgrade — the latent steps improve for free when the next model ships, while the deterministic steps "stay perfectly reliable" ([[sources/garrytan--thin-harness-fat-skills#permanent-upgrades]]). You get more capable judgment *and* unchanging exactness from the same system, which is impossible if everything lives on one side.
+
+## Examples in this wiki
+
+- [[artifacts/plugins/gstack]] — the **between-files** demonstration. The `/scrape` (latent, exploratory page-drive) → `/skillify` → `script.ts` (deterministic Playwright) codification is the latent-builds-deterministic loop made literal, with the codified flow then unit-tested via `script.test.ts` against a fixture; under all the markdown skills, `bin/` holds the deterministic CLI floor (~62 entries) that the latent skills call down into, and `ARCHITECTURE.md`'s "Deterministic BLOCK" canary check is the assert-on enforcement side. — citation: [[sources/garrytan--gstack#BROWSER.md]], [[sources/garrytan--gstack#ARCHITECTURE.md]], [[sources/garrytan--skillify-manifesto#latent-builds-deterministic]]
+- [[artifacts/plugins/gbrain]] — the **inside-one-engine** demonstration. Link extraction and the typed knowledge graph run with "zero LLM calls" (pure pattern-matching on wikilink syntax — the deterministic substrate), while search ranking and page synthesis/diarization are the latent layer; the deterministic graph is what produces the measured +31.4 P@5 retrieval lift that latent vector search alone cannot reach. — citation: [[sources/garrytan--gbrain#README]], [[sources/garrytan--thin-harness-fat-skills#latent-vs-deterministic]]
+
+> **Same-creator caveat (tracked, not hidden):** both grounded artifacts are Garry Tan's (gstack and gbrain), and the framing is articulated entirely across Garry's 8-essay series. They are two *distinct artifacts* drawing the line in two genuinely different shapes (between files vs. inside one engine), which is why this is `confirmed` rather than `proposed` — but the *vocabulary* is one author's. A maximally strong third example would be a **non-Garry** artifact that explicitly routes exact work to code and judgment to the model as a stated design rule (most builders apply the split implicitly; few name it). See Open questions.
+
+## Counter-examples or anti-pattern
+
+The pattern's counter-examples are the essays' own **failure anecdotes** — each is deterministic work wrongly placed in latent space, which is exactly the pattern violated:
+
+- **The "28 minutes" bug.** The agent did UTC→PT conversion "in its head," off by exactly an hour (said 28 minutes; reality 88). A deterministic `context-now.mjs` already existed and outputs `minutesUntil: 88` in ~50ms — "the agent just didn't run it." Arithmetic executed in latent space. ([[sources/garrytan--skillify-manifesto#wrong-side-not-wrong-answer]])
+- **The 5-minute calendar thrash.** The agent spent five minutes hitting blocked live calendar APIs and noisy email search when the answer was one local `grep` away in 3,146 indexed calendar files. Data retrieval done by latent flailing instead of a deterministic lookup. ([[sources/garrytan--skillify-manifesto#wrong-side-not-wrong-answer]])
+- **The 8-vs-800 seating hallucination.** Combinatorial optimization (seat 800 people under constraints) forced into latent space hallucinates a plausible-but-wrong arrangement; it belongs in a deterministic assignment algorithm. ([[sources/garrytan--thin-harness-fat-skills#latent-vs-deterministic]])
+- **Kingsbury's hallucinated stock graph (the external rebuttal case).** A model asked to "fetch" stock data it physically cannot fetch (no HTTP client, no API keys) fabricated plausible numbers and graphed them. This is *not* a verdict on AI — it's the same wrong-side error, fixed by a deterministic data-retrieval tool the model "never touches." ([[sources/garrytan--naked-models#stock-data-fix]])
+
+The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying to make the "seat 8 people by personality" or "reclassify Kim's company" decision deterministic. That over-rotation is just as wrong as the four above — it puts latent work on the deterministic side, producing brittle rules that miss the cases only judgment catches ([[sources/garrytan--thin-harness-fat-skills#match-skills]]).
+
+## Related patterns
+
+- [[patterns/structural/thin-harness-fat-skills]] — **specializes / is-expressed-by.** This split is the *rule* ("every step is one side or the other"); the three-layer architecture is its *expression* — push latent judgment up into fat skills, push deterministic execution down into the app, keep the harness thin. The architecture is what you get when you apply this triage consistently across a whole system.
+- [[patterns/quality-bar/skill-pack-bundle]] — **composes-with.** The bundle's "minimal code + unit test" half *is* the deterministic side (asserted on with deterministic tests); the "markdown skill + LLM eval" half is the latent side. The split tells you *which* layer each test type belongs to.
+- [[patterns/behavioral/diarization]] — **instance-of (latent side).** Diarization is a canonical *latent* step ("no SQL query produces this") sitting on top of a *deterministic* substrate (gbrain's zero-LLM-call graph + timeline). It's the clearest single example of judgment layered correctly over computation.
+- [[patterns/composition/resolver-routing-table]] — **composes-with.** A resolver is where the split gets *operationalized at runtime*: route letter-counting / exact tasks to deterministic code and essays / judgment tasks to the model. "Put deterministic code where the model is weak and model judgment where the code can't reason; the resolver maps the territory" ([[sources/garrytan--naked-models#stock-data-fix]] sibling framing).
+- [[patterns/behavioral/skill-as-method-call]] — **adjacent.** A skill-as-method-call is a parameterized *latent* procedure; this pattern decides which *steps inside* that procedure drop down to deterministic code.
+- [[patterns/quality-bar/complexity-ratchet]] — **enabled-by.** The ratchet works because the deterministic side is the testable side; "everything harnessable is testable" is the corollary that lets each codified step get locked under a permanent test ([[sources/garrytan--complexity-ratchet#everything-harnessable-testable]]).
+
+## Open questions
+
+- **Where exactly is the line for "judgment that looks deterministic"?** The Kim company-reclassification is judgment (latent), but the seat-assignment it feeds is deterministic — the same workflow straddles the line within one step. We lack a crisp test for the boundary beyond "try to write the assertion; if you can't state the correct output, it's latent." Worth a worked decision-tree.
+- **Does the split generalize as a *named* discipline outside Garry's work, or is it folk knowledge applied implicitly?** Both grounded examples and all articulation are one creator's. Many systems clearly *do* this (anything that routes math to code) without naming it. A non-Garry artifact that states the rule explicitly would both promote confidence and test whether "latent vs deterministic" is the field's vocabulary or just Garry's.
+- **Is the "latent" label load-bearing or decorative?** Given zero hits in the repos, the *engineering* may be fully captured by "deterministic vs not." Does naming the model side "latent" add anything beyond rhetoric — or does it usefully remind builders that the judgment side is improvable-for-free across model upgrades ([[sources/garrytan--meta-meta-prompting#models-interchangeable]])?

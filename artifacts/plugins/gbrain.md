@@ -51,7 +51,7 @@ popularity-signals:
 - **Creator**: [[creators/garry-tan]]
 - **Source**: [[sources/garrytan--gbrain#root]]
 - **Composes with**: [[artifacts/plugins/gstack]] via `/setup-gbrain` and `/sync-gbrain` skills
-- **Target platforms**: `garrytan/openclaw`, `garrytan/hermes` (not yet cataloged), any MCP client
+- **Target platforms**: **OpenClaw** (Peter Steinberger's harness — *not* Garry's, per [[sources/garrytan--foxconn-factories#openclaw]]; `garrytan/openclaw` is likely his fork/deployment), `garrytan/hermes` (not yet cataloged), any MCP client. ⚠ Earlier wording "Garry's OpenClaw" overstated authorship — corrected; gbrain *targets* OpenClaw, it isn't part of it.
 - **Extends**: SKILL.md format with custom manifest fields (`shared_deps`, `excluded_from_install`, `contracts.contextEngines`) — see [[sources/garrytan--gbrain#openclaw-plugin-json]]
 
 ## Composition strategy
@@ -69,14 +69,25 @@ popularity-signals:
 - **Built-in eval framework**: `evals/` dir + sibling `garrytan/gbrain-evals` repo with BrainBench scorecards. Self-claim: P@5 49.1%, R@5 97.9% on a 240-page corpus. ([[sources/garrytan--gbrain#README]])
 - **Autopilot loop**: `gbrain doctor --remediate --yes --target-score 90 --max-usd 5` — agent drives the brain to a quality score by itself, refuses to spend past a cap. Cron-driveable.
 
-## Patterns demonstrated (proposed)
+## Patterns demonstrated
 
-- **Three-shape distribution** — same engine packaged as skillpack + CLI + MCP. Lets one product reach three consumer surfaces. Need 2nd example.
-- **Skill-router file (RESOLVER.md)** — explicit routing replaces description-based auto-triggering. Need 2nd example. (Note: this is a *very different* skill-selection philosophy than Anthropic's.)
+**AI Explainer series patterns (gbrain as grounding artifact)** — gbrain is a cited example for these pages distilled from [[creators/garry-tan]]'s essays:
+
+- **[[patterns/composition/resolver-routing-table]]** (confirmed) — the canonical grounding: `skills/RESOLVER.md` dispatcher + `_brain-filing-rules.md` + 14+ `routing-eval.jsonl` fixtures + `src/commands/check-resolvable.ts` + the `functional-area-resolver` (a resolver *inside* a skill, with A/B evals). ([[sources/garrytan--gbrain#skills-resolver]], [[sources/garrytan--resolvers#check-resolvable]])
+- **[[patterns/quality-bar/skill-pack-bundle]]** (confirmed) — `gbrain doctor` *enforces* the 10-step skillify checklist (`skills/skillify/`, `src/core/skillify/generator.ts`, `check-resolvable.ts`, `doctor.ts`+`dry-fix.ts`, `_brain-filing-rules.md`). ([[sources/garrytan--skillify-manifesto#gbrain-skillpack]])
+- **[[patterns/behavioral/latent-vs-deterministic-split]]** (confirmed) — the "zero LLM calls" typed-link/timeline graph (deterministic) vs. latent search/synthesis. ([[sources/garrytan--gbrain#README]])
+- **[[patterns/behavioral/diarization]]** (proposed) — `enrich/` ("intelligence dossier, not a LinkedIn scrape"), the compiled-truth+timeline brain-page schema, meeting-ingestion entity propagation, book-mirror; the holder-confusion fix. ([[sources/garrytan--gbrain#skill-enrich]], [[sources/garrytan--meta-meta-prompting#book-mirror]])
+- **[[patterns/quality-bar/complexity-ratchet]]** (proposed) — the extraction pipeline's holder-confusion fix + 17 locked tests + takes-vs-facts contracts. ([[sources/garrytan--complexity-ratchet#gbrain-extraction-ratchet]])
+- **[[patterns/structural/thin-harness-fat-skills]]** (proposed) — fat skillpack + thin CLI; plugs into the OpenClaw/Hermes harness.
+
+**Earlier proposed (gbrain-specific, pre-pattern-page):**
+
+- **Three-shape distribution** — same engine packaged as skillpack + CLI + MCP. → promoted to [[patterns/composition/single-source-multi-surface-distribution]].
+- ~~**Skill-router file (RESOLVER.md)**~~ — explicit routing replaces description-based auto-triggering. → **promoted** to [[patterns/composition/resolver-routing-table]] (now confirmed with gstack as the 2nd artifact).
 - **Underscore-prefixed universal rules** — `_AGENT_README`, `_brain-filing-rules`, `_output-rules` apply to every skill in the pack. Need 2nd example.
 - **Agent-first install protocol** — `AGENTS.md` separate from `CLAUDE.md`, treats LLM as the primary install reader. Need 2nd example.
 - **`[AGENT]`-marked operator-decision banner** — forces human-in-the-loop on cost-impacting choices. Pattern: encode H.I.T.L. as a protocol the agent must follow, not as a UI prompt.
-- **Quantitative skill evals shipped with the pack** — BrainBench-style scorecards as part of the artifact, not a side project.
+- **Quantitative skill evals shipped with the pack** — BrainBench-style scorecards as part of the artifact, not a side project. This is the *eval-shipping half* of [[patterns/quality-bar/skill-pack-bundle]] — gbrain is the **partial** example (evals travel with the pack), while [[artifacts/plugins/gstack]] is the fully-worked one (all 7 bundle components).
 
 ## Source citations
 
@@ -108,5 +119,6 @@ The second surprising thing: gbrain ships an OpenClaw plugin manifest (`openclaw
 - How does `RESOLVER.md` route in practice — is the agent told "read RESOLVER.md, pick one, then load only that skill"? That's a major break from Claude's auto-trigger model.
 - Do other plugins consume `contracts.contextEngines: ["gbrain-context"]`, or is this aspirational?
 - Is the 9-step `AGENTS.md` install actually followed reliably by Claude/Codex/Cursor? (Empirical test needed.)
-- What's the relationship to `garrytan/openclaw`? Is OpenClaw itself worth cataloging as a "runtime"?
+- What's the relationship to `garrytan/openclaw`? Is OpenClaw itself worth cataloging as a "runtime"? (Partly answered: OpenClaw is **Peter Steinberger's** harness — [[sources/garrytan--foxconn-factories#openclaw]]. Worth cataloging as a runtime/harness; `garrytan/openclaw` is likely a fork. A "harnesses" axis may be missing from this wiki.)
+- **Tension to resolve (cross-artifact):** gbrain's `[AGENT]` cost-matrix banner forces the operator to confront a 25× cost spread before proceeding ([[sources/garrytan--gbrain#AGENTS.md]]) — a *rationing* instinct — while the same author's "tokenmaxxing" essay says rationing is the trap and you should burn tokens freely ([[sources/garrytan--foxconn-factories#tokenmaxxing]]). Reconcilable (informed choice on a configurable knob ≠ architecturally starving the model), but a clean candidate for a future analysis on "when to spend vs. when to surface cost."
 - The `_brain-filing-rules.json` — what does it specify? Schema for where pages go, probably. Worth a separate look.

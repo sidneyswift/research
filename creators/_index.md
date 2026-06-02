@@ -16,4 +16,4 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Individuals
 
-- [[creators/garry-tan]] — President & CEO of Y Combinator. Ships `gstack` and `gbrain`. Bridge between Anthropic's ecosystem and the founder/builder community.
+- [[creators/garry-tan]] — President & CEO of Y Combinator. Ships `gstack` and `gbrain`; author of the 8-part **"AI Explainer" essay series** (the source for the wiki's `thin-harness-fat-skills` / `resolver-routing-table` / `latent-vs-deterministic` / `diarization` / `complexity-ratchet` / `skill-pack-bundle` patterns). Bridge between Anthropic's ecosystem and the founder/builder community.

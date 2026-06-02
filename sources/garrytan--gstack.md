@@ -61,8 +61,9 @@ Slash command → directory:
 - `#autoplan`, `#pair-agent`, `#careful`, `#codex`, `#learn`, `#skillify`, `#open-gstack-browser` — auxiliary
 
 ### Infrastructure dirs
-- `#bin` — `bin/` (62 entries — gstack CLI scripts)
+- `#bin` — `bin/` (60 entries — gstack CLI scripts)
 - `#lib` — `lib/` (shared shell library)
+- `#test` — `test/` — the skill-pack test harness: `skill-validation.test.ts` + `gen-skill-docs.test.ts` (Tier 1 unit, free), `skill-llm-eval.test.ts` (Tier 3 LLM-as-judge, ~$0.15/run), `skill-e2e-*.test.ts` (Tier 2 E2E via `claude -p`, ~$3.85/run), and resolver evals (`resolver-ask-user-format.test.ts`, `writing-style-resolver.test.ts`, `resolvers-gbrain-put-rewrite.test.ts`). `test/helpers/touchfiles.ts` drives diff-based selection; `E2E_TIERS` splits `gate` (CI-blocking) from `periodic` (weekly cron).
 - `#agents`, `#contrib`, `#extension`, `#claude`, `#scripts`, `#docs`
 
 ## Why we cite this
@@ -79,11 +80,12 @@ This is the most talked-about Claude Code skills pack of 2026. We cite it for:
 
 - **Hacker News**: front-page thread at https://news.ycombinator.com/item?id=47418576 — TODO snapshot
 - **Product Hunt**: shipped (per search) — TODO capture launch-day metrics
-- **GitHub stars**: not captured at snapshot — TODO add via `gh api repos/garrytan/gstack` next pass
+- **GitHub stars**: **105,761** — **verified** via `gh api repos/garrytan/gstack` (as-of 2026-06-01). The essay's self-claim ([[sources/garrytan--foxconn-factories#gstack-stars]]) of "about 105,000 stars in under three months" **checks out**: measured 105,761 (the author rounded *down*), and the repo was created **2026-03-11** — just under three months ago, so the timeframe holds. The companion "one of the hundred most-starred open source projects in GitHub history" is *plausible* at this count but is a ranking claim we did **not** independently verify (would need a current GitHub-wide stars leaderboard). The earlier skepticism cited the sibling gbrain at only ~14K; that figure was itself stale — gbrain now measures **20,403** (as-of 2026-06-01), and gstack's count is confirmed on its own terms regardless. Promoted from caveated self-claim to **measured fact** at this date; stars move, so re-measure before citing later.
 - **Press coverage**: at least 6 third-party writeups (sitepoint, mindstudio, augmentcode, buildthisnow, awesomeagents, explainx) — TODO snapshot one or two
 - **Author position**: Garry Tan, President/CEO of Y Combinator — distribution advantage built-in
 
 ## Related sources
 
+- [[sources/garrytan--foxconn-factories]] — Garry's essay *about* this artifact: the "skill pack" definition (grounded in this repo's `#test` harness), the ~105K-star claim, and the OpenClaw-authorship correction.
 - [[sources/garrytan--gbrain]] — sibling memory product; gstack ships `/setup-gbrain` and `/sync-gbrain` to integrate
 - [[sources/anthropic--skills]] — gstack extends Anthropic's skill format with custom frontmatter

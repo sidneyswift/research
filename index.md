@@ -29,8 +29,16 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/garrytan--gbrain]] | repo | 2026-05-21 | `1580c6d` |
 | [[sources/anthropic--plugins-reference]] | docs-page | 2026-05-31 | n/a (living page) |
 | [[sources/anthropic--financial-services]] | repo | 2026-06-01 | `120a31d` |
+| [[sources/garrytan--foxconn-factories]] | article | 2026-06-01 | n/a (essay #8) |
+| [[sources/garrytan--thin-harness-fat-skills]] | article | 2026-06-01 | n/a (essay #1) |
+| [[sources/garrytan--resolvers]] | article | 2026-06-01 | n/a (essay #2) |
+| [[sources/garrytan--loc-controversy]] | article | 2026-06-01 | n/a (essay #3) |
+| [[sources/garrytan--naked-models]] | article | 2026-06-01 | n/a (essay #4) |
+| [[sources/garrytan--skillify-manifesto]] | article | 2026-06-01 | n/a (essay #5) |
+| [[sources/garrytan--meta-meta-prompting]] | article | 2026-06-01 | n/a (essay #6) |
+| [[sources/garrytan--complexity-ratchet]] | article | 2026-06-01 | n/a (essay #7) |
 
-See also: [sources/_index.md](sources/_index.md) for citation conventions.
+The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
 ## Creators
 
@@ -70,6 +78,16 @@ The actual research output. Confirmed patterns (≥2 artifact examples + counter
 
 - [[patterns/composition/single-source-multi-surface-distribution]] — one definition, many runtime surfaces. Examples: financial-services (Cowork + Managed Agents API), gbrain (CLI + MCP + skillpack).
 - [[patterns/structural/marketplace-as-multi-plugin]] — one repo's `marketplace.json` registers N à-la-carte plugins. Examples: financial-services (20), anthropic-skills-marketplace (3).
+- [[patterns/quality-bar/skill-pack-bundle]] — a skill ships as a *tested bundle* (markdown skill + thin code + unit/LLM/integration/resolver tests); "a skill pack has tests." gstack (7 parts as files) + gbrain (`gbrain doctor` enforces the 10-step checklist). *Same-creator caveat tracked.* Promoted from proposed on the strength of the AI-Explainer series.
+- [[patterns/composition/resolver-routing-table]] — a routing table mapping intent→which skill/doc to load; tested with trigger evals, audited with `check-resolvable`, fractal across layers. gbrain (`RESOLVER.md` + routing-eval fixtures) + gstack (`scripts/resolvers/` + resolver evals). *Supersedes the old "skill-router file RESOLVER.md" proposed bullet.*
+- [[patterns/behavioral/latent-vs-deterministic-split]] — every step is model-judgment (latent) or same-in/same-out (deterministic); put each on the right side ("not a wrong answer — a wrong side"). gstack (deterministic `browse/`+`bin/` vs latent skills) + gbrain ("zero-LLM" graph vs latent synthesis).
+
+**Proposed, with a dedicated page (2026-06-01 — from the AI-Explainer series):**
+
+- [[patterns/structural/thin-harness-fat-skills]] — push intelligence up into markdown skills, execution down into deterministic code, keep the harness thin. Grounded fat-skills side (gstack/gbrain); the thin *harness* (OpenClaw) isn't ingested yet.
+- [[patterns/behavioral/skill-as-method-call]] — a skill file is a parameterized procedure (TARGET/QUESTION/DATASET); same file, different invocation → different capability. gstack `/qa` tiers, `/investigate`.
+- [[patterns/behavioral/diarization]] — read everything about a subject, write one structured page of distilled judgment (the "says vs actually building" gap). gbrain `enrich/` + brain-page schema.
+- [[patterns/quality-bar/complexity-ratchet]] — every session adds tests+docs+evals that reload into context, so quality only rises (forward-only); 90% coverage as the AI-affordable threshold. The system-level sibling of `skill-pack-bundle`.
 
 Proposed patterns currently mentioned across the plugin pages (need 2nd example to confirm):
 
@@ -80,7 +98,7 @@ Proposed patterns currently mentioned across the plugin pages (need 2nd example 
 - Heavy bash preamble as "skill OS" (gstack)
 - Pack-branding suffix in skill descriptions (gstack)
 - ~~Three-shape distribution: CLI + MCP + skillpack (gbrain)~~ → **promoted** to [[patterns/composition/single-source-multi-surface-distribution]]
-- Skill-router file (`RESOLVER.md`) (gbrain)
+- ~~Skill-router file (`RESOLVER.md`) (gbrain)~~ → **promoted** to [[patterns/composition/resolver-routing-table]]
 - Underscore-prefixed universal rules (gbrain)
 - Agent-first install protocol (`AGENTS.md` separate from `CLAUDE.md`) (gbrain)
 - `[AGENT]`-marked operator-decision banner (gbrain)

@@ -24,9 +24,9 @@ A research wiki cataloging the most popular and talked-about skills and plugins 
 | Skills cataloged | 0 paged (candidate queue: 17+ from anthropic-skills, ~55 from financial-services, dozens in gstack/gbrain) | 2026-06-01 |
 | Plugins cataloged | 4 — `anthropic-skills-marketplace`, `gstack`, `gbrain` (speedrun) + `anthropic-financial-services-marketplace` (full) | 2026-06-01 |
 | MCP servers cataloged | 0 paged (12 FSI data connectors + 1 gbrain server referenced; queued) | 2026-06-01 |
-| Patterns extracted | **2 confirmed** (`single-source-multi-surface-distribution`, `marketplace-as-multi-plugin`); 18+ proposed | 2026-06-01 |
+| Patterns extracted | **5 confirmed** (`single-source-multi-surface-distribution`, `marketplace-as-multi-plugin`, `skill-pack-bundle`, `resolver-routing-table`, `latent-vs-deterministic-split`) + **4 proposed-with-pages** (`thin-harness-fat-skills`, `skill-as-method-call`, `diarization`, `complexity-ratchet`); ~17 proposed bullets | 2026-06-01 |
 | Creators cataloged | 2 — Anthropic, Garry Tan | 2026-06-01 |
-| Source repos snapshotted | 4 repos (~126 MB) + 1 docs-page | 2026-06-01 |
+| Source repos snapshotted | 4 repos (~126 MB) + 1 docs-page + **8 essays** (Garry Tan's "AI Explainer" series, `garrytan--*`) | 2026-06-01 |
 
 (Update this table after each ingestion.)
 

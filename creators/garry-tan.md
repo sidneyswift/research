@@ -6,7 +6,7 @@ handle: garrytan
 url: https://github.com/garrytan
 twitter: https://x.com/garrytan
 role: President & CEO, Y Combinator
-last-reviewed: 2026-05-21
+last-reviewed: 2026-06-01
 ---
 
 # Garry Tan
@@ -29,14 +29,16 @@ last-reviewed: 2026-05-21
 - [[artifacts/plugins/gbrain]] — agent memory system (MCP server + CLI + 43-skill scaffold)
 
 ### Adjacent artifacts (not yet deep-dived)
-- `garrytan/openclaw` — the agent platform gbrain primarily targets ([referenced in [[sources/garrytan--gbrain#openclaw-plugin-json]]])
+- **OpenClaw** — the agent *harness* gbrain primarily targets and Garry's "favorite harness." ⚠ **Authorship correction:** OpenClaw was **built by Peter Steinberger**, not Garry — *"Peter Steinberger built OpenClaw, my favorite harness"* ([[sources/garrytan--foxconn-factories#openclaw]]). Earlier notes here treated `garrytan/openclaw` as Garry's platform; that repo is most likely his **fork/deployment**, with gbrain *targeting* OpenClaw rather than being part of it. (Manifest referenced in [[sources/garrytan--gbrain#openclaw-plugin-json]].) Flagged for LINT; not yet re-verified.
 - `garrytan/hermes` — another agent deployment Garry runs
 - `garrytan/gbrain-evals` — sibling repo with BrainBench scorecards
 - Bookface (private, YC-internal)
 
 ### Public framing
+- **The "AI Explainer" series — 8 essays (~Apr–May 2026)**, the most complete statement of Garry's agent-engineering worldview and the source for most of the wiki's patterns. Ordered: #1 [[sources/garrytan--thin-harness-fat-skills]] (the architecture), #2 [[sources/garrytan--resolvers]] (routing as governance), #3 [[sources/garrytan--loc-controversy]] (the LOC math), #4 [[sources/garrytan--naked-models]] (model = engine, harness = car; rebuts Kyle Kingsbury), #5 [[sources/garrytan--skillify-manifesto]] (the 10-step skillify checklist; critiques LangChain), #6 [[sources/garrytan--meta-meta-prompting]] (compounding skills; credits Karpathy's LLM Wiki — *this wiki's own pattern* — as GBrain's inspiration), #7 [[sources/garrytan--complexity-ratchet]] (90% coverage / forward-only quality), #8 [[sources/garrytan--foxconn-factories]] (the skill-pack manifesto + "tokenmaxxing"). A self-documenting growth log: gstack stars 72K→105K across the run.
 - Quoted reference to Karpathy on No Priors podcast (March 2026), "haven't typed code since December" ([[sources/garrytan--gstack#README]])
 - HN thread: https://news.ycombinator.com/item?id=47418576 — TODO snapshot
+- **People/projects he positions against or alongside** (context, not yet cataloged): Steve Yegge (the "100x" quote, #1), Kyle Kingsbury / Jepsen (the rebuttal target, #4), Pete Koomen / "AI Horseless Carriages" (#4, ally), Ben Vinegar & David Cramer / Sentry (slop-scan + the quality critique, #3), Peter Steinberger / OpenClaw (#8), Nous Research / Hermes Agent (#5, "creation without verification"), LangChain/LangSmith (#5, the funded-but-workflow-less foil).
 
 ## Design philosophy (discernible from artifacts)
 
@@ -48,6 +50,18 @@ last-reviewed: 2026-05-21
 - **Agent-first install docs.** gbrain ships `AGENTS.md` *separate from* `CLAUDE.md`, with agent-specific install protocols. Treats LLMs as the primary readers of operational docs.
 - **Force human-in-the-loop on cost-bearing choices.** gbrain's 9-cell cost matrix `[AGENT]`-marked banner — the agent MUST relay to operator before continuing. ([[sources/garrytan--gbrain#AGENTS.md]])
 - **Heavy versioning + changelog discipline.** gstack CHANGELOG is 690 KB; gbrain CHANGELOG is 1.1 MB. These aren't side projects.
+- **Markdown is the program; code is the thin deterministic layer.** *"The markdown is the instruction layer… The TypeScript is the thin deterministic layer… the parts that must never hallucinate"* ([[sources/garrytan--foxconn-factories#jit-software]]). This is the worldview behind ETHOS-injection and the persona skills: behavior should live in editable prose, not frozen code.
+- **The skill pack is the unit, and it has tests.** A capability isn't done until "skillify it" emits the skill + minimal code + unit test + LLM eval + integration test + resolver + resolver eval. *"A skill pack has tests"* — the tests are what let prose behavior change without breaking ([[sources/garrytan--foxconn-factories#skill-pack]]). → [[patterns/quality-bar/skill-pack-bundle]].
+- **Anti-pattern he now warns against: the "Foxconn factory."** Code written to *police* a capable model — sanitizers, validators, retry loops, 127 cron alarms, a 1,778-line fact-checker — is a cage bolted onto a worker who could do "1000x more if we let them" ([[sources/garrytan--foxconn-factories#thesis]], [[sources/garrytan--foxconn-factories#factory-audit]]). A direct tension with gstack's *own* heavy preamble/guardrail "skill OS" — worth watching whether his artifacts move toward this ethos.
+- **Tokenmaxxing.** Willing to burn tokens freely; rationing model calls is "the 2013 instinct" holding people back. *"You can live in 2028 but in 2026"* ([[sources/garrytan--foxconn-factories#tokenmaxxing]]). NB: surface tension with gbrain's cost-rationing `[AGENT]` banner — see [[sources/garrytan--foxconn-factories]] "Contradictions."
+- **Free systems over control systems.** "Esalen, not Foxconn" — build rough, trusting tools (OpenClaw as "a Ferrari you bring a wrench for") that free the agent, rather than polished cages ([[sources/garrytan--foxconn-factories#esalen]]).
+- **Thin harness, fat skills** (the series' namesake architecture). Push intelligence *up* into markdown skills (~90% of the value), execution *down* into deterministic code, keep the harness thin (~200 lines, read-only by default). "The model is the engine, not the car." → [[patterns/structural/thin-harness-fat-skills]] ([[sources/garrytan--thin-harness-fat-skills#three-layer-architecture]]).
+- **The resolver is the governance layer.** A ~200-line routing table beats a 20,000-line `CLAUDE.md`; skills are employees, the resolver is the org chart, `check-resolvable` is audit, trigger evals are performance reviews. Test the *routing*, not just the output. → [[patterns/composition/resolver-routing-table]] ([[sources/garrytan--resolvers#management-metaphor]]).
+- **Latent vs. deterministic is the core triage.** Every step is model-judgment or same-in/same-out; the most common bug is "not a wrong answer — a wrong side" (mental timezone math, ad-hoc calendar reasoning). The latent model writes the deterministic tool that then constrains it. → [[patterns/behavioral/latent-vs-deterministic-split]] ([[sources/garrytan--skillify-manifesto#wrong-side-not-wrong-answer]]).
+- **Diarization is the knowledge-work unlock.** Read everything about a subject, write one page of distilled judgment (the "says vs actually building" gap) — what no SQL/RAG can. → [[patterns/behavioral/diarization]] ([[sources/garrytan--meta-meta-prompting#book-mirror]]).
+- **Skills are parameterized method calls.** One `/investigate` (TARGET/QUESTION/DATASET) is a medical analyst or a forensic investigator depending on what you pass. → [[patterns/behavioral/skill-as-method-call]] ([[sources/garrytan--thin-harness-fat-skills#skill-as-method-call]]).
+- **The complexity ratchet: tests make quality forward-only.** Every session adds tests+docs+evals that reload into the next session's context; 90% coverage is "free" now that agents "don't experience effort." → [[patterns/quality-bar/complexity-ratchet]] ([[sources/garrytan--complexity-ratchet#ratchet-three-things]]).
+- **Open harnesses you own beat corporate SaaS AI.** "The brain is a git repo you own… if any piece disappeared tomorrow, your knowledge survives as plain text." Open source is also *why verification works* — only an open skill lets the user write the check ([[sources/garrytan--naked-models#open-harness]], [[sources/garrytan--resolvers#build-your-own-brain]]).
 
 ## Source citations
 
@@ -56,3 +70,4 @@ last-reviewed: 2026-05-21
 - [[sources/garrytan--gbrain#README]] — gbrain pitch, production scale claims (17,888 pages, etc.)
 - [[sources/garrytan--gbrain#AGENTS.md]] — agent-first protocol design
 - [[sources/garrytan--gbrain#openclaw-plugin-json]] — manifest format extensions
+- **The AI Explainer series (8 essays)** — [[sources/garrytan--thin-harness-fat-skills]] (#1), [[sources/garrytan--resolvers]] (#2), [[sources/garrytan--loc-controversy]] (#3), [[sources/garrytan--naked-models]] (#4), [[sources/garrytan--skillify-manifesto]] (#5), [[sources/garrytan--meta-meta-prompting]] (#6), [[sources/garrytan--complexity-ratchet]] (#7), [[sources/garrytan--foxconn-factories]] (#8). The skill-pack primitive, JIT-software, tokenmaxxing, the resolver/latent-deterministic/diarization/ratchet patterns, the OpenClaw=Steinberger correction, and the gstack/gbrain star time-series.

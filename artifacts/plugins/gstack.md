@@ -17,6 +17,15 @@ components:
   hooks: TODO check .claude-plugin/ or setup script
   mcp-servers: none ships in-repo; integrates with gbrain MCP
 popularity-signals:
+  - signal: github-stars (VERIFIED via gh api repos/garrytan/gstack)
+    value: 105,761 measured (2026-06-01); essay claimed "about 105,000 in <3 months" — confirmed (repo created 2026-03-11; author rounded down). Companion "hundred most-starred OSS in GitHub history" ranking is plausible at this count but NOT independently verified.
+    as-of: 2026-06-01
+    source: "measured via gh api; claim from [[sources/garrytan--foxconn-factories#gstack-stars]]"
+    caveat: self-claim CONFIRMED (105,761 vs ~105,000 claimed). Earlier skepticism cited sibling gbrain at ~14K, but gbrain now measures 20,403 (2026-06-01) — stale comparison. Stars move; re-measure on a new as-of.
+  - signal: author-skillpack-count
+    value: "more than 350 skillpacks" (Garry's own usage)
+    as-of: 2026-06-01
+    source: "[[sources/garrytan--foxconn-factories#skillify-loop]]"
   - signal: hacker-news-front-page
     value: thread at item id 47418576
     as-of: 2026-05-21
@@ -71,7 +80,21 @@ popularity-signals:
 - **Per-skill `gbrain:` block** for skills that pull context from gbrain — `retro` declares `context_queries: [{id: prior-retros, kind: filesystem}]`. ([[sources/garrytan--gstack#retro]])
 - **Telemetry, learnings, timeline**: optional but built in. Every skill run logs to `~/.gstack/analytics/skill-usage.jsonl` if telemetry is on. Per-project learnings file at `~/.gstack/projects/{SLUG}/learnings.jsonl` is auto-loaded and grep-searched on every run.
 
-## Patterns demonstrated (proposed, pending pattern-page creation)
+## Patterns demonstrated
+
+- **[[patterns/quality-bar/skill-pack-bundle]]** (confirmed) — **gstack is the fully-worked example in the wiki.** All seven components of Garry's "skill pack" exist as real files: generated `SKILL.md`, thin code (`browse/`, `design/`, `bin/`), unit tests (`skill-validation.test.ts`), an LLM-as-judge eval (`skill-llm-eval.test.ts`), E2E integration (`skill-e2e-*.test.ts`), resolvers (`scripts/resolvers/*`), and **resolver evals** (`resolver-ask-user-format.test.ts`, `writing-style-resolver.test.ts`, `resolvers-gbrain-put-rewrite.test.ts`) — run under diff-based selection + a `gate`/`periodic` tier split. The author defines the primitive in [[sources/garrytan--foxconn-factories#skill-pack]]; the artifact realizes it ([[sources/garrytan--gstack#test]], [[sources/garrytan--gstack#CLAUDE.md]]). Note: the shipped `/skillify` command ([[sources/garrytan--gstack#skillify]]) is a *narrower* literal — it codifies a `/scrape` flow into `script.ts + script.test.ts + fixture` — while the essay's "skillify it" loop is the full 7-part superset.
+
+### AI Explainer series patterns (gstack as grounding artifact)
+
+gstack is a cited grounding example for these pattern pages (distilled from [[creators/garry-tan]]'s essay series):
+
+- **[[patterns/composition/resolver-routing-table]]** (confirmed) — `scripts/resolvers/` preamble compiler + the three resolver evals (`resolver-ask-user-format`, `writing-style-resolver`, `resolvers-gbrain-put-rewrite`); also the description-field auto-trigger ("the description *is* the resolver"). ([[sources/garrytan--gstack#test]])
+- **[[patterns/behavioral/latent-vs-deterministic-split]]** (confirmed) — the deterministic `browse/` Playwright CLI + 60 `bin/` CLIs vs. the latent markdown skills; `/scrape` (latent) codified into a "deterministic Playwright script." ([[sources/garrytan--gstack#BROWSER.md]])
+- **[[patterns/structural/thin-harness-fat-skills]]** (proposed) — markdown skills over deterministic CLIs, harness-agnostic across Claude Code/Codex/OpenClaw.
+- **[[patterns/behavioral/skill-as-method-call]]** (proposed) — `/qa`'s Quick/Standard/Exhaustive tier parameter; `/investigate` as a fixed procedure over varying targets. ([[sources/garrytan--gstack#qa]])
+- **[[patterns/quality-bar/complexity-ratchet]]** (proposed) — the Bun-TTY interactive-review floor tests + multi-tier harness + slop-scan (5.24 → cut 62%). ([[sources/garrytan--gstack#test]])
+
+### Earlier proposed patterns (pre-pattern-page)
 
 - **Persona-shaped command naming** — proposed pattern. Skills named for roles (CEO/Designer/QA Lead) instead of task categories (planning/design/testing). Need 2nd example to confirm.
 - **Philosophy injection via preamble** — ETHOS.md inserted into every workflow skill. Cultural priming, not technical. Need 2nd example to confirm.
@@ -88,6 +111,10 @@ popularity-signals:
 - [[sources/garrytan--gstack#plan-ceo-review]] — interactive flag, benefits-from, multi-mode skill
 - [[sources/garrytan--gstack#retro]] — gbrain: block in frontmatter
 - [[sources/garrytan--gstack#qa]] — multi-tier skill (Quick/Standard/Exhaustive), voice triggers
+- [[sources/garrytan--gstack#test]] / [[sources/garrytan--gstack#CLAUDE.md]] — the skill-pack test harness (validation + LLM eval + E2E + resolver evals; diff-based `gate`/`periodic` tiers)
+- [[sources/garrytan--foxconn-factories#skill-pack]] — author's definition of the "skill pack" primitive this artifact realizes
+- [[sources/garrytan--foxconn-factories#gstack-stars]] — the ~105K-star self-claim
+- [[sources/garrytan--foxconn-factories#ios-testing]] — hackathon-built iOS-test feature (simulator + real devices) landed on `main` in <8h
 
 ## What we'd steal
 

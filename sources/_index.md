@@ -29,7 +29,16 @@ Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` strippe
 
 External writing we cite. Always include retrieval date and a snapshot path (PDF / screenshot / archive.org URL).
 
-*(none yet)*
+**Garry Tan's "AI Explainer" series (8 essays, @garrytan, ~April–May 2026).** Retrieved 2026-06-01; each held verbatim at `sources/garrytan--<slug>/snapshot.md`. A longitudinal record of building `gstack`/`gbrain` (gstack stars climb 72K→75K→87K→93K→105K across the run, gbrain 14K→20K) and the source for the series' patterns. ⚠ Canonical URLs + exact dates are TODO (estimated from internal evidence).
+
+- [[sources/garrytan--thin-harness-fat-skills]] — **#1** *"Thin Harness, Fat Skills"* — the architecture overture: five primitives (skill files, thin harness, resolvers, latent-vs-deterministic, diarization) + the three-layer model. (~Apr 2026; cites the 2026-03-31 Claude Code npm leak.)
+- [[sources/garrytan--resolvers]] — **#2** *"Resolvers: The Routing Table for Intelligence"* — the resolver as the governance layer (trigger evals, `check-resolvable`, fractal resolvers). (gstack 72K stars.)
+- [[sources/garrytan--loc-controversy]] — **#3** *"On the LOC controversy"* — defends the 600K-LOC/60-day claim with deflation math + quality data (reverts, slop-scan, tests). (~2026-04-18, "day 108"; gstack 75K stars / 14,965 installs.)
+- [[sources/garrytan--naked-models]] — **#4** *"Naked Models Are Stupider"* — rebuttal to Kyle Kingsbury (Jepsen): the model is the engine, the harness is the car. (cites the 512K-line Claude Code leak.)
+- [[sources/garrytan--skillify-manifesto]] — **#5** *"How to really stop your agents from making the same mistakes"* — the 10-step skillify checklist; LangChain-vs-workflow critique; GBrain-vs-Hermes. The richest [[patterns/quality-bar/skill-pack-bundle]] articulation.
+- [[sources/garrytan--meta-meta-prompting]] — **#6** *"Meta-Meta-Prompting"* — compounding skills + diarization at scale (book-mirror, 100K-page brain). Credits Karpathy's LLM Wiki (this wiki's own pattern) as GBrain's inspiration. (gstack 87K stars.)
+- [[sources/garrytan--complexity-ratchet]] — **#7** *"The AI Agent Complexity Ratchet"* — 90% coverage as the AI-affordable threshold; everything-harnessable-is-testable. (2026-05-12; gstack 93K stars / 701K LOC.)
+- [[sources/garrytan--foxconn-factories]] — **#8** *"Stop building Foxconn factories for your agents"* — the skill-pack primitive, "just-in-time software," "tokenmaxxing," the verified ~105K-star figure, and the OpenClaw=Steinberger correction.
 
 ## Marketplace listings
 
