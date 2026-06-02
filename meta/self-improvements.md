@@ -42,6 +42,32 @@ REFLECT over the patterns not covered by the seed pass. Applied immediately (gro
 | 8 | [[patterns/composition/single-source-multi-surface-distribution]] — one definition, many runtime surfaces | Added an anti-rule: wiki pages are the single source; `DASHBOARD.html`, query deliverables, and any future `llms.txt` are *surfaces* rendered from them, never parallel copies that drift. | **applied** 2026-06-02 (`CLAUDE.md` anti-rules) |
 | 9 | [[patterns/structural/marketplace-as-multi-plugin]] — one manifest registers N à-la-carte units | No change: already embodied. `index.md` (+ per-domain `_index.md`) is exactly this registry — it lists every page as an independently-linkable unit. Recorded so we don't re-propose it. | **embodied** 2026-06-02 (`index.md`) |
 
+### [2026-06-02] Pass 3 — deep review of the Garry Tan corpus
+
+Mined the gstack/gbrain pages + all 8 essays (esp. #5 *Skillify Manifesto* and #6 *Meta-Meta-Prompting*, which credits Karpathy's LLM Wiki as gbrain's own origin). gbrain is our pattern realized with extras, so it's the richest mine. Small/safe items applied immediately; larger tooling items recorded as `proposed`.
+
+**Applied this pass:**
+
+| # | Learning (cited) | Wiki change | Status |
+|---|---|---|---|
+| 10 | [[patterns/composition/resolver-routing-table]] — "test the routing, not just the output" (gbrain ships `routing-eval.jsonl`) | Added a **Routing evals** table to `CLAUDE.md` (sample request → expected operation) so the resolver is spot-checkable, not just declared. | **applied** 2026-06-02 (`CLAUDE.md` §Routing) |
+| 11 | [[patterns/behavioral/diarization]] — gbrain's "entity propagation": after ingest, walk every entity mentioned and update its page | INGEST step 5 now **propagates to every entity the source touches**, not just the creator — the real source of cross-link density. | **applied** 2026-06-02 (`CLAUDE.md` INGEST 5) |
+| 12 | [[patterns/composition/resolver-routing-table]] — `check-resolvable` finds "dark" (unreachable) skills | LINT check #15: every routing request resolves to an operation, every schema is reachable from an operation, every page reachable from `index.md`. | **applied** 2026-06-02 (`CLAUDE.md` LINT #15) |
+| 13 | [[patterns/composition/resolver-routing-table]] — gbrain's DRY audit catches duplicate/overlapping skills | LINT check #16: flag near-duplicate pages competing for the same role (distinct from contradictions). | **applied** 2026-06-02 (`CLAUDE.md` LINT #16) |
+| 14 | [[patterns/quality-bar/complexity-ratchet]] — Garry's "search your history for where you said wtf" = the tests you're missing | LINT check #17: aggregate every `## Open questions` + `TODO` into one "what to chase next" backlog. | **applied** 2026-06-02 (`CLAUDE.md` LINT #17) |
+
+**Proposed (bigger — genuine "could add" items):**
+
+| # | Learning (cited) | Proposed change | Status |
+|---|---|---|---|
+| 15 | [[patterns/behavioral/diarization]] + [[artifacts/plugins/gbrain]] — brain-page schema: *compiled truth on top, append-only timeline below, raw sidecars* | Adopt for entity-ish pages (`creators/`, `concepts/`): a "current best understanding" block on top + a `## Timeline` of dated events below. Fits creator pages well (Garry's star counts/claims change over time). | proposed |
+| 16 | [[patterns/quality-bar/complexity-ratchet]] + [[artifacts/plugins/gbrain]] — "every page has a score"; 90% coverage as the AI-affordable bar | Add an optional `confidence:`/`coverage:` to page frontmatter and have LINT compute a wiki **health score** (link density, orphan count, required-section completeness). | proposed |
+| 17 | [[patterns/quality-bar/skill-pack-bundle]] — the 10-step skillify checklist; "a feature that doesn't pass all ten is not a skill" | A per-page-type **"definition of done"** checklist (the page analogue of the 10 steps). Place it *in the `_schemas/`* (fat skills), not `CLAUDE.md` (thin harness), per LINT #13. | proposed |
+| 18 | [[artifacts/plugins/gbrain]] — vector+graph retrieval (97.6% recall on LongMemEval); Karpathy's optional `qmd` search tool | A local **search tool** for the wiki under `sources/`-style tooling (grep-based now, `qmd`/embedding later) for when the index outgrows eyeballing. The `(det)` retrieval step made real. | proposed |
+| 19 | [[patterns/quality-bar/skill-pack-bundle]] + [[artifacts/plugins/gbrain]] — `gbrain doctor --remediate --target-score 90 --max-usd 5` + the `[AGENT]` cost banner | A LINT **doctor/autopilot** mode: auto-fix safe findings up to a target health score, surfacing any cost-bearing action via an `[AGENT]`-style operator banner before proceeding. | proposed |
+| 20 | [[artifacts/plugins/gbrain]] — cross-modal eval (multiple models score each other) caught book-mirror's factual errors | For high-stakes `analyses/` pages, run the draft through a second model as judge against a rubric before it ships. | proposed |
+| 21 | [[patterns/composition/resolver-routing-table]] + [[patterns/quality-bar/skill-pack-bundle]] — "skills that build skills" (skillify is a meta-skill) | A **"skillify-the-wiki" reflex**: when an ad-hoc research move repeats, codify it as a new schema/operation. Largely *extends REFLECT* — recorded so we treat process improvements, not just content, as reflectable. | proposed |
+
 ## Open meta-questions
 
 - ~~Should REFLECT run automatically every N ingests, or only on demand?~~ **Resolved 2026-06-02:** REFLECT applies grounded changes directly (no human gate); the lightweight INGEST step-9 nudge runs every ingest, and a deeper pass runs on demand / after lint.

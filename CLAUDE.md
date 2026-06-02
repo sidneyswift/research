@@ -41,6 +41,16 @@ A resolver table, the way `gstack`/`gbrain` ship a `RESOLVER.md` (see [[patterns
 
 Each operation is a **parameterized call** — same procedure, different argument → different result (per [[patterns/behavioral/skill-as-method-call]], applied to ourselves): `INGEST(<source>)` · `QUERY(<question>)` · `LINT(<scope?>)` · `REFLECT(<since?>)`. Likewise a `_schemas/` template is a parameterized page: same template, different artifact.
 
+**Routing evals** (per [[patterns/composition/resolver-routing-table]] — "test the routing, not just the output"). Spot-check that the table above still resolves correctly; if a row stops holding, the routing prose drifted:
+
+| Sample request | Expected |
+|---|---|
+| "here's a repo / link / essay to add" | INGEST |
+| "which plugins ship hooks?" / "compare X and Y" | QUERY |
+| "anything stale?" / "check the wiki" | LINT |
+| "a new pattern landed — improve the wiki" | REFLECT |
+| "pull the latest gstack" | INGEST (update re-ingest) |
+
 ### 1. INGEST — adding new knowledge
 
 Triggered when adding a new source (and the artifact / concept / pattern it yields). The full ritual — each step tagged **(det)** deterministic (same in → same out; a future-tooling candidate) or **(latent)** model judgment, per [[patterns/behavioral/latent-vs-deterministic-split]] applied to ourselves:
@@ -56,7 +66,7 @@ Triggered when adding a new source (and the artifact / concept / pattern it yiel
    - **Concept page** (an idea/technique worth tracking, common for essays & papers) → `concepts/` using `_schemas/concept.md`.
    Every non-trivial claim links to `[[sources/<creator>--<slug>#anchor]]`.
 4. **(latent) Extract patterns in the same session.** End each artifact/concept page with `## Patterns demonstrated`. Link to existing `patterns/...` pages where the source uses a known pattern. If you see a new pattern, create the pattern page now — but mark it `status: proposed` until ≥2 examples exist. Don't defer; deferred extraction never happens.
-5. **(latent) Update the creator page** with the new artifact/concept under `## Artifacts produced` (create the creator page if new).
+5. **(latent) Propagate to every entity the source touches** — not just the creator. Update the creator page (`## Artifacts produced`); then walk every *other* creator, concept, artifact, or pattern the source mentions that already has a page, and add the new cross-reference there too (gbrain's "entity propagation," per [[patterns/behavioral/diarization]] applied to ourselves). This is where the cross-link density comes from.
 6. **(det) Update domain `_index.md`** to promote the new page out of the candidate list.
 7. **(det) Update `index.md`** (root) — add a row in the appropriate section.
 8. **(det) Append to `log.md`** — `## [YYYY-MM-DD] ingest | <subject>` with a 1-line note on what was added, including a quality-ratchet tally (see below).
@@ -104,6 +114,9 @@ What to check, in order:
 12. **Quality ratchet held?** Per [[patterns/quality-bar/complexity-ratchet]] — scan recent ingest log entries for their `ratchet:` tally. Flag any ingest that added a page but no cross-links, or that introduced an orphan without a logged reason. Quality should only climb.
 13. **Harness bloat.** Per [[patterns/structural/thin-harness-fat-skills]] — `CLAUDE.md` is the *thin harness*; the `_schemas/` are the *fat skills*. Flag detailed how-to that has crept into `CLAUDE.md` (long per-template instructions, page-format minutiae) and belongs in a schema/template instead. Keep the harness about *operations and routing*.
 14. **Stray embedded clones.** `git ls-files -s sources/ | grep ^160000` — any gitlink is a repo clone that was committed by accident (it should be a git-ignored local clone listed in `repos.manifest.tsv`). Untrack it (`git rm --cached`), add it to `.gitignore`, and either finish ingesting it (add a citation page + manifest row) or note it as pending.
+15. **Resolvable?** Per [[patterns/composition/resolver-routing-table]] (`check-resolvable`) — every request shape in the Routing tables maps to a real operation, every `_schemas/` template is reachable from an operation, and every page is reachable from `index.md`. A capability the wiki can't route to is "dark" — worse than absent, because you think it's handled.
+16. **DRY / overlap audit.** Per [[patterns/composition/resolver-routing-table]] — flag two pages competing for the same role (near-duplicate patterns, concepts that should merge, artifacts re-describing the same thing). Distinct from contradictions (#7): here the claims agree, the *pages* are redundant.
+17. **Backlog the frustrations.** Aggregate every `## Open questions` and inline `TODO` across the wiki into one list — the wiki's own "what to chase next" (the cheap version of Garry's "search history for where you said wtf"; complements [[patterns/quality-bar/complexity-ratchet]]'s forward-only discipline).
 
 Lint produces a report — list each finding with file path and a one-line fix suggestion. Don't auto-fix without confirmation; some "stale" signals are intentional.
 

@@ -154,3 +154,11 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 - **Fixed a contradiction (LINT #7):** the ledger's status legend still called REFLECT "human-gated like LINT" — stale since the 2026-06-02 auto-apply policy. Reworded; added an `embodied` status.
 - Confirmed the original 6 (seed pass) were already `applied` + pushed in `6d9be73`; no rework.
 - Touched: `CLAUDE.md`, `meta/self-improvements.md`, this log. ratchet: links +4 · orphans +0 · patterns +0.
+
+## [2026-06-02] reflect | pass 3 — deep review of the full Garry Tan corpus
+
+- At Sidney's request, reviewed all the Garry Tan material (gstack + gbrain pages + all 8 essays, esp. #5 Skillify Manifesto and #6 Meta-Meta-Prompting — which credits Karpathy's LLM Wiki as gbrain's own origin) and added every candidate wiki-project improvement to `meta/self-improvements.md` (entries #10–#21).
+- **Applied 5 small/safe items** (REFLECT ships): #10 routing-eval table (`CLAUDE.md` §Routing); #11 entity propagation in INGEST step 5; #12 LINT #15 check-resolvable/reachability; #13 LINT #16 DRY/overlap audit; #14 LINT #17 frustration/TODO backlog.
+- **Recorded 7 bigger items as `proposed`:** #15 compiled-truth+timeline page schema (creator/concept), #16 per-page + wiki health score, #17 page "definition of done" checklist (belongs in `_schemas/`, not the harness), #18 local search tool (grep→qmd; gbrain retrieval), #19 LINT doctor/autopilot with `[AGENT]` cost guard, #20 multi-model cross-modal eval for analyses, #21 "skillify-the-wiki" process reflex (extends REFLECT).
+- Each entry cites an in-wiki pattern or artifact (ledger anti-rule honored).
+- Touched: `CLAUDE.md`, `meta/self-improvements.md`, this log. ratchet: links +12 · orphans +0 · patterns +0.
