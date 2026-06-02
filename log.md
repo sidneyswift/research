@@ -7,7 +7,7 @@ Append-only chronological record of operations on this wiki. Format per [Karpath
 - bullet of what was done, what was decided, what to note
 ```
 
-Operations: `ingest`, `query`, `lint`, `scaffold` (one-time setup), `decision` (design choices that shaped the wiki). Append new entries to the bottom.
+Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to itself), `scaffold` (one-time setup), `decision` (design choices that shaped the wiki). Append new entries to the bottom.
 
 ---
 
@@ -106,3 +106,28 @@ Operations: `ingest`, `query`, `lint`, `scaffold` (one-time setup), `decision` (
 
 - Ran `gh api repos/garrytan/gstack` + `…/gbrain`. **GStack = 105,761 stars** (created 2026-03-11) — Garry's essay self-claim of "~105,000 in under three months" **VERIFIED** (he rounded *down*; timeframe holds). The companion "hundred most-starred OSS in GitHub history" ranking is plausible but NOT independently checked (no leaderboard). Updated [[sources/garrytan--gstack]], [[artifacts/plugins/gstack]], [[sources/garrytan--foxconn-factories]] from "unverified self-claim" → measured fact (as-of 2026-06-01); essay's wording preserved alongside the measurement.
 - **Stale-signal finding (for LINT):** sibling **gbrain now = 20,403 stars**, not the ~14K the wiki recorded at the 2026-05-21 snapshot — and that stale ~14K was the basis for doubting the gstack claim, so the doubt is retired. [[artifacts/plugins/gbrain]] still shows ~14K; flag to refresh.
+
+## [2026-06-01] decision | broaden scope to all AI/agents + Karpathy re-alignment
+
+- **Scope broadened** from "Anthropic ecosystem only" to **all things AI/agents** — skills, plugins, MCP servers, frontier projects, and the essays/papers/threads about the field. Reason: the Garry Tan essay ingests already spilled past the Anthropic boundary, so the schema was lying about what the wiki is. Updated `CLAUDE.md` (title + purpose + scope), `README.md` (title + scope paragraph, old scope preserved as history), `index.md`, and `artifacts/_index.md`.
+- **Made INGEST source-type-aware.** The ritual was repo-only (`git clone`); added explicit branches for **article/essay/thread**, **paper**, and **docs-page** (snapshot to markdown, version-stamp by publish date instead of commit SHA) — matching what the `garrytan--*` essays already did in practice.
+- **New layer — `concepts/`.** Essays/papers yield *ideas*, and a pattern needs ≥2 artifacts, so ideas had no home. Added `concepts/` + `_schemas/concept.md` + `concepts/_index.md`. Defined the artifact-vs-concept-vs-pattern distinction in `CLAUDE.md`.
+- **New artifact sub-type — `artifacts/projects/`.** For frontier systems/products bigger than one skill/plugin/MCP. Added stub `_index.md`.
+- **Karpathy gaps closed:** LINT now checks (9) concepts mentioned but page-less, (10) web-fillable data gaps, (11) next questions/sources to chase; QUERY notes answer-format options (table/Marp/chart/canvas) file back to the wiki; added the `grep "^## \[" log.md` tip; added `paper` to `_schemas/source.md` `type:` enum.
+- Touched ~9 pages: `CLAUDE.md`, `README.md`, `index.md`, `artifacts/_index.md`, `_schemas/source.md`, `_schemas/concept.md` (new), `concepts/_index.md` (new), `artifacts/projects/_index.md` (new), this log.
+
+## [2026-06-01] decision | exhaustive-steal + self-improving REFLECT operation
+
+- **"What we'd steal" is now an exhaustive ledger, not a curated top-3.** Risk it addressed: if the LLM only mines a thin steal list, attention narrows and ideas get silently discarded over time. New rule: capture *everything* portable, ★-mark the best; idea-mining queries must read whole pages + `## Patterns demonstrated`, not just steal sections. Updated the anti-rules in `CLAUDE.md` and the section instructions in all four schemas (`skill`, `plugin`, `mcp-server`, `concept`).
+- **Added a 4th operation: REFLECT** — turn the wiki's own learnings on its machinery (the wiki is itself an LLM agent/skill system). Added the operation to `CLAUDE.md`, a quick-pass trigger as INGEST step 9, and `reflect` to the log op vocabulary.
+- **Created `meta/self-improvements.md`** — the REFLECT ledger; every entry must cite a `[[patterns/...]]` page. Seeded with 6 grounded candidates reflecting the AI-Explainer patterns back onto the wiki (resolver-routing-table → routing table in CLAUDE.md; complexity-ratchet → forward-only ingests; diarization → "distillation not summary"; latent-vs-deterministic → annotate op steps; thin-harness-fat-skills → keep CLAUDE.md thin; skill-pack-bundle → pattern pages need a detection recipe). All `proposed`, human-gated.
+- **Open / deferred:** point #2 (clone-with-`.git` vs. immutable snapshot so we can `git pull` upstream updates) — left for a decision because it changes how `sources/` is stored/tracked. Not yet implemented.
+
+## [2026-06-01] decision | source storage model — "Option B" (live local clones, git-ignored)
+
+- **Decided (Sidney):** repos are kept as **live local clones with `.git` intact** so we can `git pull`, but **git-ignored from the wiki** (no longer committed) — only their `.md` citation pages are tracked. Captured article/paper/docs snapshots **stay committed** (immutable evidence, nothing to clone). Replaces the old "clone then `rm -rf .git`, commit the snapshot" model.
+- **Why:** (a) enables tracking upstream updates over time; (b) keeps the wiki lean now that scope = all of AI/agents (vendoring full frontier repos would balloon git history fast). The old model had already committed ~125 MB.
+- **Migration done:** `git rm -r --cached` the 4 repo clones (`anthropic--skills`, `anthropic--financial-services`, `garrytan--gstack`, `garrytan--gbrain`) — 3,144 files untracked, still present on disk. Article snapshots (`garrytan--*` essays, `anthropic--plugins-reference`) + all citation pages remain tracked.
+- **New tooling:** `sources/repos.manifest.tsv` (slug + url + pinned commit, single source of truth) and `sources/clone-all.sh` (rebuilds clones on fresh checkout, pinned to the cited commit; `--pull` fetches without moving the pin). Rewrote `.gitignore` to ignore the 4 clone dirs (each future repo ingest adds its dir + a manifest row).
+- **Citation safety:** because we cite specific line ranges, updating a repo is a **deliberate re-ingest** (pull → diff old→new SHA → fix affected anchors → bump manifest + citation page → log), never a silent sync. Documented in `CLAUDE.md` INGEST.
+- Updated `CLAUDE.md` (layer 1, INGEST repo step + update flow, naming, anti-rule), `README.md` (working agreement #4 + fresh-checkout note).

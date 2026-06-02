@@ -71,6 +71,9 @@ Specific, plugin-level. The coherence of the bundle, the workflow chained across
 
 ## What we'd steal
 
-Bullets, concrete. Plugin-level lessons (composition, hooks, MCP integration) usually transfer better than skill-level lessons.
+**Exhaustive ledger, not a curated top-3.** List *every* portable lesson — even minor ones; a thin list narrows our attention later. ★-mark the highest-value bullets. Plugin-level lessons (composition, hooks, MCP integration) usually transfer better than skill-level lessons, so capture them all.
+
+- ★ *highest-value, clearly portable*
+- *minor-but-worth-noting*
 
 ## Open questions / what's unclear

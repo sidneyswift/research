@@ -69,6 +69,9 @@ Often the difference between a great MCP server and a mediocre one is tool *desi
 
 ## What we'd steal
 
-Bullets — concrete, transferable.
+**Exhaustive ledger, not a curated top-3.** List *every* portable, concrete lesson — even minor ones; a thin list narrows our attention later. ★-mark the highest-value bullets.
+
+- ★ *highest-value, clearly portable*
+- *minor-but-worth-noting*
 
 ## Open questions / what's unclear

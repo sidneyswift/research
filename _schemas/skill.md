@@ -62,7 +62,10 @@ Bullet list of every non-obvious claim above with its `[[sources/...#anchor]]`.
 
 ## What we'd steal
 
-Bulleted, concrete. Each bullet should be something we could actually port to a skill we build. "Use a top-of-file decision table" not "be organized."
+**Exhaustive ledger, not a curated top-3.** List *every* technique, structure, or choice we could plausibly port — even minor ones. This is the page's idea inventory; a thin list here silently narrows our attention later. ★-mark the highest-value bullets so we keep a priority signal without discarding breadth. Each bullet must be concrete and portable ("use a top-of-file decision table," not "be organized").
+
+- ★ *highest-value, clearly portable*
+- *minor-but-worth-noting*
 
 ## Open questions / what's unclear
 

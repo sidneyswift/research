@@ -1,6 +1,6 @@
 ---
 domain: sources
-type: # repo | article | tweet | reddit-thread | hn-thread | marketplace-listing | docs-page | video | other
+type: # repo | article | paper | tweet | reddit-thread | hn-thread | marketplace-listing | docs-page | video | other
 url: # canonical URL
 retrieved: # YYYY-MM-DD — when we snapshotted it
 snapshot-location: # path inside this wiki (e.g., sources/anthropic--skills/) if cloned, else "link-only"

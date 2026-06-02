@@ -13,8 +13,11 @@ For an explanation of what this wiki is and how it operates, see [CLAUDE.md](CLA
 | [Artifacts — Plugins](#artifacts--plugins) | Collections (skills + commands + agents + hooks + MCP) |
 | [Artifacts — Skills](#artifacts--skills) | Individual skills |
 | [Artifacts — MCP Servers](#artifacts--mcp-servers) | MCP server projects |
+| [Artifacts — Projects](#artifacts--projects) | Frontier projects/systems not reducible to one skill/plugin/MCP |
+| [Concepts](#concepts) | Ideas & techniques (often from essays & papers) |
 | [Patterns](#patterns) | Recurring techniques across artifacts (the research output) |
 | [Analyses](#analyses) | Synthesis writeups |
+| [Meta](#meta) | The wiki applied to itself (REFLECT ledger) |
 
 ---
 
@@ -70,6 +73,22 @@ Candidate queue: see [artifacts/skills/_index.md](artifacts/skills/_index.md).
 
 Candidate queue: see [artifacts/mcp-servers/_index.md](artifacts/mcp-servers/_index.md).
 
+## Artifacts — Projects
+
+Frontier projects/systems/products that aren't reducible to a single skill, plugin, or MCP server.
+
+*(none ingested yet)*
+
+Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
+
+## Concepts
+
+Ideas and techniques worth their own page — especially from essays, papers, and threads. A concept graduates to a [pattern](#patterns) once observed across ≥2 artifacts.
+
+*(none paged yet; candidates from the Garry Tan essay series are currently tracked as proposed patterns below)*
+
+Candidate queue: see [concepts/_index.md](concepts/_index.md).
+
 ## Patterns
 
 The actual research output. Confirmed patterns (≥2 artifact examples + counter-example) listed here. Proposed patterns are tracked on the relevant artifact pages and promoted when evidence accumulates.
@@ -116,3 +135,9 @@ See [patterns/_index.md](patterns/_index.md) for the per-category breakdown.
 ## Analyses
 
 *(none yet — see [analyses/_index.md](analyses/_index.md) for the rule of "no synthesis until ≥5 artifacts of relevant type")*
+
+## Meta
+
+The wiki applied to itself — improvements to our own machinery, each traced to a pattern observed in the wiki (the [REFLECT](CLAUDE.md) operation).
+
+- [[meta/self-improvements]] — self-improvement ledger; **6 proposed** candidates from the AI-Explainer patterns (seeded 2026-06-01).

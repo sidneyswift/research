@@ -1,8 +1,20 @@
-# Source clones live under sources/<creator>--<repo>/ as snapshotted files
-# (we strip their .git/ after cloning). Keep them tracked in our wiki repo —
-# that's the whole point. But guard against accidents:
+# --- Source storage model (decided 2026-06-01, "Option B") ---
+# Source REPOS are kept as live local clones (with their .git, so we can `git pull`)
+# but are NOT committed into the wiki — they're large and reconstructable. The wiki
+# tracks only their .md citation pages; `sources/clone-all.sh` rebuilds the clones
+# from `sources/repos.manifest.tsv`, pinned to the cited commit.
+#
+# Captured ARTICLE / PAPER / DOCS snapshots (a single snapshot.md + assets) DO stay
+# committed — they're immutable evidence with no upstream to clone.
+#
+# When you ingest a new repo: add its dir below AND a row to repos.manifest.tsv.
 
-# Never commit nested .git directories (shouldn't exist after strip, but belt + suspenders)
+sources/anthropic--skills/
+sources/anthropic--financial-services/
+sources/garrytan--gstack/
+sources/garrytan--gbrain/
+
+# Never commit nested .git directories from any clone that isn't listed above.
 sources/**/.git/
 
 # OS and editor noise
