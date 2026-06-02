@@ -39,6 +39,8 @@ A resolver table, the way `gstack`/`gbrain` ship a `RESOLVER.md` (see [[patterns
 | Paper | `paper` | committed `sources/<slug>/` (PDF/text) | `concept` |
 | Docs-page | `docs-page` | committed `sources/<slug>/snapshot.md` | artifact or `concept` |
 
+Each operation is a **parameterized call** — same procedure, different argument → different result (per [[patterns/behavioral/skill-as-method-call]], applied to ourselves): `INGEST(<source>)` · `QUERY(<question>)` · `LINT(<scope?>)` · `REFLECT(<since?>)`. Likewise a `_schemas/` template is a parameterized page: same template, different artifact.
+
 ### 1. INGEST — adding new knowledge
 
 Triggered when adding a new source (and the artifact / concept / pattern it yields). The full ritual — each step tagged **(det)** deterministic (same in → same out; a future-tooling candidate) or **(latent)** model judgment, per [[patterns/behavioral/latent-vs-deterministic-split]] applied to ourselves:
@@ -126,6 +128,7 @@ The ledger at `meta/self-improvements.md` is the durable record so we don't re-p
 - **Never** let `## What we'd steal` become a lossy filter. Capture *everything* portable, even minor choices — ★-mark the best to keep a priority signal, but don't pre-curate down to a top-3. A thin steal list silently narrows our attention over time and discards ideas we can't get back. When *mining* the wiki for ideas, read whole pages + `## Patterns demonstrated`, never just the steal sections.
 - **Never** hand-edit source material in `sources/`. Repo clones change *only* via `git pull` as a deliberate re-ingest (bump the manifest + recheck citations); captured article/paper snapshots never change at all. It's evidence, not a draft.
 - **Never** invent wikilink anchors. Source pages have an `## Anchor map` section; citations must use anchors registered there.
+- **Never** maintain the same fact in two places. Wiki pages are the single source; generated outputs — `DASHBOARD.html`, query deliverables (table / Marp / chart / canvas), any future `llms.txt` — are *surfaces* rendered from the pages, never parallel copies that can drift (per [[patterns/composition/single-source-multi-surface-distribution]], applied to ourselves).
 
 ## Layout
 

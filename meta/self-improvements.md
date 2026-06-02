@@ -1,7 +1,7 @@
 ---
 domain: meta
 type: ledger
-last-reviewed: 2026-06-01
+last-reviewed: 2026-06-02
 ---
 
 # Self-Improvements Ledger
@@ -12,8 +12,9 @@ The output of the **REFLECT** operation (see [CLAUDE.md](../CLAUDE.md)). This wi
 
 ## Status legend
 
-- `proposed` — candidate, not yet applied; needs human confirmation (REFLECT is human-gated like LINT).
+- `proposed` — recorded but not yet applied. Rare and transient: REFLECT normally applies grounded changes immediately (no human gate), so this status mostly appears mid-session.
 - `applied` — change is live; links to where + the `log.md` entry.
+- `embodied` — the pattern is already satisfied by existing structure; no change needed (still recorded so we don't re-propose it).
 - `rejected` — considered and declined; keep the reasoning so we don't relitigate.
 
 ## Ledger
@@ -30,6 +31,16 @@ A retroactive REFLECT over the patterns extracted from Garry Tan's essay series.
 | 4 | [[patterns/behavioral/latent-vs-deterministic-split]] — every step is model-judgment (latent) or same-in/same-out (deterministic) | Tagged each INGEST step **(det)** or **(latent)** with a legend; det steps (clone, index row, log) are flagged as future-tooling candidates. | **applied** 2026-06-02 (`CLAUDE.md` INGEST) |
 | 5 | [[patterns/structural/thin-harness-fat-skills]] — push intelligence up into markdown, execution down into code, keep the harness thin | Added LINT check #13 (**harness bloat**): flag detailed how-to that crept into `CLAUDE.md` and belongs in a `_schemas/` template. | **applied** 2026-06-02 (`CLAUDE.md` LINT #13) |
 | 6 | [[patterns/quality-bar/skill-pack-bundle]] — a skill isn't done until it ships with tests/evals | Added a `## Detection recipe` section to `_schemas/pattern.md` (look-for / confirm-with / rule-out); the ≥2 examples are the positive fixtures, the counter-example the negative test. | **applied** 2026-06-02 (`_schemas/pattern.md`) |
+
+### [2026-06-02] Pass 2 — the remaining confirmed/with-page patterns
+
+REFLECT over the patterns not covered by the seed pass. Applied immediately (grounded → ships).
+
+| # | Learning (cited) | Wiki change | Status |
+|---|---|---|---|
+| 7 | [[patterns/behavioral/skill-as-method-call]] — a skill file is a parameterized procedure; same file + different args → different capability | Documented each operation as a **parameterized call** in `CLAUDE.md` Routing (`INGEST(<source>)`, `QUERY(<question>)`, `LINT(<scope?>)`, `REFLECT(<since?>)`); noted that a `_schemas/` template is likewise a parameterized page. | **applied** 2026-06-02 (`CLAUDE.md` §Routing) |
+| 8 | [[patterns/composition/single-source-multi-surface-distribution]] — one definition, many runtime surfaces | Added an anti-rule: wiki pages are the single source; `DASHBOARD.html`, query deliverables, and any future `llms.txt` are *surfaces* rendered from them, never parallel copies that drift. | **applied** 2026-06-02 (`CLAUDE.md` anti-rules) |
+| 9 | [[patterns/structural/marketplace-as-multi-plugin]] — one manifest registers N à-la-carte units | No change: already embodied. `index.md` (+ per-domain `_index.md`) is exactly this registry — it lists every page as an independently-linkable unit. Recorded so we don't re-propose it. | **embodied** 2026-06-02 (`index.md`) |
 
 ## Open meta-questions
 

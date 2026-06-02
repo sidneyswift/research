@@ -144,3 +144,13 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
   6. `skill-pack-bundle` → `## Detection recipe` section added to `_schemas/pattern.md`.
 - Marked all 6 ledger entries `applied`; resolved the open "auto vs on-demand" meta-question.
 - Touched: `CLAUDE.md`, `_schemas/{skill,plugin,mcp-server,concept,pattern}.md`, `meta/self-improvements.md`, this log. ratchet: links +7 · orphans +0 · patterns +0 (self-application, no new artifacts).
+
+## [2026-06-02] reflect | pass 2 — remaining patterns + fix stale legend
+
+- Second REFLECT pass over the patterns the seed pass didn't cover:
+  7. `skill-as-method-call` → documented operations as **parameterized calls** in `CLAUDE.md` Routing (`INGEST(<source>)`, `QUERY(<question>)`, …); templates noted as parameterized pages.
+  8. `single-source-multi-surface-distribution` → anti-rule: pages are the single source, `DASHBOARD.html`/query deliverables/`llms.txt` are generated *surfaces*, never parallel copies.
+  9. `marketplace-as-multi-plugin` → **embodied** already by `index.md`/`_index.md` (the registry of à-la-carte pages); recorded, no change.
+- **Fixed a contradiction (LINT #7):** the ledger's status legend still called REFLECT "human-gated like LINT" — stale since the 2026-06-02 auto-apply policy. Reworded; added an `embodied` status.
+- Confirmed the original 6 (seed pass) were already `applied` + pushed in `6d9be73`; no rework.
+- Touched: `CLAUDE.md`, `meta/self-improvements.md`, this log. ratchet: links +4 · orphans +0 · patterns +0.
