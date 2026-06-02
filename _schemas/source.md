@@ -12,6 +12,8 @@ last-reviewed: # YYYY-MM-DD
 
 > **One-line description** of what this source is and why we cite it.
 
+*Done when it passes the [page checklist](_definition-of-done.md).*
+
 ## Snapshot details
 
 - **Retrieved**: YYYY-MM-DD

@@ -19,7 +19,7 @@ popularity-signals:
 
 > **One-line:** what this skill does in plain English.
 
-*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the skill, then write distilled judgment — not a transcription of its README.*
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the skill, then write distilled judgment — not a transcription of its README. Done when it passes the [page checklist](_definition-of-done.md).*
 
 ## Attributes
 

@@ -26,7 +26,7 @@ popularity-signals:
 
 > **One-line:** what this plugin gives a Claude Code installation in plain English.
 
-*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the plugin, then write distilled judgment — not a transcription of its README.*
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the plugin, then write distilled judgment — not a transcription of its README. Done when it passes the [page checklist](_definition-of-done.md).*
 
 ## Attributes
 

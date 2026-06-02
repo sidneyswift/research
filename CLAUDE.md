@@ -134,6 +134,8 @@ Triggered after an ingest (quick pass, INGEST step 9), after a lint, or on deman
 
 The ledger at `meta/self-improvements.md` is the durable record so we don't re-propose the same thing and can see how the wiki's own design traces back to the research.
 
+**Skillify a repeated move.** REFLECT's usual trigger is "a new pattern landed." Its sibling trigger is *repetition* (Garry Tan's "skillify it"): the third time you do the same ad-hoc move — a recurring query shape, a manual cleanup, a copy-pasted analysis — **codify it** as a reusable artifact (a new `_schemas/` template, an operation, a Routing row, or a `(det)` script), give it a [definition of done](_schemas/_definition-of-done.md), and register it in Routing. Per [[patterns/quality-bar/skill-pack-bundle]] + [[patterns/composition/resolver-routing-table]] applied to ourselves: the move becomes permanent infrastructure instead of being re-derived every session. (`_schemas/_definition-of-done.md` is itself the first skillify output.)
+
 ## Anti-rules (cut across all operations)
 
 - **Never** write a pattern or concept page from generic knowledge. Pages must be grounded in observed sources *in this wiki* with citations.

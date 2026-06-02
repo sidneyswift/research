@@ -17,7 +17,7 @@ popularity-signals:
 
 > **One-line:** the idea in plain English. If a teammate reads only this, they get the gist.
 
-*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the idea across sources, then write distilled judgment — not a summary of any single source.*
+*This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): read everything about the idea across sources, then write distilled judgment — not a summary of any single source. Done when it passes the [page checklist](_definition-of-done.md).*
 
 ## What it is
 

@@ -162,3 +162,11 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 - **Recorded 7 bigger items as `proposed`:** #15 compiled-truth+timeline page schema (creator/concept), #16 per-page + wiki health score, #17 page "definition of done" checklist (belongs in `_schemas/`, not the harness), #18 local search tool (grep→qmd; gbrain retrieval), #19 LINT doctor/autopilot with `[AGENT]` cost guard, #20 multi-model cross-modal eval for analyses, #21 "skillify-the-wiki" process reflex (extends REFLECT).
 - Each entry cites an in-wiki pattern or artifact (ledger anti-rule honored).
 - Touched: `CLAUDE.md`, `meta/self-improvements.md`, this log. ratchet: links +12 · orphans +0 · patterns +0.
+
+## [2026-06-02] reflect | skillify — apply the two remaining gaps (#17, #21)
+
+- Mapped skillify onto the wiki: most of it was already built (REFLECT = "skills that build skills"; routing evals; LINT #15 check-resolvable; #16 DRY audit). Two gaps remained — closed both:
+  - **#17 definition of done.** Created `_schemas/_definition-of-done.md` — an underscore-prefixed shared-rules file (gbrain's `_brain-filing-rules.md` convention) with per-page-type checklists (source/artifact/concept/pattern), the page analogue of the 10-step skillify list. Linked from all six schema headers (DRY — one gate, not copied). Grounds: [[patterns/quality-bar/skill-pack-bundle]].
+  - **#21 skillify the verb.** Named **skillify** as a reflex in the REFLECT operation: a *repetition* trigger (3rd time you do an ad-hoc move → codify it as a schema/operation/Routing row/`(det)` script with a definition of done). Grounds: [[patterns/quality-bar/skill-pack-bundle]] + [[patterns/composition/resolver-routing-table]].
+- Both ledger rows flipped proposed → applied. Remaining proposed: #15 timeline schema, #16 health score, #18 search tool, #19 doctor autopilot, #20 cross-modal eval.
+- Touched: `_schemas/_definition-of-done.md` (new), `_schemas/{source,skill,plugin,mcp-server,concept,pattern}.md`, `CLAUDE.md`, `meta/self-improvements.md`, this log. ratchet: links +9 · orphans +0 · patterns +0.

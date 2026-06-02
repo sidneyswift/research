@@ -12,6 +12,8 @@ example-count: # integer — must be ≥2 to be `confirmed`, else `proposed`
 
 > **Short definition** (≤2 sentences). If a teammate reads only this, they should understand the pattern well enough to spot it in a new artifact.
 
+*Done when it passes the [page checklist](_definition-of-done.md).*
+
 ## Longer definition
 
 3–6 sentences. The shape of the pattern, what it operates on, what it produces, and why a creator would reach for it.
