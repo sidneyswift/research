@@ -45,6 +45,14 @@ In `financial-services` the catalog is large and *typed by directory*: 7 vertica
 
 Discovery and trust both favor "one URL, many parts." A user adds a single marketplace they trust (`anthropics/financial-services`) and then composes their own install from its catalog, rather than hunting N repos of unknown provenance. For the author, the monorepo is where shared discipline lives — the FSI repo's whole single-source-of-truth + drift-check machinery only works *because* the verticals and the agents that vendor their skills sit in one tree ([[sources/anthropic--financial-services#scripts-sync]]). The manifest is also tiny and declarative: adding a plugin is one array entry pointing at a directory, so the catalog scales from 3 to 20 with no new mechanism.
 
+## Detection recipe
+
+A falsifiable test for spotting the pattern (`## Examples` are the positive fixtures; the single-plugin-many-skills case is the negative test):
+
+- **Look for**: a single repo with `.claude-plugin/marketplace.json` declaring a `plugins[]` array of N child plugins, each pointing at a subdirectory with its own `plugin.json`; install is two-step ("add the marketplace once, then `install <plugin>@<marketplace>`").
+- **Confirm with**: the child plugins are **independently installable** (a user can take one and skip another) yet share repo-level tooling and release cadence; directory-typing (vertical / agent / partner) is the scaling tell.
+- **Rule out**: one cohesive product whose parts are never installed separately — that's *one plugin with many skills inside* (gstack, gbrain), not this pattern; and unrelated tools grouped only to inflate a catalog. The fork: **interdependent parts → one plugin; independent parts → marketplace-as-multi-plugin.**
+
 ## Examples in this wiki
 
 - [[artifacts/plugins/anthropic-financial-services-marketplace]] — 20 plugins (7 vertical + 10 agent + 2 partner + 1 installer) registered from one `marketplace.json`; installed à la carte by `<plugin>@claude-for-financial-services`. — citation: [[sources/anthropic--financial-services#marketplace.json]]

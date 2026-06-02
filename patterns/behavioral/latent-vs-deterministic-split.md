@@ -49,6 +49,14 @@ It works because it routes each task to the substrate that has the right *failur
 
 The deeper reason is the **compounding loop**: because the latent model writes the deterministic constraint, the system's own intelligence is what removes its own unreliability over time. Each codified tool is a permanent upgrade — the latent steps improve for free when the next model ships, while the deterministic steps "stay perfectly reliable" ([[sources/garrytan--thin-harness-fat-skills#permanent-upgrades]]). You get more capable judgment *and* unchanging exactness from the same system, which is impossible if everything lives on one side.
 
+## Detection recipe
+
+A falsifiable test for spotting the split in a new artifact (`## Examples` are the positive fixtures; the failure anecdotes below are the negative test):
+
+- **Look for**: an explicit separation of judgment steps from same-in/same-out steps — markdown/prose skills calling *down* into compiled scripts or CLIs; docs/comments that label a step "deterministic" or "zero LLM calls"; or the loop where the model *writes* a script and is then *forced to run it* instead of reasoning freehand.
+- **Confirm with**: exact/combinatorial/I-O work (arithmetic, dates, queries, sorting, optimization) lives in code that can be *asserted on*, while ambiguity/synthesis lives with the model; bonus signal if the deterministic tool was authored by the latent side and now constrains it.
+- **Rule out**: everything-in-prose (no deterministic floor — the model improvises exact work) **and** everything-hardcoded (genuine judgment frozen into brittle rules — the inverse error). The signature this pattern targets is the *wrong-side* bug (timezone math done in-head); if nothing routes exact work to code, the discipline isn't present.
+
 ## Examples in this wiki
 
 - [[artifacts/plugins/gstack]] — the **between-files** demonstration. The `/scrape` (latent, exploratory page-drive) → `/skillify` → `script.ts` (deterministic Playwright) codification is the latent-builds-deterministic loop made literal, with the codified flow then unit-tested via `script.test.ts` against a fixture; under all the markdown skills, `bin/` holds the deterministic CLI floor (~62 entries) that the latent skills call down into, and `ARCHITECTURE.md`'s "Deterministic BLOCK" canary check is the assert-on enforcement side. — citation: [[sources/garrytan--gstack#BROWSER.md]], [[sources/garrytan--gstack#ARCHITECTURE.md]], [[sources/garrytan--skillify-manifesto#latent-builds-deterministic]]

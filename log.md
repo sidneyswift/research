@@ -181,3 +181,20 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 - Wired tooling into `CLAUDE.md` (LINT → run doctor first; new `## Tooling` section; layout), `README.md`, `analyses/_index.md`.
 - **Open backlog (doctor-surfaced):** 9 pattern pages need a `## Detection recipe` to reach the 90 health target. Not done here (each is careful per-pattern content work) — next focused pass.
 - Touched ~14 files. ratchet: links +10 · orphans +0 · patterns +0.
+
+## [2026-06-02] lint | backfill detection recipes → wiki health 100/100
+
+- Closed the doctor's only finding: added a grounded `## Detection recipe` (look-for / confirm-with / rule-out) to all **9** original pattern pages that predated the requirement — `diarization`, `latent-vs-deterministic-split`, `skill-as-method-call`, `resolver-routing-table`, `single-source-multi-surface-distribution`, `complexity-ratchet`, `skill-pack-bundle`, `marketplace-as-multi-plugin`, `thin-harness-fat-skills`. Each recipe's foils are the page's own counter-examples (the negative test).
+- Fixed 2 `wiki-doctor.py` parser bugs surfaced by its own first run: Obsidian `[[target|alias]]` links, and `[[...]]` examples inside code spans/fences (false-positive broken links).
+- **`wiki-doctor.py` now reports 100/100** (76 pages; clean on broken links, orphans, sections, staleness, gitlinks). The ratchet loop worked end-to-end: schema requirement (#6) → doctor flagged the gap → backfilled → green.
+- Committed scoped (the 9 pattern files + this log only) — `CLAUDE.md`, `README.md`, `index.md`, `meta/`, `_schemas/` left untouched (the compound-engineering agent is editing those concurrently).
+
+## [2026-06-02] ingest | OpenAI Codex Goals (cookbook docs-page)
+
+- Ingested [[sources/openai--using-goals-in-codex]] — OpenAI Cookbook guide *"Using Goals in Codex"* (authors Raj Pathak & Stefano Fabbri; published 2026-05-09). Captured **verbatim from the notebook source** (`openai/openai-cookbook`, `examples/codex/using_goals_in_codex.ipynb`, commit `9b4e627`) rather than the JS-rendered page; the 7 figures (base64 attachments, ~8 MB) left upstream-reconstructable per the lean-snapshot ethos, captions preserved. Classed `docs-page` but pinned to a commit. **First OpenAI source in the wiki.**
+- **New pages:** [[concepts/completion-contract]] (the idea — an agent objective as a persistent, evidence-verified contract; "done" = evidence, not confidence); [[artifacts/projects/codex-goals]] (the runnable feature — `/goal` lifecycle, Codex ≥ 0.128.0; **first `projects/` artifact paged**); [[patterns/behavioral/evidence-gated-completion]] (new **proposed** pattern, 1 example); [[creators/openai]] (**first non-Anthropic / non-Garry creator**).
+- **Promoted [[patterns/behavioral/skill-as-method-call]] → `confirmed`.** Codex `/goal`'s six-slot template is the *documented parameter signature from a non-Garry pack* that page named as its exact promotion gate — now 2 creators (Garry Tan + OpenAI) and 2 harnesses (Claude Code + Codex CLI). Research output, not bookkeeping.
+- Indexes updated: `concepts/_index`, `artifacts/projects/_index`, `creators/_index`, `sources/_index` + root `index.md` (sources, creators, projects, concepts, patterns).
+- **REFLECT (Pass 4, below in [[meta/self-improvements]]):** `completion-contract` maps onto our own `_schemas/_definition-of-done.md`, which lacks a *blocked stop condition* — added one (mark-the-gap / budget≠done / don't-fake-completion).
+- *Concurrency note:* landed alongside an in-flight `compound-engineering` ingest (separate session) editing the same shared indexes; all edits here are additive (distinct rows/bullets). That ingest's own `index.md`/`README`/`log` bookkeeping was still pending as of this write.
+- ratchet: links +~65 · orphans +0 · patterns +1 new (`evidence-gated-completion`) + 1 promoted (`skill-as-method-call` → confirmed).

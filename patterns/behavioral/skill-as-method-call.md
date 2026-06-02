@@ -47,6 +47,14 @@ It works because of how Claude Code actually consumes a skill: the markdown is *
 2. **A stable signature is what makes skills composable and improvable.** Because the call shape is stable, other skills can depend on it (`benefits-from:`, the `book-mirror` pipeline) — and, as the essay puts it, "When I improve one skill, every workflow that uses it gets better automatically" ([[sources/garrytan--meta-meta-prompting#skills-compose]]). That compounding only exists because the unit is a *reused function*, not a *forked copy*.
 3. **A parameter that selects depth is a clean knob for the latent/deterministic cost tradeoff.** gstack's Quick/Standard/Exhaustive tiers ([[sources/garrytan--gstack#qa]]) let one skill expose "cheap-and-shallow vs thorough-and-expensive" without two implementations — a single dial over the same procedure, which is precisely what a method argument is for.
 
+## Detection recipe
+
+A falsifiable test for spotting a skill-as-method-call (`## Examples` are the positive fixtures; the god-skill below is the negative test):
+
+- **Look for**: one skill file whose *behavior changes by what you pass in* while the steps stay fixed — a named depth tier (Quick/Standard/Exhaustive), a TARGET/QUESTION/DATASET, or an explicit documented parameter signature; and/or a skill declared as *callable by other skills* (stable signature: `benefits-from:`, a pipeline step).
+- **Confirm with**: across two real invocations, the **process is invariant** and only the input/depth varies. A documented named-argument signature (e.g. Codex `/goal <end state> verified by <evidence>…`) is the strongest tell.
+- **Rule out**: the **god-skill** — different arguments run *different steps* (that's N skills in one filename, not one method); and genuinely single-purpose skills that take no meaningful argument (the correct default — most skills are *not* this pattern, and forcing parameters on them is fake generality).
+
 ## Examples in this wiki
 
 - [[artifacts/projects/codex-goals]] — **the textbook example, and the one that promoted this pattern (non-Garry).** OpenAI's Codex `/goal` ships an *explicit, documented parameter signature*: `/goal <desired end state> verified by <specific evidence> while preserving <constraints>. Use <allowed inputs, tools, or boundaries>. Between iterations, <how to choose the next best action>. If blocked, <what to report and what would unlock progress>.` Same command, radically different objective depending on the six arguments you bind — the cleanest "method call with named args" in the wiki, and the first from outside Garry Tan's corpus. — citation: [[sources/openai--using-goals-in-codex#goal-template]], [[sources/openai--using-goals-in-codex#six-elements]].

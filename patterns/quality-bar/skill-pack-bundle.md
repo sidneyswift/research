@@ -79,6 +79,14 @@ The "skillify" loop is the *authoring* half: you build a capability interactivel
 
 Markdown behavior is editable natural language, which is the pattern's whole advantage ("the behavior lives in instructions you can edit in plain language instead of logic frozen in code" — [[sources/garrytan--foxconn-factories#jit-software]]) **and** its hazard: prose has no compiler, so a one-word edit can change behavior with zero signal. The bundle converts that hazard into a runnable check. It works because it tests at the right *layers*: deterministic code gets cheap unit tests; the non-deterministic skill gets an LLM-as-judge eval; their interaction gets an E2E; and the **resolver** — the meta-decision of whether to fire at all — gets its own eval, which is exactly the failure mode that description-triggered skills (and Anthropic's auto-trigger heuristic) leave unguarded. gstack's `gate`/`periodic` tiering and diff-based selection ([[sources/garrytan--gstack#CLAUDE.md]]) are what keep the expensive non-deterministic evals economically runnable, which is the practical reason the pattern survives contact with a real CI budget.
 
+## Detection recipe
+
+A falsifiable test for spotting a skill-pack-bundle (`## Examples` are the positive fixtures; the demo-skill and Foxconn-factory cases are the negative test):
+
+- **Look for**: a skill that ships as a *bundle*, not just a `SKILL.md` — markdown + thin deterministic code + tests at the right layers (unit test for the code, LLM-as-judge eval for the skill, E2E across both) + a resolver entry + ideally a **resolver eval**; bonus signal: a `doctor`/check that enforces a completion checklist.
+- **Confirm with**: a test makes "did this edit break the skill?" *runnable* (an LLM eval or E2E), **and** the triggering is guarded by a resolver eval (the rarest, most-stealable part — testing whether the skill *fires*, not just its output). Cost controls (diff-based selection, gate/periodic tiers) signal production maturity.
+- **Rule out**: demonstration/reference skills (the consumer is a human reading the format, not CI); one-shot capabilities; and the inverse failure — "minimal code" that isn't minimal (hundreds of lines policing the model = the Foxconn factory, not a bundle).
+
 ## Examples in this wiki
 
 - [[artifacts/plugins/gstack]] — **the one fully-worked example.** All seven components exist as real files: generated `SKILL.md` + `browse/`/`design`/`bin` code + `skill-validation`/`gen-skill-docs` unit tests + `skill-llm-eval` (LLM-as-judge) + `skill-e2e-*` integration + `scripts/resolvers/*` + resolver tests (`resolver-ask-user-format`, `writing-style-resolver`, `resolvers-gbrain-put-rewrite`), run under a diff-selected `gate`/`periodic` two-tier harness. — citation: [[sources/garrytan--gstack#CLAUDE.md]], [[sources/garrytan--gstack#test]]

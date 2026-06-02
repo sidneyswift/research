@@ -47,6 +47,14 @@ gbrain reaches the same end differently — one engine, three install shapes (sk
 
 Drift is the tax on duplicated agent content, and it compounds silently — a prompt fix lands in the plugin but not the API deployment, and now two "identical" agents behave differently in production. Single-sourcing makes drift a *build failure* instead of a latent bug ([[sources/anthropic--financial-services#scripts-check]]). It also matches how these runtimes actually differ: the difference between a Cowork plugin and a Managed Agent is almost entirely *packaging and transport* (`plugin.json` vs. `POST /v1/agents` fields), not *behavior* — so the behavior belongs in one referenced place and the packaging in thin wrappers. The FSI repo states the goal outright: "Same agent, same skills — pick your surface… there is one source of truth" ([[sources/anthropic--financial-services#cookbooks-README]]).
 
+## Detection recipe
+
+A falsifiable test for spotting the pattern (`## Examples` are the positive fixtures; the single-surface cases are the negative test):
+
+- **Look for**: one canonical definition (a prompt, skill set, or engine) consumed on **≥2 surfaces** (Cowork plugin + Managed-Agent API template + CLI + MCP + a foreign harness), where each surface is a thin wrapper that **references** the source *or* a **converter** that transforms it — not a hand-edited fork.
+- **Confirm with**: a **drift guard** exists — a check/sync/validate step that fails the build when surfaces diverge — and the load-bearing content lives in exactly one place. Conversion-based variants also carry authoring-time portability rules (no unguarded platform env vars, tool-equivalent names).
+- **Rule out**: only one surface will ever exist (the wrapper is dead weight); surfaces that genuinely need different content or safety posture (two honest definitions beat one-source-plus-overrides); or per-surface copies with *no* drift guard — that's just duplication waiting to drift, not single-sourcing.
+
 ## Examples in this wiki
 
 - [[artifacts/plugins/anthropic-financial-services-marketplace]] — every named agent ships as a Cowork/Claude Code plugin **and** a Managed Agents API template; the `agent.yaml` references the plugin's system prompt + skills, resolved at deploy. — citation: [[sources/anthropic--financial-services#cookbooks-README]], [[sources/anthropic--financial-services#cookbook-agent-yaml]], [[sources/anthropic--financial-services#scripts-deploy]]
