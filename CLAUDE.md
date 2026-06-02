@@ -26,14 +26,14 @@ Every interaction with this wiki is one of four operations. Be explicit about wh
 A resolver table, the way `gstack`/`gbrain` ship a `RESOLVER.md` (see [[patterns/composition/resolver-routing-table]] — applied to ourselves). Read this first; it maps a request to the operation, and a source to its schema + destination.
 
 | If the request is… | …run |
-|---|---|
+| --- | --- |
 | "add / ingest this source", a pasted link, repo, essay, or paper | **INGEST** |
 | "what / where / how / compare…", any lookup across the wiki | **QUERY** |
 | "lint", "check staleness", or you just finished a batch of ingests | **LINT** |
 | "reflect", or a new pattern just landed that could improve the wiki | **REFLECT** |
 
 | Source type | Citation page `type:` | Raw material lands in | Wiki page schema |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Git repo | `repo` | live clone `sources/<slug>/` (git-ignored, in manifest) | artifact (`skill`/`plugin`/`mcp-server`/`project`) |
 | Article / essay / thread | `article` | committed `sources/<slug>/snapshot.md` | usually `concept`, sometimes artifact |
 | Paper | `paper` | committed `sources/<slug>/` (PDF/text) | `concept` |
@@ -44,7 +44,7 @@ Each operation is a **parameterized call** — same procedure, different argumen
 **Routing evals** (per [[patterns/composition/resolver-routing-table]] — "test the routing, not just the output"). Spot-check that the table above still resolves correctly; if a row stops holding, the routing prose drifted:
 
 | Sample request | Expected |
-|---|---|
+| --- | --- |
 | "here's a repo / link / essay to add" | INGEST |
 | "which plugins ship hooks?" / "compare X and Y" | QUERY |
 | "anything stale?" / "check the wiki" | LINT |
@@ -139,6 +139,10 @@ The ledger at `meta/self-improvements.md` is the durable record so we don't re-p
 
 **Skillify a repeated move.** REFLECT's usual trigger is "a new pattern landed." Its sibling trigger is *repetition* (Garry Tan's "skillify it"): the third time you do the same ad-hoc move — a recurring query shape, a manual cleanup, a copy-pasted analysis — **codify it** as a reusable artifact (a new `_schemas/` template, an operation, a Routing row, or a `(det)` script), give it a [definition of done](_schemas/_definition-of-done.md), and register it in Routing. Per [[patterns/quality-bar/skill-pack-bundle]] + [[patterns/composition/resolver-routing-table]] applied to ourselves: the move becomes permanent infrastructure instead of being re-derived every session. (`_schemas/_definition-of-done.md` is itself the first skillify output.)
 
+**When skillifying for external reuse**, prefer the convergent agent-plugin core (per [[concepts/convergent-agent-plugin-spec]] + [[patterns/composition/single-source-multi-surface-distribution]]): `SKILL.md` with `name`, a "Use when…" `description`, body text, and local `references/` / `scripts/`. Keep platform-specific hooks, connectors, env vars, and marketplace metadata isolated so the reusable center can run natively where the specs overlap.
+
+**Compounding budget check.** After a batch of ingests or a LINT pass, ask whether the next highest-leverage move is a schema, script, routing row, skill, or principle rather than another page. This is [[concepts/compound-engineering]] applied to the wiki: page accumulation is not enough; the machinery should also get easier to use. If no system improvement is made, note why in `log.md`.
+
 ## Anti-rules (cut across all operations)
 
 - **Never** write a pattern or concept page from generic knowledge. Pages must be grounded in observed sources *in this wiki* with citations.
@@ -148,10 +152,11 @@ The ledger at `meta/self-improvements.md` is the durable record so we don't re-p
 - **Never** hand-edit source material in `sources/`. Repo clones change *only* via `git pull` as a deliberate re-ingest (bump the manifest + recheck citations); captured article/paper snapshots never change at all. It's evidence, not a draft.
 - **Never** invent wikilink anchors. Source pages have an `## Anchor map` section; citations must use anchors registered there.
 - **Never** maintain the same fact in two places. Wiki pages are the single source; generated outputs — `DASHBOARD.html`, query deliverables (table / Marp / chart / canvas), any future `llms.txt` — are *surfaces* rendered from the pages, never parallel copies that can drift (per [[patterns/composition/single-source-multi-surface-distribution]], applied to ourselves).
+- **Never** hand-bump `version` fields on any future installable skill/plugin/marketplace package this wiki emits. If users update it by version, release automation owns the bump and a drift/parity check must fail before delivery can drift (per [[patterns/quality-bar/version-as-update-gate]]).
 
 ## Layout
 
-```
+```text
 Research/
 ├── CLAUDE.md          # this file — schema + operations
 ├── README.md          # human entry point

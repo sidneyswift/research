@@ -4,13 +4,13 @@ type: pattern
 name: marketplace-as-multi-plugin
 category: structural
 status: confirmed
-last-reviewed: 2026-06-01
-example-count: 2
+last-reviewed: 2026-06-02
+example-count: 3
 ---
 
 # marketplace-as-multi-plugin
 
-> One repository registers as a *marketplace* via `.claude-plugin/marketplace.json` and declares **N installable plugins** inside it, each with its own source path, name, and description. Users install plugins à la carte from the single repo URL — no fork, no separate publish per plugin.
+> One repository registers as a *marketplace* via a `marketplace.json` and declares **N installable plugins** inside it, each with its own source path, name, and description. Users install plugins à la carte from the single repo URL — no fork, no separate publish per plugin. **Cross-lab as of 2026-06-02**: Anthropic ships it as `.claude-plugin/marketplace.json` (Claude Code), OpenAI as `.agents/plugins/marketplace.json` (Codex) — the same mechanism under two namespaces.
 
 ## Longer definition
 
@@ -27,6 +27,8 @@ claude plugin install gl-reconciler@claude-for-financial-services
 ```
 
 In `financial-services` the catalog is large and *typed by directory*: 7 vertical plugins (`plugins/vertical-plugins/`), 10 agent plugins (`plugins/agent-plugins/`), 2 partner plugins (`plugins/partner-built/`), and 1 admin installer — **20 entries** total, all from one `marketplace.json` ([[sources/anthropic--financial-services#marketplace.json]], [[sources/anthropic--financial-services#repo-layout]]). The simpler precedent, `anthropics/skills`, registers **3** child plugins (`document-skills`, `example-skills`, `claude-api`) the same way ([[sources/anthropic--skills#marketplace.json]]).
+
+**The mechanism is not Claude-Code-specific.** OpenAI's Codex marketplace (`openai/plugins`) registers **167 plugins** from one `.agents/plugins/marketplace.json` — the same shape (`plugins[]` of `{name, source:{source:local, path}}` pointing at `plugins/<name>/.codex-plugin/plugin.json`), with two Codex-specific additions: a per-entry **`policy{installation, authentication}`** block and a **`category`** field, and array order = render order ([[sources/openai--plugins#marketplace.json]]). At 167 entries the catalog scales by **category-typing** (Productivity 85, Developer Tools 38, Research 29, Design 9, Lifestyle 5, Security 1 — [[sources/openai--plugins#categories]]) rather than FSI's directory-typing: the same "type the catalog so it stays browsable" move at ~8× the size. It is also the wiki's clearest case of the pattern as a **third-party publishing platform** — ~140 of the 167 are vendor-authored ([[sources/openai--plugins#authorship]]).
 
 ## When to use
 
@@ -57,6 +59,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 
 - [[artifacts/plugins/anthropic-financial-services-marketplace]] — 20 plugins (7 vertical + 10 agent + 2 partner + 1 installer) registered from one `marketplace.json`; installed à la carte by `<plugin>@claude-for-financial-services`. — citation: [[sources/anthropic--financial-services#marketplace.json]]
 - [[artifacts/plugins/anthropic-skills-marketplace]] — 3 child plugins (`document-skills`, `example-skills`, `claude-api`) registered from one repo's manifest; the minimal form of the same pattern. — citation: [[sources/anthropic--skills#marketplace.json]]
+- [[artifacts/plugins/openai-codex-plugins-marketplace]] — **167 plugins from one `.agents/plugins/marketplace.json`** — the largest in-wiki example and the **first outside Claude Code** (OpenAI Codex). Adds per-entry install/auth `policy` + `category`, scales by category-typing, and is overwhelmingly partner-authored. This is the example that makes the pattern **cross-lab**, not Anthropic-specific. — citation: [[sources/openai--plugins#marketplace.json]]
 
 ## Counter-examples or anti-pattern
 
@@ -69,5 +72,5 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 
 ## Open questions
 
-- Is there a practical ceiling where a marketplace becomes too big to browse? 20 typed-by-directory entries still reads cleanly; 200 flat ones might not. FSI's answer is *directory typing* (vertical / agent / partner) — is that itself the scaling pattern?
+- Is there a practical ceiling where a marketplace becomes too big to browse? 20 typed-by-directory entries still reads cleanly; 200 flat ones might not. FSI's answer is *directory typing* (vertical / agent / partner) — is that itself the scaling pattern? **Partial answer (2026-06-02):** Codex's 167-plugin catalog stays navigable via **category-typing** (6 categories) plus a *render-order* array and per-entry install policy ([[sources/openai--plugins#categories]], [[sources/openai--plugins#marketplace.json]]) — i.e. typing generalizes (directory *or* category), and at app-store scale you add ordering + policy metadata on top. So the scaling tell holds up to ~167; the open part is whether browsability survives the *next* order of magnitude without search/filtering beyond a flat ordered array.
 - How do install *ordering* dependencies surface? FSI's README tells users to install `financial-analysis` "first" because it carries the shared connectors ([[sources/anthropic--financial-services#README]]) — the manifest itself doesn't encode that ordering. Should it?

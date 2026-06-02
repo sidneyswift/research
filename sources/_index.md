@@ -25,6 +25,7 @@ Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` strippe
 - [[sources/garrytan--gbrain]] — `garrytan/gbrain` (71 MB, commit `1580c6d` of 2026-05-20, version 0.36.4.0). Garry Tan's memory system.
 - [[sources/anthropic--financial-services]] — `anthropics/financial-services` (2.7 MB, commit `120a31d` of 2026-05-29, Apache 2.0). Anthropic's FSI reference marketplace — 20 plugins, dual-runtime (Cowork plugin + Managed Agents API), 10 managed-agent cookbooks with trust-tiered subagents.
 - [[sources/every--compound-engineering-plugin]] — `everyinc/compound-engineering-plugin` (11 MB, commit `3e77a7b` of 2026-06-01, MIT). Every's official Compound Engineering plugin — 38 skills + 43 sub-agents authored once in Claude format and converted to ~11 agent platforms; dogfoods its own loop (27 brainstorms + 57 plans + 30 solutions). The wiki's first **non-Garry tested skill pack**.
+- [[sources/openai--plugins]] — `openai/plugins` (57 MB, 4,580 files, commit `bebc3d6` of 2026-06-01, 1,334★). OpenAI's official **Codex** plugin marketplace — **167 plugins** (mostly hosted-connector `.app.json` wrappers + 479 skills), the `.codex-plugin/` manifest with a productized storefront, the `plugin-creator` meta-skill. The wiki's first **non-Claude-Code / non-Anthropic** marketplace; grounds [[concepts/convergent-agent-plugin-spec]].
 
 ## Articles, posts, threads
 

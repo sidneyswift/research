@@ -24,7 +24,7 @@ The output of the **REFLECT** operation (see [CLAUDE.md](../CLAUDE.md)). This wi
 A retroactive REFLECT over the patterns extracted from Garry Tan's essay series. They were catalogued but never applied to the wiki itself; this pass closes that gap. **All 6 applied 2026-06-02** (REFLECT ships grounded changes without asking — see `CLAUDE.md`).
 
 | # | Learning (cited) | Wiki change | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | [[patterns/composition/resolver-routing-table]] — a tested table mapping *intent → which skill/doc to load* | Added an explicit **Routing** table to `CLAUDE.md` Operations: *request → operation* and *source type → citation `type:` + raw-material location + page schema*. | **applied** 2026-06-02 (`CLAUDE.md` §Routing) |
 | 2 | [[patterns/quality-bar/complexity-ratchet]] — every session adds tests/docs that reload into context, so quality only rises (forward-only) | Ingests now **ratchet**: INGEST closes with a `ratchet: links +N · orphans +0 · patterns +N` tally; LINT check #12 flags any ingest that added a page but no links, or stranded an orphan. | **applied** 2026-06-02 (`CLAUDE.md` INGEST + LINT #12) |
 | 3 | [[patterns/behavioral/diarization]] — read everything about a subject, write *one* page of distilled judgment | Added a "this page is a **judgment distillation**, not a transcription" reminder to every artifact + concept schema header. | **applied** 2026-06-02 (`_schemas/{skill,plugin,mcp-server,concept}.md`) |
@@ -37,7 +37,7 @@ A retroactive REFLECT over the patterns extracted from Garry Tan's essay series.
 REFLECT over the patterns not covered by the seed pass. Applied immediately (grounded → ships).
 
 | # | Learning (cited) | Wiki change | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 7 | [[patterns/behavioral/skill-as-method-call]] — a skill file is a parameterized procedure; same file + different args → different capability | Documented each operation as a **parameterized call** in `CLAUDE.md` Routing (`INGEST(<source>)`, `QUERY(<question>)`, `LINT(<scope?>)`, `REFLECT(<since?>)`); noted that a `_schemas/` template is likewise a parameterized page. | **applied** 2026-06-02 (`CLAUDE.md` §Routing) |
 | 8 | [[patterns/composition/single-source-multi-surface-distribution]] — one definition, many runtime surfaces | Added an anti-rule: wiki pages are the single source; `DASHBOARD.html`, query deliverables, and any future `llms.txt` are *surfaces* rendered from them, never parallel copies that drift. | **applied** 2026-06-02 (`CLAUDE.md` anti-rules) |
 | 9 | [[patterns/structural/marketplace-as-multi-plugin]] — one manifest registers N à-la-carte units | No change: already embodied. `index.md` (+ per-domain `_index.md`) is exactly this registry — it lists every page as an independently-linkable unit. Recorded so we don't re-propose it. | **embodied** 2026-06-02 (`index.md`) |
@@ -49,7 +49,7 @@ Mined the gstack/gbrain pages + all 8 essays (esp. #5 *Skillify Manifesto* and #
 **Applied this pass:**
 
 | # | Learning (cited) | Wiki change | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 10 | [[patterns/composition/resolver-routing-table]] — "test the routing, not just the output" (gbrain ships `routing-eval.jsonl`) | Added a **Routing evals** table to `CLAUDE.md` (sample request → expected operation) so the resolver is spot-checkable, not just declared. | **applied** 2026-06-02 (`CLAUDE.md` §Routing) |
 | 11 | [[patterns/behavioral/diarization]] — gbrain's "entity propagation": after ingest, walk every entity mentioned and update its page | INGEST step 5 now **propagates to every entity the source touches**, not just the creator — the real source of cross-link density. | **applied** 2026-06-02 (`CLAUDE.md` INGEST 5) |
 | 12 | [[patterns/composition/resolver-routing-table]] — `check-resolvable` finds "dark" (unreachable) skills | LINT check #15: every routing request resolves to an operation, every schema is reachable from an operation, every page reachable from `index.md`. | **applied** 2026-06-02 (`CLAUDE.md` LINT #15) |
@@ -59,7 +59,7 @@ Mined the gstack/gbrain pages + all 8 essays (esp. #5 *Skillify Manifesto* and #
 **Proposed (bigger — genuine "could add" items):**
 
 | # | Learning (cited) | Proposed change | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 15 | [[patterns/behavioral/diarization]] + [[artifacts/plugins/gbrain]] — brain-page schema: *compiled truth on top, append-only timeline below, raw sidecars* | Added a "compiled truth on top + append-only `## Timeline`" shape to `creator.md` and `concept.md` schemas; retrofitted [[creators/garry-tan]] with the star/essay time-series. | **applied** 2026-06-02 (`_schemas/{creator,concept}.md`, `creators/garry-tan.md`) |
 | 16 | [[patterns/quality-bar/complexity-ratchet]] + [[artifacts/plugins/gbrain]] — "every page has a score"; 90% coverage as the AI-affordable bar | `scripts/wiki-doctor.py` computes a 0–100 **health score** (penalties for broken links, orphans, missing sections, staleness, gitlinks; target 90 per gbrain). | **applied** 2026-06-02 (`scripts/wiki-doctor.py`) |
 | 17 | [[patterns/quality-bar/skill-pack-bundle]] — the 10-step skillify checklist; "a feature that doesn't pass all ten is not a skill" | Added `_schemas/_definition-of-done.md` (an underscore-prefixed shared-rules file, à la gbrain's `_brain-filing-rules.md`) with per-page-type checklists; every schema header now links to it. DRY — one gate, not copied six times. | **applied** 2026-06-02 (`_schemas/_definition-of-done.md` + all schemas) |
@@ -73,7 +73,7 @@ Mined the gstack/gbrain pages + all 8 essays (esp. #5 *Skillify Manifesto* and #
 REFLECT over the [[sources/openai--using-goals-in-codex|Codex Goals]] ingest, which produced [[concepts/completion-contract]] + the proposed [[patterns/behavioral/evidence-gated-completion]] — both about *how a task declares itself done*, which is exactly what our page-level "definition of done" governs. The first non-Garry, non-Anthropic source to land on our own machinery.
 
 | # | Learning (cited) | Wiki change | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 22 | [[concepts/completion-contract]] / [[patterns/behavioral/evidence-gated-completion]] — a completion contract must name a **blocked stop condition** (if you can't finish honestly: stop, mark the gap, report what would unlock it, never fake done); budget-exhaustion ≠ done | `_schemas/_definition-of-done.md` was a purely *positive* checklist (what must be present) with no "blocked" path — so a half-finished page had no defined honest exit. Added an **"If blocked"** section: mark the gap inline + in `## Open questions` + log why; "done" is checked (LINT/`wiki-doctor`), not self-assessed; out of budget ≠ done. | **applied** 2026-06-02 (`_schemas/_definition-of-done.md`) |
 | 23 | [[patterns/behavioral/evidence-gated-completion]] — "done" is decided by an external assertable surface, not self-assessment | No change: already embodied. `scripts/wiki-doctor.py` *is* the deterministic verification surface for a page's done-ness (a page passes when the doctor is clean). Recorded so we don't re-propose it — and noted in the new "If blocked" clause so the link is explicit. | **embodied** 2026-06-02 (`scripts/wiki-doctor.py`) |
 | 24 | [[concepts/completion-contract]] — preserve epistemic levels (confirmed / approximate / blocked / uncertain), never flatten to one success claim | No change: already embodied across the wiki's hedging conventions — claims marked *asserted vs. demonstrated*, `status:` fields, `proposed`-vs-`confirmed` patterns, `as-of` signal dating. The Codex research case study is external corroboration of a discipline we already run. | **embodied** 2026-06-02 |
@@ -85,12 +85,35 @@ Cross-check (not a new change): [[patterns/behavioral/skill-as-method-call]], pr
 REFLECT over the [[artifacts/plugins/compound-engineering]] ingest (Every / Kieran Klaassen) — the first non-Garry tested skill pack, whose `/ce-compound` skill *is* a knowledge-compounding mechanism much like this wiki's own INGEST→log→ratchet loop. The richest mine for self-application since gbrain.
 
 | # | Learning (cited) | Wiki change | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 25 | [[patterns/quality-bar/complexity-ratchet]] via `compound-engineering`'s `/ce-compound` — score overlap on **5 dimensions before writing**; high overlap → *update* the existing doc, don't create a duplicate ("two docs on the same problem will inevitably drift apart") | We had LINT #16 (DRY/overlap audit) but only *after the fact*. Added a **dedup-before-create** guard to INGEST step 3: score a candidate page against existing ones (subject + mechanism + role) and extend rather than duplicate. The pre-creation twin of #16 — cheaper to never make the duplicate. | **applied** 2026-06-02 (`CLAUDE.md` INGEST 3) |
 | 26 | [[patterns/behavioral/latent-vs-deterministic-split]] via CE's `AGENTS.md` — "skills are guardrails for an intelligent agent, not a controller for a dumb one; **calibrate prescription level to the failure mode**" (hard rules for deterministic safety, trust for judgment) | No change: already embodied. The `(det)`/`(latent)` step tagging (ledger #4) + the hard anti-rules vs. latent judgment steps already calibrate how prescriptive `CLAUDE.md` is per step. Recorded so we don't re-propose it; CE is external corroboration of the discipline. | **embodied** 2026-06-02 (`CLAUDE.md` INGEST legend + anti-rules) |
 | 27 | `compound-engineering`'s `/ce-compound` Discoverability Check — "the knowledge store only compounds value when agents can *find* it"; edit the instruction file so a fresh agent discovers the store | No change: already embodied. `index.md` is the mandated front door (INGEST step 7 + LINT #15 reachability: every page reachable from `index.md`). The Discoverability Check is exactly what step 7 + #15 enforce. | **embodied** 2026-06-02 (`index.md`, LINT #15) |
 
 Cross-check (not a new change): this ingest promoted [[patterns/quality-bar/complexity-ratchet]] proposed→confirmed and **retired the same-creator caveat** on [[patterns/quality-bar/skill-pack-bundle]] + [[patterns/behavioral/latent-vs-deterministic-split]] (CE = the non-Garry witness). Those are pattern-page changes, not machinery changes — but they harden the *grounding* of ledger #2/#5/#6, which cited those very patterns to justify the ratchet/harness-bloat/detection-recipe machinery. Our own machinery now rests on cross-creator-confirmed patterns, not one author's house style.
+
+### [2026-06-02] Pass 6 — portable skills, release gates, and compounding budget
+
+REFLECT over the newest wiki learnings after the OpenAI Plugins ingest and this LINT pass: [[concepts/convergent-agent-plugin-spec]], the run-natively variant of [[patterns/composition/single-source-multi-surface-distribution]], [[patterns/quality-bar/version-as-update-gate]], and [[concepts/compound-engineering]]. The pass adds principles for future skillification and fixes stale front-door prose found during review.
+
+| # | Learning (cited) | Wiki change | Status |
+| --- | --- | --- | --- |
+| 28 | [[concepts/convergent-agent-plugin-spec]] + [[patterns/composition/single-source-multi-surface-distribution]] — skills/plugins now have a shared cross-lab core; the cheapest multi-surface distribution is "run natively" when the artifact stays inside that core | Added a REFLECT rule: when skillifying a repeated move for reuse outside this wiki, prefer the lab-agnostic `SKILL.md` core (`name`, "Use when…" `description`, body, `references/`, `scripts/`) and isolate platform-specific hooks/connectors/env vars. Also extended `for-builders.md` so skill/plugin builders read the convergence concept up front. | **applied** 2026-06-02 (`CLAUDE.md`, `for-builders.md`) |
+| 29 | [[patterns/quality-bar/version-as-update-gate]] — for installable artifacts, `version` is the update-delivery trigger, so human hand-bumps cause delivery drift | Added a future-facing anti-rule: if this wiki ever emits an installable skill/plugin/marketplace package, do **not** hand-bump versions; require release automation plus drift/parity validation before treating it as distributable. | **applied** 2026-06-02 (`CLAUDE.md`) |
+| 30 | [[concepts/compound-engineering]] + [[patterns/quality-bar/complexity-ratchet]] — each unit of work should make the next one easier; the 50/50 rule protects system-building from being crowded out by feature/page accumulation | Added a REFLECT budget check: after ingest/lint batches, explicitly ask whether the next highest-leverage move is a schema, script, routing row, skill, or principle rather than another page; if not, log why no compounding improvement was made. | **applied** 2026-06-02 (`CLAUDE.md`) |
+| 31 | [[patterns/quality-bar/complexity-ratchet]] — stale front doors lower the next agent's floor because the next session loads the wrong map | Fixed stale front-door prose found in this review: `README.md` now names all four operations, and `index.md`'s Meta row reflects the current ledger instead of the original seed count. | **applied** 2026-06-02 (`README.md`, `index.md`) |
+
+### [2026-06-02] Pass 7 — schema-level reflections from the openai/plugins ingest
+
+The INGEST step-9 quick pass for [[sources/openai--plugins]], reconciled with the concurrent Pass 6 above (which handled the `CLAUDE.md` skillify-to-the-cross-lab-core rule, the version-gate anti-rule, the compounding-budget check, and the `for-builders.md` extension). This pass records the distinct **schema-level** changes that ingest forced — the first time a second lab tested an assumption baked into our own `_schemas/`.
+
+| # | Learning (cited) | Wiki change | Status |
+| --- | --- | --- | --- |
+| 32 | [[concepts/convergent-agent-plugin-spec]] — OpenAI Codex ships a near-identical plugin spec, so "plugins are a Claude Code thing" is now false | `_schemas/plugin.md`'s `ecosystem:` field literally read *"plugins are Claude Code only as of 2026"* — a stale assumption the ingest falsified. Updated to `claude-code \| codex \| cross-lab` with a pointer to the concept, so future plugin pages classify by lab instead of silently defaulting to Claude Code. | **applied** 2026-06-02 (`_schemas/plugin.md`) |
+| 33 | [[concepts/convergent-agent-plugin-spec]] — both labs auto-discover the same component set (skills/commands/agents/hooks/mcp) | No change: already embodied. Our `_schemas/plugin.md` `components:` block *is* the cross-lab shared shape — the second lab validates the schema we already use, so no "Codex-specific schema" is warranted. Divergent surfaces (`.app.json` hosted connectors, the productized storefront) are captured in page prose, not new required fields. Recorded so we don't re-propose a schema fork. | **embodied** 2026-06-02 (`_schemas/plugin.md`) |
+| 34 | [[patterns/quality-bar/skill-pack-bundle]] via `plugin-eval` ([[sources/openai--plugins#plugin-eval]]) — an evaluator that not only *scores* a pack but explains *why* and says *what to fix first*, under explicit **token-budget** accounting | `scripts/wiki-doctor.py` (ledger #16/#19) computes a health score and lists findings but does not **prioritize** them ("fix-first" ordering) or estimate remediation cost. Candidate enhancement: a ranked "fix these first" ordering + a rough effort note. **Held `proposed`, not applied** — it should be grounded in `plugin-eval`'s actual rubric (`references/{benchmark-harness,metric-pack-manifest,evaluation-result-schema}.md`, a bounded QUERY) before changing the LINT autopilot. Don't port a rubric we haven't read. | **proposed** 2026-06-02 (next: QUERY `plugin-eval` references → `scripts/wiki-doctor.py`) |
+
+Cross-check (not a new change): this ingest made [[patterns/structural/marketplace-as-multi-plugin]] **cross-lab** (3rd example, first non-Claude-Code) and added a 3rd-creator witness to [[patterns/structural/thin-harness-fat-skills]]'s fat-skills half — hardening the grounding of ledger **#5** (harness-bloat check) and **#9** (index-as-marketplace). Our machinery now rests on cross-*lab*-confirmed patterns. Still un-ingested: a real harness *loop* (the thin-harness middle) — now *named* (Codex) but not inspected.
 
 ## Open meta-questions
 

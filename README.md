@@ -11,7 +11,8 @@ A research wiki cataloging the most important and talked-about work across the A
 ## Start here
 
 - **For everyone — master catalog:** [index.md](index.md) — single front door listing every page.
-- **For agents (LLM sessions):** read [CLAUDE.md](CLAUDE.md) before any operation. It defines the three operations (Ingest / Query / Lint) per [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+- **For agents (LLM sessions):** read [CLAUDE.md](CLAUDE.md) before any operation. It defines the four operations (Ingest / Query / Lint / Reflect) per [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+- **For agents mining the wiki from another project (to build something):** start at [for-builders.md](for-builders.md) — the consumer front door, with a build-intent→pages routing table, an extraction protocol, and a copy-paste prompt.
 - **For "what was done when":** [log.md](log.md) — append-only chronological record.
 - **For browsing patterns:** [patterns/](patterns/) — the research output. What separates great artifacts from the rest.
 - **For browsing artifacts:** [artifacts/skills/](artifacts/skills/), [artifacts/plugins/](artifacts/plugins/), [artifacts/mcp-servers/](artifacts/mcp-servers/), [artifacts/projects/](artifacts/projects/).
@@ -22,7 +23,7 @@ A research wiki cataloging the most important and talked-about work across the A
 ## Status
 
 | Domain | Count | Last updated |
-|---|---|---|
+| --- | --- | --- |
 | Skills cataloged | 0 paged (candidate queue: 17+ from anthropic-skills, ~55 from financial-services, dozens in gstack/gbrain) | 2026-06-01 |
 | Plugins cataloged | 5 — `anthropic-skills-marketplace`, `gstack`, `gbrain`, `anthropic-financial-services-marketplace`, `compound-engineering` | 2026-06-02 |
 | Projects cataloged | 1 — `codex-goals` (OpenAI Codex Goals feature) | 2026-06-02 |

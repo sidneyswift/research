@@ -2,7 +2,7 @@
 
 Append-only chronological record of operations on this wiki. Format per [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f):
 
-```
+```text
 ## [YYYY-MM-DD] <operation> | <subject>
 - bullet of what was done, what was decided, what to note
 ```
@@ -20,7 +20,7 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 
 ## [2026-05-21] decision | adopt Karpathy LLM Wiki pattern
 
-- After bootstrap and first 3 ingests, user pointed at https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f.
+- After bootstrap and first 3 ingests, user pointed at [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 - Confirmed: structure already aligned with the three-layer model (raw sources / wiki / schema).
 - Added missing pieces: root `index.md` (single front door catalog), this `log.md` (append-only chronicle), and the `LINT` operation defined in `CLAUDE.md`.
 - Reframed `CLAUDE.md` workflow sections around Karpathy's Ingest / Query / Lint vocabulary.
@@ -214,3 +214,34 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 - **REFLECT (Pass 5, in [[meta/self-improvements]] #25–27):** imported `/ce-compound`'s **dedup-before-create** overlap check into INGEST step 3 (the pre-creation twin of LINT #16's after-the-fact DRY audit) — *applied* to `CLAUDE.md`; #26 (calibrate-prescription-to-failure-mode) + #27 (discoverability = front-door reachability) recorded as *embodied*.
 - *Concurrency note:* ran alongside an in-flight **OpenAI Codex Goals** ingest (separate session) editing the same shared catalogs. Reconciled rather than clobbered — `index.md` Patterns, `patterns/_index.md`, the `README.md` status table, and the indexes now carry **both** ingests' content; verified my rows/bullets present and the other's preserved. The two ingests independently retired same-creator caveats (CE on 3 patterns; Codex on `skill-as-method-call`) — strong convergent evidence these are field-level, not one ecosystem's house style.
 - ratchet: links +~75 · orphans +0 · patterns +1 new (`version-as-update-gate`) + 1 promoted (`complexity-ratchet`→confirmed) + 2 same-creator caveats retired (`skill-pack-bundle`, `latent-vs-deterministic-split`) + 1 broadened (`single-source-multi-surface-distribution`).
+
+## [2026-06-02] reflect | skillify — `for-builders.md` consumer front door
+
+- **Skillify trigger (repetition):** Sidney's recurring move is *pointing an external coding agent at this wiki to mine design guidance while building a skill/plugin/MCP/agent/product*. Codified that ad-hoc move into permanent infrastructure rather than re-deriving the framing each session. Grounds: [[patterns/composition/resolver-routing-table]] + [[patterns/quality-bar/skill-pack-bundle]] (skillify reflex), applied to ourselves.
+- **New surface — `for-builders.md`** (repo root): the **consumer** front door (vs. `README.md` = humans, `CLAUDE.md` = maintainer-agent). Thin routing surface only — points at pages, restates no content (honors the `single-source-multi-surface-distribution` + `thin-harness-fat-skills` anti-rules). Contents: honest in-domain/out-of-domain scope calibration + known gaps (skills/MCP unpaged, Garry-Tan-weighted corpus, empty `analyses/`); a 6-step extraction **protocol** (QUERY discipline, enter via `index.md`, read whole pages incl. `## What we'd steal`, start-in-wiki-not-clones, `clone-all.sh` if sources missing, file gaps back); a **build-intent→pages routing table** (single skill / plugin / MCP / routing / reliability / self-improving / code-vs-prose / security / release); an **output contract** (design brief: stolen ideas w/ citations, boundaries applied, out-of-domain flag, gaps); and a copy-paste prompt.
+- Routing table cites only existing pages (8 confirmed + 3 proposed patterns, 2 concepts, 6 artifacts). MCP + security rows carry explicit gap/caveat flags (no MCP page paged; FSI trust-tiering is a single-example proposed bullet).
+- Wired into the front door (not an entity page, so it lives in nav prose like README/CLAUDE, not the index tables): `index.md` intro + `README.md` "Start here".
+- ratchet: links +~25 · orphans +0 · patterns +0 (new consumer surface; no new artifacts/claims).
+
+## [2026-06-02] ingest | OpenAI Plugins (`openai/plugins` — the Codex marketplace)
+
+- Ingested 1 source: [[sources/openai--plugins]] (`openai/plugins`, commit `bebc3d6` of 2026-06-01, 57 MB / 4,580 files, 1,334★ — live clone, git-ignored, in `repos.manifest.tsv`). OpenAI's official **Codex** plugin marketplace: **167 plugins** registered in one `.agents/plugins/marketplace.json`.
+- **New pages (3):**
+  - [[artifacts/plugins/openai-codex-plugins-marketplace]] (**full**) — the marketplace. Component distribution *is* the analysis: **144/167 bind a hosted OAuth connector via `.app.json`** (`asdk_app_…` id), only **2 use raw `.mcp.json`** (cloudflare remote-HTTP, build-ios-apps local-stdio), **479 skills** across 56 plugins (1-skill wrappers → 55-skill libraries like twilio), 6 commands, 1 `hooks.json` (figma), ~140 partner-authored. Productized storefront (categories, `policy.installation/authentication`, `codex://` deeplinks, brand metadata).
+  - [[concepts/convergent-agent-plugin-spec]] (**emerging**) — the headline finding: OpenAI's `.codex-plugin/` is near-identical to Anthropic's `.claude-plugin/` (same auto-discovered skills/commands/agents, **byte-identical `hooks.json` `PostToolUse`/`matcher` grammar**, `.mcp.json`, `marketplace.json`). Co-grounded in [[sources/openai--plugins]] + [[sources/anthropic--plugins-reference]]; OpenAI's `plugin-creator` even cites Anthropic's "skill-creator naming rules" (≥ partly deliberate, not pure parallel invention).
+- **The research payload — first non-Claude-Code marketplace; moved 4 patterns + seeded 1 concept:**
+  - **[[patterns/structural/marketplace-as-multi-plugin]] → 3 examples, now cross-lab.** 167 plugins from one registry, first outside Claude Code; scales by **category-typing** (vs FSI's directory-typing) + per-entry policy; partial-answers the page's "is there a browsability ceiling?" open question (holds to ~167).
+  - **[[patterns/composition/single-source-multi-surface-distribution]] → 4 examples + a *new mechanism*.** Reference (FSI) → convert (CE) → **run-natively (here)**: `plugin-eval` = one Node `src/` as CLI+plugin (no copy to drift); `superpowers` runs the *same skills* on Codex **and** Claude Code with no transform — enabled by the convergent spec.
+  - **[[patterns/structural/thin-harness-fat-skills]] → 3rd creator for the fat-skills half** (Codex/superpowers); **kept `proposed`** — we ingested the Codex *skill layer*, not the Codex *harness loop*, so the "~200-line, read-only" middle is still un-inspected. Codex is now *named* as a harness via a concrete artifact for the first time.
+  - **[[patterns/quality-bar/skill-pack-bundle]] — supporting Codex sighting** (`plugin-eval`, a meta-plugin that scores other plugins w/ token budgets + benchmark harness + result schema). Reinforces the *eval* half; **not** counted as a full bundle (no verified per-skill *resolver eval*) — count held at 3.
+- **Standouts flagged for deep-dive** (queued in [[artifacts/plugins/_index]]): `figma` (richest — only hooks.json; PostToolUse parity check), `plugin-eval` (eval harness — mine for our own eval gate), `superpowers` (Jesse Vincent/obra's framework, cross-runtime), the 2 `.mcp.json` edge cases.
+- **Propagated** to [[creators/openai]] (2nd artifact; "rest of Codex" partly answered — distribution studied, runtime not; new `asdk_app_` platform question), [[artifacts/projects/codex-goals]] (sibling Codex layer), [[sources/openai--using-goals-in-codex]] + [[sources/anthropic--plugins-reference]] (cross-links), and 4 indexes.
+- **Open thread for LINT/future ingest:** the hosted-app/connector platform behind `.app.json` (`asdk_app_…`) — trust model, tool schemas, third-party registration — is invisible from the repo and is where Codex's security story lives. Highest-value next OpenAI ingest.
+- ratchet: links +~85 · orphans +0 · patterns +0 new + 2 example-count bumps (marketplace 2→3 cross-lab, single-source 3→4 new-mechanism) + 1 fat-skills 3rd-creator witness + 1 supporting sighting; concepts +1 (`convergent-agent-plugin-spec`).
+
+## [2026-06-02] reflect | portable skillification + release gates
+
+- Reviewed the wiki after the OpenAI Plugins ingest and this LINT pass. `scripts/wiki-doctor.py` reported **100/100** across 76 pages; the judgment pass found fresh self-application opportunities from [[concepts/convergent-agent-plugin-spec]], [[patterns/composition/single-source-multi-surface-distribution]], [[patterns/quality-bar/version-as-update-gate]], and [[concepts/compound-engineering]].
+- Added `meta/self-improvements.md` Pass 6 (#28–31): portable/common-core skillification, version-as-update-gate for any future installable wiki outputs, a compounding budget check, and stale front-door fixes.
+- Applied the machinery changes directly: `CLAUDE.md` now tells REFLECT to author reusable skills/plugins to the convergent core and to run a compounding budget check; the anti-rules now forbid hand-bumped versions for future installable packages; `for-builders.md` routes skill/plugin builders through [[concepts/convergent-agent-plugin-spec]] and asks for a portability note; `README.md` names all four operations; `index.md` no longer claims the ledger has only the original 6 proposed entries.
+- ratchet: links +9 · orphans +0 · patterns +0 (self-application; no new artifact pages).

@@ -58,8 +58,10 @@ This is the **mechanism layer** the wiki has been missing. Our plugin artifact p
 - [[sources/anthropic--skills]] — the *skills* spec + demonstration skills; this page is the *plugins* spec that packages skills (plus agents/hooks/MCP) for Claude Code.
 - [[sources/garrytan--gstack]] — plugin that bundles scripts; subject to the `${CLAUDE_PLUGIN_ROOT}` and caching rules described here.
 - [[sources/garrytan--gbrain]] — plugin shipping a persistent memory store; the "persistent data directory" guidance applies.
+- [[sources/openai--plugins]] — **the cross-lab counterpart.** OpenAI's Codex plugin spec (`.codex-plugin/`) is near-identical to the one this page documents — same auto-discovered `skills/`/`commands/`/`agents/`, the same `hooks.json` `PostToolUse`/`matcher` grammar, `.mcp.json`, and a `marketplace.json`. Cite both together for [[concepts/convergent-agent-plugin-spec]]; OpenAI even references Anthropic's "skill-creator naming rules."
 
 ## Related wiki pages
 
 - [[creators/anthropic]] — author of this doc
 - [[artifacts/plugins/anthropic-skills-marketplace]] — a marketplace subject to the install/cache behavior documented here
+- [[concepts/convergent-agent-plugin-spec]] — this page is one of the concept's two grounding sources (the Anthropic side of the convergence)

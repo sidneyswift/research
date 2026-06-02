@@ -43,6 +43,7 @@ popularity-signals:
 - **Creator**: [[creators/openai]]
 - **Source**: [[sources/openai--using-goals-in-codex#root]]
 - **Embodies**: [[concepts/completion-contract]] — Goals *are* the productized completion contract.
+- **Sibling Codex artifact**: [[artifacts/plugins/openai-codex-plugins-marketplace]] — the *other* studied layer of the same CLI. Goals is the **behavioral** surface (how Codex runs a long objective); the marketplace is the **packaging/distribution** surface (how Codex gets new capabilities). Same creator, same CLI, complementary layers.
 - **Sibling-in-spirit**: [[artifacts/plugins/gstack]] / [[artifacts/plugins/gbrain]] (Garry Tan) — the closest in-wiki artifacts that lean on evidence-gated, parameterized agent procedures, though on Claude Code rather than Codex.
 
 ## What problem it solves
@@ -103,4 +104,4 @@ The "restate the target after every turn" tax. Without Goals, a multi-turn task 
 - **Implementation is described, not shown.** Thread-scoped state, the dispatcher, and budget accounting are the authors' account; we have no source or trace. How is "budget" measured (tokens? turns? time?), and how often do Goals complete vs. block vs. exhaust budget?
 - **How does this compare to Claude Code's equivalents?** Plan mode, hooks, and long-running loops cover overlapping ground. A side-by-side (Codex Goals vs. Claude Code persistent-objective mechanisms) would be a strong QUERY once we've ingested a Claude Code analogue.
 - **Is the verification surface gameable?** Evidence-gated completion is only as good as the surface chosen; the source warns but doesn't measure.
-- **The rest of Codex.** This is one feature of a broader tool — capabilities, model, sandboxing, and approval model are all unstudied. Queue a full Codex CLI ingest.
+- **The rest of Codex.** This is one feature of a broader tool — capabilities, model, sandboxing, and approval model are all unstudied. The **distribution layer is now studied** ([[artifacts/plugins/openai-codex-plugins-marketplace]]); the *runtime* (harness loop, sandbox, approval) still isn't. Queue a full Codex CLI ingest.

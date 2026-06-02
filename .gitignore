@@ -14,6 +14,7 @@ sources/anthropic--financial-services/
 sources/garrytan--gstack/
 sources/garrytan--gbrain/
 sources/every--compound-engineering-plugin/
+sources/openai--plugins/
 
 # Never commit nested .git directories from any clone that isn't listed above.
 sources/**/.git/

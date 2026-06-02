@@ -4,7 +4,7 @@ type: plugin
 name: # kebab-case plugin name
 creator: # [[creators/...]]
 source: # [[sources/<creator>--<repo>]]
-ecosystem: # claude-code (plugins are Claude Code only as of 2026)
+ecosystem: # claude-code | codex | cross-lab — NOT Claude-Code-only as of 2026-06: OpenAI Codex ships a near-identical plugin spec (see [[concepts/convergent-agent-plugin-spec]])
 discovered-via: # marketplace | official-docs | tweet | colleague | other
 marketplace-listing: # Cowork marketplace URL if applicable
 status: # active | deprecated | beta | community-fork

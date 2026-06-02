@@ -5,7 +5,7 @@ name: single-source-multi-surface-distribution
 category: composition
 status: confirmed
 last-reviewed: 2026-06-02
-example-count: 3
+example-count: 4
 ---
 
 # single-source-multi-surface-distribution
@@ -26,6 +26,8 @@ Concretely, in `anthropics/financial-services` ([[sources/anthropic--financial-s
 4. A **drift guard** keeps the surfaces honest: `scripts/check.py` fails if a bundled skill copy has diverged from its vertical source ([[sources/anthropic--financial-services#scripts-check]]); `sync-agent-skills.py` re-propagates the source ([[sources/anthropic--financial-services#scripts-sync]]).
 
 gbrain reaches the same end differently — one engine, three install shapes (skillpack scaffold, standalone CLI, MCP server) generated from one codebase ([[sources/garrytan--gbrain#README]]). The unifying move is identical: **the capability is defined once; the surface is a packaging choice, not a rewrite.**
+
+`openai/plugins` surfaces a **third mechanism — *no transform at all***. Where FSI *references* and CE *converts*, the Codex ecosystem sometimes needs neither: because the plugin/skill grammar has **converged across labs** ([[concepts/convergent-agent-plugin-spec]]), the *same files run natively* on more than one harness. `superpowers` is the proof — one skill set (`brainstorming`, `test-driven-development`, `systematic-debugging`, …) runs on **both Codex and Claude Code** with no per-surface wrapper or converter ([[sources/openai--plugins#superpowers]]). And `plugin-eval` is the within-ecosystem case: one Node codebase exposed as **both a CLI and a Codex plugin** from a single `src/` ("both a local Node.js CLI and a Codex plugin bundle"), so there is literally one source and *no second copy to drift* ([[sources/openai--plugins#plugin-eval]]). The drift guard degenerates to identity: you don't *check* the copies match because there are none. This is single-sourcing's limit case — reference → convert → **run-natively** as the spec standardizes.
 
 `compound-engineering` extends the pattern along a third axis — **competing harnesses you don't own**, via *conversion* rather than *reference*. The skills/agents are authored once in Claude format; `src/parsers/claude.ts` reads them and `src/converters/claude-to-<target>.ts` + `src/targets/<target>.ts` emit the native layout for ~11 platforms (Codex, Cursor, Copilot, Droid, Qwen, OpenCode, Pi, Gemini, Kiro) ([[sources/every--compound-engineering-plugin#converter]], `#install-matrix`). The drift guard is `bun run release:validate`, which fails the build if the Claude/Cursor/Codex *marketplace manifests* fall out of parity ([[sources/every--compound-engineering-plugin#release-automation]]). The distinction worth noting: FSI/gbrain keep a live *reference* the deploy step resolves; CE produces *transformed copies* per target — so CE also needs **portability rules at authoring time** (no unguarded platform env vars; per-platform tool-equivalent names) so the one source survives conversion intact ([[sources/every--compound-engineering-plugin#cross-platform-authoring]]).
 
@@ -60,6 +62,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 - [[artifacts/plugins/anthropic-financial-services-marketplace]] — every named agent ships as a Cowork/Claude Code plugin **and** a Managed Agents API template; the `agent.yaml` references the plugin's system prompt + skills, resolved at deploy. — citation: [[sources/anthropic--financial-services#cookbooks-README]], [[sources/anthropic--financial-services#cookbook-agent-yaml]], [[sources/anthropic--financial-services#scripts-deploy]]
 - [[artifacts/plugins/gbrain]] — one memory engine packaged as three install shapes (skillpack scaffold / standalone CLI / MCP server) from a single codebase. — citation: [[sources/garrytan--gbrain#README]]
 - [[artifacts/plugins/compound-engineering]] — one Claude-format skill pack **converted** to ~11 competing agent harnesses by a Bun/TS CLI, with manifest-parity drift caught by `release:validate`. The new axis (competing third-party tools) and the new mechanism (conversion + authoring-time portability rules, not live reference). — citation: [[sources/every--compound-engineering-plugin#converter]], [[sources/every--compound-engineering-plugin#release-automation]], [[sources/every--compound-engineering-plugin#cross-platform-authoring]]
+- [[artifacts/plugins/openai-codex-plugins-marketplace]] — **the *run-natively* (no-transform) variant**, third creator/ecosystem. `plugin-eval` is one Node `src/` exposed as **CLI + Codex plugin** (single source, no copy to drift); `superpowers` runs **one skill set on two harnesses** (Codex + Claude Code) with no wrapper or converter — possible only because the plugin grammar converged ([[concepts/convergent-agent-plugin-spec]]). Reference (FSI) → convert (CE) → run-natively (here). — citation: [[sources/openai--plugins#plugin-eval]], [[sources/openai--plugins#superpowers]]
 
 ## Counter-examples or anti-pattern
 
@@ -69,6 +72,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 ## Related patterns
 
 - [[patterns/structural/marketplace-as-multi-plugin]] — composes-with: multi-surface is about *runtimes*; marketplace-as-multi-plugin is about *packaging units within one runtime*. The FSI repo does both at once.
+- [[concepts/convergent-agent-plugin-spec]] — *enables the run-natively variant:* when two harnesses share the plugin/skill grammar, "one source, many surfaces" needs neither reference nor conversion — the same files run on both (superpowers). The concept is the precondition for the cheapest form of this pattern.
 - *(proposed)* single-source-of-truth skill vendoring with drift detection — a sub-mechanism that makes this pattern safe; tracked on [[artifacts/plugins/anthropic-financial-services-marketplace]] pending a 2nd example.
 
 ## Open questions
