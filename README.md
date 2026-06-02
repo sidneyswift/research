@@ -24,11 +24,13 @@ A research wiki cataloging the most important and talked-about work across the A
 | Domain | Count | Last updated |
 |---|---|---|
 | Skills cataloged | 0 paged (candidate queue: 17+ from anthropic-skills, ~55 from financial-services, dozens in gstack/gbrain) | 2026-06-01 |
-| Plugins cataloged | 4 — `anthropic-skills-marketplace`, `gstack`, `gbrain` (speedrun) + `anthropic-financial-services-marketplace` (full) | 2026-06-01 |
+| Plugins cataloged | 5 — `anthropic-skills-marketplace`, `gstack`, `gbrain`, `anthropic-financial-services-marketplace`, `compound-engineering` | 2026-06-02 |
+| Projects cataloged | 1 — `codex-goals` (OpenAI Codex Goals feature) | 2026-06-02 |
 | MCP servers cataloged | 0 paged (12 FSI data connectors + 1 gbrain server referenced; queued) | 2026-06-01 |
-| Patterns extracted | **5 confirmed** (`single-source-multi-surface-distribution`, `marketplace-as-multi-plugin`, `skill-pack-bundle`, `resolver-routing-table`, `latent-vs-deterministic-split`) + **4 proposed-with-pages** (`thin-harness-fat-skills`, `skill-as-method-call`, `diarization`, `complexity-ratchet`); ~17 proposed bullets | 2026-06-01 |
-| Creators cataloged | 2 — Anthropic, Garry Tan | 2026-06-01 |
-| Source repos snapshotted | 4 repos (~126 MB) + 1 docs-page + **8 essays** (Garry Tan's "AI Explainer" series, `garrytan--*`) | 2026-06-01 |
+| Concepts cataloged | 2 — `compound-engineering`, `completion-contract` | 2026-06-02 |
+| Patterns extracted | **8 confirmed** + 3 proposed-with-pages (`thin-harness-fat-skills`, `diarization`, `evidence-gated-completion`); ~20 proposed bullets — see [Patterns](index.md#patterns) | 2026-06-02 |
+| Creators cataloged | 4 — Anthropic, Garry Tan, Every, OpenAI | 2026-06-02 |
+| Sources snapshotted | 5 repos (~137 MB) + 3 docs-pages + 9 articles (incl. Garry Tan's 8-essay "AI Explainer" series) | 2026-06-02 |
 
 (Update this table after each ingestion.)
 

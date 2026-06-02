@@ -20,7 +20,7 @@ example-count: 2
 
 In a marketplace/plugin world, a consumer's client caches each install **by version** (a
 new version → a new cached directory it pulls; see
-[[sources/anthropic--plugins-reference#plugin-caching-and-file-resolution]]). So `version`
+[[sources/anthropic--plugins-reference#caching-and-file-resolution]]). So `version`
 is load-bearing for *delivery*, not just bookkeeping: change it and users get the update;
 don't and they don't. The hazard is that, when many PRs batch between releases, **no
 contributor can know the final released version from inside their PR** — so if everyone
@@ -80,7 +80,7 @@ because the version is *emergent from the batch*: with N PRs queued, the next ve
 the highest-severity change among them, which no single PR author can see. Mechanically it works
 because installs are **versioned caches**: a marketplace client copies each plugin version into
 its own directory and GCs orphaned versions after a grace period
-([[sources/anthropic--plugins-reference#plugin-caching-and-file-resolution]]), so an errant manual
+([[sources/anthropic--plugins-reference#caching-and-file-resolution]]), so an errant manual
 bump doesn't just mislabel — it can mis-deliver (ship half-baked state, or fail to ship at all).
 Putting the field under automation + a drift check converts "did someone bump the version wrong?"
 from a latent production bug into a build failure — the same move

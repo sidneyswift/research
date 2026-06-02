@@ -40,3 +40,11 @@ This is an underscore-prefixed shared-rules file (gbrain's `_brain-filing-rules.
 - [ ] `## Detection recipe` filled (look-for / confirm-with / rule-out).
 - [ ] `## Counter-examples or anti-pattern` and `## When NOT to use` filled.
 - [ ] `status` + `example-count` frontmatter match reality.
+
+## If blocked (any page type)
+
+The completion contract's *negative* half ([[concepts/completion-contract]] / [[patterns/behavioral/evidence-gated-completion]]): a page you **can't** honestly finish is **not done** — and must not be dressed up to look done.
+
+- [ ] **Can't verify a claim / a needed source anchor is missing / a signal won't fetch?** Mark the gap *inline* (`TODO`, "unknown", "unverified") **and** in the page's `## Open questions`, and note why in `log.md`. Don't silently drop the claim, and don't assert it anyway.
+- [ ] **"Done" is decided by evidence, not confidence.** A page passes when a LINT / `scripts/wiki-doctor.py` pass over it is clean — not because it *reads* finished. Run the check; don't self-assess.
+- [ ] **Out of budget/time ≠ done.** Stop, leave the gaps marked, and log what remains + what would unlock it (the blocked stop condition) — never a fake completion.

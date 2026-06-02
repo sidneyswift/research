@@ -139,7 +139,7 @@ anchors beyond this list** — register new ones here first.
 - `#caching-gotcha` — `plugin-AGENTS.md`: *"Plugin agent and skill definitions both cache at
   session start"* — edits don't propagate within a live session; use `skill-creator` to test,
   or restart. (Grounds the same caching behavior documented in
-  [[sources/anthropic--plugins-reference#plugin-caching-and-file-resolution]].)
+  [[sources/anthropic--plugins-reference#caching-and-file-resolution]].)
 - `#legacy-cleanup` — when a skill/agent/command is removed, its name is registered in
   `STALE_SKILL_DIRS`/`STALE_AGENT_NAMES`/`STALE_PROMPT_FILES` (`src/utils/legacy-cleanup.ts`)
   + `EXTRA_LEGACY_ARTIFACTS_BY_PLUGIN` so stale flat-install artifacts are swept on upgrade.

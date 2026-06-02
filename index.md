@@ -105,20 +105,22 @@ Candidate queue: see [concepts/_index.md](concepts/_index.md).
 
 The actual research output. Confirmed patterns (≥2 artifact examples + counter-example) listed here. Proposed patterns are tracked on the relevant artifact pages and promoted when evidence accumulates.
 
-**Confirmed (2026-06-01):**
+**Confirmed (8 as of 2026-06-02):**
 
-- [[patterns/composition/single-source-multi-surface-distribution]] — one definition, many runtime surfaces. Examples: financial-services (Cowork + Managed Agents API), gbrain (CLI + MCP + skillpack).
-- [[patterns/structural/marketplace-as-multi-plugin]] — one repo's `marketplace.json` registers N à-la-carte plugins. Examples: financial-services (20), anthropic-skills-marketplace (3).
-- [[patterns/quality-bar/skill-pack-bundle]] — a skill ships as a *tested bundle* (markdown skill + thin code + unit/LLM/integration/resolver tests); "a skill pack has tests." gstack (7 parts as files) + gbrain (`gbrain doctor` enforces the 10-step checklist). *Same-creator caveat tracked.* Promoted from proposed on the strength of the AI-Explainer series.
-- [[patterns/composition/resolver-routing-table]] — a routing table mapping intent→which skill/doc to load; tested with trigger evals, audited with `check-resolvable`, fractal across layers. gbrain (`RESOLVER.md` + routing-eval fixtures) + gstack (`scripts/resolvers/` + resolver evals). *Supersedes the old "skill-router file RESOLVER.md" proposed bullet.*
-- [[patterns/behavioral/latent-vs-deterministic-split]] — every step is model-judgment (latent) or same-in/same-out (deterministic); put each on the right side ("not a wrong answer — a wrong side"). gstack (deterministic `browse/`+`bin/` vs latent skills) + gbrain ("zero-LLM" graph vs latent synthesis).
+- [[patterns/composition/single-source-multi-surface-distribution]] — one definition, many surfaces (reference *or* convert; never hand-fork). financial-services (Cowork + Managed Agents API), gbrain (CLI + MCP + skillpack), compound-engineering (→ ~11 competing harnesses via a converter — **new axis 2026-06-02**).
+- [[patterns/structural/marketplace-as-multi-plugin]] — one repo's `marketplace.json` registers N à-la-carte plugins. financial-services (20), anthropic-skills-marketplace (3).
+- [[patterns/quality-bar/skill-pack-bundle]] — a skill ships as a *tested bundle*; "a skill pack has tests." gstack + gbrain + compound-engineering (~1,094 tests incl. behavioral *contract* tests). **Same-creator caveat retired 2026-06-02** (CE is non-Garry, two ecosystems); residue: the *resolver eval* sub-part stays Garry-best.
+- [[patterns/composition/resolver-routing-table]] — a *tested* routing table (intent→which skill/doc); trigger evals + `check-resolvable`, fractal across layers. gbrain + gstack. ⚠ same-creator.
+- [[patterns/behavioral/latent-vs-deterministic-split]] — every step is model-judgment or same-in/same-out; put each on the right side. gstack + gbrain + compound-engineering (states the rule: "skills are guardrails… calibrate prescription to the failure mode"). **Same-creator caveat retired 2026-06-02.**
+- [[patterns/quality-bar/complexity-ratchet]] — every session adds tests/docs/evals that reload into context, so the quality floor only rises (forward-only). gstack + gbrain + compound-engineering (`docs/solutions/` knowledge ratchet + branch-protection floor). **Promoted proposed→confirmed 2026-06-02** — CE is the independent non-Garry example; [[concepts/compound-engineering]] names the principle independently.
+- [[patterns/quality-bar/version-as-update-gate]] — `version` is the update-delivery trigger (installs cached by version), so release-automation owns it and hand-bumps are forbidden. financial-services (pre-commit hook) + compound-engineering (release-please + `linked-versions`). **New + confirmed 2026-06-02.**
+- [[patterns/behavioral/skill-as-method-call]] — a skill/command file is a parameterized procedure; same file, different arguments → different capability. **Promoted 2026-06-02**: gstack (`/qa` tiers, `/investigate`) + [[artifacts/projects/codex-goals]] (the `/goal` six-slot signature — non-Garry, on the Codex CLI).
 
-**Proposed, with a dedicated page (2026-06-01 — from the AI-Explainer series):**
+**Proposed, with a dedicated page:**
 
-- [[patterns/structural/thin-harness-fat-skills]] — push intelligence up into markdown skills, execution down into deterministic code, keep the harness thin. Grounded fat-skills side (gstack/gbrain); the thin *harness* (OpenClaw) isn't ingested yet.
-- [[patterns/behavioral/skill-as-method-call]] — a skill file is a parameterized procedure (TARGET/QUESTION/DATASET); same file, different invocation → different capability. gstack `/qa` tiers, `/investigate`.
+- [[patterns/structural/thin-harness-fat-skills]] — fat markdown skills (~90% of value) / thin deterministic code / thin harness. Fat-skills half now **cross-confirmed across two creators** (gstack/gbrain + compound-engineering); still `proposed` — the thin *harness* middle (OpenClaw / Claude Code / Codex) isn't ingested in any example.
+- [[patterns/behavioral/evidence-gated-completion]] — an agent can't self-declare *done*; completion is gated on an external verification surface, and budget-exhaustion ≠ done. Grounded in [[artifacts/projects/codex-goals]] (Codex Goals); in-wiki promotion candidates noted (`complexity-ratchet`, gstack floor tests). **New (proposed) 2026-06-02.**
 - [[patterns/behavioral/diarization]] — read everything about a subject, write one structured page of distilled judgment (the "says vs actually building" gap). gbrain `enrich/` + brain-page schema.
-- [[patterns/quality-bar/complexity-ratchet]] — every session adds tests+docs+evals that reload into context, so quality only rises (forward-only); 90% coverage as the AI-affordable threshold. The system-level sibling of `skill-pack-bundle`.
 
 Proposed patterns currently mentioned across the plugin pages (need 2nd example to confirm):
 
@@ -139,7 +141,8 @@ Proposed patterns currently mentioned across the plugin pages (need 2nd example 
 - Structured-output-as-injection-defense (financial-services)
 - Single-source-of-truth skill vendoring + drift check (financial-services)
 - Provenance-first data-source hierarchy (financial-services)
-- Version-as-update-gate (financial-services)
+- ~~Version-as-update-gate (financial-services)~~ → **promoted** to [[patterns/quality-bar/version-as-update-gate]] (2nd example: compound-engineering)
+- *New from compound-engineering (1 example each; see [patterns/_index.md](patterns/_index.md)):* skill-self-containment for portability · cross-platform-portable skill authoring · dedup-before-create · legacy-artifact cleanup registry · auto-invoke trigger phrases
 - Audience-segmented skill output (financial-services / S&P)
 
 See [patterns/_index.md](patterns/_index.md) for the per-category breakdown.
