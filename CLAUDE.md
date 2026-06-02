@@ -103,6 +103,7 @@ What to check, in order:
 11. **New questions and sources to chase.** Lint isn't only cleanup — propose the next questions worth investigating and the next sources worth ingesting. This is where the wiki tells you what to read next.
 12. **Quality ratchet held?** Per [[patterns/quality-bar/complexity-ratchet]] — scan recent ingest log entries for their `ratchet:` tally. Flag any ingest that added a page but no cross-links, or that introduced an orphan without a logged reason. Quality should only climb.
 13. **Harness bloat.** Per [[patterns/structural/thin-harness-fat-skills]] — `CLAUDE.md` is the *thin harness*; the `_schemas/` are the *fat skills*. Flag detailed how-to that has crept into `CLAUDE.md` (long per-template instructions, page-format minutiae) and belongs in a schema/template instead. Keep the harness about *operations and routing*.
+14. **Stray embedded clones.** `git ls-files -s sources/ | grep ^160000` — any gitlink is a repo clone that was committed by accident (it should be a git-ignored local clone listed in `repos.manifest.tsv`). Untrack it (`git rm --cached`), add it to `.gitignore`, and either finish ingesting it (add a citation page + manifest row) or note it as pending.
 
 Lint produces a report — list each finding with file path and a one-line fix suggestion. Don't auto-fix without confirmation; some "stale" signals are intentional.
 

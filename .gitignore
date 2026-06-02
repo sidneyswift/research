@@ -14,6 +14,9 @@ sources/anthropic--financial-services/
 sources/garrytan--gstack/
 sources/garrytan--gbrain/
 
+# Cloned but not yet ingested (no citation page yet — pending INGEST):
+sources/every--compound-engineering-plugin/
+
 # Never commit nested .git directories from any clone that isn't listed above.
 sources/**/.git/
 
