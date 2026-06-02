@@ -1,0 +1,16 @@
+# Source clones live under sources/<creator>--<repo>/ as snapshotted files
+# (we strip their .git/ after cloning). Keep them tracked in our wiki repo —
+# that's the whole point. But guard against accidents:
+
+# Never commit nested .git directories (shouldn't exist after strip, but belt + suspenders)
+sources/**/.git/
+
+# OS and editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local-only scratch
+scratch/
+*.local.md

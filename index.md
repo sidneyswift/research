@@ -1,0 +1,100 @@
+# Research Wiki — Master Index
+
+The single front door. Every page in the wiki should be reachable from this index in one or two clicks. If a page exists but isn't listed here, it's effectively invisible — `INGEST` step 7 is to add it here.
+
+For an explanation of what this wiki is and how it operates, see [CLAUDE.md](CLAUDE.md). For a human-friendly summary, see [README.md](README.md). For the chronological record of what was added when, see [log.md](log.md).
+
+## Quick navigation
+
+| Section | Purpose |
+|---|---|
+| [Sources](#sources) | Cloned/snapshotted evidence — every claim cites here |
+| [Creators](#creators) | People and orgs behind the artifacts |
+| [Artifacts — Plugins](#artifacts--plugins) | Collections (skills + commands + agents + hooks + MCP) |
+| [Artifacts — Skills](#artifacts--skills) | Individual skills |
+| [Artifacts — MCP Servers](#artifacts--mcp-servers) | MCP server projects |
+| [Patterns](#patterns) | Recurring techniques across artifacts (the research output) |
+| [Analyses](#analyses) | Synthesis writeups |
+
+---
+
+## Sources
+
+Cloned repo snapshots and their citation pages. Repo files live at `sources/<creator>--<repo>/`; the `.md` page is the citation target.
+
+| Source | Type | Snapshot date | Commit |
+|---|---|---|---|
+| [[sources/anthropic--skills]] | repo | 2026-05-21 | `690f15c` |
+| [[sources/garrytan--gstack]] | repo | 2026-05-21 | `029356e` |
+| [[sources/garrytan--gbrain]] | repo | 2026-05-21 | `1580c6d` |
+| [[sources/anthropic--plugins-reference]] | docs-page | 2026-05-31 | n/a (living page) |
+| [[sources/anthropic--financial-services]] | repo | 2026-06-01 | `120a31d` |
+
+See also: [sources/_index.md](sources/_index.md) for citation conventions.
+
+## Creators
+
+| Creator | Type | Notes |
+|---|---|---|
+| [[creators/anthropic]] | org | Sets the Agent Skills spec; ships demonstration skills + plugins + the Claude API |
+| [[creators/garry-tan]] | individual | President & CEO of Y Combinator; ships `gstack` and `gbrain` |
+
+## Artifacts — Plugins
+
+| Plugin | Creator | Status | One-line |
+|---|---|---|---|
+| [[artifacts/plugins/anthropic-skills-marketplace]] | Anthropic | speedrun | Demonstration marketplace; 3 child plugins, 17 skills; reference shape |
+| [[artifacts/plugins/gstack]] | Garry Tan | speedrun | Virtual engineering team (CEO, Designer, QA Lead, etc.); 23 skills |
+| [[artifacts/plugins/gbrain]] | Garry Tan | speedrun | Hybrid vector+graph memory; ships as CLI + MCP + skillpack |
+| [[artifacts/plugins/anthropic-financial-services-marketplace]] | Anthropic (FSI) | full | FSI marketplace; 20 plugins, dual-runtime (Cowork + Managed Agents API), trust-tiered subagents |
+
+Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/plugins/_index.md).
+
+## Artifacts — Skills
+
+*(none ingested yet; 17+ candidates queued from `anthropic/skills`, dozens more inside gstack/gbrain)*
+
+Candidate queue: see [artifacts/skills/_index.md](artifacts/skills/_index.md).
+
+## Artifacts — MCP Servers
+
+*(none ingested yet; 1 referenced inside gbrain's manifest — `gbrain serve`)*
+
+Candidate queue: see [artifacts/mcp-servers/_index.md](artifacts/mcp-servers/_index.md).
+
+## Patterns
+
+The actual research output. Confirmed patterns (≥2 artifact examples + counter-example) listed here. Proposed patterns are tracked on the relevant artifact pages and promoted when evidence accumulates.
+
+**Confirmed (2026-06-01):**
+
+- [[patterns/composition/single-source-multi-surface-distribution]] — one definition, many runtime surfaces. Examples: financial-services (Cowork + Managed Agents API), gbrain (CLI + MCP + skillpack).
+- [[patterns/structural/marketplace-as-multi-plugin]] — one repo's `marketplace.json` registers N à-la-carte plugins. Examples: financial-services (20), anthropic-skills-marketplace (3).
+
+Proposed patterns currently mentioned across the plugin pages (need 2nd example to confirm):
+
+- Persona-shaped command naming (gstack)
+- Philosophy injection via preamble (gstack ETHOS)
+- Frontmatter extensions beyond official spec (gstack + gbrain both do this — likely confirmable now)
+- Voice-trigger aliases in description (gstack)
+- Heavy bash preamble as "skill OS" (gstack)
+- Pack-branding suffix in skill descriptions (gstack)
+- ~~Three-shape distribution: CLI + MCP + skillpack (gbrain)~~ → **promoted** to [[patterns/composition/single-source-multi-surface-distribution]]
+- Skill-router file (`RESOLVER.md`) (gbrain)
+- Underscore-prefixed universal rules (gbrain)
+- Agent-first install protocol (`AGENTS.md` separate from `CLAUDE.md`) (gbrain)
+- `[AGENT]`-marked operator-decision banner (gbrain)
+- ~~Marketplace-as-multi-plugin (anthropic-skills-marketplace)~~ → **promoted** to [[patterns/structural/marketplace-as-multi-plugin]]
+- `llms.txt` + `llms-full.txt` dual files (gbrain)
+- Trust-tiered subagent privilege separation (financial-services) — *new; standout idea to find again*
+- Structured-output-as-injection-defense (financial-services)
+- Single-source-of-truth skill vendoring + drift check (financial-services)
+- Provenance-first data-source hierarchy (financial-services)
+- Version-as-update-gate (financial-services)
+- Audience-segmented skill output (financial-services / S&P)
+
+See [patterns/_index.md](patterns/_index.md) for the per-category breakdown.
+
+## Analyses
+
+*(none yet — see [analyses/_index.md](analyses/_index.md) for the rule of "no synthesis until ≥5 artifacts of relevant type")*
