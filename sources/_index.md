@@ -44,6 +44,10 @@ External writing we cite. Always include retrieval date and a snapshot path (PDF
 
 **Every — compound engineering.** Kieran Klaassen (GM of Cora) + Dan Shipper (CEO); the methodology's origin and home. ⚠ Partial captures (`every.to` is a subscription publication) — confirmed metadata + verbatim fragments + outline; full-text paste is TODO.
 
+**Anthropic — dynamic workflows.** The first official Anthropic technical deep-dive on how the Claude Code harness works, by Thariq Shihipar and Sid Bidasaria (Anthropic Claude Code team). Published 2026-06-02.
+
+- [[sources/anthropic--dynamic-workflows]] — **article** (X article + Claude Blog mirror), Thariq Shihipar (@trq212) + Sid Bidasaria (@sidbid), 2026-06-02. "A harness for every task: dynamic workflows in Claude Code" — model writes JS harness on the fly, 6 composable orchestration patterns, 3 named failure modes. 3,340 likes / 7,574 bookmarks. Grounds [[concepts/dynamic-workflows]].
+
 - [[sources/every--compound-engineering-gets-an-upgrade]] — **article**, Kieran Klaassen, 2026-05-29 (updated 2026-06-01). The 4-step → 8-step evolution; "AI is the stuff in the middle. Humans are the bread on either end."
 
 ## Marketplace listings

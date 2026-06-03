@@ -13,7 +13,7 @@ last-reviewed: 2026-06-01
 
 ## Attributes
 
-- **What they ship**: Claude (model family), Claude Code (CLI/desktop/web), Claude.ai Skills format, Agent Skills specification, MCP (Model Context Protocol — co-created), Cowork plugin marketplace, the [Managed Agents API](https://docs.claude.com/en/api/managed-agents) (`/v1/agents`), and vertical reference marketplaces (e.g. financial services).
+- **What they ship**: Claude (model family), Claude Code (CLI/desktop/web), Claude.ai Skills format, Agent Skills specification, MCP (Model Context Protocol — co-created), Cowork plugin marketplace, the [Managed Agents API](https://docs.claude.com/en/api/managed-agents) (`/v1/agents`), vertical reference marketplaces (e.g. financial services), and **dynamic workflows** (model-generated JS harnesses for multi-agent orchestration, 2026-06-02).
 - **Distribution channels**: github.com/anthropics, claude.ai, anthropic.com docs and support, Claude Code marketplace, Cowork.
 - **Position in ecosystem**: Standard-setter. Their format choices propagate; their docs are authoritative.
 - **Notable docs**: ["What are skills?"](https://support.claude.com/en/articles/12512176-what-are-skills), ["Creating custom skills"](https://support.claude.com/en/articles/12512198-creating-custom-skills), engineering post ["Equipping Agents for the Real World with Agent Skills"](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills).
@@ -47,3 +47,4 @@ last-reviewed: 2026-06-01
 - [[sources/anthropic--skills#marketplace.json]] — Cowork-installable plugin format
 - [[sources/anthropic--plugins-reference]] — Claude Code plugin system spec: `plugin.json`, `${CLAUDE_PLUGIN_ROOT}` file resolution, and plugin caching behavior
 - [[sources/anthropic--financial-services]] — FSI reference marketplace: dual-runtime distribution, managed-agent cookbooks (`agent.yaml` + subagents), trust-tiered subagent security, single-source skill vendoring with drift detection
+- [[sources/anthropic--dynamic-workflows]] — "A harness for every task: dynamic workflows in Claude Code" (Thariq Shihipar + Sid Bidasaria, 2026-06-02): the first official Anthropic deep-dive on how the Claude Code harness works internally — model-generated JS workflows, 6 composable orchestration patterns, 3 named failure modes (agentic laziness, self-preferential bias, goal drift)

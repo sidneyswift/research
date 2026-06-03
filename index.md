@@ -45,6 +45,8 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/every--compound-engineering-gets-an-upgrade]] | article | 2026-06-02 | 2026-05-29 |
 | [[sources/openai--using-goals-in-codex]] | docs-page | 2026-06-02 | `9b4e627` (pub 2026-05-09) |
 | [[sources/openai--plugins]] | repo | 2026-06-02 | `bebc3d6` |
+| [[sources/anthropic--dynamic-workflows]] | article | 2026-06-02 | n/a (article) |
+| [[sources/ahrefs--ai-search-optimization-research]] | tweet | 2026-06-02 | n/a (social post) |
 
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
@@ -101,6 +103,7 @@ Ideas and techniques worth their own page — especially from essays, papers, an
 
 - [[concepts/compound-engineering]] — Every's (Kieran Klaassen's) methodology: each unit of work makes the next easier; 80/20 planning + 50/50 features-vs-systems; "taste belongs in systems, not review." The independently-named twin of [[patterns/quality-bar/complexity-ratchet]]; embodied by [[artifacts/plugins/compound-engineering]].
 - [[concepts/completion-contract]] — an agent objective as a persistent, evidence-verified *contract* ("done" decided by evidence, not confidence). OpenAI's term, productized as Codex Goals; embodied by [[artifacts/projects/codex-goals]].
+- [[concepts/dynamic-workflows]] — Claude Code's model-generated JS harnesses for multi-agent orchestration. The model writes a custom harness per task, spawning subagents with isolated context windows to defeat agentic laziness, self-preferential bias, and goal drift. Six composable patterns. Workflows distributable via skills. `active`. Source: [[sources/anthropic--dynamic-workflows]].
 - [[concepts/ai-search-as-parallel-discovery-layer]] — AI chatbots form a **parallel discovery layer** independent of Google organic search — different sources, citation patterns, and content format preferences. Backed by 1B data points across 14 Ahrefs studies. YouTube mentions = highest AI brand visibility correlation (0.737); 28.3% of most-cited pages have zero Google visibility. `emerging`. Source: [[sources/ahrefs--ai-search-optimization-research]].
 - [[concepts/convergent-agent-plugin-spec]] — Anthropic's `.claude-plugin/` and OpenAI's `.codex-plugin/` are near-identical (same skills/hooks/MCP/marketplace grammar) — the agent plugin shape is consolidating into a **cross-lab standard**. `emerging`. Grounds the cross-ecosystem reach of [[patterns/structural/marketplace-as-multi-plugin]] + [[patterns/structural/thin-harness-fat-skills]]. Sources: [[sources/openai--plugins]] + [[sources/anthropic--plugins-reference]].
 
