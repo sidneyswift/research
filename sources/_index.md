@@ -56,7 +56,7 @@ Marketplace pages capture install counts, ratings, descriptions — popularity s
 
 Tweets, Reddit threads, HN comments. Capture full text + author + date.
 
-*(none yet)*
+- [[sources/ahrefs--ai-search-optimization-research]] — **tweet** (+ LinkedIn cross-post), Tim Soulo (@timsoulo, CMO of Ahrefs), 2026-06-02. Synthesis of 14 Ahrefs studies analyzing 1 billion data points on AI search optimization — how ChatGPT, AI Overviews, and AI Mode cite web content. 2,576 likes / 5,348 bookmarks. Grounds [[concepts/ai-search-as-parallel-discovery-layer]].
 
 ## Docs
 
