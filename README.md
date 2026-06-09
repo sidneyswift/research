@@ -4,7 +4,7 @@ A research wiki cataloging the most important and talked-about work across the A
 
 **Scope (broadened 2026-06-01):** frontier-facing and cross-platform. Anthropic *and* OpenAI, Cursor, Google, open-source projects, individual builders, and research labs are all in scope. We catalog **artifacts** (runnable things), **concepts** (ideas/techniques worth a page), and **patterns** (techniques recurring across ≥2 artifacts). *Originally (2026-05-21) scoped to the Anthropic ecosystem only; widened once the Garry Tan essay ingests showed the research naturally spans the whole frontier.*
 
-**Output format:** Wiki-style knowledge base. Same shape as the Flex Seal second-brain — typed entity pages with `domain:` + `type:` frontmatter, `## Attributes` + `## Relationships` sections, source citations via `[[sources/...#anchor]]`.
+**Output format:** Wiki-style knowledge base — typed entity pages with `domain:` + `type:` frontmatter, `## Attributes` + `## Relationships` sections, source citations via `[[sources/...#anchor]]`.
 
 **Collection mode:** Curated. Sidney provides candidate artifacts; we deep-dive each one and extract patterns as we go.
 
