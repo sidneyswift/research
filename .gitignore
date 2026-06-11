@@ -15,6 +15,7 @@ sources/garrytan--gstack/
 sources/garrytan--gbrain/
 sources/every--compound-engineering-plugin/
 sources/openai--plugins/
+sources/sidneyswift--skills/
 
 # PURCHASED / PROPRIETARY source (PM OS, prodmgmt.world): the local evidence copy
 # lives here for scanning but must NEVER be committed or pushed — it's licensed,
