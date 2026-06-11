@@ -5,7 +5,7 @@ url: https://prodmgmt.world
 retrieved: 2026-06-10
 snapshot-location: sources/prodmgmt-world--pm-os-bundle/ # LOCAL-ONLY, git-ignored (proprietary paid product — never committed/pushed; this repo is public)
 upstream-commit: n/a # distributed as versioned zips; studied version 2.2.1
-last-reviewed: 2026-06-10
+last-reviewed: 2026-06-11
 ---
 
 # PM OS 2.2.1 (prodmgmt.world) — purchased plugin bundle
@@ -34,7 +34,14 @@ Paths are relative to `sources/prodmgmt-world--pm-os-bundle/claude-code/pm-os/pl
 - `#registry` — `registry/` (agents.json, commands.json, skills.json, workflows.json, CAPABILITIES.md — machine-readable component index)
 - `#cursor-variant` — sibling cursor zip: `.cursor-plugin/marketplace.json`, `.cursor/hooks.json`, `.cursor/mcp.json`, emoji-named content dirs (📂 Context, 🧠 Knowledge, 📄 Templates, 💎 Examples)
 - `#cowork-variant` — sibling cowork zip: `workspace/` layout for Anthropic Cowork
-- `#knowledge-dir` — `🧠 Knowledge/` framework library shipped alongside skills (frameworks the reviewer agents cite)
+- `#knowledge-dir` — `🧠 Knowledge/` framework library shipped alongside skills (354 files: frameworks, prioritization, interview questions, metrics examples, writing styles, Lenny-Newsletter index; tag-metadata for filtering; root rule forces citing a Knowledge file before any PM opinion)
+- `#workflow-chaining` — the 11 workflow SKILL.md files' chaining mechanism: inline prose steps, each a fixed 4-tuple (skill name → folder path → goal sentence → "Output to carry forward"); confirm-per-step header sentence; "Before starting" framework menus; uniform "Save output" trailer; mirrored in `registry/workflows.json` and validated by `bin/validate-workflow-registry.sh`
+- `#skill-house-style` — reusable-skill authoring conventions: exactly 2 frontmatter fields (235/235), "Use when" trigger sentence (213/235) enforced by `bin/normalize-skill-descriptions.sh`, Required-Inputs/Instructions/Usage-Notes skeleton (183/235), 130 files retaining `{{HANDLEBARS}}` placeholders (bulk-converted prompt corpus; median 84 lines, hand-authored outliers to 1657)
+- `#memory-schema` — `docs/memory/MEMORY-SCHEMA.md` + `bin/memory/*.sh` + system skills: 9-layer memory hierarchy; append-only `events.jsonl` (canonical) → `DECISION-LOG.md` (projection) → capped recall packets (consumer surface, `lookup_status` enum); per-path system-owned/user-owned upgrade boundary; preview-confirm writes with "stale yes" rule; untrusted-source/prompt-injection rules; daily-drip state machine with engagement-tapered cadence
+- `#hook-directives` — `tidy-reminder.sh` `emit_directive()` + comments citing issue #8: passive nudges ("Consider running /tidy") were silently absorbed, replaced by imperative `[SESSION-START DIRECTIVE]` with mandated first action + no-re-offer clause; `drip-reminder.sh` dry-runs tidy and yields (single-nudge arbitration)
+- `#telemetry` — `feedback-config.md` (Google Apps Script webhook, "The URL is the secret") + `pm-os-start/SKILL.md` 5 lifecycle curl pings (company/industry/funding/PM-level payloads, fail-silent, soft disclosure line) + ghost-written `/pm-os-testimonial` — the LLM as telemetry client
+- `#templates-examples` — `📄 Templates/` (7 PRD formats with Use-When/Don't-Use-When/Detail/Time tags; `/prd` routes by 2-3 diagnostic questions matched to tags) + `💎 Examples/` ("calibrate the quality of your own thinking — not the format, but the substance")
+- `#count-drift` — marketing prose vs validated registries: plugin.json/dirs = 235 skills & 12 agents; README says 237; Cowork README & cursor marketplace.json say 214 skills / 10 sub-agents — structure is CI-validated, narrative isn't
 
 ## Why we cite this
 
