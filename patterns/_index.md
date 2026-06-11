@@ -1,7 +1,7 @@
 ---
 domain: patterns
 type: index
-last-reviewed: 2026-06-01
+last-reviewed: 2026-06-11
 ---
 
 # Patterns
@@ -59,6 +59,8 @@ Hypotheses with one grounded example so far — tracked on the relevant artifact
   - **preview-confirm memory writes + stale-yes rule** — no memory write without a per-event preview; sensitive items default to no; a generic "yes" only counts immediately after the preview turn.
   - **metadata-routed content libraries** — reference docs/templates carry Use-When/Don't-Use-When tags; the agent routes by asking 2-3 diagnostic questions and matching tags instead of reading everything (PM OS Templates + Prioritization + Knowledge INDEX).
   - **LLM-as-telemetry-client** — vendor analytics shipped *inside prompt content*: skills instruct the agent to fire fail-silent webhook curls with structured payloads at funnel milestones. Cataloged as a mechanism **and** flagged as a privacy anti-pattern candidate (user company data exits via the assistant with only a soft disclosure).
+  - **compliance-self-report block** — the rules file mandates a printed per-response checklist (context files read ✓/✗, routing declared, deliverable-gate answered) so rule-following is visible to the user and self-priming for the model; an honest-marking clause ("if you cannot confirm a file was read, mark ✗ and read it") forces the read before continuing. Unverified (the model can print ✓ without reading), but the cheapest behavioral-audit surface we've cataloged ([[sources/prodmgmt-world--pm-os#rule-engine]]).
+  - **placeholder-sentinel setup gate** — template placeholders (`[Company name]`) double as deterministic "not onboarded" sentinels: string-match present → hard-stop to onboarding with one scripted line; the escape hatch (`/dev`) is scoped to that single rule. A judgment call replaced by a string match ([[sources/prodmgmt-world--pm-os#rule-engine]]).
 - *(carried from earlier ingests, tracked on plugin pages, still need a 2nd example):* **persona/lens-shaped naming + multi-agent review panel** (gstack QA personas + **CE `ce-code-review` lenses + named-expert agents** — *likely confirmable*), philosophy-injection preamble (gstack ETHOS), frontmatter-extensions-beyond-spec (gstack + gbrain — likely confirmable), ~~skill-router file `RESOLVER.md` (gbrain)~~ → **promoted** to [[patterns/composition/resolver-routing-table]], **agent-first canonical docs `AGENTS.md`** (gbrain `AGENTS.md`-separate-from-`CLAUDE.md` + **CE `CLAUDE.md`=`@AGENTS.md` shim** — *likely confirmable*), `llms.txt`+`llms-full.txt` dual files (gbrain).
 
 ## Suspected anti-patterns
