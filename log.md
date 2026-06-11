@@ -274,3 +274,4 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 - Practical: reviewer agents + 64 curated skills ported into Auto's own OpenClaw setup same day (prd-review skill; pm-os-core bundle plugin) — research applied, not just shelved.
 - Wired into: [[sources/_index]] (new "Purchased / proprietary bundles" section), [[artifacts/plugins/_index]], [[creators/_index]], [[index]] (3 tables), README status count (5→7 plugins, incl. backfill of openai-codex-plugins-marketplace missing from count).
 - ratchet: links +~25 · orphans +0 · patterns +0 new (4 existing strengthened, 1 counter-pressured).
+- **Addendum (same day):** full licensed bundle now lives at `sources/prodmgmt-world--pm-os-bundle/` as a **local-only, git-ignored evidence copy** (Option-B treatment, stricter reason: proprietary). Not in `repos.manifest.tsv` (no public repo); rebuild = re-extract the purchased zips. Source page snapshot-location updated.

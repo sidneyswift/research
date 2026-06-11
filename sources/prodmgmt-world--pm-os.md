@@ -3,7 +3,7 @@ domain: sources
 type: other # purchased proprietary plugin bundle (3 zips: claude-code, cursor, cowork)
 url: https://prodmgmt.world
 retrieved: 2026-06-10
-snapshot-location: link-only # licensed copy held LOCALLY outside this wiki (proprietary, paid product — must not be committed to a public repo)
+snapshot-location: sources/prodmgmt-world--pm-os-bundle/ # LOCAL-ONLY, git-ignored (proprietary paid product — never committed/pushed; this repo is public)
 upstream-commit: n/a # distributed as versioned zips; studied version 2.2.1
 last-reviewed: 2026-06-10
 ---
@@ -17,13 +17,13 @@ last-reviewed: 2026-06-10
 ## Snapshot details
 
 - **Retrieved**: 2026-06-10 (purchased copy)
-- **Where it lives in this wiki**: **link-only.** The licensed copy (3 zips + extracted trees) is held locally in Auto's workspace (`research/pm-os-study/`), outside this wiki. PM OS is a proprietary paid product (`"license": "Proprietary"` in its manifest); committing its content to this public repo would republish paid material. Claims below cite file paths inside the licensed copy; verify against a licensed copy.
+- **Where it lives in this wiki**: `sources/prodmgmt-world--pm-os-bundle/` — a **local-only, git-ignored** evidence copy (3 zips + extracted claude-code/cursor/cowork trees), same Option-B treatment as the cloned repos but with a stricter reason: PM OS is a proprietary paid product (`"license": "Proprietary"` in its manifest), so committing it to this public repo would republish paid material. It is **not** in `repos.manifest.tsv` (no public repo to re-clone from); rebuild by re-extracting the purchased zips. Claims below cite file paths inside that copy.
 - **Upstream URL**: https://prodmgmt.world (product site); repo field in manifest: https://github.com/gnurio/pm-os (private/unverified)
 - **Upstream identifier**: version `2.2.1` (from `.claude-plugin/plugin.json` and zip filenames)
 
 ## Anchor map
 
-Paths are relative to the extracted claude-code package root (`pm-os/plugins/pm-os/`) unless noted.
+Paths are relative to `sources/prodmgmt-world--pm-os-bundle/claude-code/pm-os/plugins/pm-os/` unless noted.
 
 - `#root` — the bundle as a whole (all three zips)
 - `#plugin-manifest` — `.claude-plugin/plugin.json` (name, version 2.2.1, proprietary license, component description: 13 system + 11 workflow + 211 reusable skills, 12 sub-agents, 2 SessionStart hooks)
