@@ -1,0 +1,98 @@
+---
+title: "I Found 12 People Who Ditched Their Expensive Software for AI-built Tools"
+author: "Lewis Kallow"
+date: 2025-08-04
+url: https://every.to/p/i-found-12-people-who-ditched-their-expensive-software-for-ai-built-tools
+words: 1184
+---
+
+*During Every's recently completed Think Week, our team addressed some of our own pain points by building internal tools with AI—and in many cases, no coding was required. (Spiral, our content automater, emerged from an earlier one of these sessions.) This wasn't unique to us—**Lewis Kallow** found 12 examples of people saving six figures and launching products faster by prompting AI instead of hiring developers. Here's how they're building what they need in hours, not months.—Kate Lee*
+
+*Was this newsletter forwarded to you? Sign up to get it in your inbox.*
+
+I recently heard a founder explain how he saved $50,000 in three hours.
+
+He didn’t achieve it by budget-cutting or layoffs, but by prompting AI to build his own custom software tool. And the number of lines of code he wrote by himself? Zero.
+
+It's one of 12 examples I've collected of people who have created powerful internal tools just by prompting AI. They're building tools that replace expensive software, automate workflows, and ship products faster—all without writing code. The results rival apps built by entire engineering teams, but take hours instead of months.
+
+These aren't consumer apps designed for millions of users. They're internal tools for teams and organizations—the unglamorous software that actually runs businesses. And AI has finally made them accessible to anyone who can write a prompt.
+
+As the co-writer of a __weekly newsletter__, it’s my job to extract hacks and insights for taking action and making ideas happen from the lives of the world’s most successful creatives. Today's examples indicate that many of *tomorrow's* most successful creative professionals will be those who take advantage of AI to create their own bespoke tools. The case studies I’ve uncovered have all delivered meaningful outcomes—one yielding $100,000-plus in cost savings and another that became an investor-backed startup.
+
+Let’s dive in.
+
+## The $50,000 SaaS saver
+
+**Joshua Wöhle** is a six-time founder and CEO of __Mindstone__, where he helps teams learn the essential skills required to harness AI in their work.
+
+When Wöhle needed a tool to help Mindstone’s community members connect based on complementary problems and skills, he did what he’s always done: He went shopping around for the best software tool.
+
+He researched, selected his favorite option, and was preparing to sign the contract—but that’s when another idea came to mind, as Wöhle himself __explained__ on the *Beyond the Prompt* podcast:
+
+"I nearly signed a $50,000 SaaS contract until I realized I could build the whole thing myself in about three hours. And the next morning, rather than having signed the contract, which I was initially going to sign the night before, I stopped to try and figure out if I could do it. The next morning, I'd built the entire software and I did it better than I thought the off-the-shelf tool would have done. And it saved me $50,000."
+
+$50,000 saved with just three hours of work—not bad! But did Wöhle really build that app without coding? I reached out to find out more.
+
+“I didn't edit a single line manually,” Wöhle told me. “That doesn't mean it got everything right instantly, but it meant that I only coded the entire thing using AI and iterated my way through getting it to work using AI without ever manually editing the code.”
+
+**Replacing an online course platform**
+
+In 2019, **Brian Christner** launched a course on Kajabi that teaches people how to manage website traffic.
+
+“It was generating revenue,” Christner __explained__ on his blog, “but over the years Kajabi's price kept increasing by huge percentages and my profit margins kept shrinking until it went negative.” So he took matters into his own hands and used Replit to vibe code his own course __platform__.
+
+The result was a tool that cost one-tenth as much with all of the features his students needed and none of those that they didn’t.
+
+“I chose freedom—and my wallet thanked me,” Christner concluded.
+
+**Enterprise-grade vendor portal**
+
+AI educator **Manny Bernabe** built a __vendor portal__ that lets you track vendors, manage invoices, and upload contracts.
+
+Building an app like this would have historically cost a minimum of five figures and weeks of development, while a comparable off-the-shelf product could set you back a similar amount in annual subscription fees.
+
+But Bernabe was able to build his portal for a fraction of this cost and time because, as he told me, “the vendor portal template was 95 percent vibe coded with AI. There’s a lot of guidance involved, and it did take me some time going back and forth with the agent. But I’m basically directing the agent, and almost all of the code is generated by Replit’s AI agent.”
+
+**Vibes versus a $15 billion unicorn **
+
+**Michael Luo**, a product manager at Stripe, went __viral__ on X for sharing a cease-and-desist letter he received after releasing a competitor to Docusign for free.
+
+##
+The Only Subscription
+
+You Need to
+
+Stay at the
+
+Edge of AI
+
+The essential toolkit for those shaping the future
+
+"This might be the best value you
+
+can get from an AI subscription."
+
+- Jay S.
+
+Join 100,000+ leaders, builders, and innovators
+
+Email address
+
+Already have an account? Sign in
+
+### What is included in a subscription?
+
+Daily insights from AI pioneers + early access to powerful AI tools
+
+## Comments
+
+Don't have an account? Sign up!
+
+Thank you to everyone who contributed to this piece, both the featured vibe coders and the team behind the scenes at Every. Would love to connect with anyone this one resonated with.
+
+@lewis_4329 Yup, let's connect. I'd sure like to see some full-transcripts (conversations) between designers and their chatbots -- their prompts (and techniques) would be really valuable to others who want to learn vibe coding techniques. Any chance of getting some of these to share?
+
+Good article! But... it's one thing to claim "s/he vibe coded this app with AI chatbot 'xyz'"; but it's another thing to actually see some "done for real", that is, to share and see the actual transcript from first prompt to "well enough along to infer the rest." In other words, these claims suggest a whole revolutionary approach to app-building that deserves seeing and sharing by example, not just by claims of results. Are any of the correspondents/contributors to the examples herein willing/able to share their chatbot-build transcripts, conversations? Very curious to see... Thanks!
+
+This was a great post, thank you. Especially the multiple different use cases you featured. What I’d love to see though is some BTS of exactly how some of these people are going from zero to revenue. Take, for example, Jon Cheney’s story you featured. It’s inspiring, but what about user acquisition? How did he do that? What’s required? A huge following? Knowing how to launch on PH? Multiple other things? That’s still a black box. It was nice of Replit to cover the story, but even that doesn’t go into the zero to revenue story. Sure, we can find general tips on the interent about launching products, but I feel proper case studies for AI-build products are what’s lacking in this space. We need more of those.
