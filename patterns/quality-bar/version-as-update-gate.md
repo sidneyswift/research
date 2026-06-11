@@ -109,6 +109,12 @@ from a latent production bug into a build failure — the same move
   fields across three marketplace manifests; contributors forbidden to hand-bump; `bun run
   release:validate` fails on drift; a `release-please-version-drift-recovery.md` runbook documents
   the failure mode. — citation: [[sources/every--compound-engineering-plugin#release-automation]]
+- *(supporting sighting — the **user-state migration** half, 2026-06-10)* [[artifacts/plugins/pm-os]] — a
+  *commercial* pack where version gates not just code delivery but **buyer-state migration**: versioned
+  zip releases (2.2.1) with a CHANGELOG, plus a dedicated `pm-os-upgrade` skill that migrates the user's
+  workspace state between versions. No release automation visible (zips, not CI), so it reinforces the
+  *version-as-contract* idea rather than the automation mechanism — but the upgrade-migration skill is a
+  component none of the open-source examples ship. — citation: [[sources/prodmgmt-world--pm-os#plugin-manifest]]
 
 ## Counter-examples or anti-pattern
 

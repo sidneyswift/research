@@ -25,6 +25,9 @@ Agent plugins cataloged — **Claude Code *and* Codex** as of 2026-06-02. Each p
 ### Every (Kieran Klaassen)
 - [[artifacts/plugins/compound-engineering]] — the official Compound Engineering plugin; 38 skills + 43 sub-agents, authored once in Claude format and **converted to ~11 agent platforms**; dogfoods its own loop. The wiki's first **non-Garry tested skill pack**. (Marketplace also ships `coding-tutor` by Nityesh Agarwal — candidate below.)
 
+### prodmgmt.world (commercial)
+- [[artifacts/plugins/pm-os]] — paid, proprietary PM bundle (v2.2.1): 235 skills in a three-tier hierarchy (system/workflow/reusable), 12 read-only reviewer/router sub-agents, 2 nudge-only hooks, 6 MCP configs; one content set shipped as claude-code + cursor + cowork zips. The wiki's first **purchased** artifact — evidence the skill-pack format has a paid market.
+
 ### OpenAI (Codex — *not* Claude Code)
 - [[artifacts/plugins/openai-codex-plugins-marketplace]] — OpenAI's official **Codex** marketplace; **167 plugins** (mostly hosted-connector `.app.json` wrappers + a skills layer; 479 skills total), `.codex-plugin/` manifest with a productized storefront (categories, install/auth policy, `codex://` deeplinks), `plugin-creator` meta-skill. The wiki's first non-Claude-Code marketplace; the example that makes [[patterns/structural/marketplace-as-multi-plugin]] cross-lab. ~140 of 167 are partner-authored.
 

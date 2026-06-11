@@ -47,6 +47,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/openai--plugins]] | repo | 2026-06-02 | `bebc3d6` |
 | [[sources/anthropic--dynamic-workflows]] | article | 2026-06-02 | n/a (article) |
 | [[sources/ahrefs--ai-search-optimization-research]] | tweet | 2026-06-02 | n/a (social post) |
+| [[sources/prodmgmt-world--pm-os]] | other (purchased bundle) | 2026-06-10 | v2.2.1 (zips; local-only copy) |
 
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
@@ -59,6 +60,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[creators/every]] | org | Media+software company; origin/home of compound engineering. Kieran Klaassen (plugin author, GM of Cora) + Dan Shipper (CEO) |
 | [[creators/openai]] | org | Frontier lab; ships GPT + the **Codex** CLI. Two studied Codex layers: **Goals** ([[artifacts/projects/codex-goals]]) and the **167-plugin marketplace** ([[artifacts/plugins/openai-codex-plugins-marketplace]]) |
 | [[creators/ahrefs]] | org | Largest SEO tooling company; publishes large-scale AI search optimization research (Tim Soulo, CMO). Data/research contributor, not an agent builder |
+| [[creators/prodmgmt-world]] | org | Independent commercial publisher of PM OS (paid PM skill bundle); **first commercial creator** — sells agent content as a versioned product |
 
 ## Artifacts — Plugins
 
@@ -70,6 +72,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[artifacts/plugins/anthropic-financial-services-marketplace]] | Anthropic (FSI) | full | FSI marketplace; 20 plugins, dual-runtime (Cowork + Managed Agents API), trust-tiered subagents |
 | [[artifacts/plugins/compound-engineering]] | Every (Kieran Klaassen) | full | Compound-engineering loop; 38 skills + 43 agents, converted to ~11 harnesses; dogfoods its own loop; **first non-Garry tested pack** |
 | [[artifacts/plugins/openai-codex-plugins-marketplace]] | OpenAI | full | **Codex** marketplace; 167 plugins, hosted-app (`.app.json`) connectors + 479 skills; productized storefront; **first non-Claude-Code marketplace** |
+| [[artifacts/plugins/pm-os]] | prodmgmt.world | full | Paid PM bundle (v2.2.1); 235 skills (3-tier hierarchy) + 12 reviewer/router sub-agents + nudge hooks; claude-code + cursor + cowork from one content set; **first purchased artifact** |
 
 Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/plugins/_index.md).
 

@@ -17,6 +17,7 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/openai]] — frontier lab behind GPT and the **Codex** agentic-coding CLI. The wiki's first OpenAI entry, via the Codex **Goals** feature ([[artifacts/projects/codex-goals]]) and the cookbook guide documenting it; supplied the non-Garry example that confirmed [[patterns/behavioral/skill-as-method-call]]. Counterweight to Anthropic for testing whether a "pattern" is field-level or one ecosystem's house style.
 
 - [[creators/ahrefs]] — the largest SEO tooling company; publishes large-scale data studies on AI search citation behavior. Tim Soulo (CMO) is the public voice. Contributes research/data (not agents/skills) that informs how content and documentation should be designed for AI discoverability.
+- [[creators/prodmgmt-world]] — independent commercial publisher of [[artifacts/plugins/pm-os]] (paid PM skill bundle, claude-code + cursor + cowork). The wiki's first **commercial** creator — sells agent content as a versioned product (CHANGELOG, upgrade-migration skill) rather than sharing a repo.
 
 ## Individuals
 

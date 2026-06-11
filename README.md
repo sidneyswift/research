@@ -25,7 +25,7 @@ A research wiki cataloging the most important and talked-about work across the A
 | Domain | Count | Last updated |
 | --- | --- | --- |
 | Skills cataloged | 0 paged (candidate queue: 17+ from anthropic-skills, ~55 from financial-services, dozens in gstack/gbrain) | 2026-06-01 |
-| Plugins cataloged | 5 — `anthropic-skills-marketplace`, `gstack`, `gbrain`, `anthropic-financial-services-marketplace`, `compound-engineering` | 2026-06-02 |
+| Plugins cataloged | 7 — `anthropic-skills-marketplace`, `gstack`, `gbrain`, `anthropic-financial-services-marketplace`, `compound-engineering`, `openai-codex-plugins-marketplace`, `pm-os` | 2026-06-10 |
 | Projects cataloged | 1 — `codex-goals` (OpenAI Codex Goals feature) | 2026-06-02 |
 | MCP servers cataloged | 0 paged (12 FSI data connectors + 1 gbrain server referenced; queued) | 2026-06-01 |
 | Concepts cataloged | 5 — `compound-engineering`, `completion-contract`, `convergent-agent-plugin-spec`, `dynamic-workflows`, `ai-search-as-parallel-discovery-layer` | 2026-06-02 |

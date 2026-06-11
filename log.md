@@ -264,3 +264,13 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 - **Proposed new pattern candidates:** adversarial verification via isolated subagents (defeats self-preferential bias; related to FSI's trust-tiered subagents — could confirm that proposed bullet), quarantine pattern (untrusted-content agents barred from privileged actions — same principle as FSI).
 - Updated: [[creators/anthropic]], [[sources/_index]], [[concepts/_index]], [[index]], `README.md`.
 - ratchet: links +~40 · orphans +0 · patterns +0 new confirmed (1 existing pattern significantly strengthened).
+
+## [2026-06-10] ingest | PM OS 2.2.1 (prodmgmt.world) — first purchased proprietary bundle
+
+- Ingested [[sources/prodmgmt-world--pm-os]] — PM OS 2.2.1, purchased by Sidney 2026-06-10. **Link-only source**: the licensed copy stays local (proprietary paid product; not committed to this public repo); claims anchored to file paths inside the licensed copy. 235 skills (13 system / 11 workflow / 211 reusable) + 12 read-only sub-agents + 2 SessionStart hooks + 6 MCP configs, shipped as claude-code + cursor + cowork zips from one content set.
+- **New pages:** [[artifacts/plugins/pm-os]] (full), [[creators/prodmgmt-world]] (first *commercial* creator — sells agent content as a versioned product).
+- **Patterns touched:** `single-source-multi-surface-distribution` (5th creator; new *paid product line* axis), `latent-vs-deterministic-split` (hook-hygiene sighting: nudge-only hooks, single-writer state), `version-as-update-gate` (new sub-mechanism: `pm-os-upgrade` skill migrates *buyer state* between versions — none of the open-source examples ship this), `resolver-routing-table` (router *agent* + machine-readable registry at 235-skill scale, but no routing eval — doesn't clear promotion gate), `skill-pack-bundle` (**counter-pressure**: biggest pack yet, zero visible tests — first data point against tested-bundle universality).
+- Notable: read-only reviewer sub-agents with uniform output contracts = third sighting of the adversarial-verification candidate (with anthropic dynamic-workflows + FSI trust-tiers).
+- Practical: reviewer agents + 64 curated skills ported into Auto's own OpenClaw setup same day (prd-review skill; pm-os-core bundle plugin) — research applied, not just shelved.
+- Wired into: [[sources/_index]] (new "Purchased / proprietary bundles" section), [[artifacts/plugins/_index]], [[creators/_index]], [[index]] (3 tables), README status count (5→7 plugins, incl. backfill of openai-codex-plugins-marketplace missing from count).
+- ratchet: links +~25 · orphans +0 · patterns +0 new (4 existing strengthened, 1 counter-pressured).

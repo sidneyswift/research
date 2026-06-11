@@ -56,6 +56,12 @@ Marketplace pages capture install counts, ratings, descriptions — popularity s
 
 *(none yet)*
 
+## Purchased / proprietary bundles
+
+Paid products studied under license. Raw content is held **locally outside the wiki** (never committed — republishing paid material); the citation page anchors claims to file paths inside the licensed copy.
+
+- [[sources/prodmgmt-world--pm-os]] — **purchased bundle** (PM OS 2.2.1, prodmgmt.world, retrieved 2026-06-10). 235 skills + 12 sub-agents + 2 hooks + 6 MCP configs, shipped as claude-code + cursor + cowork zips. Grounds [[artifacts/plugins/pm-os]]. The wiki's first paid proprietary source.
+
 ## Social
 
 Tweets, Reddit threads, HN comments. Capture full text + author + date.
