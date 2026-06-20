@@ -74,7 +74,8 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 ## Related
 
 - [[artifacts/projects/codex-goals]] — the runnable artifact that embodies this concept (`/goal` in the Codex CLI).
-- [[patterns/behavioral/evidence-gated-completion]] — the pattern this concept is built on.
+- [[concepts/agentic-loop]] — **wraps this:** a loop is a completion contract run as a *repeating* observe→act→verify→continue-or-stop cycle; the contract specifies one objective, the loop iterates it. [[artifacts/skills/loop-library]] loop #028 is literally named "the Codex completion-contract loop" and uses the term — a **second creator (Forward Future) adopting "completion contract" by name**, partially answering the open question below. — [[sources/forward-future--loop-library#loop-028-completion-contract]]
+- [[patterns/behavioral/evidence-gated-completion]] — the pattern this concept is built on (now confirmed; 2nd artifact = the Loop Library).
 - [[patterns/behavioral/skill-as-method-call]] — the contract-as-parameter-signature view.
 - [[sources/garrytan--complexity-ratchet]] — the system-level cousin: "the evidence decides" applied across sessions (the ratchet) rather than within one objective (the contract).
 

@@ -4,14 +4,14 @@ type: org
 name: OpenAI
 handle: openai
 url: https://openai.com
-last-reviewed: 2026-06-02
+last-reviewed: 2026-06-04
 ---
 
 # OpenAI
 
-> The lab behind GPT and the **Codex** agentic-coding CLI. In this wiki, OpenAI is the **first non-Anthropic / non-Garry-Tan creator** — and now the first creator studied on **two different layers of the same CLI**: a *behavioral* surface (Codex **Goals**) and a *packaging/distribution* surface (the **167-plugin Codex marketplace**, `openai/plugins`).
+> The lab behind GPT and the **Codex** agentic-coding CLI. In this wiki, OpenAI is the **first non-Anthropic / non-Garry-Tan creator** — and now studied on **three layers**: a *behavioral* surface (Codex **Goals**), a *packaging/distribution* surface (the **167-plugin Codex marketplace**, `openai/plugins`), and an *org-distribution/governance* surface (the Codex skills scope ladder + ChatGPT's workspace skill library — and OpenAI's **named adoption of the Agent Skills open standard**).
 
-**Scope note:** this page is grounded in the **two** OpenAI sources ingested so far ([[sources/openai--using-goals-in-codex]], [[sources/openai--plugins]]) — both about the Codex CLI. OpenAI's broader catalog (GPT model family, the API, ChatGPT, the rest of the Codex CLI internals) is **context, not yet studied** — claims below stay close to what those sources support.
+**Scope note:** this page is grounded in the **five** OpenAI sources ingested so far ([[sources/openai--using-goals-in-codex]], [[sources/openai--plugins]], [[sources/openai--codex-skills-doc]], [[sources/openai--chatgpt-skills-help]]; plus the lab-neutral [[sources/agentskills--specification]] it adopts) — all about Codex/ChatGPT agent surfaces. OpenAI's broader catalog (GPT model family, the API, the rest of the Codex CLI internals) is **context, not yet studied** — claims below stay close to what those sources support.
 
 ## Attributes
 
@@ -31,7 +31,8 @@ last-reviewed: 2026-06-02
 
 ### Concepts originated / popularized
 - [[concepts/completion-contract]] — the crisp framing of an agent objective as a "scoped, user-controlled completion contract," named in the Goals guide.
-- [[concepts/convergent-agent-plugin-spec]] — *co-grounds* (with Anthropic): OpenAI's `.codex-plugin/` format is near-identical to Anthropic's `.claude-plugin/` (same skills/hooks/MCP/marketplace grammar), evidence that the agent plugin shape is consolidating across labs. OpenAI's `plugin-creator` even cites "skill-creator naming rules" ([[sources/openai--plugins#plugin-creator]]).
+- [[concepts/convergent-agent-plugin-spec]] — *co-grounds* (with Anthropic): OpenAI's `.codex-plugin/` format is near-identical to Anthropic's `.claude-plugin/` (same skills/hooks/MCP/marketplace grammar). **Update 2026-06-04:** for the *skills* layer this is no longer mere convergence — OpenAI adopts the **Agent Skills open standard by name** in the Codex docs ("Skills build on the open agent skills standard" — [[sources/openai--codex-skills-doc#open-standard]]) and in the ChatGPT help center ([[sources/openai--chatgpt-skills-help#open-standard]]).
+- [[concepts/workspace-skill-distribution]] — *grounds*: OpenAI ships the deepest org-distribution stack yet observed — the Codex four-tier skill scope ladder (repo `.agents/skills` → user → admin `/etc/codex/skills` → system, [[sources/openai--codex-skills-doc#scope-ladder]]), plugins as "the installable distribution unit" ([[sources/openai--codex-skills-doc#authoring-vs-distribution]]), and ChatGPT's workspace skill library with the **"install skills for other workspace members"** admin-push permission ([[sources/openai--chatgpt-skills-help#install-for-others]]).
 
 ## Design philosophy (discernible from artifacts)
 
@@ -56,3 +57,5 @@ last-reviewed: 2026-06-02
 - **Is the plugin-spec convergence deliberate or independent?** OpenAI's `plugin-creator` cites Anthropic's "skill-creator naming rules" ([[sources/openai--plugins#plugin-creator]]) — so at least partly deliberate. How much of the `.codex-plugin/` shape is adoption vs. parallel invention? (Tracked on [[concepts/convergent-agent-plugin-spec]].)
 - **Does OpenAI name patterns the way Anthropic/Garry do?** Two sources still isn't enough to read a house vocabulary. More ingests would tell us whether "completion contract" is an OpenAI coinage or field-wide.
 - **The OpenAI Cookbook as a source vein** — it's a large, first-party, repo-backed library of agent/AI guides; likely a rich future ingest target (it's how we found this one).
+- **The enterprise managed-configuration layer** (developers.openai.com/codex/enterprise/managed-configuration) — cloud-pushed `requirements.toml` policies, MDM preference domains, the *restrictive-only* enforcement design. Surfaced (not yet snapshotted) by the 2026-06-04 distribution research; the governance half of [[concepts/workspace-skill-distribution]]'s restrictive/additive split. Ingest candidate.
+- **Does Codex cloud load repo skills?** The skills doc scopes skills to CLI/IDE/app ([[sources/openai--codex-skills-doc#surfaces]]); cloud reads only AGENTS.md per its docs. Watch the Codex changelog + openai/codex#24517 ("team-level Skill Hub").

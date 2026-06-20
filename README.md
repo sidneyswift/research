@@ -24,14 +24,14 @@ A research wiki cataloging the most important and talked-about work across the A
 
 | Domain | Count | Last updated |
 | --- | --- | --- |
-| Skills cataloged | 0 paged (candidate queue: 17+ from anthropic-skills, ~55 from financial-services, dozens in gstack/gbrain) | 2026-06-01 |
-| Plugins cataloged | 7 — `anthropic-skills-marketplace`, `gstack`, `gbrain`, `anthropic-financial-services-marketplace`, `compound-engineering`, `openai-codex-plugins-marketplace`, `pm-os` | 2026-06-10 |
-| Projects cataloged | 1 — `codex-goals` (OpenAI Codex Goals feature) | 2026-06-02 |
+| Skills cataloged | **3 paged** — `grilling`, `writing-great-skills`, `loop-library` (candidate queue: dozens from mattpocock / anthropic-skills / gstack / gbrain / pm-os / financial-services) | 2026-06-20 |
+| Plugins cataloged | **8** — `anthropic-skills-marketplace`, `gstack`, `gbrain`, `anthropic-financial-services-marketplace`, `compound-engineering`, `openai-codex-plugins-marketplace`, `pm-os`, `mattpocock-skills` | 2026-06-19 |
+| Projects cataloged | **2** — `codex-goals` (OpenAI Codex Goals feature), `eve` (Vercel's agent framework — the wiki's first ingested harness) | 2026-06-20 |
 | MCP servers cataloged | 0 paged (12 FSI data connectors + 1 gbrain server referenced; queued) | 2026-06-01 |
-| Concepts cataloged | 5 — `compound-engineering`, `completion-contract`, `convergent-agent-plugin-spec`, `dynamic-workflows`, `ai-search-as-parallel-discovery-layer` | 2026-06-02 |
-| Patterns extracted | **8 confirmed** + 3 proposed-with-pages (`thin-harness-fat-skills`, `diarization`, `evidence-gated-completion`); ~20 proposed bullets — see [Patterns](index.md#patterns) | 2026-06-02 |
-| Creators cataloged | 5 — Anthropic, Garry Tan, Every, OpenAI, Ahrefs | 2026-06-02 |
-| Sources snapshotted | 5 repos (~137 MB) + 3 docs-pages + 10 articles (incl. Garry Tan's 8-essay "AI Explainer" series) + 1 tweet | 2026-06-02 |
+| Concepts cataloged | **11** — `compound-engineering`, `completion-contract`, `convergent-agent-plugin-spec`, `dynamic-workflows`, `ai-search-as-parallel-discovery-layer`, `workspace-skill-distribution`, `skill-invocation-axis`, `ubiquitous-language-for-agents`, `agentic-loop`, `filesystem-first-agent-framework`, `durable-agent-execution` | 2026-06-20 |
+| Patterns extracted | **10 confirmed** + 3 proposed-with-pages (`thin-harness-fat-skills`, `diarization`, `session-start-directive`); ~25 proposed bullets — see [Patterns](index.md#patterns) | 2026-06-20 |
+| Creators cataloged | **9** — Anthropic, Garry Tan, Every, OpenAI, Ahrefs, prodmgmt.world, Matt Pocock, Forward Future, Vercel | 2026-06-20 |
+| Sources snapshotted | **9 repos** + 6 docs-pages + 10 articles + 1 tweet + 2 purchased PM-OS bundles (incl. Garry Tan's 8-essay "AI Explainer" series; highest-starred repo: `mattpocock/skills` at 135K★; latest: `vercel/eve` at 1.67K★) | 2026-06-20 |
 
 (Update this table after each ingestion.)
 

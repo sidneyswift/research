@@ -14,6 +14,7 @@ Use this directory when the unit of study is bigger than one artifact type but i
 ## Cataloged projects
 
 - [[artifacts/projects/codex-goals]] — OpenAI Codex CLI's **Goals** feature: persistent, thread-scoped, evidence-gated objectives via the `/goal` command surface (Codex ≥ 0.128.0). Embodies [[concepts/completion-contract]]; grounds [[patterns/behavioral/evidence-gated-completion]] and supplied the non-Garry 2nd example that promoted [[patterns/behavioral/skill-as-method-call]]. Source: [[sources/openai--using-goals-in-codex]].
+- [[artifacts/projects/eve]] — Vercel's **eve** framework: a filesystem-first, durable agent framework — agent-as-directory authoring, a framework-owned **harness** + built-in toolbelt, durable session/turn/step execution, channels (one agent → many surfaces), sandboxes, subagents/remote-agents, schedules, connections, dynamic capabilities, and first-class evals. The wiki's **first ingested harness** — the long-missing middle of [[patterns/structural/thin-harness-fat-skills]] (which it grounds *and* complicates: a production harness is a full framework, not "~200 lines"). Embodies [[concepts/filesystem-first-agent-framework]] + [[concepts/durable-agent-execution]]. Source: [[sources/vercel--eve]].
 
 ## Candidate list (not yet deep-dived)
 

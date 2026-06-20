@@ -93,6 +93,7 @@ gstack is a cited grounding example for these pattern pages (distilled from [[cr
 - **[[patterns/structural/thin-harness-fat-skills]]** (proposed) — markdown skills over deterministic CLIs, harness-agnostic across Claude Code/Codex/OpenClaw.
 - **[[patterns/behavioral/skill-as-method-call]]** (proposed) — `/qa`'s Quick/Standard/Exhaustive tier parameter; `/investigate` as a fixed procedure over varying targets. ([[sources/garrytan--gstack#qa]])
 - **[[patterns/quality-bar/complexity-ratchet]]** (proposed) — the Bun-TTY interactive-review floor tests + multi-tier harness + slop-scan (5.24 → cut 62%). ([[sources/garrytan--gstack#test]])
+- **[[patterns/behavioral/persona-lens-review-panel]]** (confirmed 2026-06-11) — the lens-as-slash-command example: the `plan-*-review` family + `/qa` + `/cso` give each persona its own invocable skill; user composes the panel manually. ([[sources/garrytan--gstack#plan-ceo-review]], [[sources/garrytan--gstack#qa]])
 
 ### Earlier proposed patterns (pre-pattern-page)
 

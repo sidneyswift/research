@@ -257,9 +257,10 @@ persona lenses → JSON → merge/dedup → confidence-gated report;
 - **agent-first canonical docs (`CLAUDE.md` = `@AGENTS.md` shim)** — `AGENTS.md` is the source of
   truth; the harness file is a 1-line redirect. 2nd example after gbrain's `AGENTS.md`-separate-from-
   `CLAUDE.md` — *confirmable on a dedicated pass*. ([[sources/every--compound-engineering-plugin#CLAUDE.md-shim]])
-- **persona/lens multi-agent review panel** — `/ce-code-review` fans out tiered persona + named-expert
-  lenses returning JSON → merge/dedup → confidence gate. 2nd example alongside gstack's QA personas —
-  *confirmable*. ([[sources/every--compound-engineering-plugin#ce-code-review]], `#agents`)
+- ~~persona/lens multi-agent review panel~~ — **promoted to [[patterns/behavioral/persona-lens-review-panel]]
+  (confirmed 2026-06-11)** when [[artifacts/plugins/pm-os]]'s 9-reviewer PRD panel landed as the third
+  creator/vertical; `/ce-code-review` is that page's dynamic-selection + JSON-merge example.
+  ([[sources/every--compound-engineering-plugin#ce-code-review]], `#agents`)
 - **skill-self-containment for portability** — a skill references only its own directory; duplicate,
   never cross-link (converter + versioned-cache driven). ([[sources/every--compound-engineering-plugin#self-containment]])
 - **cross-platform-portable skill authoring** — never assume platform env vars without a fallback; name

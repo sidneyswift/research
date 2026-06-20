@@ -4,8 +4,8 @@ type: pattern
 name: latent-vs-deterministic-split
 category: behavioral
 status: confirmed
-last-reviewed: 2026-06-02
-example-count: 3
+last-reviewed: 2026-06-20
+example-count: 4
 ---
 
 # latent-vs-deterministic-split
@@ -62,6 +62,17 @@ A falsifiable test for spotting the split in a new artifact (`## Examples` are t
 - [[artifacts/plugins/gstack]] — the **between-files** demonstration. The `/scrape` (latent, exploratory page-drive) → `/skillify` → `script.ts` (deterministic Playwright) codification is the latent-builds-deterministic loop made literal, with the codified flow then unit-tested via `script.test.ts` against a fixture; under all the markdown skills, `bin/` holds the deterministic CLI floor (~62 entries) that the latent skills call down into, and `ARCHITECTURE.md`'s "Deterministic BLOCK" canary check is the assert-on enforcement side. — citation: [[sources/garrytan--gstack#BROWSER.md]], [[sources/garrytan--gstack#ARCHITECTURE.md]], [[sources/garrytan--skillify-manifesto#latent-builds-deterministic]]
 - [[artifacts/plugins/gbrain]] — the **inside-one-engine** demonstration. Link extraction and the typed knowledge graph run with "zero LLM calls" (pure pattern-matching on wikilink syntax — the deterministic substrate), while search ranking and page synthesis/diarization are the latent layer; the deterministic graph is what produces the measured +31.4 P@5 retrieval lift that latent vector search alone cannot reach. — citation: [[sources/garrytan--gbrain#README]], [[sources/garrytan--thin-harness-fat-skills#latent-vs-deterministic]]
 - [[artifacts/plugins/compound-engineering]] — the **non-Garry example that names the split as a stated design rule.** Its `AGENTS.md` says outright: *"Skills are guardrails for an intelligent agent, not a step-by-step controller for a non-intelligent one,"* and **"Calibrate prescription level to the failure mode"** — *hard rules* for deterministic safety, *trust* for judgment, *strong-guidance-with-examples* in between. The machinery matches the rule: markdown skills (latent) sit over a TypeScript converter + `validate-frontmatter.py` (deterministic); and `/ce-compound` draws the line **inside one skill** — parallel research subagents return **text** (latent research), the orchestrator performs the **single file write** (the deterministic, must-not-vary act). — citation: [[sources/every--compound-engineering-plugin#plugin-AGENTS.md]], [[sources/every--compound-engineering-plugin#ce-compound]]
+- [[artifacts/plugins/pm-os]] — **the non-engineering (PM-vertical) example, third creator.** The
+  split runs through its whole memory/hook layer: SessionStart hooks do fully **deterministic drift
+  detection** (file counts, orphan scans, timestamp math in bash) and delegate only the *ask* to the
+  latent layer ([[patterns/behavioral/session-start-directive]]); hooks are read-only by rule ("the
+  hook never mutates state") with each state file owned by a **single designated writer script**
+  (`bin/memory/daily-drip-state.sh`, `append-user-memory.sh`); and project recall flows through
+  deterministic packet builders (`build-recall-packet.sh`, `memory-health.sh`) so the model never
+  raw-dumps `events.jsonl` into context — judgment is reserved for what to *do* with the packet. —
+  citation: [[sources/prodmgmt-world--pm-os-cowork#tidy-reminder]], [[sources/prodmgmt-world--pm-os-cowork#drip-reminder]], [[sources/prodmgmt-world--pm-os-cowork#project-awareness]]
+
+- *(supporting sighting — framework-level, the split as a security boundary)* [[artifacts/projects/eve]] — Vercel. eve draws the line as a **trust boundary**: the **latent** model loop never executes exact work or holds secrets directly; it drives **deterministic typed tools** (`defineTool`) that run in the trusted **app runtime** with `process.env`, while shell/file work runs in an isolated sandbox the model reaches only through tool calls ("the model sees only `{ ok: true }`… the key never leaves the app runtime"). The split recurs in evals — deterministic `t.check` builders vs the latent `t.judge` LLM grader ([[sources/vercel--eve#docs-evals-overview]]). eve's vocabulary is "app runtime vs sandbox" / "typed tool vs model," not "latent vs deterministic," so it's a supporting sighting of the same engineering under different names — and the first time the split is framed primarily as a *security* boundary rather than a *correctness* one. — citation: [[sources/vercel--eve#docs-security-model]], [[sources/vercel--eve#docs-tools]]
 
 - *(supporting sighting, 2026-06-10)* [[artifacts/plugins/pm-os]] — the **hook-hygiene** demonstration in a third creator's commercial pack: SessionStart hooks are deterministic shell scripts that *read* state files and emit nudge directives but **never mutate**; a single `bin/` script is the only state writer, and the LLM-facing skills are the only latent layer. The read/write boundary is documented in the hook source itself ("The hook never mutates state. bin/… is the only writer"). — citation: [[sources/prodmgmt-world--pm-os#hooks]]
 

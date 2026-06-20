@@ -45,6 +45,7 @@ popularity-signals:
 - **Embodies**: [[concepts/completion-contract]] — Goals *are* the productized completion contract.
 - **Sibling Codex artifact**: [[artifacts/plugins/openai-codex-plugins-marketplace]] — the *other* studied layer of the same CLI. Goals is the **behavioral** surface (how Codex runs a long objective); the marketplace is the **packaging/distribution** surface (how Codex gets new capabilities). Same creator, same CLI, complementary layers.
 - **Sibling-in-spirit**: [[artifacts/plugins/gstack]] / [[artifacts/plugins/gbrain]] (Garry Tan) — the closest in-wiki artifacts that lean on evidence-gated, parameterized agent procedures, though on Claude Code rather than Codex.
+- **Wrapped by a community loop**: [[artifacts/skills/loop-library]] loop #028 ("the Codex completion-contract loop") packages Goals as `$goal-planner-codex` — define every required outcome + its evidence up front, mark each proved/weak/missing/contradicted, and "budget exhaustion never counts as success." Third-party evidence that Goals' completion contract reads as a reusable loop. — [[sources/forward-future--loop-library#loop-028-completion-contract]]
 
 ## What problem it solves
 

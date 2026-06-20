@@ -8,13 +8,20 @@ creators:
 sources:
   - "[[sources/openai--plugins]]"
   - "[[sources/anthropic--plugins-reference]]"
-status: emerging
-last-reviewed: 2026-06-02
+  - "[[sources/agentskills--specification]]"
+  - "[[sources/openai--codex-skills-doc]]"
+  - "[[sources/openai--chatgpt-skills-help]]"
+status: active   # skills layer formally standardized 2025-12-18 (agentskills.io / AAIF); plugin layer still 2-lab convergence
+last-reviewed: 2026-06-04
 popularity-signals:
   - signal: adoption
-    value: "Two frontier labs ship the format: Anthropic (.claude-plugin/, Claude Code) and OpenAI (.codex-plugin/, Codex — 167 plugins, 1,334★)"
+    value: "Two frontier labs ship the plugin format: Anthropic (.claude-plugin/, Claude Code) and OpenAI (.codex-plugin/, Codex — 167 plugins, 1,334★)"
     as-of: 2026-06-02
     source: "[[sources/openai--plugins#marketplace.json]]"
+  - signal: adoption
+    value: "The skills layer is a formal open standard (agentskills.io, AAIF/Linux Foundation) with 40+ adopting clients (Codex, Claude Code, Cursor, Copilot, VS Code, Gemini CLI…); spec repo ~19.9K★"
+    as-of: 2026-06-04
+    source: "[[sources/agentskills--specification#governance]]"
 ---
 
 # convergent-agent-plugin-spec
@@ -33,7 +40,7 @@ Independently of each other, Anthropic's Claude Code and OpenAI's Codex package 
 - **MCP servers** — a `.mcp.json` with the same `mcpServers{}` shape (stdio `command`/`args`/`env` or remote `type:http`/`url`) ([[sources/openai--plugins#mcp-json]]).
 - **A marketplace registry** — `marketplace.json` listing N plugins, enabling one repo to ship many à-la-carte plugins ([[sources/openai--plugins#marketplace.json]], [[sources/anthropic--plugins-reference#marketplace-symlinks]]).
 
-It is **convergence, not a shared standard body**: there is no joint spec. The formats agree because they're solving the same problem against models trained on overlapping conventions — which is exactly what makes the agreement interesting.
+~~It is **convergence, not a shared standard body**: there is no joint spec.~~ **Superseded 2026-06-04, for the skills layer:** there *is* a joint spec now. The **Agent Skills open standard** (agentskills.io) — originally developed by Anthropic, released as an open standard 2025-12-18 and donated to the Linux Foundation-backed **Agentic AI Foundation** — formally defines the SKILL.md contract, and **OpenAI adopted it by name**: Codex's skills doc opens with "Skills build on the open agent skills standard" ([[sources/openai--codex-skills-doc#open-standard]]), and ChatGPT's help center tells end users "OpenAI skills follow the Agent Skills open standard, so you can download them from one product and install them in another" ([[sources/openai--chatgpt-skills-help#open-standard]]). The standard lists **40+ adopting clients** ([[sources/agentskills--specification#governance]]). The **plugin layer** (manifest, hooks, marketplace registry) remains un-standardized 2-lab convergence — the original framing still holds there. So the layering is: *skills = standardized; plugins = converging.*
 
 ## Where it came from
 
@@ -82,12 +89,14 @@ Read together: Anthropic optimizes for **developer control of the connector**; O
 - **Is it independent convergence or imitation?** Codex post-dates Claude Code's plugin system, and `plugin-creator` cites "skill-creator naming rules" ([[sources/openai--plugins#plugin-creator]]). So some overlap is *adoption*, not parallel invention — which weakens "two labs independently arrived here" but, if anything, *strengthens* the "this is becoming the standard" claim (a standard spreads by adoption). The honest statement is: **the format is consolidating across labs**; the mechanism (re-derivation vs. copying) is mixed and partly unknown.
 - **Convergent grammar ≠ convergent semantics.** `agents/` means "subagent system prompt" in Anthropic's world but is mostly a *presentation manifest* (`agents/openai.yaml`) in Codex ([[sources/openai--plugins#agents-openai-yaml]]). Same folder name, different meaning — a trap for anyone assuming portability is total.
 - **The connector layer doesn't converge at all.** `.app.json`'s hosted-app brokering vs `.mcp.json`'s self-hosting are genuinely different trust/distribution models; a plugin that's "just a connector + skill" does **not** port without rewiring its integration ([[sources/openai--plugins#app-json]]).
-- **One repo isn't the whole field.** We have two labs. Cursor, Google, and open-source agent frameworks may package differently; calling this an "industry standard" on n=2 is premature — hence `status: emerging`.
+- **One repo isn't the whole field — resolved for skills, open for plugins (2026-06-04).** The skills layer blew past n=2: 40+ clients on the formal standard ([[sources/agentskills--specification#governance]]) — hence `status: active`. The *plugin* layer (manifest/hooks/marketplace) is still n=2; treat plugin-grammar generalizations with the original caution.
+- **Standardization brings divergence-by-extension.** Each lab extends the shared SKILL.md core in a spec-legal sidecar: Codex adds `agents/openai.yaml` (UI metadata, `allow_implicit_invocation` policy, MCP tool dependencies — [[sources/openai--codex-skills-doc#agents-openai-yaml]]); Claude Code adds its own frontmatter extras. The core ports; the sidecars don't. Same trap-shape as the `agents/` semantic collision, one level down.
 
 ## Timeline (append-only)
 
 - 2026-05-31 — Anthropic plugins-reference snapshotted: the Claude Code `plugin.json`/components/marketplace spec ([[sources/anthropic--plugins-reference#root]]).
 - 2026-06-02 — `openai/plugins` ingested (167 plugins, commit `bebc3d6`): Codex ships a near-identical format under `.codex-plugin/`, with an identical `hooks.json` grammar and a "skill-creator naming rules" reference — the second data point that turns "Anthropic's plugin spec" into "the agent plugin spec." ([[sources/openai--plugins#hooks-json]], [[sources/openai--plugins#plugin-creator]])
+- 2026-06-04 — Deep-research pass (OpenAI skills distribution) lands three sources that **resolve the page's central uncertainty for the skills layer**: the SKILL.md format is a *formal open standard* (agentskills.io; released 2025-12-18, donated to the Linux Foundation-backed AAIF — the MCP playbook) with 40+ clients, and OpenAI adopts it **by name** in both the Codex docs and the ChatGPT help center. Status `emerging → active`. The "watch for n→3" trigger fired many times over — for skills; plugins remain 2-lab. Also: skills shipped *inside ChatGPT itself* (workspace library, beta) — the format crossed from dev tools to the consumer product. ([[sources/agentskills--specification#governance]], [[sources/openai--codex-skills-doc#open-standard]], [[sources/openai--chatgpt-skills-help#open-standard]])
 
 ## Related
 
@@ -95,6 +104,7 @@ Read together: Anthropic optimizes for **developer control of the connector**; O
 - [[artifacts/plugins/anthropic-financial-services-marketplace]] / [[artifacts/plugins/anthropic-skills-marketplace]] — the Anthropic-side marketplaces.
 - [[patterns/composition/single-source-multi-surface-distribution]] — the portability payoff a shared spec enables.
 - [[concepts/compound-engineering]] — CE's converter is the "author-then-convert" answer to the same cross-platform problem this concept frames.
+- [[concepts/workspace-skill-distribution]] — the *operations* consequence: because the format is shared, one canonical skills repo can feed every org-distribution rail (repo-scope, workspace library, marketplace, machine image).
 
 ## What we'd steal
 
@@ -109,7 +119,8 @@ Read together: Anthropic optimizes for **developer control of the connector**; O
 
 ## Open questions
 
-- **Independent or imitative?** How much of the overlap is OpenAI deliberately matching Anthropic vs. both converging from shared model priors? The `skill-creator naming rules` reference says "at least partly deliberate," but not how much.
+- ~~**Independent or imitative?**~~ **Resolved for skills (2026-06-04):** adoption, explicitly — Anthropic wrote the standard, opened it via AAIF, and OpenAI adopted it by name ([[sources/openai--codex-skills-doc#open-standard]]). Still open for the *plugin* layer's hooks/marketplace grammar.
 - **Will the connector layers ever converge?** Is there pressure toward a shared connector/app protocol, or do hosted-app vs MCP stay as the durable fork?
-- **Does a third example exist already?** Cursor rules, Google's agent packaging, open frameworks — do any match this grammar? Finding one would move `status: emerging → active` and is the next ingest worth chasing.
-- **How total is portability in practice?** Superpowers runs on both — but what fraction of its skills needed per-runtime tweaks? (The inverse of CE's converter question.)
+- ~~**Does a third example exist already?**~~ **Resolved for skills (2026-06-04):** 40+ clients on agentskills.io ([[sources/agentskills--specification#governance]]); status moved `emerging → active`. Still worth chasing for *plugins*: does any third harness ship the manifest/hooks/marketplace grammar?
+- **How total is portability in practice?** Superpowers runs on both — but what fraction of its skills needed per-runtime tweaks? (The inverse of CE's converter question.) New wrinkle: discovery *paths* don't port (Codex reads `.agents/skills/`, Claude Code reads `.claude/skills/`) — the standard covers the artifact, not where harnesses look for it.
+- **Will the plugin layer get the AAIF treatment too?** Skills got a standards body; plugins/marketplaces haven't. If/when a joint plugin spec lands, this page's two-layer framing collapses back to one.
