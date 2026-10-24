@@ -1,7 +1,7 @@
 ---
 domain: creators
 type: index
-last-reviewed: 2026-06-11
+last-reviewed: 2026-10-23
 ---
 
 # Creators
@@ -11,6 +11,8 @@ The people and orgs producing the artifacts we study. Context, not the main even
 Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Orgs
+
+- [[creators/humanlayer]] — org behind the HumanLayer/Riptide collaborative coding-agent platform and RPI workflow; source investigation emphasizes human review cost, task continuity, and runtime boundaries.
 
 - [[creators/anthropic]] — sets the Agent Skills spec; ships demonstration skills + plugins + Cowork marketplace + the Claude API + the Managed Agents API + the financial-services reference marketplace
 - [[creators/every]] — a media-and-software company that both writes about and builds with agents; origin and home of **compound engineering**. Ships [[artifacts/plugins/compound-engineering]] (Kieran Klaassen, GM of Cora) + the essays/guide behind it (amplified by CEO Dan Shipper). The wiki's first non-Garry tested skill pack.
@@ -26,3 +28,4 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/garry-tan]] — President & CEO of Y Combinator. Ships `gstack` and `gbrain`; author of the 8-part **"AI Explainer" essay series** (the source for the wiki's `thin-harness-fat-skills` / `resolver-routing-table` / `latent-vs-deterministic` / `diarization` / `complexity-ratchet` / `skill-pack-bundle` patterns). Bridge between Anthropic's ecosystem and the founder/builder community.
 - [[creators/prodmgmt-world]] — George Nurijanian (gnurio / @nurijanian), New Zealand. Sells **PM OS** ($99 one-time; [[artifacts/plugins/pm-os]]) — the wiki's first **commercial, closed-source** creator and first **non-engineering vertical** auteur. House style: *enforcement over suggestion* (pre-flight attestation, Context Guard, imperative hook directives) + a coach-not-doer product philosophy.
 - [[creators/matt-pocock]] — Matt Pocock (@mattpocock, UK), TypeScript educator (Total TypeScript / AI Hero). Ships [[artifacts/plugins/mattpocock-skills]] — at **135K★**, the wiki's highest-starred source and first **individual-engineer pack via skills.sh**. House style: *fundamentals over frameworks*, small/composable/model-agnostic skills grounded in classic SWE books, **predictability** as the root virtue — the near-perfect inverse of prodmgmt.world's enforcement-heavy approach. Defines [[concepts/skill-invocation-axis]] + [[concepts/ubiquitous-language-for-agents]].
+- [[creators/shl0ms]] — GitHub handle `SHL0MS` (real name undisclosed). Ships [[artifacts/projects/skill-diffs]] — a commit-history mining pipeline + dataset + companion linter/eval tools for training a "skill curator" model. The wiki's first **dataset-and-tooling-pipeline** creator (not a skill/plugin/framework author) and lowest-traction source to date (0★, 75 HF downloads/month) — cited for evidence quality, not adoption. House style: evidence-first and unusually self-skeptical about its own training gold. Defines [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]].

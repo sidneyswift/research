@@ -211,3 +211,7 @@ anchors beyond this list** — register new ones here first.
   [[patterns/quality-bar/skill-pack-bundle]], [[patterns/composition/single-source-multi-surface-distribution]],
   [[patterns/behavioral/latent-vs-deterministic-split]], [[patterns/structural/thin-harness-fat-skills]],
   [[patterns/quality-bar/version-as-update-gate]].
+
+## Related investigations
+
+- [[artifacts/plugins/humanlayer-rpi]] / [[artifacts/projects/humanlayer]] — related investigation of artifact-based coding workflows and shared plugin-source embedding; compare [[sources/humanlayer--humanlayer#WF14]] and [[sources/humanlayer--humanlayer#WF34]] with CE’s workflow and converter evidence above.

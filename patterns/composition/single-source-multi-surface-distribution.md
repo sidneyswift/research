@@ -76,6 +76,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 
 ## Related patterns
 
+- [[artifacts/plugins/humanlayer-rpi]] — supporting source-reuse mechanism: the standalone plugin’s manifest, skills, and references are embedded from the same source tree into HumanLayer’s daemon bundle. This avoids maintaining a separate workflow copy; it does not make the standalone plugin equivalent to the full task UI/runtime or establish broad cross-harness compatibility. — [[sources/humanlayer--humanlayer#WF33]], [[sources/humanlayer--humanlayer#WF34]].
 - [[patterns/structural/marketplace-as-multi-plugin]] — composes-with: multi-surface is about *runtimes*; marketplace-as-multi-plugin is about *packaging units within one runtime*. The FSI repo does both at once.
 - [[concepts/convergent-agent-plugin-spec]] — *enables the run-natively variant:* when two harnesses share the plugin/skill grammar, "one source, many surfaces" needs neither reference nor conversion — the same files run on both (superpowers). The concept is the precondition for the cheapest form of this pattern.
 - *(proposed)* single-source-of-truth skill vendoring with drift detection — a sub-mechanism that makes this pattern safe; tracked on [[artifacts/plugins/anthropic-financial-services-marketplace]] pending a 2nd example.

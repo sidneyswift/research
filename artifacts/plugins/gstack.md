@@ -65,6 +65,7 @@ popularity-signals:
 
 ## Relationships
 
+- **Workflow comparison**: [[artifacts/plugins/humanlayer-rpi]] organizes coding work around research, design, outlines, and implementation routes whose depth varies with the task. Its artifact-centered phase boundaries complement gstack’s role-centered entry points; the surrounding [[artifacts/projects/humanlayer]] product also owns collaboration and execution state. The standalone skill pack should not be credited with those runtime guarantees. — [[sources/humanlayer--humanlayer#WF01]], [[sources/humanlayer--humanlayer#WF02]], [[sources/humanlayer--humanlayer#WF34]].
 - **Creator**: [[creators/garry-tan]]
 - **Source**: [[sources/garrytan--gstack#root]]
 - **Composes with**: [[artifacts/plugins/gbrain]] via `/setup-gbrain` + `/sync-gbrain` ([[sources/garrytan--gstack#using-gbrain-with-gstack]])

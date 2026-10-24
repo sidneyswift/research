@@ -4,7 +4,7 @@ type: pattern
 name: latent-vs-deterministic-split
 category: behavioral
 status: confirmed
-last-reviewed: 2026-06-20
+last-reviewed: 2026-07-22
 example-count: 4
 ---
 
@@ -76,6 +76,8 @@ A falsifiable test for spotting the split in a new artifact (`## Examples` are t
 
 - *(supporting sighting, 2026-06-10)* [[artifacts/plugins/pm-os]] — the **hook-hygiene** demonstration in a third creator's commercial pack: SessionStart hooks are deterministic shell scripts that *read* state files and emit nudge directives but **never mutate**; a single `bin/` script is the only state writer, and the LLM-facing skills are the only latent layer. The read/write boundary is documented in the hook source itself ("The hook never mutates state. bin/… is the only writer"). — citation: [[sources/prodmgmt-world--pm-os#hooks]]
 
+- *(supporting sighting, 2026-07-22 — new domain: a data-engineering pipeline, not an agent skill pack)* [[artifacts/projects/skill-diffs]] — the split drawn inside a dataset pipeline rather than an agent harness: `skill_linter.py` and `add_quality_score.py` are explicitly "no LLM, no clone, no network" deterministic checks (regex/structural rules, an additive point-scored formula), while `llm_classify.py` (a one-off Claude Haiku 4.5 batch classifier) and `eval_curator.py`'s `judge_overall` (Sonnet-as-judge) are the latent counterpart. First sighting of this split governing *how a training corpus itself gets validated*, rather than how an agent's own runtime behavior is governed. — citation: [[sources/SHL0MS--skill-diffs#skill_linter]], [[sources/SHL0MS--skill-diffs#eval_curator]]
+
 > **Same-creator caveat retired 2026-06-02.** [[artifacts/plugins/compound-engineering]] is the **non-Garry** artifact the caveat named — and rare in that it states the split *as an explicit design rule* ("skills are guardrails… calibrate prescription to the failure mode"), where most builders apply it implicitly. The discipline now has **two independent creators** (Garry Tan; Kieran Klaassen / Every) and three artifacts drawing the line in three shapes: between files (gstack), inside one engine (gbrain), and authoring-rule + single-writer boundary (CE). One honest residue: the *word* "latent" is still essay vocabulary — CE says "deterministic" and "judgment," not "latent" — so the *engineering* is cross-confirmed even if the *label* remains Garry's gloss.
 
 ## Counter-examples or anti-pattern
@@ -91,6 +93,7 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 
 ## Related patterns
 
+- [[artifacts/projects/humanlayer]] — supporting implementation evidence: a model extracts a candidate next step; deterministic orchestration checks auto-advance settings, phase labels, and newer sibling sessions. Artifact-feedback delivery separately orders snapshot capture, sending, and optional resolution. These boundaries constrain execution without making the model’s proposed next step or a delivered comment proof of completed work. — [[sources/humanlayer--humanlayer#WF19]], [[sources/humanlayer--humanlayer#WF20]], [[sources/humanlayer--humanlayer#WF22]], [[sources/humanlayer--humanlayer#HP10-feedback-delivery]].
 - [[patterns/structural/thin-harness-fat-skills]] — **specializes / is-expressed-by.** This split is the *rule* ("every step is one side or the other"); the three-layer architecture is its *expression* — push latent judgment up into fat skills, push deterministic execution down into the app, keep the harness thin. The architecture is what you get when you apply this triage consistently across a whole system.
 - [[patterns/quality-bar/skill-pack-bundle]] — **composes-with.** The bundle's "minimal code + unit test" half *is* the deterministic side (asserted on with deterministic tests); the "markdown skill + LLM eval" half is the latent side. The split tells you *which* layer each test type belongs to.
 - [[patterns/behavioral/diarization]] — **instance-of (latent side).** Diarization is a canonical *latent* step ("no SQL query produces this") sitting on top of a *deterministic* substrate (gbrain's zero-LLM-call graph + timeline). It's the clearest single example of judgment layered correctly over computation.

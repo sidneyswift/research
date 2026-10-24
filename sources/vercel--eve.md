@@ -94,3 +94,7 @@ Claims about: a **filesystem-first / convention-over-configuration** agent frame
 - [[concepts/durable-agent-execution]] — the durability model this source grounds
 - [[patterns/structural/thin-harness-fat-skills]] — eve is the first ingested **harness**
 - [[patterns/composition/single-source-multi-surface-distribution]] — channels + docs-as-source
+
+## Related investigations
+
+- [[artifacts/projects/humanlayer]] / [[concepts/agent-control-plane]] — related investigation of task/session orchestration and event persistence; [[sources/humanlayer--humanlayer#event-log]] and [[sources/humanlayer--humanlayer#runtime-boundary]] provide a comparison boundary to Eve’s [[concepts/durable-agent-execution]], without asserting equivalent step-replay guarantees.

@@ -19,6 +19,7 @@ sources/sidneyswift--skills/
 sources/mattpocock--skills/
 sources/forward-future--loop-library/
 sources/vercel--eve/
+sources/SHL0MS--skill-diffs/
 
 # PURCHASED / PROPRIETARY source (PM OS, prodmgmt.world): the local evidence copy
 # lives here for scanning but must NEVER be committed or pushed — it's licensed,
@@ -39,3 +40,4 @@ sources/**/.git/
 # Local-only scratch
 scratch/
 *.local.md
+sources/humanlayer--humanlayer/

@@ -63,6 +63,7 @@ Most agent failure modes at the edges are durability failures: a long task dies 
 
 ## Related
 
+- [[concepts/agent-control-plane]] / [[artifacts/projects/humanlayer]] — comparison at a different durability boundary: persistent task/session identities, an append-only event log, and continuation plumbing support work surviving individual sessions. The inspected HumanLayer orchestration does not establish Eve-style completed-step checkpoint replay or exactly-once effects, and some provider execution lives in external SDKs. — [[sources/humanlayer--humanlayer#HP01-task-policy]], [[sources/humanlayer--humanlayer#HP02-session-identity]], [[sources/humanlayer--humanlayer#event-log]], [[sources/humanlayer--humanlayer#runtime-boundary]].
 - [[concepts/filesystem-first-agent-framework]] — the authoring half of eve's design; this is the runtime half.
 - [[concepts/completion-contract]] / [[artifacts/projects/codex-goals]] — Codex Goals persist *objective* state across turns; durable-agent-execution persists *session/turn/step* state. Same instinct, different grain.
 - [[patterns/behavioral/evidence-gated-completion]] — durable parking makes evidence-gated stops cheap.

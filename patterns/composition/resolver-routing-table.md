@@ -77,6 +77,7 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 
 ## Related patterns
 
+- [[artifacts/plugins/humanlayer-rpi]] — a narrower supporting router: a post-tool hook maps the completed skill, workflow type, worktree timing, and current worktree context to suggested next-step instructions. This is inspected routing-table code, but its output is prompt context, not direct enforcement; it does not establish a global skill-discovery or reachability audit. — [[sources/humanlayer--humanlayer#WF18]].
 - [[patterns/quality-bar/skill-pack-bundle]] — composes-with / part-of: the resolver and its eval are **two of the bundle's ten parts** (components 6 and 7 — "a resolver so the agent invokes the skill automatically" + "an eval for the resolver"). This page zooms in on that pair; skill-pack-bundle is the whole unit.
 - [[patterns/structural/thin-harness-fat-skills]] — composes-with: the resolver is *how the thin harness finds the right fat skill*. The cleanest articulation lives there — "the description **is** the resolver" — i.e. in the native model the routing table *is* the harness's matching of the skill's own description ([[sources/garrytan--thin-harness-fat-skills#resolvers]], [[sources/garrytan--thin-harness-fat-skills#description-is-the-resolver]]).
 - [[patterns/quality-bar/complexity-ratchet]] — composes-with: trigger evals and `check-resolvable` are **forward-only floor tests** — once a skill must fire (or must be reachable), the eval pins that floor so future edits can't quietly drop below it.

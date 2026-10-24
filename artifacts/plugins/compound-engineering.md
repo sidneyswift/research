@@ -108,6 +108,7 @@ repo's README/AGENTS/skills/tests, then write distilled judgment — not a trans
 
 ## Relationships
 
+- **Workflow comparison**: [[artifacts/plugins/humanlayer-rpi]] also makes research and implementation artifacts carry work between phases. HumanLayer emphasizes reviewable research/design/outline handoffs and embeds the same skill sources into a separate collaborative runtime; CE emphasizes reusable solutions and conversion into multiple harness formats. Shared artifact discipline does not make their distribution or runtime guarantees equivalent. — [[sources/humanlayer--humanlayer#WF14]], [[sources/humanlayer--humanlayer#WF34]].
 - **Creator**: [[creators/every]] — Kieran Klaassen (owner/author; GM of Cora), with Dan Shipper
   (CEO) as editorial amplifier and Nityesh Agarwal authoring `coding-tutor`.
 - **Source**: [[sources/every--compound-engineering-plugin#root]].

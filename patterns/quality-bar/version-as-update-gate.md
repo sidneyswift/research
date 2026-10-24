@@ -132,6 +132,7 @@ from a latent production bug into a build failure — the same move
 
 ## Related patterns
 
+- [[artifacts/plugins/humanlayer-rpi]] — supporting packaging evidence: the daemon reads its bundled plugin version from the embedded manifest, preventing a second version constant from drifting. Source comments describe release stamping derived from the base version and plugin-content history. This is a useful version-ownership boundary, not an observed installed-client cache refresh or end-to-end release verification. — [[sources/humanlayer--humanlayer#WF34]].
 - [[patterns/composition/single-source-multi-surface-distribution]] — composes-with: CE keeps *three*
   marketplace manifests in version parity; the same validator that catches content drift catches
   version drift. Version-gating is the *delivery* half of single-sourcing.

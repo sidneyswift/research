@@ -73,6 +73,7 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 
 ## Related
 
+- [[artifacts/plugins/humanlayer-rpi]] / [[concepts/review-cost-aware-workflows]] — adjacent phase contracts: outline and implementation prompts name automated checks, manual acceptance, and verification between phases. This is useful acceptance-surface design, not evidence of the full persistent objective/budget/blocked-state contract described here; runtime auto-advance also consults labels, artifacts, and model-extracted next steps. — [[sources/humanlayer--humanlayer#implementation-gates]], [[sources/humanlayer--humanlayer#WF19]], [[sources/humanlayer--humanlayer#WF20]].
 - [[artifacts/projects/codex-goals]] — the runnable artifact that embodies this concept (`/goal` in the Codex CLI).
 - [[concepts/agentic-loop]] — **wraps this:** a loop is a completion contract run as a *repeating* observe→act→verify→continue-or-stop cycle; the contract specifies one objective, the loop iterates it. [[artifacts/skills/loop-library]] loop #028 is literally named "the Codex completion-contract loop" and uses the term — a **second creator (Forward Future) adopting "completion contract" by name**, partially answering the open question below. — [[sources/forward-future--loop-library#loop-028-completion-contract]]
 - [[patterns/behavioral/evidence-gated-completion]] — the pattern this concept is built on (now confirmed; 2nd artifact = the Loop Library).

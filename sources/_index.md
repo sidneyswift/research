@@ -1,7 +1,7 @@
 ---
 domain: sources
 type: index
-last-reviewed: 2026-05-21
+last-reviewed: 2026-10-23
 ---
 
 # Sources
@@ -18,6 +18,8 @@ Wikilinks to sources use **anchors that are defined on the source page itself**.
 
 ## Cloned repos
 
+- [[sources/humanlayer--humanlayer]] — `humanlayer/humanlayer` at `2f66a45` (2026-10-23): current Riptide platform and RPI workflow; 175 source anchors across 150 files, with code/prompt/docs/test-inspection boundaries. See [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]].
+
 Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` stripped) and have a corresponding `sources/<creator>--<repo>.md` page that is the citation target.
 
 - [[sources/anthropic--skills]] — `anthropics/skills` (11 MB, commit `690f15c` of 2026-05-19). The official Anthropic skills + spec + template.
@@ -29,6 +31,7 @@ Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` strippe
 - [[sources/mattpocock--skills]] — `mattpocock/skills` (1.0 MB, 84 files, commit `6eeb81b` of 2026-06-18, v1.0.1, MIT, **135,831★ / 11,770 forks** as-of 2026-06-19). Matt Pocock's "Skills For Real Engineers" — ~17 small, composable, model-agnostic skills in invocation-typed buckets, built *against* process frameworks (GSD/BMAD/Spec-Kit). The wiki's first **individual-engineer pack via the skills.sh installer** and **highest star count to date**; ships **no tests** (the counter-example to [[patterns/quality-bar/skill-pack-bundle]]); grounds [[concepts/skill-invocation-axis]] + [[concepts/ubiquitous-language-for-agents]].
 - [[sources/vercel--eve]] — `vercel/eve` (monorepo, commit `bfc7191` of 2026-06-19, Apache-2.0, **1,671★ / 106 forks** as-of 2026-06-20). Vercel's open-source **filesystem-first framework for durable backend AI agents** ("Next.js for agents," public preview 2026-06-17). 37 bundled docs (~55.7K words) + a real `packages/eve/src/harness/`. The wiki's first **agent framework / harness** (the long-missing "thin harness" middle of [[patterns/structural/thin-harness-fat-skills]]) and first **Vercel** source; grounds [[concepts/filesystem-first-agent-framework]] + [[concepts/durable-agent-execution]].
 - [[sources/forward-future--loop-library]] — `Forward-Future/loop-library` (commit `6ee3345` of 2026-06-19, MIT, **92★ / 14 forks** as-of 2026-06-20, repo one week old). Forward Future's (Matthew Berman's) Loop Library — 31 curated **loops** (copy-ready agent prompts pairing a task with an observable verification check and a named stopping condition) authored by ~14 builders, plus the installable `loop-library` skill (find/adapt/design). One canonical `loop-data.mjs` fanned out to site + `catalog.json`/`catalog.md` + skill fallback behind a drift check. Grounds [[concepts/agentic-loop]] and the confirming 2nd artifact for [[patterns/behavioral/evidence-gated-completion]].
+- [[sources/SHL0MS--skill-diffs]] — `SHL0MS/skill-diffs` (924 KB, single commit `2ded6c0` of 2026-05-04). A commit-history mining pipeline that turns four platforms' `SKILL.md` revision history into a published HuggingFace dataset (v0.5: 664,872 unique skills, 130,631 clean diff pairs) plus two companion tools — a defect-derived rule-based linter and a skill-patch eval harness. The wiki's first **dataset-and-tooling-pipeline** source (0★/0 forks; 75 HF downloads/month as-of 2026-07-22 — low traction, cited for evidence quality not adoption). Grounds [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]]; founding example of [[patterns/quality-bar/defect-derived-validation]].
 
 ## Articles, posts, threads
 
