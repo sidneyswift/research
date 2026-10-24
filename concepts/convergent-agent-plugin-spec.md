@@ -124,3 +124,7 @@ Read together: Anthropic optimizes for **developer control of the connector**; O
 - ~~**Does a third example exist already?**~~ **Resolved for skills (2026-06-04):** 40+ clients on agentskills.io ([[sources/agentskills--specification#governance]]); status moved `emerging → active`. Still worth chasing for *plugins*: does any third harness ship the manifest/hooks/marketplace grammar?
 - **How total is portability in practice?** Superpowers runs on both — but what fraction of its skills needed per-runtime tweaks? (The inverse of CE's converter question.) New wrinkle: discovery *paths* don't port (Codex reads `.agents/skills/`, Claude Code reads `.claude/skills/`) — the standard covers the artifact, not where harnesses look for it.
 - **Will the plugin layer get the AAIF treatment too?** Skills got a standards body; plugins/marketplaces haven't. If/when a joint plugin spec lands, this page's two-layer framing collapses back to one.
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] supplies a Cursor source and generated Claude Code adapter at the same version. Shared packaging does not guarantee identical execution: tool mappings, model fallbacks, and unsupported steps are explicit semantic differences. This adds implementation evidence for adaptation without asserting a unified runtime specification. [[sources/cursor--plugins-pstack#PK01]] [[sources/cursor--plugins-pstack#PK03]] [[sources/cursor--plugins-pstack#PK07]]

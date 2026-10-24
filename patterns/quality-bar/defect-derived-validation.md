@@ -71,3 +71,7 @@ It routes a scarce resource — domain judgment about what "good" looks like —
 - Does the mining step generalize to smaller corpora, or does it need the ~665k-skill scale this founding example has? Untested at smaller n.
 - How do you catch defect classes that are *rare but severe* when the mining process is inherently frequency-weighted? The pattern as observed has no answer to this yet — likely needs a deliberate second, hand-authored rule tier for known catastrophic failure modes.
 - What's the right cadence for re-validating a defect-derived rule set as the underlying population's conventions shift (e.g., a new agent platform's `SKILL.md`-equivalent format)? Not addressed in the founding example.
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] is a **related local-scale prescription**, not confirmation of this full corpus-scale pattern: `correct` mines recurring failures and adds negative tests and enforcement, but no measured historical-corpus validation is established. Status and example-count remain unchanged. [[sources/cursor--plugins-pstack#PK18]]

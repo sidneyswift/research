@@ -125,3 +125,7 @@ It earns the right to be a *pack* (over loose skills) because `ask-matt` chains 
 - **Does it ship *any* verification?** No tests, no routing eval. Is correctness enforced anywhere, or is the bet entirely "small enough to eyeball + predictable by construction"? (This is the crux of the [[patterns/quality-bar/skill-pack-bundle]] counter-example.)
 - **How much is the 135K★ the skills vs the author's audience?** Star velocity likely rides Total TypeScript / AI Hero reach; worth separating "great artifact" from "great distribution" before over-indexing on the pattern evidence.
 - **Several high-value skills un-deep-dived**: `codebase-design`, `domain-modeling`, `tdd`, `diagnosing-bugs`, `improve-codebase-architecture`, `setup-matt-pocock-skills` — queued in [[artifacts/skills/_index]].
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] is a useful engineering-craft comparison: short named principles coexist with substantial orchestration and formal-verification scripts. Its mostly disabled automatic invocation plus explicit file-reading composition cautions against treating discovery flags as universal file-access barriers. [[sources/cursor--plugins-pstack#inventory]] [[sources/cursor--plugins-pstack#PK07]]

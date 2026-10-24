@@ -72,3 +72,7 @@ One verified artifact; the code-review and artifact-comment implementations are 
 - How should approvals be invalidated when edits are semantically material but mechanically small?
 - Which independent system provides a second source-backed example?
 - How should review state behave under rebases, conflicting edits, and regenerated files beyond the cases covered by the inspected tests?
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/skills/poteto-mode]] independently implements the narrower core of review freshness: verification records are keyed by PR plus exact SHA, and a new revision does not inherit that key. The verifier field is optional text and same-key writes replace prior values; reviewer authority is not enforced. Shipping playbooks prescribe independent verdicts and equivalent-build carryover, but that is policy. This does not establish the complete feedback-anchor/delta-view mechanism above, so status remains **proposed** and the full-pattern example count stays one. [[sources/cursor--plugins-pstack#OR11]] [[sources/cursor--plugins-pstack#OR18]]

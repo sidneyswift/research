@@ -34,6 +34,8 @@ Each pattern uses [../_schemas/pattern.md](../_schemas/pattern.md). Sub-director
 
 ## Proposed patterns
 
+- [[patterns/quality-bar/rerunnable-work-artifact]] — manual oracle → reusable idempotent tool → checked repetition; one source family.
+
 - [[patterns/structural/authoritative-recheck-after-notification]] — For the inspected V2 launch path, replicated state wakes an actor that fetches authoritative readiness and acquires scoped ownership. HumanLayer only; proposed.
 - [[patterns/quality-bar/revision-bound-review]] — Bind review state and comment targets to the content revision they concern; distinguish local review markers, shared feedback, and approval. HumanLayer only; proposed.
 

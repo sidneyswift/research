@@ -75,3 +75,7 @@ It's a general fix for any fine-tuning or preference-training setup whose "groun
 - Can a fine-tune actually clear both bars simultaneously, or is the imitation/correctness tradeoff structural for this task (bigger/more-capable models systematically over-rewrite)? Not yet demonstrated either way.
 - Would a stronger, LLM-based correctness checker (rather than a fixed rule set) close the gap between "narrow objective correctness" and "actual correctness," or would it just reintroduce the gold-dependency problem one level up?
 - Does this two-axis discipline apply cleanly to non-code, non-lintable artifacts (e.g. prose edits) where no cheap rule-based correctness signal exists?
+
+## Pstack comparison — 2026-10-24
+
+[[concepts/evidence-calibrated-research]] offers a related separation: an accepted design story is not necessarily demonstrated intent, and confident synthesis must preserve its evidence tier. [[artifacts/plugins/pstack]] also supplies a concrete negative type example: a plausible representation still accepts the forbidden negative duration. [[sources/cursor--plugins-pstack#RE08]] [[sources/cursor--plugins-pstack#type-negative-probe]]

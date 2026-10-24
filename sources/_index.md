@@ -18,6 +18,8 @@ Wikilinks to sources use **anchors that are defined on the source page itself**.
 
 ## Cloned repos
 
+- [[sources/cursor--plugins-pstack]] — pstack 0.15.32 at `9580c23`; canonical skills and packaging, orchestration, and verification evidence.
+
 - [[sources/humanlayer--humanlayer]] — `humanlayer/humanlayer` at `2f66a45` (2026-10-23): current Riptide platform and RPI workflow; 175 source anchors across 150 files, with code/prompt/docs/test-inspection boundaries. See [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]].
 
 Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` stripped) and have a corresponding `sources/<creator>--<repo>.md` page that is the citation target.

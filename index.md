@@ -57,6 +57,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/vercel--eve]] | repo | 2026-06-20 | `bfc7191` (1,671★) |
 | [[sources/SHL0MS--skill-diffs]] | repo | 2026-07-22 | `2ded6c0` (0★; dataset v0.5) |
 | [[sources/humanlayer--humanlayer]] | repo | 2026-10-23 | `2f66a45` (11,977★ at retrieval) |
+| [[sources/cursor--plugins-pstack]] | repo | 2026-10-24 | `9580c23` (pstack 0.15.32) |
 
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
@@ -75,6 +76,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[creators/forward-future]] | org | Matthew Berman's AI media brand; ships the **Loop Library** — a curated, submission-driven catalog of repeatable agent loops + an installable find/adapt/design skill. First catalog-of-prompts creator |
 | [[creators/shl0ms]] | individual | GitHub handle (real name undisclosed); ships **skill-diffs** ([[artifacts/projects/skill-diffs]]) — a commit-history mining pipeline + dataset + linter/eval tools for training a skill-curator model. First dataset-and-tooling-pipeline creator; lowest-traction source to date (0★) |
 | [[creators/humanlayer]] | org | Collaborative coding-agent platform and RPI workflow; human review, task continuity, and host execution |
+| [[creators/lauren-tan]] | individual | pstack; engineering principles, orchestration, and maintained verification |
 
 ## Artifacts — Plugins
 
@@ -89,6 +91,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[artifacts/plugins/pm-os]] | prodmgmt.world | full | Paid PM-vertical "AI OS" (v2.2.1); 235 skills (3-tier hierarchy) + 12 reviewer/router sub-agents + nudge hooks + fat enforcement harness (pre-flight, Context Guard, deliverable gate); plugin/workspace split; **first purchased artifact + first non-engineering vertical** |
 | [[artifacts/plugins/mattpocock-skills]] | Matt Pocock | full | "Skills For Real Engineers"; ~17 small composable **model-agnostic** skills fixing 4 agent failure modes with SWE fundamentals; pure skills, **no tests**; **135K★** (highest in corpus); the counter-bet to `skill-pack-bundle` |
 | [[artifacts/plugins/humanlayer-rpi]] | HumanLayer | source-investigated | RPI workflow skills + companion helpers; 46 lessons on review gates, artifact ownership, specialist work, and bounded context |
+| [[artifacts/plugins/pstack]] | Lauren Tan | source-investigated | 58 skills, 23 playbooks; bounded research, parallel work, and executable verification |
 
 Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/plugins/_index.md).
 
@@ -99,6 +102,8 @@ Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/
 | [[artifacts/skills/grilling]] | Matt Pocock | active | Relentless one-question-at-a-time alignment interview; the reusable loop behind `grill-me`/`grill-with-docs`. The wiki's **first individual skill page** |
 | [[artifacts/skills/writing-great-skills]] | Matt Pocock | active | Reference for *authoring* skills — predictability, the two loads, the info-hierarchy ladder, leading words, the five failure modes; the most self-applicable artifact in the wiki |
 | [[artifacts/skills/loop-library]] | Forward Future | active | Find/adapt/design a **bounded agent loop** (task + observable verify + named stop); bundles a 31-loop catalog from ~14 builders. The **confirming 2nd artifact** for [[patterns/behavioral/evidence-gated-completion]] |
+| [[artifacts/skills/poteto-mode]] | Lauren Tan | source-investigated | Playbook orchestration, local work ledger, review freshness, and bounded PR maintenance |
+| [[artifacts/skills/statechart]] | Lauren Tan | source-investigated | Formal-model checking and visualization with explicit fidelity and projection limits |
 
 Candidate queue (dozens more from `mattpocock/skills`, `anthropic/skills`, gstack/gbrain, pm-os, FSI): see [artifacts/skills/_index.md](artifacts/skills/_index.md).
 
@@ -123,6 +128,9 @@ Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md
 
 ## Concepts
 
+- [[concepts/verification-model-fidelity]] — verify that the verifier still describes the implementation.
+- [[concepts/evidence-calibrated-research]] — confidence, coverage, and contradiction are part of the research result.
+
 - [[concepts/review-cost-aware-workflows]] — Choose workflow depth and review surfaces around human decision cost; review facts and choices before expensive implementation.
 - [[concepts/artifact-centered-agent-context]] — Give facts, decisions, design, and execution progress explicit artifact owners; pass bounded context into fresh sessions.
 - [[concepts/agent-control-plane]] — Separate durable tasks, access, artifacts, and review from provider-specific sessions and execution hosts.
@@ -137,7 +145,7 @@ Ideas and techniques worth their own page — especially from essays, papers, an
 - [[concepts/ai-search-as-parallel-discovery-layer]] — AI chatbots form a **parallel discovery layer** independent of Google organic search — different sources, citation patterns, and content format preferences. Backed by 1B data points across 14 Ahrefs studies. YouTube mentions = highest AI brand visibility correlation (0.737); 28.3% of most-cited pages have zero Google visibility. `emerging`. Source: [[sources/ahrefs--ai-search-optimization-research]].
 - [[patterns/structural/thin-harness-fat-skills]] — portable workflow judgment can live in Markdown while runtime responsibilities remain in code. [[artifacts/projects/eve]] and [[artifacts/projects/humanlayer]] expose substantial lifecycle, recovery, and authorization infrastructure: separation is supported; literal “thinness” is not. Remains **proposed** pending a sharper invariant and evidence for it, rather than promotion by counting another runtime.
 - [[concepts/workspace-skill-distribution]] — how an org distributes skills to every member without per-machine installs: four rails (repo-as-install via the `.agents/skills` scope ladder, ChatGPT admin push "install for other members," marketplace/workspace sharing, machine scope `/etc/codex/skills`) + the **restrictive/additive split** (enforcement config can only constrain, never distribute). `emerging`, OpenAI-grounded (n=1 ecosystem). Sources: [[sources/openai--codex-skills-doc]] + [[sources/openai--chatgpt-skills-help]] + [[sources/openai--plugins]].
-- [[concepts/skill-invocation-axis]] — every skill splits on *who can invoke it*: **model-invoked** (has a `description`; model/user/other-skills can reach it; pays **context load**) vs **user-invoked** (`disable-model-invocation`; human-only; pays **cognitive load**; unreachable by other skills). A user-invoked skill may call model-invoked ones but never another user-invoked one; piled cognitive load is cured by a router skill. A deliberate context-budget lever. `emerging`; Matt Pocock. Source: [[sources/mattpocock--skills]].
+- [[concepts/skill-invocation-axis]] — model discovery/invocation trades context load against human recall. Pocock supplies the two-load framing; pstack adds explicit file-reading composition. Host invocation flags are not universal file-access barriers.
 - [[concepts/ubiquitous-language-for-agents]] — Evans's **ubiquitous language** ported to the human↔agent gap: a `CONTEXT.md` glossary *for the agent* (and nothing else — decisions → ADRs), built via `domain-modeling`/`grill-with-docs`, collapsing jargon to single terms (fewer tokens, consistent naming). Pocock's "single coolest technique." `emerging`. Source: [[sources/mattpocock--skills]].
 - [[concepts/filesystem-first-agent-framework]] — **convention over configuration, ported to agents**: an agent *is* a directory, each capability is a file in a known slot, identity is path-derived, the framework *discovers* the tree (no registry, no big config object). The Rails/Next.js idea aimed at agents. `emerging` (n=1 whole-agent framework — eve). Source: [[sources/vercel--eve]].
 - [[concepts/durable-agent-execution]] — **durability as substrate, not feature**: run a conversation as a durable workflow (session → turn → step), checkpoint each step, replay completed steps after a crash, and **park** with zero compute while waiting on a human/OAuth/child, resuming days later. Forces "interrupted steps re-run → make side effects idempotent or gate them." `emerging` (eve's default, on the Workflow SDK; Codex Goals a different-grain cousin). Source: [[sources/vercel--eve]].
@@ -148,6 +156,8 @@ Ideas and techniques worth their own page — especially from essays, papers, an
 Candidate queue: see [concepts/_index.md](concepts/_index.md).
 
 ## Patterns
+
+- [[patterns/quality-bar/rerunnable-work-artifact]] — **proposed**; turn a checked manual unit into an idempotent reusable tool before repetition.
 
 The actual research output. Confirmed patterns (≥2 artifact examples + counter-example) listed here. Proposed patterns are tracked on the relevant artifact pages and promoted when evidence accumulates.
 

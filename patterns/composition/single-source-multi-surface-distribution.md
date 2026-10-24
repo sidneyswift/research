@@ -85,3 +85,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 
 - When the surfaces' *tool models* differ (a Cowork plugin's `tools:` frontmatter vs. a Managed Agent's typed `agent_toolset` + `mcp_toolset` blocks), how much really stays single-sourced vs. silently re-specified in the wrapper? The `gl-reconciler` prompt declares `tools:` in frontmatter *and* the `agent.yaml` re-declares toolsets — worth auditing whether those can disagree.
 - Does the drift guard cover the *prompt* as rigorously as it covers skills? `check.py` resolves `system.file` references but the skill-drift check is the explicit one.
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] provides another supporting instance: canonical `pstack/` generates `harness/pstack/claude-code`, selectively inserts adapter references, and checks byte/executable-bit parity. Source links to omitted material may float to `main`, and adapters explicitly lose some host semantics. [[sources/cursor--plugins-pstack#PK04]] [[sources/cursor--plugins-pstack#PK05]] [[sources/cursor--plugins-pstack#PK06]]

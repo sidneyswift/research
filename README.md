@@ -24,16 +24,16 @@ A research wiki cataloging the most important and talked-about work across the A
 
 | Domain | Count | Inventory checked |
 | --- | --- | --- |
-| Skills cataloged | 3 paged | 2026-10-23 |
-| Plugins cataloged | 9 | 2026-10-23 |
-| Projects cataloged | 4 | 2026-10-23 |
-| MCP servers cataloged | 0 paged | 2026-10-23 |
-| Concepts cataloged | 16 | 2026-10-23 |
-| Patterns extracted | 10 confirmed + 6 proposed with pages | 2026-10-23 |
-| Creators cataloged | 11 | 2026-10-23 |
-| Source citation pages | 30: 11 repos, 6 docs-pages, 10 articles, 1 tweet, 2 purchased bundles | 2026-10-23 |
+| Skills cataloged | 5 paged | 2026-10-24 |
+| Plugins cataloged | 10 | 2026-10-24 |
+| Projects cataloged | 4 | 2026-10-24 |
+| MCP servers cataloged | 0 paged | 2026-10-24 |
+| Concepts cataloged | 18 | 2026-10-24 |
+| Patterns extracted | 10 confirmed + 7 proposed with pages | 2026-10-24 |
+| Creators cataloged | 12 | 2026-10-24 |
+| Source citation pages | 31: 12 repos, 6 docs-pages, 10 articles, 1 tweet, 2 purchased bundles | 2026-10-24 |
 
-Latest ingest: [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[artifacts/plugins/pstack]], [[artifacts/skills/poteto-mode]], and [[artifacts/skills/statechart]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

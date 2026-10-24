@@ -41,3 +41,4 @@ sources/**/.git/
 scratch/
 *.local.md
 sources/humanlayer--humanlayer/
+sources/cursor--plugins-pstack/

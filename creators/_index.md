@@ -1,10 +1,13 @@
 ---
 domain: creators
 type: index
-last-reviewed: 2026-10-23
+last-reviewed: 2026-10-24
 ---
 
 # Creators
+
+- [[creators/lauren-tan]] — pstack author; engineering judgment, parallelism, and verification.
+
 
 The people and orgs producing the artifacts we study. Context, not the main event — but useful for spotting house styles and tracking who's worth following.
 

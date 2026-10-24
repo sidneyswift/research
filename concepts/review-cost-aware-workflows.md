@@ -70,3 +70,7 @@ The useful optimization target becomes **validated progress per unit of human at
 - What is the measured effect on review minutes, escaped defects, and rework across task sizes?
 - Which transitions benefit from human review, and which can be safely delegated under an existing authorization?
 - Can reviewer workload and queue age provide a better auto-advance throttle than a fixed stage count?
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] and [[concepts/evidence-calibrated-research]] expose decision queues, confidence tiers, and bounded review artifacts so a human can inspect the consequential choices. Prompt-prescribed attention savings remain unmeasured. [[sources/cursor--plugins-pstack#RE08]] [[sources/cursor--plugins-pstack#RE16]]

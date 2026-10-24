@@ -15,7 +15,7 @@ popularity-signals:
 
 # skill-invocation-axis
 
-> **One-line:** Every skill splits on one axis — *who can invoke it.* **Model-invoked** skills keep a `description` (model or user or another skill can fire them) and cost **context load**; **user-invoked** skills (`disable-model-invocation: true`) are reachable only by a human typing their name and cost **cognitive load** instead. Choosing the right side per skill is a deliberate context-budget lever.
+> **One-line:** Skill discovery and invocation policy trade model context load against human recall. Pocock frames this as a model-invoked/user-invoked axis; pstack shows why that policy must be distinguished from an agent explicitly reading and applying a skill file. Exact invocation behavior depends on the host. See the dated comparison below.
 
 *Judgment distillation ([[patterns/behavioral/diarization]]): compiled truth on top + append-only `## Timeline`. Done when it passes the [page checklist](_definition-of-done.md).*
 
@@ -26,7 +26,7 @@ Pocock reduces all skill taxonomy to a single distinction — invocation — and
 - **Model-invoked** (default; omit `disable-model-invocation`): the `description` field stays in the model's reach, so the agent can fire the skill autonomously *and* other skills can reach it. Price: **context load** — that description sits in the window every turn. Write it model-facing, with rich trigger phrasing ("Use when the user wants…, mentions…").
 - **User-invoked** (`disable-model-invocation: true`): the description is stripped from the agent's reach; *only* the human, typing the name, can invoke it — and **no other skill can**. Price: **cognitive load** — *you* are the index that must remember it exists. The description becomes a human-facing one-liner.
 
-Two rules fall out. **The choosing test:** pick model-invocation only when the agent must reach the skill on its own, or another skill must — *"Reuse is the reason to extract a skill, not the test"* for invocation ([[sources/mattpocock--skills#docs-invocation]]). **The composition rule:** because a user-invoked skill has no description, nothing but a human can fire it — so *a user-invoked skill may invoke model-invoked skills, but never another user-invoked one.* And the cure for too many user-invoked skills (piled-up cognitive load) is a **router skill**: one user-invoked skill that names the others and when to reach for each ([[sources/mattpocock--skills#skill-writing-great-skills]]).
+Within Pocock's stated native-invocation model, two rules fall out. **The choosing test:** pick model-invocation only when the agent must reach the skill on its own, or another skill must — *"Reuse is the reason to extract a skill, not the test"* for invocation ([[sources/mattpocock--skills#docs-invocation]]). **The composition rule:** because a user-invoked skill has no description, nothing but a human can fire it — so *a user-invoked skill may invoke model-invoked skills, but never another user-invoked one.* And the cure for too many user-invoked skills (piled-up cognitive load) is a **router skill**: one user-invoked skill that names the others and when to reach for each ([[sources/mattpocock--skills#skill-writing-great-skills]]).
 
 ## Where it came from
 
@@ -79,3 +79,7 @@ It turns "should this be a skill?" into two separate, cheaper questions: *does i
 - Does a second creator articulate (not just use) the two-load axis? Many packs *have* user/model commands; few *frame* the trade-off — find the 2nd to consider promoting this toward a pattern.
 - What's the cross-harness mapping of `disable-model-invocation` (Codex/Cursor/Copilot)? Needed before the axis is portable advice.
 - Is there a measurable context-load number per description (tokens/turn) that would let the trade-off be computed rather than judged?
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] has 57 of 58 top-level skills marked `disable-model-invocation`, yet its workflow directs agents to read other skill files. This distinguishes automatic discovery/invocation from explicit file access and application. It does not establish native cross-skill invocation support on every host. [[sources/cursor--plugins-pstack#inventory]] [[sources/cursor--plugins-pstack#PK07]]

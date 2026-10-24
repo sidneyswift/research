@@ -102,3 +102,7 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 - **How gameable is the verification surface in the wild?** The proxy-metric risk is real; is there evidence of Goals "passing the benchmark" while missing intent?
 - **Is "completion contract" the field's term or OpenAI's?** Anthropic/Cursor/others have agent-objective features; do any name this the same way, or is it convergent-but-unnamed (the same question the wiki tracks for [[patterns/behavioral/latent-vs-deterministic-split]])? A second creator naming it would graduate this concept toward a pattern.
 - **Where's the line between a completion contract and a [[patterns/quality-bar/complexity-ratchet|ratchet]]?** Both are evidence-gated; one is per-objective (within a thread), the other per-session (across history). Are they the same idea at two timescales?
+
+## Pstack comparison — 2026-10-24
+
+[[concepts/verification-model-fidelity]] asks whether the completion verifier still describes the actual implementation; a green result on a stale model is insufficient. [[artifacts/skills/statechart]] supplies the executable case and its explicit limits. [[sources/cursor--plugins-pstack#verification-local-checks]]
