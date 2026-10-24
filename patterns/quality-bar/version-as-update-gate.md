@@ -4,8 +4,8 @@ type: pattern
 name: version-as-update-gate
 category: quality-bar
 status: confirmed
-last-reviewed: 2026-06-02
-example-count: 2
+last-reviewed: 2026-06-20
+example-count: 3
 ---
 
 # version-as-update-gate
@@ -115,6 +115,7 @@ from a latent production bug into a build failure — the same move
   workspace state between versions. No release automation visible (zips, not CI), so it reinforces the
   *version-as-contract* idea rather than the automation mechanism — but the upgrade-migration skill is a
   component none of the open-source examples ship. — citation: [[sources/prodmgmt-world--pm-os#plugin-manifest]]
+- [[artifacts/projects/eve]] — **the 3rd full example, on a *different delivery substrate* (the npm registry, not a plugin cache) — answering this page's standing open question.** eve ships as the npm package `eve`, which consumers install/resolve **by version** (`npx eve@latest`, `eve@0.11.7`), so the version is the delivery trigger just as for a plugin cache — but via semver + a registry rather than a per-version cache dir. The field is **automation-owned**: `AGENTS.md` requires a changeset on "every PR that touches the published `eve` package," forbids hand-bumps (pre-1.0 rule: `patch` for fixes+features, `minor` only for public-API breaks), and release automation runs `changeset version` → `changeset publish` ([[sources/vercel--eve#changesets]], [[sources/vercel--eve#AGENTS.md]]). Same shape as FSI/CE (automation owns the bump; manual bumps are an error; one bump per release ships the batch), proving the pattern generalizes past the marketplace-plugin substrate to ordinary package registries. — citation: [[sources/vercel--eve#changesets]], [[sources/vercel--eve#AGENTS.md]]
 
 ## Counter-examples or anti-pattern
 
@@ -131,6 +132,7 @@ from a latent production bug into a build failure — the same move
 
 ## Related patterns
 
+- [[artifacts/plugins/humanlayer-rpi]] — supporting packaging evidence: the daemon reads its bundled plugin version from the embedded manifest, preventing a second version constant from drifting. Source comments describe release stamping derived from the base version and plugin-content history. This is a useful version-ownership boundary, not an observed installed-client cache refresh or end-to-end release verification. — [[sources/humanlayer--humanlayer#WF34]].
 - [[patterns/composition/single-source-multi-surface-distribution]] — composes-with: CE keeps *three*
   marketplace manifests in version parity; the same validator that catches content drift catches
   version drift. Version-gating is the *delivery* half of single-sourcing.
@@ -150,6 +152,5 @@ from a latent production bug into a build failure — the same move
 - **`linked-versions` couples unrelated components** (a plugin-only change still bumps the CLI). Is
   the simplicity of one synced version worth shipping no-op version bumps to consumers of the other
   component?
-- **Does a third example use a *different* delivery substrate** (e.g., an MCP server versioned by a
-  registry rather than a file cache)? Both current examples are file-cached plugin installs; the
-  pattern likely generalizes but isn't yet shown outside that substrate.
+- ~~**Does a third example use a *different* delivery substrate** (e.g., an MCP server versioned by a
+  registry rather than a file cache)?~~ **Answered 2026-06-20:** [[artifacts/projects/eve]] is versioned on the **npm registry** (semver + changesets), not a plugin file-cache — the pattern holds on a different substrate (registry semver). Still open: an *MCP-server-by-registry* instance specifically, and whether registry-yank/deprecation semantics change the gate's shape vs. a cache.

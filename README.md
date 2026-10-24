@@ -22,16 +22,18 @@ A research wiki cataloging the most important and talked-about work across the A
 
 ## Status
 
-| Domain | Count | Last updated |
+| Domain | Count | Inventory checked |
 | --- | --- | --- |
-| Skills cataloged | 0 paged (candidate queue: 17+ from anthropic-skills, ~55 from financial-services, dozens in gstack/gbrain) | 2026-06-01 |
-| Plugins cataloged | 7 — `anthropic-skills-marketplace`, `gstack`, `gbrain`, `anthropic-financial-services-marketplace`, `compound-engineering`, `openai-codex-plugins-marketplace`, `pm-os` | 2026-06-10 |
-| Projects cataloged | 1 — `codex-goals` (OpenAI Codex Goals feature) | 2026-06-02 |
-| MCP servers cataloged | 0 paged (12 FSI data connectors + 1 gbrain server referenced; queued) | 2026-06-01 |
-| Concepts cataloged | 5 — `compound-engineering`, `completion-contract`, `convergent-agent-plugin-spec`, `dynamic-workflows`, `ai-search-as-parallel-discovery-layer` | 2026-06-02 |
-| Patterns extracted | **8 confirmed** + 3 proposed-with-pages (`thin-harness-fat-skills`, `diarization`, `evidence-gated-completion`); ~20 proposed bullets — see [Patterns](index.md#patterns) | 2026-06-02 |
-| Creators cataloged | 5 — Anthropic, Garry Tan, Every, OpenAI, Ahrefs | 2026-06-02 |
-| Sources snapshotted | 5 repos (~137 MB) + 3 docs-pages + 10 articles (incl. Garry Tan's 8-essay "AI Explainer" series) + 1 tweet | 2026-06-02 |
+| Skills cataloged | 3 paged | 2026-10-23 |
+| Plugins cataloged | 9 | 2026-10-23 |
+| Projects cataloged | 4 | 2026-10-23 |
+| MCP servers cataloged | 0 paged | 2026-10-23 |
+| Concepts cataloged | 16 | 2026-10-23 |
+| Patterns extracted | 10 confirmed + 6 proposed with pages | 2026-10-23 |
+| Creators cataloged | 11 | 2026-10-23 |
+| Source citation pages | 30: 11 repos, 6 docs-pages, 10 articles, 1 tweet, 2 purchased bundles | 2026-10-23 |
+
+Latest ingest: [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

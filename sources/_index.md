@@ -1,7 +1,7 @@
 ---
 domain: sources
 type: index
-last-reviewed: 2026-05-21
+last-reviewed: 2026-10-23
 ---
 
 # Sources
@@ -18,6 +18,8 @@ Wikilinks to sources use **anchors that are defined on the source page itself**.
 
 ## Cloned repos
 
+- [[sources/humanlayer--humanlayer]] — `humanlayer/humanlayer` at `2f66a45` (2026-10-23): current Riptide platform and RPI workflow; 175 source anchors across 150 files, with code/prompt/docs/test-inspection boundaries. See [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]].
+
 Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` stripped) and have a corresponding `sources/<creator>--<repo>.md` page that is the citation target.
 
 - [[sources/anthropic--skills]] — `anthropics/skills` (11 MB, commit `690f15c` of 2026-05-19). The official Anthropic skills + spec + template.
@@ -26,6 +28,10 @@ Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` strippe
 - [[sources/anthropic--financial-services]] — `anthropics/financial-services` (2.7 MB, commit `120a31d` of 2026-05-29, Apache 2.0). Anthropic's FSI reference marketplace — 20 plugins, dual-runtime (Cowork plugin + Managed Agents API), 10 managed-agent cookbooks with trust-tiered subagents.
 - [[sources/every--compound-engineering-plugin]] — `everyinc/compound-engineering-plugin` (11 MB, commit `3e77a7b` of 2026-06-01, MIT). Every's official Compound Engineering plugin — 38 skills + 43 sub-agents authored once in Claude format and converted to ~11 agent platforms; dogfoods its own loop (27 brainstorms + 57 plans + 30 solutions). The wiki's first **non-Garry tested skill pack**.
 - [[sources/openai--plugins]] — `openai/plugins` (57 MB, 4,580 files, commit `bebc3d6` of 2026-06-01, 1,334★). OpenAI's official **Codex** plugin marketplace — **167 plugins** (mostly hosted-connector `.app.json` wrappers + 479 skills), the `.codex-plugin/` manifest with a productized storefront, the `plugin-creator` meta-skill. The wiki's first **non-Claude-Code / non-Anthropic** marketplace; grounds [[concepts/convergent-agent-plugin-spec]].
+- [[sources/mattpocock--skills]] — `mattpocock/skills` (1.0 MB, 84 files, commit `6eeb81b` of 2026-06-18, v1.0.1, MIT, **135,831★ / 11,770 forks** as-of 2026-06-19). Matt Pocock's "Skills For Real Engineers" — ~17 small, composable, model-agnostic skills in invocation-typed buckets, built *against* process frameworks (GSD/BMAD/Spec-Kit). The wiki's first **individual-engineer pack via the skills.sh installer** and **highest star count to date**; ships **no tests** (the counter-example to [[patterns/quality-bar/skill-pack-bundle]]); grounds [[concepts/skill-invocation-axis]] + [[concepts/ubiquitous-language-for-agents]].
+- [[sources/vercel--eve]] — `vercel/eve` (monorepo, commit `bfc7191` of 2026-06-19, Apache-2.0, **1,671★ / 106 forks** as-of 2026-06-20). Vercel's open-source **filesystem-first framework for durable backend AI agents** ("Next.js for agents," public preview 2026-06-17). 37 bundled docs (~55.7K words) + a real `packages/eve/src/harness/`. The wiki's first **agent framework / harness** (the long-missing "thin harness" middle of [[patterns/structural/thin-harness-fat-skills]]) and first **Vercel** source; grounds [[concepts/filesystem-first-agent-framework]] + [[concepts/durable-agent-execution]].
+- [[sources/forward-future--loop-library]] — `Forward-Future/loop-library` (commit `6ee3345` of 2026-06-19, MIT, **92★ / 14 forks** as-of 2026-06-20, repo one week old). Forward Future's (Matthew Berman's) Loop Library — 31 curated **loops** (copy-ready agent prompts pairing a task with an observable verification check and a named stopping condition) authored by ~14 builders, plus the installable `loop-library` skill (find/adapt/design). One canonical `loop-data.mjs` fanned out to site + `catalog.json`/`catalog.md` + skill fallback behind a drift check. Grounds [[concepts/agentic-loop]] and the confirming 2nd artifact for [[patterns/behavioral/evidence-gated-completion]].
+- [[sources/SHL0MS--skill-diffs]] — `SHL0MS/skill-diffs` (924 KB, single commit `2ded6c0` of 2026-05-04). A commit-history mining pipeline that turns four platforms' `SKILL.md` revision history into a published HuggingFace dataset (v0.5: 664,872 unique skills, 130,631 clean diff pairs) plus two companion tools — a defect-derived rule-based linter and a skill-patch eval harness. The wiki's first **dataset-and-tooling-pipeline** source (0★/0 forks; 75 HF downloads/month as-of 2026-07-22 — low traction, cited for evidence quality not adoption). Grounds [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]]; founding example of [[patterns/quality-bar/defect-derived-validation]].
 
 ## Articles, posts, threads
 
@@ -49,6 +55,12 @@ External writing we cite. Always include retrieval date and a snapshot path (PDF
 - [[sources/anthropic--dynamic-workflows]] — **article** (X article + Claude Blog mirror), Thariq Shihipar (@trq212) + Sid Bidasaria (@sidbid), 2026-06-02. "A harness for every task: dynamic workflows in Claude Code" — model writes JS harness on the fly, 6 composable orchestration patterns, 3 named failure modes. 3,340 likes / 7,574 bookmarks. Grounds [[concepts/dynamic-workflows]].
 
 - [[sources/every--compound-engineering-gets-an-upgrade]] — **article**, Kieran Klaassen, 2026-05-29 (updated 2026-06-01). The 4-step → 8-step evolution; "AI is the stuff in the middle. Humans are the bread on either end."
+
+## Release artifacts (ZIP / packaged products)
+
+Paid or otherwise non-clonable products distributed as packages. The extracted tree is **committed** (immutable evidence — unlike repo clones, there is no upstream to rebuild from); version stamp = the package version.
+
+- [[sources/prodmgmt-world--pm-os-cowork]] — **PM OS for Claude Cowork v2.2.1** (prodmgmt.world / George Nurijanian; retrieved 2026-06-11 from Sid's licensed copy; 5.5 MB extracted). 235 skills + 12 agents + 2 SessionStart hooks + 6 MCP servers + the paired workspace (364-line harness, 🧠 Knowledge base, templates/examples). The wiki's first **paid, ZIP-distributed, private-upstream** source.
 
 ## Marketplace listings
 
@@ -75,3 +87,6 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/anthropic--plugins-reference]] — Claude Code "Plugins reference" (`code.claude.com/docs`, retrieved 2026-05-31). The mechanism layer: `plugin.json` schema, `${CLAUDE_PLUGIN_ROOT}` file resolution, and the `~/.claude/plugins/cache` caching behavior. Partial verbatim snapshot.
 - [[sources/every--compound-engineering]] — Every's living "Compound Engineering" guide (`every.to/guides`, retrieved 2026-06-02; **partial capture**). The loop, the 80/20 + 50/50 rules, the eight beliefs to "unlearn," "taste belongs in systems, not review," the 5-stage adoption ladder.
 - [[sources/openai--using-goals-in-codex]] — OpenAI Cookbook guide *"Using Goals in Codex"* (`developers.openai.com/cookbook`, retrieved 2026-06-02; captured verbatim from the notebook source). Pinned to `openai/openai-cookbook` commit `9b4e627` (2026-05-13; page published 2026-05-09, authors Raj Pathak & Stefano Fabbri). Documents Codex **Goals** — persistent, evidence-gated objectives via `/goal`. The wiki's first **OpenAI** source.
+- [[sources/agentskills--specification]] — the **Agent Skills open standard** (`agentskills.io/specification`, retrieved 2026-06-04, verbatim from the site's markdown endpoint). The formal SKILL.md spec (required `name`+`description`, progressive disclosure ~100 tokens → <5,000 → on-demand), released 2025-12-18 and donated to the Linux Foundation-backed AAIF; 40+ adopting clients. Supersedes the "no joint spec" framing on [[concepts/convergent-agent-plugin-spec]].
+- [[sources/openai--codex-skills-doc]] — OpenAI Codex docs *"Agent Skills"* (`developers.openai.com/codex/skills`, retrieved 2026-06-04, verbatim). The Codex skills system: named adoption of the open standard, the 4-tier scope ladder (repo `.agents/skills` → user → admin `/etc/codex/skills` → system), the ~2%/8K-char context budget, "skills are the authoring format, plugins the installable distribution unit," `agents/openai.yaml` extension.
+- [[sources/openai--chatgpt-skills-help]] — OpenAI Help Center *"Skills in ChatGPT"* (article 20001066, retrieved 2026-06-04; ⚠ **secondary-fidelity** — Cloudflare-gated, reconstructed from search extraction, quoted strings verbatim across two passes; browser re-capture TODO). Skills inside ChatGPT itself (beta: Business/Enterprise/Edu/Teachers/Healthcare): workspace skill library, auto-invocation, five admin permissions incl. **"Enable skills installing"** (install for other members, auto-applied).

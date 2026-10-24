@@ -2,7 +2,7 @@
 domain: artifacts
 type: index
 subdomain: plugins
-last-reviewed: 2026-05-21
+last-reviewed: 2026-10-23
 ---
 
 # Plugins
@@ -10,6 +10,9 @@ last-reviewed: 2026-05-21
 Agent plugins cataloged — **Claude Code *and* Codex** as of 2026-06-02. Each page uses [../../\_schemas/plugin.md](../../_schemas/plugin.md). The two labs' plugin formats are near-identical (see [[concepts/convergent-agent-plugin-spec]]).
 
 ## By creator
+
+### HumanLayer
+- [[artifacts/plugins/humanlayer-rpi]] — risk-appropriate research → decisions → design → thin plan → implementation; artifact-owned context, specialist subagents, and governed context-shard candidates. 46 portable workflow lessons.
 
 ### Anthropic official
 - [[artifacts/plugins/anthropic-skills-marketplace]] — Anthropic's demonstration marketplace; 3 child plugins, 17 skills. The reference for "what a skill looks like."
@@ -25,8 +28,11 @@ Agent plugins cataloged — **Claude Code *and* Codex** as of 2026-06-02. Each p
 ### Every (Kieran Klaassen)
 - [[artifacts/plugins/compound-engineering]] — the official Compound Engineering plugin; 38 skills + 43 sub-agents, authored once in Claude format and **converted to ~11 agent platforms**; dogfoods its own loop. The wiki's first **non-Garry tested skill pack**. (Marketplace also ships `coding-tutor` by Nityesh Agarwal — candidate below.)
 
-### prodmgmt.world (commercial)
-- [[artifacts/plugins/pm-os]] — paid, proprietary PM bundle (v2.2.1): 235 skills in a three-tier hierarchy (system/workflow/reusable), 12 read-only reviewer/router sub-agents, 2 nudge-only hooks, 6 MCP configs; one content set shipped as claude-code + cursor + cowork zips. The wiki's first **purchased** artifact — evidence the skill-pack format has a paid market.
+### prodmgmt.world (George Nurijanian, commercial)
+- [[artifacts/plugins/pm-os]] — paid, proprietary PM bundle (v2.2.1): 235 skills in a three-tier hierarchy (system/workflow/reusable), 12 read-only reviewer/router sub-agents, 2 nudge-only hooks, 6 MCP configs; one content set shipped as claude-code + cursor + cowork zips. The wiki's first **purchased** artifact and first **non-engineering vertical** — evidence the skill-pack format has a paid market.
+
+### Matt Pocock
+- [[artifacts/plugins/mattpocock-skills]] — "Skills For Real Engineers" (`npx skills@latest add mattpocock/skills`); ~17 small, composable, **model-agnostic** skills in invocation-typed buckets, fixing four named agent failure modes with classic SWE fundamentals. **No hooks/agents/MCP/commands — pure skills, no tests.** At **135K★**, the wiki's highest-starred source and first **individual-engineer pack via skills.sh**; the counter-bet to [[patterns/quality-bar/skill-pack-bundle]]. Ingested 2026-06-19.
 
 ### OpenAI (Codex — *not* Claude Code)
 - [[artifacts/plugins/openai-codex-plugins-marketplace]] — OpenAI's official **Codex** marketplace; **167 plugins** (mostly hosted-connector `.app.json` wrappers + a skills layer; 479 skills total), `.codex-plugin/` manifest with a productized storefront (categories, install/auth policy, `codex://` deeplinks), `plugin-creator` meta-skill. The wiki's first non-Claude-Code marketplace; the example that makes [[patterns/structural/marketplace-as-multi-plugin]] cross-lab. ~140 of 167 are partner-authored.
@@ -36,10 +42,12 @@ Agent plugins cataloged — **Claude Code *and* Codex** as of 2026-06-02. Each p
 ### Engineering
 - [[artifacts/plugins/gstack]]
 - [[artifacts/plugins/compound-engineering]] — agent-coding workflow loop (brainstorm → plan → work → review → compound)
+- [[artifacts/plugins/mattpocock-skills]] — craft toolkit (grill → shared-language → TDD → deep-module design); individual-authored, fundamentals-first
 
 ### Vertical (domain-specific workflows)
 - [[artifacts/plugins/gbrain]] — agent memory
 - [[artifacts/plugins/anthropic-financial-services-marketplace]] — financial services (IB, equity research, PE, wealth, fund admin, ops)
+- [[artifacts/plugins/pm-os]] — product management (strategy, research, PRDs, stakeholders, coaching); the first non-engineering individual-knowledge-worker vertical
 
 ### Reference / demonstration
 - [[artifacts/plugins/anthropic-skills-marketplace]]

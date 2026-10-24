@@ -16,12 +16,17 @@ sources/garrytan--gbrain/
 sources/every--compound-engineering-plugin/
 sources/openai--plugins/
 sources/sidneyswift--skills/
+sources/mattpocock--skills/
+sources/forward-future--loop-library/
+sources/vercel--eve/
+sources/SHL0MS--skill-diffs/
 
 # PURCHASED / PROPRIETARY source (PM OS, prodmgmt.world): the local evidence copy
 # lives here for scanning but must NEVER be committed or pushed — it's licensed,
 # paid content and this repo is public. Not in repos.manifest.tsv (no public repo
 # to re-clone from); rebuild by re-extracting the purchased zips.
 sources/prodmgmt-world--pm-os-bundle/
+sources/prodmgmt-world--pm-os-cowork/
 
 # Never commit nested .git directories from any clone that isn't listed above.
 sources/**/.git/
@@ -35,3 +40,4 @@ sources/**/.git/
 # Local-only scratch
 scratch/
 *.local.md
+sources/humanlayer--humanlayer/

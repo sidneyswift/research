@@ -65,6 +65,7 @@ popularity-signals:
 
 ## Relationships
 
+- **Workflow comparison**: [[artifacts/plugins/humanlayer-rpi]] organizes coding work around research, design, outlines, and implementation routes whose depth varies with the task. Its artifact-centered phase boundaries complement gstack’s role-centered entry points; the surrounding [[artifacts/projects/humanlayer]] product also owns collaboration and execution state. The standalone skill pack should not be credited with those runtime guarantees. — [[sources/humanlayer--humanlayer#WF01]], [[sources/humanlayer--humanlayer#WF02]], [[sources/humanlayer--humanlayer#WF34]].
 - **Creator**: [[creators/garry-tan]]
 - **Source**: [[sources/garrytan--gstack#root]]
 - **Composes with**: [[artifacts/plugins/gbrain]] via `/setup-gbrain` + `/sync-gbrain` ([[sources/garrytan--gstack#using-gbrain-with-gstack]])
@@ -93,6 +94,7 @@ gstack is a cited grounding example for these pattern pages (distilled from [[cr
 - **[[patterns/structural/thin-harness-fat-skills]]** (proposed) — markdown skills over deterministic CLIs, harness-agnostic across Claude Code/Codex/OpenClaw.
 - **[[patterns/behavioral/skill-as-method-call]]** (proposed) — `/qa`'s Quick/Standard/Exhaustive tier parameter; `/investigate` as a fixed procedure over varying targets. ([[sources/garrytan--gstack#qa]])
 - **[[patterns/quality-bar/complexity-ratchet]]** (proposed) — the Bun-TTY interactive-review floor tests + multi-tier harness + slop-scan (5.24 → cut 62%). ([[sources/garrytan--gstack#test]])
+- **[[patterns/behavioral/persona-lens-review-panel]]** (confirmed 2026-06-11) — the lens-as-slash-command example: the `plan-*-review` family + `/qa` + `/cso` give each persona its own invocable skill; user composes the panel manually. ([[sources/garrytan--gstack#plan-ceo-review]], [[sources/garrytan--gstack#qa]])
 
 ### Earlier proposed patterns (pre-pattern-page)
 

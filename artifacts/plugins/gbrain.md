@@ -48,6 +48,7 @@ popularity-signals:
 
 ## Relationships
 
+- **Memory comparison**: [[artifacts/projects/humanlayer]] preserves task artifacts and extracts short, cited context-shard candidates for reusable team steering. This is adjacent to gbrain’s durable memory, but the inspected mechanism selects reusable instructions rather than maintaining a subject dossier with compiled judgments, timelines, and holder attribution. — [[sources/humanlayer--humanlayer#WF14]], [[sources/humanlayer--humanlayer#WF24]], [[sources/humanlayer--humanlayer#WF25]].
 - **Creator**: [[creators/garry-tan]]
 - **Source**: [[sources/garrytan--gbrain#root]]
 - **Composes with**: [[artifacts/plugins/gstack]] via `/setup-gbrain` and `/sync-gbrain` skills

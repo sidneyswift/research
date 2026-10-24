@@ -11,8 +11,8 @@ This is the **consumer** front door. The other two: `README.md` (humans browsing
 This is a wiki about **how to architect agents, skills, plugins, and agent-products** — distilled from a small, opinionated set of frontier sources (Anthropic, Garry Tan's gstack/gbrain, Every's compound-engineering, OpenAI Codex). Calibrate before you rely on it:
 
 - **High value, in-domain:** you're building something *agent-shaped* — a skill, a plugin/pack, a resolver, a self-improving loop, a multi-surface distribution, an MCP server. The patterns here are grounded, cited, and carry explicit `When NOT to use` + anti-patterns. Steal freely.
-- **Low value, out-of-domain:** generic app architecture — DB schema, REST/UX, business logic, auth. The wiki is mostly silent here; don't over-apply agent framing. Say so in your output rather than inventing a fit.
-- **Known gaps (as of this writing):** `artifacts/skills/` and `artifacts/mcp-servers/` are **candidate queues, not paged yet**; the corpus is **Garry-Tan-weighted** (watch the `same-creator caveat` notes); `analyses/` (cross-cutting synthesis) is empty by design — you synthesize across pattern pages yourself.
+- **Limited scope outside agent products:** HumanLayer adds concrete examples of task/session data models, review UX, and execution authorization. These are source-specific examples, not a general app-architecture or security handbook.
+- **Known gaps (2026-10-23):** individual skills have pages, but standalone MCP servers remain a candidate queue. The corpus is selective and several patterns still have only one verified example; watch their status and same-creator caveats. `analyses/` (cross-cutting synthesis) remains empty by design.
 
 ## The protocol (follow in order)
 
@@ -36,6 +36,7 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 | **Code-vs-prose** — what to freeze in code vs leave to the model | [[patterns/behavioral/latent-vs-deterministic-split]], [[patterns/structural/thin-harness-fat-skills]] | [[artifacts/plugins/gstack]], [[artifacts/plugins/compound-engineering]] |
 | **Untrusted input / multi-agent privilege / security** *(proposed, single example — caveat)* | *(tracked as a proposed bullet)* | [[artifacts/plugins/anthropic-financial-services-marketplace]] (trust-tiered subagents: only the reader touches untrusted docs; one leaf holds Write; a critic re-verifies) |
 | **Release / versioning / distribution** | [[patterns/quality-bar/version-as-update-gate]], [[patterns/composition/single-source-multi-surface-distribution]] | [[artifacts/plugins/anthropic-financial-services-marketplace]], [[artifacts/plugins/compound-engineering]] |
+| **Collaborative agent work and human review** | [[concepts/agent-control-plane]], [[concepts/review-cost-aware-workflows]], [[concepts/artifact-centered-agent-context]], [[patterns/quality-bar/revision-bound-review]] | [[artifacts/projects/humanlayer]], [[artifacts/plugins/humanlayer-rpi]] |
 
 No row fits? Run `scripts/wiki-search.sh "<your terms>"`, or browse [patterns/_index.md](patterns/_index.md). Still nothing → that's a gap; report it.
 
