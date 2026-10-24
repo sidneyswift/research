@@ -46,3 +46,7 @@ If this source IS a popularity signal (e.g., a tweet with N likes, a GitHub repo
 ## Related sources
 
 - [[sources/...]] — relationship
+
+## Structural verification for GitHub repo sources
+
+For maps with registered `### anchor` headings (or explicit backtick `#anchor` entries) and immutable GitHub `blob/<full-sha>/path#Lx-Ly` links, run `python3 scripts/check-source-citations.py sources/<slug>.md`. It reads pinned Git objects, checks line bounds and registered wikilink targets, and never fetches or edits evidence. Stage new pages or include each with `--page`. It does not establish claim entailment, whole-tree link integrity, runtime correctness, or support every historical source format.

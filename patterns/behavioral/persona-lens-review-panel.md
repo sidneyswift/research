@@ -125,3 +125,7 @@ plan review) — confirmed at creation (2026-06-11); previously tracked as a pro
   persona naming — no one has shipped an eval.)
 - Optimal panel size before findings saturate/duplicate — CE dedups, PM OS severity-ranks, neither
   publishes numbers.
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] uses different research/design lenses, but its Claude adapter can replace unavailable non-Claude model choices with the session model. Lens diversity and model-family independence must be reported separately. Supporting comparison. [[sources/cursor--plugins-pstack#RE16]] [[sources/cursor--plugins-pstack#PK07]]

@@ -205,6 +205,7 @@ The deterministic `(det)` operations now have scripts so the model spends judgme
 
 - **`scripts/wiki-search.sh "<query>"`** — grep over wiki pages, grouped by page + title (`-s` includes `sources/`, `-l` lists files). The cheap stand-in for embedding search until the wiki outgrows it.
 - **`scripts/wiki-doctor.py`** — the LINT autopilot: mechanical health checks + a 0–100 health score (`--json`, `--strict`, `--target N`). Reports only — never edits pages.
+- **`python3 scripts/check-source-citations.py sources/<slug>.md`** — validates registered anchors used by tracked wiki pages and immutable GitHub line ranges against the local pinned clone. Stage new pages or pass `--page`; use for repo maps in this format. Structural checks only; semantic evidence review remains required.
 - **`sources/clone-all.sh`** — rebuild the git-ignored source clones from `repos.manifest.tsv`, pinned to cited commits (`--pull` to fetch).
 - **`analyses/_eval-rubric.md`** — the cross-modal (multi-model) review gate every `analyses/` page passes before shipping.
 

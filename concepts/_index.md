@@ -1,10 +1,14 @@
 ---
 domain: concepts
 type: index
-last-reviewed: 2026-10-23
+last-reviewed: 2026-10-24
 ---
 
 # Concepts
+
+- [[concepts/verification-model-fidelity]] — keep implementation, formal model, properties, and charts aligned.
+- [[concepts/evidence-calibrated-research]] — preserve confidence, source coverage, and contradictions when synthesizing research.
+
 
 Ideas and techniques worth their own page — especially from essays, papers, and threads where the durable output is a *concept*, not a runnable artifact. Each page uses [../\_schemas/concept.md](../_schemas/concept.md).
 

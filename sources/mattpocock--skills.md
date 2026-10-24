@@ -61,3 +61,7 @@ Claims about: how a *small, composable, model-agnostic* skill pack is designed a
 - [[sources/agentskills--specification]] — the open standard these `SKILL.md` files conform to; `skills.sh` is the cross-harness installer that distributes them.
 - [[sources/garrytan--gstack]] — the other individual-authored opinionated engineering pack; gstack is heavy/tested/harness-OS, mattpocock is small/untested/composable — a direct house-style contrast.
 - [[sources/every--compound-engineering-plugin]] — shares the align-before-build move (CE's brainstorm/plan vs mattpocock's grill) and fat-markdown-skills shape.
+
+## Related ingest — 2026-10-24
+
+- [[sources/cursor--plugins-pstack]] — pinned pstack comparison for engineering workflows, evidence quality, and cross-harness distribution; see [[artifacts/plugins/pstack]].

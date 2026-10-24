@@ -24,6 +24,11 @@ Individual skills cataloged. Each page uses [../../\_schemas/skill.md](../../_sc
 
 ## By creator
 
+### Lauren Tan
+- [[artifacts/skills/poteto-mode]] — contract-driven orchestration, playbooks, exact-revision records, and bounded PR maintenance.
+- [[artifacts/skills/statechart]] — bounded TLA+ checking, diagram projection, counterexamples, and source/model fidelity.
+
+
 ### Anthropic official
 *(none yet)*
 

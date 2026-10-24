@@ -378,3 +378,7 @@ wiki, and it comes from outside the Garry Tan corpus, which is exactly what the 
   the dedup-before-create discipline map directly onto *this research wiki's* INGEST/LINT — already
   partially imported (see [[meta/self-improvements]]). The author's solo-high-velocity + agent-reviewed
   posture parallels [[creators/garry-tan]].
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] adds a comparison for turning recurring corrections into enforcement and reusable work artifacts; its generated Claude Code tree is another source-to-harness distribution mechanism. This is a source comparison, not a measured quality ranking. [[sources/cursor--plugins-pstack#PK18]] [[sources/cursor--plugins-pstack#PK04]]

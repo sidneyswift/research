@@ -77,3 +77,7 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 - Do context shards measurably reduce repeated corrections without increasing cross-task overgeneralization?
 - What should expire, conflict, or supersede a released rule?
 - Which artifact content is sufficient for a new worker, and when must it reopen the underlying source?
+
+## Pstack comparison — 2026-10-24
+
+[[concepts/evidence-calibrated-research]] specializes what an evidence handoff preserves: source coverage, contradictory findings, and confidence language. [[concepts/verification-model-fidelity]] adds an authority contract between source, model, properties, and generated views. [[artifacts/plugins/pstack]] is the supporting source family. [[sources/cursor--plugins-pstack#RE03]] [[sources/cursor--plugins-pstack#RE08]]

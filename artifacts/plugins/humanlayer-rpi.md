@@ -207,3 +207,7 @@ This is the complete 46-item portable ledger from the workflow investigation. �
 - [[patterns/quality-bar/revision-bound-review]] — research captures source SHA and exact code references; this practice should extend to approval/completion instead of treating a mutable artifact's existence as sufficient. [[sources/humanlayer--humanlayer#WF05]] [[sources/humanlayer--humanlayer#WF20]]
 - [[patterns/composition/single-source-multi-surface-distribution]] — source skill/reference files are embedded into the daemon and shared visual references are mapped into consuming skills. [[sources/humanlayer--humanlayer#WF34]]
 - [[patterns/quality-bar/version-as-update-gate]] — the bundle reads the embedded manifest version, and its source explains release-derived version stamping for content changes; release scripts were not independently traced in this workflow investigation. [[sources/humanlayer--humanlayer#WF34]]
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] complements artifact-owned RPI context with explicit engineering principles, playbook orchestration, and maintained verification models. See [[artifacts/skills/poteto-mode]] and [[concepts/verification-model-fidelity]]; neither source inspection demonstrates superior outcomes. [[sources/cursor--plugins-pstack#PP03]]

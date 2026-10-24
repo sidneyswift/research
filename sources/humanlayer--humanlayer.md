@@ -998,3 +998,7 @@ The source exposes both workflow instructions and the machinery that executes, s
 - [[sources/every--compound-engineering-plugin#plugin-AGENTS.md]] — calibrate prescriptiveness to the actual failure mode.
 - [[artifacts/projects/humanlayer]] — full product/runtime extraction.
 - [[artifacts/plugins/humanlayer-rpi]] — full workflow/context extraction.
+
+## Related ingest — 2026-10-24
+
+- [[sources/cursor--plugins-pstack]] — pinned pstack comparison for engineering workflows, evidence quality, and cross-harness distribution; see [[artifacts/plugins/pstack]].

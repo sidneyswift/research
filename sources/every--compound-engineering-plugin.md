@@ -215,3 +215,7 @@ anchors beyond this list** — register new ones here first.
 ## Related investigations
 
 - [[artifacts/plugins/humanlayer-rpi]] / [[artifacts/projects/humanlayer]] — related investigation of artifact-based coding workflows and shared plugin-source embedding; compare [[sources/humanlayer--humanlayer#WF14]] and [[sources/humanlayer--humanlayer#WF34]] with CE’s workflow and converter evidence above.
+
+## Related ingest — 2026-10-24
+
+- [[sources/cursor--plugins-pstack]] — pinned pstack comparison for engineering workflows, evidence quality, and cross-harness distribution; see [[artifacts/plugins/pstack]].

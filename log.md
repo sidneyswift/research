@@ -403,3 +403,21 @@ Operations: `ingest`, `query`, `lint`, `reflect` (apply the wiki's learnings to 
 ## [2026-10-23] reflect | Project evidence classes and guarantee boundaries
 
 Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and routed project investigations to it. The template requires explicit evidence classes, guarantee scope, and material code/docs conflicts, grounded in [[patterns/behavioral/evidence-gated-completion]] and [[patterns/behavioral/latent-vs-deterministic-split]]. This turns the ingest's recurring distinction—documented intent versus inspected implementation versus demonstrated outcome—into reusable research machinery without expanding the core harness.
+
+## [2026-10-24] ingest | pstack engineering and verification toolkit
+
+- Cloned `cursor/plugins` into `Sources/cursor-plugins` and preserved an independent ignored evidence clone at `sources/cursor--plugins-pstack/`, pinned to `9580c23696ac8d7abed0c166f2f9918800afb819` (pstack 0.15.32). Added the manifest row and citation map: 229 source-range anchors, 182 distinct files, 452 range entries. Scope is pstack plus relevant packaging, not all marketplace plugins.
+- Added three artifact investigations (`pstack`, `poteto-mode`, `statechart`), two concepts (`verification-model-fidelity`, `evidence-calibrated-research`), Lauren Tan creator attribution, and the proposed `rerunnable-work-artifact` pattern. The three artifact ledgers preserve **255 portable lessons** (126 parent + 54 orchestration + 75 verification), with source/prompt/test/observation boundaries. Updated navigation, inventory counts, and reciprocal entity links. No pattern promotion; pstack supplies only narrower supporting evidence for revision-bound review and defect-derived validation.
+- Preserved material limits: failed piped-help output, negative-duration type acceptance, missed broken skill links, Benny trigger-field mismatch, overwriteable verification records, local lock/inbox limits, and maintenance-ready versus forge-approved distinction. No live agent/provider/automation/merge workflow was executed.
+- ratchet: wikilink occurrences **+949** · orphans **+0** · patterns **+1 proposed** · new wiki pages **8**. Duplicates are not counted as additional independent artifact examples.
+
+## [2026-10-24] lint | pstack ingest
+
+- New scope passes: registered source anchors and immutable blob line ranges; source/evidence checkouts clean; no new broken links, orphan pages, missing required sections, or gitlinks; `git diff --check` clean. Citation checker: 237 registered anchors, 182 files, 436 distinct permalink ranges. All newly created pages were staged only in the isolated validation checkout so `wiki-doctor.py` could include them; delivery leaves the user's index untouched.
+- Wiki doctor: **2,232 Markdown pages**, score **50/100**, unchanged from baseline; inherited **7 broken-link occurrences**, **87 stale-review findings**, **39 stale popularity signals** remain. These were reported, not repaired during this ingest.
+- Executed source checks: generator parity/docs checks pass; 21 JavaScript syntax checks pass; 44 offline statechart tests yield **43 pass / 1 fail** (truncated piped help); watcher/parser fixtures yield **52 pass / 0 fail**. A constrained orchestration run yields **8 pass / 13 fail**, including offline blockers and a temporary bootstrap attempt; no clean full-suite claim. Full TLC/PNG/provider integrations unrun. Source page records exact scope and negative probes.
+
+## [2026-10-24] reflect | make citation verification rerunnable
+
+- Applied self-improvement #53: dependency-free `scripts/check-source-citations.py`, source-schema/tooling route, and **11 passing fixture tests**. Checks map registration, missing explicitly supplied pages, immutable repository/revision identity, Git blob existence, and line bounds. Independent review caught example-text false positives and missing-page false negatives; dedicated negative fixtures now cover them.
+- Ran the checker on both pstack and the prior HumanLayer source map. This mechanizes repeated source-map work while preserving semantic evidence review as judgment. It is an opt-in format-specific check, not a claim that the whole wiki or a cited software system is validated. Local research save only; no commit/push/PR requested for this ingest.

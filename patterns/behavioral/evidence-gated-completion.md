@@ -80,3 +80,7 @@ A fluent model's failure mode on "am I done?" is *confident fabrication of compl
 - **How do you pick a non-gameable surface?** The pattern's whole value collapses if the surface is gameable, yet the sources give no method for choosing one. Is there a heuristic beyond "would you trust an adversary to optimize against it"?
 - **Who sets the gate — author or agent?** Codex lets the agent help *draft* the contract ([[sources/openai--using-goals-in-codex#self-authoring-goal]]); if the agent also proposes its own verification surface, is the gate still independent, or has it marked its own homework?
 - **Does it generalize past code?** Tests/benchmarks/builds are crisp surfaces; the research case study ([[sources/openai--using-goals-in-codex#deep-hedging-casestudy]]) shows a *graded* surface (confirmed/approximate/blocked) for fuzzier work. How far down the fuzziness gradient does the pattern still hold?
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/plugins/pstack]] explicitly requires observable evidence of the promised result; [[artifacts/skills/poteto-mode]] and [[artifacts/skills/statechart]] show different executable/prompt boundaries. A bounded model result or maintenance-ready PR label is not blanket completion or merge authorization. Supporting sighting. [[sources/cursor--plugins-pstack#PP18]]

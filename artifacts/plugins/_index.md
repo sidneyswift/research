@@ -2,7 +2,7 @@
 domain: artifacts
 type: index
 subdomain: plugins
-last-reviewed: 2026-10-23
+last-reviewed: 2026-10-24
 ---
 
 # Plugins
@@ -10,6 +10,10 @@ last-reviewed: 2026-10-23
 Agent plugins cataloged — **Claude Code *and* Codex** as of 2026-06-02. Each page uses [../../\_schemas/plugin.md](../../_schemas/plugin.md). The two labs' plugin formats are near-identical (see [[concepts/convergent-agent-plugin-spec]]).
 
 ## By creator
+
+### Lauren Tan / Cursor marketplace
+- [[artifacts/plugins/pstack]] — 58 skills, 23 playbooks, source-calibrated research, executable orchestration, and maintained verification.
+
 
 ### HumanLayer
 - [[artifacts/plugins/humanlayer-rpi]] — risk-appropriate research → decisions → design → thin plan → implementation; artifact-owned context, specialist subagents, and governed context-shard candidates. 46 portable workflow lessons.

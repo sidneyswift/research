@@ -70,3 +70,7 @@ When the conversation is the only container, changing models, restarting an agen
 - Which guarantees hold during multi-region outages or provider-internal failures? This ingest did not run fault-injection experiments.
 - What portion of the control plane is worth building for a single-user agent product?
 - How should task context be handed to another host without implying that an active process migrated?
+
+## Pstack comparison — 2026-10-24
+
+[[artifacts/skills/poteto-mode]] is a useful smaller-grain comparison: a local work ledger and PR watcher coordinate evidence and ownership, while scheduling, role authority, and external execution remain outside the implemented store. PR-plus-SHA lookup does not establish authenticated approval or durable execution. [[sources/cursor--plugins-pstack#OR07]] [[sources/cursor--plugins-pstack#OR11]]

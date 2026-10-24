@@ -194,6 +194,12 @@ Compounding budget check (ledger #30): this ingest's system improvement is **#49
 
 Compounding budget check: this ingest adds a reusable project schema, not only pages. The source-anchor validator remains a candidate for permanent tooling; this pass checks the new source map mechanically without silently changing the existing doctor's scope.
 
+## Pstack — 2026-10-24
+
+| # | Source-grounded learning | Applied change | Status |
+| --- | --- | --- | --- |
+| 53 | [[patterns/quality-bar/rerunnable-work-artifact]] and pstack's negative-fixture discipline ([[sources/cursor--plugins-pstack#PP03]], [[sources/cursor--plugins-pstack#PK18]], [[sources/cursor--plugins-pstack#packaging-negative-probe]]) apply to repeated manual source-map checking, already identified in entries 47–48 and the HumanLayer ingest. | Added dependency-free `scripts/check-source-citations.py`, eleven fixture tests, source-schema instructions, and a thin tooling route. Checks anchor membership, repository/revision pinning, blob existence, and line bounds using immutable Git objects. Explicitly excludes semantic entailment and unsupported historical map formats. | **applied** 2026-10-24; fixture tests pass; ingest-specific runs recorded in log. |
+
 ## Open meta-questions
 
 - ~~Should REFLECT run automatically every N ingests, or only on demand?~~ **Resolved 2026-06-02:** REFLECT applies grounded changes directly (no human gate); the lightweight INGEST step-9 nudge runs every ingest, and a deeper pass runs on demand / after lint.
