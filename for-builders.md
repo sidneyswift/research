@@ -12,7 +12,7 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 
 - **High value, in-domain:** you're building something *agent-shaped* — a skill, a plugin/pack, a resolver, a self-improving loop, a multi-surface distribution, an MCP server. The patterns here are grounded, cited, and carry explicit `When NOT to use` + anti-patterns. Steal freely.
 - **Limited scope outside agent products:** HumanLayer adds concrete examples of task/session data models, review UX, and execution authorization. These are source-specific examples, not a general app-architecture or security handbook.
-- **Known gaps (2026-10-23):** individual skills have pages, but standalone MCP servers remain a candidate queue. The corpus is selective and several patterns still have only one verified example; watch their status and same-creator caveats. `analyses/` (cross-cutting synthesis) remains empty by design.
+- **Known gaps (2026-10-23):** individual skills have pages, but standalone MCP servers remain a candidate queue. The corpus is selective and several patterns still have only one verified example; watch their status and same-creator caveats. `analyses/` now contains draft engineering-skill studies and a source catalogue; their review and behavioral-validation limits remain explicit.
 
 ## The protocol (follow in order)
 

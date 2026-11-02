@@ -8,6 +8,18 @@ A research wiki cataloging the most important and talked-about work across the A
 
 **Collection mode:** Curated. Sidney provides candidate artifacts; we deep-dive each one and extract patterns as we go.
 
+## Shared across projects
+
+Canonical local home: `Projects/Research`. This repository supports research across Sidney, Flex, Recoup, and other projects. Source code lives in ignored clones under `sources/`; the manifest records exactly how to restore it.
+
+```bash
+git clone https://github.com/sidneyswift/research.git Research
+cd Research
+./setup.sh
+```
+
+Requires Git, Python 3, network access, and any credentials needed by private source repositories. For selective downloads and storage rules, see [remote-setup.md](remote-setup.md).
+
 ## Start here
 
 - **For everyone — master catalog:** [index.md](index.md) — single front door listing every page.

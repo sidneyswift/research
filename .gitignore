@@ -42,3 +42,19 @@ scratch/
 *.local.md
 sources/humanlayer--humanlayer/
 sources/cursor--plugins-pstack/
+
+# Consolidated source clones and local compatibility aliases (2026-11-02)
+sources/rhys-sullivan--executor/
+sources/googleads--google-ads-mcp/
+sources/nousresearch--hermes-agent/
+sources/openclaw--openclaw/
+sources/vercel-labs--open-agents/
+sources/cursor-plugins
+sources/executor
+sources/google-ads-mcp
+sources/hermes-agent
+sources/humanlayer
+sources/open-agents-main
+sources/openclaw
+sources/.restore-*/
+__pycache__/

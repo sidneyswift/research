@@ -14,7 +14,7 @@ Don't write an analysis until at least 5 artifacts of the same type are cataloge
 
 ## Active analyses
 
-*(none yet)*
+- [Engineering skill adoption study — draft](engineering-skill-adoption-study.md): source-based comparison, explicit coverage limits and a [284-path catalogue](engineering-skill-catalogue.md).
 
 ## Planned analyses (≥5 artifacts of relevant type needed first)
 

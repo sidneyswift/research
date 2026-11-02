@@ -4,6 +4,8 @@ The single front door. Every page in the wiki should be reachable from this inde
 
 For an explanation of what this wiki is and how it operates, see [CLAUDE.md](CLAUDE.md). For a human-friendly summary, see [README.md](README.md). For the chronological record of what was added when, see [log.md](log.md). **If you're an agent pointed here from another project to mine this wiki while building something, start at [for-builders.md](for-builders.md)** — the consumer front door (routing table + extraction protocol).
 
+For local or remote source reconstruction, see [remote-setup.md](remote-setup.md).
+
 ## Quick navigation
 
 | Section | Purpose |

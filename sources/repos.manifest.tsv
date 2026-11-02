@@ -1,14 +1,19 @@
-slug	url	commit
-anthropic--skills	https://github.com/anthropics/skills	690f15c
-anthropic--financial-services	https://github.com/anthropics/financial-services	120a31d
-garrytan--gstack	https://github.com/garrytan/gstack	029356e
-garrytan--gbrain	https://github.com/garrytan/gbrain	1580c6d
-every--compound-engineering-plugin	https://github.com/everyinc/compound-engineering-plugin	3e77a7b
-openai--plugins	https://github.com/openai/plugins	bebc3d6
-sidneyswift--skills	https://github.com/sidneyswift/skills	9426027
-mattpocock--skills	https://github.com/mattpocock/skills	6eeb81b
-forward-future--loop-library	https://github.com/Forward-Future/loop-library	6ee3345
-vercel--eve	https://github.com/vercel/eve	bfc7191
-SHL0MS--skill-diffs	https://github.com/SHL0MS/skill-diffs	2ded6c0
-humanlayer--humanlayer	https://github.com/humanlayer/humanlayer.git	2f66a45b186d88488fa356862be0117db1ccae9f
-cursor--plugins-pstack	https://github.com/cursor/plugins.git	9580c23696ac8d7abed0c166f2f9918800afb819
+slug	url	commit	evidence_commits
+anthropic--skills	https://github.com/anthropics/skills	690f15cac7f7b4c055c5ab109c79ed9259934081	-
+anthropic--financial-services	https://github.com/anthropics/financial-services	120a31dcede4affa1d771cbf286a63ee331f92a4	-
+garrytan--gstack	https://github.com/garrytan/gstack	c7ae63201ab193a7dc7fb7e0d81238645111ffac	029356e1f0693f22cb1fa4524c9b0f28ceab5a1b
+garrytan--gbrain	https://github.com/garrytan/gbrain	1580c6d1ca8cfcfc1add72708dbf76bb40b1078c	-
+every--compound-engineering-plugin	https://github.com/everyinc/compound-engineering-plugin	3e77a7bd8450fef7270f8b46c0f1865fd7125741	-
+openai--plugins	https://github.com/openai/plugins	bebc3d6a757ca882fd2436210b6b1ae5263b437b	-
+sidneyswift--skills	https://github.com/sidneyswift/skills	9426027a0bc930770041d3840d75ef5c881a5f27	-
+mattpocock--skills	https://github.com/mattpocock/skills	6eeb81b5fcfeeb5bd531dd47ab2f9f2bbea27461	-
+forward-future--loop-library	https://github.com/Forward-Future/loop-library	6ee3345b2a8c8bc6c3e2ecbcc51ddf8f4e56c5a1	-
+vercel--eve	https://github.com/vercel/eve	bfc71912547779375777525d5a0f8b130e061fc7	-
+SHL0MS--skill-diffs	https://github.com/SHL0MS/skill-diffs	2ded6c0b37e256d6934bf91349a5079ef146c6cf	-
+humanlayer--humanlayer	https://github.com/humanlayer/humanlayer.git	2f66a45b186d88488fa356862be0117db1ccae9f	-
+cursor--plugins-pstack	https://github.com/cursor/plugins.git	9580c23696ac8d7abed0c166f2f9918800afb819	-
+rhys-sullivan--executor	https://github.com/RhysSullivan/executor.git	9c67fd54e2ade308a925e5b956d99b132b4df98a	-
+googleads--google-ads-mcp	https://github.com/sidneyswift/google-ads-mcp.git	d0e24b8b79922dc05d4403f1e089f5ea096771fa	-
+nousresearch--hermes-agent	https://github.com/NousResearch/hermes-agent.git	4488fe134b1de4359f3a4f1f8368576413e6e268	-
+openclaw--openclaw	https://github.com/openclaw/openclaw.git	dd6143f60c24c532e2aa7ed6cf2580143d0ca6b8	-
+vercel-labs--open-agents	https://github.com/vercel-labs/open-agents.git	cf865e94de7729751c747171785b6ce57e7b178c	-

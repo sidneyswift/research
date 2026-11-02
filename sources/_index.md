@@ -16,13 +16,17 @@ Wikilinks to sources use **anchors that are defined on the source page itself**.
 ✅ `[[sources/joe-dev--my-skill-pack#manifest]]`
 ❌ `[[sources/anthropic--skills#somewhere-near-the-top]]` — anchor not registered
 
+## Source cache and remote setup
+
+See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, preserved forks, and sources moved from the former standalone `Projects/Sources` collection. Cache membership does not mean a source has received a full wiki investigation.
+
 ## Cloned repos
 
 - [[sources/cursor--plugins-pstack]] — pstack 0.15.32 at `9580c23`; canonical skills and packaging, orchestration, and verification evidence.
 
 - [[sources/humanlayer--humanlayer]] — `humanlayer/humanlayer` at `2f66a45` (2026-10-23): current Riptide platform and RPI workflow; 175 source anchors across 150 files, with code/prompt/docs/test-inspection boundaries. See [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]].
 
-Repos sit at `sources/<creator>--<repo>/` (the actual git clone, `.git/` stripped) and have a corresponding `sources/<creator>--<repo>.md` page that is the citation target.
+Repos sit at `sources/<creator>--<repo>/` (an ignored Git clone with its `.git/` retained) and have a corresponding `sources/<creator>--<repo>.md` page that is the citation target.
 
 - [[sources/anthropic--skills]] — `anthropics/skills` (11 MB, commit `690f15c` of 2026-05-19). The official Anthropic skills + spec + template.
 - [[sources/garrytan--gstack]] — `garrytan/gstack` (41 MB, commit `029356e` of 2026-05-20). Garry Tan's 23-skill engineering-team pack.
