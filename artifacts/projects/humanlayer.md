@@ -353,3 +353,7 @@ These are proposed experiments for future agent products, not implemented change
 ## Verification record
 
 Source and wiki checks are recorded in [[log]] under the October 23, 2026 HumanLayer ingest. Source anchors resolve to the pinned revision; new wiki links and required sections are checked mechanically. Independent same-family agents reviewed the specialist claims and draft boundaries. This is an artifact investigation, not a cross-family-reviewed `analyses/` synthesis. No claim is made that HumanLayer tests or live evaluations passed.
+
+## Persistent coordination comparison — 2026-11-02
+
+[[artifacts/projects/dsh-superagent-prototype]] independently separates Tickets from execution Assignments and sessions, while [[artifacts/projects/kody]] separates actor/org/credential identity across execution surfaces. Compare ownership and recovery boundaries rather than assuming equivalent guarantees. [[sources/deepseek-ai--dsh-superagent-prototype#domain]], [[sources/kody-hq--kody#request-context]]

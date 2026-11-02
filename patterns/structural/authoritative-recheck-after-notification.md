@@ -69,3 +69,7 @@ Only one artifact has been verified; multiple modules inside HumanLayer do not c
 
 - What second independently maintained agent system demonstrates the same notification→recheck→claim sequence?
 - Which claims survive daemon process death, and which are only local concurrency protection? Read each claim's storage and recovery path before relying on it.
+
+## Authority-path comparison — 2026-11-02
+
+[[patterns/behavioral/context-is-not-authority]] covers a neighboring distinction: subscribed context or trigger origin does not grant work/credential permission. This page concerns rechecking authoritative state after a notification; the new pattern concerns the separate basis of authority itself. [[artifacts/projects/dsh-superagent-prototype]] and [[artifacts/projects/kody]] illustrate the latter at different scopes. [[sources/deepseek-ai--dsh-superagent-prototype#authorization]], [[sources/kody-hq--kody#request-context]]

@@ -29,6 +29,9 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/kody-hq--kody]] | repo | 2026-11-02 | `9d96cfb` |
+| [[sources/deepseek-ai--dsh-superagent-prototype]] | repo | 2026-11-02 | `6337fc8` |
+| [[sources/deepseek--super-agent-design]] | article | 2026-11-02 | published 2026-11-01; English machine translation |
 | [[sources/anthropic--skills]] | repo | 2026-05-21 | `690f15c` |
 | [[sources/garrytan--gstack]] | repo | 2026-05-21 | `029356e` |
 | [[sources/garrytan--gbrain]] | repo | 2026-05-21 | `1580c6d` |
@@ -67,6 +70,8 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 | Creator | Type | Notes |
 | --- | --- | --- |
+| [[creators/deepseek]] | org | Harness team; super-agent architecture essay and research prototype |
+| [[creators/kody-hq]] | org | Portable agent cloud, compact capability interface and credential use |
 | [[creators/anthropic]] | org | Sets the Agent Skills spec; ships demonstration skills + plugins + the Claude API |
 | [[creators/garry-tan]] | individual | President & CEO of Y Combinator; ships `gstack` and `gbrain` |
 | [[creators/every]] | org | Media+software company; origin/home of compound engineering. Kieran Klaassen (plugin author, GM of Cora) + Dan Shipper (CEO) |
@@ -121,6 +126,8 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 
 | Project | Creator | Status | One-line |
 | --- | --- | --- | --- |
+| [[artifacts/projects/dsh-superagent-prototype]] | DeepSeek | source-investigated | Persistent team coordination, scoped Tickets and event subscriptions |
+| [[artifacts/projects/kody]] | Kody HQ | source-investigated | Portable state, Code Mode capabilities and protected credential use |
 | [[artifacts/projects/codex-goals]] | OpenAI | feature-deep-dive | Codex CLI's **Goals** feature — persistent, evidence-gated `/goal` objectives (≥ 0.128.0); embodies [[concepts/completion-contract]], grounds [[patterns/behavioral/evidence-gated-completion]] |
 | [[artifacts/projects/eve]] | Vercel | active (beta) | **Filesystem-first, durable agent framework** ("Next.js for agents") — agent-as-directory, a framework-owned harness + toolbelt, durable sessions, channels, sandboxes, evals. The wiki's **first ingested harness**; embodies [[concepts/filesystem-first-agent-framework]] + [[concepts/durable-agent-execution]] |
 | [[artifacts/projects/skill-diffs]] | SHL0MS | active | Commit-history mining pipeline → `(before, after, intent)` skill-edit dataset (4 platforms) + a **defect-derived linter** + skill-patch eval harness. The wiki's **first dataset-and-tooling-pipeline** artifact; embodies [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]] |
@@ -129,6 +136,9 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/super-agent-architecture]] — DeepSeek architecture and synthetic scheduling evidence.
+- [[concepts/code-mode-capability-interface]] — Kody discovery, composition and authority.
 
 - [[concepts/verification-model-fidelity]] — verify that the verifier still describes the implementation.
 - [[concepts/evidence-calibrated-research]] — confidence, coverage, and contradiction are part of the research result.
@@ -159,11 +169,13 @@ Candidate queue: see [concepts/_index.md](concepts/_index.md).
 
 ## Patterns
 
+- [[patterns/behavioral/context-is-not-authority]] — **confirmed**, two independent artifacts; scope of authority remains explicit.
+
 - [[patterns/quality-bar/rerunnable-work-artifact]] — **proposed**; turn a checked manual unit into an idempotent reusable tool before repetition.
 
 The actual research output. Confirmed patterns (≥2 artifact examples + counter-example) listed here. Proposed patterns are tracked on the relevant artifact pages and promoted when evidence accumulates.
 
-**Confirmed (10 as of 2026-06-20; supporting sightings added 2026-07-22):**
+**Confirmed (11 as of 2026-11-02; see dated source boundaries on each page):**
 
 - [[patterns/behavioral/evidence-gated-completion]] — an agent can't self-declare *done*; completion is gated on an external verification surface, and budget-exhaustion ≠ done. **Promoted proposed→confirmed 2026-06-20:** [[artifacts/projects/codex-goals]] (OpenAI) + [[artifacts/skills/loop-library]] (Forward Future) + **[[artifacts/projects/eve]] (Vercel — 3rd creator: the team's "nothing is done until tests pass" / "say so explicitly rather than claiming verification passed" dev-discipline gate + evals as a shipped primitive)**.
 
@@ -225,3 +237,5 @@ See [patterns/_index.md](patterns/_index.md) for the per-category breakdown.
 The wiki applied to itself — improvements to our own machinery, each traced to a pattern observed in the wiki (the [REFLECT](CLAUDE.md) operation).
 
 - [[meta/self-improvements]] — self-improvement ledger; applied/embodied wiki machinery changes traced to observed patterns and concepts, including routing, doctor tooling, page definitions of done, consumer-agent guidance, portability, and release/versioning principles.
+
+- [[meta/2026-11-02-persistent-agents-ingest-lint]] — scoped ingest checks and inherited health findings.

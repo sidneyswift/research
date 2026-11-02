@@ -110,3 +110,7 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] asks agents to extract deterministic repetition into a checked tool before fan-out; [[artifacts/skills/statechart]] separates model authoring from executable model checking. [[patterns/quality-bar/rerunnable-work-artifact]] captures the manual-oracle/rerun refinement, proposed pending another source family. [[sources/cursor--plugins-pstack#PP03]]
+
+## New supporting mechanisms — 2026-11-02
+
+[[artifacts/projects/dsh-superagent-prototype]] uses programmatic admission and routing around semantic assessment, with observe-mode acceptance recorded rather than executed. [[artifacts/projects/kody]] keeps credential authorization/application in trusted code outside generated composition. These extend the evidence without implying deterministic code cannot fail. [[sources/deepseek-ai--dsh-superagent-prototype#policy]], [[sources/kody-hq--kody#credential-resolution]]

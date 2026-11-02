@@ -13,6 +13,10 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 ## Cataloged projects
 
+
+- [[artifacts/projects/dsh-superagent-prototype]] — domain, authorization, execution, delivery and recovery study. [[sources/deepseek-ai--dsh-superagent-prototype]].
+- [[artifacts/projects/kody]] — shared agent state and capability infrastructure; Code Mode, credentials, workflow/repo revision boundaries. [[sources/kody-hq--kody]].
+
 - [[artifacts/projects/humanlayer]] — collaborative coding-agent control plane: durable tasks, host execution, contextual feedback, incremental review, and scoped recovery. Full product/runtime ledger plus [[artifacts/plugins/humanlayer-rpi]]; source-inspected at `2f66a45`, not live-verified.
 
 - [[artifacts/projects/codex-goals]] — OpenAI Codex CLI's **Goals** feature: persistent, thread-scoped, evidence-gated objectives via the `/goal` command surface (Codex ≥ 0.128.0). Embodies [[concepts/completion-contract]]; grounds [[patterns/behavioral/evidence-gated-completion]] and supplied the non-Garry 2nd example that promoted [[patterns/behavioral/skill-as-method-call]]. Source: [[sources/openai--using-goals-in-codex]].

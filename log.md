@@ -438,3 +438,23 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 - Preserved the five existing Google Ads MCP hosting changes on `sidneyswift/google-ads-mcp` branch `research/vercel-snapshot-20261102`, commit `d0e24b8b79922dc05d4403f1e089f5ea096771fa`. Open Agents archive matched upstream `cf865e94de7729751c747171785b6ce57e7b178c` file-for-file, including modes and symlinks; restored Git metadata without replacing source files. No hosting/deployment behavior was tested or activated.
 - Added portable `./setup.sh` reconstruction with full-SHA pins, selective restores, offline checks, preservation of existing work, and partial-download cleanup. Expanded the manifest to 18 repositories. Reconciled pre-existing Gstack revision drift by keeping the draft-study checkout and fetching its older cited commit as additional evidence. Purchased material and credentials remain excluded; those require separate authorized restoration.
 - Validation: 20 local script fixture tests pass; local source check covers 18/18 pins. All 18 manifest repositories were independently downloaded from GitHub into a temporary test cache; Gstack's revised checkout plus historical evidence were separately verified. HumanLayer and Cursor citation maps pass structural checks (175 and 237 anchors respectively). These checks establish reconstruction and citation structure, not source-application behavior or approval of draft research conclusions.
+
+## [2026-11-02] ingest | DeepSeek super-agent design, companion prototype and Kody
+
+- Captured the complete rendered English machine translation of the 2026-11-01 DeepSeek essay and 13 in-body figures; recorded translation fidelity and dated engagement signals. Cloned the linked prototype at `6337fc823ce20251c8de8085948165c81aaa701e` and Kody at `9d96cfb916552b889ee8989027618b35ecd554ba`; preserved `.git`, ignored clones and full-SHA reconstruction rows.
+- Added two project investigations, two concept pages, two creators, three citation pages, and confirmed [[patterns/behavioral/context-is-not-authority]] across two independent artifacts. Retained exhaustive portable-mechanism ledgers and propagated reciprocal links/catalogs/builder routes. Dedup distinctions against agent-control-plane, authoritative-recheck and latent/deterministic are explicit. No `analyses/` publication or cross-model evaluation claimed.
+- Preserved material limits: essay results concern synthetic scheduling, not coding quality; prototype is not full essay/internal deployment; OS-user execution is not Mandate containment; Kody hidden credentials do not make approved API operations harmless; keyed run replay and workflow retries do not guarantee exactly-once external effects. Source tests inspected only; no installation, provider account, credentials, execution-context enablement, deployment or source-app test execution.
+- ratchet: wikilink occurrences **+423** (before this log entry) · orphans **+0** · patterns **+1 confirmed** · new core research pages **10**. Source clones remain read-only evidence; local wiki work is uncommitted.
+
+## [2026-11-02] lint | persistent agents ingest
+
+- [[meta/2026-11-02-persistent-agents-ingest-lint]] records scope, validation and file-level inherited findings. Both GitHub source maps pass structural citation checks; the scoped three-source anchor check is clean; 20/20 clone pins ready; new clones clean; whitespace check clean.
+- Doctor: **50/100 unchanged**, 2,251 Markdown files in tracked+new overlay; inherited 7 broken links, 87 stale review dates and 39 stale signals. No new broken links, missing sections, orphans or gitlinks. New verification TODOs remain explicit rather than guessed. No unrelated lint auto-fixes.
+
+## [2026-11-02] reflect | context versus authority in project investigations
+
+- Applied self-improvement #54 in [[meta/self-improvements]]: [[_schemas/project]] now asks for context-delivery, authority-basis, enforcement and recovery/revalidation boundaries. Grounded in the two new studies and [[patterns/behavioral/context-is-not-authority]]; complements existing evidence classes without enlarging the harness.
+
+## [2026-11-02] maintenance | publish persistent-agent research
+
+- Prepared the DeepSeek/Kody ingest on `codex/deepseek-kody-research` for the user-requested commit, push and merge. Staged checking exposed ten whitespace-only lines carried by the rendered article table; preserved the immutable capture and scoped the whitespace gate to authored wiki material. Citation and link checks remain clean within the ingest scope; inherited health findings remain recorded.

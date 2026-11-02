@@ -34,6 +34,9 @@ Link creator, source, constituent artifacts, existing concepts, and patterns. De
 
 ## Mechanism and themes
 
+
+For event-driven or cross-host systems, map **context delivery → authority basis → enforcement point → revalidation/recovery**. Name what received information can change, where permission comes from, and whether that boundary is code, prompt policy, OS or provider enforcement. A Mandate is not OS containment; hidden secret values are not approval of every API effect. Grounded in [[patterns/behavioral/context-is-not-authority]], observed in [[sources/deepseek-ai--dsh-superagent-prototype#authorization]], [[sources/deepseek-ai--dsh-superagent-prototype#execution]] and [[sources/kody-hq--kody#credential-resolution]].
+
 Explain the system by responsibilities, data/control flow, authority, lifecycle, and recovery boundaries. Use diagrams only where they clarify an actual relationship.
 
 For load-bearing claims, distinguish **implementation**, **test inspected**, **test executed**, **prompt policy**, **documentation**, and **inference**. State the scope of a guarantee: process, host, transaction, content revision, session, or external effect. Record code-versus-documentation conflicts instead of silently selecting the more attractive account.

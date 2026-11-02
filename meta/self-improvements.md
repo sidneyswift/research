@@ -204,3 +204,11 @@ Compounding budget check: this ingest adds a reusable project schema, not only p
 
 - ~~Should REFLECT run automatically every N ingests, or only on demand?~~ **Resolved 2026-06-02:** REFLECT applies grounded changes directly (no human gate); the lightweight INGEST step-9 nudge runs every ingest, and a deeper pass runs on demand / after lint.
 - Is `meta/` itself in scope for LINT's orphan/staleness checks? (Yes — it's a wiki page like any other.)
+
+## [2026-11-02] Pass 16 — context and authority boundaries
+
+| # | Source-grounded learning | Applied change | Status |
+| --- | --- | --- | --- |
+| 54 | [[patterns/behavioral/context-is-not-authority]]: DeepSeek subscriptions deliver context without new Mandates; Kody derives enabled actor/credential authority outside generated code. Admission, OS authority and permitted credential use have different guarantees. | Added a context → authority → enforcement → revalidation/recovery map prompt to [[_schemas/project]]. Applied it to both new project studies; retained existing evidence-class requirements and thin harness. | **applied** 2026-11-02; local research update |
+
+Compounding budget: a reusable schema check plus builder routing ships with the research. No new background agent or external service is needed to apply it.

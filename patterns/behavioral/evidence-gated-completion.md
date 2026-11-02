@@ -84,3 +84,7 @@ A fluent model's failure mode on "am I done?" is *confident fabrication of compl
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] explicitly requires observable evidence of the promised result; [[artifacts/skills/poteto-mode]] and [[artifacts/skills/statechart]] show different executable/prompt boundaries. A bounded model result or maintenance-ready PR label is not blanket completion or merge authorization. Supporting sighting. [[sources/cursor--plugins-pstack#PP18]]
+
+## Team-delivery comparison — 2026-11-02
+
+[[artifacts/projects/dsh-superagent-prototype]] separates a PR existing from a ready result delivered to the originating conversation. Its communication rules are prompt policy; the host enforces structured states and the IM word limit, not the truth of every readiness claim. [[sources/deepseek-ai--dsh-superagent-prototype#communication]], [[sources/deepseek-ai--dsh-superagent-prototype#execution]], [[sources/deepseek-ai--dsh-superagent-prototype#im-limit]]

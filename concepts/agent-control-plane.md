@@ -74,3 +74,7 @@ When the conversation is the only container, changing models, restarting an agen
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/skills/poteto-mode]] is a useful smaller-grain comparison: a local work ledger and PR watcher coordinate evidence and ownership, while scheduling, role authority, and external execution remain outside the implemented store. PR-plus-SHA lookup does not establish authenticated approval or durable execution. [[sources/cursor--plugins-pstack#OR07]] [[sources/cursor--plugins-pstack#OR11]]
+
+## New comparison — 2026-11-02
+
+[[artifacts/projects/dsh-superagent-prototype]] supplies a distinct Ticket/Mandate/Assignment model. [[concepts/super-agent-architecture]] specializes the broader control-plane idea into continuous interaction, subscription pass-through and a routing-only coordinator, rather than duplicating this page's task/host lifecycle role. [[artifacts/projects/kody]] separates org/actor/credential identity in portable execution infrastructure. [[sources/deepseek-ai--dsh-superagent-prototype#domain]], [[sources/deepseek--super-agent-design#router-workers]], [[sources/kody-hq--kody#request-context]]

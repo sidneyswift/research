@@ -89,3 +89,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] provides another supporting instance: canonical `pstack/` generates `harness/pstack/claude-code`, selectively inserts adapter references, and checks byte/executable-bit parity. Source links to omitted material may float to `main`, and adapters explicitly lose some host semantics. [[sources/cursor--plugins-pstack#PK04]] [[sources/cursor--plugins-pstack#PK05]] [[sources/cursor--plugins-pstack#PK06]]
+
+## Portable infrastructure comparison — 2026-11-02
+
+[[artifacts/projects/kody]] documents one package/runtime contract reused across execute, jobs, subscriptions, apps and workflows. Package-to-package static imports retain a publication snapshot until the dependent republishes; sharing source does not mean instant adoption. This is a supporting runtime example rather than a new count of independent client wrappers. [[sources/kody-hq--kody#execute-contract]], [[sources/kody-hq--kody#workflows]]

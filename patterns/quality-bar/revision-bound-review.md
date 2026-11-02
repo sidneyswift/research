@@ -76,3 +76,7 @@ One verified artifact; the code-review and artifact-comment implementations are 
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/skills/poteto-mode]] independently implements the narrower core of review freshness: verification records are keyed by PR plus exact SHA, and a new revision does not inherit that key. The verifier field is optional text and same-key writes replace prior values; reviewer authority is not enforced. Shipping playbooks prescribe independent verdicts and equivalent-build carryover, but that is policy. This does not establish the complete feedback-anchor/delta-view mechanism above, so status remains **proposed** and the full-pattern example count stays one. [[sources/cursor--plugins-pstack#OR11]] [[sources/cursor--plugins-pstack#OR18]]
+
+## Kody comparison — 2026-11-02
+
+[[artifacts/projects/kody]] supplies another narrower analogue: repo-session checks can expire after edits, locked publication approval refers to an exact commit, and pinned workflows refuse a moved publication. It does not establish the complete delta-view/feedback-anchor mechanism defined here, so the full-pattern status remains proposed. [[sources/kody-hq--kody#repo-sessions]], [[sources/kody-hq--kody#workflows]]

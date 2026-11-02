@@ -96,3 +96,9 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/agentskills--specification]] — the **Agent Skills open standard** (`agentskills.io/specification`, retrieved 2026-06-04, verbatim from the site's markdown endpoint). The formal SKILL.md spec (required `name`+`description`, progressive disclosure ~100 tokens → <5,000 → on-demand), released 2025-12-18 and donated to the Linux Foundation-backed AAIF; 40+ adopting clients. Supersedes the "no joint spec" framing on [[concepts/convergent-agent-plugin-spec]].
 - [[sources/openai--codex-skills-doc]] — OpenAI Codex docs *"Agent Skills"* (`developers.openai.com/codex/skills`, retrieved 2026-06-04, verbatim). The Codex skills system: named adoption of the open standard, the 4-tier scope ladder (repo `.agents/skills` → user → admin `/etc/codex/skills` → system), the ~2%/8K-char context budget, "skills are the authoring format, plugins the installable distribution unit," `agents/openai.yaml` extension.
 - [[sources/openai--chatgpt-skills-help]] — OpenAI Help Center *"Skills in ChatGPT"* (article 20001066, retrieved 2026-06-04; ⚠ **secondary-fidelity** — Cloudflare-gated, reconstructed from search extraction, quoted strings verbatim across two passes; browser re-capture TODO). Skills inside ChatGPT itself (beta: Business/Enterprise/Edu/Teachers/Healthcare): workspace skill library, auto-invocation, five admin permissions incl. **"Enable skills installing"** (install for other members, auto-applied).
+
+## Added 2026-11-02 — persistent agents and portable infrastructure
+
+- [[sources/deepseek--super-agent-design]] — full rendered English machine translation + 13 figures.
+- [[sources/deepseek-ai--dsh-superagent-prototype]] — pinned MIT prototype at `6337fc8`.
+- [[sources/kody-hq--kody]] — pinned FSL platform at `9d96cfb`.
