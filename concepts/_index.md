@@ -40,3 +40,6 @@ A concept becomes a **pattern** (in `patterns/`) once we've observed it as a con
 Add candidates here as one-line entries before promoting to a full page. Keep a `source:` link on each so future-you knows where to look.
 
 - *Candidates surfaced by the Garry Tan "AI Explainer" series are currently tracked as proposed **patterns** (see [patterns/_index.md](../patterns/_index.md)); promote any that are better described as standalone ideas than as cross-artifact techniques.*
+
+- [[concepts/super-agent-architecture]] — DeepSeek design essay, implementation boundary and synthetic scheduling evidence.
+- [[concepts/code-mode-capability-interface]] — Kody discovery/contracts/composition and authority tradeoffs.

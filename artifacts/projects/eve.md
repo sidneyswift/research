@@ -143,3 +143,7 @@ The "glue tax" of building a production agent. A naive agent is a model-call loo
 - **Permissive-by-default safety.** Tools execute without approval unless gated; sandbox egress is `allow-all` by default ([[sources/vercel--eve#docs-responsible-use]]). The docs are explicit that this is the deployer's responsibility — but the *default* posture (convenience over safety) is a deliberate, debatable choice worth flagging for anyone shipping on it.
 - **Does eve's evals primitive become the field's "skill pack has tests"?** [[patterns/quality-bar/skill-pack-bundle]] is about per-skill bundles; eve makes *eval-the-whole-agent* a framework default. Whether that's a competing or complementary unit of testing is an open comparison.
 - **Adoption trajectory.** 1,671★ four days in is a fast start on Vercel's brand; whether eve reaches "Next.js for agents" status (vs. the crowded harness field — Claude Code, Codex, OpenClaw, Mastra, LangGraph) is the thing to watch. Re-check the signal.
+
+## New comparison — 2026-11-02
+
+[[artifacts/projects/kody]] studies portable capability/state infrastructure and protected credential use; [[artifacts/projects/dsh-superagent-prototype]] studies a persistent event/Ticket control plane. Neither comparison establishes interchangeable runtimes. Follow [[concepts/code-mode-capability-interface]] and [[concepts/super-agent-architecture]] for their different abstraction boundaries. [[sources/kody-hq--kody#intent]], [[sources/deepseek-ai--dsh-superagent-prototype#domain]]

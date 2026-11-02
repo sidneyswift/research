@@ -100,3 +100,7 @@ This split keeps the trust story legible: an admin can never silently inject beh
 - **Does Codex cloud load repo skills?** Documented surfaces omit it; no changelog entry adds it. Watch openai/codex#24517 ("team-level Skill Hub") and the changelog.
 - **Does the admin Skills page audit content or just inventory it?** Determines how much the push mechanism's injection risk is actually mitigated.
 - **Workspace-shared plugins: can the install click be removed?** `INSTALLED_BY_DEFAULT` exists for repo marketplaces; is there (or will there be) a workspace-marketplace equivalent?
+
+## Adjacent portability — 2026-11-02
+
+[[concepts/code-mode-capability-interface]] and [[artifacts/projects/kody]] cover portable executable capabilities and state across MCP hosts. This is adjacent to distributing workspace skills, not evidence that host discovery paths or every skill format are standardized. [[sources/kody-hq--kody#intent]], [[sources/kody-hq--kody#execute-contract]]

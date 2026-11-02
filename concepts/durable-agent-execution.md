@@ -87,3 +87,7 @@ Most agent failure modes at the edges are durability failures: a long task dies 
 - **Does a second agent runtime make durability the default?** That's the gate from `emerging` to confirmed. Codex Goals persist objective state but aren't a full durable-session runtime; LangGraph/Temporal-backed agents would be the comparison.
 - **How is "budget"/idle measured, and how does parking interact with model context?** A turn that parks for days then resumes — does it re-establish context, recompact, re-read files? eve says compaction resets read-before-write tracking ([[sources/vercel--eve#docs-default-harness]]); the full resume-after-long-park behavior is worth tracing.
 - **Idempotency in practice.** The rule is stated; how often do real eve agents get it wrong, and is there tooling (beyond approval gating) to detect non-idempotent steps before they double-fire?
+
+## Recovery boundary comparison — 2026-11-02
+
+[[artifacts/projects/dsh-superagent-prototype]] persists domain changes/effect intent and resumes interrupted Assignments; this is distinct from replaying arbitrary external mutations exactly once. [[artifacts/projects/kody]] separates keyed execute observation/replay from workflow retry that re-executes package code. Both make [[patterns/behavioral/context-is-not-authority]] relevant to recovery: what resumes must retain a legitimate basis. [[sources/deepseek-ai--dsh-superagent-prototype#effects]], [[sources/deepseek-ai--dsh-superagent-prototype#execution]], [[sources/kody-hq--kody#execute-replay]], [[sources/kody-hq--kody#workflow-implementation]]

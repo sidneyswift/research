@@ -80,3 +80,5 @@ Things we've seen creators do that we think *don't* work. These need the same ri
 
 - **passive hook nudges** *(1 example, self-documented — pm-os)* — "Consider running /tidy" phrasing in session-start hook output was "silently absorbed by the LLM as background context" (pm-os issue #8, fixed by the imperative-directive pattern above). Rare case where the creator documented their own anti-pattern + fix in-repo ([[sources/prodmgmt-world--pm-os#hook-directives]]).
 - **marketing-prose count drift** *(1 example — pm-os)* — CI validates structural registries but not narrative claims, so README/manifest component counts drift from reality (235 vs 237 vs 214 skills). The fix their own tooling suggests: treat counts in prose like version strings — generated, never hand-written ([[sources/prodmgmt-world--pm-os#count-drift]]).
+
+- **behavioral/** [[patterns/behavioral/context-is-not-authority]] — confirmed across DeepSeek work admission and Kody request/credential identity; distinct enforcement scopes.

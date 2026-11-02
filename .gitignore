@@ -58,3 +58,7 @@ sources/open-agents-main
 sources/openclaw
 sources/.restore-*/
 __pycache__/
+
+/sources/kody-hq--kody/
+
+/sources/deepseek-ai--dsh-superagent-prototype/
