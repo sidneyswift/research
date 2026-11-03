@@ -62,6 +62,8 @@ External writing we cite. Always include retrieval date and a snapshot path (PDF
 
 - [[sources/every--compound-engineering-gets-an-upgrade]] — **article**, Kieran Klaassen, 2026-05-29 (updated 2026-06-01). The 4-step → 8-step evolution; "AI is the stuff in the middle. Humans are the bread on either end."
 
+- [[sources/poteto--tibo-engineering]] — Lauren Tan, 2026-11-01 long-form X engineering post; retrieved 2026-11-03 with full expanded text, parent, four images, and dated linked-game pages. Grounds [[artifacts/projects/tibo-dog]].
+
 ## Release artifacts (ZIP / packaged products)
 
 Paid or otherwise non-clonable products distributed as packages. The extracted tree is **committed** (immutable evidence — unlike repo clones, there is no upstream to rebuild from); version stamp = the package version.

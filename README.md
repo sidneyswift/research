@@ -38,14 +38,14 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 | --- | --- | --- |
 | Skills cataloged | 5 paged | 2026-10-24 |
 | Plugins cataloged | 10 | 2026-10-24 |
-| Projects cataloged | 6 | 2026-11-02 |
+| Projects cataloged | 7 | 2026-11-03 |
 | MCP servers cataloged | 0 paged | 2026-10-24 |
 | Concepts cataloged | 20 | 2026-11-02 |
 | Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
 | Creators cataloged | 14 | 2026-11-02 |
-| Source citation pages | 34: 14 repos, 6 docs-pages, 11 articles, 1 tweet, 2 purchased bundles | 2026-11-02 |
+| Source citation pages | 35: 14 repos, 6 docs-pages, 12 articles, 1 tweet, 2 purchased bundles | 2026-11-03 |
 
-Latest ingest: [[artifacts/projects/dsh-superagent-prototype]], [[artifacts/projects/kody]], [[concepts/super-agent-architecture]], and [[concepts/code-mode-capability-interface]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[artifacts/projects/tibo-dog]] — full engineering post, parent, four screenshots and linked-site snapshots; 16 portable principles, with author assertions separated from verified implementation. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

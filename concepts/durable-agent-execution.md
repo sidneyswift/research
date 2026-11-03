@@ -91,3 +91,7 @@ Most agent failure modes at the edges are durability failures: a long task dies 
 ## Recovery boundary comparison — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] persists domain changes/effect intent and resumes interrupted Assignments; this is distinct from replaying arbitrary external mutations exactly once. [[artifacts/projects/kody]] separates keyed execute observation/replay from workflow retry that re-executes package code. Both make [[patterns/behavioral/context-is-not-authority]] relevant to recovery: what resumes must retain a legitimate basis. [[sources/deepseek-ai--dsh-superagent-prototype#effects]], [[sources/deepseek-ai--dsh-superagent-prototype#execution]], [[sources/kody-hq--kody#execute-replay]], [[sources/kody-hq--kody#workflow-implementation]]
+
+## Simulation replay is a different guarantee — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] reports recomputing a deterministic game run from inputs to validate a high score. This is **simulation replay for verification**, not evidence of crash-safe agent execution or exactly-once external effects. Reusing the idea for an agent evaluation needs captured nondeterministic responses and controlled side effects; replaying a payment or publication is not equivalent to replaying game state. That adaptation is our boundary analysis, not an implementation claim about the game. [[sources/poteto--tibo-engineering#deterministic-replay]]

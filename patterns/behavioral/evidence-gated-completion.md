@@ -88,3 +88,7 @@ A fluent model's failure mode on "am I done?" is *confident fabrication of compl
 ## Team-delivery comparison — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] separates a PR existing from a ready result delivered to the originating conversation. Its communication rules are prompt policy; the host enforces structured states and the IM word limit, not the truth of every readiness claim. [[sources/deepseek-ai--dsh-superagent-prototype#communication]], [[sources/deepseek-ai--dsh-superagent-prototype#execution]], [[sources/deepseek-ai--dsh-superagent-prototype#im-limit]]
+
+## Product-level gate comparison — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] reports build failure when the initial payload exceeds its budget and server replay before accepting a high score. These are supporting **product-level analogies**, not evidence for the full agent stopping/blocked-state contract described here. Keep the claimed gate and its predicate narrow: the post does not disclose the build threshold, prove deployed performance, or establish complete anti-cheat coverage. [[sources/poteto--tibo-engineering#download-budget]] [[sources/poteto--tibo-engineering#deterministic-replay]]

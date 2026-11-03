@@ -211,3 +211,7 @@ The strongest contribution is its insistence that a check can be wrong even when
 - Which supported runtimes exhibit the piped-help truncation, and should CLI exits drain output explicitly? Only the observed local Node version is established. [[sources/cursor--plugins-pstack#VE38]] [[sources/cursor--plugins-pstack#verification-local-checks]]
 - Should interrupted runs terminate child TLC processes, and should non-atomic publication fallback be rejected for shared output directories? These are proposed extensions, not existing guarantees. [[sources/cursor--plugins-pstack#VE32]] [[sources/cursor--plugins-pstack#VE43]]
 - When does a reader projection become too coarse to explain a bug? The tool detects several ambiguity cases, but choosing sufficient labels remains a modeling responsibility. [[sources/cursor--plugins-pstack#VE20]] [[sources/cursor--plugins-pstack#VE21]] [[sources/cursor--plugins-pstack#VE22]]
+
+## Related game diagrams — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] includes author-supplied TLA+ diagrams with concurrent story, fires, lines, pause and offer regions. A close-up names timer/tutorial, loss-of-focus and stale-card-after-reroll counterexamples. These are useful examples of explaining temporal bugs in domain language. The images do **not** establish that this exact statechart renderer produced them, that the game models faithfully encode the implementation, or that we reproduced a TLC run. [[sources/poteto--tibo-engineering#auto-pick-counterexamples]] [[sources/poteto--tibo-engineering#statechart-images]]

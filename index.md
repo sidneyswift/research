@@ -63,6 +63,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/SHL0MS--skill-diffs]] | repo | 2026-07-22 | `2ded6c0` (0★; dataset v0.5) |
 | [[sources/humanlayer--humanlayer]] | repo | 2026-10-23 | `2f66a45` (11,977★ at retrieval) |
 | [[sources/cursor--plugins-pstack]] | repo | 2026-10-24 | `9580c23` (pstack 0.15.32) |
+| [[sources/poteto--tibo-engineering]] | article (long-form X post) | 2026-11-03 | published 2026-11-01; full post + four images |
 
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
@@ -83,7 +84,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[creators/forward-future]] | org | Matthew Berman's AI media brand; ships the **Loop Library** — a curated, submission-driven catalog of repeatable agent loops + an installable find/adapt/design skill. First catalog-of-prompts creator |
 | [[creators/shl0ms]] | individual | GitHub handle (real name undisclosed); ships **skill-diffs** ([[artifacts/projects/skill-diffs]]) — a commit-history mining pipeline + dataset + linter/eval tools for training a skill-curator model. First dataset-and-tooling-pipeline creator; lowest-traction source to date (0★) |
 | [[creators/humanlayer]] | org | Collaborative coding-agent platform and RPI workflow; human review, task continuity, and host execution |
-| [[creators/lauren-tan]] | individual | pstack; engineering principles, orchestration, and maintained verification |
+| [[creators/lauren-tan]] | individual | pstack; engineering principles, orchestration, maintained verification; tibo.dog engineering report |
 
 ## Artifacts — Plugins
 
@@ -132,6 +133,7 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 | [[artifacts/projects/eve]] | Vercel | active (beta) | **Filesystem-first, durable agent framework** ("Next.js for agents") — agent-as-directory, a framework-owned harness + toolbelt, durable sessions, channels, sandboxes, evals. The wiki's **first ingested harness**; embodies [[concepts/filesystem-first-agent-framework]] + [[concepts/durable-agent-execution]] |
 | [[artifacts/projects/skill-diffs]] | SHL0MS | active | Commit-history mining pipeline → `(before, after, intent)` skill-edit dataset (4 platforms) + a **defect-derived linter** + skill-patch eval harness. The wiki's **first dataset-and-tooling-pipeline** artifact; embodies [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]] |
 | [[artifacts/projects/humanlayer]] | HumanLayer | source-investigated | Collaborative agent platform: tasks, sessions, hosts, artifacts, review, and scoped recovery; pinned source investigation |
+| [[artifacts/projects/tibo-dog]] | Lauren Tan | author-report-investigated | Defect-to-rule loop, path-scoped policy, TLA+ interaction checks, input replay and executable budgets |
 
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 

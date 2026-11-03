@@ -338,3 +338,7 @@ The ledger's PK/PP/RE anchors, and the child pages' OR/VE anchors, all resolve t
 - Do pinned toolchains pass the full formal-verification and orchestration suites, including process interruption and provider integration?
 - Can comment removal preserve domain rationale without adding a new unreviewed policy layer?
 - How should operators bound cost, permission, and external side effects across unattended tasks? Prompt recipes cannot replace host-enforced boundaries.
+
+## Related application report — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] records the same creator's account of defect-derived lint, subsystem-specific formal-verification skills, path-scoped allocation policy, and build budgets. This offers a concrete comparison to pstack's principles, **not evidence that the game used this pinned package or every prescribed workflow**. The game's source and skill files were not inspected. [[sources/poteto--tibo-engineering#defect-lints]] [[sources/poteto--tibo-engineering#formal-verification]] [[sources/poteto--tibo-engineering#hot-paths]] [[sources/poteto--tibo-engineering#download-budget]]

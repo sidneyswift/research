@@ -87,6 +87,10 @@ These are source-grounded limitations and our counterarguments, not a documented
 - **Keep blocked revisions honest:** do not move the sync commit until reconciliation finishes; separate verifier changes from product fixes. [[sources/cursor--plugins-pstack#VE11]] [[sources/cursor--plugins-pstack#VE12]]
 - **Validate the verifier's own outputs:** syntax checks, malformed-input tests, incomplete-output handling and publication tests are part of trustworthy evidence generation. [[sources/cursor--plugins-pstack#VE37]] [[sources/cursor--plugins-pstack#VE38]] [[sources/cursor--plugins-pstack#VE40]]
 
+## Application report — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] reports system-specific formal-verification skills and illustrates failures caused by timers interacting with tutorials, focus and rerolled offers. This adds a concrete motivation for preserving concurrent behavior in the model. It is **not** independent confirmation of code/model fidelity: the post supplies images and assertions, not models, configurations, source mappings or reproduced counterexample traces. Need those artifacts before claiming the model describes the shipped game. [[sources/poteto--tibo-engineering#formal-verification]] [[sources/poteto--tibo-engineering#auto-pick-counterexamples]] [[sources/poteto--tibo-engineering#statechart-images]]
+
 ## Open questions
 
 - How should mutation probes be selected so they challenge the abstraction rather than only a convenient guard?

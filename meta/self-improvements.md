@@ -212,3 +212,11 @@ Compounding budget check: this ingest adds a reusable project schema, not only p
 | 54 | [[patterns/behavioral/context-is-not-authority]]: DeepSeek subscriptions deliver context without new Mandates; Kody derives enabled actor/credential authority outside generated code. Admission, OS authority and permitted credential use have different guarantees. | Added a context → authority → enforcement → revalidation/recovery map prompt to [[_schemas/project]]. Applied it to both new project studies; retained existing evidence-class requirements and thin harness. | **applied** 2026-11-02; local research update |
 
 Compounding budget: a reusable schema check plus builder routing ships with the research. No new background agent or external service is needed to apply it.
+
+## [2026-11-03] Pass 17 — complete social-source evidence
+
+| # | Source-grounded learning | Applied change | Status |
+| --- | --- | --- | --- |
+| 55 | [[patterns/behavioral/evidence-gated-completion]] at ingestion: the tibo API preview omitted most principles, and meaningful counterexamples were only in attachments. [[sources/poteto--tibo-engineering#capture]], [[sources/poteto--tibo-engineering#auto-pick-counterexamples]] | Added a compact completeness gate to [[_schemas/source]]: expanded text, relevant parent/quote context, meaningful attachments, dated linked-page differences, and screenshot-versus-execution evidence class. Applied it to [[artifacts/projects/tibo-dog]]. | **applied** 2026-11-03; full expanded text and four images preserved and inspected. |
+
+Compounding budget: a small schema guard addresses the observed truncation failure without adding new tools or a duplicate engineering-principles page. Existing related concepts/patterns were extended; the corpus-scale defect-validation pattern remains proposed.
