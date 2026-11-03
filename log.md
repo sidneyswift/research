@@ -469,3 +469,13 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 ## [2026-11-03] reflect | complete social-source evidence
 
 - Applied [[patterns/behavioral/evidence-gated-completion]] to source acquisition: [[_schemas/source]] now checks expanded text, relevant conversation context, meaningful attachments and separately dated linked pages. Grounded in the actual truncated preview and image-only counterexamples; ledger entry 55 in [[meta/self-improvements]]. No new agent workflow or speculative validator built.
+
+## [2026-11-03] ingest | verification over abstract adversarial review
+
+- Preserved [[sources/poteto--verification-over-adversarial-review]] as the supplied screenshot, hash and visible-text transcription. Original post URLs/publication dates remain unknown (bounded X lookup unauthorized; public search empty). No private conversation metadata was published.
+- Added principle 17 to [[artifacts/projects/tibo-dog]]; canonical operational synthesis in [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]]. Updated creator, toolkit/skill qualification, verification-fidelity and evidence-gating links, indexes and inventory. Kept the pinned pstack source intact: reported reduced Interrogate usage is not verified removal.
+- Validation: 50 added unique page→target links checked, including 21 registered source-anchor references and 9 section-heading references; screenshot SHA-256 and 17-principle/36-source counts verified. Staged wiki doctor checked 2,257 pages, score 50/100 unchanged, with zero new broken links, orphans, missing sections, stale findings or gitlinks. Whitespace check passed; earlier immutable game captures unchanged. Ratchet: links +50 (unique per page, excluding raw capture) · orphans +0 · patterns +0. Terminal state: success for screenshot-scoped ingestion; canonical post URLs/dates and current-package change remain explicitly unverified.
+
+## [2026-11-03] reflect | verification-budget routing
+
+- Added a focused `for-builders.md` route to the existing canonical principle and fidelity concept; recorded in [[meta/self-improvements]]. The evidence loop here is source/readback plus mechanical link checks, not speculative review fan-out. No new validator or installed skill change was needed.

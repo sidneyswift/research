@@ -201,3 +201,7 @@ The safe selected run used a copy under `/private/tmp/pstack-runtime-offline/scr
 ## Related delivery report — 2026-11-03
 
 [[artifacts/projects/tibo-dog]] preserves Lauren Tan's reported four-day / approximately 1,150-PR game build and its constraints. Do not use that throughput as an evaluation of poteto-mode: the post credits coding tools but does not identify this skill/version, a baseline, review cost, or a causal productivity measurement. The useful comparison is the conversion of a discovered issue into a future mechanical guard. [[sources/poteto--tibo-engineering#throughput]] [[sources/poteto--tibo-engineering#defect-lints]] [[sources/poteto--tibo-engineering#parent]]
+
+## Verification-budget qualification — 2026-11-03
+
+The Interrogate dependency recorded above describes the pinned source. In a later-supplied screenshot, Lauren reports reducing its use and favors empirical plus formal verification over abstract adversarial review; potential future removal is not a verified package change. Apply [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] when adapting this workflow rather than copying review fan-out as a default. [[sources/poteto--verification-over-adversarial-review#pstack-direction]] [[sources/poteto--verification-over-adversarial-review#verification-first]]

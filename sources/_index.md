@@ -64,6 +64,8 @@ External writing we cite. Always include retrieval date and a snapshot path (PDF
 
 - [[sources/poteto--tibo-engineering]] — Lauren Tan, 2026-11-01 long-form X engineering post; retrieved 2026-11-03 with full expanded text, parent, four images, and dated linked-game pages. Grounds [[artifacts/projects/tibo-dog]].
 
+- [[sources/poteto--verification-over-adversarial-review]] — supplied screenshot received 2026-11-03: Lauren prefers empirical/formal verification to abstract adversarial review, with Thorsten Ball endorsement; exact dates/URLs unknown. Extends [[concepts/review-cost-aware-workflows]].
+
 ## Release artifacts (ZIP / packaged products)
 
 Paid or otherwise non-clonable products distributed as packages. The extracted tree is **committed** (immutable evidence — unlike repo clones, there is no upstream to rebuild from); version stamp = the package version.

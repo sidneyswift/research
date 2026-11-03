@@ -2,19 +2,21 @@
 domain: concepts
 type: concept
 name: review-cost-aware-workflows
-creators: ["[[creators/humanlayer]]"]
-sources: ["[[sources/humanlayer--humanlayer]]"]
+creators: ["[[creators/humanlayer]]", "[[creators/lauren-tan]]"]
+sources: ["[[sources/humanlayer--humanlayer]]", "[[sources/poteto--verification-over-adversarial-review]]"]
 status: emerging
-last-reviewed: 2026-10-23
+last-reviewed: 2026-11-03
 ---
 
 # review-cost-aware-workflows
 
-> Organize agent work around the cost of checking and correcting it: review facts before designs, designs before large code changes, and runnable slices before accumulating more unchecked work.
+> Optimize for verified progress, not review volume: inspect consequential decisions early, then prefer executable evidence to abstract adversarial critique of checkable behavior.
 
 ## What it is
 
 An agent can generate code faster than a person can understand it. HumanLayer treats that imbalance as a workflow-design problem: move consequential decisions into smaller artifacts that humans can inspect cheaply. Research establishes current facts; design establishes intended behavior; a structure outline defines independently checkable slices; implementation applies those choices. The number of stages should match the risk, rather than being compulsory ceremony. This is our descriptive name for the mechanism, not a term HumanLayer claims to have invented. [[sources/humanlayer--humanlayer#workflow-phases]]
+
+Lauren Tan supplies a complementary budget rule: for agent code review, prefer empirical combined with formal verification to abstract adversarial critique. This addresses a different cost from HumanLayer's human decision workflow. The shared synthesis is to buy evidence or resolve a consequential choice with each review step, rather than treat more reviewers or more objections as success. This is our synthesis of two source positions, not a comparative benchmark. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[sources/humanlayer--humanlayer#workflow-phases]]
 
 ## Where it came from
 
@@ -24,12 +26,28 @@ HumanLayer's workflow explanation explicitly identifies review as the bottleneck
 
 The useful optimization target becomes **validated progress per unit of human attention**, not generated tokens or parallel sessions. That metric is a proposed application of the source's argument, not a measured HumanLayer result. Review a schema with its consuming query, or a function interface with its call path, while changing them is still cheap. Ship the first complete behavior early enough to discover a wrong assumption. [[sources/humanlayer--humanlayer#workflow-phases]]
 
+## Principle: verification over abstract adversarial review
+
+**Default: spend agent tokens demonstrating behavior, not debating code in the abstract.** Lauren's screenshot-backed position favors empirical plus formal verification because abstract reviewers drift into nitpicks and speculative objections. She reports reducing pstack's `interrogate` usage and considers future removal. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[sources/poteto--verification-over-adversarial-review#failure-mode]] [[sources/poteto--verification-over-adversarial-review#pstack-direction]]
+
+Our operational adaptation:
+
+1. **Name the claim and its failure condition.** Make the expected behavior and relevant invariant concrete before choosing a checking method.
+2. **Exercise real behavior.** Use a reproducible execution, regression test, trace, or benchmark for empirical questions. A reviewer's confidence is not a test result.
+3. **Use a bounded formal check where the risk warrants it.** Model ordering/state interactions and inspect counterexamples; record assumptions and code/model correspondence rather than treating a passing model as universal proof.
+4. **Turn criticism into a checkable hypothesis.** Ask for the failing case, violated invariant or missing observation. Run the check when feasible; explicitly retain unresolved consequential judgment calls rather than invent certainty.
+5. **Keep remaining review targeted.** Review requirements, abstractions, unmodeled risks and evidence quality. Do not add open-ended adversarial rounds merely to generate more objections after the relevant claims have been checked.
+
+Steps 1–5 are a proposed practice, not a verbatim protocol or measured result from the screenshot. Its source is the author's budget preference plus the already-investigated fidelity discipline. Empirical testing establishes observed behavior; formal checks establish stated properties under a model and assumptions. Thorsten Ball's visible request for proof is an endorsement of evidence-seeking, not a guarantee of unrestricted correctness. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[sources/poteto--verification-over-adversarial-review#endorsement]] [[sources/cursor--plugins-pstack#VE08]] [[sources/cursor--plugins-pstack#VE11]]
+
 ## Evidence & claims
 
 - **Documented rationale:** planning puts decisions before expensive implementation and gives each review a clear subject. No controlled productivity benchmark is provided here. [[sources/humanlayer--humanlayer#workflow-phases]]
 - **Documented mechanism:** current-state research is distinct from future-state design; PRD and TDD may separate product and engineering decisions. [[sources/humanlayer--humanlayer#workflow-phases]]
 - **Prompt policy:** implementation follows an approved artifact, works in phases, and normally pauses for manual verification. A prompt instruction is not an unbypassable authorization boundary. [[sources/humanlayer--humanlayer#implementation-gates]]
 - **Implemented supporting mechanism:** local review markers preserve which content version was marked reviewed, allowing later work to be inspected as a delta. These localStorage records are not a shared approval ledger and do not prove the marked version was understood or approved. [[sources/humanlayer--humanlayer#review-watermarks]]
+
+- **Author position, screenshot evidence:** empirical plus formal verification is preferred to abstract adversarial agent review; pstack reportedly uses `interrogate` less. No token/defect comparison, exact publication date or current-package diff was recovered. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[sources/poteto--verification-over-adversarial-review#provenance-limits]]
 
 ## Patterns demonstrated
 
@@ -44,9 +62,13 @@ The useful optimization target becomes **validated progress per unit of human at
 - **A phase boundary is not always a permission boundary.** Users can authorize multiple phases, and supported auto-advance transitions can continue without another manual invocation. Preserve the user's actual authorization instead of mechanically asking again. [[sources/humanlayer--humanlayer#workflow-phases]], [[sources/humanlayer--humanlayer#auto-advance]]
 - **Review still consumes attention.** Parallel generation can overwhelm the queue. The automation guide's one-open-agent-PR guard is a documented response, not proof of a hard global WIP limit. [[sources/humanlayer--humanlayer#automation]]
 
+- **Verification is not a ban on judgment.** Model assumptions, requirements and uncovered risk still need scrutiny; more elaborate checks can also waste the same budget. The screenshot advocates a priority shift, not a measured proof that every review is worthless. This is our scope boundary on the position. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[concepts/verification-model-fidelity]]
+
 ## Timeline
 
 - 2026-10-23 — Extracted from HumanLayer's workflow explanation, RPI instructions, review state, and transition logic. [[sources/humanlayer--humanlayer#workflow-phases]]
+
+- 2026-11-03 — Ingested a supplied Lauren Tan screenshot favoring empirical/formal verification over abstract adversarial review, with a visible Thorsten Ball endorsement; actual publication dates unknown. [[sources/poteto--verification-over-adversarial-review#root]]
 
 ## Related
 
@@ -54,6 +76,9 @@ The useful optimization target becomes **validated progress per unit of human at
 - [[artifacts/plugins/humanlayer-rpi]] — the installable workflow layer.
 - [[concepts/completion-contract]] — defines what completion means; this concept determines when and at what granularity to inspect progress.
 - [[concepts/artifact-centered-agent-context]] — supplies the stable artifacts that make staged review possible.
+
+- [[artifacts/projects/tibo-dog]] — related verification examples and the follow-up principle ledger.
+- [[concepts/verification-model-fidelity]] — ensures formal or empirical evidence still addresses the real implementation.
 
 ## What we'd steal
 
@@ -64,6 +89,8 @@ The useful optimization target becomes **validated progress per unit of human at
 - **Record reviewed versions and show the delta.** Do not make people re-review an entire evolving artifact. [[sources/humanlayer--humanlayer#review-watermarks]]
 - **Bound unreviewed output.** For recurring agents, consider one outstanding proposed change per job before generating another. [[sources/humanlayer--humanlayer#automation]]
 - **Treat approval and factual verification as different operations.** A user liking the plan does not prove the implementation passed its checks. [[sources/humanlayer--humanlayer#implementation-gates]]
+
+- ★ **Prefer empirical + formal verification to open-ended adversarial review.** For checkable behavior, turn reviewer concerns into executable tests or bounded properties; reserve judgment for the uncovered decisions. See the principle section above for the adaptation and limits. [[sources/poteto--verification-over-adversarial-review#verification-first]]
 
 ## Open questions
 

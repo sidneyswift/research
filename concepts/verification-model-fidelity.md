@@ -91,6 +91,10 @@ These are source-grounded limitations and our counterarguments, not a documented
 
 [[artifacts/projects/tibo-dog]] reports system-specific formal-verification skills and illustrates failures caused by timers interacting with tutorials, focus and rerolled offers. This adds a concrete motivation for preserving concurrent behavior in the model. It is **not** independent confirmation of code/model fidelity: the post supplies images and assertions, not models, configurations, source mappings or reproduced counterexample traces. Need those artifacts before claiming the model describes the shipped game. [[sources/poteto--tibo-engineering#formal-verification]] [[sources/poteto--tibo-engineering#auto-pick-counterexamples]] [[sources/poteto--tibo-engineering#statechart-images]]
 
+## Verification budget — 2026-11-03
+
+[[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] adds Lauren's preference to spend tokens on empirical/formal evidence instead of abstract agent critique. That makes fidelity more important, not optional: a test of the wrong behavior or a stale model is still weak evidence. The screenshot is an author position, not a controlled effectiveness study. [[sources/poteto--verification-over-adversarial-review#verification-first]]
+
 ## Open questions
 
 - How should mutation probes be selected so they challenge the abstraction rather than only a convenient guard?

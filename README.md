@@ -43,9 +43,9 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 | Concepts cataloged | 20 | 2026-11-02 |
 | Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
 | Creators cataloged | 14 | 2026-11-02 |
-| Source citation pages | 35: 14 repos, 6 docs-pages, 12 articles, 1 tweet, 2 purchased bundles | 2026-11-03 |
+| Source citation pages | 36: 14 repos, 6 docs-pages, 13 articles, 1 tweet, 2 purchased bundles | 2026-11-03 |
 
-Latest ingest: [[artifacts/projects/tibo-dog]] — full engineering post, parent, four screenshots and linked-site snapshots; 16 portable principles, with author assertions separated from verified implementation. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[artifacts/projects/tibo-dog]] — full engineering post, parent, four attached images and linked-site snapshots, plus a separate verification-over-review screenshot; 17 portable principles, with author assertions separated from verified implementation. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

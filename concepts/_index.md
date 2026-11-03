@@ -43,3 +43,7 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 
 - [[concepts/super-agent-architecture]] — DeepSeek design essay, implementation boundary and synthetic scheduling evidence.
 - [[concepts/code-mode-capability-interface]] — Kody discovery/contracts/composition and authority tradeoffs.
+
+## Updated 2026-11-03
+
+- [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] — prioritize empirical/formal evidence over abstract adversarial review; screenshot-backed author position, with bounded adaptation and preserved historical toolkit evidence.

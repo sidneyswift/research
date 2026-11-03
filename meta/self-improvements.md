@@ -220,3 +220,8 @@ Compounding budget: a reusable schema check plus builder routing ships with the 
 | 55 | [[patterns/behavioral/evidence-gated-completion]] at ingestion: the tibo API preview omitted most principles, and meaningful counterexamples were only in attachments. [[sources/poteto--tibo-engineering#capture]], [[sources/poteto--tibo-engineering#auto-pick-counterexamples]] | Added a compact completeness gate to [[_schemas/source]]: expanded text, relevant parent/quote context, meaningful attachments, dated linked-page differences, and screenshot-versus-execution evidence class. Applied it to [[artifacts/projects/tibo-dog]]. | **applied** 2026-11-03; full expanded text and four images preserved and inspected. |
 
 Compounding budget: a small schema guard addresses the observed truncation failure without adding new tools or a duplicate engineering-principles page. Existing related concepts/patterns were extended; the corpus-scale defect-validation pattern remains proposed.
+
+## [2026-11-03] Pass 18 — route verification-budget decisions
+
+- Applied the review-budget principle from [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] to the consumer front door: `for-builders.md` now routes that decision directly to its canonical principle and fidelity limits, rather than making builders infer it from the older Interrogate ledger. [[sources/poteto--verification-over-adversarial-review#verification-first]]
+- Status: **applied** 2026-11-03. Compounding budget: extended an existing concept and a routing row; no duplicate concept, new workflow, installed-skill change or additional review agents.

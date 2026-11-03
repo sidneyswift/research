@@ -31,11 +31,15 @@ Quality precedes useful parallelism. The recurring move is to turn a judgment in
 
 The aggressive defaults also deserve judgment: instructions to continue autonomously or delete comments are not substitutes for authorization or preserved rationale. The research retains those tensions instead of presenting the collection as universally applicable. [[sources/cursor--plugins-pstack#PP16]] [[sources/cursor--plugins-pstack#PK15]]
 
+**Verification-budget position (screenshot received 2026-11-03):** favors empirical/formal verification over abstract adversarial reviews; reports using pstack's `interrogate` less and considers removing it. This qualifies the earlier toolkit reading without establishing a new package revision. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[sources/poteto--verification-over-adversarial-review#pstack-direction]] [[concepts/review-cost-aware-workflows]]
+
 ## Timeline (append-only)
 
 - 2026-10-24 — Ingested pstack 0.15.32 at pinned cursor/plugins revision; studied source and ran selected offline checks, without installing or executing its agent workflows. [[sources/cursor--plugins-pstack#local-checks]]
 
 - 2026-11-01 — Published the tibo.dog engineering account; ingested 2026-11-03 with complete post, parent and four images. [[sources/poteto--tibo-engineering#root]]
+
+- 2026-11-03 — Ingested the verification-over-adversarial-review screenshot; publication date unknown. [[sources/poteto--verification-over-adversarial-review#root]]
 
 ## Source citations
 
