@@ -155,3 +155,10 @@ The "glue tax" of building a production agent. A naive agent is a model-call loo
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] is a comparison for database-backed workflow execution: persisted pending work, notification acceleration and catch-up polling. Copied node configuration does not imply a frozen graph; terminal-report idempotency does not imply replay-safe arbitrary external effects. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#execution-state]] [[sources/superplanehq--superplane#runner-completion]]
+
+
+## Runtime selection freshness questions — 2026-11-04
+
+A builder QUERY for Flexy found that this page's product, deployment and API assessment remains pinned to the June snapshot. Treat its Vercel-only, workflow-world, message-ordering and beta descriptions as historical evidence until a version-matched re-ingest verifies them; do not infer current limitations from the old snapshot. [[sources/vercel--eve#root]], [[sources/vercel--eve#docs-execution-model]]
+
+Open comparison: qualify framework-owned execution against managed agent services. Preserve the session/task distinction in [[concepts/agent-control-plane]] and the replay boundary in [[concepts/durable-agent-execution]]. Extend evidence to current remote-compute providers, filesystem versus process recovery, full plugin compatibility, user/session authorization, administrative readership and cost per accepted task. Those provider families are not comprehensively source-ingested or benchmarked here. No source clone was advanced and no application or provider was run by this QUERY.

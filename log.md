@@ -553,3 +553,9 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 ## [2026-11-04] reflect | snapshot granularity
 
 - Applied the per-task/run/node/action snapshot question to `_schemas/project.md`; added a factory/repair build-intent route. [[meta/self-improvements]] Pass 25. No runtime or installed skill changed.
+
+
+## [2026-11-04] query | Flexy harness and remote-computer platform breadth
+
+- Queried builder routes and Eve, HumanLayer, managed agent API and durable/control-plane/context studies; followed selected task/execution citations. Flagged June Eve limits as historical and added qualification questions to [[artifacts/projects/eve]]. The wiki does not yet comprehensively cover current VM/sandbox providers or benchmark whole stacks; project-specific provider research and proposed choices remain in Flex Stack.
+- No source re-ingest, provider execution, deployment, new confirmed pattern or whole-wiki lint was performed; preserved existing concurrent changes.
