@@ -62,3 +62,6 @@ __pycache__/
 /sources/kody-hq--kody/
 
 /sources/deepseek-ai--dsh-superagent-prototype/
+
+# Version-pinned paper evidence retained locally; public analysis + hashes tracked.
+/sources/zhang--skill-plus-plus/raw/

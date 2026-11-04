@@ -48,3 +48,7 @@ last-reviewed: 2026-06-01
 - [[sources/anthropic--plugins-reference]] — Claude Code plugin system spec: `plugin.json`, `${CLAUDE_PLUGIN_ROOT}` file resolution, and plugin caching behavior
 - [[sources/anthropic--financial-services]] — FSI reference marketplace: dual-runtime distribution, managed-agent cookbooks (`agent.yaml` + subagents), trust-tiered subagent security, single-source skill vendoring with drift detection
 - [[sources/anthropic--dynamic-workflows]] — "A harness for every task: dynamic workflows in Claude Code" (Thariq Shihipar + Sid Bidasaria, 2026-06-02): the first official Anthropic deep-dive on how the Claude Code harness works internally — model-generated JS workflows, 6 composable orchestration patterns, 3 named failure modes (agentic laziness, self-preferential bias, goal drift)
+
+## Independent routing study — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] uses Claude Haiku 4.5 as its main frozen router in a selected-confusability skill-growth benchmark. This is independent author-reported research, not an Anthropic publication, endorsement or current documentation refresh. [[sources/zhang--skill-plus-plus#benchmark-construction]] [[sources/zhang--skill-plus-plus#metrics]]

@@ -1,7 +1,7 @@
 ---
 domain: creators
 type: index
-last-reviewed: 2026-10-24
+last-reviewed: 2026-11-04
 ---
 
 # Creators
@@ -29,6 +29,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/prodmgmt-world]] — independent commercial publisher of [[artifacts/plugins/pm-os]] (paid PM skill bundle, claude-code + cursor + cowork). The wiki's first **commercial** creator — sells agent content as a versioned product (CHANGELOG, upgrade-migration skill) rather than sharing a repo.
 
 ## Individuals
+
+- [[creators/hanrong-zhang]] — co-first author of Skill++ with Minghao Liang; skill access stability/plasticity.
 
 - [[creators/ankur-goyal]] — author of The Trace Lake; production evidence and evaluation loops.
 

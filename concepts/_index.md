@@ -1,7 +1,7 @@
 ---
 domain: concepts
 type: index
-last-reviewed: 2026-10-24
+last-reviewed: 2026-11-04
 ---
 
 # Concepts
@@ -15,6 +15,8 @@ Ideas and techniques worth their own page — especially from essays, papers, an
 A concept becomes a **pattern** (in `patterns/`) once we've observed it as a concrete technique across **≥2 artifacts** in this wiki. Until then it lives here (or as a `proposed` pattern on an artifact page).
 
 ## Cataloged concepts
+
+- [[concepts/lifelong-skill-routing]] — library-relative metadata refinement; Skill++ preprint, full appendix evidence and separate routing/task-success metrics.
 
 - [[concepts/trace-lake]] — retained execution history → evidence-backed investigations → reproducible regression evals; vendor implementation claims and boundaries kept explicit.
 

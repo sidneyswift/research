@@ -38,6 +38,7 @@ The original entry point, `sources/clone-all.sh`, forwards the same options. `--
 | Public source repositories | Ignored local clones; restored from manifest URL and commit |
 | Modified Google Ads MCP source | Preserved branch in `sidneyswift/google-ads-mcp`; manifest points at that fork's commit |
 | Purchased PM OS material | Ignored local evidence; restore separately from an authorized purchase |
+| Skill++ v1 paper and derived reproductions | Ignored `sources/zhang--skill-plus-plus/raw/`; tracked analysis, hashes and [version-pinned restoration instructions](sources/zhang--skill-plus-plus/README.md); not restored by `setup.sh` |
 | Credentials, dependencies, caches, local configuration | Local only; configure separately if needed |
 
 Do not ignore all of `sources/`: it also contains tracked citation pages and evidence snapshots. Add each new clone directory to `.gitignore` and its exact source URL and full commit SHA to the manifest. Preserve unique code in a controlled fork before recording its revision. Clone membership alone does not establish that a project has been fully researched or tested.

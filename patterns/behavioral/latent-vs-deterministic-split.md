@@ -118,3 +118,7 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 ## Tibo supporting report — 2026-11-03
 
 [[artifacts/projects/tibo-dog]] makes the split concrete at several product boundaries: a discovered issue becomes lint; `.hot.ts` selects an allocation ban; first-download size can fail the build; a server recomputes a run instead of trusting the submitted score. These are author-reported mechanisms, not locally tested implementations. The judgment lies in choosing the right constraints and representing reality faithfully; executing a deterministic check does not establish that its premises or scope are adequate. [[sources/poteto--tibo-engineering#defect-lints]] [[sources/poteto--tibo-engineering#hot-paths]] [[sources/poteto--tibo-engineering#download-budget]] [[sources/poteto--tibo-engineering#deterministic-replay]]
+
+## Skill++ comparison — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] combines model-written descriptions, exclusions and name qualifiers with deterministic parsing, length checks, ranked reference selection, bounded retries and original-record preservation. Passing syntactic checks does not establish body fidelity; the semantic step still needs outcome evaluation. Supporting paper comparison only; existing artifact count unchanged. [[sources/zhang--skill-plus-plus#implementation]]

@@ -1,0 +1,215 @@
+{
+  "title": "Skill++: Towards Lifelong Agents via Routing-Aware Skill Refinement",
+  "arxiv_id": "2611.00544v1",
+  "retrieved": "2026-11-04",
+  "submitted_utc": "2026-10-31T01:58:58Z",
+  "requested_url": "https://arxiv.org/pdf/2611.00544",
+  "pdf_url": "https://arxiv.org/pdf/2611.00544v1",
+  "html_url": "https://arxiv.org/html/2611.00544v1",
+  "abstract_url": "https://arxiv.org/abs/2611.00544v1",
+  "pages": 20,
+  "read_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "rendered_pages_inspected": [
+    5,
+    8,
+    14,
+    16,
+    18,
+    20
+  ],
+  "license": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "storage": "Full source and derived reproductions local-only in ignored raw/. Public repository contains original analysis, source map, hashes and restore instructions.",
+  "extraction": "PyMuPDF; one file per PDF page plus combined page-labeled text. Images rendered at 110 dpi. Equations may be lossy in text; PDF/HTML retained.",
+  "evidence_boundary": "Paper read, not independently replicated. Cited bibliography not recursively investigated.",
+  "code_search": {
+    "queries": [
+      "\"Skill++\" \"Routing-Aware\" github",
+      "\"2611.00544\" github",
+      "\"Skill++\" \"Hanrong\" code"
+    ],
+    "surfaces": [
+      "PDF hyperlinks",
+      "arXiv abstract record",
+      "public web search"
+    ],
+    "result": "No author implementation URL located; absence not established. Broad GitHub name query discarded as noisy."
+  },
+  "files": [
+    {
+      "path": "raw/abstract.html",
+      "bytes": 43044,
+      "sha256": "4ae3595c00a2f037efae3b90566612b8b06f9cf902cbd818a29a696e70839eab"
+    },
+    {
+      "path": "raw/links.json",
+      "bytes": 9258,
+      "sha256": "f0f742509a737f6a88d6dd02e44865098637b75ec281320c0edfe836ca551b41"
+    },
+    {
+      "path": "raw/page-01.txt",
+      "bytes": 4554,
+      "sha256": "5a4463fcf8a031d0973d98418d61f6081bb349dd46f0b7b09f663c440bf7c065"
+    },
+    {
+      "path": "raw/page-02.txt",
+      "bytes": 4317,
+      "sha256": "1124b1b786f4a0233a904a5123ce358da61f279a138b6eb785bfeadd60596da5"
+    },
+    {
+      "path": "raw/page-03.txt",
+      "bytes": 4791,
+      "sha256": "ae686ce1dddf657aa49cde28990131f2660b55a6fd3acbfac13d23ea0052eea8"
+    },
+    {
+      "path": "raw/page-04.txt",
+      "bytes": 4212,
+      "sha256": "a1a787f7e811b958cb0d962da261b80eb9d18d90eabb1c8e969111e0f1e31bd1"
+    },
+    {
+      "path": "raw/page-05.png",
+      "bytes": 292196,
+      "sha256": "eab87cfd26291ea662beecba5b0ac15f2c771de210777b430beed90302690f03"
+    },
+    {
+      "path": "raw/page-05.txt",
+      "bytes": 4438,
+      "sha256": "bce53155f205bcccc8aa95686b5c277dd8154cbacb71016c40928e5a8646f4ca"
+    },
+    {
+      "path": "raw/page-06.txt",
+      "bytes": 3571,
+      "sha256": "d7b74a7e44892a48819c52537b99d59ef8f4a303ae13cefc5e48bb9b95dee1eb"
+    },
+    {
+      "path": "raw/page-07.txt",
+      "bytes": 4571,
+      "sha256": "146d4172f367c8b567533c322b78d3081be3e4eb0ccd71175ae0cdb88a76ee57"
+    },
+    {
+      "path": "raw/page-08.png",
+      "bytes": 311213,
+      "sha256": "61ecd0d1f544a7185250933408c51203462dbab8a1f49de596b823f6cc3fc363"
+    },
+    {
+      "path": "raw/page-08.txt",
+      "bytes": 4254,
+      "sha256": "503aec82b7bb30d394e23a95339e4f8a096cbda2ecad8e04459bf7bafc834307"
+    },
+    {
+      "path": "raw/page-09.txt",
+      "bytes": 4636,
+      "sha256": "b3cba71ec6d9b2ad92bd9b0d577ad84d94846f90e421ef5710dde0b2a25577cf"
+    },
+    {
+      "path": "raw/page-10.txt",
+      "bytes": 4744,
+      "sha256": "03cc5f8a23b7143471a91e90ed6b201199e9e4213bd125aa8bee256a7c281eb2"
+    },
+    {
+      "path": "raw/page-11.txt",
+      "bytes": 3136,
+      "sha256": "c6985689e1c1f5dad03d37b5641ca92fe2edbeebbf301ed578786a8670f91254"
+    },
+    {
+      "path": "raw/page-12.txt",
+      "bytes": 4165,
+      "sha256": "5ce8ba860fe0c0797a432823cafca4cb4c7bc144990826464e314ec99f859659"
+    },
+    {
+      "path": "raw/page-13.txt",
+      "bytes": 4037,
+      "sha256": "2f3efc4f951c1efbd2711ce3a2ebbd79ad22254d5132b23ba20c47d6902b939c"
+    },
+    {
+      "path": "raw/page-14.png",
+      "bytes": 282518,
+      "sha256": "651afebc475f3b119a78a1c0abe57d92499877c1d608dd193ae666003bae18fb"
+    },
+    {
+      "path": "raw/page-14.txt",
+      "bytes": 4221,
+      "sha256": "ec7c8d6a7efa8b0b28eea43db16d230948858eca69c048cde6ffd25bff3a3509"
+    },
+    {
+      "path": "raw/page-15.txt",
+      "bytes": 4156,
+      "sha256": "2bff9704b4c299380509b21fb604159aaf711ff5320e1f9e9c37ad3e4ad81240"
+    },
+    {
+      "path": "raw/page-16.png",
+      "bytes": 273413,
+      "sha256": "cc57bc5fd7a11a75caf1306533d97e12abe67a24e8f69500aa2e7af130d9a71c"
+    },
+    {
+      "path": "raw/page-16.txt",
+      "bytes": 4249,
+      "sha256": "d8ad046ab65eb86349bf08430c1654229d0af0179855ac719ec112ac1facecca"
+    },
+    {
+      "path": "raw/page-17.txt",
+      "bytes": 4270,
+      "sha256": "150ce3c3d743ea6384ef57273a13f887a49bff1db03097c4840ffb72eeb55cfb"
+    },
+    {
+      "path": "raw/page-18.png",
+      "bytes": 268270,
+      "sha256": "3ae1a9e72782e8c24639912cda27c907e978f0d9ad976ebac5942e821ad83b27"
+    },
+    {
+      "path": "raw/page-18.txt",
+      "bytes": 3780,
+      "sha256": "4fa3f0394a1213c5b88dfda01b387701ae67c1a0f0091e24f4be95ad7d426713"
+    },
+    {
+      "path": "raw/page-19.txt",
+      "bytes": 3467,
+      "sha256": "acdae03952a4e9ac22d326af645bb181bd9c8eb151c4ff99e20e44eb35264eb9"
+    },
+    {
+      "path": "raw/page-20.png",
+      "bytes": 177594,
+      "sha256": "b9f804c846b4ad5946ca7609c437be1ed1466aa017119a220843d97c88749b61"
+    },
+    {
+      "path": "raw/page-20.txt",
+      "bytes": 2286,
+      "sha256": "a9a9bdde6c1ae1ceb5e58bae221779bb7c65fbda7c2504ff1066a5cd1ed32948"
+    },
+    {
+      "path": "raw/paper.html",
+      "bytes": 598663,
+      "sha256": "9c45265fca117a618f85587d57e562b477c2811297a73259440ea8bf887835c6"
+    },
+    {
+      "path": "raw/paper.pdf",
+      "bytes": 1194635,
+      "sha256": "12788db9fe313575a163643029a5508bb11adb9775bf64f48a9ffe1c7f09c01a"
+    },
+    {
+      "path": "raw/paper.txt",
+      "bytes": 82186,
+      "sha256": "fe33df3df04f4ff02fc891432395bc414691d4ef442436ef7a9f058aa8e1d0df"
+    }
+  ]
+}

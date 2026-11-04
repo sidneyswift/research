@@ -107,3 +107,7 @@ A falsifiable test for spotting the ratchet (`## Examples` are the positive fixt
 ## Trace Lake comparison — 2026-11-04
 
 [[concepts/trace-lake]] applies the ratchet to runtime evidence: recurring production failures become reproducible evals, so later changes can be checked against the lesson. Article/vendor-doc evidence only, not an independently executed artifact added to the confirmation count. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+
+## Skill-library regression boundary — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] shows why adding files is not itself a monotonic capability ratchet: routing to an older correct body can regress when a new name/description competes with it. Our application is to preserve old-route fixtures and test new-skill discoverability separately. Downstream task success remains a third measurement. This is supporting research, not a new counted production example. [[sources/zhang--skill-plus-plus#access-forgetting]] [[sources/zhang--skill-plus-plus#plasticity]] [[sources/zhang--skill-plus-plus#task-success]]

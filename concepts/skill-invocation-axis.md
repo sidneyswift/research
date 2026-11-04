@@ -83,3 +83,7 @@ It turns "should this be a skill?" into two separate, cheaper questions: *does i
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] has 57 of 58 top-level skills marked `disable-model-invocation`, yet its workflow directs agents to read other skill files. This distinguishes automatic discovery/invocation from explicit file access and application. It does not establish native cross-skill invocation support on every host. [[sources/cursor--plugins-pstack#inventory]] [[sources/cursor--plugins-pstack#PK07]]
+
+## Selection is a separate axis — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] concerns whether a **visible, eligible** skill is selected among competitors; this page concerns who can invoke it and how metadata enters context. A good description cannot repair a skill hidden by host policy, and model-invokable status does not guarantee correct selection. Skill++ therefore complements rather than replaces invocation controls; no current host-policy refresh is implied. [[sources/zhang--skill-plus-plus#formulation]] [[sources/zhang--skill-plus-plus#harness]]

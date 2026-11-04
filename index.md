@@ -29,6 +29,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/zhang--skill-plus-plus]] | paper | 2026-11-04 | arXiv 2611.00544v1; full local capture + public analysis/hash manifest |
 | [[sources/ankrgyl--trace-lake]] | article + linked context | 2026-11-04 | published 2026-11-03; full body, SQL and eight primary pages |
 | [[sources/kody-hq--kody]] | repo | 2026-11-02 | `9d96cfb` |
 | [[sources/deepseek-ai--dsh-superagent-prototype]] | repo | 2026-11-02 | `6337fc8` |
@@ -74,6 +75,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 | Creator | Type | Notes |
 | --- | --- | --- |
+| [[creators/hanrong-zhang]] | individual | Skill++ co-first author with Minghao Liang; growing-library routing research |
 | [[creators/ankur-goyal]] | individual | Author of The Trace Lake; Brainstore architecture writing |
 | [[creators/braintrust]] | org | Trace history, investigation and evaluation tooling; documentation-level study |
 | [[creators/deepseek]] | org | Harness team; super-agent architecture essay and research prototype |
@@ -143,6 +145,8 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/lifelong-skill-routing]] — Skill++: incoming metadata differentiation, scope exclusions and semantic naming preserve old routes as skill libraries grow; stress-test routing outcomes distinguished from task success.
 
 - [[concepts/trace-lake]] — searchable execution history becomes reproducible regression evals; 18 portable principles with operational boundaries.
 

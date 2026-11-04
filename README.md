@@ -40,12 +40,12 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 | Plugins cataloged | 10 | 2026-10-24 |
 | Projects cataloged | 7 | 2026-11-03 |
 | MCP servers cataloged | 0 paged | 2026-10-24 |
-| Concepts cataloged | 21 | 2026-11-04 |
+| Concepts cataloged | 22 | 2026-11-04 |
 | Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
-| Creators cataloged | 16 | 2026-11-04 |
-| Source citation pages | 38: 14 repos, 6 docs-pages, 15 articles, 1 tweet, 2 purchased bundles | 2026-11-04 |
+| Creators cataloged | 17 | 2026-11-04 |
+| Source citation pages | 39: 14 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
 
-Latest ingest: [[concepts/trace-lake]] — Ankur Goyal's production-history → investigation → reproducible-eval loop, with 18 portable principles, complete article/SQL capture and eight linked primary pages. Previous related ingests: [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] and [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[concepts/lifelong-skill-routing]] — Skill++ (arXiv 2611.00544v1), full 20-page paper and appendices read; 21 portable lessons on contrastive descriptions, scope exclusions, semantic names and routing regressions. Reported routing gains kept separate from task success. Previous ingest: [[concepts/trace-lake]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 
@@ -54,7 +54,7 @@ Latest ingest: [[concepts/trace-lake]] — Ankur Goyal's production-history → 
 1. **Every claim cites a source.** No exceptions, no "everyone knows."
 2. **Patterns require ≥2 artifact examples.** One example is a coincidence.
 3. **"What we'd steal" is an exhaustive ledger** on every artifact/concept page — capture *everything* portable (★-mark the best), never a curated top-3. A thin list narrows our attention over time.
-4. **Sources are cloned, not linked.** Repos are kept as live local clones (git-ignored, re-clonable via [sources/clone-all.sh](sources/clone-all.sh) from [sources/repos.manifest.tsv](sources/repos.manifest.tsv), pinned to the cited commit); captured articles/papers are committed snapshots. Either way we point at evidence, never a bare URL. **On a fresh checkout, run `sources/clone-all.sh` to rebuild the repo evidence cache.**
+4. **Sources are cloned, not linked.** Repos are kept as live local clones (git-ignored, re-clonable via [sources/clone-all.sh](sources/clone-all.sh) from [sources/repos.manifest.tsv](sources/repos.manifest.tsv), pinned to the cited commit); captured articles/papers are normally committed snapshots. Full-paper redistribution exceptions retain local evidence plus tracked version pins, hashes and restoration notes (see [Skill++ evidence](sources/zhang--skill-plus-plus/README.md)). Either way we point at evidence, never a bare URL. **On a fresh checkout, run `sources/clone-all.sh` to rebuild the repo evidence cache.**
 5. **Every ingest gets a log entry.** Append to `log.md` — `## [YYYY-MM-DD] ingest | <subject>` plus 1–3 bullets. Future-you needs this.
 6. **Lint periodically.** Karpathy's whole point: the LLM is the maintainer. Run a Lint pass after every batch of ingests and on demand.
 7. **Reflect, don't just collect.** This wiki researches how to build great agents/skills — so it must improve *itself* with what it learns. After ingests, ask whether new patterns apply to our own machinery and log candidates in [meta/self-improvements.md](meta/self-improvements.md).

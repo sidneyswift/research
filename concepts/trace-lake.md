@@ -57,6 +57,8 @@ It supplies the missing middle between “we saw a bad run” and “future chan
 
 ## Related
 
+- [[concepts/lifelong-skill-routing]] — prospective application: retain real misrouting queries, library versions and downstream outcomes as regression fixtures. Skill++ uses benchmark/synthetic probes; it does not evaluate a Trace Lake integration. [[sources/zhang--skill-plus-plus#metrics]]
+
 - [[concepts/review-cost-aware-workflows]] — supplies actual behavior and rerunnable checks for verification-first review.
 - [[concepts/compound-engineering]] — execution evidence compounds into future verification capability.
 - [[concepts/agent-control-plane]] — persistent coordination can schedule investigations; it is not the evidence store.
