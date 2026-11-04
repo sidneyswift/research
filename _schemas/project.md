@@ -58,3 +58,19 @@ Include counterexamples, failure modes, bypasses, configuration dependencies, sk
 ## Open questions and verification record
 
 State remaining evidence gaps and what would settle them. Run the wiki checks; validate new links and registered source anchors, plus pinned path/range integrity. Existing unrelated lint findings remain visible rather than being rewritten away.
+
+## Context-system status versus guarantee
+
+For context/semantic systems, distinguish **configured readiness, retrieval coverage, human review flags, executable validation and durable publication**. Name what each status actually measures, which path enforces it and what remains unverified; do not promote a label into a stronger guarantee. Grounding: [[artifacts/projects/auto-ontology]], [[patterns/behavioral/evidence-gated-completion]] and [[sources/nvidia--auto-ontology#readiness]] / [[sources/nvidia--auto-ontology#coverage]] / [[sources/nvidia--auto-ontology#publication]].
+
+## Observation, persistence and recovery units
+
+For agent runtimes, identify what the **model saw**, what tools/runtime actually executed, what history/metadata was persisted and what unit can resume after interruption. Distinguish recording complete, legal lifecycle completion and verified task success. Grounding: [[artifacts/projects/codex]], [[patterns/behavioral/evidence-gated-completion]] and [[sources/openai--codex#trace]] / [[sources/openai--codex#storage]] / [[sources/openai--codex#goal-tools]].
+
+## Unknown outcomes and revocation boundaries
+
+For remote execution, state the retry cutoff, generation/operation fence, and evidence distinguishing request acceptance, saved state, retirement and safe continuation. For revocable context/credentials, name what remains in transcripts, pinned inputs, files and caches after access changes. This extends the existing recovery/authority questions with concrete observed failure cases, not a new blanket approval workflow. Grounding: [[artifacts/projects/background-agents]], [[patterns/behavioral/evidence-gated-completion]], [[patterns/behavioral/context-is-not-authority]] and [[sources/open-inspect--background-agents#automation-retry]] / [[sources/open-inspect--background-agents#shutdown-design]] / [[sources/open-inspect--background-agents#memory-boundary]].
+
+## Snapshot granularity and live dependencies
+
+For versioned workflows, list what is pinned **per task, run, node execution and action**: graph edges, node configuration, code revision, input artifacts and credentials. State which dependencies are read live. A versioned editor or copied configuration does not by itself establish a frozen/replayable run. This sharpens the existing recovery question using [[artifacts/projects/superplane]] and [[patterns/behavioral/evidence-gated-completion]]: [[sources/superplanehq--superplane#staging]], [[sources/superplanehq--superplane#execution-state]], [[sources/superplanehq--superplane#event-routing]].

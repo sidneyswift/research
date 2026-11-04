@@ -33,6 +33,13 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 - [[artifacts/projects/openai-agent-api]] — Model/tool protocol and managed runtime; documentation-investigated, 2026-11-04. [[sources/openai--agent-api-design]].
 
+- [[artifacts/projects/superplane]] — durable engineering workflows, PR repair coordination and revision-bound merge gates; 42 principles.
+
+- [[artifacts/projects/background-agents]] — hosted sessions, checkpoint/retirement contracts, scoped delegation, pinned skills and trace export; 43 principles.
+
+- [[artifacts/projects/codex]] — full source preserved at `021fccb`; scoped runtime, authority, storage, skills, Goals and trace study with 44 principles.
+
+- [[artifacts/projects/auto-ontology]] — NVIDIA semantic-context service plus evaluation harness; source-investigated, 26 principles, runtime and benchmark results unverified.
 
 - [[artifacts/projects/dsh-superagent-prototype]] — domain, authorization, execution, delivery and recovery study. [[sources/deepseek-ai--dsh-superagent-prototype]].
 - [[artifacts/projects/kody]] — shared agent state and capability infrastructure; Code Mode, credentials, workflow/repo revision boundaries. [[sources/kody-hq--kody]].
@@ -43,11 +50,12 @@ Use this directory when the unit of study is bigger than one artifact type but i
 - [[artifacts/projects/eve]] — Vercel's **eve** framework: a filesystem-first, durable agent framework — agent-as-directory authoring, a framework-owned **harness** + built-in toolbelt, durable session/turn/step execution, channels (one agent → many surfaces), sandboxes, subagents/remote-agents, schedules, connections, dynamic capabilities, and first-class evals. The wiki's **first ingested harness** — the long-missing middle of [[patterns/structural/thin-harness-fat-skills]] (which it grounds *and* complicates: a production harness is a full framework, not "~200 lines"). Embodies [[concepts/filesystem-first-agent-framework]] + [[concepts/durable-agent-execution]]. Source: [[sources/vercel--eve]].
 - [[artifacts/projects/skill-diffs]] — SHL0MS's **skill-diffs**: a pipeline that mines the commit history of `SKILL.md` files across 4 agent platforms into a published `(before, after, intent)` dataset, plus a defect-derived rule-based linter and a skill-patch eval harness. The wiki's **first dataset-and-tooling-pipeline** artifact — a research-infrastructure axis distinct from skills/plugins/MCP/frameworks. Embodies [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]]; founding example of [[patterns/quality-bar/defect-derived-validation]]. Source: [[sources/SHL0MS--skill-diffs]].
 
+- [[artifacts/projects/tibo-dog]] — agent-assisted browser game; complete engineering-post study covering executable constraints, TLA+ interaction bugs, deterministic replay, headless outcome tuning and procedural assets. Author-report evidence, not game-source verification. [[sources/poteto--tibo-engineering]].
+
 ## Candidate list (not yet deep-dived)
 
 Add candidates here as one-line entries before promoting to a full page. Keep a `source:` URL on each.
 
-- **Codex CLI** (OpenAI) — the broader agentic-coding tool; only its Goals feature is studied so far (see [[artifacts/projects/codex-goals]]). A full ingest would enable a Codex-vs-Claude-Code comparison. Source: `https://developers.openai.com/codex`.
 - **Hermes Agent** (Nous Research) — the named downstream consumer of `skill-diffs`'s trained curator model; its **Curator** feature is a background maintenance pass tracking skill usage (active→stale→archived) directly relevant to this wiki's own LINT operation (see [[meta/self-improvements]] Pass 13). Not yet ingested — referenced only via its public docs page. Source: `https://hermes-agent.nousresearch.com/docs/user-guide/features/curator`.
 
 ## MCP application surfaces — 2026-11-04

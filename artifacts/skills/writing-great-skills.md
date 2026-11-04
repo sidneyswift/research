@@ -91,3 +91,7 @@ It converts skill-authoring *taste* into a **vocabulary you can apply** — ever
 - **How does this scale past ~20 skills?** The vocabulary is per-skill; it says less about *pack-level* health (cross-skill duplication, resolver rot) than gbrain's `check-resolvable` machinery does — they may be complementary halves.
 - **Is "predictability, not reproducibility" testable** without a test suite? The pack ships none — so the discipline is asserted, not enforced (ties to the [[patterns/quality-bar/skill-pack-bundle]] counter-example).
 - Worth a side-by-side with `superpowers`' `writing-skills` and Anthropic's `skill-creator` to see whether this vocabulary is converging across authors.
+
+## Library-relative authoring comparison — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] adds an evidence-backed complement to predictable, narrow skills: compare a new name/description to the closest existing capabilities. Skill++ reports better routing with contrastive descriptions, scoped exclusions and meaningful name qualifiers than body-only descriptions. This is independent research, not a feature or test suite verified in the pinned Pocock skill. Our portable addition is a routing-neighborhood check plus old/new routing fixtures; exact host trigger syntax and execution success still need separate validation. [[sources/zhang--skill-plus-plus#method]] [[sources/zhang--skill-plus-plus#ablations]] [[sources/zhang--skill-plus-plus#task-success]]

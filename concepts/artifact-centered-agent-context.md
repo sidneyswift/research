@@ -81,3 +81,19 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 ## Pstack comparison — 2026-10-24
 
 [[concepts/evidence-calibrated-research]] specializes what an evidence handoff preserves: source coverage, contradictory findings, and confidence language. [[concepts/verification-model-fidelity]] adds an authority contract between source, model, properties, and generated views. [[artifacts/plugins/pstack]] is the supporting source family. [[sources/cursor--plugins-pstack#RE03]] [[sources/cursor--plugins-pstack#RE08]]
+
+## Shared semantic artifacts — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] makes business definitions, physical bindings and reusable SQL persistent artifacts consumed by multiple interfaces. The important boundary: certification flags and stored conversations do not by themselves provide revision-bound approval or governed analytical publication; the management skill prescribes scoped backup and exact re-export readback. [[sources/nvidia--auto-ontology#certification]] [[sources/nvidia--auto-ontology#publication]]
+
+## Authoritative state and derived views — 2026-11-04
+
+[[artifacts/projects/codex]] separates canonical history, explicit metadata patches and diagnostic trace reduction. Its retained goal evidence uses host annotations rather than visible wrappers, and missing/cleared context baselines remain distinct. Persisting a summary does not promote it into authorization. [[sources/openai--codex#storage]] [[sources/openai--codex#goal-provenance]] [[sources/openai--codex#replay]]
+
+## Open Inspect: Pinned context versus live information access
+
+[[artifacts/projects/background-agents]] pins skill and memory selections, but live fact bodies and authorization checks remain separate. Shared/directive memory writes are proposed for review, with old active memory retained until a replacement is approved. Opting out cannot erase injected context, transcripts or sandbox files. Context reproducibility, adoption approval and confidentiality are different contracts. [[sources/open-inspect--background-agents#memory-model]] [[sources/open-inspect--background-agents#memory-boundary]] [[sources/open-inspect--background-agents#skills-pinning]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] preserves intent above any one agent run and passes structured artifacts between phases. Its scheduled-intake template validates a proposal file, including an explicit no-proposal result; it does not infer structured output from final prose. The generic runner JSON reader is weaker, so output validation must be attributed to the actual consuming path. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#scheduled-intake]] [[sources/superplanehq--superplane#result-file]]

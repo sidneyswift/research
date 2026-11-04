@@ -103,3 +103,23 @@ Most agent failure modes at the edges are durability failures: a long task dies 
 ## MCP research connection — 2026-11-04
 
 [[concepts/mcp-extension-architecture]] distinguishes durable Tasks status/input/result retrieval from internal step checkpoint/replay. Creation must be durable before returning a handle, but cancellation is cooperative and domain-effect idempotency remains separate. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#tasks]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#task-errors-security]]
+
+## Simulation replay is a different guarantee — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] reports recomputing a deterministic game run from inputs to validate a high score. This is **simulation replay for verification**, not evidence of crash-safe agent execution or exactly-once external effects. Reusing the idea for an agent evaluation needs captured nondeterministic responses and controlled side effects; replaying a payment or publication is not equivalent to replaying game state. That adaptation is our boundary analysis, not an implementation claim about the game. [[sources/poteto--tibo-engineering#deterministic-replay]]
+
+## A long-running thread is not recovery evidence — 2026-11-04
+
+Matt Pocock proposes a persistent local domain thread coordinating a factory of sandboxed workers; the reusable coordination principle lives in [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]]. The screenshot specifies no checkpoint, replay, restart or effect-deduplication mechanism. It is a useful architecture proposal, not a new demonstrated example of this page's execution-durability guarantees. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#provenance-limits]]
+
+## Conversation recovery versus effect recovery — 2026-11-04
+
+[[artifacts/projects/codex]] persists canonical history separately from query metadata and reconstructs history against valid compaction boundaries. A remote executor reconnect is limited by destination retention; this does not establish the step-replay/exactly-once properties described for other runtimes. Compare the recovery unit and already-issued external effects explicitly. [[sources/openai--codex#storage]] [[sources/openai--codex#replay]] [[sources/openai--codex#executor]]
+
+## Open Inspect: Checkpoint, retirement and uncertain execution
+
+[[artifacts/projects/background-agents]] distinguishes recoverable workspace capture from confirmed retirement of the source execution. Generation/operation fences reject stale results; interrupted prompts are failed and continuation paused rather than automatically replayed. Ordinary non-destructive checkpoints have a narrower settlement path than shutdown. This complements Eve’s durable-step model: preserving a filesystem cannot undo an external effect or establish its safe replay. [[sources/open-inspect--background-agents#generation-fence]] [[sources/open-inspect--background-agents#checkpoint]] [[sources/open-inspect--background-agents#continuation]] [[sources/open-inspect--background-agents#shutdown-design]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] persists event/queue/execution state before notification and recovers through pending-state scans. Runner completion hashes make identical terminal reports idempotent, not arbitrary remote effects. Finalization waits for tracked work to drain. Critically, copied node configuration coexists with live graph routing: specify the snapshot unit before claiming deterministic replay. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#execution-state]]

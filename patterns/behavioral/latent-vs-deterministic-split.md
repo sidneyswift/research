@@ -122,3 +122,27 @@ Schmid illustrates the model generating a script while code handles API composit
 ## MCP research connection — 2026-11-04
 
 [[concepts/skills-over-mcp]] assigns selection to user/model and raw-byte digest/size/origin checks to the host. [[artifacts/projects/openai-mcp-extensions]] exposes concrete schema/continuation parsing and explicit write outcomes; these are inspected mechanisms, not executed security guarantees. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]], [[sources/openai--mcp-extensions#form-client]], [[sources/openai--mcp-extensions#write-client]]
+
+## Tibo supporting report — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] makes the split concrete at several product boundaries: a discovered issue becomes lint; `.hot.ts` selects an allocation ban; first-download size can fail the build; a server recomputes a run instead of trusting the submitted score. These are author-reported mechanisms, not locally tested implementations. The judgment lies in choosing the right constraints and representing reality faithfully; executing a deterministic check does not establish that its premises or scope are adequate. [[sources/poteto--tibo-engineering#defect-lints]] [[sources/poteto--tibo-engineering#hot-paths]] [[sources/poteto--tibo-engineering#download-budget]] [[sources/poteto--tibo-engineering#deterministic-replay]]
+
+## Skill++ comparison — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] combines model-written descriptions, exclusions and name qualifiers with deterministic parsing, length checks, ranked reference selection, bounded retries and original-record preservation. Passing syntactic checks does not establish body fidelity; the semantic step still needs outcome evaluation. Supporting paper comparison only; existing artifact count unchanged. [[sources/zhang--skill-plus-plus#implementation]]
+
+## Semantic compilation comparison — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] parallelizes model extraction while serializing shared-name commits in canonical order; query SQL remains model-generated, with deterministic checks and bounded repair around it. The useful guarantee is specific: ordered mutation is not deterministic semantic generation. Supporting comparison only; existing pattern count unchanged. [[sources/nvidia--auto-ontology#ordered-commits]] [[sources/nvidia--auto-ontology#llm-sql]]
+
+## Runtime contracts around model judgment — 2026-11-04
+
+[[artifacts/projects/codex]] combines model-led work with deterministic identity resolution, shared/exclusive tool admission, state transitions and trace reduction. Each mechanism constrains a particular boundary; none upgrades a model's answer to semantic proof. Supporting comparison, not a benchmark. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#parallel-tools]] [[sources/openai--codex#trace-tests]]
+
+### Open Inspect — deterministic admission around model work
+
+[[artifacts/projects/background-agents]] implements generation fences, prompt request identity, retry classification and export-budget failure outside the model. A runtime-owned no-retry boundary before ambiguous enqueue prevents a second launch from being mistaken for harmless recovery. The policy is narrower than exactly-once external effects. [[sources/open-inspect--background-agents#generation-fence]] [[sources/open-inspect--background-agents#automation-retry]] [[sources/open-inspect--background-agents#automation-delivery]] [[sources/open-inspect--background-agents#export-code]]
+
+## SuperPlane — 2026-11-04
+
+Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts for implementation and review, deterministic graph steps for structured output/PR attachment, and server-owned confidence bands. The boundary is explicit, but a syntactically valid output does not prove a semantically correct change. [[sources/superplanehq--superplane#implementation-template]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#scheduled-intake]]

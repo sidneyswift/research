@@ -1,0 +1,433 @@
+{
+  "repository": "https://github.com/open-inspect/background-agents",
+  "retrieved": "2026-11-04",
+  "commit": "4b7f4e430dbb5c29cf776de41151365d1196d737",
+  "tree": "14bc56ad868806ba181fd467f6a486de18a9c461",
+  "commit_date": "2026-11-04T18:38:56+05:30",
+  "tracked_entries": 3239,
+  "shallow_history": true,
+  "preservation": "Complete tracked tree and Git metadata stored in ignored local clone; manifest and evidence hashes committed. Not all historical branches or releases.",
+  "inspection": "Selected documentation, implementation paths and focused test assertions; no installation, build, application test execution, inference or deployment.",
+  "github": {
+    "full_name": "open-inspect/background-agents",
+    "description": "An open-source background agents coding system",
+    "stargazers_count": 3453,
+    "forks_count": 504,
+    "default_branch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  },
+  "evidence_ranges": [
+    {
+      "anchor": "root",
+      "path": "README.md",
+      "start": 1,
+      "end": 90,
+      "sha256": "786769f439ce38899a08a62d03098dbf957f5e67630d0a244ee8489f9bde33df"
+    },
+    {
+      "anchor": "architecture",
+      "path": "docs/HOW_IT_WORKS.md",
+      "start": 37,
+      "end": 250,
+      "sha256": "37d71003c85b2f84c4de39ca1756eaa2f54169e808072db1b1d6d320bf48493d"
+    },
+    {
+      "anchor": "boot",
+      "path": "docs/HOW_IT_WORKS.md",
+      "start": 271,
+      "end": 443,
+      "sha256": "37d71003c85b2f84c4de39ca1756eaa2f54169e808072db1b1d6d320bf48493d"
+    },
+    {
+      "anchor": "boot-code",
+      "path": "packages/sandbox-runtime/src/sandbox_runtime/repository_boot.py",
+      "start": 285,
+      "end": 334,
+      "sha256": "c292954f7c288f41853656fb0b719e01ac9fe57e3a8f577909a9c69932daba55"
+    },
+    {
+      "anchor": "boot-code",
+      "path": "packages/sandbox-runtime/src/sandbox_runtime/repository_hooks.py",
+      "start": 30,
+      "end": 100,
+      "sha256": "f5c8d0abf833b28f8850a80c9d0a5d952d9b36ba27d1c4f7936caddd64b8ca38"
+    },
+    {
+      "anchor": "harness",
+      "path": "docs/HOW_IT_WORKS.md",
+      "start": 556,
+      "end": 581,
+      "sha256": "37d71003c85b2f84c4de39ca1756eaa2f54169e808072db1b1d6d320bf48493d"
+    },
+    {
+      "anchor": "harness",
+      "path": "packages/sandbox-runtime/src/sandbox_runtime/harness/base.py",
+      "start": 1,
+      "end": 194,
+      "sha256": "95f470244006de531f08315a82145df5e43510e2a903ffb359b769934ca26927"
+    },
+    {
+      "anchor": "completion",
+      "path": "packages/sandbox-runtime/src/sandbox_runtime/activity_supervisor.py",
+      "start": 108,
+      "end": 139,
+      "sha256": "fc4023fcf4b88e989c313f3f8c427b918543dc2d4e009147dd8e1b52eb7cb218"
+    },
+    {
+      "anchor": "attribution",
+      "path": "docs/HOW_IT_WORKS.md",
+      "start": 594,
+      "end": 627,
+      "sha256": "37d71003c85b2f84c4de39ca1756eaa2f54169e808072db1b1d6d320bf48493d"
+    },
+    {
+      "anchor": "protocol",
+      "path": "docs/adr/0002-shared-session-contracts-and-correlation-boundary.md",
+      "start": 1,
+      "end": 56,
+      "sha256": "cd7ff5ec32ccdf3aee52220e693acddd1b24c085b09c355b4a45897e15ea7109"
+    },
+    {
+      "anchor": "snapshot-handoff",
+      "path": "docs/adr/0003-session-snapshot-handoff.md",
+      "start": 1,
+      "end": 62,
+      "sha256": "6851c757ca6bbb4965b8613c989559ed7750bd627594495b9a714690e0415bb1"
+    },
+    {
+      "anchor": "snapshot-handoff",
+      "path": "packages/control-plane/src/session/connection-authenticator.ts",
+      "start": 452,
+      "end": 541,
+      "sha256": "1ae6e3d369767a911108274a40cce73996879916c6687806c73ec7f5c3cecd32"
+    },
+    {
+      "anchor": "snapshot-handoff",
+      "path": "packages/control-plane/src/session/websocket-manager.ts",
+      "start": 356,
+      "end": 408,
+      "sha256": "820dbce2f61e79a0f28c4683afd8ee1d8fff88dd52cdcfd8cf98e49e06a52e00"
+    },
+    {
+      "anchor": "shutdown-design",
+      "path": "docs/adr/0004-sandbox-checkpoint-and-shutdown.md",
+      "start": 1,
+      "end": 153,
+      "sha256": "4780a01f19633901693b213353614547c6a50680d9ed0d367f43a715f86d9adf"
+    },
+    {
+      "anchor": "generation-fence",
+      "path": "packages/control-plane/src/session/sandbox-shutdown.ts",
+      "start": 157,
+      "end": 215,
+      "sha256": "e63a52813a10dd7dcd7f5aad3176b045bc00f68421317325d00d5269a0f8846d"
+    },
+    {
+      "anchor": "generation-fence",
+      "path": "packages/control-plane/src/session/sandbox-shutdown.ts",
+      "start": 381,
+      "end": 409,
+      "sha256": "e63a52813a10dd7dcd7f5aad3176b045bc00f68421317325d00d5269a0f8846d"
+    },
+    {
+      "anchor": "checkpoint",
+      "path": "packages/control-plane/src/session/sandbox-shutdown.ts",
+      "start": 812,
+      "end": 925,
+      "sha256": "e63a52813a10dd7dcd7f5aad3176b045bc00f68421317325d00d5269a0f8846d"
+    },
+    {
+      "anchor": "checkpoint",
+      "path": "packages/control-plane/src/session/checkpoint-settlement.ts",
+      "start": 9,
+      "end": 73,
+      "sha256": "c153a0df8f8caaf35c487826ed53f51e2f83ee9ea460993ab59f669e5d24cd3f"
+    },
+    {
+      "anchor": "continuation",
+      "path": "packages/control-plane/src/session/sandbox-shutdown.ts",
+      "start": 1016,
+      "end": 1068,
+      "sha256": "e63a52813a10dd7dcd7f5aad3176b045bc00f68421317325d00d5269a0f8846d"
+    },
+    {
+      "anchor": "continuation",
+      "path": "packages/control-plane/src/session/sandbox-shutdown.test.ts",
+      "start": 1258,
+      "end": 1330,
+      "sha256": "2aba8d28a1bacc47ee84ce5d16387d979881a5bc03743893867cd36f20b45225"
+    },
+    {
+      "anchor": "lifecycle-tests",
+      "path": "packages/control-plane/src/session/checkpoint-settlement.test.ts",
+      "start": 35,
+      "end": 118,
+      "sha256": "78c81cd8aed12edfe187005fcc9fac11022608b6213dd6e9f925671776f99bdd"
+    },
+    {
+      "anchor": "lifecycle-tests",
+      "path": "packages/control-plane/src/session/sandbox-shutdown-replacement.test.ts",
+      "start": 55,
+      "end": 108,
+      "sha256": "9d58cc2c7ec5c169451025df2552f42fa2e70c845e49fef2e94d50b5f9064840"
+    },
+    {
+      "anchor": "compatibility",
+      "path": "packages/control-plane/src/sandbox/lifecycle/shutdown-policy.ts",
+      "start": 1,
+      "end": 19,
+      "sha256": "7904497ea808a92f1d4b39803ebbce869b49c06650c00c8600208a7729682ee0"
+    },
+    {
+      "anchor": "child-scope",
+      "path": "packages/control-plane/src/routes/session-child-spawn.ts",
+      "start": 105,
+      "end": 118,
+      "sha256": "e4a09c313109e7fdb23a41d8d6eceea34dcea9b0689fb90a809e55dd1a7a295f"
+    },
+    {
+      "anchor": "child-scope",
+      "path": "packages/control-plane/src/routes/session-child-spawn.ts",
+      "start": 163,
+      "end": 240,
+      "sha256": "e4a09c313109e7fdb23a41d8d6eceea34dcea9b0689fb90a809e55dd1a7a295f"
+    },
+    {
+      "anchor": "child-scope",
+      "path": "packages/control-plane/src/routes/session-child-spawn.ts",
+      "start": 289,
+      "end": 345,
+      "sha256": "e4a09c313109e7fdb23a41d8d6eceea34dcea9b0689fb90a809e55dd1a7a295f"
+    },
+    {
+      "anchor": "child-followups",
+      "path": "docs/HOW_IT_WORKS.md",
+      "start": 529,
+      "end": 554,
+      "sha256": "37d71003c85b2f84c4de39ca1756eaa2f54169e808072db1b1d6d320bf48493d"
+    },
+    {
+      "anchor": "child-followups",
+      "path": "packages/control-plane/src/routes/session-children.ts",
+      "start": 187,
+      "end": 255,
+      "sha256": "07b69a2d938034dab3fd527a3612d2c33b46c52ed46dd8f92f381ed6fb3fe356"
+    },
+    {
+      "anchor": "child-followups",
+      "path": "packages/control-plane/src/session/http/handlers/child-sessions.handler.ts",
+      "start": 147,
+      "end": 202,
+      "sha256": "232dc5c31613b7d5b9135586326c5888708dfd9abce60cbb0706e431401f4eca"
+    },
+    {
+      "anchor": "authority",
+      "path": "docs/AUTH.md",
+      "start": 349,
+      "end": 385,
+      "sha256": "0a16899f13b2825bbcf9942eb9e8719d75870a53a25155c546ccd63bb6df3962"
+    },
+    {
+      "anchor": "authority",
+      "path": "docs/AUTH.md",
+      "start": 443,
+      "end": 477,
+      "sha256": "0a16899f13b2825bbcf9942eb9e8719d75870a53a25155c546ccd63bb6df3962"
+    },
+    {
+      "anchor": "authority",
+      "path": "docs/AUTH.md",
+      "start": 554,
+      "end": 582,
+      "sha256": "0a16899f13b2825bbcf9942eb9e8719d75870a53a25155c546ccd63bb6df3962"
+    },
+    {
+      "anchor": "credentials",
+      "path": "docs/AUTH.md",
+      "start": 572,
+      "end": 630,
+      "sha256": "0a16899f13b2825bbcf9942eb9e8719d75870a53a25155c546ccd63bb6df3962"
+    },
+    {
+      "anchor": "credentials",
+      "path": "packages/control-plane/src/session/scm-credentials-service.ts",
+      "start": 14,
+      "end": 77,
+      "sha256": "2f5f91b3d6e32ee04d2760b33ed7d095a69240f19b8c11e646a56fbd00fd11e1"
+    },
+    {
+      "anchor": "automation-delivery",
+      "path": "docs/AUTOMATIONS.md",
+      "start": 203,
+      "end": 233,
+      "sha256": "71b041b87e5b4360a58c77a23735b7164164f65648c316884248618c6f78966c"
+    },
+    {
+      "anchor": "automation-delivery",
+      "path": "packages/control-plane/src/scheduler/session-prompt.ts",
+      "start": 20,
+      "end": 82,
+      "sha256": "dffda3b8f8c75b67144e314117a15027b675e2ef6228481d74b8cc67928070de"
+    },
+    {
+      "anchor": "automation-delivery",
+      "path": "packages/control-plane/src/scheduler/session-prompt.ts",
+      "start": 95,
+      "end": 136,
+      "sha256": "dffda3b8f8c75b67144e314117a15027b675e2ef6228481d74b8cc67928070de"
+    },
+    {
+      "anchor": "automation-retry",
+      "path": "docs/AUTOMATIONS.md",
+      "start": 472,
+      "end": 492,
+      "sha256": "71b041b87e5b4360a58c77a23735b7164164f65648c316884248618c6f78966c"
+    },
+    {
+      "anchor": "automation-retry",
+      "path": "packages/control-plane/src/scheduler/run-launch-service.ts",
+      "start": 27,
+      "end": 170,
+      "sha256": "60e0b5fd78c64bd41a0d7c430d75f079d7f340b39babe50b22fa94a7ab899775"
+    },
+    {
+      "anchor": "automation-retry",
+      "path": "packages/control-plane/src/scheduler/launch-services.test.ts",
+      "start": 145,
+      "end": 238,
+      "sha256": "e3dac72b9f81f4e72e63640b0eb3393505a439ea4eec6821b99601f9fe6ce919"
+    },
+    {
+      "anchor": "automation-breaker",
+      "path": "docs/AUTOMATIONS.md",
+      "start": 605,
+      "end": 689,
+      "sha256": "71b041b87e5b4360a58c77a23735b7164164f65648c316884248618c6f78966c"
+    },
+    {
+      "anchor": "memory-model",
+      "path": "docs/MEMORY.md",
+      "start": 1,
+      "end": 14,
+      "sha256": "3d9d3ef7da5bdfbdcfc0bd994987dd2c08b07cdc57bcffe75a54a8373b4d3018"
+    },
+    {
+      "anchor": "memory-model",
+      "path": "docs/MEMORY.md",
+      "start": 56,
+      "end": 100,
+      "sha256": "3d9d3ef7da5bdfbdcfc0bd994987dd2c08b07cdc57bcffe75a54a8373b4d3018"
+    },
+    {
+      "anchor": "memory-model",
+      "path": "docs/MEMORY.md",
+      "start": 126,
+      "end": 166,
+      "sha256": "3d9d3ef7da5bdfbdcfc0bd994987dd2c08b07cdc57bcffe75a54a8373b4d3018"
+    },
+    {
+      "anchor": "memory-boundary",
+      "path": "docs/MEMORY.md",
+      "start": 25,
+      "end": 54,
+      "sha256": "3d9d3ef7da5bdfbdcfc0bd994987dd2c08b07cdc57bcffe75a54a8373b4d3018"
+    },
+    {
+      "anchor": "memory-boundary",
+      "path": "packages/control-plane/src/memory/session-rules.ts",
+      "start": 1,
+      "end": 58,
+      "sha256": "2fcddc94caab20fb64e31bf02223d8f13192ed4899243100da3bc6e993b00d51"
+    },
+    {
+      "anchor": "memory-boundary",
+      "path": "packages/control-plane/src/memory/session-memory-service.ts",
+      "start": 260,
+      "end": 309,
+      "sha256": "5342ab1a996bd94b96e67fa3afc7cf3838460274da4084485d2e655e33e879a5"
+    },
+    {
+      "anchor": "skills-pinning",
+      "path": "docs/MANAGED_SKILLS.md",
+      "start": 242,
+      "end": 302,
+      "sha256": "09711708b301d143b162778d3ba966223eb378d0e6ce20d6df4cb7397b5ba49d"
+    },
+    {
+      "anchor": "skills-validation",
+      "path": "packages/sandbox-runtime/src/sandbox_runtime/managed_skills.py",
+      "start": 205,
+      "end": 245,
+      "sha256": "b04f3307ebf1cf841302a6d5e70881ae627dfd3fd3f62237bca905cd15ff5176"
+    },
+    {
+      "anchor": "skills-validation",
+      "path": "packages/sandbox-runtime/src/sandbox_runtime/managed_skills.py",
+      "start": 280,
+      "end": 351,
+      "sha256": "b04f3307ebf1cf841302a6d5e70881ae627dfd3fd3f62237bca905cd15ff5176"
+    },
+    {
+      "anchor": "skills-install",
+      "path": "packages/sandbox-runtime/src/sandbox_runtime/managed_skills.py",
+      "start": 457,
+      "end": 609,
+      "sha256": "b04f3307ebf1cf841302a6d5e70881ae627dfd3fd3f62237bca905cd15ff5176"
+    },
+    {
+      "anchor": "export",
+      "path": "docs/TRACE_EXPORT.md",
+      "start": 1,
+      "end": 111,
+      "sha256": "64c1b65d79485282463fabb4d32d87f56e7badfa8b8bda565fdc957c68ab0366"
+    },
+    {
+      "anchor": "export-code",
+      "path": "packages/control-plane/src/session/services/message.service.ts",
+      "start": 193,
+      "end": 252,
+      "sha256": "19c47991aca0d7d6c9df9e9aa40205081aaa4c6ae995bb536b01114357e71a57"
+    },
+    {
+      "anchor": "export-code",
+      "path": "packages/control-plane/src/session/services/message.service.trace-export.test.ts",
+      "start": 268,
+      "end": 305,
+      "sha256": "3a218ced793d200ec313d32a4226719bbbefa8be34f7323b5636c6c6190ef141"
+    },
+    {
+      "anchor": "preview",
+      "path": "docs/verification/authenticated-preview.md",
+      "start": 1,
+      "end": 75,
+      "sha256": "4a67e9d8a4ab7ed93a34a407985bfcb74b359100623d8615ff9a34f5cb558c03"
+    },
+    {
+      "anchor": "portability",
+      "path": "docs/PORTABLE_SQL.md",
+      "start": 1,
+      "end": 62,
+      "sha256": "16783a1fa9d073a60fd9ad945348ec12561c455968991e2c549223ee25b66657"
+    },
+    {
+      "anchor": "portability",
+      "path": "docs/adr/0001-single-provider-scm-boundaries.md",
+      "start": 1,
+      "end": 53,
+      "sha256": "dbed82fa491b6e48c2e2ca9c71192a9de5ca4362bf412fbb2d638e94bcd960ac"
+    },
+    {
+      "anchor": "boot-code",
+      "path": "README.md",
+      "start": 292,
+      "end": 330,
+      "sha256": "786769f439ce38899a08a62d03098dbf957f5e67630d0a244ee8489f9bde33df"
+    }
+  ]
+}

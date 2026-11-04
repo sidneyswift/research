@@ -55,3 +55,7 @@ last-reviewed: 2026-06-20
 - **Is "Next.js for agents" a durable analogy or marketing?** Convention-over-configuration is the shared bet; whether eve's directory conventions reach the same "obvious in hindsight" status as Next.js routing is the thing to watch as adoption (and the star count) moves.
 - **Lock-in vs portability.** "eve runs only on Vercel" at preview, yet the Workflow SDK is open-source and "not inherently tied to Vercel," with a future "supported way to provide a different Workflow world" ([[sources/vercel--eve#docs-execution-model]]). How portable the runtime really becomes is the key strategic question for anyone adopting it.
 - **eve vs Codex / Claude Code head-to-head.** With eve ingested, the wiki finally has a harness to compare against the skill/plugin layers it already studies. A QUERY comparing eve's harness + evals + durability against Codex Goals ([[artifacts/projects/codex-goals]]) and the Claude Code plugin runtime would be high-value.
+
+## Related sandbox integration — 2026-11-04
+
+[[artifacts/projects/background-agents]] documents Vercel Sandbox as one supported execution backend. This is Open Inspect’s integration, distinct from [[artifacts/projects/eve]], and no provider deployment was exercised during ingestion. [[sources/open-inspect--background-agents#architecture]]

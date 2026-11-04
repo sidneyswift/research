@@ -86,3 +86,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## MCP research connection — 2026-11-04
 
 [[concepts/skills-over-mcp]] binds persisted approval to the complete URI/digest manifest and requires new approval when it changes. Protocol research adds another revision boundary: core version, extension wire revision, SDK and host support must be recorded separately. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]], [[sources/modelcontextprotocol--mcp-apps-docs#stable-version]], [[sources/openai--mcp-extensions#versions]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] records PR revisions, invalidates mergeability when the head changes and requires an expected SHA at merge. This is an additional narrower revision-freshness analogue, not evidence of the complete delta-view/structured-feedback-anchor mechanism. Status remains proposed and full-pattern example count stays one. [[sources/superplanehq--superplane#pr-revision]] [[sources/superplanehq--superplane#merge]]

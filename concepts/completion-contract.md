@@ -110,3 +110,15 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 ## Cross-system API research — 2026-11-04
 
 [[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.
+
+## Lifecycle label versus acceptance evidence — 2026-11-04
+
+The current source update in [[artifacts/projects/codex-goals]] narrows the earlier documentation-level account. Its handler constrains legal lifecycle states and persists usage/status; the inspected path does not run arbitrary acceptance checks before storing complete. Keep the verification surface explicit even when a product offers a completion state. [[sources/openai--codex#goal-tools]]
+
+## Open Inspect: Terminal event, saved state and user outcome
+
+[[artifacts/projects/background-agents]] makes one activity supervisor select turn termination above interchangeable harnesses. That local once-only selection does not certify task correctness or exactly-once external delivery. Shutdown adds two more independently evidenced facts—saved state and source retirement—and pauses interrupted work. An “accepted” recovery command is still not a completed restoration. [[sources/open-inspect--background-agents#completion]] [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#shutdown-design]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] separates task intent, workflow quiescence, runner exit/result, retained-log acknowledgement, model judgment and revision-bound merge admission. A run with no queued work may be finished without proving the requested behavior; a schema-valid score is still a judgment. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-protocol]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#merge]]

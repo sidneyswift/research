@@ -2,10 +2,10 @@
 domain: concepts
 type: concept
 name: agent-control-plane
-creators: ["[[creators/humanlayer]]"]
-sources: ["[[sources/humanlayer--humanlayer]]"]
+creators: ["[[creators/humanlayer]]", "[[creators/matt-pocock]]"]
+sources: ["[[sources/humanlayer--humanlayer]]", "[[sources/mattpocock--domain-orchestrator-factory]]"]
 status: emerging
-last-reviewed: 2026-10-23
+last-reviewed: 2026-11-04
 ---
 
 # agent-control-plane
@@ -16,6 +16,8 @@ last-reviewed: 2026-10-23
 
 HumanLayer runs agents on selected hosts while desktop and browser clients share an API-backed view of tasks and sessions. A task is the durable container for related conversations, files, and review. A session carries one conversation's model settings, working directory, messages, and run state. A host supplies execution resources; a workspace supplies checkouts. These are separate lifecycles, not interchangeable labels. “Control plane” is our architectural interpretation of those source structures. [[sources/humanlayer--humanlayer#task-model]], [[sources/humanlayer--humanlayer#remote-hosts]], [[sources/humanlayer--humanlayer#domain-model]]
 
+A related proposed shape puts a local, long-running, single-domain conversation in front of a CLI-controlled software factory. Matt Pocock describes the orchestrator managing threads, retrospectives and recurring jobs while sandboxed workers implement and explore and the human speaks in plain language. This adds a human-facing coordination role to the separation, without proving persistence or sandbox guarantees. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#cli-control]] [[sources/mattpocock--domain-orchestrator-factory#operating-loop]] [[sources/mattpocock--domain-orchestrator-factory#human-interface]]
+
 ## Where it came from
 
 The observed implementation is HumanLayer's Riptide monorepo at commit `2f66a45b186d88488fa356862be0117db1ccae9f`. The general control-plane/data-plane distinction predates this project; this page tracks its concrete application to collaborative coding agents rather than asserting an invention claim. [[sources/humanlayer--humanlayer#root]]
@@ -24,6 +26,30 @@ The observed implementation is HumanLayer's Riptide monorepo at commit `2f66a45b
 
 When the conversation is the only container, changing models, restarting an agent, or handing work to a teammate can fragment the work. A stable task and artifact layer makes those changes ordinary lifecycle operations. Separating execution from steering also lets a browser user operate near-private-infrastructure agents without moving the entire development environment into the browser. The resulting complexity is justified only if those capabilities are needed. [[sources/humanlayer--humanlayer#task-model]], [[sources/humanlayer--humanlayer#remote-hosts]]
 
+## Principle: persistent domain orchestration with sandboxed execution
+
+**Keep the human-facing coordinator continuous and domain-focused; delegate implementation and exploration to a separate execution system.** Pocock proposes a local, long-running thread, potentially using `/chief-of-staff`, attached through a CLI to a factory of sandboxed workers. The coordinator would manage threads, run retrospectives and accumulate cron jobs; the human would steer it in plain language. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#sandboxed-factory]] [[sources/mattpocock--domain-orchestrator-factory#cli-control]] [[sources/mattpocock--domain-orchestrator-factory#operating-loop]] [[sources/mattpocock--domain-orchestrator-factory#human-interface]]
+
+| Layer | Proposed responsibility | Evidence boundary |
+| --- | --- | --- |
+| Human | Express goals and steering in ordinary language | No evaluated interface or ambiguity-resolution protocol shown |
+| Local domain orchestrator | Maintain one domain thread; coordinate factory work, retrospectives and recurring jobs | Long-running conversation proposed; recovery, context management and permissions unspecified |
+| Factory CLI | Provide the interface for the orchestrator to manage work/threads | No command schema, lifecycle protocol or idempotency contract shown |
+| Sandboxed workers | Implement and explore away from the coordinating thread | Isolation intended; filesystem, network, credential and host boundaries unspecified |
+
+The table restates responsibilities in the screenshot and names what it does not establish. The author is **considering a trial**, not reporting a successful implementation. [[sources/mattpocock--domain-orchestrator-factory#proposal-status]] [[sources/mattpocock--domain-orchestrator-factory#provenance-limits]]
+
+Portable adaptations, not extra claims about the proposed system:
+
+1. **Scope continuity to a domain.** Retain its goals, decisions and unresolved work without making one conversation the owner of every unrelated project. The source proposes one domain; the context-contamination rationale is our inference. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]]
+2. **Separate continuity from worker lifetime.** Keep task identity, work products and resumable state outside any single process if continuity must survive interruption. A long-running chat alone is not a durable execution mechanism. This adaptation combines the proposal with the observed task/session separation, rather than attributing storage semantics to the screenshot. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/humanlayer--humanlayer#task-model]]
+3. **Make the execution interface explicit.** Use bounded work orders and inspectable task status/results at the CLI boundary. Establish failure and retry behavior before relying on it for unattended work; a command interface by itself supplies neither safety nor exactly-once execution. [[sources/mattpocock--domain-orchestrator-factory#cli-control]] [[sources/humanlayer--humanlayer#runtime-boundary]]
+4. **Isolate workers at a real enforcement boundary.** Match filesystem, network and credential access to the task. The word sandbox is not an implementation specification, and a separate thread or worktree does not establish containment. [[sources/mattpocock--domain-orchestrator-factory#sandboxed-factory]] [[sources/humanlayer--humanlayer#permissions]]
+5. **Close the operating loop.** Have retrospectives turn observed recurring work into maintained routines, with purpose, owner, budget and stop conditions. The post proposes retrospectives and cron accumulation; those ownership/budget controls are our adaptation, not a reported feature. [[sources/mattpocock--domain-orchestrator-factory#operating-loop]]
+6. **Keep the human interface at the level of intent.** Translate plain-language goals into worker assignments and return outcomes, evidence and decisions. Do not require the human to manage thread IDs or CLI commands to use the system. [[sources/mattpocock--domain-orchestrator-factory#human-interface]]
+
+**Adoption trigger:** recurring work in one domain where repeatedly rebuilding context and manually coordinating execution is a real cost. For one isolated task, the extra persistent coordinator/factory machinery has not earned its complexity. This is a proposed decision rule; the screenshot supplies no cost or outcome measurements. [[sources/mattpocock--domain-orchestrator-factory#proposal-status]]
+
 ## Evidence & claims
 
 - **Documented product model:** several sessions share a task's files and comments; a fresh session need not discard task context. [[sources/humanlayer--humanlayer#task-model]]
@@ -31,6 +57,8 @@ When the conversation is the only container, changing models, restarting an agen
 - **Implemented dispatch discipline:** for V2 workspace launches, replicated state wakes a session actor, which consults authoritative readiness before launching work. [[sources/humanlayer--humanlayer#authoritative-recheck]]
 - **Implemented visibility separation:** recoverable event history and live UI delivery have different failure contracts. [[sources/humanlayer--humanlayer#event-log]], [[sources/humanlayer--humanlayer#stream-recovery]]
 - **Boundary:** agents inherit the access of the operating-system user running the daemon; a Git worktree is not a security sandbox. [[sources/humanlayer--humanlayer#remote-hosts]], [[sources/humanlayer--humanlayer#permissions]]
+
+- **Proposed architecture:** a local single-domain orchestrator controls sandboxed implementation/exploration through a CLI, with retrospective and scheduled-work responsibilities. No completed trial or current `/chief-of-staff` source was verified. [[sources/mattpocock--domain-orchestrator-factory#root]]
 
 ## Patterns demonstrated
 
@@ -45,9 +73,13 @@ When the conversation is the only container, changing models, restarting an agen
 - **Recoverable history is not exactly-once tool execution.** An ordered, idempotent event append does not make an email, deployment, or shell command transactional. Provider runtime internals are partly external dependencies. [[sources/humanlayer--humanlayer#event-log]], [[sources/humanlayer--humanlayer#runtime-boundary]]
 - **Provider interchangeability has limits.** Different agents retain different local history and permission behavior. The host-persistence documentation explicitly distinguishes Claude's local history from HumanLayer-stored Codex conversations. [[sources/humanlayer--humanlayer#remote-hosts]]
 
+- **Long-lived is not durable; local is not automatically private.** The proposal does not specify checkpoint/replay, context compaction, backend data movement or isolation enforcement. Treat those as design questions, not consequences of its labels. [[sources/mattpocock--domain-orchestrator-factory#provenance-limits]]
+
 ## Timeline
 
 - 2026-10-23 — Extracted from HumanLayer's task/host documentation, schemas, session actor, event storage, and authorization paths. [[sources/humanlayer--humanlayer#root]]
+
+- 2026-11-04 — Ingested a supplied screenshot of Matt Pocock's proposed domain-orchestrator/factory combination; original publication date unknown. [[sources/mattpocock--domain-orchestrator-factory#root]]
 
 ## Related
 
@@ -64,6 +96,8 @@ When the conversation is the only container, changing models, restarting an agen
 - **Keep durable history separate from a disposable viewing connection.** UI disconnection should not erase work; recovery paths should be bounded. [[sources/humanlayer--humanlayer#event-log]], [[sources/humanlayer--humanlayer#stream-recovery]]
 - **Expose capability differences instead of pretending every provider is identical.** Preserve a useful common contract while stating real resume and permission limits. [[sources/humanlayer--humanlayer#runtime-boundary]]
 - **Make automation a short-lived instance of the same control plane.** An ephemeral daemon can produce a normal, reviewable session, with stable task history and process exit semantics. [[sources/humanlayer--humanlayer#automation]]
+
+- ★ **Pair a persistent domain coordinator with a separate worker factory.** Plain-language human steering, CLI task control, sandboxed implementation/exploration and retrospective/recurring-work loops are the proposed bundle. See the dedicated principle section for all six adaptations and their limits. [[sources/mattpocock--domain-orchestrator-factory#root]]
 
 ## Open questions
 
@@ -90,3 +124,19 @@ When the conversation is the only container, changing models, restarting an agen
 ## MCP research connection — 2026-11-04
 
 [[concepts/mcp-enterprise-managed-authorization]] covers identity and token issuance, not a complete execution/audit control plane. [[concepts/mcp-extension-architecture]] Tasks adds a narrower durable wire handle; [[analyses/mcp-and-extensions]] compares the layers without asserting workflow replay. [[sources/modelcontextprotocol--mcp-authorization-docs#enterprise-policy-limit]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#tasks]]
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] adds a complementary evidence loop: a persistent coordinator can query historical runs, schedule bounded investigations and convert confirmed findings into regression evals. The coordinator is not the trace store, and a reported pattern is not permission to mutate the product. Loop docs distinguish scheduled Braintrust write permissions from connected MCP authority and note that created scoring rules outlive their creator. This is a documented product comparison, not evidence that Matt Pocock's proposed factory was implemented. [[sources/ankrgyl--trace-lake#trace-to-eval]] [[sources/ankrgyl--trace-lake#automation-authority]]
+
+## Shared runtime, separate execution — 2026-11-04
+
+[[artifacts/projects/codex]] separates client lifecycle, model/tool loop, thread storage and process executor. TUI/exec share an in-process app-server facade; remote forwarding does not replay RPCs or persist execution state. This is an implemented boundary comparison, not a claim that all control planes provide the same durability. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#executor]]
+
+## Open Inspect: Hosted background sessions
+
+[[artifacts/projects/background-agents]] separates client presence, canonical session/queue state and sandbox execution generation. Its reconnect design favors a bounded canonical snapshot, with synchronous final read/send/socket registration, over a duplicate retained view log. Lifecycle ownership also stays centralized: clients consume recovery eligibility rather than reconstructing provider policy. This is a concrete implementation beside the earlier domain-orchestrator proposal, not proof that all provider recovery paths have been exercised. [[sources/open-inspect--background-agents#architecture]] [[sources/open-inspect--background-agents#snapshot-handoff]] [[sources/open-inspect--background-agents#shutdown-design]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] adds a workflow-centered example: a Work Order persists across automation runs, while per-key queues, PR mutation ownership and runner fleets handle different coordination scopes. Human requirements and model confidence checks are different mechanisms; neither a canvas nor a score alone grants execution authority. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#queue]] [[sources/superplanehq--superplane#pr-coordination]] [[sources/superplanehq--superplane#approval]]

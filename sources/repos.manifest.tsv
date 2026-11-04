@@ -21,3 +21,9 @@ kody-hq--kody	https://github.com/kody-hq/kody.git	9d96cfb916552b889ee8989027618b
 deepseek-ai--dsh-superagent-prototype	https://github.com/deepseek-ai/dsh-superagent-prototype.git	6337fc823ce20251c8de8085948165c81aaa701e	-
 
 openai--mcp-extensions	https://github.com/openai/mcp-extensions.git	9e6d418439cca0790bece62f6cd886ad4c04f133	-
+
+nvidia--auto-ontology	https://github.com/NVIDIA/auto-ontology.git	caced11e69e19663dfa0f73778dbecbcb71e87a0	-
+nvidia--auto-ontology-eval	https://github.com/NVIDIA/auto-ontology-eval.git	ec41b2c5b795637759297b90c1d19b42693200f9	-
+openai--codex	https://github.com/openai/codex.git	021fccb046508938c4754982efccfb51d6e8356e	-
+open-inspect--background-agents	https://github.com/open-inspect/background-agents.git	4b7f4e430dbb5c29cf776de41151365d1196d737	-
+superplanehq--superplane	https://github.com/superplanehq/superplane.git	7d755d16b8ae836ecebf61639efc6266d74a4b0b	-

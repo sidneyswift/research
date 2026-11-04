@@ -93,3 +93,7 @@ This is the same "concision pays off session after session" logic that motivates
 ## Cross-system API research — 2026-11-04
 
 [[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.
+
+## Executable business-meaning comparison — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] moves beyond a prose glossary: terms bind to columns, measures to SQL and relationships to joins. Its modeling guidance requires identity, population, grain, units, denominators, validity and counterexamples. This complements Pocock's vocabulary discipline rather than replacing a small project glossary with a service by default. Similar names and matching sample rows do not establish equivalent business concepts. [[sources/nvidia--auto-ontology#architecture]] [[sources/nvidia--auto-ontology#measure-contracts]]

@@ -625,8 +625,107 @@ Verified all sixteen immutable snapshot hashes, new-page wikilinks/registered so
 - Extended [[artifacts/projects/mcp-apps]] and [[artifacts/projects/openai-mcp-extensions]] with component-versus-full-page reuse, app-only versus model tool inventories, outer-tool rendering and current source discrepancies. Registry metadata confirms publication but not a working combined SDK installation. Updated the stale MCP consumer routing row in `for-builders.md`; no new wiki node or promotion of the draft synthesis.
 - No package installation, host connection, OAuth exchange, deployment or business operation was performed. Flex-specific architecture and candidate module choices stay in Flex Stack.
 
+## [2026-11-03] ingest | tibo.dog — executable engineering principles
+
+- Pulled `origin main` in `sidneyswift/research` (fast-forward `f69f7e7` → `258b514`) before ingestion. Added [[sources/poteto--tibo-engineering]] and [[artifacts/projects/tibo-dog]]: full `note_tweet.text`, parent announcement, four visually inspected images with hashes, and dated game-home/About captures. Ordinary API text was truncated; the full post contains 14 bullets.
+- Extracted 16 portable principles with adoption triggers/limits, including defect → guard, path-scoped lint, subsystem formal checks, deterministic replay, server-side recomputation, payload budgets, outcome-driven headless tuning, procedural assets and distribution-aware design. Connected creator, pstack/poteto-mode/statechart, verification fidelity, durable execution and three existing patterns. All game implementation/performance claims remain author reports; no game code, model checker or benchmark ran.
+- Kept [[patterns/quality-bar/defect-derived-validation]] proposed with one full corpus-scale example: a local issue-to-lint loop does not establish measured corpus validation. Preserved the post's ten-language claim and the later site's 27-language description separately.
+- Validation: staged whole-wiki doctor checked 2,255 pages, score 50/100 unchanged; zero new broken links, orphans, missing sections, stale findings or gitlinks. Existing backlog: 7 broken links, 87 stale-review entries, 39 stale-signal entries. Targeted check passed 89 added unique page→target links, including 51 registered source-anchor references; four asset hashes, snapshot line bounds, 14 source bullets and 16 extracted principles verified. Authored-file whitespace check passed; immutable raw captures retain upstream formatting. Ratchet: links +89 (unique per page, excluding raw captures) · orphans +0 · patterns +0 (three existing pattern comparisons extended). Terminal state: success for the requested author-report ingestion; game implementation/runtime validation remains explicitly unverified.
+
+## [2026-11-03] reflect | complete social-source evidence
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] to source acquisition: [[_schemas/source]] now checks expanded text, relevant conversation context, meaningful attachments and separately dated linked pages. Grounded in the actual truncated preview and image-only counterexamples; ledger entry 55 in [[meta/self-improvements]]. No new agent workflow or speculative validator built.
+
+## [2026-11-03] ingest | verification over abstract adversarial review
+
+- Preserved [[sources/poteto--verification-over-adversarial-review]] as the supplied screenshot, hash and visible-text transcription. Original post URLs/publication dates remain unknown (bounded X lookup unauthorized; public search empty). No private conversation metadata was published.
+- Added principle 17 to [[artifacts/projects/tibo-dog]]; canonical operational synthesis in [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]]. Updated creator, toolkit/skill qualification, verification-fidelity and evidence-gating links, indexes and inventory. Kept the pinned pstack source intact: reported reduced Interrogate usage is not verified removal.
+- Validation: 50 added unique page→target links checked, including 21 registered source-anchor references and 9 section-heading references; screenshot SHA-256 and 17-principle/36-source counts verified. Staged wiki doctor checked 2,257 pages, score 50/100 unchanged, with zero new broken links, orphans, missing sections, stale findings or gitlinks. Whitespace check passed; earlier immutable game captures unchanged. Ratchet: links +50 (unique per page, excluding raw capture) · orphans +0 · patterns +0. Terminal state: success for screenshot-scoped ingestion; canonical post URLs/dates and current-package change remain explicitly unverified.
+
+## [2026-11-03] reflect | verification-budget routing
+
+- Added a focused `for-builders.md` route to the existing canonical principle and fidelity concept; recorded in [[meta/self-improvements]]. The evidence loop here is source/readback plus mechanical link checks, not speculative review fan-out. No new validator or installed skill change was needed.
+
+## [2026-11-04] ingest | persistent domain orchestrator plus sandboxed factory
+
+- Added [[sources/mattpocock--domain-orchestrator-factory]] with the supplied screenshot, SHA-256 and visible-text transcription. Original URL/publication date unavailable; a bounded public lookup returned no result. The screenshot describes a possible trial, not a demonstrated deployment.
+- Extended [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] with the six-part principle: one-domain continuity, separate worker lifetimes, explicit CLI control, real isolation, retrospective/recurring-work loop and plain-language human steering. Linked super-agent architecture, execution-durability limits, Matt's creator/pack pages and indexes. Did not attribute Matt's proposal to the tibo game or alter pinned skill inventories.
+- Validation: 39 added unique page→target links checked, including 17 registered source-anchor references and 9 section-heading references; screenshot SHA-256 and 37-source/20-concept counts verified. Staged wiki doctor checked 2,259 pages, score 50/100 unchanged, with zero new broken links, orphans, missing sections, stale findings or gitlinks. Whitespace check passed; tibo page and earlier raw captures unchanged. Ratchet: links +39 (unique per page, excluding raw capture) · orphans +0 · patterns +0. Terminal state: success for screenshot-scoped proposal ingestion; canonical post URL/date and runtime outcomes remain unverified.
+
+## [2026-11-04] reflect | domain-orchestrator builder route
+
+- Added the canonical architecture-principle route to `for-builders.md`, distinguishing proposal from implementation evidence and linking durability limits; recorded in [[meta/self-improvements]]. No new runtime, cron, agent or installed skill changes were needed.
+
+## [2026-11-04] ingest | Ankur Goyal — The Trace Lake
+
+- Added [[concepts/trace-lake]] with 18 portable principles: queryable execution history, cohort investigation, reproducibility context and focused recurring evals. Connected verification-first review, persistent orchestration, compounding, model fidelity and existing quality patterns without promoting proposed patterns. Added Ankur Goyal and Braintrust creator pages.
+- Preserved [[sources/ankrgyl--trace-lake]]: all 34 article blocks, both embedded SQL examples, official post metadata, full public-mirror JSON, inspected title cover and eight linked primary-page captures. Separated author/vendor assertions from executed evidence; recorded retention-window, inference-residency, query-grain, benchmark-scope and automation-lifetime limits. No product or benchmark was run.
+- REFLECT applied: builder route for production-trace → evaluation work, recorded in [[meta/self-improvements]]. Validation: 34/34 text/atomic blocks preserved, 2/2 SQL blocks exact, 16 captured asset hashes verified, new wiki links/anchors resolve, staged whitespace check passes. Doctor remains 50/100 with zero new findings (existing link/staleness debt unchanged). Inventory: 21 concepts, 16 creators, 38 sources.
+- ratchet: links +91 · orphans +0 · patterns +0 (existing patterns compared; no promotion).
+
+## [2026-11-04] ingest | Skill++ — lifelong skill routing
+
+- Added [[concepts/lifelong-skill-routing]] and [[creators/hanrong-zhang]] from [[sources/zhang--skill-plus-plus]] (arXiv 2611.00544v1). Read all 20 pages, references and Appendices A–C; inspected the method diagram, error chart and result tables. Distilled 21 portable lessons, with method details, baselines, random-addition comparison, plasticity, ablations and native-harness limits.
+- Kept the headline 36.4%→76.3% full required-skill coverage separate from the smaller random-stream effect and the distinct +4.0/+0.7-point hidden-test pass gains. Reported experiments are not independent replication; no author implementation release was located in the bounded source/search pass.
+- Preserved 31 full-source/derived evidence files locally with hashes and version-pinned restoration instructions; the public repository contains original synthesis and provenance, not the full paper. Updated routing, authoring, invocation, evaluation, trace-loop and model-provider cross-links; existing pattern counts/statuses unchanged.
+- Validation: 20/20 PDF page extractions match readback; all 31 capture hashes match; 21-principle and 22-concept/17-creator/39-source inventories verified. New links and registered source anchors resolve. Staged doctor remains 50/100 across 2,272 Markdown files, with no new findings (existing line-offset shifts normalized); whitespace checks pass. Ratchet: links +96 (unique page→target) · orphans +0 · patterns +0. Terminal state: paper ingestion complete; experimental replication remains unperformed.
+
+## [2026-11-04] reflect | routing-neighborhood evidence
+
+- Applied a library-relative routing check to [[_schemas/skill]] and a targeted consumer route in `for-builders.md`; grounded in [[concepts/lifelong-skill-routing]], [[patterns/composition/resolver-routing-table]] and [[patterns/quality-bar/complexity-ratchet]]. Recorded in [[meta/self-improvements]] Pass 21. Installed skills, production routing and runtime infrastructure unchanged.
+
+## [2026-11-04] ingest | NVIDIA Auto-Ontology
+
+- Added [[artifacts/projects/auto-ontology]] and [[creators/nvidia]] from two pinned source repositories: [[sources/nvidia--auto-ontology]] at `caced11e69e19663dfa0f73778dbecbcb71e87a0` and [[sources/nvidia--auto-ontology-eval]] at `ec41b2c5b795637759297b90c1d19b42693200f9`. Source clones remain ignored, restorable evidence; citation maps and dated GitHub/structural metadata are committed.
+- Extracted 26 portable principles covering business question/measure/relationship contracts, parallel extraction with ordered mutation, curated MCP, caller identity, evidence-bearing answers, bounded recovery, exact publication readback and run-health-aware evaluation. Integrated seven existing concepts and five existing patterns without promoting statuses or changing example counts.
+- Recorded implementation-versus-guidance limits: connection configuration is not liveness; entity coverage is not correctness; certification flags are not atomic promotion or a certified-only serving policy. SQL remains model-generated; soft checks may be skipped. The evaluator compares a full agent with a one-shot schema control and pins a different application revision; no isolated causal accuracy claim is made.
+- Offline structural checks counted 119 HTTP operations, seven generated and two custom MCP tools, and verified canonical/packaged OpenAPI byte parity. Selected code, docs, skill guidance, architecture image and test assertions inspected. No application installed, source database connected, model job launched, benchmark run or upstream test suite executed.
+- Validation: both source maps pass (36 registered anchors, 125 citation occurrences, 49 immutable line ranges across 42 files). Checked 124 added unique page→target links, including 73 source-anchor links, and all three new relative file links. Both clone pins are clean/ignored; 26-principle and 8-project/18-creator/22-concept/41-source counts verified. Staged doctor remains 50/100 across 2,276 Markdown files with zero new findings; inherited seven broken links and review/signal staleness remain. Whitespace check passes. Ratchet: links +124 · orphans +0 · patterns +0. Terminal state: source-investigation ingestion complete; runtime correctness and accuracy gains remain unverified.
+
+## [2026-11-04] reflect | distinguish context status from guarantees
+
+- Applied a context-system evidence prompt to [[_schemas/project]] and a semantic-query consumer route to `for-builders.md`, recorded in [[meta/self-improvements]] Pass 22. The trigger for an implementation experiment is observed ambiguity in representative business queries, gold results and a matched agent baseline with cost/latency tracking. Installed skills and runtime infrastructure unchanged.
+
+## [2026-11-04] ingest | OpenAI Codex — harness and source preservation
+
+- Added [[artifacts/projects/codex]] with 44 portable principles from [[sources/openai--codex]] at `021fccb046508938c4754982efccfb51d6e8356e`. Saved the complete 9,974-entry tracked source tree with Git metadata locally; ignored clone is restored by the committed manifest pin. Public research contains analysis, source map, tree identity, 38 scoped source hashes and restoration instructions, not a vendored copy of the entire source.
+- Inspected selected runtime/protocol/client, tool admission/approval, platform-policy docs, history/metadata storage, compaction/replay, Goals, skill selection/rendering, child ownership and trace writer/reducer paths. Read focused test assertions; no source build, upstream tests, model call, login or deployment run. This is not an exhaustive repository or security audit.
+- Extended the existing Goals study with current state/handler boundaries: legal completion is not independent acceptance evidence; blocked/user-requested pause now appear in the tool contract. Connected nine concepts, six existing patterns, OpenAI and the separately pinned marketplace. Preserved older product/distribution claims as historical rather than silently refreshing them.
+- Git object connectivity, clean-tree and selective restore-availability checks passed. New source ranges, links and inventories are checked as part of final validation; runtime outcome/performance claims remain unverified.
+- Final validation: 37 registered anchors, 168 citation occurrences and 48 immutable line ranges across 38 source files pass; all 38 scoped hashes match pinned Git objects. Checked 142 added unique page→target links (88 source-anchor links), the new relative capture link, 44-principle count and 9-project/18-creator/22-concept/42-source inventory. Doctor remains 50/100 across 2,278 Markdown files with no new findings; inherited link/staleness debt unchanged. Staged whitespace clean; no nested source gitlink. Ratchet: links +142 · orphans +0 · patterns +0. Terminal state: source-preserved ingestion complete; runtime validation remains unperformed.
+
+## [2026-11-04] reflect | observation and recovery units
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] to [[_schemas/project]]: distinguish model-visible evidence, runtime activity, persisted state and recovery units; recording complete and lifecycle complete are not synonymous with task success. Added the focused builder route and recorded Pass 23 in [[meta/self-improvements]]. No installed skill or runtime setting changed.
+
+## [2026-11-04] ingest | Open Inspect background agents
+
+- Added [[artifacts/projects/background-agents]] with 43 portable principles and [[creators/open-inspect]], grounded in [[sources/open-inspect--background-agents]] at `4b7f4e430dbb5c29cf776de41151365d1196d737`. Complete 3,239-entry tracked source tree saved in an ignored local clone; committed source map, scoped hashes and restore manifest, not a vendored source tree.
+- Inspected selected session/harness/lifecycle, child admission, automation, memory, skill-installation and export paths plus focused assertions. No application install/build/test execution, model job, live provider or deployment. Retained doc/code conflicts and single-tenant, cached-credential, pinned-context and best-effort bulk-export limits.
+- Connected eight concepts, six existing patterns, Codex/HumanLayer/Eve comparisons and creator integrations. No new pattern promotion or duplicate concept.
+- Validation: 31 registered source anchors, 171 citation occurrences, 58 immutable line ranges and all 37 source-file hashes pass. Checked 156 added unique page→target links (95 source-anchor links), the capture link, 43-principle count and 10-project/19-creator/22-concept/43-source inventory. Git connectivity, clean source and selective restore-availability checks passed. Doctor stays 50/100 with no new findings; inherited debt unchanged. Ratchet: links +156 · orphans +0 · patterns +0.
+
+## [2026-11-04] reflect | unknown outcomes and retained authority
+
+- Extended [[_schemas/project]] and builder routing from [[artifacts/projects/background-agents]]: retry boundaries and source retirement are distinct from acceptance, and revocation cannot retract retained context. Pass 24 in [[meta/self-improvements]]; no installed skill or deployed system changed.
+
+## [2026-11-04] ingest | SuperPlane source and software-factory architecture
+
+- Preserved all 10,205 tracked entries at `7d755d16b8ae836ecebf61639efc6266d74a4b0b` locally, with Git metadata; committed source map, capture hashes and restoration registration, not the ignored checkout. [[sources/superplanehq--superplane]].
+- Added [[artifacts/projects/superplane]] and [[creators/superplane]]: 42 portable principles covering durable work identity, event/queue/finalization, live-versus-pinned configuration, bounded PR repair, exact-head merge gates, approvals and runner completion. Docs/draft/test/code evidence distinguished; no source application tests or performance claims.
+- Extended related concepts, four comparison artifacts, pattern notes and builder navigation. Validation: 31 registered source anchors, 58 pinned line ranges, 36 file hashes and 156 new page/target links checked; restore availability and clean source tree confirmed. Wiki doctor stayed 50/100 with no new findings; pre-existing findings remain.
+- ratchet: links +156 · orphans +0 · patterns +0 (existing concepts extended; narrow analogues remain scoped).
+
+## [2026-11-04] reflect | snapshot granularity
+
+- Applied the per-task/run/node/action snapshot question to `_schemas/project.md`; added a factory/repair build-intent route. [[meta/self-improvements]] Pass 25. No runtime or installed skill changed.
+
 
 ## [2026-11-04] query | Flexy harness and remote-computer platform breadth
 
 - Queried builder routes and Eve, HumanLayer, managed agent API and durable/control-plane/context studies; followed selected task/execution citations. Flagged June Eve limits as historical and added qualification questions to [[artifacts/projects/eve]]. The wiki does not yet comprehensively cover current VM/sandbox providers or benchmark whole stacks; project-specific provider research and proposed choices remain in Flex Stack.
 - No source re-ingest, provider execution, deployment, new confirmed pattern or whole-wiki lint was performed; preserved existing concurrent changes.
+
+## [2026-11-04] query | consolidate and merge pending Research work
+
+User authorized committing, pushing and merging all pending Research work. Consolidated API/agent-commerce, MCP/extensions, conversation-learning sanitized metadata/tooling, and source updates; preserved newer upstream research through SuperPlane and runtime freshness notes. Private chat projections remain outside the public repository; ignored source clones and scratch artifacts remain local. Reconciled shared indexes and refreshed combined inventory counts. All 36 unit tests pass after reconciliation; wiki doctor reports 50/100 with the same seven imported-article broken-link occurrences, no orphan/missing-section/gitlink findings, and existing stale dates. Manifest-indexed capture hashes pass. Mutable wiki/code whitespace checks pass; whitespace in immutable captured sources is preserved. Analyses remain draft where review gates are pending. No provider execution or live business change implied by Git merge.

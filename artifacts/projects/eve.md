@@ -148,6 +148,14 @@ The "glue tax" of building a production agent. A naive agent is a model-call loo
 
 [[artifacts/projects/kody]] studies portable capability/state infrastructure and protected credential use; [[artifacts/projects/dsh-superagent-prototype]] studies a persistent event/Ticket control plane. Neither comparison establishes interchangeable runtimes. Follow [[concepts/code-mode-capability-interface]] and [[concepts/super-agent-architecture]] for their different abstraction boundaries. [[sources/kody-hq--kody#intent]], [[sources/deepseek-ai--dsh-superagent-prototype#domain]]
 
+## Recovery-model comparison
+
+[[artifacts/projects/background-agents]] preserves sandbox workspace state and pauses interrupted prompts instead of treating file restoration as step replay. This is a distinct recovery unit from the durable-step model described above. Both require explicit reasoning about external effects. [[sources/open-inspect--background-agents#shutdown-design]] [[sources/open-inspect--background-agents#continuation]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] is a comparison for database-backed workflow execution: persisted pending work, notification acceleration and catch-up polling. Copied node configuration does not imply a frozen graph; terminal-report idempotency does not imply replay-safe arbitrary external effects. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#execution-state]] [[sources/superplanehq--superplane#runner-completion]]
+
 
 ## Runtime selection freshness questions — 2026-11-04
 

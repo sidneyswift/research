@@ -88,3 +88,31 @@ A fluent model's failure mode on "am I done?" is *confident fabrication of compl
 ## Team-delivery comparison — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] separates a PR existing from a ready result delivered to the originating conversation. Its communication rules are prompt policy; the host enforces structured states and the IM word limit, not the truth of every readiness claim. [[sources/deepseek-ai--dsh-superagent-prototype#communication]], [[sources/deepseek-ai--dsh-superagent-prototype#execution]], [[sources/deepseek-ai--dsh-superagent-prototype#im-limit]]
+
+## Product-level gate comparison — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] reports build failure when the initial payload exceeds its budget and server replay before accepting a high score. These are supporting **product-level analogies**, not evidence for the full agent stopping/blocked-state contract described here. Keep the claimed gate and its predicate narrow: the post does not disclose the build threshold, prove deployed performance, or establish complete anti-cheat coverage. [[sources/poteto--tibo-engineering#download-budget]] [[sources/poteto--tibo-engineering#deterministic-replay]]
+
+## Verification-budget position — 2026-11-03
+
+Lauren's screenshot-backed preference for empirical/formal verification over abstract adversarial critique is supporting rationale, not a new independently verified enforcement mechanism. Its operational adaptation lives in [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]]: turn checkable claims into evidence; do not equate more reviewer opinions with demonstrated correctness. Pattern status/example counts do not change. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[sources/poteto--verification-over-adversarial-review#failure-mode]]
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] provides a documentation-level application to investigation findings: Patterns checks evidence before saving/closing, labels unconfirmed causes as hypotheses, and retains status when queries or data are unavailable. This is vendor-described behavior, not a newly run confirming artifact. [[sources/ankrgyl--trace-lake#patterns-verification]]
+
+## Ready, answerable, certified and published are distinct — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] offers several different gates: readiness over configured prerequisites, entity-coverage scoring, human certification flags and publication readback instructions. None substitutes for the others. The companion's run-health gate is implemented code; the skill's staged publication workflow is prompt policy, not an atomic product guarantee. Supporting comparison; no automatic pattern-count promotion. [[sources/nvidia--auto-ontology#readiness]] [[sources/nvidia--auto-ontology#coverage]] [[sources/nvidia--auto-ontology#publication]] [[sources/nvidia--auto-ontology-eval#health-gate]]
+
+## Do not promote status into proof — 2026-11-04
+
+[[artifacts/projects/codex]] distinguishes a goal status mutation, completed runtime bookkeeping and a closed diagnostic trace from verified task success. The current goal handler enforces legal state choices, not arbitrary acceptance tests; recording_complete can describe interrupted work. This qualifies the older documentation-level Goals example without changing pattern status. [[sources/openai--codex#goal-tools]] [[sources/openai--codex#trace]]
+
+### Open Inspect — checkpoints and terminal events
+
+[[artifacts/projects/background-agents]] treats a saved checkpoint and a retired source as separate facts, persists unknown outcomes and withholds automatic replay of interrupted prompts. Its supervisor’s terminal selection is local lifecycle evidence, not acceptance of the user’s goal. [[sources/open-inspect--background-agents#shutdown-design]] [[sources/open-inspect--background-agents#checkpoint]] [[sources/open-inspect--background-agents#continuation]] [[sources/open-inspect--background-agents#completion]]
+
+## SuperPlane — 2026-11-04
+
+Supporting implementation: [[artifacts/projects/superplane]] checks for open work before finalizing a run, binds runner terminal reports to completion hashes, and requires an expected PR head for merging. Each gate has a narrower meaning than user-goal success; a valid model review score is not executable evidence. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#merge]]

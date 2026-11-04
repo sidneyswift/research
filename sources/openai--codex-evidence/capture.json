@@ -1,0 +1,357 @@
+{
+  "created_at": "2025-04-13T05:37:54Z",
+  "default_branch": "main",
+  "description": "Lightweight coding agent that runs in your terminal",
+  "forks_count": 21075,
+  "full_name": "openai/codex",
+  "html_url": "https://github.com/openai/codex",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-04T09:52:12Z",
+  "stargazers_count": 133104,
+  "updated_at": "2026-11-04T12:51:30Z",
+  "retrieved": "2026-11-04",
+  "inspected_commit": "021fccb046508938c4754982efccfb51d6e8356e",
+  "tree": "75c164a7a426dd847642bd046d6e2e1ec483bda9",
+  "tracked_source_entries": 9974,
+  "shallow_checkout": true,
+  "source_preservation": "Complete tracked tree at the pinned revision with .git retained locally; ignored clone is restored through setup.sh and the tracked source manifest. GitHub research contains analysis and provenance, not a vendored copy of all Codex files.",
+  "verification": "git fsck --connectivity-only passed; source working tree clean. No source build, upstream test suite, inference, authentication or deployment performed.",
+  "evidence_ranges": [
+    {
+      "anchor": "root",
+      "path": "README.md",
+      "start_line": 1,
+      "end_line": 81,
+      "blob_sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7"
+    },
+    {
+      "anchor": "license",
+      "path": "LICENSE",
+      "start_line": 1,
+      "end_line": 25,
+      "blob_sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc"
+    },
+    {
+      "anchor": "core",
+      "path": "codex-rs/core/README.md",
+      "start_line": 1,
+      "end_line": 98,
+      "blob_sha256": "90419618b596e4965d9326ff57d81a0a3a406dab586b52d114e6829cafc6da31"
+    },
+    {
+      "anchor": "protocol",
+      "path": "codex-rs/protocol/README.md",
+      "start_line": 1,
+      "end_line": 7,
+      "blob_sha256": "238a7bcf1e272eeda6ea62675ef031e11fb0b5c590cb49188a9e611b4b19e0b1"
+    },
+    {
+      "anchor": "client-runtime",
+      "path": "codex-rs/app-server-client/README.md",
+      "start_line": 1,
+      "end_line": 66,
+      "blob_sha256": "8ced7c68ae2f21a9d650b3c71250bf9d7c710b3172c524016dd03c5fe8630491"
+    },
+    {
+      "anchor": "loop",
+      "path": "codex-rs/core/src/session/turn.rs",
+      "start_line": 498,
+      "end_line": 658,
+      "blob_sha256": "117d64ba8d9b86bf11ab8d0f4e43eb314cad6c97de2068dfa34f0bf0e134533f"
+    },
+    {
+      "anchor": "loop",
+      "path": "codex-rs/core/src/session/turn.rs",
+      "start_line": 758,
+      "end_line": 825,
+      "blob_sha256": "117d64ba8d9b86bf11ab8d0f4e43eb314cad6c97de2068dfa34f0bf0e134533f"
+    },
+    {
+      "anchor": "parallel-tools",
+      "path": "codex-rs/core/src/tools/parallel.rs",
+      "start_line": 275,
+      "end_line": 405,
+      "blob_sha256": "fcfa3c01b95d853f6aa6e2e4c0e4602d26515fda988b2d12aeb9760d44f623dd"
+    },
+    {
+      "anchor": "approval",
+      "path": "codex-rs/core/src/tools/orchestrator.rs",
+      "start_line": 137,
+      "end_line": 235,
+      "blob_sha256": "4271c0dfa8dc98faf1106c5ecbec839d0c762e603414850509165441a5f495e2"
+    },
+    {
+      "anchor": "approval",
+      "path": "codex-rs/core/src/tools/orchestrator.rs",
+      "start_line": 432,
+      "end_line": 553,
+      "blob_sha256": "4271c0dfa8dc98faf1106c5ecbec839d0c762e603414850509165441a5f495e2"
+    },
+    {
+      "anchor": "human-checkpoints",
+      "path": "codex-rs/app-server/README.md",
+      "start_line": 1,
+      "end_line": 16,
+      "blob_sha256": "d2dd5fb0180bcc151bb6529e51256181581166811f225f5abfe1eed2fec6ff3c"
+    },
+    {
+      "anchor": "human-checkpoints",
+      "path": "codex-rs/core/src/tools/approvals.rs",
+      "start_line": 1,
+      "end_line": 79,
+      "blob_sha256": "c1dc1fc966df0e61df3235527f26b7f1859cfe55b648a4cf94d55a8bf2c81b62"
+    },
+    {
+      "anchor": "network",
+      "path": "codex-rs/network-proxy/README.md",
+      "start_line": 1,
+      "end_line": 160,
+      "blob_sha256": "3f8049679b89767d4e9bc4a53f0d25c12e1d20d17d5ed05c90efa06fd2a16165"
+    },
+    {
+      "anchor": "config-layers",
+      "path": "codex-rs/config/src/loader/README.md",
+      "start_line": 1,
+      "end_line": 90,
+      "blob_sha256": "98f0251ec2669627da874bb56e56ac4dbe96c17f9438e46e97638cbfd7611154"
+    },
+    {
+      "anchor": "project-trust",
+      "path": "codex-rs/app-server/README.md",
+      "start_line": 209,
+      "end_line": 214,
+      "blob_sha256": "d2dd5fb0180bcc151bb6529e51256181581166811f225f5abfe1eed2fec6ff3c"
+    },
+    {
+      "anchor": "storage",
+      "path": "codex-rs/thread-store/README.md",
+      "start_line": 1,
+      "end_line": 34,
+      "blob_sha256": "bdbc16a68082d29a2626ea4ed25eb2103fce82371f4cd6ce63d3ec3f45b6e308"
+    },
+    {
+      "anchor": "replay",
+      "path": "codex-rs/core/src/session/rollout_reconstruction.rs",
+      "start_line": 12,
+      "end_line": 182,
+      "blob_sha256": "5de8e31422c6f7e6452180d882e62c1ea096de2ae6b9de564e169cfc57d31666"
+    },
+    {
+      "anchor": "async-compaction",
+      "path": "codex-rs/core/src/session/async_compaction.rs",
+      "start_line": 1,
+      "end_line": 153,
+      "blob_sha256": "be710a5829b59b437cc61c53188a839bfff3970afd1418dd9aa93998df7adc72"
+    },
+    {
+      "anchor": "executor",
+      "path": "codex-rs/exec-server/README.md",
+      "start_line": 1,
+      "end_line": 92,
+      "blob_sha256": "330f395c6db237a0391748b457b106dbf88f59cf7e85d7a778342a44e6fb14f7"
+    },
+    {
+      "anchor": "sdk-typescript",
+      "path": "sdk/typescript/README.md",
+      "start_line": 1,
+      "end_line": 130,
+      "blob_sha256": "bc454b26a6920efb1826912be6b6ba96348ab39d9f4e70078465deb586dbbfe7"
+    },
+    {
+      "anchor": "sdk-python",
+      "path": "sdk/python/README.md",
+      "start_line": 1,
+      "end_line": 75,
+      "blob_sha256": "e81cdb5f96e4e00862bb567f6a84864169033423c80fbbe4f19a56aff3597ed5"
+    },
+    {
+      "anchor": "sdk-python",
+      "path": "sdk/python/docs/faq.md",
+      "start_line": 1,
+      "end_line": 101,
+      "blob_sha256": "cceee83a1b3724d8de8c3698cc5cd4cbf552b48974ec0561ba61982c1db94fc4"
+    },
+    {
+      "anchor": "sdk-python",
+      "path": "sdk/python/pyproject.toml",
+      "start_line": 1,
+      "end_line": 22,
+      "blob_sha256": "abedd9d3f6e32761239dfa7bcb25094c3675176302e32ba16bfc064ea866e6f4"
+    },
+    {
+      "anchor": "goal-provenance",
+      "path": "codex-rs/core/src/context/user_goal.rs",
+      "start_line": 1,
+      "end_line": 120,
+      "blob_sha256": "a8c58aa34fb65577c560beb87232b6cc16aee3d7002e3ba07633a1ac3710ce84"
+    },
+    {
+      "anchor": "goal-tools",
+      "path": "codex-rs/ext/goal/src/spec.rs",
+      "start_line": 24,
+      "end_line": 94,
+      "blob_sha256": "db48400d291ecb642b0d1189c73eea81a412f4b13bc9f7d917dc0dbd3f7828ea"
+    },
+    {
+      "anchor": "goal-tools",
+      "path": "codex-rs/ext/goal/src/tool.rs",
+      "start_line": 246,
+      "end_line": 317,
+      "blob_sha256": "a8326dd629406c35b87d96feeb5ef2229203e43e813371d928d90f12420ace51"
+    },
+    {
+      "anchor": "goal-continuation",
+      "path": "codex-rs/ext/goal/src/runtime.rs",
+      "start_line": 412,
+      "end_line": 534,
+      "blob_sha256": "9fd31e79fd06f68e192b799631cfd544b8e685dd7aa4b98b96a02da9e8ff9ea8"
+    },
+    {
+      "anchor": "goal-continuation",
+      "path": "codex-rs/ext/goal/src/extension.rs",
+      "start_line": 314,
+      "end_line": 377,
+      "blob_sha256": "0af11f45975140a0774e2eb6f64c91db4ebbf5fd7515659e4d741b5790784793"
+    },
+    {
+      "anchor": "goal-tests",
+      "path": "codex-rs/ext/goal/tests/goal_extension_backend.rs",
+      "start_line": 448,
+      "end_line": 509,
+      "blob_sha256": "46c7fabecf0876595989b4485f425e7d10283ba2d579a5f694af7292f6b4bdff"
+    },
+    {
+      "anchor": "goal-tests",
+      "path": "codex-rs/ext/goal/tests/goal_extension_backend.rs",
+      "start_line": 1088,
+      "end_line": 1110,
+      "blob_sha256": "46c7fabecf0876595989b4485f425e7d10283ba2d579a5f694af7292f6b4bdff"
+    },
+    {
+      "anchor": "goal-tests",
+      "path": "codex-rs/ext/goal/tests/goal_extension_backend.rs",
+      "start_line": 1215,
+      "end_line": 1241,
+      "blob_sha256": "46c7fabecf0876595989b4485f425e7d10283ba2d579a5f694af7292f6b4bdff"
+    },
+    {
+      "anchor": "skill-selection",
+      "path": "codex-rs/skills/src/selection.rs",
+      "start_line": 17,
+      "end_line": 204,
+      "blob_sha256": "506bc732789ffa40ad03882f2dc81e4b7f6194e1eb5b0854c5d6513f40185f91"
+    },
+    {
+      "anchor": "skill-selection-tests",
+      "path": "codex-rs/skills/src/selection_tests.rs",
+      "start_line": 227,
+      "end_line": 289,
+      "blob_sha256": "d40a453f31aa1f0dfdeaeea8b7812d829ddafcdd4f2256c9bb74639f15a5fbf9"
+    },
+    {
+      "anchor": "skill-budget",
+      "path": "codex-rs/ext/skills/src/render.rs",
+      "start_line": 23,
+      "end_line": 198,
+      "blob_sha256": "2dccf3b8ed0de052163704c3a358f3bb0595a35bd27793a6b34019e8e8de3e54"
+    },
+    {
+      "anchor": "skill-shadow",
+      "path": "codex-rs/ext/skills/src/dynamic_skill_selector.rs",
+      "start_line": 1,
+      "end_line": 58,
+      "blob_sha256": "d38e78a3f654ca90ed76e527e413a78ee582ac6913c39476fe82815eada91dd2"
+    },
+    {
+      "anchor": "instruction-refresh",
+      "path": "codex-rs/codex-home/src/instructions/mod.rs",
+      "start_line": 1,
+      "end_line": 113,
+      "blob_sha256": "5f900d536d2a085345178e4311ab55c801ce90df50db49f15d05c4525a3b5c2e"
+    },
+    {
+      "anchor": "agent-spawn",
+      "path": "codex-rs/core/src/agent/control/spawn_guard.rs",
+      "start_line": 1,
+      "end_line": 125,
+      "blob_sha256": "184d302e8507153c48eaee0b0ef52582180b692577f3bb7df444d833beb119d4"
+    },
+    {
+      "anchor": "agent-residency",
+      "path": "codex-rs/core/src/agent/control/residency.rs",
+      "start_line": 1,
+      "end_line": 118,
+      "blob_sha256": "c63f2b881a359141a3ddc5004dbcc5215bd16fa2af1da37304c256d6ae40493f"
+    },
+    {
+      "anchor": "agent-budget",
+      "path": "codex-rs/core/src/agent/control/budget.rs",
+      "start_line": 1,
+      "end_line": 39,
+      "blob_sha256": "5ab77ab8eb202c21e9c53aca921429f8abae53b1f857ff4f3128ac90d87a54f3"
+    },
+    {
+      "anchor": "trace",
+      "path": "codex-rs/rollout-trace/README.md",
+      "start_line": 1,
+      "end_line": 215,
+      "blob_sha256": "16feb5d1902b8ce3cfa6cb2474e4dc9b41ab72ac6322a464624d5926478bb87d"
+    },
+    {
+      "anchor": "trace-writer",
+      "path": "codex-rs/rollout-trace/src/writer.rs",
+      "start_line": 1,
+      "end_line": 140,
+      "blob_sha256": "ae31d3c964056f9d9fea19c0e08a88b4d1e272fa0b79bc875f6d4a511a00da76"
+    },
+    {
+      "anchor": "trace-tests",
+      "path": "codex-rs/rollout-trace/src/reducer/acceptance_tests.rs",
+      "start_line": 1,
+      "end_line": 122,
+      "blob_sha256": "621369530a77a1bdc81779493ed8cb1ae1ae9478a285945936a7f0ef7e904934"
+    },
+    {
+      "anchor": "read-state",
+      "path": "codex-rs/app-server/README.md",
+      "start_line": 68,
+      "end_line": 109,
+      "blob_sha256": "d2dd5fb0180bcc151bb6529e51256181581166811f225f5abfe1eed2fec6ff3c"
+    },
+    {
+      "anchor": "policy-reload",
+      "path": "codex-rs/app-server/README.md",
+      "start_line": 155,
+      "end_line": 164,
+      "blob_sha256": "d2dd5fb0180bcc151bb6529e51256181581166811f225f5abfe1eed2fec6ff3c"
+    },
+    {
+      "anchor": "policy-reload",
+      "path": "codex-rs/app-server/README.md",
+      "start_line": 551,
+      "end_line": 557,
+      "blob_sha256": "d2dd5fb0180bcc151bb6529e51256181581166811f225f5abfe1eed2fec6ff3c"
+    },
+    {
+      "anchor": "policy-reload",
+      "path": "codex-rs/app-server/README.md",
+      "start_line": 568,
+      "end_line": 572,
+      "blob_sha256": "d2dd5fb0180bcc151bb6529e51256181581166811f225f5abfe1eed2fec6ff3c"
+    },
+    {
+      "anchor": "api-evolution",
+      "path": "codex-rs/app-server/README.md",
+      "start_line": 540,
+      "end_line": 549,
+      "blob_sha256": "d2dd5fb0180bcc151bb6529e51256181581166811f225f5abfe1eed2fec6ff3c"
+    },
+    {
+      "anchor": "extraction-boundaries",
+      "path": "codex-rs/tools/README.md",
+      "start_line": 1,
+      "end_line": 74,
+      "blob_sha256": "7b4c4c4c7d461eaff1cda149deb7a61ca37b050761308fed950de4a3c43de879"
+    }
+  ]
+}

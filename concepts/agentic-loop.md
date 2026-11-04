@@ -85,3 +85,11 @@ It relocates the most dangerous decision — *am I done?* — from the model's c
 - Is "loop" meaningfully distinct from "completion contract," or is it the contract + a `while(progress)`? (Working answer: the repetition + the no-progress/stagnation terminal states are the delta.)
 - Does the concept survive contact with non-gameable surfaces? How many of the 31 gates would hold against an agent optimizing to pass them?
 - Where's the line between a loop and a full harness? At what point should a frequently-run loop be promoted into deterministic tooling (the latent→deterministic migration)?
+
+## Historical-evidence loop — 2026-11-04
+
+[[concepts/trace-lake]] operates across runs rather than only within one task: investigate history, verify a recurring behavior, then create a focused eval and recheck future executions. Loop automation docs add concrete windows, exclusions, sampling and stop/output contracts; missing evidence is not permission to invent a result or broaden the query. [[sources/ankrgyl--trace-lake#automation-contract]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] wraps coding and review turns in persistent workflow state. Its repair loop reserves attempts when a participating activity gains mutation access, stops at the configured limit and uses explicit continuation/passed-evaluation boundaries for reset. This is a scoped repair budget, not a global cap across all external actors. [[sources/superplanehq--superplane#repair-budget]]

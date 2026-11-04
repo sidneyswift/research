@@ -1,7 +1,7 @@
 ---
 domain: creators
 type: index
-last-reviewed: 2026-10-24
+last-reviewed: 2026-11-04
 ---
 
 # Creators
@@ -40,6 +40,13 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 - [[creators/google]] — API design evidence in [[concepts/business-platform-api-design]].
 
+- [[creators/superplane]] — workflow engine, software factory and integrated runners.
+
+- [[creators/open-inspect]] — background coding-session control plane and multi-harness sandbox runtime.
+
+- [[creators/nvidia]] — Auto-Ontology semantic context, curated MCP and companion evaluation tooling.
+
+- [[creators/braintrust]] — trace-query infrastructure, investigations and evaluations; studied through article and vendor docs.
 
 - [[creators/humanlayer]] — org behind the HumanLayer/Riptide collaborative coding-agent platform and RPI workflow; source investigation emphasizes human review cost, task continuity, and runtime boundaries.
 
@@ -53,6 +60,10 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/prodmgmt-world]] — independent commercial publisher of [[artifacts/plugins/pm-os]] (paid PM skill bundle, claude-code + cursor + cowork). The wiki's first **commercial** creator — sells agent content as a versioned product (CHANGELOG, upgrade-migration skill) rather than sharing a repo.
 
 ## Individuals
+
+- [[creators/hanrong-zhang]] — co-first author of Skill++ with Minghao Liang; skill access stability/plasticity.
+
+- [[creators/ankur-goyal]] — author of The Trace Lake; production evidence and evaluation loops.
 
 - [[creators/garry-tan]] — President & CEO of Y Combinator. Ships `gstack` and `gbrain`; author of the 8-part **"AI Explainer" essay series** (the source for the wiki's `thin-harness-fat-skills` / `resolver-routing-table` / `latent-vs-deterministic` / `diarization` / `complexity-ratchet` / `skill-pack-bundle` patterns). Bridge between Anthropic's ecosystem and the founder/builder community.
 - [[creators/prodmgmt-world]] — George Nurijanian (gnurio / @nurijanian), New Zealand. Sells **PM OS** ($99 one-time; [[artifacts/plugins/pm-os]]) — the wiki's first **commercial, closed-source** creator and first **non-engineering vertical** auteur. House style: *enforcement over suggestion* (pre-flight attestation, Context Guard, imperative hook directives) + a coach-not-doer product philosophy.

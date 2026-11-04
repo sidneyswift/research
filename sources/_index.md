@@ -1,7 +1,7 @@
 ---
 domain: sources
 type: index
-last-reviewed: 2026-10-23
+last-reviewed: 2026-11-04
 ---
 
 # Sources
@@ -24,6 +24,15 @@ See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, pre
 
 - [[sources/rhys-sullivan--executor]] — selected capability contracts, OpenAPI compilation, persisted catalog, discovery and sandbox dispatch at `3cf6e5465`; source inspection, with package reuse qualification separate.
 
+- [[sources/superplanehq--superplane]] — full local source at `7d755d1`; workflow/runner investigation, pinned citations, hashes and restoration manifest.
+
+- [[sources/open-inspect--background-agents]] — complete local source tree at `4b7f4e4`; architecture and lifecycle study with pinned evidence hashes.
+
+- [[sources/openai--codex]] — harness source at `021fccb`; complete local checkout, source/tree identity and scoped hashes, restorable from the manifest.
+
+- [[sources/nvidia--auto-ontology]] — application at `caced11e`; scoped architecture, semantics, tools and publication study.
+- [[sources/nvidia--auto-ontology-eval]] — evaluation harness at `ec41b2c`; distinct pinned treatment revision and run-health boundaries.
+
 - [[sources/cursor--plugins-pstack]] — pstack 0.15.32 at `9580c23`; canonical skills and packaging, orchestration, and verification evidence.
 
 - [[sources/humanlayer--humanlayer]] — `humanlayer/humanlayer` at `2f66a45` (2026-10-23): current Riptide platform and RPI workflow; 175 source anchors across 150 files, with code/prompt/docs/test-inspection boundaries. See [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]].
@@ -41,9 +50,15 @@ Repos sit at `sources/<creator>--<repo>/` (an ignored Git clone with its `.git/`
 - [[sources/forward-future--loop-library]] — `Forward-Future/loop-library` (commit `6ee3345` of 2026-06-19, MIT, **92★ / 14 forks** as-of 2026-06-20, repo one week old). Forward Future's (Matthew Berman's) Loop Library — 31 curated **loops** (copy-ready agent prompts pairing a task with an observable verification check and a named stopping condition) authored by ~14 builders, plus the installable `loop-library` skill (find/adapt/design). One canonical `loop-data.mjs` fanned out to site + `catalog.json`/`catalog.md` + skill fallback behind a drift check. Grounds [[concepts/agentic-loop]] and the confirming 2nd artifact for [[patterns/behavioral/evidence-gated-completion]].
 - [[sources/SHL0MS--skill-diffs]] — `SHL0MS/skill-diffs` (924 KB, single commit `2ded6c0` of 2026-05-04). A commit-history mining pipeline that turns four platforms' `SKILL.md` revision history into a published HuggingFace dataset (v0.5: 664,872 unique skills, 130,631 clean diff pairs) plus two companion tools — a defect-derived rule-based linter and a skill-patch eval harness. The wiki's first **dataset-and-tooling-pipeline** source (0★/0 forks; 75 HF downloads/month as-of 2026-07-22 — low traction, cited for evidence quality not adoption). Grounds [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]]; founding example of [[patterns/quality-bar/defect-derived-validation]].
 
+## Papers
+
+- [[sources/zhang--skill-plus-plus]] — Skill++, arXiv 2611.00544v1; all 20 pages read, local full source preserved, public version/hash provenance and original synthesis.
+
 ## Articles, posts, threads
 
 - [[sources/philschmid--code-mode]] — Philipp Schmid, 2026-11-01; article and two diagrams captured 2026-11-02. Extends [[concepts/code-mode-capability-interface]]; illustrative code, unverified adoption/performance claims.
+
+- [[sources/ankrgyl--trace-lake]] — Ankur Goyal, 2026-11-03: full X article with both SQL examples and eight linked primary pages, retrieved 2026-11-04. Grounds [[concepts/trace-lake]].
 
 External writing we cite. Always include retrieval date and a snapshot path (PDF / screenshot / archive.org URL).
 
@@ -65,6 +80,12 @@ External writing we cite. Always include retrieval date and a snapshot path (PDF
 - [[sources/anthropic--dynamic-workflows]] — **article** (X article + Claude Blog mirror), Thariq Shihipar (@trq212) + Sid Bidasaria (@sidbid), 2026-06-02. "A harness for every task: dynamic workflows in Claude Code" — model writes JS harness on the fly, 6 composable orchestration patterns, 3 named failure modes. 3,340 likes / 7,574 bookmarks. Grounds [[concepts/dynamic-workflows]].
 
 - [[sources/every--compound-engineering-gets-an-upgrade]] — **article**, Kieran Klaassen, 2026-05-29 (updated 2026-06-01). The 4-step → 8-step evolution; "AI is the stuff in the middle. Humans are the bread on either end."
+
+- [[sources/poteto--tibo-engineering]] — Lauren Tan, 2026-11-01 long-form X engineering post; retrieved 2026-11-03 with full expanded text, parent, four images, and dated linked-game pages. Grounds [[artifacts/projects/tibo-dog]].
+
+- [[sources/poteto--verification-over-adversarial-review]] — supplied screenshot received 2026-11-03: Lauren prefers empirical/formal verification to abstract adversarial review, with Thorsten Ball endorsement; exact dates/URLs unknown. Extends [[concepts/review-cost-aware-workflows]].
+
+- [[sources/mattpocock--domain-orchestrator-factory]] — screenshot received 2026-11-04; proposed local domain orchestrator + CLI-managed sandboxed factory, with plain-language human steering. Extends [[concepts/agent-control-plane]].
 
 ## Release artifacts (ZIP / packaged products)
 

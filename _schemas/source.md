@@ -47,6 +47,12 @@ If this source IS a popularity signal (e.g., a tweet with N likes, a GitHub repo
 
 - [[sources/...]] — relationship
 
+## Completeness for social sources
+
+Before extraction, check for expanded note/article text rather than relying on a truncated preview; preserve relevant parent/quote context and every meaning-bearing attachment. Record which were read and which remain unavailable. Keep later linked-page facts in a separately dated capture rather than silently updating the historical post. An author screenshot is attributed evidence, not an independently executed verification.
+
+This applies [[patterns/behavioral/evidence-gated-completion]] to the input boundary: the tibo capture's ordinary `text` field stopped in the third bullet, while `note_tweet.text` exposed fourteen; its attachments also supplied concrete counterexamples absent from the prose. [[sources/poteto--tibo-engineering#capture]] [[sources/poteto--tibo-engineering#auto-pick-counterexamples]]
+
 ## Structural verification for GitHub repo sources
 
 For maps with registered `### anchor` headings (or explicit backtick `#anchor` entries) and immutable GitHub `blob/<full-sha>/path#Lx-Ly` links, run `python3 scripts/check-source-citations.py sources/<slug>.md`. It reads pinned Git objects, checks line bounds and registered wikilink targets, and never fetches or edits evidence. Stage new pages or include each with `--page`. It does not establish claim entailment, whole-tree link integrity, runtime correctness, or support every historical source format.

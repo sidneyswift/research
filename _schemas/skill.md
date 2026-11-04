@@ -25,6 +25,7 @@ popularity-signals:
 
 - **What it does**: 1–3 sentences. Behavioral, not just descriptive.
 - **Trigger conditions**: the literal phrasing the skill uses to anchor itself — copy the `description:` field from SKILL.md verbatim.
+- **Routing neighborhood**: which existing skills can be confused with this one? Check name/description against the actual body, distinguishing capability and relevant exclusions. Record evidence for old-route retention and new-skill discoverability separately from downstream task success; mark untested dimensions explicitly. Do not silently rewrite the captured trigger. Grounding: [[concepts/lifelong-skill-routing]] and [[sources/zhang--skill-plus-plus#method]].
 - **Bundled resources**: which of `scripts/`, `references/`, `assets/`, sub-skills it ships with. Quantify (e.g., "12 reference files totalling ~4k lines").
 - **SKILL.md size**: lines / approximate tokens.
 - **Progressive disclosure depth**: how many levels of file-loading before the model has full context (SKILL.md → referenced files → sub-references)?

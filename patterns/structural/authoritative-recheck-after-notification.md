@@ -77,3 +77,7 @@ Only one artifact has been verified; multiple modules inside HumanLayer do not c
 ## API design connection — 2026-11-04
 
 [[concepts/business-platform-api-design]] — Related API design guidance distinguishes accepting a command from enforcing preconditions at execution. Documentation agreement does not add a second inspected runnable example.
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] supplies a transactional analogue: notification consumers reload records, then lock and process authoritative event/node state; polling recovers missed wakeups. It does not duplicate HumanLayer's session-actor/remote-read mechanism. Keep the proposed full-pattern count unchanged rather than equating all DB queues with that sequence. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#queue]]

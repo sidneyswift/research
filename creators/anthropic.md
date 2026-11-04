@@ -56,3 +56,7 @@ last-reviewed: 2026-06-01
 ## MCP research connection — 2026-11-04
 
 [[artifacts/projects/mcp-apps]] studies the shared UI extension rather than attributing the standard to one host. [[concepts/model-context-protocol]] and [[creators/model-context-protocol]] own the protocol/maintainer distinction; actual host support remains a separate evidence question. [[sources/modelcontextprotocol--mcp-apps-docs#root]], [[sources/modelcontextprotocol--mcp-apps-docs#support-testing]]
+
+## Independent routing study — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] uses Claude Haiku 4.5 as its main frozen router in a selected-confusability skill-growth benchmark. This is independent author-reported research, not an Anthropic publication, endorsement or current documentation refresh. [[sources/zhang--skill-plus-plus#benchmark-construction]] [[sources/zhang--skill-plus-plus#metrics]]

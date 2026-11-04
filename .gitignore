@@ -64,3 +64,15 @@ __pycache__/
 /sources/deepseek-ai--dsh-superagent-prototype/
 
 sources/openai--mcp-extensions/
+
+# Version-pinned paper evidence retained locally; public analysis + hashes tracked.
+/sources/zhang--skill-plus-plus/raw/
+
+/sources/nvidia--auto-ontology/
+
+/sources/nvidia--auto-ontology-eval/
+
+/sources/openai--codex/
+
+/sources/open-inspect--background-agents/
+/sources/superplanehq--superplane/

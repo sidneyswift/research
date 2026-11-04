@@ -178,3 +178,7 @@ agent-maintained systems" is a real field-level idea, not one builder's habit.
   the ratchet pattern flags — contracts vs. distrust scaffolding.)
 - Is "95% garbage / 50% on the second try" a real measured rate or an illustrative figure?
 - Does the claim that it "applies to knowledge work broadly" hold outside software?
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] supplies a production-evidence version of the compounding loop: retained executions → investigated cohorts → reproducible examples → durable, inexpensive evals. The useful accumulated asset is a runnable check tied to evidence, not merely more logs or retrospective prose. This is our comparison with Braintrust's article/docs, not measured proof of compounding gains. [[sources/ankrgyl--trace-lake#trace-to-eval]]

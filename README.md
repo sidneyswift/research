@@ -42,14 +42,16 @@ See [[projects/_index]] for projects created from the research, starting with [[
 | --- | --- | --- |
 | Skills cataloged | 5 paged | 2026-11-04 |
 | Plugins cataloged | 10 | 2026-11-04 |
-| Projects cataloged | 18 | 2026-11-04 |
+| Projects cataloged | 23 | 2026-11-04 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
-| Concepts cataloged | 26 | 2026-11-04 |
+| Concepts cataloged | 28 | 2026-11-04 |
 | Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
-| Creators cataloged | 29 | 2026-11-04 |
-| Source citation pages | 64: 15 repos, 28 docs-pages, 14 articles, 1 paper, 1 tweet, 5 other | 2026-11-04 |
+| Creators cataloged | 35 | 2026-11-04 |
+| Source citation pages | 75: 21 repos, 28 docs-pages, 18 articles, 2 papers, 1 tweet, 5 other | 2026-11-04 |
 
-Latest ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension-architecture]], [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]], [[concepts/mcp-enterprise-managed-authorization]] and [[concepts/skills-over-mcp]]. The synthesis [[analyses/mcp-and-extensions]] remains draft pending cross-family review. Counts describe existing wiki pages, including prior local drafts; inventory does not refresh older source claims or popularity signals.
+Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
+
+Latest MCP ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension-architecture]], [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]], [[concepts/mcp-enterprise-managed-authorization]] and [[concepts/skills-over-mcp]]. The synthesis [[analyses/mcp-and-extensions]] remains draft pending cross-family review. Counts describe existing wiki pages, including prior local drafts; inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 
@@ -58,7 +60,7 @@ Latest ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension-arc
 1. **Every claim cites a source.** No exceptions, no "everyone knows."
 2. **Patterns require ≥2 artifact examples.** One example is a coincidence.
 3. **"What we'd steal" is an exhaustive ledger** on every artifact/concept page — capture *everything* portable (★-mark the best), never a curated top-3. A thin list narrows our attention over time.
-4. **Sources are cloned, not linked.** Repos are kept as live local clones (git-ignored, re-clonable via [sources/clone-all.sh](sources/clone-all.sh) from [sources/repos.manifest.tsv](sources/repos.manifest.tsv), pinned to the cited commit); captured articles/papers are committed snapshots. Either way we point at evidence, never a bare URL. **On a fresh checkout, run `sources/clone-all.sh` to rebuild the repo evidence cache.**
+4. **Sources are cloned, not linked.** Repos are kept as live local clones (git-ignored, re-clonable via [sources/clone-all.sh](sources/clone-all.sh) from [sources/repos.manifest.tsv](sources/repos.manifest.tsv), pinned to the cited commit); captured articles/papers are normally committed snapshots. Full-paper redistribution exceptions retain local evidence plus tracked version pins, hashes and restoration notes (see [Skill++ evidence](sources/zhang--skill-plus-plus/README.md)). Either way we point at evidence, never a bare URL. **On a fresh checkout, run `sources/clone-all.sh` to rebuild the repo evidence cache.**
 5. **Every ingest gets a log entry.** Append to `log.md` — `## [YYYY-MM-DD] ingest | <subject>` plus 1–3 bullets. Future-you needs this.
 6. **Lint periodically.** Karpathy's whole point: the LLM is the maintainer. Run a Lint pass after every batch of ingests and on demand.
 7. **Reflect, don't just collect.** This wiki researches how to build great agents/skills — so it must improve *itself* with what it learns. After ingests, ask whether new patterns apply to our own machinery and log candidates in [meta/self-improvements.md](meta/self-improvements.md).

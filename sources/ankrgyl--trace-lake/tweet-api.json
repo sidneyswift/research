@@ -1,0 +1,45 @@
+{
+  "data":{
+    "article":{
+      "title":"The Trace Lake"
+    },
+    "author_id":"161602232",
+    "conversation_id":"2117696780741771638",
+    "created_at":"2026-11-03T19:13:52.000Z",
+    "edit_history_tweet_ids":[
+      "2117696780741771638"
+    ],
+    "entities":{
+      "urls":[
+        {
+          "display_url":"x.com/i/article/2117…",
+          "end":23,
+          "expanded_url":"https://x.com/i/article/2117682615494823936",
+          "start":0,
+          "status":404,
+          "unwound_url":"https://x.com/i/article/2117682615494823936",
+          "url":"https://t.co/wQxD46Omrm"
+        }
+      ]
+    },
+    "id":"2117696780741771638",
+    "public_metrics":{
+      "bookmark_count":140,
+      "impression_count":18924,
+      "like_count":102,
+      "quote_count":6,
+      "reply_count":9,
+      "retweet_count":10
+    },
+    "text":"https://t.co/wQxD46Omrm"
+  },
+  "includes":{
+    "users":[
+      {
+        "id":"161602232",
+        "name":"Ankur Goyal",
+        "username":"ankrgyl"
+      }
+    ]
+  }
+}

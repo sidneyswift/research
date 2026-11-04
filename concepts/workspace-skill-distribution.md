@@ -108,3 +108,11 @@ This split keeps the trust story legible: an admin can never silently inject beh
 ## MCP research connection — 2026-11-04
 
 [[concepts/skills-over-mcp]] adds a remote service distribution rail. It transports the existing Agent Skills format; host activation, origin-bound approval and verified manifests remain required. This does not refresh older per-product distribution claims above. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skills]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]]
+
+## Installation is not visibility — 2026-11-04
+
+[[artifacts/projects/codex]] adds current source evidence for deterministic explicit skill identity and budgeted catalog rendering. Installed, enabled, model-visible, explicitly selected and actually executed are separate states; rendering records omissions and truncation. This does not refresh the historical marketplace size or every surface's distribution rules. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#skill-budget]]
+
+## Open Inspect: Session-pinned managed materialization
+
+[[artifacts/projects/background-agents]] validates paged skill content and file hashes, stages an installation, and uses a recoverable journal/rename swap before harness discovery. Selected revisions survive restart, but name collisions deliberately drop managed entries in favor of discovered skills. Track selected, validated, installed and discoverable sets separately. This is installation evidence, not a measured routing improvement. [[sources/open-inspect--background-agents#skills-pinning]] [[sources/open-inspect--background-agents#skills-validation]] [[sources/open-inspect--background-agents#skills-install]]

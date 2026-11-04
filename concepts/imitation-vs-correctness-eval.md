@@ -89,3 +89,15 @@ Pilot evidence: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## Cross-system API research — 2026-11-04
 
 [[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.
+
+## Runtime evidence comparison — 2026-11-04
+
+[[concepts/trace-lake]] turns observed executions into test cases. Our transfer of this page's distinction: preserve the observed run as evidence without making its output the gold answer; the eval needs a separately justified expectation. The article requires reproduction context but does not establish every scorer's correctness. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+
+## Routing versus task success — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] supplies a related measurement separation: exact annotated-skill retrieval, functional substitutability and executable task outcome. Skill++ improves full required-skill coverage substantially in its selected-confusability study, but a separate 150-query task test reports hidden-test pass gains of only 4.0 and 0.7 percentage points for its two agents. The error audit checks functional substitutes separately from the headline metric. Our lesson is not that routing labels are worthless: it is that proxy improvement must not silently become a claim about task correctness. [[sources/zhang--skill-plus-plus#metrics]] [[sources/zhang--skill-plus-plus#errors]] [[sources/zhang--skill-plus-plus#task-success]]
+
+## Execution matching and treatment scope — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] supplies an evaluation boundary: shared deterministic SQL-result scoring controls grader differences, but a multi-step semantic agent versus a one-shot schema prompt changes more than ontology context. BIRD set matching discards duplicate multiplicity; BEAVER has different normalization and empty-result behavior. Report the actual scoring semantics, run health, pinned treatment and asymmetric context before claiming correctness or a causal ontology gain. [[sources/nvidia--auto-ontology-eval#root]] [[sources/nvidia--auto-ontology-eval#scoring]] [[sources/nvidia--auto-ontology-eval#extra-context]]

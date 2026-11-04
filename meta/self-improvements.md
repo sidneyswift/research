@@ -275,3 +275,58 @@ Compounding budget: this batch ships reusable capture/review/validation machiner
 - **Repeated deterministic move:** three parallel source collections each required the same hash/size verification. Skillified it as `scripts/check-document-captures.py`, documented through the existing INGEST/source-schema route and Tooling. Definition of done: reject digest/size mismatch, missing/duplicate/escaping entries and malformed/empty receipts; accept both receipt forms; never fetch/edit evidence. Eight temporary validation scenarios passed, and all 54 real captures verify.
 
 Compounding budget: refined one existing schema and factored repeated integrity checks into one read-only script, without adding another operation or promoting an overlapping capability pattern.
+
+## [2026-11-03] Pass 17 — complete social-source evidence
+
+| # | Source-grounded learning | Applied change | Status |
+| --- | --- | --- | --- |
+| 55 | [[patterns/behavioral/evidence-gated-completion]] at ingestion: the tibo API preview omitted most principles, and meaningful counterexamples were only in attachments. [[sources/poteto--tibo-engineering#capture]], [[sources/poteto--tibo-engineering#auto-pick-counterexamples]] | Added a compact completeness gate to [[_schemas/source]]: expanded text, relevant parent/quote context, meaningful attachments, dated linked-page differences, and screenshot-versus-execution evidence class. Applied it to [[artifacts/projects/tibo-dog]]. | **applied** 2026-11-03; full expanded text and four images preserved and inspected. |
+
+Compounding budget: a small schema guard addresses the observed truncation failure without adding new tools or a duplicate engineering-principles page. Existing related concepts/patterns were extended; the corpus-scale defect-validation pattern remains proposed.
+
+## [2026-11-03] Pass 18 — route verification-budget decisions
+
+- Applied the review-budget principle from [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] to the consumer front door: `for-builders.md` now routes that decision directly to its canonical principle and fidelity limits, rather than making builders infer it from the older Interrogate ledger. [[sources/poteto--verification-over-adversarial-review#verification-first]]
+- Status: **applied** 2026-11-03. Compounding budget: extended an existing concept and a routing row; no duplicate concept, new workflow, installed-skill change or additional review agents.
+
+## [2026-11-04] Pass 19 — route domain-orchestrator designs
+
+- Applied the explicit separation of human steering, domain coordination and worker execution from [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] as a focused build-intent route in `for-builders.md`. The row sends builders to the canonical principle, related architecture and durability boundaries, with the screenshot clearly labeled a proposal. [[sources/mattpocock--domain-orchestrator-factory#root]]
+- Status: **applied** 2026-11-04. Extended existing concepts instead of creating a near-duplicate architecture page. No orchestrator, worker, cron or installed skill was created; this is research ingestion, not authorization to build the proposed system.
+
+## [2026-11-04] Pass 20 — route production evidence into evals
+
+- Applied [[concepts/trace-lake]] to the consumer routing table: builders seeking production-feedback loops now land on the trace corpus, verification-first review and model-fidelity pages together. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+- Existing wiki practice already preserves source evidence and validator fixtures. No trace database or background investigation is justified by this ingest alone. For a recurring ingestion defect, the concrete next step remains an evidence-backed fixture/check under the existing LINT #18 trigger, not a new prose-only review loop.
+- Status: **applied** 2026-11-04 (builder route). No installed skills, scheduled jobs, accounts or runtime infrastructure changed.
+
+## [2026-11-04] Pass 21 — library-relative routing checks
+
+- Applied [[concepts/lifelong-skill-routing]] through existing [[patterns/composition/resolver-routing-table]] and [[patterns/quality-bar/complexity-ratchet]]: `_schemas/skill.md` now asks for neighboring competitors, body-faithful distinguishing scope, and separate evidence for old-route retention, new-skill discovery and task success. It preserves the literal captured trigger instead of rewriting source evidence. [[sources/zhang--skill-plus-plus#method]] [[sources/zhang--skill-plus-plus#task-success]]
+- Added a growing-library build-intent route to `for-builders.md`. Kept existing pattern counts/statuses; a reported routing benchmark is not an additional inspected production routing-table artifact.
+- Status: **applied** 2026-11-04. No installed skill, router, model or production configuration changed. Promotion trigger for an automated refiner: observed collisions in the actual library plus a routing/outcome fixture set that can compare it with a simpler manual metadata correction. The paper alone does not justify a new multi-model maintenance pipeline.
+- Preservation boundary: documented a narrow paper-source exception in both maintainer entry points and `remote-setup.md`: full Skill++ reproductions stay local, while version pins, hashes, restoration notes and original research are public. This is a source-handling rule, not evidence that the experiments were reproduced.
+
+## [2026-11-04] Pass 22 — statuses are not guarantees
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] from [[artifacts/projects/auto-ontology]] to `_schemas/project.md`: distinguish configured readiness, entity coverage, certification, executable validation and persisted publication. The concrete source gaps are connection-count readiness, entity-fraction answerability and non-atomic certification flags. [[sources/nvidia--auto-ontology#readiness]] [[sources/nvidia--auto-ontology#coverage]] [[sources/nvidia--auto-ontology#publication]]
+- Added the semantic-data-query build-intent route to `for-builders.md`. Extended existing vocabulary, context, routing and evaluation pages instead of inventing an overlapping ontology concept page.
+- Status: **applied** 2026-11-04. No service installed, source connected, runtime skill changed or model/evaluation job launched. Promotion trigger for a local ontology experiment: a scoped set of real business questions that currently fail on ambiguity, plus gold results and a matched agent baseline with cost/latency tracking. Research alone does not justify deploying the stack.
+
+## [2026-11-04] Pass 23 — observation and recovery boundaries
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] and [[patterns/behavioral/context-is-not-authority]] from [[artifacts/projects/codex]] to `_schemas/project.md`: identify model-visible input, runtime activity, persisted state and recovery unit, rather than treating all as one transcript or completion signal. [[sources/openai--codex#trace]] [[sources/openai--codex#goal-provenance]] [[sources/openai--codex#storage]]
+- Added a focused builder route to the runtime investigation and promoted Codex out of the project candidate queue. Kept the older Goals and marketplace accounts version-scoped while adding implementation corrections.
+- Status: **applied** 2026-11-04. No installed skills, local Codex configuration or production runtime changed. Promotion trigger for additional tooling: an actual mismatch between saved source identity, model-visible evidence and a claimed recovered result; no new tracing service built merely because the source contains one.
+
+## [2026-11-04] Pass 24 — uncertain outcomes and retained authority
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] and [[patterns/behavioral/context-is-not-authority]] from [[artifacts/projects/background-agents]] to the project schema: record the no-retry cutoff, execution identity, accepted/saved/retired distinction, and content/credentials that survive revocation. Concrete grounding is ambiguous first-prompt delivery, provider checkpoint uncertainty and pinned memory/cache persistence. [[sources/open-inspect--background-agents#automation-retry]] [[sources/open-inspect--background-agents#shutdown-design]] [[sources/open-inspect--background-agents#memory-boundary]]
+- Added the hosted-background-agent builder route; extended existing concepts/patterns rather than making near-duplicate durability/memory pages. Status: **applied** 2026-11-04. No installed skills, production permissions, runtime or deployment changed.
+- Promotion trigger for a local experiment: actual background tasks with a defined acceptance fixture and observed interruption/retry cost. Research alone does not justify another agent hosting stack.
+
+## [2026-11-04] Pass 25 — snapshot granularity, not versioning by implication
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] from [[artifacts/projects/superplane]] to `_schemas/project.md`: distinguish the task/run/node/action snapshot units and enumerate live dependencies. Grounding: node configuration is copied but subsequent event routing reads live graph edges. [[sources/superplanehq--superplane#execution-state]] [[sources/superplanehq--superplane#event-routing]]
+- Added the issue-to-PR/repair-loop builder route; extended existing durability/review concepts rather than creating a second software-factory concept page. Narrow analogues did not inflate proposed pattern counts.
+- Status: **applied** 2026-11-04. No installed skills, runtime, infrastructure or deployment changed. Promotion trigger for an implementation experiment: repeated issue-to-PR work with measurable review/repair cost and explicit acceptance fixtures. Research alone does not justify installing a new orchestration stack.

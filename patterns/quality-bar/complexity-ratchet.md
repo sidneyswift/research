@@ -103,3 +103,19 @@ A falsifiable test for spotting the ratchet (`## Examples` are the positive fixt
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] turns repeated failures into architecture/type/lint/test constraints, baselines legacy violations while rejecting new ones, and removes redundant prose. [[patterns/quality-bar/rerunnable-work-artifact]] is the accompanying reusable-tool refinement. Supporting sighting. [[sources/cursor--plugins-pstack#PK18]] [[sources/cursor--plugins-pstack#PP04]]
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] applies the ratchet to runtime evidence: recurring production failures become reproducible evals, so later changes can be checked against the lesson. Article/vendor-doc evidence only, not an independently executed artifact added to the confirmation count. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+
+## Skill-library regression boundary — 2026-11-04
+
+[[concepts/lifelong-skill-routing]] shows why adding files is not itself a monotonic capability ratchet: routing to an older correct body can regress when a new name/description competes with it. Our application is to preserve old-route fixtures and test new-skill discoverability separately. Downstream task success remains a third measurement. This is supporting research, not a new counted production example. [[sources/zhang--skill-plus-plus#access-forgetting]] [[sources/zhang--skill-plus-plus#plasticity]] [[sources/zhang--skill-plus-plus#task-success]]
+
+### Open Inspect — complexity justified by measured pressure
+
+[[artifacts/projects/background-agents]] defers a retained view-delta log while bounded canonical snapshots suffice. Its portability guide documents baseline exceptions with ratcheted counts/reasons rather than rewriting old migrations or calling a planned backend supported. These are scoped architecture/maintenance choices, not universal reasons to avoid replay logs or database-specific features. [[sources/open-inspect--background-agents#snapshot-handoff]] [[sources/open-inspect--background-agents#portability]]
+
+## SuperPlane — 2026-11-04
+
+Supporting maintenance prescription: [[artifacts/projects/superplane]] forbids new implicit database access/duplicate transaction-wrapper APIs while tracking existing debt. This allows incremental removal of transaction escape hatches without demanding an all-at-once rewrite. Source contributor guidance inspected; CI enforcement was not executed. [[sources/superplanehq--superplane#contributor-checks]]

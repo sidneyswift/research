@@ -87,9 +87,33 @@ These are source-grounded limitations and our counterarguments, not a documented
 - **Keep blocked revisions honest:** do not move the sync commit until reconciliation finishes; separate verifier changes from product fixes. [[sources/cursor--plugins-pstack#VE11]] [[sources/cursor--plugins-pstack#VE12]]
 - **Validate the verifier's own outputs:** syntax checks, malformed-input tests, incomplete-output handling and publication tests are part of trustworthy evidence generation. [[sources/cursor--plugins-pstack#VE37]] [[sources/cursor--plugins-pstack#VE38]] [[sources/cursor--plugins-pstack#VE40]]
 
+## Application report — 2026-11-03
+
+[[artifacts/projects/tibo-dog]] reports system-specific formal-verification skills and illustrates failures caused by timers interacting with tutorials, focus and rerolled offers. This adds a concrete motivation for preserving concurrent behavior in the model. It is **not** independent confirmation of code/model fidelity: the post supplies images and assertions, not models, configurations, source mappings or reproduced counterexample traces. Need those artifacts before claiming the model describes the shipped game. [[sources/poteto--tibo-engineering#formal-verification]] [[sources/poteto--tibo-engineering#auto-pick-counterexamples]] [[sources/poteto--tibo-engineering#statechart-images]]
+
+## Verification budget — 2026-11-03
+
+[[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] adds Lauren's preference to spend tokens on empirical/formal evidence instead of abstract agent critique. That makes fidelity more important, not optional: a test of the wrong behavior or a stale model is still weak evidence. The screenshot is an author position, not a controlled effectiveness study. [[sources/poteto--verification-over-adversarial-review#verification-first]]
+
 ## Open questions
 
 - How should mutation probes be selected so they challenge the abstraction rather than only a convenient guard?
 - Can coverage records discover new writers of guarded state across services without becoming a second incomplete model?
 - Which guarantees require a formal refinement relation, and when is source-linked counterexample replay the right practical standard?
 - How much does this workflow improve real defect detection per maintenance hour? The inspected source supplies contracts and mechanisms, not a measured answer.
+
+## Trace-derived evals — 2026-11-04
+
+[[concepts/trace-lake]] extends the fidelity concern to production regression cases: preserve the state and resource versions that made an observed failure possible. Our adaptation is to check those fixtures and their expected behavior against current requirements; reproducing an old output is not itself a correctness oracle. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+
+## Model-visible versus runtime evidence — 2026-11-04
+
+[[artifacts/projects/codex]] records model-facing conversation and runtime tool/code-cell objects separately, with raw payload provenance. Inspected reducer assertions distinguish identical text from discarded versus accepted attempts. A useful verification model needs source identity and observation boundaries, not just matching strings or a clean trace-close event. [[sources/openai--codex#trace]] [[sources/openai--codex#trace-tests]]
+
+## Open Inspect: Real internal stack, explicit external fixtures
+
+[[artifacts/projects/background-agents]] documents an authenticated preview that runs real application, authorization, storage and WebSocket paths, while GitHub and a scripted sandbox peer are fixtures. It tests a different claim from a live model/provider run. Selected lifecycle/launch/export assertions were inspected in this ingestion, not executed. Keep those evidence classes distinct from measured fault tolerance or coding quality. [[sources/open-inspect--background-agents#preview]] [[sources/open-inspect--background-agents#lifecycle-tests]] [[sources/open-inspect--background-agents#automation-retry]] [[sources/open-inspect--background-agents#export-code]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] separates source-inspected gates from unmeasured agent review. The exact-head merge check and repair-budget tests constrain state transitions, whereas risk/security scores remain model judgments. A local transaction around a remote merge is not an atomic cross-system operation. No runtime or fault-injection benchmark was run in this study. [[sources/superplanehq--superplane#merge]] [[sources/superplanehq--superplane#merge-tests]] [[sources/superplanehq--superplane#confidence]]

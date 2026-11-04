@@ -1,0 +1,140 @@
+Faster queries for debugging production agents with Nitro - Blog - Braintrust
+Product
+ObserveEvaluateDiscover
+Resources
+DocsBlogWorkshopsEval researchAcademyEncyclopedia
+Customers
+Pricing
+Contact us
+Sign inSign up
+Blog
+Faster queries for debugging production agents with Nitro
+24 September 2026Alex Steere, Ornella Esterhuizen8 min
+Engineering
+When we built Brainstore, it was because we wanted more control over how traces are stored and queried. A single trace can contain long prompts, model responses, and tool calls across hundreds of steps. We wanted full-text search to be fast and ingest to be near-instant.
+We chose to build Brainstore on top of object storage for its durability and low cost. Keeping storage separate from compute would allow trace history to grow without requiring every query server to hold a full copy on local disk.
+But developers are increasingly using agents like Codex and Claude Code to ask questions about their other agents. They search through trace history, run more investigations, and send off more queries.
+We built Nitro, Brainstore’s new asynchronous query execution engine, for this new paradigm. It separates waiting for storage from processing the data it returns. We benchmarked Nitro across our customer base and found that full-text searches ran more than twice as fast on average.
+Nitro is automatically enabled for all Braintrust SaaS and BYOC customers. It is enabled for self-hosted customers starting with dataplane 2.15.
+Agents changed the query workload
+When you look into a failure, you might run a few searches and take some time to read through the results before deciding what to do next. An agent can process hundreds of queries at once, searching through thousands of traces and testing potential explanations. That increase in query volume and concurrency puts strain on shared CPU and memory. Supporting this type of workload requires control over how much data is being fetched and how much is being processed.
+The limits of object storage
+Brainstore uses Tantivy to organize its search indexes. Tantivy is great at reading files efficiently from local storage. It uses memory-mapped files that let the operating system load file contents into memory when they are needed and reuse data that was recently read. This works well for small, sequential reads.
+With object storage, each read that can’t use the local cache requires a network request. Finding the posting list, a list of documents containing a particular word, could take four dependent steps:
+Read the end of a file to find out how large its footer is.
+Read the footer to locate the dictionary.
+Read the dictionary to locate the posting list.
+Read the posting list.
+Because the steps are dependent, even a small amount of data can still require several network round trips. In a synchronous execution model, workers alternate between computation and waiting for storage. If you increase the number of workers to overlap more reads, you’re also increasing the amount of compute work that is ready to run after the reads complete. If both reads and compute use the same concurrency limit, it’s easy to oversubscribe CPU and memory.
+Nitro schedules storage and compute separately
+Nitro keeps Tantivy’s storage format and replaces the synchronous search execution path with an asynchronous one. It schedules reads across index segments and dispatches CPU work when the required data is available. A query waiting for an object-store response does not occupy a compute worker.
+Before Nitro
+Each worker handles storage and compute
+Worker 1
+Wait for storage→Compute
+Worker 2
+Wait for storage→Compute
+Adding workers to overlap reads also increases the work that can compete for CPU and memory.
+With Nitro
+Storage and compute have separate limits
+Concurrent storage reads
+Read 1Read 2Read 3
+Data ready ↓ wait for a compute slot
+Decode dataCheck matches
+Storage requests can wait while compute workers process data that has already arrived.
+Illustrative worker and request counts. Each stage has a concurrency limit.
+Phrase matching is a good example of this. Nitro uses separate concurrency limits for reading the positions of words and checking those positions. Once the reads are finished, it releases the read semaphore and waits for a compute slot to check the positions. This lets many read requests overlap without allowing an equal number of CPU-intensive tasks to execute at the same time.
+Fewer reads and less work
+Scheduling is only part of the work. The solution also requires being intentional about each request to object storage. Returning to the term dictionary example above, Tantivy would read the last 8 bytes of the file to get the footer size, then read the footer, then read the block containing the terms we care about. That requires 3 consecutive reads before we can fetch the posting list.
+We can instead prefetch more aggressively, reading a fixed amount from the end of the file in one request. If the file is small enough, we read the entire thing in one read. For larger files, everything we need may still fit in that initial read. Otherwise, we may need additional reads to retrieve blocks outside that range or the full footer. Simple optimizations like this significantly cut down the number of requests.
+Another optimization is coalescing nearby requests. When searching for terms, postings, or positions, we often read lots of adjacent blocks of data. These reads are generally small, so we can combine them into fewer requests, reducing the time spent waiting for object storage.
+While rewriting the execution engine, we also found ways to short-circuit work, which helps both warm and cold queries. For example, we often see our customers searching for rare phrases made up of common words. We shipped a feature called shingle search which helps us skip segments that can’t contain matches, but searching for these phrases within a segment was expensive. Posting and position lists were huge because each term was common, so lots of time was spent eliminating documents containing the words in a different order. Nitro optimizes this by first verifying positions for subphrases that we think are uncommon, allowing us to eliminate candidates before checking the rest of the phrase.
+Consider the phrase “I just got off a long phone call,” made up of common words. If we select the three least common words, we may get “. . . off . . phone call”. Searching for those words, with two words between “off” and “phone,” is likely to be similarly selective to searching for the entire phrase. We only need to check three of the eight terms initially, then verify the remaining terms for the surviving candidates.
+Faster searches on production data
+To measure how these changes affected query speed, we tested Nitro on live production traffic and on queries that had historically been slow.
+Over three days, we ran an A/B test across all queries sent to Brainstore, routing half to Nitro. The test covered more than 1 million queries, including over 10,000 full-text searches.
+Full-text search ran more than 2× faster with Nitro. Other queries were 15% faster.
+That test measured the effect across live traffic.
+Separately, we selected slow query shapes and ran them against real production data with Nitro off and on. We used three days of production data, with a total index size of 300GB. These benchmarks were all run on the same hardware: 32 vCPUs, 128 GiB RAM, ARM64, 1.9 TB local NVMe SSD, 15 Gbps network. We ran three cold runs and 10 warm runs, and took the median time. The NVMe cache was cleared between cold runs.
+Nitro is especially impactful for cold start queries, where you don’t have a cache in NVMe. Several of the cold searches improved by 2–4×. Making warm queries faster was especially difficult because we had to match Tantivy’s performance.
+Slow production queries, before and after Nitro
+Selected query shapes run against real production data · Lower is better
+Cold cacheWarm cache
+QueryCold cache (s)
+Full-text search with many matches
+2.71× faster with Nitro
+Brainstore with Nitro4.371 s
+Brainstore before Nitro11.831 s
+Phrase search with few matches
+3.09× faster with Nitro
+Brainstore with Nitro4.539 s
+Brainstore before Nitro14.041 s
+Sorted summary query
+3.32× faster with Nitro
+Brainstore with Nitro6.236 s
+Brainstore before Nitro20.689 s
+Phrase summary with no matches
+4.38× faster with Nitro
+Brainstore with Nitro8.046 s
+Brainstore before Nitro35.209 s
+Summary search with AND conditions
+2.34× faster with Nitro
+Brainstore with Nitro9.474 s
+Brainstore before Nitro22.188 s
+Case-insensitive contains search
+1.95× faster with Nitro
+Brainstore with Nitro2.123 s
+Brainstore before Nitro4.149 s
+Description regex match
+1.73× faster with Nitro
+Brainstore with Nitro1.941 s
+Brainstore before Nitro3.366 s
+All queries in this chart share one linear scale across cold and warm results, starting at zero. Times are shown in seconds to three decimal places. Speedups use the original benchmark ratios. These are selected slow query shapes, separate from the live production A/B test.
+A separate comparison on 40 GB of text
+To compare search performance with other observability systems, we used a synthetic workload with four million spans containing 10 KB of text each. The 40 GB corpus uses deduplicated, shuffled FineWeb text. All three databases stored their durable data in S3 and ran one at a time on the same machine with 16 vCPUs, 64 GiB of memory, and a local NVMe disk for caching.
+The chart shows four of the 16 phrase-search queries and one of the nine dashboard aggregate queries. The aggregate tests used a separate dataset with the same text plus generated metrics and trace relationships. Each database used its own schema for those fields. Vendor A was faster on the span-count aggregate query. Aggregate performance is an area for further improvement.
+Each warm result is the median of ten runs after two warmups. Each cold result is the median of three runs, restarting the query process and clearing local caches before each run. S3’s internal caches could not be cleared. Timings include sending the query, receiving the response, and processing the returned data. Three cold runs are too few to establish small performance differences.
+The two searches labeled “Nitro + shingles” also use shingle filters, which track groups of three consecutive words to skip index segments that cannot contain the phrase. Vendor B’s native search for “help me” returned 1,302 extra matches. The benchmark verified correct results after adding a filter that checks the exact phrase in the returned text. The chart marks the native result as incorrect and omits its timing.
+Search and aggregate queries across 4 million spans
+40 GB of FineWeb text · Median client time · Lower is better
+Cold cacheWarm cache
+QueryCold cache (ms)
+Phrase with no matches
+“under the red bridge the yellow car slowly went home”
+Count matching inputs · 0 matches
+Nitro + shingles
+Brainstore with Nitro698 ms
+Vendor A36,223 ms51.9× slower than Brainstore with Nitro
+Vendor B2,253 ms3.23× slower than Brainstore with Nitro
+Common phrase
+“help me”
+Count matching inputs · 490,217 matches
+Brainstore with Nitro1,301 ms
+Vendor A23,795 ms18.28× slower than Brainstore with Nitro
+Vendor BIncorrect results
+Native search returned 1,302 extra matches that failed the exact-phrase check.
+Newest matches for a rare phrase
+“red car under the yellow bridge”
+Return newest 100 full inputs · 4,000 matches
+Brainstore with Nitro3,528 ms
+Vendor A38,637 ms10.95× slower than Brainstore with Nitro
+Vendor B4,403 ms1.25× slower than Brainstore with Nitro
+Find one matching input
+“when the red car slowly went under the yellow bridge”
+Return newest 100 full inputs · 1 match
+Nitro + shingles
+Brainstore with Nitro2,248 ms
+Vendor A39,296 ms17.48× slower than Brainstore with Nitro
+Vendor B3,180 ms1.41× slower than Brainstore with Nitro
+Count spans over time
+Dashboard aggregate · Text plus generated metrics
+Brainstore with Nitro718 ms
+Vendor A432 ms1.66× faster than Brainstore with Nitro
+Vendor B1,343 ms1.87× slower than Brainstore with Nitro
+All queries in this chart share one linear scale across cold and warm results, starting at zero. Times are rounded to whole milliseconds. Ratios use two-decimal medians and compare each result with Nitro in the same cache condition.
+An agent investigating a failure needs to follow the evidence across many queries. It should be able to search another phrase, inspect another trace, or test another explanation without spending most of its time waiting for the database.
+Brainstore was built for how much data agents generate. Nitro is built for how much they’ll query it.
+Share
+PreviousYour questions about Patterns, Topics, and Loop, answeredNextOptimizing coding agent usage and costs
+Trace everything
+Sign up

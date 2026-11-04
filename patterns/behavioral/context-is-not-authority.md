@@ -84,3 +84,19 @@ Schmid locates credential injection, schema validation and possible destructive-
 ## MCP research connection — 2026-11-04
 
 [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]], [[concepts/skills-over-mcp]] and [[concepts/mcp-enterprise-managed-authorization]] add independent distinctions between view context, feature declarations, skill activation, token issuance and action authority. In particular, OpenAI’s write helper validates shape while the host owns file eligibility; the enterprise IdP does not observe actual MCP traffic. [[sources/openai--mcp-extensions#write-client]], [[sources/modelcontextprotocol--mcp-authorization-docs#enterprise-policy-limit]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]]
+
+## Meaning is not authorization — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] exposes semantic context through per-user MCP and public gateway permissions. The gateway rebuilds internal identity headers, but FastAPI trusts that private hop; source-database credentials remain a separate authority layer. A term, certification flag or analytical recommendation does not authorize an external effect. Supporting comparison; existing example count unchanged. [[sources/nvidia--auto-ontology#mcp-auth]] [[sources/nvidia--auto-ontology#gateway]] [[sources/nvidia--auto-ontology#publication]]
+
+## Typed provenance and current authority — 2026-11-04
+
+[[artifacts/projects/codex]] distinguishes external tool-level messages from user input, host annotations from text wrappers, and a narrow automated approval from an escalated retry. Account notifications require current-state rereads. These are complementary boundaries, not an end-to-end security guarantee. [[sources/openai--codex#sdk-python]] [[sources/openai--codex#goal-provenance]] [[sources/openai--codex#approval]] [[sources/openai--codex#policy-reload]]
+
+### Open Inspect — access does not erase context
+
+[[artifacts/projects/background-agents]] distinguishes pinned context, live personal reads, original prompt identity, credential issuance and snapshots. Opt-out cannot erase already supplied information; cached credentials and persistent processes cross turn boundaries. Teams remain intra-organization controls, not tenant isolation. [[sources/open-inspect--background-agents#memory-boundary]] [[sources/open-inspect--background-agents#credentials]] [[sources/open-inspect--background-agents#authority]]
+
+## SuperPlane — 2026-11-04
+
+Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided task context, enabled report checks, eligible approval actors and organization/token authorization. Read-only review instructions remain prompt policy. Admission disablement preserves cleanup rights for already-running tasks. [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#approval]] [[sources/superplanehq--superplane#authorization]] [[sources/superplanehq--superplane#runner-admission]]

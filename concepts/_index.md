@@ -1,7 +1,7 @@
 ---
 domain: concepts
 type: index
-last-reviewed: 2026-10-24
+last-reviewed: 2026-11-04
 ---
 
 # Concepts
@@ -19,6 +19,9 @@ A concept becomes a **pattern** (in `patterns/`) once we've observed it as a con
 - [[concepts/agent-api-learning-and-evolution]] — distinguish training priors, tool-use training, runtime discovery and feedback; conditional 2027/2031/2036 scenarios.
 - [[concepts/business-platform-api-design]] — domain naming, queries/commands, durable operations, retries, and modularity under uncertain future use.
 
+- [[concepts/lifelong-skill-routing]] — library-relative metadata refinement; Skill++ preprint, full appendix evidence and separate routing/task-success metrics.
+
+- [[concepts/trace-lake]] — retained execution history → evidence-backed investigations → reproducible regression evals; vendor implementation claims and boundaries kept explicit.
 
 - [[concepts/review-cost-aware-workflows]] — Choose workflow depth and review surfaces around human decision cost; review facts and choices before expensive implementation.
 - [[concepts/artifact-centered-agent-context]] — Give facts, decisions, design, and execution progress explicit artifact owners; pass bounded context into fresh sessions.
@@ -54,3 +57,13 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 - [[concepts/mcp-extension-architecture]] — lifecycle, optional negotiation, Tasks and Server Cards.
 - [[concepts/mcp-enterprise-managed-authorization]] — user delegation, workload identity and actual token-policy limits.
 - [[concepts/skills-over-mcp]] — skill transport, manifests, integrity and activation.
+
+- [[concepts/code-mode-capability-interface]] — Kody discovery/contracts/composition and authority tradeoffs.
+
+## Updated 2026-11-03
+
+- [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] — prioritize empirical/formal evidence over abstract adversarial review; screenshot-backed author position, with bounded adaptation and preserved historical toolkit evidence.
+
+## Updated 2026-11-04
+
+- [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] — Matt Pocock's proposed domain coordinator/factory combination; connected to super-agent architecture without claiming tested durability or isolation.

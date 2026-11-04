@@ -58,6 +58,14 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/aws--idempotent-apis]] | article | 2026-11-04 | captured text; see citation |
 | [[sources/ietf--http-semantics]] | docs-page | 2026-11-04 | RFC 9110, June 2022 |
 | [[sources/philschmid--code-mode]] | article | 2026-11-02 | published 2026-11-01 |
+
+| [[sources/superplanehq--superplane]] | repo | 2026-11-04 | `7d755d1`; workflow engine, factory coordination, runner protocols |
+| [[sources/open-inspect--background-agents]] | repo | 2026-11-04 | `4b7f4e4`; background execution, lifecycle/authority and context boundaries |
+| [[sources/openai--codex]] | repo | 2026-11-04 | `021fccb`; complete source checkout saved, scoped harness investigation |
+| [[sources/nvidia--auto-ontology]] | repo | 2026-11-04 | `caced11e`; semantic context, SQL workflow, MCP and skills |
+| [[sources/nvidia--auto-ontology-eval]] | repo | 2026-11-04 | `ec41b2c`; paired evaluation and run-health gates |
+| [[sources/zhang--skill-plus-plus]] | paper | 2026-11-04 | arXiv 2611.00544v1; full local capture + public analysis/hash manifest |
+| [[sources/ankrgyl--trace-lake]] | article + linked context | 2026-11-04 | published 2026-11-03; full body, SQL and eight primary pages |
 | [[sources/kody-hq--kody]] | repo | 2026-11-02 | `9d96cfb` |
 | [[sources/deepseek-ai--dsh-superagent-prototype]] | repo | 2026-11-02 | `6337fc8` |
 | [[sources/deepseek--super-agent-design]] | article | 2026-11-02 | published 2026-11-01; English machine translation |
@@ -92,6 +100,9 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/SHL0MS--skill-diffs]] | repo | 2026-07-22 | `2ded6c0` (0★; dataset v0.5) |
 | [[sources/humanlayer--humanlayer]] | repo | 2026-10-23 | `2f66a45` (11,977★ at retrieval) |
 | [[sources/cursor--plugins-pstack]] | repo | 2026-10-24 | `9580c23` (pstack 0.15.32) |
+| [[sources/poteto--tibo-engineering]] | article (long-form X post) | 2026-11-03 | published 2026-11-01; full post + four images |
+| [[sources/poteto--verification-over-adversarial-review]] | article (social-post screenshot) | 2026-11-03 | publication date/URL unknown; original image + transcription |
+| [[sources/mattpocock--domain-orchestrator-factory]] | article (social-post screenshot) | 2026-11-04 | proposed architecture; publication date/URL unknown |
 
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
@@ -126,6 +137,13 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | Creator | Type | Notes |
 | --- | --- | --- |
 | [[creators/model-context-protocol]] | org | MCP specification and official extension maintainers |
+
+| [[creators/superplane]] | org | Software factory and durable workflow engine |
+| [[creators/open-inspect]] | org | Background coding sessions, sandbox lifecycle and harness adapters |
+| [[creators/nvidia]] | org | Auto-Ontology and companion evaluation harness |
+| [[creators/hanrong-zhang]] | individual | Skill++ co-first author with Minghao Liang; growing-library routing research |
+| [[creators/ankur-goyal]] | individual | Author of The Trace Lake; Brainstore architecture writing |
+| [[creators/braintrust]] | org | Trace history, investigation and evaluation tooling; documentation-level study |
 | [[creators/deepseek]] | org | Harness team; super-agent architecture essay and research prototype |
 | [[creators/philipp-schmid]] | individual | Code Mode explanation: typed composition, context emission and host state |
 | [[creators/kody-hq]] | org | Portable agent cloud, compact capability interface and credential use |
@@ -140,7 +158,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[creators/forward-future]] | org | Matthew Berman's AI media brand; ships the **Loop Library** — a curated, submission-driven catalog of repeatable agent loops + an installable find/adapt/design skill. First catalog-of-prompts creator |
 | [[creators/shl0ms]] | individual | GitHub handle (real name undisclosed); ships **skill-diffs** ([[artifacts/projects/skill-diffs]]) — a commit-history mining pipeline + dataset + linter/eval tools for training a skill-curator model. First dataset-and-tooling-pipeline creator; lowest-traction source to date (0★) |
 | [[creators/humanlayer]] | org | Collaborative coding-agent platform and RPI workflow; human review, task continuity, and host execution |
-| [[creators/lauren-tan]] | individual | pstack; engineering principles, orchestration, and maintained verification |
+| [[creators/lauren-tan]] | individual | pstack; engineering principles, orchestration, maintained verification; tibo.dog engineering report |
 
 ## Artifacts — Plugins
 
@@ -205,12 +223,18 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 | --- | --- | --- | --- |
 | [[artifacts/projects/mcp-apps]] | MCP project | source-investigated | Interactive UI wire, sandbox/bridge and SDK/host boundaries |
 | [[artifacts/projects/openai-mcp-extensions]] | OpenAI | source-investigated | ChatGPT-specific entrypoints, files, context, WebMCP, mentions and forms |
+
+| [[artifacts/projects/superplane]] | SuperPlane | source-investigated | Durable work identity, keyed queues, bounded repair and exact-head merging; 42 principles |
+| [[artifacts/projects/background-agents]] | Open Inspect | source-investigated | Hosted sessions, checkpoint/retirement, context and automation boundaries; 43 principles |
+| [[artifacts/projects/codex]] | OpenAI | source-investigated | Shared runtime, authority, history/recovery and evidence provenance; 44 principles |
+| [[artifacts/projects/auto-ontology]] | NVIDIA | source-investigated | Maintained business meaning, curated query tools and evidence-bound evaluation/publication; 26 principles |
 | [[artifacts/projects/dsh-superagent-prototype]] | DeepSeek | source-investigated | Persistent team coordination, scoped Tickets and event subscriptions |
 | [[artifacts/projects/kody]] | Kody HQ | source-investigated | Portable state, Code Mode capabilities and protected credential use |
 | [[artifacts/projects/codex-goals]] | OpenAI | feature-deep-dive | Codex CLI's **Goals** feature — persistent, evidence-gated `/goal` objectives (≥ 0.128.0); embodies [[concepts/completion-contract]], grounds [[patterns/behavioral/evidence-gated-completion]] |
 | [[artifacts/projects/eve]] | Vercel | active (beta) | **Filesystem-first, durable agent framework** ("Next.js for agents") — agent-as-directory, a framework-owned harness + toolbelt, durable sessions, channels, sandboxes, evals. The wiki's **first ingested harness**; embodies [[concepts/filesystem-first-agent-framework]] + [[concepts/durable-agent-execution]] |
 | [[artifacts/projects/skill-diffs]] | SHL0MS | active | Commit-history mining pipeline → `(before, after, intent)` skill-edit dataset (4 platforms) + a **defect-derived linter** + skill-patch eval harness. The wiki's **first dataset-and-tooling-pipeline** artifact; embodies [[concepts/commit-history-as-training-data]] + [[concepts/imitation-vs-correctness-eval]] |
 | [[artifacts/projects/humanlayer]] | HumanLayer | source-investigated | Collaborative agent platform: tasks, sessions, hosts, artifacts, review, and scoped recovery; pinned source investigation |
+| [[artifacts/projects/tibo-dog]] | Lauren Tan | author-report-investigated | Defect-to-rule loop, path-scoped policy, TLA+ interaction checks, input replay and executable budgets |
 
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
@@ -224,6 +248,9 @@ Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md
 - [[concepts/agent-api-learning-and-evolution]] — evidence limits, controlled evaluation and conditional API evolution scenarios.
 - [[concepts/business-platform-api-design]] — separate business intent, data retrieval, and workflow execution; nine primary sources with proposed contracts.
 
+- [[concepts/lifelong-skill-routing]] — Skill++: incoming metadata differentiation, scope exclusions and semantic naming preserve old routes as skill libraries grow; stress-test routing outcomes distinguished from task success.
+
+- [[concepts/trace-lake]] — searchable execution history becomes reproducible regression evals; 18 portable principles with operational boundaries.
 
 - [[concepts/super-agent-architecture]] — DeepSeek architecture and synthetic scheduling evidence.
 - [[concepts/code-mode-capability-interface]] — Kody implementation and Schmid’s Code Mode explanation; typed composition, context emission and authority.
@@ -231,9 +258,9 @@ Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md
 - [[concepts/verification-model-fidelity]] — verify that the verifier still describes the implementation.
 - [[concepts/evidence-calibrated-research]] — confidence, coverage, and contradiction are part of the research result.
 
-- [[concepts/review-cost-aware-workflows]] — Choose workflow depth and review surfaces around human decision cost; review facts and choices before expensive implementation.
+- [[concepts/review-cost-aware-workflows]] — Choose workflow depth around decision cost; prefer empirical/formal verification over abstract adversarial review of checkable behavior.
 - [[concepts/artifact-centered-agent-context]] — Give facts, decisions, design, and execution progress explicit artifact owners; pass bounded context into fresh sessions.
-- [[concepts/agent-control-plane]] — Separate durable tasks, access, artifacts, and review from provider-specific sessions and execution hosts.
+- [[concepts/agent-control-plane]] — Separate durable work from execution; includes the proposed persistent domain orchestrator + sandboxed factory principle.
 
 Ideas and techniques worth their own page — especially from essays, papers, and threads. A concept graduates to a [pattern](#patterns) once observed across ≥2 artifacts.
 

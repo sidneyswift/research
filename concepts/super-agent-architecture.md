@@ -98,3 +98,7 @@ The neutral prompt never delegated in five runs; delegation-first delegated in f
 - TODO: obtain original Chinese and benchmark scripts/raw observations; assess translation and reproduce before numerical recommendations.
 - TODO: compare real attention cost, false proactive starts, task success, provider spend and security incidents across systems.
 - TODO: find independent source-investigated examples before promoting the router/pass-through/watchdog candidates.
+
+## Domain-scoped coordinator comparison — 2026-11-04
+
+[[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] captures Matt Pocock's proposed local, long-running domain thread attached to a sandboxed software factory through a CLI. It shares the continuity/execution separation, but it is **not** evidence of DeepSeek's entire router/pass-through architecture: the proposed coordinator manages retrospectives and cron jobs, is scoped to one domain, and is not stated to be routing-only. It is a proposed trial with no reported result. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#operating-loop]] [[sources/mattpocock--domain-orchestrator-factory#proposal-status]]

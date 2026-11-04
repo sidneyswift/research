@@ -1,0 +1,33 @@
+{
+  "retrieved": "2026-11-03T12:34:41.747603+00:00",
+  "assets": [
+    {
+      "file": "HWE8dRMawAE9vMM.png",
+      "url": "https://pbs.twimg.com/media/HWE8dRMawAE9vMM.png",
+      "media_key": "3_2117039773370204161",
+      "bytes": 33416,
+      "sha256": "4cb5b1fa583693eb91150f5b9b1c373f5fd3fef41d9ecc7c06fdb7bfc3c7ff65"
+    },
+    {
+      "file": "HWE_v_LaMAADmkY.jpg",
+      "url": "https://pbs.twimg.com/media/HWE_v_LaMAADmkY.jpg",
+      "media_key": "3_2117043393486532608",
+      "bytes": 93313,
+      "sha256": "f43f0734238cdb1d4392882e7b6dbd35f6b78754762497eb44c5387e4a01dadd"
+    },
+    {
+      "file": "HWE_xiHasAABpoV.jpg",
+      "url": "https://pbs.twimg.com/media/HWE_xiHasAABpoV.jpg",
+      "media_key": "3_2117043420044898304",
+      "bytes": 103845,
+      "sha256": "aaf1b48464445c5f68aeb5f2fe49fc43bb5e5d8ba97edd883dce6634829cd877"
+    },
+    {
+      "file": "HWE_yjgaUAAeSc2.png",
+      "url": "https://pbs.twimg.com/media/HWE_yjgaUAAeSc2.png",
+      "media_key": "3_2117043437598035968",
+      "bytes": 200911,
+      "sha256": "53bfb0626dcbdb9c484ccc255a9e1468afec4334f83657526001395010936ab6"
+    }
+  ]
+}
