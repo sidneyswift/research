@@ -78,3 +78,15 @@ When the conversation is the only container, changing models, restarting an agen
 ## New comparison — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] supplies a distinct Ticket/Mandate/Assignment model. [[concepts/super-agent-architecture]] specializes the broader control-plane idea into continuous interaction, subscription pass-through and a routing-only coordinator, rather than duplicating this page's task/host lifecycle role. [[artifacts/projects/kody]] separates org/actor/credential identity in portable execution infrastructure. [[sources/deepseek-ai--dsh-superagent-prototype#domain]], [[sources/deepseek--super-agent-design#router-workers]], [[sources/kody-hq--kody#request-context]]
+
+## API design connection — 2026-11-04
+
+[[concepts/business-platform-api-design]] — Business resources, operation status, and execution workers form distinct API contracts; this synthesis supplies the HTTP layer for the lifecycle distinction.
+
+## Cross-system API research — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.
+
+## MCP research connection — 2026-11-04
+
+[[concepts/mcp-enterprise-managed-authorization]] covers identity and token issuance, not a complete execution/audit control plane. [[concepts/mcp-extension-architecture]] Tasks adds a narrower durable wire handle; [[analyses/mcp-and-extensions]] compares the layers without asserting workflow replay. [[sources/modelcontextprotocol--mcp-authorization-docs#enterprise-policy-limit]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#tasks]]

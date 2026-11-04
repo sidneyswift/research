@@ -1,0 +1,74 @@
+[
+  {
+    "file": "overview.md",
+    "anchor": "overview",
+    "url": "https://shopify.dev/docs/agents",
+    "title": "Agentic commerce",
+    "sha256": "48997ce483bb3931d58074111add299c225eae728556ba15e189af73cd555e6a",
+    "chars": 7567
+  },
+  {
+    "file": "catalog.md",
+    "anchor": "catalog",
+    "url": "https://shopify.dev/docs/agents/catalog",
+    "title": "Catalog interfaces",
+    "sha256": "b0a40cbb125bbca02629ca230eab6eea7be26ae1be8ea8f9ec3552ab81145c96",
+    "chars": 8357
+  },
+  {
+    "file": "profiles.md",
+    "anchor": "profiles",
+    "url": "https://shopify.dev/docs/agents/profiles",
+    "title": "Agent profiles and negotiation",
+    "sha256": "ef4878de741094d9080addaa8d4320461449d7d07ebb6f7ec69b5cfc24a348f3",
+    "chars": 43218
+  },
+  {
+    "file": "auth.md",
+    "anchor": "auth",
+    "url": "https://shopify.dev/docs/agents/profiles/auth-and-rate-limiting",
+    "title": "Authentication and rate limiting",
+    "sha256": "1b246574ca2a6c2164c68293efcc5f517e48784c2cd22bd909ff2efbbaac4acc",
+    "chars": 9611
+  },
+  {
+    "file": "cart.md",
+    "anchor": "cart",
+    "url": "https://shopify.dev/docs/agents/carts-and-checkout/cart-mcp",
+    "title": "Cart MCP",
+    "sha256": "4b45cbb8048c8aaadc4819800b0f26232567f7b1c27c4b0f702ba7adfb868521",
+    "chars": 26269
+  },
+  {
+    "file": "checkout.md",
+    "anchor": "checkout",
+    "url": "https://shopify.dev/docs/agents/carts-and-checkout/checkout-mcp",
+    "title": "Checkout MCP",
+    "sha256": "4189cbc9ed84189f3e73632fbbfc783866ffd82dfd728d46fce28528fd3742c1",
+    "chars": 47320
+  },
+  {
+    "file": "webmcp.md",
+    "anchor": "webmcp",
+    "url": "https://shopify.dev/docs/agents/carts-and-checkout/checkout-webmcp",
+    "title": "Checkout WebMCP",
+    "sha256": "563051a872129b3cb6a221aca9b3f6d31645e9552bab8b6a38e429f7dd202682",
+    "chars": 28816
+  },
+  {
+    "file": "orders.md",
+    "anchor": "orders",
+    "url": "https://shopify.dev/docs/agents/orders",
+    "title": "Order boundaries",
+    "sha256": "a14bbb975822e618797fd1ac8572ba405b6552ee5d1dc147e4c57cd57b523b27",
+    "chars": 6256
+  },
+  {
+    "file": "toolkit.md",
+    "anchor": "toolkit",
+    "url": "https://shopify.dev/docs/apps/build/ai-toolkit",
+    "title": "AI Toolkit",
+    "sha256": "14e889ef74a7095ce1eab2da9573e6d43c5d059d71d593ae5022212f4590e79e",
+    "chars": 9641
+  }
+]

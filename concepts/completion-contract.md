@@ -106,3 +106,7 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 ## Pstack comparison — 2026-10-24
 
 [[concepts/verification-model-fidelity]] asks whether the completion verifier still describes the actual implementation; a green result on a stale model is insufficient. [[artifacts/skills/statechart]] supplies the executable case and its explicit limits. [[sources/cursor--plugins-pstack#verification-local-checks]]
+
+## Cross-system API research — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.

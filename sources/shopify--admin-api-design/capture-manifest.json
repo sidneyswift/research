@@ -1,0 +1,65 @@
+[
+  {
+    "file": "overview.md",
+    "title": "GraphQL Admin API reference",
+    "url": "https://shopify.dev/docs/api/admin-graphql/2026-10",
+    "capture_url": "https://shopify.dev/docs/api/admin-graphql/2026-10.md",
+    "retrieved": "2026-11-04",
+    "bytes": 14021,
+    "sha256": "cca75e775d45a31f7bbc0e1281e70c0e8e3a9cfcaf6a318d294d30cfa3dcc599"
+  },
+  {
+    "file": "bulk.md",
+    "title": "Perform bulk operations with the GraphQL Admin API",
+    "url": "https://shopify.dev/docs/apps/build/apis/graphql-admin/bulk-operations/queries",
+    "capture_url": "https://shopify.dev/docs/apps/build/apis/graphql-admin/bulk-operations/queries.md",
+    "retrieved": "2026-11-04",
+    "bytes": 32791,
+    "sha256": "1d567deee10fbcfe9cd38325355a7e2e1532f7bdcd400f0d2273e97c30d5c71e"
+  },
+  {
+    "file": "idempotency.md",
+    "title": "Idempotent requests",
+    "url": "https://shopify.dev/docs/api/usage/idempotent-requests",
+    "capture_url": "https://shopify.dev/docs/api/usage/idempotent-requests.md",
+    "retrieved": "2026-11-04",
+    "bytes": 4657,
+    "sha256": "ab3fd92496a5cf03f749e6f10916c9b3a3fa7ce262c385d2abec4f3754df1e7b"
+  },
+  {
+    "file": "idempotency-implementation.md",
+    "title": "Implementing idempotency",
+    "url": "https://shopify.dev/docs/apps/build/apis/graphql-admin/implementing-idempotency",
+    "capture_url": "https://shopify.dev/docs/apps/build/apis/graphql-admin/implementing-idempotency.md",
+    "retrieved": "2026-11-04",
+    "bytes": 20570,
+    "sha256": "2fad8cda843af533b28f70576d16ee7c37afbfa07b22f59a89bc0a78138a403d"
+  },
+  {
+    "file": "versioning.md",
+    "title": "About Shopify API versioning",
+    "url": "https://shopify.dev/docs/api/usage/versioning",
+    "capture_url": "https://shopify.dev/docs/api/usage/versioning.md",
+    "retrieved": "2026-11-04",
+    "bytes": 9218,
+    "sha256": "c02c3156f46b479c79c184979239a7853d6872ff3d005eebbe562b93186d85b9"
+  },
+  {
+    "file": "errors.md",
+    "title": "Shopify API response status and error codes",
+    "url": "https://shopify.dev/docs/api/usage/response-codes",
+    "capture_url": "https://shopify.dev/docs/api/usage/response-codes.md",
+    "retrieved": "2026-11-04",
+    "bytes": 11158,
+    "sha256": "efc7fac683975aca956fe01543c668891772fa78e1636ce4b738c2925e106a44"
+  },
+  {
+    "file": "scopes.md",
+    "title": "Shopify API access scopes",
+    "url": "https://shopify.dev/docs/api/usage/access-scopes",
+    "capture_url": "https://shopify.dev/docs/api/usage/access-scopes.md",
+    "retrieved": "2026-11-04",
+    "bytes": 31928,
+    "sha256": "07f0fdb877e9f9090cfcd24bc1ee1e31044a88fdcdd2929e988bca96daae9ad1"
+  }
+]

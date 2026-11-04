@@ -14,6 +14,8 @@ Don't write an analysis until at least 5 artifacts of the same type are cataloge
 
 ## Active analyses
 
+- [[analyses/frontier-and-business-api-design]] — **draft** comparison of nine frontier/business API systems; documentation evidence and same-family reviews, cross-family gate pending.
+
 - [Engineering skill adoption study — draft](engineering-skill-adoption-study.md): source-based comparison, explicit coverage limits and a [284-path catalogue](engineering-skill-catalogue.md).
 
 ## Planned analyses (≥5 artifacts of relevant type needed first)
@@ -23,3 +25,7 @@ Don't write an analysis until at least 5 artifacts of the same type are cataloge
 - "MCP server tool-design styles" (need ≥5 MCP servers cataloged)
 - "Skills vs. agents vs. commands: when each wins" (need cross-type evidence)
 - "What 'popular' actually correlates with — quality, distribution, or recency?" (need popularity signals on ≥10 artifacts)
+
+## MCP synthesis — 2026-11-04
+
+- [[analyses/mcp-and-extensions]] — **draft**, primary-source architecture and build decisions; independent same-family review only, cross-family gate pending.

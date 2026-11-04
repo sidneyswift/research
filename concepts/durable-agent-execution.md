@@ -91,3 +91,15 @@ Most agent failure modes at the edges are durability failures: a long task dies 
 ## Recovery boundary comparison — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] persists domain changes/effect intent and resumes interrupted Assignments; this is distinct from replaying arbitrary external mutations exactly once. [[artifacts/projects/kody]] separates keyed execute observation/replay from workflow retry that re-executes package code. Both make [[patterns/behavioral/context-is-not-authority]] relevant to recovery: what resumes must retain a legitimate basis. [[sources/deepseek-ai--dsh-superagent-prototype#effects]], [[sources/deepseek-ai--dsh-superagent-prototype#execution]], [[sources/kody-hq--kody#execute-replay]], [[sources/kody-hq--kody#workflow-implementation]]
+
+## API design connection — 2026-11-04
+
+[[concepts/business-platform-api-design]] — A durable-operation API exposes accepted work and results; request idempotency alone does not make worker/provider effects exactly once.
+
+## Cross-system API research — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.
+
+## MCP research connection — 2026-11-04
+
+[[concepts/mcp-extension-architecture]] distinguishes durable Tasks status/input/result retrieval from internal step checkpoint/replay. Creation must be durable before returning a handle, but cancellation is cooperative and domain-effect idempotency remains separate. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#tasks]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#task-errors-security]]

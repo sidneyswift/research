@@ -12,10 +12,12 @@ vercel--eve	https://github.com/vercel/eve	bfc71912547779375777525d5a0f8b130e061f
 SHL0MS--skill-diffs	https://github.com/SHL0MS/skill-diffs	2ded6c0b37e256d6934bf91349a5079ef146c6cf	-
 humanlayer--humanlayer	https://github.com/humanlayer/humanlayer.git	2f66a45b186d88488fa356862be0117db1ccae9f	-
 cursor--plugins-pstack	https://github.com/cursor/plugins.git	9580c23696ac8d7abed0c166f2f9918800afb819	-
-rhys-sullivan--executor	https://github.com/RhysSullivan/executor.git	9c67fd54e2ade308a925e5b956d99b132b4df98a	-
+rhys-sullivan--executor	https://github.com/RhysSullivan/executor.git	3cf6e54659cb34ac731fe3cf747ca139be769b93	9c67fd54e2ade308a925e5b956d99b132b4df98a
 googleads--google-ads-mcp	https://github.com/sidneyswift/google-ads-mcp.git	d0e24b8b79922dc05d4403f1e089f5ea096771fa	-
 nousresearch--hermes-agent	https://github.com/NousResearch/hermes-agent.git	4488fe134b1de4359f3a4f1f8368576413e6e268	-
 openclaw--openclaw	https://github.com/openclaw/openclaw.git	dd6143f60c24c532e2aa7ed6cf2580143d0ca6b8	-
 vercel-labs--open-agents	https://github.com/vercel-labs/open-agents.git	cf865e94de7729751c747171785b6ce57e7b178c	-
 kody-hq--kody	https://github.com/kody-hq/kody.git	9d96cfb916552b889ee8989027618b35ecd554ba	-
 deepseek-ai--dsh-superagent-prototype	https://github.com/deepseek-ai/dsh-superagent-prototype.git	6337fc823ce20251c8de8085948165c81aaa701e	-
+
+openai--mcp-extensions	https://github.com/openai/mcp-extensions.git	9e6d418439cca0790bece62f6cd886ad4c04f133	-

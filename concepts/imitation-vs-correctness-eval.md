@@ -79,3 +79,13 @@ It's a general fix for any fine-tuning or preference-training setup whose "groun
 ## Pstack comparison — 2026-10-24
 
 [[concepts/evidence-calibrated-research]] offers a related separation: an accepted design story is not necessarily demonstrated intent, and confident synthesis must preserve its evidence tier. [[artifacts/plugins/pstack]] also supplies a concrete negative type example: a plausible representation still accepts the forbidden negative duration. [[sources/cursor--plugins-pstack#RE08]] [[sources/cursor--plugins-pstack#type-negative-probe]]
+
+## Internal research application
+
+Internal application proposal: [[projects/conversation-learning/README]] keeps user preference, acceptance, checked correctness and external outcomes separate in its proposed conversation corpus.
+
+Pilot evidence: [[projects/conversation-learning/pilots/commercial-redline-001/README]] records a reviewer-status versus answer-evidence conflation and later correction. [[sources/codex--commercial-redline-pilot#historical-evidence]] establishes the conversational sequence; reported workbook results were not independently rechecked.
+
+## Cross-system API research — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.

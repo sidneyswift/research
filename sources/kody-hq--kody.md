@@ -5,7 +5,7 @@ url: https://github.com/kody-hq/kody
 retrieved: 2026-11-02
 snapshot-location: sources/kody-hq--kody/
 upstream-commit: 9d96cfb916552b889ee8989027618b35ecd554ba
-last-reviewed: 2026-11-02
+last-reviewed: 2026-11-03
 ---
 
 # kody-hq/kody
@@ -18,6 +18,7 @@ last-reviewed: 2026-11-02
 - Live local clone with `.git` intact; ignored by the wiki and registered in `sources/repos.manifest.tsv`. No prior source was refreshed.
 - Scope: selected architecture, domain, credential, execution, recovery and test paths below; not an exhaustive repository audit.
 - No application installation, provider connection, deployment, source test execution or benchmark replication. Tests are **inspected**, not passed.
+- Additional inspection 2026-11-03: followed `register-tools.ts` and `tools/api.ts` at the same pinned commit; actual registration is `search`, `execute`, `api`. This is a source-coverage correction, not a clone refresh or live tools/list result.
 
 ## Popularity signals
 
@@ -37,6 +38,12 @@ last-reviewed: 2026-11-02
 ### architecture
 
 - [docs/contributing/architecture/index.md:1–200](https://github.com/kody-hq/kody/blob/9d96cfb916552b889ee8989027618b35ecd554ba/docs/contributing/architecture/index.md#L1-L200)
+
+### mcp-surface
+
+- [packages/worker/src/mcp/register-tools.ts:1–12](https://github.com/kody-hq/kody/blob/9d96cfb916552b889ee8989027618b35ecd554ba/packages/worker/src/mcp/register-tools.ts#L1-L12)
+- [packages/worker/src/mcp/tools/api.ts:33–43](https://github.com/kody-hq/kody/blob/9d96cfb916552b889ee8989027618b35ecd554ba/packages/worker/src/mcp/tools/api.ts#L33-L43)
+- [packages/worker/src/mcp/tools/api.ts:83–144](https://github.com/kody-hq/kody/blob/9d96cfb916552b889ee8989027618b35ecd554ba/packages/worker/src/mcp/tools/api.ts#L83-L144)
 
 ### search
 

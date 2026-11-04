@@ -104,3 +104,7 @@ This split keeps the trust story legible: an admin can never silently inject beh
 ## Adjacent portability — 2026-11-02
 
 [[concepts/code-mode-capability-interface]] and [[artifacts/projects/kody]] cover portable executable capabilities and state across MCP hosts. This is adjacent to distributing workspace skills, not evidence that host discovery paths or every skill format are standardized. [[sources/kody-hq--kody#intent]], [[sources/kody-hq--kody#execute-contract]]
+
+## MCP research connection — 2026-11-04
+
+[[concepts/skills-over-mcp]] adds a remote service distribution rail. It transports the existing Agent Skills format; host activation, origin-bound approval and verified manifests remain required. This does not refresh older per-product distribution claims above. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skills]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]]

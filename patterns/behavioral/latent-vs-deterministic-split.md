@@ -114,3 +114,11 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 ## New supporting mechanisms — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] uses programmatic admission and routing around semantic assessment, with observe-mode acceptance recorded rather than executed. [[artifacts/projects/kody]] keeps credential authorization/application in trusted code outside generated composition. These extend the evidence without implying deterministic code cannot fail. [[sources/deepseek-ai--dsh-superagent-prototype#policy]], [[sources/kody-hq--kody#credential-resolution]]
+
+## Related explanatory evidence: Code Mode
+
+Schmid illustrates the model generating a script while code handles API composition, filtering and selected output. This extends [[concepts/code-mode-capability-interface]]; an explanatory article is not an additional independently inspected artifact example. [[sources/philschmid--code-mode#typed-interface]]
+
+## MCP research connection — 2026-11-04
+
+[[concepts/skills-over-mcp]] assigns selection to user/model and raw-byte digest/size/origin checks to the host. [[artifacts/projects/openai-mcp-extensions]] exposes concrete schema/continuation parsing and explicit write outcomes; these are inspected mechanisms, not executed security guarantees. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]], [[sources/openai--mcp-extensions#form-client]], [[sources/openai--mcp-extensions#write-client]]

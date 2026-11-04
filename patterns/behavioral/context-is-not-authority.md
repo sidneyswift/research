@@ -68,3 +68,19 @@ Code can check stable identity, policy version and grants independently of a mod
 
 - TODO: independently run adversarial event, scope-expansion and credential-use tests; no security certification is claimed.
 - TODO: compare immediate cancellation with notify/revalidate policies under partial external effects.
+
+## Related explanatory evidence: execution bridge
+
+Schmid locates credential injection, schema validation and possible destructive-call approval in the host bridge. Treat these as proposed enforcement responsibilities, not protections established merely by a one-tool interface or the pseudo-example. [[concepts/code-mode-capability-interface]], [[sources/philschmid--code-mode#runtime-boundaries]], [[sources/philschmid--code-mode#pseudo-example]]
+
+## API research connection — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] compares schema-conforming proposals, managed permission policies and domain permissions across [[artifacts/projects/openai-agent-api]], [[artifacts/projects/anthropic-agent-api]] and [[artifacts/projects/gusto-api]]. Documentation-level correspondence does not establish deployed enforcement or add a runtime test.
+
+## Shopify API connection — 2026-11-04
+
+[[artifacts/projects/shopify-api]] distinguishes declared/negotiated support, auth tiers, actual completion permission and buyer confirmation. Browser tool results remain untrusted data. Documentation-level correspondence only, not an enforcement test. [[sources/shopify--agent-commerce-api-design#profiles]], [[sources/shopify--agent-commerce-api-design#auth]], [[sources/shopify--agent-commerce-api-design#webmcp]]
+
+## MCP research connection — 2026-11-04
+
+[[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]], [[concepts/skills-over-mcp]] and [[concepts/mcp-enterprise-managed-authorization]] add independent distinctions between view context, feature declarations, skill activation, token issuance and action authority. In particular, OpenAI’s write helper validates shape while the host owns file eligibility; the enterprise IdP does not observe actual MCP traffic. [[sources/openai--mcp-extensions#write-client]], [[sources/modelcontextprotocol--mcp-authorization-docs#enterprise-policy-limit]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]]

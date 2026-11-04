@@ -1,0 +1,56 @@
+[
+  {
+    "file": "overview.md",
+    "url": "https://platform.claude.com/docs/en/api/overview",
+    "chars": 11169,
+    "sha256": "1df5ad8ecdf5ebbf67e3fe0d3da98d57a560fd9f6b4925f3ff3bb1a771620681"
+  },
+  {
+    "file": "messages.md",
+    "url": "https://platform.claude.com/docs/en/api/messages/create",
+    "chars": 24492,
+    "sha256": "63b66d1756296f97f48500bc8fa06aa1a8557c3a974a3a0d3cc80cd310f0124a"
+  },
+  {
+    "file": "define-tools.md",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools",
+    "chars": 15270,
+    "sha256": "080bb841b202e8e745b57978da97590c0e33f1b4e7c2906c0b1632f1f595a37b"
+  },
+  {
+    "file": "handle-tools.md",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls",
+    "chars": 10066,
+    "sha256": "df4244530ac5fd4da888629da6df19078f05bb2ae7a820e31dd81ff59869cd2c"
+  },
+  {
+    "file": "batches.md",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/batch-processing",
+    "chars": 28776,
+    "sha256": "11ff4bac9c084bc0bbadf79e841211ca6b83c855ecb74608d426d6341f7f5241"
+  },
+  {
+    "file": "streaming.md",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/streaming",
+    "chars": 23395,
+    "sha256": "a194d2d7cd44c260172c3ff743c3ece52f32b1d16cc0ba273b5bf655c4e93a78"
+  },
+  {
+    "file": "errors.md",
+    "url": "https://platform.claude.com/docs/en/api/errors",
+    "chars": 18658,
+    "sha256": "2c93e0fe05b68588d0596a56dc5a0df5f0f971e816204b065517e05191ac88f8"
+  },
+  {
+    "file": "versions.md",
+    "url": "https://platform.claude.com/docs/en/api/versioning",
+    "chars": 2594,
+    "sha256": "f0bf0a585b8c3ba5eb8297835075a5c51f102abe256570e9d79612625a66dfa6"
+  },
+  {
+    "file": "managed-overview.md",
+    "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+    "chars": 6137,
+    "sha256": "bd13662cf9780a54778c6cf5454cb54b7811354e6d6fbd1b8ac7368859ac2e25"
+  }
+]

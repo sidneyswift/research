@@ -1,0 +1,116 @@
+{
+  "notice": "Entirely fictional illustration. Not a Seeker finding, real transcript, or export-ready dataset.",
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "synthetic-task-1",
+      "record_type": "task",
+      "revision": 1,
+      "origin": "synthetic",
+      "objective": "Revise a service scope and prepare an accompanying email",
+      "task_family_id": "synthetic-family-1",
+      "episode_ids": [
+        "synthetic-episode-1"
+      ]
+    },
+    {
+      "id": "synthetic-event-1",
+      "record_type": "event",
+      "revision": 1,
+      "origin": "synthetic",
+      "task_id": "synthetic-task-1",
+      "sequence": 1,
+      "actor": "user",
+      "content": "Keep delivery within the existing scope. Make the email friendly."
+    },
+    {
+      "id": "synthetic-event-2",
+      "record_type": "event",
+      "revision": 1,
+      "origin": "synthetic",
+      "task_id": "synthetic-task-1",
+      "sequence": 2,
+      "actor": "assistant",
+      "content": "We will also provide weekly reporting."
+    },
+    {
+      "id": "synthetic-event-3",
+      "record_type": "event",
+      "revision": 1,
+      "origin": "synthetic",
+      "task_id": "synthetic-task-1",
+      "sequence": 3,
+      "actor": "user",
+      "content": "Weekly reporting is outside the scope. Remove that commitment."
+    },
+    {
+      "id": "synthetic-intervention-1",
+      "record_type": "intervention",
+      "revision": 1,
+      "origin": "synthetic",
+      "episode_id": "synthetic-episode-1",
+      "context_cutoff_event_id": "synthetic-event-1",
+      "offending_refs": [
+        {
+          "record_id": "synthetic-event-2",
+          "revision": 1
+        }
+      ],
+      "feedback_refs": [
+        {
+          "record_id": "synthetic-event-3",
+          "revision": 1
+        }
+      ],
+      "repair_refs": null,
+      "feedback_kind": "correction",
+      "failure_labels": [
+        "unsupported_commitment"
+      ],
+      "constraint_available_at_cutoff": "yes",
+      "acceptance": "unknown",
+      "correctness": "not_checked",
+      "external_outcome": "not_observed",
+      "review_status": "unreviewed",
+      "allowed_uses": []
+    },
+    {
+      "id": "synthetic-episode-1",
+      "record_type": "episode",
+      "revision": 1,
+      "origin": "synthetic",
+      "task_id": "synthetic-task-1",
+      "event_ids": [
+        "synthetic-event-1",
+        "synthetic-event-2",
+        "synthetic-event-3"
+      ],
+      "intervention_ids": [
+        "synthetic-intervention-1"
+      ],
+      "observation": "An email draft introduced a commitment after an explicit scope constraint.",
+      "hypothesis": "Cross-artifact constraint tracking may be inadequate; internal cause is unverified.",
+      "outcome": "unresolved"
+    },
+    {
+      "id": "synthetic-lesson-1",
+      "record_type": "lesson",
+      "revision": 1,
+      "origin": "synthetic",
+      "evidence_refs": [
+        {
+          "record_id": "synthetic-intervention-1",
+          "revision": 1
+        }
+      ],
+      "scope": "Drafting communications governed by a separate agreed scope",
+      "proposal": "Check each proposed commitment against the current scope before finalizing the email.",
+      "exception": "The user explicitly authorizes an additional commitment.",
+      "evaluation": "Given a frozen scope and request, detect unsupported commitments while permitting explicitly authorized changes.",
+      "measured_improvement": null,
+      "review_status": "unreviewed",
+      "allowed_uses": []
+    }
+  ],
+  "limitations": "Compact linkage illustration: common-envelope timestamps, source captures, artifact blobs, reviewers, rights and release manifest intentionally absent. No exporter should accept this fixture as real data."
+}

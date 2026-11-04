@@ -147,3 +147,10 @@ The "glue tax" of building a production agent. A naive agent is a model-call loo
 ## New comparison — 2026-11-02
 
 [[artifacts/projects/kody]] studies portable capability/state infrastructure and protected credential use; [[artifacts/projects/dsh-superagent-prototype]] studies a persistent event/Ticket control plane. Neither comparison establishes interchangeable runtimes. Follow [[concepts/code-mode-capability-interface]] and [[concepts/super-agent-architecture]] for their different abstraction boundaries. [[sources/kody-hq--kody#intent]], [[sources/deepseek-ai--dsh-superagent-prototype#domain]]
+
+
+## Runtime selection freshness questions — 2026-11-04
+
+A builder QUERY for Flexy found that this page's product, deployment and API assessment remains pinned to the June snapshot. Treat its Vercel-only, workflow-world, message-ordering and beta descriptions as historical evidence until a version-matched re-ingest verifies them; do not infer current limitations from the old snapshot. [[sources/vercel--eve#root]], [[sources/vercel--eve#docs-execution-model]]
+
+Open comparison: qualify framework-owned execution against managed agent services. Preserve the session/task distinction in [[concepts/agent-control-plane]] and the replay boundary in [[concepts/durable-agent-execution]]. Extend evidence to current remote-compute providers, filesystem versus process recovery, full plugin compatibility, user/session authorization, administrative readership and cost per accepted task. Those provider families are not comprehensively source-ingested or benchmarked here. No source clone was advanced and no application or provider was run by this QUERY.

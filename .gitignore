@@ -62,3 +62,5 @@ __pycache__/
 /sources/kody-hq--kody/
 
 /sources/deepseek-ai--dsh-superagent-prototype/
+
+sources/openai--mcp-extensions/

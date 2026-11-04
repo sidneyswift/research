@@ -1,0 +1,26 @@
+[
+  {
+    "file": "managed-sessions.md",
+    "url": "https://platform.claude.com/docs/en/managed-agents/sessions",
+    "chars": 11768,
+    "sha256": "d869b4f0c3baac097b38fba5c6bec9c0b429820a140abe4271b73976714f88a1"
+  },
+  {
+    "file": "managed-operations.md",
+    "url": "https://platform.claude.com/docs/en/managed-agents/session-operations",
+    "chars": 8018,
+    "sha256": "224faaa7618f292aae2a6f796580ef1b16ca1d49ecd6c68b38d837934015bc97"
+  },
+  {
+    "file": "managed-permissions.md",
+    "url": "https://platform.claude.com/docs/en/managed-agents/permission-policies",
+    "chars": 13352,
+    "sha256": "84363e508a1c3a5e7b44af94dafd482b1085227c4a26c092148c28ddb48e48d9"
+  },
+  {
+    "file": "strict-tools.md",
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/strict-tool-use",
+    "chars": 7908,
+    "sha256": "d4173231c90adc8e5163d0f2be3881129d6065e833578d4f3f182f037d18b823"
+  }
+]

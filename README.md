@@ -32,20 +32,24 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 - **For evidence:** [sources/](sources/) — every claim in the wiki points here.
 - **For tooling:** [scripts/](scripts/) — `wiki-search.sh` (search), `wiki-doctor.py` (health check + score). Run `python3 scripts/wiki-doctor.py` anytime to see wiki health.
 
+## Internal builds
+
+See [[projects/_index]] for projects created from the research, starting with [[projects/conversation-learning/README]]. These design projects are separate from the external artifact counts below.
+
 ## Status
 
 | Domain | Count | Inventory checked |
 | --- | --- | --- |
-| Skills cataloged | 5 paged | 2026-10-24 |
-| Plugins cataloged | 10 | 2026-10-24 |
-| Projects cataloged | 6 | 2026-11-02 |
-| MCP servers cataloged | 0 paged | 2026-10-24 |
-| Concepts cataloged | 20 | 2026-11-02 |
-| Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
-| Creators cataloged | 14 | 2026-11-02 |
-| Source citation pages | 34: 14 repos, 6 docs-pages, 11 articles, 1 tweet, 2 purchased bundles | 2026-11-02 |
+| Skills cataloged | 5 paged | 2026-11-04 |
+| Plugins cataloged | 10 | 2026-11-04 |
+| Projects cataloged | 18 | 2026-11-04 |
+| MCP servers cataloged | 0 paged | 2026-11-04 |
+| Concepts cataloged | 26 | 2026-11-04 |
+| Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
+| Creators cataloged | 29 | 2026-11-04 |
+| Source citation pages | 64: 15 repos, 28 docs-pages, 14 articles, 1 paper, 1 tweet, 5 other | 2026-11-04 |
 
-Latest ingest: [[artifacts/projects/dsh-superagent-prototype]], [[artifacts/projects/kody]], [[concepts/super-agent-architecture]], and [[concepts/code-mode-capability-interface]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension-architecture]], [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]], [[concepts/mcp-enterprise-managed-authorization]] and [[concepts/skills-over-mcp]]. The synthesis [[analyses/mcp-and-extensions]] remains draft pending cross-family review. Counts describe existing wiki pages, including prior local drafts; inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

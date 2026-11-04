@@ -7,7 +7,7 @@ creator: "[[creators/kody-hq]]"
 source: "[[sources/kody-hq--kody]]"
 ecosystem: MCP / Cloudflare Workers
 status: source-investigated
-last-reviewed: 2026-11-02
+last-reviewed: 2026-11-03
 ---
 
 # Kody
@@ -35,6 +35,8 @@ last-reviewed: 2026-11-02
 **Implementation:** built-in domains form a lazily loaded, memoized registry; connected-server snapshots synthesize dynamic domains. Caller/feature filtering is applied to the assembled registry. The dynamic cache includes owner and remote-server state. This saves cold-start and repeated assembly costs but does not establish zero cache drift or end-to-end authorization for every capability. [[sources/kody-hq--kody#registry]]
 
 **Documentation:** `execute` takes an ES module with a default export and separate JSON `params`. It imports `kody:runtime`, saved package exports via `kody:@scope/package/export`, and compatible npm dependencies. Put changing arguments in `params` to reuse the same module graph. Static package imports are checked at publication and snapshotted in dependent packages; republish dependents to adopt changes. Ad hoc imports can resolve current versions, which is convenient but weakens reproducibility unless inputs/dependencies are recorded. [[sources/kody-hq--kody#execute-contract]]
+
+**Implementation correction, 2026-11-03:** the pinned `register-tools.ts` registers **three** tools: `search`, `execute` and `api`. The additional `api(operationId, params)` invokes one HTTP/API operation without sandbox execution or execute quota; its description sends composed calls, transformations, external fetches and execute-only capabilities to `execute`. The direct path is not Code Mode composition, and not every discovered capability is on the HTTP/API surface. This corrects a literal-two-tool interpretation of the intent discussion without changing the compact-interface thesis. [[sources/kody-hq--kody#mcp-surface]]
 
 The result is a **small discovery/execution vocabulary over a large backend**, not a small system. Code can compose calls, branching and parallel work before returning only the useful result. The host still needs adequate code generation, permission visibility and error recovery. [[sources/kody-hq--kody#intent]], [[sources/kody-hq--kody#execute-contract]]
 
@@ -82,6 +84,7 @@ Host commands require both local machine opt-in and a grant; remote controls can
 | Portable mechanism | Purpose and adaptation | Important limit / evidence |
 | --- | --- | --- |
 | ★ Search → entity contract → composed execute | Make a large capability set usable without loading it all into context | Requires reliable discovery and code generation. [[sources/kody-hq--kody#search]] |
+| Compact direct API dispatch alongside execute | Avoid sandbox execution for a single registered HTTP/API operation; compare against two-tool and explicit-tool paths | Three tools are actually registered at this pin; latency/quality advantage is not measured here. [[sources/kody-hq--kody#mcp-surface]] |
 | Broad query → domain overview | Keep exploration navigable before detailed ranking | Different contract from task-ranked search. [[sources/kody-hq--kody#search]] |
 | Inline high-confidence signatures/examples | Save a second lookup when enough information is already known | Ambiguous hits still need detail. [[sources/kody-hq--kody#search]] |
 | Semantic parity of text/structured tool output | Make host choice of response channel harmless for call details | This is a documented contract; client matrix untested here. [[sources/kody-hq--kody#search]] |
@@ -122,3 +125,11 @@ Host commands require both local machine opt-in and a grant; remote controls can
 - TODO: inspect runtime enforcement behind shared-context opt-in and host-command dual gates; current findings there are documentation-level.
 - TODO: measure search/execute token savings and total latency against a static-tool baseline. Interface intent alone supplies no percentage improvement.
 - Source/wiki structural checks are recorded in [[log]]. No Kody account, credential, execution context, provider call or live deployment was activated.
+
+## Related article: Code Mode
+
+[[concepts/code-mode-capability-interface]] now includes [[sources/philschmid--code-mode#typed-interface]]. The article supplies an explanatory single-execution-tool sketch; Kody explicitly exposes discovery plus execution. Similar interface goals do not imply identical runtime or permission behavior. [[sources/kody-hq--kody#intent]]
+
+## MCP research connection — 2026-11-04
+
+[[concepts/model-context-protocol]] and [[analyses/mcp-and-extensions]] place Kody’s compact capability facade within the wider protocol/application stack. This adds protocol evidence, not a new live validation or a refresh of the pinned implementation. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#architecture]]

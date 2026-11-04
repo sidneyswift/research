@@ -13,6 +13,26 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 ## Cataloged projects
 
+- [[artifacts/projects/shopify-api]] — Admin GraphQL plus UCP Catalog/Cart/Checkout/Order and agent-development tooling; documentation-investigated, 2026-11-04.
+
+- [[artifacts/projects/stripe-api]] — Payments; documentation-investigated, 2026-11-04. [[sources/stripe--business-api-design]].
+
+- [[artifacts/projects/ftrack-api]] — Production tracking; documentation-investigated, 2026-11-04. [[sources/ftrack--business-api-design]].
+
+- [[artifacts/projects/gusto-api]] — Payroll; documentation-investigated, 2026-11-04. [[sources/gusto--business-api-design]].
+
+- [[artifacts/projects/cloudinary-api]] — DAM / media; documentation-investigated, 2026-11-04. [[sources/cloudinary--business-api-design]].
+
+- [[artifacts/projects/salesforce-api]] — CRM / business operations; documentation-investigated, 2026-11-04. [[sources/salesforce--business-api-design]].
+
+- [[artifacts/projects/sap-sales-api]] — ERP / sales; documentation-investigated, 2026-11-04. [[sources/sap--business-api-design]].
+
+- [[artifacts/projects/business-central-api]] — ERP; documentation-investigated, 2026-11-04. [[sources/microsoft--business-central-api-design]].
+
+- [[artifacts/projects/anthropic-agent-api]] — Messages, tool exchange, batches and managed runtime; documentation-investigated, 2026-11-04. [[sources/anthropic--agent-api-design]].
+
+- [[artifacts/projects/openai-agent-api]] — Model/tool protocol and managed runtime; documentation-investigated, 2026-11-04. [[sources/openai--agent-api-design]].
+
 
 - [[artifacts/projects/dsh-superagent-prototype]] — domain, authorization, execution, delivery and recovery study. [[sources/deepseek-ai--dsh-superagent-prototype]].
 - [[artifacts/projects/kody]] — shared agent state and capability infrastructure; Code Mode, credentials, workflow/repo revision boundaries. [[sources/kody-hq--kody]].
@@ -29,3 +49,8 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 
 - **Codex CLI** (OpenAI) — the broader agentic-coding tool; only its Goals feature is studied so far (see [[artifacts/projects/codex-goals]]). A full ingest would enable a Codex-vs-Claude-Code comparison. Source: `https://developers.openai.com/codex`.
 - **Hermes Agent** (Nous Research) — the named downstream consumer of `skill-diffs`'s trained curator model; its **Curator** feature is a background maintenance pass tracking skill usage (active→stale→archived) directly relevant to this wiki's own LINT operation (see [[meta/self-improvements]] Pass 13). Not yet ingested — referenced only via its public docs page. Source: `https://hermes-agent.nousresearch.com/docs/user-guide/features/curator`.
+
+## MCP application surfaces — 2026-11-04
+
+- [[artifacts/projects/mcp-apps]] — shared UI wire protocol, sandbox/bridge and SDK/draft differences.
+- [[artifacts/projects/openai-mcp-extensions]] — pinned ChatGPT-specific SDK and app/plugin contracts.

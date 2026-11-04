@@ -1,0 +1,90 @@
+[
+  {
+    "file": "snapshot.md",
+    "url": "https://modelcontextprotocol.io/extensions/apps/overview.md",
+    "retrieved": "2026-11-04",
+    "sha256": "5c1d70733c9e1962ee45825aca76a89ff21b79ceec4260ccde3ce2c99d91743f",
+    "bytes": 12896,
+    "upstream_commit": null
+  },
+  {
+    "file": "client-matrix.md",
+    "url": "https://modelcontextprotocol.io/extensions/client-matrix.md",
+    "retrieved": "2026-11-04",
+    "sha256": "b274123c72c8a0db543fa96b121d417bd9d1098593ba104b0066f65380884389",
+    "bytes": 4707,
+    "upstream_commit": null
+  },
+  {
+    "file": "apps-stable.mdx",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/specification/2026-01-26/apps.mdx",
+    "retrieved": "2026-11-04",
+    "sha256": "ee452a7d1b9b7fb900acfeb4d6932d3963375b0f3f37d196a4b93eb80312af0e",
+    "bytes": 59181,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "apps-draft.mdx",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/specification/draft/apps.mdx",
+    "retrieved": "2026-11-04",
+    "sha256": "eb21b4204aafd0b2b1da81a238391fdcb5bf8aec7f94ac1d48a366427ea719d8",
+    "bytes": 93593,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "sdk-readme.md",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/README.md",
+    "retrieved": "2026-11-04",
+    "sha256": "a0df6303dd07d62321ee51fbf44e3737bb9750d746fd00dc0f5dc64de0819cd0",
+    "bytes": 18949,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "authorization.md",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/docs/authorization.md",
+    "retrieved": "2026-11-04",
+    "sha256": "8a07ac61d19513464d0a4c8b5928c51779cbfd35e36d01e1fe85e807384ebe4b",
+    "bytes": 10984,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "csp-cors.md",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/docs/csp-cors.md",
+    "retrieved": "2026-11-04",
+    "sha256": "a2a74d2166f55077968397cfc1b8345808f9ca0f08be927db25c90b5cb6d1798",
+    "bytes": 3048,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "migrate-from-openai.md",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/docs/migrate_from_openai_apps.md",
+    "retrieved": "2026-11-04",
+    "sha256": "c9b27e34db1777e781fd1ed188b5b04bdaa620f2d3f5aa64153e8b180194aa16",
+    "bytes": 20880,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "migrate-to-v2.md",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/docs/migrate-to-2.md",
+    "retrieved": "2026-11-04",
+    "sha256": "be22bdfe984b83435d37090a788107a39b761bd847837fdba1c62c7d87c2d207",
+    "bytes": 8813,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "patterns.md",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/docs/patterns.md",
+    "retrieved": "2026-11-04",
+    "sha256": "1f8145b6e776a9badf74ada634f85592d9123935fc1f5f90e449792f9e5430e0",
+    "bytes": 21909,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  },
+  {
+    "file": "testing.md",
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-apps/92195a772fe42efe6eeda3d1a3a90482464631f1/docs/testing-mcp-apps.md",
+    "retrieved": "2026-11-04",
+    "sha256": "8d104e8a3f91b1c16da37fe6c4371f3c0fd49417f72f6292262bfa4f0af57e8f",
+    "bytes": 3790,
+    "upstream_commit": "92195a772fe42efe6eeda3d1a3a90482464631f1"
+  }
+]
