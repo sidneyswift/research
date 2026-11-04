@@ -89,3 +89,7 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 ## Authoritative state and derived views — 2026-11-04
 
 [[artifacts/projects/codex]] separates canonical history, explicit metadata patches and diagnostic trace reduction. Its retained goal evidence uses host annotations rather than visible wrappers, and missing/cleared context baselines remain distinct. Persisting a summary does not promote it into authorization. [[sources/openai--codex#storage]] [[sources/openai--codex#goal-provenance]] [[sources/openai--codex#replay]]
+
+## Open Inspect: Pinned context versus live information access
+
+[[artifacts/projects/background-agents]] pins skill and memory selections, but live fact bodies and authorization checks remain separate. Shared/directive memory writes are proposed for review, with old active memory retained until a replacement is approved. Opting out cannot erase injected context, transcripts or sandbox files. Context reproducibility, adoption approval and confidentiality are different contracts. [[sources/open-inspect--background-agents#memory-model]] [[sources/open-inspect--background-agents#memory-boundary]] [[sources/open-inspect--background-agents#skills-pinning]]

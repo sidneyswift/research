@@ -103,3 +103,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## Conversation recovery versus effect recovery — 2026-11-04
 
 [[artifacts/projects/codex]] persists canonical history separately from query metadata and reconstructs history against valid compaction boundaries. A remote executor reconnect is limited by destination retention; this does not establish the step-replay/exactly-once properties described for other runtimes. Compare the recovery unit and already-issued external effects explicitly. [[sources/openai--codex#storage]] [[sources/openai--codex#replay]] [[sources/openai--codex#executor]]
+
+## Open Inspect: Checkpoint, retirement and uncertain execution
+
+[[artifacts/projects/background-agents]] distinguishes recoverable workspace capture from confirmed retirement of the source execution. Generation/operation fences reject stale results; interrupted prompts are failed and continuation paused rather than automatically replayed. Ordinary non-destructive checkpoints have a narrower settlement path than shutdown. This complements Eve’s durable-step model: preserving a filesystem cannot undo an external effect or establish its safe replay. [[sources/open-inspect--background-agents#generation-fence]] [[sources/open-inspect--background-agents#checkpoint]] [[sources/open-inspect--background-agents#continuation]] [[sources/open-inspect--background-agents#shutdown-design]]

@@ -15,6 +15,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Orgs
 
+- [[creators/open-inspect]] — background coding-session control plane and multi-harness sandbox runtime.
+
 - [[creators/nvidia]] — Auto-Ontology semantic context, curated MCP and companion evaluation tooling.
 
 - [[creators/braintrust]] — trace-query infrastructure, investigations and evaluations; studied through article and vendor docs.

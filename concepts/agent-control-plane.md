@@ -120,3 +120,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## Shared runtime, separate execution — 2026-11-04
 
 [[artifacts/projects/codex]] separates client lifecycle, model/tool loop, thread storage and process executor. TUI/exec share an in-process app-server facade; remote forwarding does not replay RPCs or persist execution state. This is an implemented boundary comparison, not a claim that all control planes provide the same durability. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#executor]]
+
+## Open Inspect: Hosted background sessions
+
+[[artifacts/projects/background-agents]] separates client presence, canonical session/queue state and sandbox execution generation. Its reconnect design favors a bounded canonical snapshot, with synchronous final read/send/socket registration, over a duplicate retained view log. Lifecycle ownership also stays centralized: clients consume recovery eligibility rather than reconstructing provider policy. This is a concrete implementation beside the earlier domain-orchestrator proposal, not proof that all provider recovery paths have been exercised. [[sources/open-inspect--background-agents#architecture]] [[sources/open-inspect--background-agents#snapshot-handoff]] [[sources/open-inspect--background-agents#shutdown-design]]

@@ -64,3 +64,7 @@ For context/semantic systems, distinguish **configured readiness, retrieval cove
 ## Observation, persistence and recovery units
 
 For agent runtimes, identify what the **model saw**, what tools/runtime actually executed, what history/metadata was persisted and what unit can resume after interruption. Distinguish recording complete, legal lifecycle completion and verified task success. Grounding: [[artifacts/projects/codex]], [[patterns/behavioral/evidence-gated-completion]] and [[sources/openai--codex#trace]] / [[sources/openai--codex#storage]] / [[sources/openai--codex#goal-tools]].
+
+## Unknown outcomes and revocation boundaries
+
+For remote execution, state the retry cutoff, generation/operation fence, and evidence distinguishing request acceptance, saved state, retirement and safe continuation. For revocable context/credentials, name what remains in transcripts, pinned inputs, files and caches after access changes. This extends the existing recovery/authority questions with concrete observed failure cases, not a new blanket approval workflow. Grounding: [[artifacts/projects/background-agents]], [[patterns/behavioral/evidence-gated-completion]], [[patterns/behavioral/context-is-not-authority]] and [[sources/open-inspect--background-agents#automation-retry]] / [[sources/open-inspect--background-agents#shutdown-design]] / [[sources/open-inspect--background-agents#memory-boundary]].

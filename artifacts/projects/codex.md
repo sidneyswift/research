@@ -198,3 +198,7 @@ Portable ledger; ★ marks priorities, not an adoption mandate. Evidence classes
 - The hosted service, all connectors/providers, full sandbox implementations, every extension, complete test suites and all UI behavior remain outside the investigated scope.
 
 **Preservation and validation:** the full pinned working tree and Git metadata are retained locally under `sources/openai--codex/`; research commits a citation map, source/tree identity, scoped file hashes and restoration instructions. Git connectivity and clean-tree checks passed. Source ranges, added wiki links and inventory are validated with the ingest. No inference, source build or upstream tests were run.
+
+## Downstream control-plane comparison
+
+[[artifacts/projects/background-agents]] wraps a pinned Codex `app-server` as one of several harnesses, but owns its own background queue, sandbox generations, recovery and multiplayer authority. Its terminal event and filesystem snapshot should not be confused with Codex’s inner thread history or task acceptance. The two source revisions are independent. [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#shutdown-design]]

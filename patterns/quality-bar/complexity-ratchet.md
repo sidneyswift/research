@@ -111,3 +111,7 @@ A falsifiable test for spotting the ratchet (`## Examples` are the positive fixt
 ## Skill-library regression boundary — 2026-11-04
 
 [[concepts/lifelong-skill-routing]] shows why adding files is not itself a monotonic capability ratchet: routing to an older correct body can regress when a new name/description competes with it. Our application is to preserve old-route fixtures and test new-skill discoverability separately. Downstream task success remains a third measurement. This is supporting research, not a new counted production example. [[sources/zhang--skill-plus-plus#access-forgetting]] [[sources/zhang--skill-plus-plus#plasticity]] [[sources/zhang--skill-plus-plus#task-success]]
+
+### Open Inspect — complexity justified by measured pressure
+
+[[artifacts/projects/background-agents]] defers a retained view-delta log while bounded canonical snapshots suffice. Its portability guide documents baseline exceptions with ratcheted counts/reasons rather than rewriting old migrations or calling a planned backend supported. These are scoped architecture/maintenance choices, not universal reasons to avoid replay logs or database-specific features. [[sources/open-inspect--background-agents#snapshot-handoff]] [[sources/open-inspect--background-agents#portability]]

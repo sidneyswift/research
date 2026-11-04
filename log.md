@@ -531,3 +531,14 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 ## [2026-11-04] reflect | observation and recovery units
 
 - Applied [[patterns/behavioral/evidence-gated-completion]] to [[_schemas/project]]: distinguish model-visible evidence, runtime activity, persisted state and recovery units; recording complete and lifecycle complete are not synonymous with task success. Added the focused builder route and recorded Pass 23 in [[meta/self-improvements]]. No installed skill or runtime setting changed.
+
+## [2026-11-04] ingest | Open Inspect background agents
+
+- Added [[artifacts/projects/background-agents]] with 43 portable principles and [[creators/open-inspect]], grounded in [[sources/open-inspect--background-agents]] at `4b7f4e430dbb5c29cf776de41151365d1196d737`. Complete 3,239-entry tracked source tree saved in an ignored local clone; committed source map, scoped hashes and restore manifest, not a vendored source tree.
+- Inspected selected session/harness/lifecycle, child admission, automation, memory, skill-installation and export paths plus focused assertions. No application install/build/test execution, model job, live provider or deployment. Retained doc/code conflicts and single-tenant, cached-credential, pinned-context and best-effort bulk-export limits.
+- Connected eight concepts, six existing patterns, Codex/HumanLayer/Eve comparisons and creator integrations. No new pattern promotion or duplicate concept.
+- Validation: 31 registered source anchors, 171 citation occurrences, 58 immutable line ranges and all 37 source-file hashes pass. Checked 156 added unique page→target links (95 source-anchor links), the capture link, 43-principle count and 10-project/19-creator/22-concept/43-source inventory. Git connectivity, clean source and selective restore-availability checks passed. Doctor stays 50/100 with no new findings; inherited debt unchanged. Ratchet: links +156 · orphans +0 · patterns +0.
+
+## [2026-11-04] reflect | unknown outcomes and retained authority
+
+- Extended [[_schemas/project]] and builder routing from [[artifacts/projects/background-agents]]: retry boundaries and source retirement are distinct from acceptance, and revocation cannot retract retained context. Pass 24 in [[meta/self-improvements]]; no installed skill or deployed system changed.

@@ -22,6 +22,8 @@ See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, pre
 
 ## Cloned repos
 
+- [[sources/open-inspect--background-agents]] — complete local source tree at `4b7f4e4`; architecture and lifecycle study with pinned evidence hashes.
+
 - [[sources/openai--codex]] — harness source at `021fccb`; complete local checkout, source/tree identity and scoped hashes, restorable from the manifest.
 
 - [[sources/nvidia--auto-ontology]] — application at `caced11e`; scoped architecture, semantics, tools and publication study.

@@ -357,3 +357,7 @@ Source and wiki checks are recorded in [[log]] under the October 23, 2026 HumanL
 ## Persistent coordination comparison — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] independently separates Tickets from execution Assignments and sessions, while [[artifacts/projects/kody]] separates actor/org/credential identity across execution surfaces. Compare ownership and recovery boundaries rather than assuming equivalent guarantees. [[sources/deepseek-ai--dsh-superagent-prototype#domain]], [[sources/kody-hq--kody#request-context]]
+
+## Related control-plane investigation
+
+[[artifacts/projects/background-agents]] supplies a separate hosted-session comparison: canonical snapshot handoff, explicit checkpoint-versus-retirement facts, sandbox generation fencing and admitted child follow-ups. Compare boundaries, not brand-level “durability” claims; neither source inspection proves arbitrary external effects exactly-once. [[sources/open-inspect--background-agents#snapshot-handoff]] [[sources/open-inspect--background-agents#shutdown-design]] [[sources/open-inspect--background-agents#child-followups]]

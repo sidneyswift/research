@@ -13,6 +13,8 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 ## Cataloged projects
 
+- [[artifacts/projects/background-agents]] — hosted sessions, checkpoint/retirement contracts, scoped delegation, pinned skills and trace export; 43 principles.
+
 - [[artifacts/projects/codex]] — full source preserved at `021fccb`; scoped runtime, authority, storage, skills, Goals and trace study with 44 principles.
 
 - [[artifacts/projects/auto-ontology]] — NVIDIA semantic-context service plus evaluation harness; source-investigated, 26 principles, runtime and benchmark results unverified.

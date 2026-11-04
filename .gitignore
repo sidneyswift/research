@@ -71,3 +71,5 @@ __pycache__/
 /sources/nvidia--auto-ontology-eval/
 
 /sources/openai--codex/
+
+/sources/open-inspect--background-agents/

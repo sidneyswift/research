@@ -68,3 +68,7 @@ last-reviewed: 2026-06-04
 ## Runtime source investigation — 2026-11-04
 
 [[artifacts/projects/codex]] adds source-level support for shared clients, explicit execution authority, separately owned history/metadata, bounded discovery and raw diagnostic evidence. This extends the historical product studies without claiming every source file was read or any benchmark reproduced. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#storage]] [[sources/openai--codex#trace]]
+
+## Downstream integration evidence — 2026-11-04
+
+[[artifacts/projects/background-agents]], maintained by [[creators/open-inspect]], documents and implements a Codex app-server harness alongside other vendors. It is a separate project, not an OpenAI-authored control plane or proof of endorsement. [[sources/open-inspect--background-agents#harness]]

@@ -130,3 +130,7 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 ## Runtime contracts around model judgment — 2026-11-04
 
 [[artifacts/projects/codex]] combines model-led work with deterministic identity resolution, shared/exclusive tool admission, state transitions and trace reduction. Each mechanism constrains a particular boundary; none upgrades a model's answer to semantic proof. Supporting comparison, not a benchmark. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#parallel-tools]] [[sources/openai--codex#trace-tests]]
+
+### Open Inspect — deterministic admission around model work
+
+[[artifacts/projects/background-agents]] implements generation fences, prompt request identity, retry classification and export-budget failure outside the model. A runtime-owned no-retry boundary before ambiguous enqueue prevents a second launch from being mistaken for harmless recovery. The policy is narrower than exactly-once external effects. [[sources/open-inspect--background-agents#generation-fence]] [[sources/open-inspect--background-agents#automation-retry]] [[sources/open-inspect--background-agents#automation-delivery]] [[sources/open-inspect--background-agents#export-code]]

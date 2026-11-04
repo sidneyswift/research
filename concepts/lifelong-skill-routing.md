@@ -163,3 +163,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Pinned Codex implementation comparison — 2026-11-04
 
 [[artifacts/projects/codex]] supplies complementary mechanisms: explicit paths resolve name collisions, ambiguous bare names are refused, catalog budgets record omitted/truncated metadata, and a deterministic cheap-selector interface supports shadow experiments. These are not Skill++ replication or proof a listed selector improves task outcomes. Default metadata budget is 2% of a known context window (8,000-character fallback); configured token limits have a separate cap. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#skill-budget]] [[sources/openai--codex#skill-shadow]]
+
+## Open Inspect: A pinned skill can still lose effective availability
+
+[[artifacts/projects/background-agents]] exposes a pre-routing boundary: session-pinned managed skills can be dropped when names collide with repository/user/bundled discovery. Its installer reports those drops. Differential routing evaluations should hold the effective installed catalog explicit; better descriptions cannot repair an entry absent from the harness’s discovery tree. [[sources/open-inspect--background-agents#skills-pinning]] [[sources/open-inspect--background-agents#skills-install]]

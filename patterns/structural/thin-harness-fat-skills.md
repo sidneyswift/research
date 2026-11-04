@@ -102,3 +102,7 @@ A falsifiable test for spotting the architecture (`## Examples` are the positive
 ## Codex runtime counterweight to literal thinness — 2026-11-04
 
 [[artifacts/projects/codex]] now fills the previously queued Codex runtime investigation. Shared app-server clients, tool admission/approval, storage, compaction, worker ownership and trace reduction support modular separation but not the claim that a production middle is only a tiny loop. Earlier paragraphs about unstudied Codex internals describe their original source scope. Supporting comparison; status/example count unchanged. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#loop]] [[sources/openai--codex#extraction-boundaries]]
+
+### Open Inspect — substantial shared runtime, replaceable harnesses
+
+[[artifacts/projects/background-agents]] puts process ownership and prompt execution behind separate harness contracts, with one supervisor selecting terminal outcomes. Managed skills are independently pinned, validated and materialized. The reusable center is a shared responsibility contract, not a promise that a production harness has little code. [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#completion]] [[sources/open-inspect--background-agents#skills-install]]

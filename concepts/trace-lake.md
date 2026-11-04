@@ -104,3 +104,7 @@ Portable design ledger; ★ marks the highest-leverage ideas. Concrete adaptatio
 ## Raw evidence before diagnostic interpretation — 2026-11-04
 
 [[artifacts/projects/codex]] provides an implementation-level complement: opt-in local ordered event/payload bundles reduce offline into conversation, runtime objects and cross-agent edges. Runtime output and model-visible input remain distinct; trace closure can describe an interrupted task. This is local diagnostic infrastructure, not a deployed trace lake or measured eval-improvement loop. [[sources/openai--codex#trace]] [[sources/openai--codex#trace-writer]] [[sources/openai--codex#trace-tests]]
+
+## Open Inspect: Trace export is a foundation, not the whole learning loop
+
+[[artifacts/projects/background-agents]] offers versioned pull-only NDJSON: one session’s collections share a transaction and size/page budgets, while multi-session pagination is best-effort. Explicit session-error records prevent success-shaped partial exports; compact references may point forward by event ID. Harness step metrics differ and upstream truncation is not recoverable. These boundaries should travel into any later cohort/eval pipeline; no automatic warehouse loading or learning loop was established. [[sources/open-inspect--background-agents#export]] [[sources/open-inspect--background-agents#export-code]]

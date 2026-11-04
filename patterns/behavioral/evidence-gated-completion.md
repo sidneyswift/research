@@ -108,3 +108,7 @@ Lauren's screenshot-backed preference for empirical/formal verification over abs
 ## Do not promote status into proof — 2026-11-04
 
 [[artifacts/projects/codex]] distinguishes a goal status mutation, completed runtime bookkeeping and a closed diagnostic trace from verified task success. The current goal handler enforces legal state choices, not arbitrary acceptance tests; recording_complete can describe interrupted work. This qualifies the older documentation-level Goals example without changing pattern status. [[sources/openai--codex#goal-tools]] [[sources/openai--codex#trace]]
+
+### Open Inspect — checkpoints and terminal events
+
+[[artifacts/projects/background-agents]] treats a saved checkpoint and a retired source as separate facts, persists unknown outcomes and withholds automatic replay of interrupted prompts. Its supervisor’s terminal selection is local lifecycle evidence, not acceptance of the user’s goal. [[sources/open-inspect--background-agents#shutdown-design]] [[sources/open-inspect--background-agents#checkpoint]] [[sources/open-inspect--background-agents#continuation]] [[sources/open-inspect--background-agents#completion]]

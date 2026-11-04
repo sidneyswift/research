@@ -101,3 +101,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 ## Shared client-runtime semantics — 2026-11-04
 
 [[artifacts/projects/codex]] uses one in-process app-server client for TUI and exec. Typed internal channels retain the response contract of serialized external transports. SDK/runtime compatibility remains explicit; sharing the engine does not imply every wrapper or deployed version has identical features. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#sdk-python]]
+
+### Open Inspect — shared protocol with explicit normalization
+
+[[artifacts/projects/background-agents]] names shared session contracts as the source of truth across control plane and clients, while adapters normalize local representations and harness events. Shared transport vocabulary does not make every provider lifecycle or usage unit equivalent. [[sources/open-inspect--background-agents#protocol]] [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#export]]

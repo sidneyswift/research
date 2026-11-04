@@ -109,3 +109,7 @@ These are source-grounded limitations and our counterarguments, not a documented
 ## Model-visible versus runtime evidence — 2026-11-04
 
 [[artifacts/projects/codex]] records model-facing conversation and runtime tool/code-cell objects separately, with raw payload provenance. Inspected reducer assertions distinguish identical text from discarded versus accepted attempts. A useful verification model needs source identity and observation boundaries, not just matching strings or a clean trace-close event. [[sources/openai--codex#trace]] [[sources/openai--codex#trace-tests]]
+
+## Open Inspect: Real internal stack, explicit external fixtures
+
+[[artifacts/projects/background-agents]] documents an authenticated preview that runs real application, authorization, storage and WebSocket paths, while GitHub and a scripted sandbox peer are fixtures. It tests a different claim from a live model/provider run. Selected lifecycle/launch/export assertions were inspected in this ingestion, not executed. Keep those evidence classes distinct from measured fault tolerance or coding quality. [[sources/open-inspect--background-agents#preview]] [[sources/open-inspect--background-agents#lifecycle-tests]] [[sources/open-inspect--background-agents#automation-retry]] [[sources/open-inspect--background-agents#export-code]]

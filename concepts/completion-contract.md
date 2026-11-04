@@ -110,3 +110,7 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 ## Lifecycle label versus acceptance evidence — 2026-11-04
 
 The current source update in [[artifacts/projects/codex-goals]] narrows the earlier documentation-level account. Its handler constrains legal lifecycle states and persists usage/status; the inspected path does not run arbitrary acceptance checks before storing complete. Keep the verification surface explicit even when a product offers a completion state. [[sources/openai--codex#goal-tools]]
+
+## Open Inspect: Terminal event, saved state and user outcome
+
+[[artifacts/projects/background-agents]] makes one activity supervisor select turn termination above interchangeable harnesses. That local once-only selection does not certify task correctness or exactly-once external delivery. Shutdown adds two more independently evidenced facts—saved state and source retirement—and pauses interrupted work. An “accepted” recovery command is still not a completed restoration. [[sources/open-inspect--background-agents#completion]] [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#shutdown-design]]

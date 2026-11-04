@@ -147,3 +147,7 @@ The "glue tax" of building a production agent. A naive agent is a model-call loo
 ## New comparison — 2026-11-02
 
 [[artifacts/projects/kody]] studies portable capability/state infrastructure and protected credential use; [[artifacts/projects/dsh-superagent-prototype]] studies a persistent event/Ticket control plane. Neither comparison establishes interchangeable runtimes. Follow [[concepts/code-mode-capability-interface]] and [[concepts/super-agent-architecture]] for their different abstraction boundaries. [[sources/kody-hq--kody#intent]], [[sources/deepseek-ai--dsh-superagent-prototype#domain]]
+
+## Recovery-model comparison
+
+[[artifacts/projects/background-agents]] preserves sandbox workspace state and pauses interrupted prompts instead of treating file restoration as step replay. This is a distinct recovery unit from the durable-step model described above. Both require explicit reasoning about external effects. [[sources/open-inspect--background-agents#shutdown-design]] [[sources/open-inspect--background-agents#continuation]]
