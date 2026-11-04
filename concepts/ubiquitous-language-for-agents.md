@@ -83,3 +83,7 @@ This is the same "concision pays off session after session" logic that motivates
 - Does a second creator ship the same agent-maintained-glossary convention (promotes the candidate pattern)? Compare gbrain's filing-rules/glossary and any `CONTEXT.md`-style files in CE/pm-os.
 - How is the glossary kept honest against the code over time without a test — is the "cross-reference with code" move enough, or does it need a `(det)` check?
 - Where's the boundary between this and a full domain model / `CONTEXT-MAP.md` for multi-context repos ([[sources/mattpocock--skills#skill-domain-modeling]])?
+
+## Executable business-meaning comparison — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] moves beyond a prose glossary: terms bind to columns, measures to SQL and relationships to joins. Its modeling guidance requires identity, population, grain, units, denominators, validity and counterexamples. This complements Pocock's vocabulary discipline rather than replacing a small project glossary with a service by default. Similar names and matching sample rows do not establish equivalent business concepts. [[sources/nvidia--auto-ontology#architecture]] [[sources/nvidia--auto-ontology#measure-contracts]]

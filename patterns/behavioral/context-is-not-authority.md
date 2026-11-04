@@ -68,3 +68,7 @@ Code can check stable identity, policy version and grants independently of a mod
 
 - TODO: independently run adversarial event, scope-expansion and credential-use tests; no security certification is claimed.
 - TODO: compare immediate cancellation with notify/revalidate policies under partial external effects.
+
+## Meaning is not authorization — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] exposes semantic context through per-user MCP and public gateway permissions. The gateway rebuilds internal identity headers, but FastAPI trusts that private hop; source-database credentials remain a separate authority layer. A term, certification flag or analytical recommendation does not authorize an external effect. Supporting comparison; existing example count unchanged. [[sources/nvidia--auto-ontology#mcp-auth]] [[sources/nvidia--auto-ontology#gateway]] [[sources/nvidia--auto-ontology#publication]]

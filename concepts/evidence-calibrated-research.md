@@ -110,3 +110,7 @@ A coverage map also makes the next step cheaper. “Unknown because the relevant
 - Which phrasing or output checks catch real confidence inflation rather than rewarding cosmetic hedges?
 - Do cross-family judges find additional supported defects after controlling for additional tokens and repeated sampling from one model?
 - What should expire or trigger revalidation when historical rationale becomes a standing design constraint?
+
+## Benchmark-health boundary — 2026-11-04
+
+[[artifacts/projects/auto-ontology]]'s companion evaluator refuses default headline reporting when broken-run failures exceed 5% or dispatched tasks have no results. Completeness depends on retained input sidecars; an explicit override exists. This supplies a concrete guard against presenting infrastructure failure as model weakness, not an independent replication of application accuracy. [[sources/nvidia--auto-ontology-eval#health-gate]]

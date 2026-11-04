@@ -122,3 +122,7 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 ## Skill++ comparison — 2026-11-04
 
 [[concepts/lifelong-skill-routing]] combines model-written descriptions, exclusions and name qualifiers with deterministic parsing, length checks, ranked reference selection, bounded retries and original-record preservation. Passing syntactic checks does not establish body fidelity; the semantic step still needs outcome evaluation. Supporting paper comparison only; existing artifact count unchanged. [[sources/zhang--skill-plus-plus#implementation]]
+
+## Semantic compilation comparison — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] parallelizes model extraction while serializing shared-name commits in canonical order; query SQL remains model-generated, with deterministic checks and bounded repair around it. The useful guarantee is specific: ordered mutation is not deterministic semantic generation. Supporting comparison only; existing pattern count unchanged. [[sources/nvidia--auto-ontology#ordered-commits]] [[sources/nvidia--auto-ontology#llm-sql]]

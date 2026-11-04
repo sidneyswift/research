@@ -81,3 +81,7 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 ## Pstack comparison — 2026-10-24
 
 [[concepts/evidence-calibrated-research]] specializes what an evidence handoff preserves: source coverage, contradictory findings, and confidence language. [[concepts/verification-model-fidelity]] adds an authority contract between source, model, properties, and generated views. [[artifacts/plugins/pstack]] is the supporting source family. [[sources/cursor--plugins-pstack#RE03]] [[sources/cursor--plugins-pstack#RE08]]
+
+## Shared semantic artifacts — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] makes business definitions, physical bindings and reusable SQL persistent artifacts consumed by multiple interfaces. The important boundary: certification flags and stored conversations do not by themselves provide revision-bound approval or governed analytical publication; the management skill prescribes scoped backup and exact re-export readback. [[sources/nvidia--auto-ontology#certification]] [[sources/nvidia--auto-ontology#publication]]

@@ -155,3 +155,7 @@ These are portable design lessons derived from the evidence above, not claims th
 - How should descriptions be revalidated when bodies change after admission, and how should legitimate legacy cleanup preserve stable identifiers?
 - Does this approach help multimodal skills or retrieval trees where the full library is never visible at once?
 - Which routing regressions measurably change human time, task success, latency or spend—not just annotated skill recall?
+
+## Tool-surface comparison — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] illustrates an adjacent design response: explicitly allow-list seven API tools plus two composite tools, override developer-oriented names/descriptions for agent decision-making and fail startup if a selected operation disappears. This is inspected engineering, not a replication of Skill++ or proof that nine is an optimal tool count. [[sources/nvidia--auto-ontology#curated-tools]]

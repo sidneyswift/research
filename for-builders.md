@@ -27,6 +27,7 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 
 | You're building… | Patterns / concepts to read first | Worked artifacts to study |
 | --- | --- | --- |
+| **Agents answering business-data questions / semantic models** | [[concepts/ubiquitous-language-for-agents]], [[concepts/imitation-vs-correctness-eval]], [[patterns/behavioral/context-is-not-authority]] | [[artifacts/projects/auto-ontology]] (source inspection; no replicated accuracy claim) |
 | **Growing skill libraries / routing collisions** | [[concepts/lifelong-skill-routing]], [[patterns/composition/resolver-routing-table]], [[concepts/imitation-vs-correctness-eval]] | [[sources/zhang--skill-plus-plus]] (reported benchmark, not replicated); [[artifacts/skills/writing-great-skills]] |
 | **Production traces → investigations → regression evals** | [[concepts/trace-lake]], [[concepts/review-cost-aware-workflows]], [[concepts/verification-model-fidelity]] | [[sources/ankrgyl--trace-lake]] (article + vendor docs, not an independently run system) |
 

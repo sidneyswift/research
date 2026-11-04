@@ -71,3 +71,7 @@ Static snapshots improve repeatability but require dependent republishing; ad ho
 - TODO: ingest Cloudflare's primary Code Mode explanation and independently investigate another implementation.
 - TODO: compare static tools against search/execute on equivalent tasks, permission scopes and model budgets.
 - TODO: examine how approvals bind to composed code and changed parameters across hosts.
+
+## Curated semantic-tool comparison — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] chooses nine task-oriented MCP tools over 119 counted OpenAPI operations, with handwritten routing descriptions but generated parameter schemas. This is a different interface choice from a code-execution capability surface: a small semantic API over a governed data model. Both reduce initial exposure; neither is demonstrated superior merely by counting tools. [[sources/nvidia--auto-ontology#curated-tools]]

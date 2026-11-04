@@ -29,6 +29,8 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/nvidia--auto-ontology]] | repo | 2026-11-04 | `caced11e`; semantic context, SQL workflow, MCP and skills |
+| [[sources/nvidia--auto-ontology-eval]] | repo | 2026-11-04 | `ec41b2c`; paired evaluation and run-health gates |
 | [[sources/zhang--skill-plus-plus]] | paper | 2026-11-04 | arXiv 2611.00544v1; full local capture + public analysis/hash manifest |
 | [[sources/ankrgyl--trace-lake]] | article + linked context | 2026-11-04 | published 2026-11-03; full body, SQL and eight primary pages |
 | [[sources/kody-hq--kody]] | repo | 2026-11-02 | `9d96cfb` |
@@ -75,6 +77,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 | Creator | Type | Notes |
 | --- | --- | --- |
+| [[creators/nvidia]] | org | Auto-Ontology and companion evaluation harness |
 | [[creators/hanrong-zhang]] | individual | Skill++ co-first author with Minghao Liang; growing-library routing research |
 | [[creators/ankur-goyal]] | individual | Author of The Trace Lake; Brainstore architecture writing |
 | [[creators/braintrust]] | org | Trace history, investigation and evaluation tooling; documentation-level study |
@@ -134,6 +137,7 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 
 | Project | Creator | Status | One-line |
 | --- | --- | --- | --- |
+| [[artifacts/projects/auto-ontology]] | NVIDIA | source-investigated | Maintained business meaning, curated query tools and evidence-bound evaluation/publication; 26 principles |
 | [[artifacts/projects/dsh-superagent-prototype]] | DeepSeek | source-investigated | Persistent team coordination, scoped Tickets and event subscriptions |
 | [[artifacts/projects/kody]] | Kody HQ | source-investigated | Portable state, Code Mode capabilities and protected credential use |
 | [[artifacts/projects/codex-goals]] | OpenAI | feature-deep-dive | Codex CLI's **Goals** feature — persistent, evidence-gated `/goal` objectives (≥ 0.128.0); embodies [[concepts/completion-contract]], grounds [[patterns/behavioral/evidence-gated-completion]] |

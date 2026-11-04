@@ -87,3 +87,7 @@ It's a general fix for any fine-tuning or preference-training setup whose "groun
 ## Routing versus task success — 2026-11-04
 
 [[concepts/lifelong-skill-routing]] supplies a related measurement separation: exact annotated-skill retrieval, functional substitutability and executable task outcome. Skill++ improves full required-skill coverage substantially in its selected-confusability study, but a separate 150-query task test reports hidden-test pass gains of only 4.0 and 0.7 percentage points for its two agents. The error audit checks functional substitutes separately from the headline metric. Our lesson is not that routing labels are worthless: it is that proxy improvement must not silently become a claim about task correctness. [[sources/zhang--skill-plus-plus#metrics]] [[sources/zhang--skill-plus-plus#errors]] [[sources/zhang--skill-plus-plus#task-success]]
+
+## Execution matching and treatment scope — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] supplies an evaluation boundary: shared deterministic SQL-result scoring controls grader differences, but a multi-step semantic agent versus a one-shot schema prompt changes more than ontology context. BIRD set matching discards duplicate multiplicity; BEAVER has different normalization and empty-result behavior. Report the actual scoring semantics, run health, pinned treatment and asymmetric context before claiming correctness or a causal ontology gain. [[sources/nvidia--auto-ontology-eval#root]] [[sources/nvidia--auto-ontology-eval#scoring]] [[sources/nvidia--auto-ontology-eval#extra-context]]

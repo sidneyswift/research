@@ -1,0 +1,64 @@
+{
+  "nvidia--auto-ontology": {
+    "full_name": "NVIDIA/auto-ontology",
+    "html_url": "https://github.com/NVIDIA/auto-ontology",
+    "default_branch": "main",
+    "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "stargazers_count": 3590,
+    "forks_count": 309,
+    "created_at": "2026-04-27T21:45:56Z",
+    "updated_at": "2026-11-04T10:55:51Z",
+    "pushed_at": "2026-11-04T10:08:33Z",
+    "inspected_commit": "caced11e69e19663dfa0f73778dbecbcb71e87a0"
+  },
+  "nvidia--auto-ontology-eval": {
+    "full_name": "NVIDIA/auto-ontology-eval",
+    "html_url": "https://github.com/NVIDIA/auto-ontology-eval",
+    "default_branch": "main",
+    "description": "LLM-powered Text-to-SQL evaluation toolkit: schema ingestion, retrieval eval, and standalone SQL judge/re-scorer.",
+    "stargazers_count": 50,
+    "forks_count": 12,
+    "created_at": "2026-07-02T15:44:30Z",
+    "updated_at": "2026-11-04T09:23:23Z",
+    "pushed_at": "2026-11-04T08:36:21Z",
+    "inspected_commit": "ec41b2c5b795637759297b90c1d19b42693200f9"
+  },
+  "issues": [
+    {
+      "html_url": "https://github.com/NVIDIA/auto-ontology/issues/250",
+      "number": 250,
+      "state": "open",
+      "title": "Reconcile authoritative replacement imports",
+      "updated_at": "2026-10-08T22:26:23Z"
+    },
+    {
+      "html_url": "https://github.com/NVIDIA/auto-ontology/issues/255",
+      "number": 255,
+      "state": "closed",
+      "title": "Table-level ingestion allowlist",
+      "updated_at": "2026-10-04T16:20:17Z"
+    },
+    {
+      "html_url": "https://github.com/NVIDIA/auto-ontology/issues/265",
+      "number": 265,
+      "state": "closed",
+      "title": "Replacement import silently preserves existing entity properties",
+      "updated_at": "2026-10-04T16:57:51Z"
+    },
+    {
+      "html_url": "https://github.com/NVIDIA/auto-ontology/issues/267",
+      "number": 267,
+      "state": "open",
+      "title": "Model import ID and natural-name conflicts return HTTP 500",
+      "updated_at": "2026-10-08T22:26:48Z"
+    }
+  ],
+  "retrieved": "2026-11-04",
+  "structural_checks": {
+    "openapi_operation_count": 119,
+    "curated_generated_tools": 7,
+    "custom_tools": 2,
+    "packaged_spec_byte_parity": true
+  },
+  "execution_boundary": "Source inspection and structural checks only. Application, model calls and benchmarks not run. System Python has no pytest; upstream suites not executed."
+}

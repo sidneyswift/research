@@ -96,3 +96,7 @@ Portable design ledger; ★ marks the highest-leverage ideas. Concrete adaptatio
 - How many regressions do trace-derived evals catch on unseen future runs, after controlling for duplicated conversations and traffic shifts?
 - When does recurring discovery cost more than the incidents it prevents, and what measured threshold warrants specialized storage?
 - How should an eval be retired or revised when the intended behavior changes, while preserving the original failure evidence?
+
+## Diagnosable evaluation deltas — 2026-11-04
+
+[[artifacts/projects/auto-ontology]]'s evaluator preserves question-level fixed/broken flips alongside the aggregate delta. Our connection: those cases can seed targeted regression cohorts, provided the model, ontology revision, inputs and scoring rule travel with them. The companion does not implement a Trace Lake, and no such integration was tested here. [[sources/nvidia--auto-ontology-eval#flips]] [[sources/nvidia--auto-ontology-eval#pin]]

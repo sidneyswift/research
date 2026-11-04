@@ -38,14 +38,14 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 | --- | --- | --- |
 | Skills cataloged | 5 paged | 2026-10-24 |
 | Plugins cataloged | 10 | 2026-10-24 |
-| Projects cataloged | 7 | 2026-11-03 |
+| Projects cataloged | 8 | 2026-11-04 |
 | MCP servers cataloged | 0 paged | 2026-10-24 |
 | Concepts cataloged | 22 | 2026-11-04 |
 | Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
-| Creators cataloged | 17 | 2026-11-04 |
-| Source citation pages | 39: 14 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
+| Creators cataloged | 18 | 2026-11-04 |
+| Source citation pages | 41: 16 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
 
-Latest ingest: [[concepts/lifelong-skill-routing]] — Skill++ (arXiv 2611.00544v1), full 20-page paper and appendices read; 21 portable lessons on contrastive descriptions, scope exclusions, semantic names and routing regressions. Reported routing gains kept separate from task success. Previous ingest: [[concepts/trace-lake]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[artifacts/projects/auto-ontology]] — NVIDIA's semantic-context service and companion evaluator; 26 portable principles on business contracts, curated tools, readiness, publication readback and honest evaluation. Two source repositories pinned; implementation limits and documentation drift recorded. Previous ingest: [[concepts/lifelong-skill-routing]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

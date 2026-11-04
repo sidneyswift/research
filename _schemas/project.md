@@ -56,3 +56,7 @@ Include counterexamples, failure modes, bypasses, configuration dependencies, sk
 ## Open questions and verification record
 
 State remaining evidence gaps and what would settle them. Run the wiki checks; validate new links and registered source anchors, plus pinned path/range integrity. Existing unrelated lint findings remain visible rather than being rewritten away.
+
+## Context-system status versus guarantee
+
+For context/semantic systems, distinguish **configured readiness, retrieval coverage, human review flags, executable validation and durable publication**. Name what each status actually measures, which path enforces it and what remains unverified; do not promote a label into a stronger guarantee. Grounding: [[artifacts/projects/auto-ontology]], [[patterns/behavioral/evidence-gated-completion]] and [[sources/nvidia--auto-ontology#readiness]] / [[sources/nvidia--auto-ontology#coverage]] / [[sources/nvidia--auto-ontology#publication]].

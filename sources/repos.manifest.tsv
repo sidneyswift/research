@@ -19,3 +19,5 @@ openclaw--openclaw	https://github.com/openclaw/openclaw.git	dd6143f60c24c532e2aa
 vercel-labs--open-agents	https://github.com/vercel-labs/open-agents.git	cf865e94de7729751c747171785b6ce57e7b178c	-
 kody-hq--kody	https://github.com/kody-hq/kody.git	9d96cfb916552b889ee8989027618b35ecd554ba	-
 deepseek-ai--dsh-superagent-prototype	https://github.com/deepseek-ai/dsh-superagent-prototype.git	6337fc823ce20251c8de8085948165c81aaa701e	-
+nvidia--auto-ontology	https://github.com/NVIDIA/auto-ontology.git	caced11e69e19663dfa0f73778dbecbcb71e87a0	-
+nvidia--auto-ontology-eval	https://github.com/NVIDIA/auto-ontology-eval.git	ec41b2c5b795637759297b90c1d19b42693200f9	-

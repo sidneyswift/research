@@ -100,3 +100,7 @@ Lauren's screenshot-backed preference for empirical/formal verification over abs
 ## Trace Lake comparison — 2026-11-04
 
 [[concepts/trace-lake]] provides a documentation-level application to investigation findings: Patterns checks evidence before saving/closing, labels unconfirmed causes as hypotheses, and retains status when queries or data are unavailable. This is vendor-described behavior, not a newly run confirming artifact. [[sources/ankrgyl--trace-lake#patterns-verification]]
+
+## Ready, answerable, certified and published are distinct — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] offers several different gates: readiness over configured prerequisites, entity-coverage scoring, human certification flags and publication readback instructions. None substitutes for the others. The companion's run-health gate is implemented code; the skill's staged publication workflow is prompt policy, not an atomic product guarantee. Supporting comparison; no automatic pattern-count promotion. [[sources/nvidia--auto-ontology#readiness]] [[sources/nvidia--auto-ontology#coverage]] [[sources/nvidia--auto-ontology#publication]] [[sources/nvidia--auto-ontology-eval#health-gate]]

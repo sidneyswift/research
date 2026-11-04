@@ -65,3 +65,7 @@ __pycache__/
 
 # Version-pinned paper evidence retained locally; public analysis + hashes tracked.
 /sources/zhang--skill-plus-plus/raw/
+
+/sources/nvidia--auto-ontology/
+
+/sources/nvidia--auto-ontology-eval/

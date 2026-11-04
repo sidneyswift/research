@@ -13,6 +13,7 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 ## Cataloged projects
 
+- [[artifacts/projects/auto-ontology]] — NVIDIA semantic-context service plus evaluation harness; source-investigated, 26 principles, runtime and benchmark results unverified.
 
 - [[artifacts/projects/dsh-superagent-prototype]] — domain, authorization, execution, delivery and recovery study. [[sources/deepseek-ai--dsh-superagent-prototype]].
 - [[artifacts/projects/kody]] — shared agent state and capability infrastructure; Code Mode, credentials, workflow/repo revision boundaries. [[sources/kody-hq--kody]].

@@ -22,6 +22,9 @@ See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, pre
 
 ## Cloned repos
 
+- [[sources/nvidia--auto-ontology]] — application at `caced11e`; scoped architecture, semantics, tools and publication study.
+- [[sources/nvidia--auto-ontology-eval]] — evaluation harness at `ec41b2c`; distinct pinned treatment revision and run-health boundaries.
+
 - [[sources/cursor--plugins-pstack]] — pstack 0.15.32 at `9580c23`; canonical skills and packaging, orchestration, and verification evidence.
 
 - [[sources/humanlayer--humanlayer]] — `humanlayer/humanlayer` at `2f66a45` (2026-10-23): current Riptide platform and RPI workflow; 175 source anchors across 150 files, with code/prompt/docs/test-inspection boundaries. See [[artifacts/projects/humanlayer]] and [[artifacts/plugins/humanlayer-rpi]].

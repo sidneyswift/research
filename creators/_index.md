@@ -15,6 +15,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Orgs
 
+- [[creators/nvidia]] — Auto-Ontology semantic context, curated MCP and companion evaluation tooling.
+
 - [[creators/braintrust]] — trace-query infrastructure, investigations and evaluations; studied through article and vendor docs.
 
 - [[creators/humanlayer]] — org behind the HumanLayer/Riptide collaborative coding-agent platform and RPI workflow; source investigation emphasizes human review cost, task continuity, and runtime boundaries.

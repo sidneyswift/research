@@ -93,3 +93,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 ## Portable infrastructure comparison — 2026-11-02
 
 [[artifacts/projects/kody]] documents one package/runtime contract reused across execute, jobs, subscriptions, apps and workflows. Package-to-package static imports retain a publication snapshot until the dependent republishes; sharing source does not mean instant adoption. This is a supporting runtime example rather than a new count of independent client wrappers. [[sources/kody-hq--kody#execute-contract]], [[sources/kody-hq--kody#workflows]]
+
+## Semantic API adapter comparison — 2026-11-04
+
+[[artifacts/projects/auto-ontology]] has UI/REST/MCP surfaces over the same public API. MCP curates names/descriptions while deriving parameter structure from OpenAPI; canonical and packaged specs matched byte-for-byte at the inspected revision. The streaming adapter returns answer, SQL and rows separately. This is source-inspected parity, not a live end-to-end test; example count unchanged. [[sources/nvidia--auto-ontology#curated-tools]] [[sources/nvidia--auto-ontology#structured-answer]]
