@@ -72,3 +72,7 @@ Code can check stable identity, policy version and grants independently of a mod
 ## Meaning is not authorization — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] exposes semantic context through per-user MCP and public gateway permissions. The gateway rebuilds internal identity headers, but FastAPI trusts that private hop; source-database credentials remain a separate authority layer. A term, certification flag or analytical recommendation does not authorize an external effect. Supporting comparison; existing example count unchanged. [[sources/nvidia--auto-ontology#mcp-auth]] [[sources/nvidia--auto-ontology#gateway]] [[sources/nvidia--auto-ontology#publication]]
+
+## Typed provenance and current authority — 2026-11-04
+
+[[artifacts/projects/codex]] distinguishes external tool-level messages from user input, host annotations from text wrappers, and a narrow automated approval from an escalated retry. Account notifications require current-state rereads. These are complementary boundaries, not an end-to-end security guarantee. [[sources/openai--codex#sdk-python]] [[sources/openai--codex#goal-provenance]] [[sources/openai--codex#approval]] [[sources/openai--codex#policy-reload]]

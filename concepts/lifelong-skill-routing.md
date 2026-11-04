@@ -159,3 +159,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Tool-surface comparison — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] illustrates an adjacent design response: explicitly allow-list seven API tools plus two composite tools, override developer-oriented names/descriptions for agent decision-making and fail startup if a selected operation disappears. This is inspected engineering, not a replication of Skill++ or proof that nine is an optimal tool count. [[sources/nvidia--auto-ontology#curated-tools]]
+
+## Pinned Codex implementation comparison — 2026-11-04
+
+[[artifacts/projects/codex]] supplies complementary mechanisms: explicit paths resolve name collisions, ambiguous bare names are refused, catalog budgets record omitted/truncated metadata, and a deterministic cheap-selector interface supports shadow experiments. These are not Skill++ replication or proof a listed selector improves task outcomes. Default metadata budget is 2% of a known context window (8,000-character fallback); configured token limits have a separate cap. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#skill-budget]] [[sources/openai--codex#skill-shadow]]

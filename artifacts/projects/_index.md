@@ -13,6 +13,8 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 ## Cataloged projects
 
+- [[artifacts/projects/codex]] — full source preserved at `021fccb`; scoped runtime, authority, storage, skills, Goals and trace study with 44 principles.
+
 - [[artifacts/projects/auto-ontology]] — NVIDIA semantic-context service plus evaluation harness; source-investigated, 26 principles, runtime and benchmark results unverified.
 
 - [[artifacts/projects/dsh-superagent-prototype]] — domain, authorization, execution, delivery and recovery study. [[sources/deepseek-ai--dsh-superagent-prototype]].
@@ -30,5 +32,4 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 Add candidates here as one-line entries before promoting to a full page. Keep a `source:` URL on each.
 
-- **Codex CLI** (OpenAI) — the broader agentic-coding tool; only its Goals feature is studied so far (see [[artifacts/projects/codex-goals]]). A full ingest would enable a Codex-vs-Claude-Code comparison. Source: `https://developers.openai.com/codex`.
 - **Hermes Agent** (Nous Research) — the named downstream consumer of `skill-diffs`'s trained curator model; its **Curator** feature is a background maintenance pass tracking skill usage (active→stale→archived) directly relevant to this wiki's own LINT operation (see [[meta/self-improvements]] Pass 13). Not yet ingested — referenced only via its public docs page. Source: `https://hermes-agent.nousresearch.com/docs/user-guide/features/curator`.

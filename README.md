@@ -38,14 +38,14 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 | --- | --- | --- |
 | Skills cataloged | 5 paged | 2026-10-24 |
 | Plugins cataloged | 10 | 2026-10-24 |
-| Projects cataloged | 8 | 2026-11-04 |
+| Projects cataloged | 9 | 2026-11-04 |
 | MCP servers cataloged | 0 paged | 2026-10-24 |
 | Concepts cataloged | 22 | 2026-11-04 |
 | Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
 | Creators cataloged | 18 | 2026-11-04 |
-| Source citation pages | 41: 16 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
+| Source citation pages | 42: 17 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
 
-Latest ingest: [[artifacts/projects/auto-ontology]] — NVIDIA's semantic-context service and companion evaluator; 26 portable principles on business contracts, curated tools, readiness, publication readback and honest evaluation. Two source repositories pinned; implementation limits and documentation drift recorded. Previous ingest: [[concepts/lifelong-skill-routing]]. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[artifacts/projects/codex]] — OpenAI's agent harness at `021fccb`; 44 portable principles on shared runtime contracts, authority, recovery, discovery and trace provenance. Complete pinned source tree saved locally with restoration manifest and scoped hashes. Previous ingest: [[artifacts/projects/auto-ontology]]. Counts describe existing wiki pages, not refreshed older product claims.
 
 (Update this table after each ingestion.)
 

@@ -22,6 +22,8 @@ See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, pre
 
 ## Cloned repos
 
+- [[sources/openai--codex]] — harness source at `021fccb`; complete local checkout, source/tree identity and scoped hashes, restorable from the manifest.
+
 - [[sources/nvidia--auto-ontology]] — application at `caced11e`; scoped architecture, semantics, tools and publication study.
 - [[sources/nvidia--auto-ontology-eval]] — evaluation harness at `ec41b2c`; distinct pinned treatment revision and run-health boundaries.
 

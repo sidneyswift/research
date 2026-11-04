@@ -126,3 +126,7 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 ## Semantic compilation comparison — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] parallelizes model extraction while serializing shared-name commits in canonical order; query SQL remains model-generated, with deterministic checks and bounded repair around it. The useful guarantee is specific: ordered mutation is not deterministic semantic generation. Supporting comparison only; existing pattern count unchanged. [[sources/nvidia--auto-ontology#ordered-commits]] [[sources/nvidia--auto-ontology#llm-sql]]
+
+## Runtime contracts around model judgment — 2026-11-04
+
+[[artifacts/projects/codex]] combines model-led work with deterministic identity resolution, shared/exclusive tool admission, state transitions and trace reduction. Each mechanism constrains a particular boundary; none upgrades a model's answer to semantic proof. Supporting comparison, not a benchmark. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#parallel-tools]] [[sources/openai--codex#trace-tests]]

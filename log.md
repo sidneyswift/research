@@ -519,3 +519,15 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 ## [2026-11-04] reflect | distinguish context status from guarantees
 
 - Applied a context-system evidence prompt to [[_schemas/project]] and a semantic-query consumer route to `for-builders.md`, recorded in [[meta/self-improvements]] Pass 22. The trigger for an implementation experiment is observed ambiguity in representative business queries, gold results and a matched agent baseline with cost/latency tracking. Installed skills and runtime infrastructure unchanged.
+
+## [2026-11-04] ingest | OpenAI Codex — harness and source preservation
+
+- Added [[artifacts/projects/codex]] with 44 portable principles from [[sources/openai--codex]] at `021fccb046508938c4754982efccfb51d6e8356e`. Saved the complete 9,974-entry tracked source tree with Git metadata locally; ignored clone is restored by the committed manifest pin. Public research contains analysis, source map, tree identity, 38 scoped source hashes and restoration instructions, not a vendored copy of the entire source.
+- Inspected selected runtime/protocol/client, tool admission/approval, platform-policy docs, history/metadata storage, compaction/replay, Goals, skill selection/rendering, child ownership and trace writer/reducer paths. Read focused test assertions; no source build, upstream tests, model call, login or deployment run. This is not an exhaustive repository or security audit.
+- Extended the existing Goals study with current state/handler boundaries: legal completion is not independent acceptance evidence; blocked/user-requested pause now appear in the tool contract. Connected nine concepts, six existing patterns, OpenAI and the separately pinned marketplace. Preserved older product/distribution claims as historical rather than silently refreshing them.
+- Git object connectivity, clean-tree and selective restore-availability checks passed. New source ranges, links and inventories are checked as part of final validation; runtime outcome/performance claims remain unverified.
+- Final validation: 37 registered anchors, 168 citation occurrences and 48 immutable line ranges across 38 source files pass; all 38 scoped hashes match pinned Git objects. Checked 142 added unique page→target links (88 source-anchor links), the new relative capture link, 44-principle count and 9-project/18-creator/22-concept/42-source inventory. Doctor remains 50/100 across 2,278 Markdown files with no new findings; inherited link/staleness debt unchanged. Staged whitespace clean; no nested source gitlink. Ratchet: links +142 · orphans +0 · patterns +0. Terminal state: source-preserved ingestion complete; runtime validation remains unperformed.
+
+## [2026-11-04] reflect | observation and recovery units
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] to [[_schemas/project]]: distinguish model-visible evidence, runtime activity, persisted state and recovery units; recording complete and lifecycle complete are not synonymous with task success. Added the focused builder route and recorded Pass 23 in [[meta/self-improvements]]. No installed skill or runtime setting changed.

@@ -104,3 +104,7 @@ Lauren's screenshot-backed preference for empirical/formal verification over abs
 ## Ready, answerable, certified and published are distinct — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] offers several different gates: readiness over configured prerequisites, entity-coverage scoring, human certification flags and publication readback instructions. None substitutes for the others. The companion's run-health gate is implemented code; the skill's staged publication workflow is prompt policy, not an atomic product guarantee. Supporting comparison; no automatic pattern-count promotion. [[sources/nvidia--auto-ontology#readiness]] [[sources/nvidia--auto-ontology#coverage]] [[sources/nvidia--auto-ontology#publication]] [[sources/nvidia--auto-ontology-eval#health-gate]]
+
+## Do not promote status into proof — 2026-11-04
+
+[[artifacts/projects/codex]] distinguishes a goal status mutation, completed runtime bookkeeping and a closed diagnostic trace from verified task success. The current goal handler enforces legal state choices, not arbitrary acceptance tests; recording_complete can describe interrupted work. This qualifies the older documentation-level Goals example without changing pattern status. [[sources/openai--codex#goal-tools]] [[sources/openai--codex#trace]]

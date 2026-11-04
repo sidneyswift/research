@@ -106,3 +106,7 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 ## Pstack comparison — 2026-10-24
 
 [[concepts/verification-model-fidelity]] asks whether the completion verifier still describes the actual implementation; a green result on a stale model is insufficient. [[artifacts/skills/statechart]] supplies the executable case and its explicit limits. [[sources/cursor--plugins-pstack#verification-local-checks]]
+
+## Lifecycle label versus acceptance evidence — 2026-11-04
+
+The current source update in [[artifacts/projects/codex-goals]] narrows the earlier documentation-level account. Its handler constrains legal lifecycle states and persists usage/status; the inspected path does not run arbitrary acceptance checks before storing complete. Keep the verification surface explicit even when a product offers a completion state. [[sources/openai--codex#goal-tools]]

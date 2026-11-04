@@ -98,3 +98,7 @@ A falsifiable test for spotting the architecture (`## Examples` are the positive
 ## Skill access boundary — 2026-11-04
 
 [[concepts/lifelong-skill-routing]] isolates an access bottleneck with fixed router and bodies: valuable instructions stored in a skill do not help a query if its metadata loses selection to a neighbor. The inference for this pattern is to budget for routing discrimination and regressions, not only body quality. Skill++ is benchmark evidence, not another independently deployed thin-harness system; status and example count stay unchanged. [[sources/zhang--skill-plus-plus#formulation]] [[sources/zhang--skill-plus-plus#method]]
+
+## Codex runtime counterweight to literal thinness — 2026-11-04
+
+[[artifacts/projects/codex]] now fills the previously queued Codex runtime investigation. Shared app-server clients, tool admission/approval, storage, compaction, worker ownership and trace reduction support modular separation but not the claim that a production middle is only a tiny loop. Earlier paragraphs about unstudied Codex internals describe their original source scope. Supporting comparison; status/example count unchanged. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#loop]] [[sources/openai--codex#extraction-boundaries]]

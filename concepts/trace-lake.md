@@ -100,3 +100,7 @@ Portable design ledger; ★ marks the highest-leverage ideas. Concrete adaptatio
 ## Diagnosable evaluation deltas — 2026-11-04
 
 [[artifacts/projects/auto-ontology]]'s evaluator preserves question-level fixed/broken flips alongside the aggregate delta. Our connection: those cases can seed targeted regression cohorts, provided the model, ontology revision, inputs and scoring rule travel with them. The companion does not implement a Trace Lake, and no such integration was tested here. [[sources/nvidia--auto-ontology-eval#flips]] [[sources/nvidia--auto-ontology-eval#pin]]
+
+## Raw evidence before diagnostic interpretation — 2026-11-04
+
+[[artifacts/projects/codex]] provides an implementation-level complement: opt-in local ordered event/payload bundles reduce offline into conversation, runtime objects and cross-agent edges. Runtime output and model-visible input remain distinct; trace closure can describe an interrupted task. This is local diagnostic infrastructure, not a deployed trace lake or measured eval-improvement loop. [[sources/openai--codex#trace]] [[sources/openai--codex#trace-writer]] [[sources/openai--codex#trace-tests]]

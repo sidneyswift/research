@@ -99,3 +99,7 @@ Most agent failure modes at the edges are durability failures: a long task dies 
 ## A long-running thread is not recovery evidence — 2026-11-04
 
 Matt Pocock proposes a persistent local domain thread coordinating a factory of sandboxed workers; the reusable coordination principle lives in [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]]. The screenshot specifies no checkpoint, replay, restart or effect-deduplication mechanism. It is a useful architecture proposal, not a new demonstrated example of this page's execution-durability guarantees. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#provenance-limits]]
+
+## Conversation recovery versus effect recovery — 2026-11-04
+
+[[artifacts/projects/codex]] persists canonical history separately from query metadata and reconstructs history against valid compaction boundaries. A remote executor reconnect is limited by destination retention; this does not establish the step-replay/exactly-once properties described for other runtimes. Compare the recovery unit and already-issued external effects explicitly. [[sources/openai--codex#storage]] [[sources/openai--codex#replay]] [[sources/openai--codex#executor]]

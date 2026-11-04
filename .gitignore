@@ -69,3 +69,5 @@ __pycache__/
 /sources/nvidia--auto-ontology/
 
 /sources/nvidia--auto-ontology-eval/
+
+/sources/openai--codex/

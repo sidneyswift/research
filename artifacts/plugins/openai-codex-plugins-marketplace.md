@@ -159,3 +159,7 @@ The repo answers a question Anthropic's marketplaces mostly leave to the develop
 - **Stability of the `.codex-plugin/` spec.** Repo is 3 months old and pushed daily; `plugin.lock.json` (3 plugins) hints at an evolving resolution model. How settled is the manifest?
 - **Does `plugin-eval`'s scoring rubric generalize?** Its `references/` (metric-pack-manifest, evaluation-result-schema) are a candidate to mine for our own eval gate — a future QUERY/REFLECT target.
 - **Cross-runtime drift.** Superpowers runs on both labs today; how much per-runtime branching does cross-platform authoring actually require? (CE's converter answered this for Claude→N platforms; the inverse, author-to-common-core, is what Superpowers tests.)
+
+## Runtime complement — 2026-11-04
+
+[[artifacts/projects/codex]] now investigates the host runtime beneath this separately pinned marketplace: skill identity/discovery, shared clients, tool authority and persistence. It does not recount the historical marketplace or claim all plugins inherit identical execution authority. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#approval]]

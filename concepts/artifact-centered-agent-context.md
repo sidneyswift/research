@@ -85,3 +85,7 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 ## Shared semantic artifacts — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] makes business definitions, physical bindings and reusable SQL persistent artifacts consumed by multiple interfaces. The important boundary: certification flags and stored conversations do not by themselves provide revision-bound approval or governed analytical publication; the management skill prescribes scoped backup and exact re-export readback. [[sources/nvidia--auto-ontology#certification]] [[sources/nvidia--auto-ontology#publication]]
+
+## Authoritative state and derived views — 2026-11-04
+
+[[artifacts/projects/codex]] separates canonical history, explicit metadata patches and diagnostic trace reduction. Its retained goal evidence uses host annotations rather than visible wrappers, and missing/cleared context baselines remain distinct. Persisting a summary does not promote it into authorization. [[sources/openai--codex#storage]] [[sources/openai--codex#goal-provenance]] [[sources/openai--codex#replay]]

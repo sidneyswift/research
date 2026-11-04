@@ -22,7 +22,9 @@ popularity-signals:
 
 *This page is a **judgment distillation** ([[patterns/behavioral/diarization]]): the Goals feature as it reads across the source, written as distilled judgment — not a transcription of the cookbook.*
 
-**Scope note:** this page covers the **Goals feature** of OpenAI's Codex CLI, not all of Codex. We've ingested one first-party source about Goals; the rest of Codex (the broader agentic-coding tool) is **not yet studied** and is queued in [artifacts/projects/_index.md](_index.md). Claims here are grounded in [[sources/openai--using-goals-in-codex]] only.
+**Scope note:** this page began as a feature-level study of [[sources/openai--using-goals-in-codex]]. The current source update below adds implementation evidence from [[sources/openai--codex]]; the broader harness investigation lives in [[artifacts/projects/codex]].
+
+**Version scope:** the main account below describes the historical cookbook source. The 2026-11-04 source update at the end records current tool states and enforcement boundaries; do not treat the older user-only pause split or prose completion contract as the current handler's full behavior.
 
 ## Attributes
 
@@ -102,7 +104,15 @@ The "restate the target after every turn" tax. Without Goals, a multi-turn task 
 
 ## Open questions / what's unclear
 
-- **Implementation is described, not shown.** Thread-scoped state, the dispatcher, and budget accounting are the authors' account; we have no source or trace. How is "budget" measured (tokens? turns? time?), and how often do Goals complete vs. block vs. exhaust budget?
+- **Implementation follow-up:** current source paths and test assertions are now inspected below; actual completion/block/exhaustion rates and end-to-end behavior still need executable evaluation.
 - **How does this compare to Claude Code's equivalents?** Plan mode, hooks, and long-running loops cover overlapping ground. A side-by-side (Codex Goals vs. Claude Code persistent-objective mechanisms) would be a strong QUERY once we've ingested a Claude Code analogue.
 - **Is the verification surface gameable?** Evidence-gated completion is only as good as the surface chosen; the source warns but doesn't measure.
-- **The rest of Codex.** This is one feature of a broader tool — capabilities, model, sandboxing, and approval model are all unstudied. The **distribution layer is now studied** ([[artifacts/plugins/openai-codex-plugins-marketplace]]); the *runtime* (harness loop, sandbox, approval) still isn't. Queue a full Codex CLI ingest.
+- **The rest of Codex:** [[artifacts/projects/codex]] now supplies a broader, scoped source investigation. The hosted product, full platform-security behavior and matched outcome benchmarks remain outside it.
+
+## Current source update — 2026-11-04
+
+At `021fccb`, Goals are an extension with stored state and usage accounting. `update_goal` exposes **complete, blocked and paused**; its instructions require explicit user permission to pause and repeated blocker evidence before declaring blocked. The handler rejects resume/system-limit states but does not itself execute the objective's acceptance tests or establish the prose blocker criterion. This narrows the historical evidence-gated framing: a permitted complete flag is not independent proof of completion. [[sources/openai--codex#goal-tools]]
+
+Idle continuation serializes the read/start window against external goal mutation, honors deferral and requires a live thread. Test assertions cover descendant usage rolling up once and budget limits taking precedence over pause; tests were inspected, not run here. [[sources/openai--codex#goal-continuation]] [[sources/openai--codex#goal-tests]]
+
+Portable additions: keep legal lifecycle transitions separate from task verification; serialize automatic launch against goal changes; budget the entire worker tree. The old cookbook's no-tool anti-spin description is not claimed independently verified by these selected paths. The broader study is [[artifacts/projects/codex]].

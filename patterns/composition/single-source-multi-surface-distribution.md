@@ -97,3 +97,7 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 ## Semantic API adapter comparison — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] has UI/REST/MCP surfaces over the same public API. MCP curates names/descriptions while deriving parameter structure from OpenAPI; canonical and packaged specs matched byte-for-byte at the inspected revision. The streaming adapter returns answer, SQL and rows separately. This is source-inspected parity, not a live end-to-end test; example count unchanged. [[sources/nvidia--auto-ontology#curated-tools]] [[sources/nvidia--auto-ontology#structured-answer]]
+
+## Shared client-runtime semantics — 2026-11-04
+
+[[artifacts/projects/codex]] uses one in-process app-server client for TUI and exec. Typed internal channels retain the response contract of serialized external transports. SDK/runtime compatibility remains explicit; sharing the engine does not imply every wrapper or deployed version has identical features. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#sdk-python]]

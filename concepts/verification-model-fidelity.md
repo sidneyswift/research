@@ -105,3 +105,7 @@ These are source-grounded limitations and our counterarguments, not a documented
 ## Trace-derived evals — 2026-11-04
 
 [[concepts/trace-lake]] extends the fidelity concern to production regression cases: preserve the state and resource versions that made an observed failure possible. Our adaptation is to check those fixtures and their expected behavior against current requirements; reproducing an old output is not itself a correctness oracle. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+
+## Model-visible versus runtime evidence — 2026-11-04
+
+[[artifacts/projects/codex]] records model-facing conversation and runtime tool/code-cell objects separately, with raw payload provenance. Inspected reducer assertions distinguish identical text from discarded versus accepted attempts. A useful verification model needs source identity and observation boundaries, not just matching strings or a clean trace-close event. [[sources/openai--codex#trace]] [[sources/openai--codex#trace-tests]]

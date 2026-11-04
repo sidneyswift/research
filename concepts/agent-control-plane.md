@@ -116,3 +116,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## Trace Lake comparison — 2026-11-04
 
 [[concepts/trace-lake]] adds a complementary evidence loop: a persistent coordinator can query historical runs, schedule bounded investigations and convert confirmed findings into regression evals. The coordinator is not the trace store, and a reported pattern is not permission to mutate the product. Loop docs distinguish scheduled Braintrust write permissions from connected MCP authority and note that created scoring rules outlive their creator. This is a documented product comparison, not evidence that Matt Pocock's proposed factory was implemented. [[sources/ankrgyl--trace-lake#trace-to-eval]] [[sources/ankrgyl--trace-lake#automation-authority]]
+
+## Shared runtime, separate execution — 2026-11-04
+
+[[artifacts/projects/codex]] separates client lifecycle, model/tool loop, thread storage and process executor. TUI/exec share an in-process app-server facade; remote forwarding does not replay RPCs or persist execution state. This is an implemented boundary comparison, not a claim that all control planes provide the same durability. [[sources/openai--codex#client-runtime]] [[sources/openai--codex#executor]]

@@ -60,3 +60,7 @@ State remaining evidence gaps and what would settle them. Run the wiki checks; v
 ## Context-system status versus guarantee
 
 For context/semantic systems, distinguish **configured readiness, retrieval coverage, human review flags, executable validation and durable publication**. Name what each status actually measures, which path enforces it and what remains unverified; do not promote a label into a stronger guarantee. Grounding: [[artifacts/projects/auto-ontology]], [[patterns/behavioral/evidence-gated-completion]] and [[sources/nvidia--auto-ontology#readiness]] / [[sources/nvidia--auto-ontology#coverage]] / [[sources/nvidia--auto-ontology#publication]].
+
+## Observation, persistence and recovery units
+
+For agent runtimes, identify what the **model saw**, what tools/runtime actually executed, what history/metadata was persisted and what unit can resume after interruption. Distinguish recording complete, legal lifecycle completion and verified task success. Grounding: [[artifacts/projects/codex]], [[patterns/behavioral/evidence-gated-completion]] and [[sources/openai--codex#trace]] / [[sources/openai--codex#storage]] / [[sources/openai--codex#goal-tools]].

@@ -103,3 +103,7 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 ## Role and tool routing comparison — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] separates setup, read/query and semantic-management skills and makes the live MCP handshake authoritative for available tools. Curated tool descriptions say when to use each operation rather than mirroring developer operation IDs. No routing-accuracy evaluation was performed in this ingest; the example count and production-eval caveats remain unchanged. [[sources/nvidia--auto-ontology#query-skill]] [[sources/nvidia--auto-ontology#curated-tools]]
+
+## Resolve identity before semantic relevance — 2026-11-04
+
+[[artifacts/projects/codex]] prioritizes explicit skill paths, rejects ambiguous names and skill/connector collisions, and observes budget-induced omissions. Its cheap-selector interface supports shadow evaluation without changing the visible catalog. This is complementary routing machinery, not measured universal selection accuracy. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#skill-shadow]]

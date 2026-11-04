@@ -75,3 +75,7 @@ Static snapshots improve repeatability but require dependent republishing; ad ho
 ## Curated semantic-tool comparison — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] chooses nine task-oriented MCP tools over 119 counted OpenAPI operations, with handwritten routing descriptions but generated parameter schemas. This is a different interface choice from a code-execution capability surface: a small semantic API over a governed data model. Both reduce initial exposure; neither is demonstrated superior merely by counting tools. [[sources/nvidia--auto-ontology#curated-tools]]
+
+## Observation boundary — 2026-11-04
+
+[[artifacts/projects/codex]] traces nested code-mode tool calls separately from the surrounding model-visible execution cell. Exact runtime bytes are not proof the model saw those bytes; preserve both boundaries when evaluating a code interface against direct tools. This study examines the tracing contract, not the entire code-mode implementation or its performance. [[sources/openai--codex#trace]]
