@@ -1,0 +1,215 @@
+{
+  "kind": "immutable official Markdown captures",
+  "upstream_version": "2026-07-28 core; living extensions",
+  "captures": [
+    {
+      "file": "snapshot.md",
+      "url": "https://modelcontextprotocol.io/extensions/overview.md",
+      "retrieved": "2026-11-04",
+      "sha256": "d198e89dabf96628dc5c4d8838f226605ae12cdb89a9d65c07ec7b8ed391ecd8",
+      "bytes": 15428
+    },
+    {
+      "file": "versioning.md",
+      "url": "https://modelcontextprotocol.io/docs/2026-07-28/learn/versioning.md",
+      "retrieved": "2026-11-04",
+      "sha256": "c1bf1d0efcdca337d348524ab2a15650e418f5b5425007e5a4777311fca76862",
+      "bytes": 3512
+    },
+    {
+      "file": "architecture.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture/index.md",
+      "retrieved": "2026-11-04",
+      "sha256": "dcfd70abfa4b2c5985198d8c120ddb155c9bee304746a5d2344997f907ca1f04",
+      "bytes": 6487
+    },
+    {
+      "file": "core-overview.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/index.md",
+      "retrieved": "2026-11-04",
+      "sha256": "863d749e9ada9472565a65503647883eb2985c6247ba5b86ff901ecb29e26392",
+      "bytes": 5912
+    },
+    {
+      "file": "changelog.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/changelog.md",
+      "retrieved": "2026-11-04",
+      "sha256": "280533e289ca1a638973b06f6f4d8a8aff735a3c3fe594ffb32696d63de530f6",
+      "bytes": 12229
+    },
+    {
+      "file": "deprecated.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/deprecated.md",
+      "retrieved": "2026-11-04",
+      "sha256": "c12c3cb7d6b8a30cd4df8ea8162a819df071a42745da6d20165e8fdf94b28baa",
+      "bytes": 3839
+    },
+    {
+      "file": "base.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/index.md",
+      "retrieved": "2026-11-04",
+      "sha256": "90b7d93acd7e8b79f8480130ced333908fe412948ec74b16d3ff932e631e4886",
+      "bytes": 24750
+    },
+    {
+      "file": "compatibility.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/versioning.md",
+      "retrieved": "2026-11-04",
+      "sha256": "41fff387e09db6ce368347f96cd0b965fd43ceaa1d5f148c69ce52b5989d83b7",
+      "bytes": 8763
+    },
+    {
+      "file": "discovery.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/discover.md",
+      "retrieved": "2026-11-04",
+      "sha256": "4fbffd86a2045f45086bab84adeebb2706d5ee48af4ff644c90facbff4bde5a1",
+      "bytes": 3962
+    },
+    {
+      "file": "stdio.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/stdio.md",
+      "retrieved": "2026-11-04",
+      "sha256": "5bcdc2e5ed677a3015d002685de79e436327f6d6a77577dcb20720b22b96e5f2",
+      "bytes": 7655
+    },
+    {
+      "file": "http.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http.md",
+      "retrieved": "2026-11-04",
+      "sha256": "94dfcaf09285c9d8398c9ee0277b440f6d3051b182266c46c9b4e55864665288",
+      "bytes": 31063
+    },
+    {
+      "file": "multi-round-trip.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/mrtr.md",
+      "retrieved": "2026-11-04",
+      "sha256": "30abb42d799d1446bf632228a64dc69edaa2088f8981ea3df6e84bad69d22960",
+      "bytes": 13873
+    },
+    {
+      "file": "tools.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools.md",
+      "retrieved": "2026-11-04",
+      "sha256": "ffd2f284b837a0e00b2cb0a366dfa76d90ff579b759dfdc91f9fcabb8e51e76b",
+      "bytes": 24865
+    },
+    {
+      "file": "resources.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/resources.md",
+      "retrieved": "2026-11-04",
+      "sha256": "07da86abf4d8818c526b125b905a86fe6817e0dfbbce0cf22e025f5a96f8c947",
+      "bytes": 13773
+    },
+    {
+      "file": "prompts.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/prompts.md",
+      "retrieved": "2026-11-04",
+      "sha256": "f815ac6387f4e0f606db471d116007d000d3e52045268189eab1047053d3f812",
+      "bytes": 10257
+    },
+    {
+      "file": "elicitation.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation.md",
+      "retrieved": "2026-11-04",
+      "sha256": "240eb8a4cd68812991e45e7da446f900602906e6e43c6ca24fa3233238d4e932",
+      "bytes": 28738
+    },
+    {
+      "file": "sampling.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/sampling.md",
+      "retrieved": "2026-11-04",
+      "sha256": "c1972a1461eeec42cf6108e773018b2895c5f3aa2de1bdfcda2efbcaefbe8d6c",
+      "bytes": 22342
+    },
+    {
+      "file": "roots.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/client/roots.md",
+      "retrieved": "2026-11-04",
+      "sha256": "4b104d35fe3a81273eccdc829d2d4089779994355a791dc8bb68cbceb5bda706",
+      "bytes": 4774
+    },
+    {
+      "file": "caching.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/caching.md",
+      "retrieved": "2026-11-04",
+      "sha256": "2a6a066857821b3a51057f30e228bf64eda24cfb335f04be0e9c6654f6e328dd",
+      "bytes": 8545
+    },
+    {
+      "file": "subscriptions.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/patterns/subscriptions.md",
+      "retrieved": "2026-11-04",
+      "sha256": "a3e81e777bbef20d1885c274095557059125c685697abde14bfad6db570fa1e7",
+      "bytes": 6131
+    },
+    {
+      "file": "extensions-matrix.md",
+      "url": "https://modelcontextprotocol.io/extensions/client-matrix.md",
+      "retrieved": "2026-11-04",
+      "sha256": "b274123c72c8a0db543fa96b121d417bd9d1098593ba104b0066f65380884389",
+      "bytes": 4707
+    },
+    {
+      "file": "tasks.md",
+      "url": "https://modelcontextprotocol.io/extensions/tasks/overview.md",
+      "retrieved": "2026-11-04",
+      "sha256": "af7048bc5af31f84754b1a0bd0392236088c621bd38d618fba443a122798c692",
+      "bytes": 9604
+    },
+    {
+      "file": "skills.md",
+      "url": "https://modelcontextprotocol.io/extensions/skills/overview.md",
+      "retrieved": "2026-11-04",
+      "sha256": "1019ebbc801593872310dc734dbfffe9f00324e91e7f1610d6841839d19e4974",
+      "bytes": 16050
+    },
+    {
+      "file": "server-card-readme.md",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-server-card/526201bbc80231daa40ffcdecfc9da4e54e5dc93/README.md",
+      "retrieved": "2026-11-04",
+      "upstream_commit": "526201bbc80231daa40ffcdecfc9da4e54e5dc93",
+      "sha256": "35dae54c9104e38704abaf21cf637dbb02862edaf5ebc61bee18e3ad79b08750",
+      "bytes": 6126
+    },
+    {
+      "file": "tasks-spec.md",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-tasks/b3d28aceaa6d49f5f92258e3d06b61ad6f111e84/specification/2026-07-28/tasks.md",
+      "retrieved": "2026-11-04",
+      "upstream_commit": "b3d28aceaa6d49f5f92258e3d06b61ad6f111e84",
+      "sha256": "5fc22b9b5ff248703927c69855f751a061c2d6170f4dc3923204452f859f91a5",
+      "bytes": 34156
+    },
+    {
+      "file": "tasks-readme.md",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-tasks/b3d28aceaa6d49f5f92258e3d06b61ad6f111e84/README.md",
+      "retrieved": "2026-11-04",
+      "upstream_commit": "b3d28aceaa6d49f5f92258e3d06b61ad6f111e84",
+      "sha256": "69eeb67205d3cc3110fd6d5e06377691194940c667746fbdf55a8920e6acf804",
+      "bytes": 3427
+    },
+    {
+      "file": "skills-spec.mdx",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-skills/649f7aee87d631ac4d1fdd3b12eef0c6264fdb3a/specification/beta/skills.mdx",
+      "retrieved": "2026-11-04",
+      "upstream_commit": "649f7aee87d631ac4d1fdd3b12eef0c6264fdb3a",
+      "sha256": "6e33a33762783a02dc4c13c889dda5b8d7c525649012cf77da12d80c04ce6851",
+      "bytes": 55458
+    },
+    {
+      "file": "skills-readme.md",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-skills/649f7aee87d631ac4d1fdd3b12eef0c6264fdb3a/README.md",
+      "retrieved": "2026-11-04",
+      "upstream_commit": "649f7aee87d631ac4d1fdd3b12eef0c6264fdb3a",
+      "sha256": "813257ed9296c7f8df9f0f0e08a45ae45711ddaffb6a1dc273a52e7dd3bc51cc",
+      "bytes": 3880
+    },
+    {
+      "file": "skills-implementations.md",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-skills/649f7aee87d631ac4d1fdd3b12eef0c6264fdb3a/docs/implementations.md",
+      "retrieved": "2026-11-04",
+      "upstream_commit": "649f7aee87d631ac4d1fdd3b12eef0c6264fdb3a",
+      "sha256": "4f995d0c02755e5fac7105d979ed463274f15f00b21a2ab4dcd0641d50a47f86",
+      "bytes": 12138
+    }
+  ]
+}

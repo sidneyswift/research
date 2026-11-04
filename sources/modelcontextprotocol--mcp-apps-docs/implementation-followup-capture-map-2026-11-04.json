@@ -1,0 +1,47 @@
+{
+  "kind": "immutable official UI guides and exact public npm package metadata; no installation",
+  "captures": [
+    {
+      "file": "openai-ui-guide-2026-11-04.md",
+      "url": "https://developers.openai.com/plugins/build/chatgpt-ui.md",
+      "retrieved": "2026-11-04",
+      "sha256": "4e5835aed17db410ea224bf56adadf54eced1e9724f628c41a319ef063a173dd",
+      "bytes": 27401
+    },
+    {
+      "file": "openai-extension-guide-2026-11-04.md",
+      "url": "https://developers.openai.com/plugins/build/extensions.md",
+      "retrieved": "2026-11-04",
+      "sha256": "879270070cdbd3b4d8040f30dcf8adde95bd4e590849788499c28318fa8e532e",
+      "bytes": 10262
+    },
+    {
+      "file": "openai-ui-guidelines-2026-11-04.md",
+      "url": "https://developers.openai.com/plugins/concepts/ui-guidelines.md",
+      "retrieved": "2026-11-04",
+      "sha256": "20f5a48aec06032d34a3d04bb012c5469c67202b73be7030317ef3d18dbb53e7",
+      "bytes": 12404
+    },
+    {
+      "file": "openai-plugin-guidelines-2026-11-04.md",
+      "url": "https://developers.openai.com/plugins/plugin-guidelines.md",
+      "retrieved": "2026-11-04",
+      "sha256": "d756819aa5e7c9db77db43224910ebf90ba1590c9f990c7ef3b2b851384fac43",
+      "bytes": 21923
+    },
+    {
+      "file": "openai-extensions-npm-0.2.1-2026-11-04.json",
+      "url": "https://registry.npmjs.org/@openai%2fmcp-extensions/0.2.1",
+      "retrieved": "2026-11-04",
+      "sha256": "dd683492890ebebf0600febaf96b147274ca3a156489573ea70249057ddaafa0",
+      "bytes": 4139
+    },
+    {
+      "file": "ext-apps-npm-2.0.4-2026-11-04.json",
+      "url": "https://registry.npmjs.org/@modelcontextprotocol%2fext-apps/2.0.4",
+      "retrieved": "2026-11-04",
+      "sha256": "d75b048b82b1288616eddf9cbe132a221c28b0fa1c2a2b4ad14b386f59da97df",
+      "bytes": 7056
+    }
+  ]
+}

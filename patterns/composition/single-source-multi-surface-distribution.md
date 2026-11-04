@@ -94,6 +94,22 @@ A falsifiable test for spotting the pattern (`## Examples` are the positive fixt
 
 [[artifacts/projects/kody]] documents one package/runtime contract reused across execute, jobs, subscriptions, apps and workflows. Package-to-package static imports retain a publication snapshot until the dependent republishes; sharing source does not mean instant adoption. This is a supporting runtime example rather than a new count of independent client wrappers. [[sources/kody-hq--kody#execute-contract]], [[sources/kody-hq--kody#workflows]]
 
+## Internal research application
+
+Internal design application: [[projects/conversation-learning/README]] proposes one canonical conversation evidence base with versioned evaluation, skill and training exports. Not another observed artifact example.
+
+## API research connection — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] applies the reuse principle to a stable domain capability with different HTTP/SDK/tool/workflow presentations. [[artifacts/projects/openai-agent-api]] and [[artifacts/projects/anthropic-agent-api]] provide documentation-level evidence for adaptable discovery/grouping. This is a proposed application, not proof of shared generated definitions or an increment to this pattern’s inspected example count. [[sources/openai--agent-api-design#tool-design]], [[sources/anthropic--agent-api-design#tool-definitions]]
+
+## Shopify API connection — 2026-11-04
+
+[[artifacts/projects/shopify-api]] documents shared checkout business objects/statuses across server MCP and browser WebMCP, with different input/context contracts. This supports investigating semantic reuse; it does not prove generated definitions, shared implementation, or identical behavior and does not increment inspected-example count. [[sources/shopify--agent-commerce-api-design#webmcp]]
+
+## MCP research connection — 2026-11-04
+
+[[concepts/skills-over-mcp]] transports the same open skill format through remote resource reads, preserving server origin instead of silently installing into filesystem discovery. [[artifacts/projects/openai-mcp-extensions]] layers a host adapter over shared Apps; this supports isolation of adapters, not identical behavior on every host. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skills]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]], [[sources/openai--mcp-extensions#sdk-setup]]
+
 ## Semantic API adapter comparison — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] has UI/REST/MCP surfaces over the same public API. MCP curates names/descriptions while deriving parameter structure from OpenAPI; canonical and packaged specs matched byte-for-byte at the inspected revision. The streaming adapter returns answer, SQL and rows separately. This is source-inspected parity, not a live end-to-end test; example count unchanged. [[sources/nvidia--auto-ontology#curated-tools]] [[sources/nvidia--auto-ontology#structured-answer]]

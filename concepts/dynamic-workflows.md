@@ -123,3 +123,7 @@ This concept directly addresses the wiki's longest-standing open question about 
 - How does the "save" mechanism interact with the skill distribution story? If a workflow is saved and distributed via a skill, does it become a static workflow again? Is it a starting template the model customizes?
 - What's the actual token multiplier for a typical workflow vs. single-context? "Significantly more" is imprecise.
 - How does the quarantine pattern compose with Claude Code's permission model? Can you structurally enforce that a subagent can't use certain tools?
+
+## Related: code-based tool composition
+
+[[concepts/code-mode-capability-interface]] covers composing tool calls and filtering intermediate results within one generated script. Schmid includes sub-agent fan-out as a use case, but that alone does not establish isolated specialist contexts or durable workflow recovery. [[sources/philschmid--code-mode#workflow-composition]]

@@ -56,3 +56,11 @@ This applies [[patterns/behavioral/evidence-gated-completion]] to the input boun
 ## Structural verification for GitHub repo sources
 
 For maps with registered `### anchor` headings (or explicit backtick `#anchor` entries) and immutable GitHub `blob/<full-sha>/path#Lx-Ly` links, run `python3 scripts/check-source-citations.py sources/<slug>.md`. It reads pinned Git objects, checks line bounds and registered wikilink targets, and never fetches or edits evidence. Stage new pages or include each with `--page`. It does not establish claim entailment, whole-tree link integrity, runtime correctness, or support every historical source format.
+
+## Versioned protocol and extension collections
+
+Apply [[patterns/quality-bar/revision-bound-review]] and [[patterns/behavioral/context-is-not-authority]] when an evidence collection spans a protocol and host implementations. Record **core revision → extension wire revision/stage → SDK revision → documented host/surface/build → exercised behavior** separately, with an anchor for each. Keep stable/draft and specification/example disagreements explicit. For UI/context channels, record which fields reach the model, host and view; an API field name is not a secrecy guarantee.
+
+Done when the citation map identifies the contract behind each load-bearing claim, records unsupported/unknown fallback and distinguishes documented support from executed acceptance. Motivating evidence: [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#documentation-conflicts]], [[sources/modelcontextprotocol--mcp-apps-docs#messages-context]], [[sources/openai--mcp-extensions#platforms]].
+
+For named document collections with a SHA-256/byte receipt, run `python3 scripts/check-document-captures.py <receipt.json> [...]`. It accepts a capture list or an object with `captures`; entries require `file`, `url`, `sha256`, and `bytes`. It verifies local bytes only, rejects missing/duplicate/escaping paths, and never fetches or assesses semantic support.

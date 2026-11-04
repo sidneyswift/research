@@ -213,6 +213,69 @@ Compounding budget check: this ingest adds a reusable project schema, not only p
 
 Compounding budget: a reusable schema check plus builder routing ships with the research. No new background agent or external service is needed to apply it.
 
+### [2026-11-02] Internal projects as a separate research surface
+
+- Grounding: [[patterns/composition/single-source-multi-surface-distribution]] and [[concepts/imitation-vs-correctness-eval]].
+- Change: created [[projects/_index]] and the linked [[projects/conversation-learning/README]] design with [[projects/conversation-learning/data-contract]] and [[projects/conversation-learning/review-protocol]]. One evidence base supplies future derived views, while annotations distinguish acceptance from correctness.
+- Expected benefit: preserve the wiki's external artifact catalog while making research-to-build work reachable; avoid maintaining separate incompatible datasets per training consumer.
+- Status: **applied** 2026-11-02, local design/navigation only. Corpus ingestion, export adapters and evaluation results remain future work. No global conversation-collection rule or new confirmed pattern added.
+
+### [2026-11-02] Real conversation evidence sharpens the annotation machinery
+
+- Grounding: [[patterns/quality-bar/defect-derived-validation]], [[patterns/quality-bar/revision-bound-review]], [[patterns/behavioral/latent-vs-deterministic-split]]; observed evidence at [[sources/codex--commercial-redline-pilot#artifact-state]], [[sources/codex--commercial-redline-pilot#commitment-evolution]] and [[sources/codex--commercial-redline-pilot#execution-status]].
+- Applied: [[projects/conversation-learning/data-contract]] and [[projects/conversation-learning/review-protocol]] now require capture-projection boundaries, repair-verification classes, prior-approval/intent-evolution checks, paired-artifact/process findings and development-only treatment of studied cases. Added `scripts/check-conversation-learning.py` for record envelopes, lineage and source-anchor checks.
+- Expected benefit: prevent partial source capture, user reconsideration and agent-reported recovery from turning into falsely certain training labels; spend model judgment on interpretation rather than ID bookkeeping.
+- Status: **applied** 2026-11-02 locally. Model behavior improvement, actual export authorization and full private-corpus storage remain unimplemented/unverified. Lessons are not installed as instructions in other projects.
+
+### [2026-11-02] Accessible-chat corpus — provenance and executable review integrity
+
+- Grounding: [[patterns/quality-bar/defect-derived-validation]], [[patterns/quality-bar/revision-bound-review]], [[patterns/behavioral/latent-vs-deterministic-split]] and [[patterns/composition/single-source-multi-surface-distribution]]; observed failure mechanisms at [[sources/codex--conversation-corpus-20261102#C0136]] and [[sources/codex--conversation-corpus-20261102#C0221]].
+- Applied: read-only private capture, exact repeated-instruction factoring, per-chat review recording, validated shard consolidation, canonical-ledger-derived views and a completion/lineage checker. The contract now preserves feedback authorship, executed-prompt bindings, independent grading axes, cost attribution and unresolved contradictions. Tests reject duplicated coverage, uninspected user-facing tool payloads, numeric triage counts as annotations and dropped restrictions. Final review exposed a recorder that silently discarded optional annotations; it now preserves typed supported fields and rejects unknown fields, with regression coverage.
+- Expected benefit: mechanical checks guard coverage and provenance while interpretation remains explicit model judgment. A polished catalog cannot turn source-agent assertions into human approval or measured improvement.
+- Status: **applied** 2026-11-02 locally. Frozen run: [[projects/conversation-learning/runs/all-chats-20261102/README]]. No global agent rules, public corpus release, model training or executed behavior evaluation.
+
+Compounding budget: this batch ships reusable capture/review/validation machinery and deterministic views, rather than promoting unadjudicated lessons into more confirmed patterns.
+
+### [2026-11-02] Code Mode ingest — selective emission already embodied
+
+- **Grounding:** [[patterns/behavioral/latent-vs-deterministic-split]], extended by [[sources/philschmid--code-mode#typed-interface]].
+- **Mapping:** combine independent mechanical research checks in code and return bounded results; keep semantic evidence assessment with the model. Existing exec orchestration and doctor/citation scripts already support this.
+- **Status:** embodied, 2026-11-02. Applied during this ingest; no new harness rule or script. A single article capture does not justify a new abstraction or a global migration. Next useful work is primary implementation/benchmark verification, not another overlapping concept page.
+
+### [2026-11-04] API boundaries applied to wiki operations
+
+- **Grounding:** [[concepts/business-platform-api-design]], [[patterns/composition/resolver-routing-table]], [[patterns/quality-bar/complexity-ratchet]].
+- **Mapping:** QUERY is retrieval plus durable gap filing; INGEST is the explicit evidence-changing operation. The existing routing already names these separate responsibilities; source snapshots are evidence, not editable analysis.
+- **Disposition:** **embodied**. No new operation, generic API-review template, or duplicate schema added: one research session does not establish a repeated wiki procedure. Current contracts remain adequate; links into existing lifecycle and vocabulary pages provide reuse.
+- **Expected benefit:** retain a small discoverable interface and avoid adding machinery without observed repetition.
+
+### [2026-11-04] Skillify repeated API contract investigations
+
+- **Grounding:** [[patterns/quality-bar/defect-derived-validation]], [[patterns/composition/single-source-multi-surface-distribution]], and the nine documentation case studies in [[analyses/frontier-and-business-api-design]].
+- **Observed repetition/defects:** repeated vendor comparisons needed the same contract dimensions; a first Gusto extraction omitted its introductory effect contract, static SAP retrieval returned a shell, and job/idle/envelope labels could overstate completion. These are ingestion/review hazards, not measured provider defects.
+- **Change:** added [[_schemas/api-case-study]] with a matrix, collection/supplement capture rules, and a definition of done; registered its source route in AGENTS.md and its existing CLAUDE.md mirror and linked the project template and hub.
+- **Status:** **applied**, 2026-11-04, local uncommitted wiki changes. No installable package/version or live integration changed.
+- **Expected benefit:** subsequent systems use one comparable evidence contract; source extraction and guarantee gaps stay explicit. No new confirmed pattern inferred from documentation agreement.
+
+### [2026-11-04] API discovery needs three sets, not one catalog
+
+- **Grounding:** [[artifacts/projects/shopify-api]], [[patterns/composition/negotiated-capability-intersection]], [[patterns/behavioral/context-is-not-authority]].
+- **Change:** refined [[_schemas/api-case-study]] discovery dimension to record declared capabilities, negotiated compatibility, actually callable operations, and refresh/invalidation triggers.
+- **Status:** **applied**, 2026-11-04, local uncommitted schema change.
+- **Expected benefit:** prevent future studies from mistaking advertised support for execution authority, or a cached tool list for current page capabilities. No runtime enforcement or new confirmed pattern inferred.
+
+### [2026-11-04] Protocol studies need separate compatibility and disclosure contracts
+
+- **Grounding:** [[patterns/quality-bar/revision-bound-review]], [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/latent-vs-deterministic-split]], observed in [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]] and [[concepts/skills-over-mcp]].
+- **Observed defect risks:** modern core versus legacy initialization, stable UI wire versus SDK migration, host-surface support, and conflicting structuredContent guidance can produce a fluent but incompatible or overbroad claim. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#documentation-conflicts]], [[sources/modelcontextprotocol--mcp-apps-docs#messages-context]], [[sources/openai--mcp-extensions#platforms]].
+- **Applied change:** added a compact versioned-protocol supplement to [[_schemas/source]], requiring separate core/extension/SDK/host/exercised contracts and model/host/view disclosure. Existing INGEST citation routing reaches this schema; no new operation or duplicate template.
+- **Status:** **applied**, 2026-11-04, local uncommitted wiki change.
+- **Expected benefit:** future protocol studies preserve exact compatibility, evidence class and disclosure boundaries. No runtime support or secrecy guarantee is created by the schema.
+
+- **Repeated deterministic move:** three parallel source collections each required the same hash/size verification. Skillified it as `scripts/check-document-captures.py`, documented through the existing INGEST/source-schema route and Tooling. Definition of done: reject digest/size mismatch, missing/duplicate/escaping entries and malformed/empty receipts; accept both receipt forms; never fetch/edit evidence. Eight temporary validation scenarios passed, and all 54 real captures verify.
+
+Compounding budget: refined one existing schema and factored repeated integrity checks into one read-only script, without adding another operation or promoting an overlapping capability pattern.
+
 ## [2026-11-03] Pass 17 — complete social-source evidence
 
 | # | Source-grounded learning | Applied change | Status |

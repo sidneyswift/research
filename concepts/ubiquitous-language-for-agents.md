@@ -64,6 +64,8 @@ This is the same "concision pays off session after session" logic that motivates
 
 ## Related
 
+- [[artifacts/projects/shopify-api]] — explicit cart/checkout/order vocabulary, with field/update behavior that must be described beyond the action name.
+
 - [[concepts/skill-invocation-axis]] — sibling idea from the same source (how skills are reached vs how the domain is named).
 - [[artifacts/skills/grilling]] — `grill-with-docs` runs a grilling session *plus* `domain-modeling`, building the glossary as it interrogates.
 - [[artifacts/plugins/mattpocock-skills]] — the pack this lives in; fix for failure mode #2 (verbosity).
@@ -83,6 +85,14 @@ This is the same "concision pays off session after session" logic that motivates
 - Does a second creator ship the same agent-maintained-glossary convention (promotes the candidate pattern)? Compare gbrain's filing-rules/glossary and any `CONTEXT.md`-style files in CE/pm-os.
 - How is the glossary kept honest against the code over time without a test — is the "cross-reference with code" move enough, or does it need a `(det)` check?
 - Where's the boundary between this and a full domain model / `CONTEXT-MAP.md` for multi-context repos ([[sources/mattpocock--skills#skill-domain-modeling]])?
+
+## API design connection — 2026-11-04
+
+[[concepts/business-platform-api-design]] — Domain vocabulary also determines API nouns, commands, and ownership boundaries; the Microsoft domain-analysis source makes that connection explicit.
+
+## Cross-system API research — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.
 
 ## Executable business-meaning comparison — 2026-11-04
 

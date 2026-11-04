@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-11-02",
+  "notice": "Immutable private baseline; labels are model-authored, not human gold.",
+  "files": {
+    "reviews.jsonl": {
+      "sha256": "72236cd6fac328638aeb9f7535e82e6168baa61760c49ba6b5f6784d71b457dd",
+      "source": "projects/conversation-learning/runs/all-chats-20261102/reviews.jsonl",
+      "private_frozen_copy": "reviews.jsonl"
+    },
+    "coverage.jsonl": {
+      "sha256": "8bd2a28882d79d7897b3348983c1a8cd224dabb450d15de9a01add0561f4f15a",
+      "source": "projects/conversation-learning/runs/all-chats-20261102/coverage.jsonl",
+      "private_frozen_copy": "coverage.jsonl"
+    },
+    "interventions.jsonl": {
+      "sha256": "f98d6ca8a7a8f22c57ee19eba64ffc03b98887dc12c326e5f99ffc400c57b7b7",
+      "source": "projects/conversation-learning/runs/all-chats-20261102/interventions.jsonl",
+      "private_frozen_copy": "interventions.jsonl"
+    },
+    "lessons.jsonl": {
+      "sha256": "837b778174189e3130f8b3bcc531f94386ea7e9fb459e33af5b02fd749b8975b",
+      "source": "projects/conversation-learning/runs/all-chats-20261102/lessons.jsonl",
+      "private_frozen_copy": "lessons.jsonl"
+    }
+  }
+}

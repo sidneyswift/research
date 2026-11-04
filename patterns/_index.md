@@ -34,6 +34,8 @@ Each pattern uses [../_schemas/pattern.md](../_schemas/pattern.md). Sub-director
 
 ## Proposed patterns
 
+- [[patterns/composition/negotiated-capability-intersection]] — Shopify UCP profiles select compatible capabilities and prune dependent extensions; one documented system, no runtime verification.
+
 - [[patterns/quality-bar/rerunnable-work-artifact]] — manual oracle → reusable idempotent tool → checked repetition; one source family.
 
 - [[patterns/structural/authoritative-recheck-after-notification]] — For the inspected V2 launch path, replicated state wakes an actor that fetches authoritative readiness and acquires scoped ownership. HumanLayer only; proposed.

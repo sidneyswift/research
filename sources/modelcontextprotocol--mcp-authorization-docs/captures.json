@@ -1,0 +1,120 @@
+{
+  "retrieved": "2026-11-04",
+  "capture_method": "curl HTTPS, upstream Markdown/text bodies unmodified",
+  "ext_auth_commit": "15ca394e00a66434520b9ade26294999295a43ae",
+  "ext_auth_commit_date": "2026-10-23T16:24:05Z",
+  "captures": [
+    {
+      "file": "enterprise-overview.md",
+      "url": "https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization.md",
+      "version": "n/a (living page)",
+      "sha256": "6880679f50a1d097e05862c290c7ad918dc2dd3c7f28fdc3e31ec6f20a0b1d88",
+      "bytes": 14046,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "client-credentials-overview.md",
+      "url": "https://modelcontextprotocol.io/extensions/auth/oauth-client-credentials.md",
+      "version": "n/a (living page)",
+      "sha256": "0bc2851331791a086446f013dc6df6b22c1305fa053d5e9aa1c8ccb699ddac49",
+      "bytes": 12983,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "core-authorization-2026-07-28.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization.md",
+      "version": "2026-07-28",
+      "sha256": "59bc8d07ef88538e4d4e539ca1c846c3ae3162e7911dc29453495cddeac18444",
+      "bytes": 25510,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "security-best-practices-2026-07-28.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/security_best_practices.md",
+      "version": "2026-07-28",
+      "sha256": "d80fd55cf0cba29482c9a699c803d67ba8136f9bc7120d9db9a3168ddc756916",
+      "bytes": 43277,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "client-support-matrix.md",
+      "url": "https://modelcontextprotocol.io/extensions/client-matrix.md",
+      "version": "n/a (living page)",
+      "sha256": "b274123c72c8a0db543fa96b121d417bd9d1098593ba104b0066f65380884389",
+      "bytes": 4707,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "ext-auth-readme.md",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-auth/15ca394e00a66434520b9ade26294999295a43ae/README.md",
+      "version": "15ca394e00a66434520b9ade26294999295a43ae",
+      "sha256": "1ebf4cb9938ec179b192a9e9e91874fec37a5217692bbfcae7f8d7c7f1c3f13d",
+      "bytes": 2851,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "enterprise-spec-2026-07-28.mdx",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-auth/15ca394e00a66434520b9ade26294999295a43ae/specification/stable/enterprise-managed-authorization/2026-07-28/enterprise-managed-authorization.mdx",
+      "version": "15ca394e00a66434520b9ade26294999295a43ae",
+      "sha256": "4e603853161fa8bf0e49c07497437fc36c5078a2c40c9c87cb7ff244d09349ce",
+      "bytes": 14391,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "client-credentials-spec-2026-07-28.mdx",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/ext-auth/15ca394e00a66434520b9ade26294999295a43ae/specification/stable/oauth-client-credentials/2026-07-28/oauth-client-credentials.mdx",
+      "version": "15ca394e00a66434520b9ade26294999295a43ae",
+      "sha256": "5690dfd64fe3fc8bfedb1e0aa86bbfb56a893b90b0386a3df1f4f2f6a541d277",
+      "bytes": 5546,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "id-jag-draft-06.txt",
+      "url": "https://www.ietf.org/archive/id/draft-ietf-oauth-identity-assertion-authz-grant-06.txt",
+      "version": "draft-ietf-oauth-identity-assertion-authz-grant-06",
+      "sha256": "1699586519ecb5333fb48ee0443f57d56e95f0b745e25b70e925fb85a6efcfc0",
+      "bytes": 175852,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "rfc8693-token-exchange.txt",
+      "url": "https://www.rfc-editor.org/rfc/rfc8693.txt",
+      "version": "RFC 8693",
+      "sha256": "358d658014738bf4dc56c8aae2094ce716ede23b6d5a80488a7dc8e8d72da609",
+      "bytes": 63031,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "rfc7523-jwt-profile.txt",
+      "url": "https://www.rfc-editor.org/rfc/rfc7523.txt",
+      "version": "RFC 7523",
+      "sha256": "ae24f77a8fc4338903c805c6ace38def1f23d40194aea87b123b13c5b3d2d915",
+      "bytes": 26459,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "id-jag-draft-04.txt",
+      "url": "https://www.ietf.org/archive/id/draft-ietf-oauth-identity-assertion-authz-grant-04.txt",
+      "version": "draft-ietf-oauth-identity-assertion-authz-grant-04 (linked by MCP stable profile)",
+      "sha256": "a59c1dffc0b5e59d1bd541276c6948eb9191f3b83685be5810a32e63effb4653",
+      "bytes": 137376,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "auth-discovery-2026-07-28.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/authorization-server-discovery.md",
+      "version": "2026-07-28",
+      "sha256": "f36d3290ba947feeb44a2afe264ec88f50925e47315f001e04a6a6302362f5b7",
+      "bytes": 8186,
+      "retrieved": "2026-11-04"
+    },
+    {
+      "file": "client-registration-2026-07-28.md",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/client-registration.md",
+      "version": "2026-07-28",
+      "sha256": "b08bcf79c6d88f274dd4c40260fd4cf9b7edbbb1f275161c1fed562b06e9b048",
+      "bytes": 10254,
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

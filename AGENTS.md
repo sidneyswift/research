@@ -42,6 +42,7 @@ A resolver table, the way `gstack`/`gbrain` ship a `RESOLVER.md` (see [[patterns
 | Article / essay / thread | `article` | committed `sources/<slug>/snapshot.md` | usually `concept`, sometimes artifact |
 | Paper | `paper` | committed `sources/<slug>/` (PDF/text) | `concept` |
 | Docs-page | `docs-page` | committed `sources/<slug>/snapshot.md` | artifact or `concept` |
+| API system documentation collection | `docs-page` | committed named immutable captures + URL/version/hash map in `sources/<slug>/` | project + `_schemas/api-case-study.md` supplement |
 | Packaged release (ZIP/installer — e.g. a paid product with no public repo) | `other` (note the package kind + version) | committed extracted tree `sources/<slug>/` (+ the original archive); immutable like an article — there is no upstream to re-clone | artifact (usually `plugin`) |
 
 Each operation is a **parameterized call** — same procedure, different argument → different result (per [[patterns/behavioral/skill-as-method-call]], applied to ourselves): `INGEST(<source>)` · `QUERY(<question>)` · `LINT(<scope?>)` · `REFLECT(<since?>)`. Likewise a `_schemas/` template is a parameterized page: same template, different artifact.
@@ -210,6 +211,7 @@ The deterministic `(det)` operations now have scripts so the model spends judgme
 - **`scripts/wiki-search.sh "<query>"`** — grep over wiki pages, grouped by page + title (`-s` includes `sources/`, `-l` lists files). The cheap stand-in for embedding search until the wiki outgrows it.
 - **`scripts/wiki-doctor.py`** — the LINT autopilot: mechanical health checks + a 0–100 health score (`--json`, `--strict`, `--target N`). Reports only — never edits pages.
 - **`python3 scripts/check-source-citations.py sources/<slug>.md`** — validates registered anchors used by tracked wiki pages and immutable GitHub line ranges against the local pinned clone. Stage new pages or pass `--page`; use for repo maps in this format. Structural checks only; semantic evidence review remains required.
+- **`python3 scripts/check-document-captures.py <receipt.json> [...]`** — verify immutable document captures against SHA-256/byte receipts; no network, edits or semantic-support claim. Grounded in [[patterns/quality-bar/revision-bound-review]] and [[patterns/behavioral/latent-vs-deterministic-split]].
 - **`sources/clone-all.sh`** — rebuild the git-ignored source clones from `repos.manifest.tsv`, pinned to cited commits (`--pull` to fetch).
 - **`analyses/_eval-rubric.md`** — the cross-modal (multi-model) review gate every `analyses/` page passes before shipping.
 

@@ -115,6 +115,14 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 
 [[artifacts/projects/dsh-superagent-prototype]] uses programmatic admission and routing around semantic assessment, with observe-mode acceptance recorded rather than executed. [[artifacts/projects/kody]] keeps credential authorization/application in trusted code outside generated composition. These extend the evidence without implying deterministic code cannot fail. [[sources/deepseek-ai--dsh-superagent-prototype#policy]], [[sources/kody-hq--kody#credential-resolution]]
 
+## Related explanatory evidence: Code Mode
+
+Schmid illustrates the model generating a script while code handles API composition, filtering and selected output. This extends [[concepts/code-mode-capability-interface]]; an explanatory article is not an additional independently inspected artifact example. [[sources/philschmid--code-mode#typed-interface]]
+
+## MCP research connection — 2026-11-04
+
+[[concepts/skills-over-mcp]] assigns selection to user/model and raw-byte digest/size/origin checks to the host. [[artifacts/projects/openai-mcp-extensions]] exposes concrete schema/continuation parsing and explicit write outcomes; these are inspected mechanisms, not executed security guarantees. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]], [[sources/openai--mcp-extensions#form-client]], [[sources/openai--mcp-extensions#write-client]]
+
 ## Tibo supporting report — 2026-11-03
 
 [[artifacts/projects/tibo-dog]] makes the split concrete at several product boundaries: a discovered issue becomes lint; `.hot.ts` selects an allocation ban; first-download size can fail the build; a server recomputes a run instead of trusting the submitted score. These are author-reported mechanisms, not locally tested implementations. The judgment lies in choosing the right constraints and representing reality faithfully; executing a deterministic check does not establish that its premises or scope are adequate. [[sources/poteto--tibo-engineering#defect-lints]] [[sources/poteto--tibo-engineering#hot-paths]] [[sources/poteto--tibo-engineering#download-budget]] [[sources/poteto--tibo-engineering#deterministic-replay]]

@@ -76,6 +76,12 @@ It routes a scarce resource — domain judgment about what "good" looks like —
 
 [[artifacts/plugins/pstack]] is a **related local-scale prescription**, not confirmation of this full corpus-scale pattern: `correct` mines recurring failures and adds negative tests and enforcement, but no measured historical-corpus validation is established. Status and example-count remain unchanged. [[sources/cursor--plugins-pstack#PK18]]
 
+## Internal research application
+
+Internal application proposal: [[projects/conversation-learning/README]] would turn reviewed conversation failures into scoped checks and replay evaluations. No corpus or measured improvement yet; this does not confirm the pattern.
+
+Pilot application: [[projects/conversation-learning/pilots/commercial-redline-001/README]] extracts evaluation criteria from actual corrections plus a masked command failure. Four authored development probes exist; remedy effectiveness remains unmeasured. [[sources/codex--commercial-redline-pilot#execution-status]] This is not a new confirming artifact example.
+
 ## Tibo comparison — 2026-11-03
 
 [[artifacts/projects/tibo-dog]] supplies an **author-reported online variant**: whenever the creator finds an issue, she asks the bot to make a lint rule against it. The local defect → future guard mechanism is highly portable, but no historical corpus, rule inventory, measured hit rate or back-validation is supplied. It therefore does **not** confirm this page's stronger corpus-scale pattern; `status: proposed` and `example-count: 1` remain unchanged. Trigger a regression guard from observed failure, but choose lint, a behavioral test or a temporal model according to what can actually detect it. The choice of guard is our adaptation, not a claim the post prescribed all three. [[sources/poteto--tibo-engineering#defect-lints]]

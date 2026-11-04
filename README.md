@@ -32,20 +32,26 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 - **For evidence:** [sources/](sources/) — every claim in the wiki points here.
 - **For tooling:** [scripts/](scripts/) — `wiki-search.sh` (search), `wiki-doctor.py` (health check + score). Run `python3 scripts/wiki-doctor.py` anytime to see wiki health.
 
+## Internal builds
+
+See [[projects/_index]] for projects created from the research, starting with [[projects/conversation-learning/README]]. These design projects are separate from the external artifact counts below.
+
 ## Status
 
 | Domain | Count | Inventory checked |
 | --- | --- | --- |
-| Skills cataloged | 5 paged | 2026-10-24 |
-| Plugins cataloged | 10 | 2026-10-24 |
-| Projects cataloged | 11 | 2026-11-04 |
-| MCP servers cataloged | 0 paged | 2026-10-24 |
-| Concepts cataloged | 22 | 2026-11-04 |
-| Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
-| Creators cataloged | 20 | 2026-11-04 |
-| Source citation pages | 44: 19 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
+| Skills cataloged | 5 paged | 2026-11-04 |
+| Plugins cataloged | 10 | 2026-11-04 |
+| Projects cataloged | 23 | 2026-11-04 |
+| MCP servers cataloged | 0 paged | 2026-11-04 |
+| Concepts cataloged | 28 | 2026-11-04 |
+| Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
+| Creators cataloged | 35 | 2026-11-04 |
+| Source citation pages | 75: 21 repos, 28 docs-pages, 18 articles, 2 papers, 1 tweet, 5 other | 2026-11-04 |
 
-Latest ingest: [[artifacts/projects/superplane]] — source at `7d755d1`; 42 portable principles on durable workflows, PR coordination, bounded repairs, human gates and runner completion. Full source tree saved locally with pinned citations, hashes and restoration registration. Previous ingest: [[artifacts/projects/background-agents]]. Counts describe existing wiki pages, not refreshed older product claims.
+Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
+
+Latest MCP ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension-architecture]], [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]], [[concepts/mcp-enterprise-managed-authorization]] and [[concepts/skills-over-mcp]]. The synthesis [[analyses/mcp-and-extensions]] remains draft pending cross-family review. Counts describe existing wiki pages, including prior local drafts; inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

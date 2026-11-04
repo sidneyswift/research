@@ -75,3 +75,7 @@ If this generalizes, it's a data-sourcing strategy applicable to any structured 
 - Does this technique generalize past `SKILL.md`-shaped artifacts to other structured, commit-maintained specs (IaC, prompt libraries, CI configs)? No 2nd example exists yet in this wiki.
 - How much does intent-label sparsity (only ~19% at the rich tier) actually hurt downstream training quality, versus the bare commit subject being "good enough"? Untested here.
 - Is there a cleaner way to handle the mixed-authorship problem than "don't distinguish" — e.g., a co-author-signature detector, even an imperfect one, as an optional filter dimension?
+
+## Internal research application
+
+Internal application proposal: [[projects/conversation-learning/README]] extends revision-based learning to conversational interventions and full task episodes; it is a design, not new empirical evidence.

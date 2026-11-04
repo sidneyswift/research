@@ -22,6 +22,8 @@ See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, pre
 
 ## Cloned repos
 
+- [[sources/rhys-sullivan--executor]] — selected capability contracts, OpenAPI compilation, persisted catalog, discovery and sandbox dispatch at `3cf6e5465`; source inspection, with package reuse qualification separate.
+
 - [[sources/superplanehq--superplane]] — full local source at `7d755d1`; workflow/runner investigation, pinned citations, hashes and restoration manifest.
 
 - [[sources/open-inspect--background-agents]] — complete local source tree at `4b7f4e4`; architecture and lifecycle study with pinned evidence hashes.
@@ -53,6 +55,8 @@ Repos sit at `sources/<creator>--<repo>/` (an ignored Git clone with its `.git/`
 - [[sources/zhang--skill-plus-plus]] — Skill++, arXiv 2611.00544v1; all 20 pages read, local full source preserved, public version/hash provenance and original synthesis.
 
 ## Articles, posts, threads
+
+- [[sources/philschmid--code-mode]] — Philipp Schmid, 2026-11-01; article and two diagrams captured 2026-11-02. Extends [[concepts/code-mode-capability-interface]]; illustrative code, unverified adoption/performance claims.
 
 - [[sources/ankrgyl--trace-lake]] — Ankur Goyal, 2026-11-03: full X article with both SQL examples and eight linked primary pages, retrieved 2026-11-04. Grounds [[concepts/trace-lake]].
 
@@ -123,3 +127,51 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/deepseek--super-agent-design]] — full rendered English machine translation + 13 figures.
 - [[sources/deepseek-ai--dsh-superagent-prototype]] — pinned MIT prototype at `6337fc8`.
 - [[sources/kody-hq--kody]] — pinned FSL platform at `9d96cfb`.
+
+## Internal project briefs
+
+- [[sources/sidney-swift--conversation-learning-brief]] — originating requirements for [[projects/conversation-learning/README]]; not a capture of the suggested private pilot.
+
+- [[sources/codex--commercial-redline-pilot]] — bounded sanitized conversation evidence for the first [[projects/conversation-learning/pilots/commercial-redline-001/README]]; private projection staged outside Git.
+
+- [[sources/codex--conversation-corpus-20261102]] — frozen accessible-chat inventory and provenance for the [[projects/conversation-learning/runs/all-chats-20261102/README]] review.
+
+## Business platform API design — 2026-11-04
+
+- [[sources/google--aip-121]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/google--aip-136]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/google--aip-151]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/microsoft--async-request-reply]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/microsoft--cqrs]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/microsoft--domain-analysis]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/microsoft--web-api-design]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/aws--idempotent-apis]] — evidence for [[concepts/business-platform-api-design]].
+- [[sources/ietf--http-semantics]] — evidence for [[concepts/business-platform-api-design]].
+
+## Frontier and business API contracts — 2026-11-04
+
+- [[sources/openai--agent-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/anthropic--agent-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/microsoft--business-central-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/sap--business-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/salesforce--business-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/cloudinary--business-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/gusto--business-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/ftrack--business-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/stripe--business-api-design]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/schick--toolformer]] — [[analyses/frontier-and-business-api-design]] (working draft).
+- [[sources/berkeley--function-calling-evaluation]] — [[analyses/frontier-and-business-api-design]] (working draft).
+
+## Shopify API design — 2026-11-04
+
+- [[sources/shopify--agent-commerce-api-design]] — nine agent-commerce/UCP/toolkit documentation captures.
+- [[sources/shopify--admin-api-design]] — seven Admin/business API documentation captures.
+
+[[artifacts/projects/shopify-api]] owns findings; [[analyses/frontier-and-business-api-design]] compares the contracts.
+
+## MCP and extension evidence — 2026-11-04
+
+- [[sources/modelcontextprotocol--mcp-core-and-extensions-docs]] — versioned core, governance, Tasks, Skills and Server Cards; immutable document collection.
+- [[sources/modelcontextprotocol--mcp-apps-docs]] — stable/draft UI specifications, SDK and security docs.
+- [[sources/modelcontextprotocol--mcp-authorization-docs]] — core OAuth, stable auth profiles, exact ID-JAG dependency and current draft.
+- [[sources/openai--mcp-extensions]] — ignored live clone pinned at `9e6d418`; citation page is the durable wiki record.

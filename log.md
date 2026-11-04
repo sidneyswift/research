@@ -459,6 +459,172 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 
 - Prepared the DeepSeek/Kody ingest on `codex/deepseek-kody-research` for the user-requested commit, push and merge. Staged checking exposed ten whitespace-only lines carried by the rendered article table; preserved the immutable capture and scoped the whitespace gate to authored wiki material. Citation and link checks remain clean within the ingest scope; inherited health findings remain recorded.
 
+## [2026-11-02] query | conversation learning project and reusable feedback data
+
+- Created [[projects/conversation-learning/README]] with [[projects/conversation-learning/data-contract]], [[projects/conversation-learning/review-protocol]] and a clearly synthetic JSON example. User brief captured at [[sources/sidney-swift--conversation-learning-brief#requirements]]. Existing related pages extended rather than creating overlapping concepts.
+- Design covers immutable evidence, interventions, cross-chat task episodes, lessons, permissions, hindsight boundaries, review, holdouts and multiple derived uses. Seeker SOW remains a suggested pilot, not reviewed evidence; no private chat/contract copied, model trained, collector deployed or provider upload performed.
+- Reverified the pinned skill-diffs gold caveat and defect-derived linter header. DPO/process-supervision abstract pages checked as further reading only, not full paper ingests or evidence that the proposed collaboration dataset works.
+- ratchet: new linked internal project pages **4** plus **1 source citation page**; cross-references added to four existing research pages and navigation. Orphan/broken-link deltas checked after edits. No new pattern promotion.
+
+## [2026-11-02] reflect | research-to-build project surface
+
+- [[meta/self-improvements]] records the applied internal-project navigation and canonical-data design, grounded in existing wiki patterns. Compounding budget: explicit data/review contracts are more useful now than additional generic concept pages; importer and export scripts wait for one real pilot to expose format and evidence gaps.
+
+- Scoped verification: tracked + new Markdown overlay **2,257 pages**, health **50/100 unchanged**, **0 new broken links, orphans, missing sections or gitlinks**. New project source anchors resolve; synthetic JSON parses; `git diff --check` passes. Inherited wiki findings remain untouched.
+
+## [2026-11-02] ingest | conversation learning pilot — commercial redline collaboration
+
+- User requested a real extraction from the chat **Seeker SOW**. Reviewed 40 paginated turns: 32 November 2 turns and eight immediately preceding October 21 turns. Older chat history remains unread. [[sources/codex--commercial-redline-pilot]] preserves sanitized observations and locators; private projections/selected commands are staged outside Research with hashes and owner-only modes, not in a production or backed-up corpus.
+- Added [[projects/conversation-learning/pilots/commercial-redline-001/README]], 23 structured records (capture, tasks, episodes, ten interventions and eight lesson candidates), and four synthetic development probes. Distinguishes failure, clarification, prior approval, changing intent, observed tool defects and successful controls. No original legal text or commercial numbers copied to repo; no legal correctness assessment, private-artifact mutation, message send, provider upload, training or model behavior evaluation performed.
+- Source checks support conversational sequences and a masked subprocess assertion, not the independently verified correctness of reported contract/workbook repairs. Original case and derived probes are development evidence, not holdouts. No pattern promoted.
+- ratchet: linked source citation + sanitized evidence snapshot + pilot page + two structured datasets + structural validator; cross-references extended across project navigation/contracts and three existing research pages. Quality checks recorded below.
+
+## [2026-11-02] reflect | extract observable corrections without hindsight labels
+
+- Applied capture/annotation/review refinements and the record-lineage checker; [[meta/self-improvements]] records grounding and limits. Compounding budget: improve evidence fidelity and structural checks before adding more generic pages or proposing a full collector.
+
+- Pilot verification: 27 structured records pass envelopes/lineage/source-anchor checks; deliberately broken lineage is rejected. All saved private projection hashes and annotated turn/item IDs resolve. Wiki doctor tracked+new overlay: **2,260 pages**, health **50/100 unchanged**, **0 new broken links, orphans, missing sections or gitlinks**; inherited findings untouched. Whitespace checks clean. ratchet: new pilot/source-page wikilink occurrences **+31** (additional backlinks in existing pages excluded from this count) · orphans **+0** · patterns **+0**. No model evaluation executed.
+
+## [2026-11-02] ingest | frozen accessible-chat conversation-learning corpus
+
+- Completed [[projects/conversation-learning/runs/all-chats-20261102/README]]: **506 discovered, 498 model-reviewed, eight documented gaps, zero pending**. Scope: 494 local Codex roots plus 12 ChatGPT chats exposed by current tools; not an account-wide ChatGPT completeness claim. Internal subagent/guardian sessions inventoried as supporting evidence. Raw projections, title mapping and consolidated reviewer shards remain private outside Research; captures are frozen and owner-local, not a configured backed-up corpus.
+- Added 786 intervention annotations, 640 scoped lesson candidates, 18 curated findings, eight longer episodes, 11 provisional task families and 14 synthetic development probes. [[projects/conversation-learning/runs/all-chats-20261102/learnings]] summarizes narrow checks and holistic mechanisms. Counts include reported agent corrections and changing requirements, not only confirmed human-identified failures. Canonical reviews generate annotation views and the catalog without parallel facts drifting.
+- Reviewed ordinary dialogue throughout. Seventy-seven imported-history cases inventory every tool occurrence and inspect claim-supporting/user-facing payloads with explicit limits; large catalog/schema payloads are not falsely claimed as fully read. Exact repeated instruction bodies can be read once with occurrence/hash provenance. Attachments, hidden context and historical provider correctness remain bounded by capture/review limits.
+- All labels remain model-authored, human-unreviewed, development-only, private-analysis-only and training-ineligible. No provider upload, training, executed model evaluation, global skill installation or publication. No new confirmed pattern.
+
+## [2026-11-02] reflect | make conversation review structurally checkable
+
+- Applied the provenance/contract refinements and capture, review, factoring, consolidation and derived-view tools recorded in [[meta/self-improvements]]. Final QA caught and fixed silently dropped optional recorder annotations/restrictions; the recorder now rejects unsupported fields. Removed three invalid secondary locators before the completion check passed. Compounding budget favors reproducible evidence checks over adding generic rules.
+
+- Final verification: capture hashes, exact message-ID multisets, source locators and derived annotation lineage pass with **zero pending**; 1,477 derived records checked. **Nine** synthetic integrity tests and the 27-record pilot validator pass. A fourth occurrence of the same invalid secondary locator was removed from its canonical annotation, and the view builder now rejects unknown explicit locators instead of silently dropping them. Privacy-pattern scan found zero email, credential-token or private-user-path hits across 21 new project/evidence files; this is a bounded check, not a universal disclosure guarantee. `git diff --check` passes.
+- Wiki doctor tracked+new overlay: **2,265 pages**, health **50/100 unchanged**; seven inherited broken links, zero new broken links, orphans, missing sections or gitlinks. No unrelated lint repairs applied. ratchet: new run/source-page wikilink occurrences **+553** · orphans **+0** · patterns **+0**. All work local and uncommitted.
+
+## [2026-11-02] query | initial intent versus joint exploration
+
+- Extended [[projects/conversation-learning/runs/all-chats-20261102/learnings]] after checking pilot decision evolution and five canonical chat observations. The earlier failure-focused synthesis cannot establish how much dialogue was specification versus exploration. No consistent corpus-wide opening-intent/phase labels or defensible percentage exist.
+- Preserved concrete counterexamples: later clarified approval policy, user-origin numerical terms and reconsidered authorized edits; evolving planner requirements and messaging audience policy. Proposed phase-level classification and earliest-requirement provenance before any quantified claim. This adds a bounded qualitative finding, not 498 newly adjudicated intent labels or a training-ready dataset.
+
+## [2026-11-02] query | finding unknowns before intent reclassification
+
+- Applied the explicitly requested flex-finding-unknowns skill's blindspot pass to existing contract/protocol, pilot and canonical annotations. Added [[projects/conversation-learning/classification-discovery]] with six landmines, four missing concepts, five open questions, six core classification axes, conditional detail, 16 edge cases and a revised work order.
+- Local structure audit: all 786 interventions have message links but unset normalized decision cutoffs/targets; 49 derive from observed agent corrections, not direct human feedback. All 640 lesson candidates remain chat-level. These are bounded structural observations, not independent validity or prevalence results.
+- Proposed improvements prioritize information availability, decision provenance, productive exploration, justified disagreement, recovery/recurrence, selection denominators and additive rubric revisions. Proposed 24-window calibration is deliberately varied, not representative. Discovery changes no corpus labels, permissions or training eligibility; original reclassification authorization is preserved.
+
+## [2026-11-02] ingest | Philipp Schmid — Code Mode
+
+- Captured [[sources/philschmid--code-mode#root]] (published 2026-11-01): rendered article, code examples and two diagrams. Extended [[concepts/code-mode-capability-interface]] after subject/mechanism/role overlap review; added [[creators/philipp-schmid]] and propagated to Kody, dynamic workflows, OpenAI and two existing patterns plus indexes.
+- Distinguished typed composition, output emission, host state and per-call authority. Article examples were not executed; adoption, Factory benchmark/spend claims, API/model identifiers and production isolation remain unverified. No new implementation counted and no pattern promoted.
+- Quick REFLECT: selective mechanical execution is already embodied; recorded in [[meta/self-improvements]]. Compounding budget favors primary evidence validation over adding duplicate pages or speculative harness rules.
+- ratchet: wikilink occurrences +57 (excluding this log entry) · orphans +0 (new pages linked from indexes and concept) · patterns +0. Local and uncommitted; verification results follow.
+- Verification: doctor including this ingest’s three new Markdown files remains **50/100**, with zero new broken links, orphans, missing sections or gitlinks. All article citation anchors resolve; both PNG signatures pass. Existing Kody structural citation check: 21 anchors / 27 line ranges, zero errors. `git diff --check` passes. Inherited health findings were left unchanged.
+
+## [2026-11-02] ingest | intent classification — 24-window calibration
+
+- Continued the authorized second pass using [[projects/conversation-learning/runs/intent-pass-20261102/README]] and rubric revision 2. Read 24 deliberately selected source windows across nine corpus chats plus the SOW pilot, including expanded earlier-context evidence; added model-authored six-axis annotations, generated catalog/summary, eight-case human-review queue and an honest 506-source coverage ledger.
+- Separated prior action, feedback and repair after catching a calibration framing error that could evaluate the corrected answer instead of the original action. Preserved the earlier calibration privately with hashes; froze original first-pass ledgers byte-for-byte. New labels distinguish no established violation, non-violation activities and uncertain reported incidents without erasing source observations or claiming a corpus-wide rate.
+- Two concrete intent questions sent for human calibration. Eight source gaps remain; nine chats have selected windows only and 489 reviewable chats still need phase classification. No full-corpus second-pass completion, human adjudication, training target, provider upload or behavior improvement is claimed.
+
+## [2026-11-02] reflect | keep original action distinct from its repair
+
+- Grounded in [[patterns/quality-bar/revision-bound-review]], [[patterns/quality-bar/defect-derived-validation]] and the observed calibration correction. Added exact source/window/rubric checks, temporal violation gates and negative controls, including a test that a repair cannot replace the prior action. Model interpretation stays separate from structural validation. Compounding budget: preserve evidence and improve annotation machinery before widening uncertain labels.
+
+- Calibration verification: 24 annotations pass source/window/rubric identity, original-baseline preservation and temporal checks; seven synthetic integrity tests pass. New run links resolve and scoped privacy-pattern scan finds zero email/credential/private-user-path hits. Doctor overlay: 2,272 pages, health 50/100 unchanged, seven inherited broken links, no new broken links/orphans/missing sections. Whitespace clean. ratchet: new run wikilink occurrences **+34** · orphans **+0** · patterns **+0**. Full-corpus phase classification remains pending, explicitly separate from first-pass completion.
+
+## [2026-11-03] query | Code Mode interface — actual Kody registration
+
+- While applying existing agent/harness research to Flex Stack, followed additional source paths at the unchanged Kody pin. Corrected [[artifacts/projects/kody]], [[concepts/code-mode-capability-interface]] and [[sources/kody-hq--kody#mcp-surface]]: actual MCP registration is `search`, `execute`, `api`; direct single-operation dispatch is distinct from composed execution. No benchmark, source refresh, installation or live tool listing was run.
+- Current primary Cloudflare Code Mode articles/docs were checked for the Flex application brief; their full wiki ingestion remains open. The generic correction changes no Flex permissions or runtime. Scoped validation results are recorded below after verification.
+
+- Code Mode correction verification: 22 registered anchors, 152 wiki citations, 24 source files and 30 pinned line ranges pass the scoped citation checker; whitespace checks pass. These are structural checks, not a runtime benchmark or proof of semantic correctness. Existing unrelated working changes and raw sources were preserved.
+
+
+## [2026-11-03] query | Executor upstream refresh
+
+- At Sidney's explicit request, fast-forwarded the clean Executor source clone from `9c67fd54e2ade308a925e5b956d99b132b4df98a` to `3cf6e54659cb34ac731fe3cf747ca139be769b93` with `git pull --ff-only origin main`: 139 commits, 703 files changed. Updated only its manifest row, retaining the old commit as historical evidence for the earlier Flex source review. Raw application files remain upstream-owned; no dependencies installed or source tests/apps executed.
+- Relevant source changes: [search/invoke passthrough mode](https://github.com/UsefulSoftwareCo/executor/commit/3c263d758), [DCR registered-scope coverage](https://github.com/UsefulSoftwareCo/executor/commit/56aec8bd1), [OAuth token-destination restrictions](https://github.com/UsefulSoftwareCo/executor/commit/c03c9adc1), account-scoped policies and cross-session resume authorization fixes. Both Code Mode and direct JSON invocation remain useful comparison surfaces; this refresh is not a claim that Flex implements those upstream paths.
+- The QuickJS adapter package is now 1.6.11. Its runtime implementation did not change in this range; its changelog lists codemode-core dependency propagation. A kernel result-type change adds optional successful tool-path reporting (`toolPaths`). The full SDK/MCP host has materially more changes. No Flex package upgrade, deployment, OAuth grant or live-provider acceptance was performed. Detailed Flex impact remains in its owning MCP rollout record; a full reusable Executor artifact/citation study is still a wiki gap.
+
+## [2026-11-04] query | business platform API design
+
+Compared business naming, retrieval, commands, long-running workflows, and uncertain future reuse. Existing agent lifecycle/vocabulary pages did not cover HTTP API contracts; added [[concepts/business-platform-api-design]], linked back from five related pages. Illustrative routes and deployment choices are labeled as our synthesis, not universal standards or tested implementation.
+
+## [2026-11-04] ingest | primary API design guidance
+
+Captured nine rendered-text primary sources: Google AIP 121/136/151; Microsoft domain analysis, CQRS, asynchronous request-reply, and REST API design; AWS retry/idempotency guidance; IETF RFC 9110. Added nine citation pages, four publisher pages, catalog/index entries, and lifecycle/vocabulary/capability cross-links. No source applications run, no live platform changes. Snapshots retain text; layout and diagram images are outside evidence relied on. ratchet: links +179 (wikilink occurrences) · orphans +0 intended, checked in scoped validation · patterns +0 (documentation agreement is not two inspected artifacts).
+
+## [2026-11-04] reflect | stable wiki operation boundaries
+
+Recorded an embodied reflection in [[meta/self-improvements]]: current QUERY/INGEST routing already separates lookup from source mutation. Compounding budget: no extra template or script promoted; this is the first API research pass and no repeated wiki move was established. Cross-link the reusable concept instead of growing the harness.
+
+## [2026-11-04] lint | API design additions (scoped)
+
+Validated 23 new files with the wiki doctor using a temporary Git index; the user's real index was unchanged. All new-page wikilinks and registered source anchors resolve; all nine immutable snapshot hashes match. Doctor before/after: 50/100, 2,251→2,274 pages, no added findings, no orphan or missing-section findings. Existing failures remain: imported `articles/every/` text contains seven unresolved link occurrences, and older schemas/catalog pages have stale review/signal dates. Suggestions: review imported links as quoted evidence versus real wiki links; review stale pages before refreshing dates. No unrelated lint fixes applied. Scoped semantic review checked resource/action conventions, HTTP safety, asynchronous lifecycle, retries, and evidence-versus-proposal boundaries. `git diff --check` passes after removing trailing blank lines introduced by this pass. Status: success for scoped additions; whole-wiki health remains below target.
+
+## [2026-11-04] query | designing APIs for agents — research group
+
+Created [[projects/designing-apis-for-agents/README]] as a growing navigation/research charter under the existing internal-project layout. Grouped the business-platform API foundation, Code Mode, control-plane, durable-runtime, and domain-vocabulary nodes; added an evidence map, eight research tracks, future investigations, and contribution guidance. Findings remain on their owning pages; no new factual source claims or confirmed patterns added. Registered in project/root indexes and linked back from the two central concepts. This is a local wiki group, with no external publication or new chat created.
+
+## [2026-11-04] ingest | frontier and business API design — nine systems
+
+Extended [[projects/designing-apis-for-agents/README]] with OpenAI, Anthropic, Business Central, SAP sales, Salesforce, Cloudinary, Gusto, ftrack and Stripe case studies. Captured 59 named text snapshots representing 58 distinct official documentation/article/abstract pages, plus preserved Toolformer v1 PDF and capture manifests; eleven source citation collections. The prior nine API foundation sources remain separate. Source authority/version and no-runtime boundaries are explicit. Added eight publisher/research-author pages, the learning/evolution concept, shared indexes and entity backlinks. No APIs, SDKs or business actions executed. ratchet: links +804 (wikilink occurrences introduced before this log entry) · orphans +0 intended, scoped checks recorded below · patterns +0 confirmed.
+
+## [2026-11-04] query | frontier and business API design comparison
+
+Added [[analyses/frontier-and-business-api-design]] as a **draft** comparative synthesis and [[concepts/agent-api-learning-and-evolution]] for training mechanisms, controlled tests and conditional 2027-11-04/2031-11-04/2036-11-04 scenarios. Case studies preserve distinct provider generations and completion/authority levels. Same-family independent reviews found no <=3 blockers; applied a more direct Gusto processing citation, ftrack local-state provenance example, and more precise Toolformer/client wording. Cross-family review required by [[analyses/_eval-rubric]] is not available from the current reviewer tools, so publication gate is not claimed and draft status remains.
+
+## [2026-11-04] reflect | reusable API case-study contract
+
+Applied [[_schemas/api-case-study]] after the same investigation structure repeated across nine systems. Captures exact effects, ownership, lifecycle, authority, concurrency, freshness and compatibility; requires recording extraction gaps and guarantee boundaries. Routing/project schema/hub registration and a definition of done ship together. Compounding budget spent on a reusable review structure rather than a new speculative pattern taxonomy.
+
+## [2026-11-04] lint | frontier/business API research batch
+
+Scoped link/registered-anchor and required-section checks pass for the new wiki pages. Verified 60 captured-file hashes (59 text snapshots plus the preserved paper PDF). Wiki doctor through a temporary Git index: 2,251→2,366 Markdown pages; score 50→50; no added findings, orphan or missing-section findings. Prior unrelated imported-link/staleness findings remain untouched. The user's real index was verified unchanged; no source snapshots edited. `git diff --check` passes. Judgment review checked source-version separation, hidden effects, authority, nested/completion semantics, documentation conflicts, training-data uncertainty and alternative futures; no new confirmed pattern inferred. Analysis peer review is same-family only (lowest dimension 4/5), so cross-family publication gate remains pending and the synthesis stays draft. Scoped research status: success; no live platform or agent-usability verification claimed.
+
+## [2026-11-04] ingest | Shopify business APIs and agent commerce
+
+Added [[artifacts/projects/shopify-api]] as the tenth case study with sixteen immutable official documentation captures across two citation collections and [[creators/shopify]]. Covers merchant/Admin GraphQL, async bulk reads, scoped idempotency, version/grant drift, UCP profiles/catalog/cart/checkout/order, WebMCP and developer toolkit context. Recorded auth-intro/matrix, raw-update/CLI shorthand and Admin guide/reference tensions without altering snapshots. Added [[patterns/composition/negotiated-capability-intersection]] as **proposed**, one documented system. Updated hub/indexes, synthesis (still draft) and related entities. No live APIs, purchases, installations or credentials used. ratchet: links +199 (wikilink occurrences counted from new wiki pages and inserted blocks) · orphans +0 intended, checked below · patterns +1 proposed / +0 confirmed.
+
+## [2026-11-04] reflect | declared, negotiated and callable API capabilities
+
+Refined [[_schemas/api-case-study]] using Shopify’s documented profile intersection, separate trust/action permissions and WebMCP toolchange behavior. Discovery now records three capability sets and refresh triggers; grounded change logged in [[meta/self-improvements]]. Existing schema adequate for the rest of the study, so no extra operation/tooling added.
+
+## [2026-11-04] lint | Shopify API addition
+
+Verified all sixteen immutable snapshot hashes, new-page wikilinks/registered source anchors, artifact required sections and proposed-pattern sections/status. Temporary-index wiki doctor: 2,366→2,387 Markdown pages, score 50→50, no added findings or orphans. Prior unrelated findings unchanged; real Git index unchanged; `git diff --check` passes. Same-family scoped review found no blocking factual issues (lowest dimension 4/5); incorporated CLI/raw-payload tension and discovery three-set refinement. Comparison remains draft under existing cross-family gate. Scoped ingest status: success; live behavior, general availability and agent usability remain untested.
+
+
+## [2026-11-04] ingest | MCP core, official extensions and OpenAI host extensions
+
+- Added [[concepts/model-context-protocol]], [[concepts/mcp-extension-architecture]], [[concepts/skills-over-mcp]], [[concepts/mcp-enterprise-managed-authorization]], [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]] and [[creators/model-context-protocol]]. Four citation maps back 54 immutable document captures plus OpenAI repo `9e6d418`; manifest/ignore, domain/root indexes, inventory and entity/pattern backlinks updated. No source application or provider flow executed.
+- Preserved modern core `2026-07-28`, stable Apps wire `2026-01-26`, SDK and host versions separately. Recorded unresolved Server Cards stage, obsolete Skills spec links, ID-JAG draft pair, auth endpoint/revocation and client-secret example disagreements. Review corrected data-channel conflation, state-handle scope, Elicitation classification and MRTR caching wording.
+- ratchet: links +407 (distinct file→wikilink-target edges in new pages and this ingest’s additions) · orphans +0 · patterns +0; existing negotiated-capability pattern stays proposed.
+
+## [2026-11-04] query | MCP capabilities, apps, identity and build choices
+
+- [[analyses/mcp-and-extensions]] connects the new evidence to Kody, Shopify and HumanLayer/control-plane research and proposes a version-qualified pilot. Three independent same-family reviewers scored every rubric dimension at least 4/5; corrections applied. Synthesis stays **draft** pending the unavailable cross-family gate; no runtime recommendation is represented as verified support.
+
+## [2026-11-04] lint | MCP ingest scope
+
+- [[meta/2026-11-04-mcp-ingest-lint]] records citation/range/hash/link verification, reviewer findings and next evidence. All 54 capture hashes/sizes and 38 OpenAI immutable line ranges verify. Disposable-index doctor 2,407→2,465 Markdown pages, score 50→50, no added findings; real index unchanged. Inherited seven imported-article link occurrences and stale metadata remain; no new broken links/orphans/missing sections/gitlinks. No inherited findings auto-fixed.
+
+## [2026-11-04] reflect | Versioned protocol evidence and capture verification
+
+- Applied [[patterns/quality-bar/revision-bound-review]] and [[patterns/behavioral/context-is-not-authority]] to [[_schemas/source]]: separate core, extension wire/stage, SDK, host/build and exercised behavior; trace model/host/view disclosure. Skillified repeated hash checks as `scripts/check-document-captures.py`, documented through existing INGEST/tooling routes; eight temporary corruption/receipt scenarios passed. See [[meta/self-improvements]].
+- Compounding budget: one existing schema refinement and one reusable read-only integrity checker; no new operation, duplicated template or speculative confirmed pattern. Terminal state **success** for source/wiki work; cross-family synthesis review and actual host/auth acceptance remain explicitly open.
+
+## [2026-11-04] query | Executor general capabilities
+
+- Traced the existing pinned clone at `3cf6e5465`: plugin-produced tool definitions, per-connection persisted catalog, keyword discovery/exact description, lazy sandbox path/args proxy and host policy/credential dispatch. Added [[sources/rhys-sullivan--executor]] and extended [[concepts/code-mode-capability-interface]]; seven registered anchors and 15 immutable source ranges pass structural checks. Public helper package compatibility and consuming-app enforcement remain separate qualification. No source app or provider was executed.
+
+- Follow-up: isolated public OpenAPI package fixtures and Flex MCP PR #66 qualified compiler/request-builder reuse behind consuming-app enforcement. Added the chained/escaped parameter-reference lesson; source citation structure still passes. No provider or actual-client success is inferred from those fixtures.
+
+
+## [2026-11-04] query | MCP Apps implementation and component reuse
+
+- Reviewed Research MCP and all six MCP studies plus their synthesis for Flex's desktop-first UI direction. Captured four current official OpenAI guides/policies and two exact public npm metadata records without replacing original evidence; the follow-up hash receipt records all six.
+- Extended [[artifacts/projects/mcp-apps]] and [[artifacts/projects/openai-mcp-extensions]] with component-versus-full-page reuse, app-only versus model tool inventories, outer-tool rendering and current source discrepancies. Registry metadata confirms publication but not a working combined SDK installation. Updated the stale MCP consumer routing row in `for-builders.md`; no new wiki node or promotion of the draft synthesis.
+- No package installation, host connection, OAuth exchange, deployment or business operation was performed. Flex-specific architecture and candidate module choices stay in Flex Stack.
+
 ## [2026-11-03] ingest | tibo.dog — executable engineering principles
 
 - Pulled `origin main` in `sidneyswift/research` (fast-forward `f69f7e7` → `258b514`) before ingestion. Added [[sources/poteto--tibo-engineering]] and [[artifacts/projects/tibo-dog]]: full `note_tweet.text`, parent announcement, four visually inspected images with hashes, and dated game-home/About captures. Ordinary API text was truncated; the full post contains 14 bullets.
@@ -559,3 +725,7 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 
 - Queried builder routes and Eve, HumanLayer, managed agent API and durable/control-plane/context studies; followed selected task/execution citations. Flagged June Eve limits as historical and added qualification questions to [[artifacts/projects/eve]]. The wiki does not yet comprehensively cover current VM/sandbox providers or benchmark whole stacks; project-specific provider research and proposed choices remain in Flex Stack.
 - No source re-ingest, provider execution, deployment, new confirmed pattern or whole-wiki lint was performed; preserved existing concurrent changes.
+
+## [2026-11-04] query | consolidate and merge pending Research work
+
+User authorized committing, pushing and merging all pending Research work. Consolidated API/agent-commerce, MCP/extensions, conversation-learning sanitized metadata/tooling, and source updates; preserved newer upstream research through SuperPlane and runtime freshness notes. Private chat projections remain outside the public repository; ignored source clones and scratch artifacts remain local. Reconciled shared indexes and refreshed combined inventory counts. All 36 unit tests pass after reconciliation; wiki doctor reports 50/100 with the same seven imported-article broken-link occurrences, no orphan/missing-section/gitlink findings, and existing stale dates. Manifest-indexed capture hashes pass. Mutable wiki/code whitespace checks pass; whitespace in immutable captured sources is preserved. Analyses remain draft where review gates are pending. No provider execution or live business change implied by Git merge.

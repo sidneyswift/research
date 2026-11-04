@@ -61,6 +61,18 @@ last-reviewed: 2026-06-04
 - **The enterprise managed-configuration layer** (developers.openai.com/codex/enterprise/managed-configuration) — cloud-pushed `requirements.toml` policies, MDM preference domains, the *restrictive-only* enforcement design. Surfaced (not yet snapshotted) by the 2026-06-04 distribution research; the governance half of [[concepts/workspace-skill-distribution]]'s restrictive/additive split. Ingest candidate.
 - **Does Codex cloud load repo skills?** The skills doc scopes skills to CLI/IDE/app ([[sources/openai--codex-skills-doc#surfaces]]); cloud reads only AGENTS.md per its docs. Watch the Codex changelog + openai/codex#24517 ("team-level Skill Hub").
 
+## Code Mode research lead
+
+Schmid names Codex among adopting harnesses; this remains a third-party claim requiring a pinned first-party runtime investigation. See [[concepts/code-mode-capability-interface]] and [[sources/philschmid--code-mode#adoption-claims]].
+
+## API design research — 2026-11-04
+
+- [[artifacts/projects/openai-agent-api]] — Model/tool protocol and managed runtime contract study from [[sources/openai--agent-api-design#root]], grouped in [[projects/designing-apis-for-agents/README]]. Documentation-level evidence; no live API verification.
+
+## MCP research connection — 2026-11-04
+
+[[artifacts/projects/openai-mcp-extensions]] adds pinned implementation evidence for ChatGPT-specific application surfaces over [[artifacts/projects/mcp-apps]]. Keep it separate from Codex plugin packaging and the model API. [[sources/openai--mcp-extensions#root]], [[sources/openai--mcp-extensions#platforms]]
+
 ## Independent routing study — 2026-11-04
 
 [[concepts/lifelong-skill-routing]] studies GPT routers and native Codex CLI skill selection, with a separate limited task-success check. The work is by Zhang, Liang and coauthors, not an OpenAI publication or endorsement. CLI selection expands the skill-list budget; the task-success check additionally forces naming five skills before tools. These paper-scoped settings do not refresh this page's older official-product claims. [[sources/zhang--skill-plus-plus#harness]] [[sources/zhang--skill-plus-plus#task-success]]

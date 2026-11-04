@@ -29,6 +29,36 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/modelcontextprotocol--mcp-core-and-extensions-docs]] | docs-page | 2026-11-04 | modern core + pinned extension specs; capture map |
+| [[sources/modelcontextprotocol--mcp-apps-docs]] | docs-page | 2026-11-04 | stable UI wire + draft/SDK collection |
+| [[sources/modelcontextprotocol--mcp-authorization-docs]] | docs-page | 2026-11-04 | stable auth profiles + ID-JAG revision pair |
+| [[sources/openai--mcp-extensions]] | repo | 2026-11-04 | `9e6d418` |
+
+| [[sources/shopify--agent-commerce-api-design]] | docs-page | 2026-11-04 | nine named captures; UCP/toolkit |
+| [[sources/shopify--admin-api-design]] | docs-page | 2026-11-04 | seven named captures; Admin/API usage |
+
+| [[sources/openai--agent-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/anthropic--agent-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/microsoft--business-central-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/sap--business-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/salesforce--business-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/cloudinary--business-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/gusto--business-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/ftrack--business-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/stripe--business-api-design]] | docs-page | 2026-11-04 | dated collection; see map |
+| [[sources/schick--toolformer]] | paper | 2026-11-04 | arXiv 2302.04761v1 |
+| [[sources/berkeley--function-calling-evaluation]] | article | 2026-11-04 | dated collection; see map |
+| [[sources/google--aip-121]] | docs-page | 2026-11-04 | captured text; see citation |
+| [[sources/google--aip-136]] | docs-page | 2026-11-04 | captured text; see citation |
+| [[sources/google--aip-151]] | docs-page | 2026-11-04 | captured text; see citation |
+| [[sources/microsoft--async-request-reply]] | docs-page | 2026-11-04 | captured text; see citation |
+| [[sources/microsoft--cqrs]] | docs-page | 2026-11-04 | captured text; see citation |
+| [[sources/microsoft--domain-analysis]] | docs-page | 2026-11-04 | captured text; see citation |
+| [[sources/microsoft--web-api-design]] | docs-page | 2026-11-04 | captured text; see citation |
+| [[sources/aws--idempotent-apis]] | article | 2026-11-04 | captured text; see citation |
+| [[sources/ietf--http-semantics]] | docs-page | 2026-11-04 | RFC 9110, June 2022 |
+| [[sources/philschmid--code-mode]] | article | 2026-11-02 | published 2026-11-01 |
+
 | [[sources/superplanehq--superplane]] | repo | 2026-11-04 | `7d755d1`; workflow engine, factory coordination, runner protocols |
 | [[sources/open-inspect--background-agents]] | repo | 2026-11-04 | `4b7f4e4`; background execution, lifecycle/authority and context boundaries |
 | [[sources/openai--codex]] | repo | 2026-11-04 | `021fccb`; complete source checkout saved, scoped harness investigation |
@@ -78,8 +108,36 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 ## Creators
 
+- [[creators/shopify]] — [[artifacts/projects/shopify-api]].
+
+- [[creators/timo-schick]] — [[concepts/agent-api-learning-and-evolution]].
+
+- [[creators/berkeley-function-calling]] — [[concepts/agent-api-learning-and-evolution]].
+
+- [[creators/stripe]] — [[artifacts/projects/stripe-api]].
+
+- [[creators/ftrack]] — [[artifacts/projects/ftrack-api]].
+
+- [[creators/gusto]] — [[artifacts/projects/gusto-api]].
+
+- [[creators/cloudinary]] — [[artifacts/projects/cloudinary-api]].
+
+- [[creators/salesforce]] — [[artifacts/projects/salesforce-api]].
+
+- [[creators/sap]] — [[artifacts/projects/sap-sales-api]].
+- [[creators/ietf]] — primary API design guidance.
+
+- [[creators/aws]] — primary API design guidance.
+
+- [[creators/microsoft]] — primary API design guidance.
+
+- [[creators/google]] — primary API design guidance.
+
+
 | Creator | Type | Notes |
 | --- | --- | --- |
+| [[creators/model-context-protocol]] | org | MCP specification and official extension maintainers |
+
 | [[creators/superplane]] | org | Software factory and durable workflow engine |
 | [[creators/open-inspect]] | org | Background coding sessions, sandbox lifecycle and harness adapters |
 | [[creators/nvidia]] | org | Auto-Ontology and companion evaluation harness |
@@ -87,6 +145,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[creators/ankur-goyal]] | individual | Author of The Trace Lake; Brainstore architecture writing |
 | [[creators/braintrust]] | org | Trace history, investigation and evaluation tooling; documentation-level study |
 | [[creators/deepseek]] | org | Harness team; super-agent architecture essay and research prototype |
+| [[creators/philipp-schmid]] | individual | Code Mode explanation: typed composition, context emission and host state |
 | [[creators/kody-hq]] | org | Portable agent cloud, compact capability interface and credential use |
 | [[creators/anthropic]] | org | Sets the Agent Skills spec; ships demonstration skills + plugins + the Claude API |
 | [[creators/garry-tan]] | individual | President & CEO of Y Combinator; ships `gstack` and `gbrain` |
@@ -138,10 +197,33 @@ Candidate queue: see [artifacts/mcp-servers/_index.md](artifacts/mcp-servers/_in
 
 ## Artifacts — Projects
 
+- [[artifacts/projects/shopify-api]] — commerce/Admin and agent-facing APIs; documentation-investigated, no live execution.
+
+- [[artifacts/projects/stripe-api]] — Payments; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/ftrack-api]] — Production tracking; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/gusto-api]] — Payroll; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/cloudinary-api]] — DAM / media; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/salesforce-api]] — CRM / business operations; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/sap-sales-api]] — ERP / sales; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/business-central-api]] — ERP; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/anthropic-agent-api]] — Messages, tool exchange, batches and managed runtime; documented API contracts, not runtime-tested.
+
+- [[artifacts/projects/openai-agent-api]] — Model/tool protocol and managed runtime; documented API contracts, not runtime-tested.
+
 Frontier projects/systems/products that aren't reducible to a single skill, plugin, or MCP server.
 
 | Project | Creator | Status | One-line |
 | --- | --- | --- | --- |
+| [[artifacts/projects/mcp-apps]] | MCP project | source-investigated | Interactive UI wire, sandbox/bridge and SDK/host boundaries |
+| [[artifacts/projects/openai-mcp-extensions]] | OpenAI | source-investigated | ChatGPT-specific entrypoints, files, context, WebMCP, mentions and forms |
+
 | [[artifacts/projects/superplane]] | SuperPlane | source-investigated | Durable work identity, keyed queues, bounded repair and exact-head merging; 42 principles |
 | [[artifacts/projects/background-agents]] | Open Inspect | source-investigated | Hosted sessions, checkpoint/retirement, context and automation boundaries; 43 principles |
 | [[artifacts/projects/codex]] | OpenAI | source-investigated | Shared runtime, authority, history/recovery and evidence provenance; 44 principles |
@@ -158,12 +240,20 @@ Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md
 
 ## Concepts
 
+- [[concepts/model-context-protocol]] — roles, primitives, current core and legacy compatibility.
+- [[concepts/mcp-extension-architecture]] — extension lifecycle, negotiation, Tasks, discovery and support limits.
+- [[concepts/mcp-enterprise-managed-authorization]] — human/workload identities, token exchange and enterprise policy limits.
+- [[concepts/skills-over-mcp]] — remote skill discovery, manifest integrity, origin and activation.
+
+- [[concepts/agent-api-learning-and-evolution]] — evidence limits, controlled evaluation and conditional API evolution scenarios.
+- [[concepts/business-platform-api-design]] — separate business intent, data retrieval, and workflow execution; nine primary sources with proposed contracts.
+
 - [[concepts/lifelong-skill-routing]] — Skill++: incoming metadata differentiation, scope exclusions and semantic naming preserve old routes as skill libraries grow; stress-test routing outcomes distinguished from task success.
 
 - [[concepts/trace-lake]] — searchable execution history becomes reproducible regression evals; 18 portable principles with operational boundaries.
 
 - [[concepts/super-agent-architecture]] — DeepSeek architecture and synthetic scheduling evidence.
-- [[concepts/code-mode-capability-interface]] — Kody discovery, composition and authority.
+- [[concepts/code-mode-capability-interface]] — Kody implementation and Schmid’s Code Mode explanation; typed composition, context emission and authority.
 
 - [[concepts/verification-model-fidelity]] — verify that the verifier still describes the implementation.
 - [[concepts/evidence-calibrated-research]] — confidence, coverage, and contradiction are part of the research result.
@@ -193,6 +283,8 @@ Ideas and techniques worth their own page — especially from essays, papers, an
 Candidate queue: see [concepts/_index.md](concepts/_index.md).
 
 ## Patterns
+
+- [[patterns/composition/negotiated-capability-intersection]] — **proposed**: compatible support is negotiated separately from action authorization; Shopify documentation only.
 
 - [[patterns/behavioral/context-is-not-authority]] — **confirmed**, two independent artifacts; scope of authority remains explicit.
 
@@ -253,9 +345,29 @@ See [patterns/_index.md](patterns/_index.md) for the per-category breakdown.
 
 ## Analyses
 
-*(none yet — see [analyses/_index.md](analyses/_index.md) for the rule of "no synthesis until ≥5 artifacts of relevant type")*
+- [[analyses/mcp-and-extensions]] — **draft** deep research: shared services, Apps, auth, Skills, Tasks and OpenAI host extensions; runtime acceptance and cross-family review pending.
+
+- [[analyses/frontier-and-business-api-design]] — **draft**: nine API systems, stable principles, changing surfaces, training/evolution hypotheses; cross-family review pending.
+
+See [analyses/_index.md](analyses/_index.md) for synthesis coverage and review status.
+
+## Internal research projects
+
+- [[projects/designing-apis-for-agents/README]] — Designing APIs for Agents: research group and entry point for API naming, composition, business workflows, execution, and evaluation.
+
+- [[projects/conversation-learning/runs/all-chats-20261102/README]] — in-progress frozen accessible-chat corpus extraction and coverage ledger.
+
+Projects we are designing from the research; these are not external runnable artifacts.
+
+- [[projects/_index]] — internal project directory.
+- [[projects/conversation-learning/README]] — **Conversation Learning**: proposed evidence archive and linked correction/episode/lesson dataset for evaluations, skills, harness improvements and future training.
+- [[projects/conversation-learning/pilots/commercial-redline-001/README]] — first real extraction, with episode analysis, evidence-linked annotations and synthetic development probes.
 
 ## Meta
+
+- [[meta/2026-11-04-mcp-ingest-lint]] — MCP capture/citation validation, inherited health findings and review limits.
+
+- [[_schemas/api-case-study]] — reusable API contract investigation matrix and completion checks.
 
 - [[_schemas/project]] — project investigation template; distinguish code, test inspection/execution, prompt policy, documentation, and inference.
 

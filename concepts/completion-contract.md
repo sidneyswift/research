@@ -107,6 +107,10 @@ These slot into a literal template — `/goal <end state> verified by <evidence>
 
 [[concepts/verification-model-fidelity]] asks whether the completion verifier still describes the actual implementation; a green result on a stale model is insufficient. [[artifacts/skills/statechart]] supplies the executable case and its explicit limits. [[sources/cursor--plugins-pstack#verification-local-checks]]
 
+## Cross-system API research — 2026-11-04
+
+[[analyses/frontier-and-business-api-design]] compares nine documented systems and preserves the distinction between capability intent, presentation, execution and business outcome. [[concepts/agent-api-learning-and-evolution]] separates training familiarity from current interface context and observable task performance. The synthesis remains draft; no runtime or agent-success guarantee is added to this page.
+
 ## Lifecycle label versus acceptance evidence — 2026-11-04
 
 The current source update in [[artifacts/projects/codex-goals]] narrows the earlier documentation-level account. Its handler constrains legal lifecycle states and persists usage/status; the inspected path does not run arbitrary acceptance checks before storing complete. Keep the verification surface explicit even when a product offers a completion state. [[sources/openai--codex#goal-tools]]

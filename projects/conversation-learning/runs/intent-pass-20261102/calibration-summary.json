@@ -1,0 +1,33 @@
+{
+  "windows": 24,
+  "deliberate_sample": true,
+  "representative": false,
+  "human_adjudicated": 0,
+  "needs_human_intent_adjudication": 8,
+  "phase_labels": {
+    "evaluate_review": 13,
+    "develop_requirements": 16,
+    "execute": 5,
+    "plan": 1,
+    "diagnose": 7,
+    "explore_options": 4
+  },
+  "human_contribution_labels": {
+    "express_preference": 10,
+    "reject": 3,
+    "approve": 3,
+    "add_requirement": 8,
+    "ask_probe": 9,
+    "add_fact": 4,
+    "clarify_ambiguity": 6,
+    "reaffirm_requirement": 3,
+    "none_observed": 2,
+    "change_decision": 3
+  },
+  "violation_status": {
+    "not_established": 7,
+    "not_applicable": 12,
+    "uncertain": 5
+  },
+  "notice": "Multi-label counts overlap. not_established is not proof of absence; selected response windows do not establish corpus failure rates."
+}

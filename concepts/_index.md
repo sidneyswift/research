@@ -16,6 +16,9 @@ A concept becomes a **pattern** (in `patterns/`) once we've observed it as a con
 
 ## Cataloged concepts
 
+- [[concepts/agent-api-learning-and-evolution]] — distinguish training priors, tool-use training, runtime discovery and feedback; conditional 2027/2031/2036 scenarios.
+- [[concepts/business-platform-api-design]] — domain naming, queries/commands, durable operations, retries, and modularity under uncertain future use.
+
 - [[concepts/lifelong-skill-routing]] — library-relative metadata refinement; Skill++ preprint, full appendix evidence and separate routing/task-success metrics.
 
 - [[concepts/trace-lake]] — retained execution history → evidence-backed investigations → reproducible regression evals; vendor implementation claims and boundaries kept explicit.
@@ -46,6 +49,15 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 - *Candidates surfaced by the Garry Tan "AI Explainer" series are currently tracked as proposed **patterns** (see [patterns/_index.md](../patterns/_index.md)); promote any that are better described as standalone ideas than as cross-artifact techniques.*
 
 - [[concepts/super-agent-architecture]] — DeepSeek design essay, implementation boundary and synthetic scheduling evidence.
+- [[concepts/code-mode-capability-interface]] — Kody implementation plus Schmid’s typed composition, selective output and host-state explanation; adoption claims unverified.
+
+## MCP and extensions — 2026-11-04
+
+- [[concepts/model-context-protocol]] — modern/legacy wire, roles, primitives and authority.
+- [[concepts/mcp-extension-architecture]] — lifecycle, optional negotiation, Tasks and Server Cards.
+- [[concepts/mcp-enterprise-managed-authorization]] — user delegation, workload identity and actual token-policy limits.
+- [[concepts/skills-over-mcp]] — skill transport, manifests, integrity and activation.
+
 - [[concepts/code-mode-capability-interface]] — Kody discovery/contracts/composition and authority tradeoffs.
 
 ## Updated 2026-11-03

@@ -6,6 +6,10 @@ last-reviewed: 2026-11-04
 
 # Creators
 
+- [[creators/timo-schick]] — tool-learning/evaluation evidence.
+
+- [[creators/berkeley-function-calling]] — tool-learning/evaluation evidence.
+
 - [[creators/lauren-tan]] — pstack author; engineering judgment, parallelism, and verification.
 
 
@@ -14,6 +18,27 @@ The people and orgs producing the artifacts we study. Context, not the main even
 Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Orgs
+
+- [[creators/shopify]] — commerce APIs and negotiated agent-facing shopping capabilities.
+
+- [[creators/stripe]] — API case study: [[artifacts/projects/stripe-api]].
+
+- [[creators/ftrack]] — API case study: [[artifacts/projects/ftrack-api]].
+
+- [[creators/gusto]] — API case study: [[artifacts/projects/gusto-api]].
+
+- [[creators/cloudinary]] — API case study: [[artifacts/projects/cloudinary-api]].
+
+- [[creators/salesforce]] — API case study: [[artifacts/projects/salesforce-api]].
+
+- [[creators/sap]] — API case study: [[artifacts/projects/sap-sales-api]].
+- [[creators/ietf]] — API design evidence in [[concepts/business-platform-api-design]].
+
+- [[creators/aws]] — API design evidence in [[concepts/business-platform-api-design]].
+
+- [[creators/microsoft]] — API design evidence in [[concepts/business-platform-api-design]].
+
+- [[creators/google]] — API design evidence in [[concepts/business-platform-api-design]].
 
 - [[creators/superplane]] — workflow engine, software factory and integrated runners.
 
@@ -47,3 +72,9 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 - [[creators/deepseek]] — Harness team, super-agent essay and companion prototype.
 - [[creators/kody-hq]] — agent cloud and compact capability interface.
+
+- [[creators/philipp-schmid]] — Code Mode article author; typed execution bridges and context control.
+
+## MCP project — 2026-11-04
+
+- [[creators/model-context-protocol]] — protocol and official extension maintainers; separate from vendor-specific [[creators/openai]] extensions.

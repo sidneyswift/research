@@ -105,6 +105,10 @@ This split keeps the trust story legible: an admin can never silently inject beh
 
 [[concepts/code-mode-capability-interface]] and [[artifacts/projects/kody]] cover portable executable capabilities and state across MCP hosts. This is adjacent to distributing workspace skills, not evidence that host discovery paths or every skill format are standardized. [[sources/kody-hq--kody#intent]], [[sources/kody-hq--kody#execute-contract]]
 
+## MCP research connection — 2026-11-04
+
+[[concepts/skills-over-mcp]] adds a remote service distribution rail. It transports the existing Agent Skills format; host activation, origin-bound approval and verified manifests remain required. This does not refresh older per-product distribution claims above. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skills]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skill-integrity]]
+
 ## Installation is not visibility — 2026-11-04
 
 [[artifacts/projects/codex]] adds current source evidence for deterministic explicit skill identity and budgeted catalog rendering. Installed, enabled, model-visible, explicitly selected and actually executed are separate states; rendering records omissions and truncation. This does not refresh the historical marketplace size or every surface's distribution rules. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#skill-budget]]

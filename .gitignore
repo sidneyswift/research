@@ -63,6 +63,8 @@ __pycache__/
 
 /sources/deepseek-ai--dsh-superagent-prototype/
 
+sources/openai--mcp-extensions/
+
 # Version-pinned paper evidence retained locally; public analysis + hashes tracked.
 /sources/zhang--skill-plus-plus/raw/
 
