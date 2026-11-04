@@ -79,3 +79,7 @@ It's a general fix for any fine-tuning or preference-training setup whose "groun
 ## Pstack comparison — 2026-10-24
 
 [[concepts/evidence-calibrated-research]] offers a related separation: an accepted design story is not necessarily demonstrated intent, and confident synthesis must preserve its evidence tier. [[artifacts/plugins/pstack]] also supplies a concrete negative type example: a plausible representation still accepts the forbidden negative duration. [[sources/cursor--plugins-pstack#RE08]] [[sources/cursor--plugins-pstack#type-negative-probe]]
+
+## Runtime evidence comparison — 2026-11-04
+
+[[concepts/trace-lake]] turns observed executions into test cases. Our transfer of this page's distinction: preserve the observed run as evidence without making its output the gold answer; the eval needs a separately justified expectation. The article requires reproduction context but does not establish every scorer's correctness. [[sources/ankrgyl--trace-lake#trace-to-eval]]

@@ -230,3 +230,9 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 
 - Applied the explicit separation of human steering, domain coordination and worker execution from [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] as a focused build-intent route in `for-builders.md`. The row sends builders to the canonical principle, related architecture and durability boundaries, with the screenshot clearly labeled a proposal. [[sources/mattpocock--domain-orchestrator-factory#root]]
 - Status: **applied** 2026-11-04. Extended existing concepts instead of creating a near-duplicate architecture page. No orchestrator, worker, cron or installed skill was created; this is research ingestion, not authorization to build the proposed system.
+
+## [2026-11-04] Pass 20 — route production evidence into evals
+
+- Applied [[concepts/trace-lake]] to the consumer routing table: builders seeking production-feedback loops now land on the trace corpus, verification-first review and model-fidelity pages together. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+- Existing wiki practice already preserves source evidence and validator fixtures. No trace database or background investigation is justified by this ingest alone. For a recurring ingestion defect, the concrete next step remains an evidence-backed fixture/check under the existing LINT #18 trigger, not a new prose-only review loop.
+- Status: **applied** 2026-11-04 (builder route). No installed skills, scheduled jobs, accounts or runtime infrastructure changed.

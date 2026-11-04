@@ -16,6 +16,8 @@ A concept becomes a **pattern** (in `patterns/`) once we've observed it as a con
 
 ## Cataloged concepts
 
+- [[concepts/trace-lake]] — retained execution history → evidence-backed investigations → reproducible regression evals; vendor implementation claims and boundaries kept explicit.
+
 - [[concepts/review-cost-aware-workflows]] — Choose workflow depth and review surfaces around human decision cost; review facts and choices before expensive implementation.
 - [[concepts/artifact-centered-agent-context]] — Give facts, decisions, design, and execution progress explicit artifact owners; pass bounded context into fresh sessions.
 - [[concepts/agent-control-plane]] — Separate durable tasks, access, artifacts, and review from provider-specific sessions and execution hosts.

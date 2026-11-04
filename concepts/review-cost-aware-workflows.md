@@ -101,3 +101,7 @@ Steps 1–5 are a proposed practice, not a verbatim protocol or measured result 
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] and [[concepts/evidence-calibrated-research]] expose decision queues, confidence tiers, and bounded review artifacts so a human can inspect the consequential choices. Prompt-prescribed attention savings remain unmeasured. [[sources/cursor--plugins-pstack#RE08]] [[sources/cursor--plugins-pstack#RE16]]
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] operationalizes the empirical side of verification-first review: retrieve comparable production cases, preserve their preconditions, and turn recurring issues into focused inexpensive evals. Spend open-ended investigation tokens on discovering what to measure; once understood, measure it continuously with a narrower check. Neither a generated finding nor a low score is proof of its proposed cause. [[sources/ankrgyl--trace-lake#trace-to-eval]] [[sources/ankrgyl--trace-lake#patterns-verification]]

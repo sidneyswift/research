@@ -101,3 +101,7 @@ These are source-grounded limitations and our counterarguments, not a documented
 - Can coverage records discover new writers of guarded state across services without becoming a second incomplete model?
 - Which guarantees require a formal refinement relation, and when is source-linked counterexample replay the right practical standard?
 - How much does this workflow improve real defect detection per maintenance hour? The inspected source supplies contracts and mechanisms, not a measured answer.
+
+## Trace-derived evals — 2026-11-04
+
+[[concepts/trace-lake]] extends the fidelity concern to production regression cases: preserve the state and resource versions that made an observed failure possible. Our adaptation is to check those fixtures and their expected behavior against current requirements; reproducing an old output is not itself a correctness oracle. [[sources/ankrgyl--trace-lake#trace-to-eval]]

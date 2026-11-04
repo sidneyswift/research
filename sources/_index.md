@@ -41,6 +41,8 @@ Repos sit at `sources/<creator>--<repo>/` (an ignored Git clone with its `.git/`
 
 ## Articles, posts, threads
 
+- [[sources/ankrgyl--trace-lake]] — Ankur Goyal, 2026-11-03: full X article with both SQL examples and eight linked primary pages, retrieved 2026-11-04. Grounds [[concepts/trace-lake]].
+
 External writing we cite. Always include retrieval date and a snapshot path (PDF / screenshot / archive.org URL).
 
 **Garry Tan's "AI Explainer" series (8 essays, @garrytan, ~April–May 2026).** Retrieved 2026-06-01; each held verbatim at `sources/garrytan--<slug>/snapshot.md`. A longitudinal record of building `gstack`/`gbrain` (gstack stars climb 72K→75K→87K→93K→105K across the run, gbrain 14K→20K) and the source for the series' patterns. ⚠ Canonical URLs + exact dates are TODO (estimated from internal evidence).

@@ -27,6 +27,7 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 
 | You're building… | Patterns / concepts to read first | Worked artifacts to study |
 | --- | --- | --- |
+| **Production traces → investigations → regression evals** | [[concepts/trace-lake]], [[concepts/review-cost-aware-workflows]], [[concepts/verification-model-fidelity]] | [[sources/ankrgyl--trace-lake]] (article + vendor docs, not an independently run system) |
 
 | **Local domain assistant + sandboxed worker factory** | [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]], [[concepts/super-agent-architecture]], [[concepts/durable-agent-execution]] | [[sources/mattpocock--domain-orchestrator-factory]] (proposal); [[artifacts/projects/humanlayer]] (separate implementation comparison) |
 | **Persistent team agent / cross-channel coordination** | [[concepts/super-agent-architecture]], [[patterns/behavioral/context-is-not-authority]], [[concepts/durable-agent-execution]] | [[artifacts/projects/dsh-superagent-prototype]], [[artifacts/projects/humanlayer]] |

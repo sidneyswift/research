@@ -489,3 +489,10 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 ## [2026-11-04] reflect | domain-orchestrator builder route
 
 - Added the canonical architecture-principle route to `for-builders.md`, distinguishing proposal from implementation evidence and linking durability limits; recorded in [[meta/self-improvements]]. No new runtime, cron, agent or installed skill changes were needed.
+
+## [2026-11-04] ingest | Ankur Goyal — The Trace Lake
+
+- Added [[concepts/trace-lake]] with 18 portable principles: queryable execution history, cohort investigation, reproducibility context and focused recurring evals. Connected verification-first review, persistent orchestration, compounding, model fidelity and existing quality patterns without promoting proposed patterns. Added Ankur Goyal and Braintrust creator pages.
+- Preserved [[sources/ankrgyl--trace-lake]]: all 34 article blocks, both embedded SQL examples, official post metadata, full public-mirror JSON, inspected title cover and eight linked primary-page captures. Separated author/vendor assertions from executed evidence; recorded retention-window, inference-residency, query-grain, benchmark-scope and automation-lifetime limits. No product or benchmark was run.
+- REFLECT applied: builder route for production-trace → evaluation work, recorded in [[meta/self-improvements]]. Validation: 34/34 text/atomic blocks preserved, 2/2 SQL blocks exact, 16 captured asset hashes verified, new wiki links/anchors resolve, staged whitespace check passes. Doctor remains 50/100 with zero new findings (existing link/staleness debt unchanged). Inventory: 21 concepts, 16 creators, 38 sources.
+- ratchet: links +91 · orphans +0 · patterns +0 (existing patterns compared; no promotion).

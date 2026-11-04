@@ -103,3 +103,7 @@ A falsifiable test for spotting the ratchet (`## Examples` are the positive fixt
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] turns repeated failures into architecture/type/lint/test constraints, baselines legacy violations while rejecting new ones, and removes redundant prose. [[patterns/quality-bar/rerunnable-work-artifact]] is the accompanying reusable-tool refinement. Supporting sighting. [[sources/cursor--plugins-pstack#PK18]] [[sources/cursor--plugins-pstack#PP04]]
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] applies the ratchet to runtime evidence: recurring production failures become reproducible evals, so later changes can be checked against the lesson. Article/vendor-doc evidence only, not an independently executed artifact added to the confirmation count. [[sources/ankrgyl--trace-lake#trace-to-eval]]

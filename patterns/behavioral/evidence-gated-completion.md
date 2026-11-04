@@ -96,3 +96,7 @@ A fluent model's failure mode on "am I done?" is *confident fabrication of compl
 ## Verification-budget position — 2026-11-03
 
 Lauren's screenshot-backed preference for empirical/formal verification over abstract adversarial critique is supporting rationale, not a new independently verified enforcement mechanism. Its operational adaptation lives in [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]]: turn checkable claims into evidence; do not equate more reviewer opinions with demonstrated correctness. Pattern status/example counts do not change. [[sources/poteto--verification-over-adversarial-review#verification-first]] [[sources/poteto--verification-over-adversarial-review#failure-mode]]
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] provides a documentation-level application to investigation findings: Patterns checks evidence before saving/closing, labels unconfirmed causes as hypotheses, and retains status when queries or data are unavailable. This is vendor-described behavior, not a newly run confirming artifact. [[sources/ankrgyl--trace-lake#patterns-verification]]

@@ -29,6 +29,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/ankrgyl--trace-lake]] | article + linked context | 2026-11-04 | published 2026-11-03; full body, SQL and eight primary pages |
 | [[sources/kody-hq--kody]] | repo | 2026-11-02 | `9d96cfb` |
 | [[sources/deepseek-ai--dsh-superagent-prototype]] | repo | 2026-11-02 | `6337fc8` |
 | [[sources/deepseek--super-agent-design]] | article | 2026-11-02 | published 2026-11-01; English machine translation |
@@ -73,6 +74,8 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 | Creator | Type | Notes |
 | --- | --- | --- |
+| [[creators/ankur-goyal]] | individual | Author of The Trace Lake; Brainstore architecture writing |
+| [[creators/braintrust]] | org | Trace history, investigation and evaluation tooling; documentation-level study |
 | [[creators/deepseek]] | org | Harness team; super-agent architecture essay and research prototype |
 | [[creators/kody-hq]] | org | Portable agent cloud, compact capability interface and credential use |
 | [[creators/anthropic]] | org | Sets the Agent Skills spec; ships demonstration skills + plugins + the Claude API |
@@ -140,6 +143,8 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/trace-lake]] — searchable execution history becomes reproducible regression evals; 18 portable principles with operational boundaries.
 
 - [[concepts/super-agent-architecture]] — DeepSeek architecture and synthetic scheduling evidence.
 - [[concepts/code-mode-capability-interface]] — Kody discovery, composition and authority.

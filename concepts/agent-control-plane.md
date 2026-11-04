@@ -112,3 +112,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## New comparison — 2026-11-02
 
 [[artifacts/projects/dsh-superagent-prototype]] supplies a distinct Ticket/Mandate/Assignment model. [[concepts/super-agent-architecture]] specializes the broader control-plane idea into continuous interaction, subscription pass-through and a routing-only coordinator, rather than duplicating this page's task/host lifecycle role. [[artifacts/projects/kody]] separates org/actor/credential identity in portable execution infrastructure. [[sources/deepseek-ai--dsh-superagent-prototype#domain]], [[sources/deepseek--super-agent-design#router-workers]], [[sources/kody-hq--kody#request-context]]
+
+## Trace Lake comparison — 2026-11-04
+
+[[concepts/trace-lake]] adds a complementary evidence loop: a persistent coordinator can query historical runs, schedule bounded investigations and convert confirmed findings into regression evals. The coordinator is not the trace store, and a reported pattern is not permission to mutate the product. Loop docs distinguish scheduled Braintrust write permissions from connected MCP authority and note that created scoring rules outlive their creator. This is a documented product comparison, not evidence that Matt Pocock's proposed factory was implemented. [[sources/ankrgyl--trace-lake#trace-to-eval]] [[sources/ankrgyl--trace-lake#automation-authority]]

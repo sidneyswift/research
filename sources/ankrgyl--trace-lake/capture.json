@@ -1,0 +1,165 @@
+{
+  "retrieved": "2026-11-04",
+  "post_id": "2117696780741771638",
+  "article_id": "2117682615494823936",
+  "mirror_url": "https://api.fxtwitter.com/ankrgyl/status/2117696780741771638",
+  "blocks": 34,
+  "embedded_markdown_blocks": 2,
+  "original_article_links": [
+    "https://braintrust.dev/docs/observe/patterns",
+    "https://braintrust.dev/blog/application-logs",
+    "https://braintrust.dev/docs/loop/automations",
+    "https://blog-trace-lake.preview.braintrust.dev/blog/nitro",
+    "https://braintrust.dev/blog/brainstore#customer-testimonials",
+    "https://braintrust.dev/docs/observe/filter",
+    "https://braintrust.dev/docs/observe/filter",
+    "https://braintrust.dev/blog/brainstore-architecture",
+    "https://braintrust.dev/docs/observe/topics",
+    "https://braintrust.dev/blog/nitro"
+  ],
+  "supplemental_captures": [
+    {
+      "url": "https://www.braintrust.dev/blog/brainstore-architecture",
+      "capture": [
+        "linked/brainstore-architecture.html",
+        "linked/brainstore-architecture.txt"
+      ],
+      "fidelity": "HTTP HTML + text extraction; charts expose default cold-cache table; video not played"
+    },
+    {
+      "url": "https://www.braintrust.dev/blog/nitro",
+      "capture": [
+        "linked/nitro.html",
+        "linked/nitro.txt"
+      ],
+      "fidelity": "HTTP HTML + text extraction; charts expose default cold-cache table; video not played"
+    },
+    {
+      "url": "https://www.braintrust.dev/blog/application-logs",
+      "capture": [
+        "linked/application-logs.html",
+        "linked/application-logs.txt"
+      ],
+      "fidelity": "HTTP HTML + text extraction; charts expose default cold-cache table; video not played"
+    },
+    {
+      "url": "https://www.braintrust.dev/blog/brainstore",
+      "capture": [
+        "linked/brainstore.html",
+        "linked/brainstore.txt"
+      ],
+      "fidelity": "HTTP HTML + text extraction; charts expose default cold-cache table; video not played"
+    },
+    {
+      "url": "https://docs.braintrust.dev/observe/filter.md",
+      "capture": [
+        "linked/docs-filter.md"
+      ],
+      "fidelity": "official markdown endpoint; living docs at retrieval, not historical November 3 snapshot"
+    },
+    {
+      "url": "https://docs.braintrust.dev/observe/topics.md",
+      "capture": [
+        "linked/docs-topics.md"
+      ],
+      "fidelity": "official markdown endpoint; living docs at retrieval, not historical November 3 snapshot"
+    },
+    {
+      "url": "https://docs.braintrust.dev/observe/patterns.md",
+      "capture": [
+        "linked/docs-patterns.md"
+      ],
+      "fidelity": "official markdown endpoint; living docs at retrieval, not historical November 3 snapshot"
+    },
+    {
+      "url": "https://docs.braintrust.dev/loop/automations.md",
+      "capture": [
+        "linked/docs-automations.md"
+      ],
+      "fidelity": "official markdown endpoint; living docs at retrieval, not historical November 3 snapshot"
+    }
+  ],
+  "preview_nitro_link": "Resolved through public canonical /blog/nitro; preview hostname not separately captured.",
+  "assets": [
+    {
+      "path": "article-public-response.json",
+      "bytes": 16931,
+      "sha256": "4ed33110afced06b00454154ba6d5009851298b7af9c3f256230318c97048ea7"
+    },
+    {
+      "path": "cover.png",
+      "bytes": 6727,
+      "sha256": "2184f4ad61aeda6e77652b086bc56adf9b6de8d875d6c85579ea7c48fa647a26"
+    },
+    {
+      "path": "linked/application-logs.html",
+      "bytes": 158366,
+      "sha256": "e59418923487b0fd8522a20bbea8ef7f2f626ca72e327ff8e97e6e393db49b5c"
+    },
+    {
+      "path": "linked/application-logs.txt",
+      "bytes": 5754,
+      "sha256": "745ed378ab544bf6977cf93f40a12fe4875fbd171d509c479a691ef2e4d14bc3"
+    },
+    {
+      "path": "linked/brainstore-architecture.html",
+      "bytes": 171567,
+      "sha256": "2e480a5483a3400dac4a0ad2248a113c001b0d3724387c71d6898ad4c5a3f3a9"
+    },
+    {
+      "path": "linked/brainstore-architecture.txt",
+      "bytes": 13797,
+      "sha256": "ee61e079d5d26cb02394ab805b089b1126116beb2eaafac55656aa1d330e62f9"
+    },
+    {
+      "path": "linked/brainstore.html",
+      "bytes": 176321,
+      "sha256": "4554c0ed2acedab0c259b02272feb08a6704f3f4a6eb9d944dc5363d0a368279"
+    },
+    {
+      "path": "linked/brainstore.txt",
+      "bytes": 11005,
+      "sha256": "cbe7ff82f2b82a78584135d3e70cfe5c66dc58e77cba5cd6d0013ba96471e9af"
+    },
+    {
+      "path": "linked/docs-automations.md",
+      "bytes": 19869,
+      "sha256": "c0cda9f04a73d2afe21a54fab3b28a073cb1c520d9e5bda69987a7f307adb715"
+    },
+    {
+      "path": "linked/docs-filter.md",
+      "bytes": 16901,
+      "sha256": "e826df5f439d5351a3c5bd69ceb7490e88a537a6b65681e91ecf5f13f0c005ff"
+    },
+    {
+      "path": "linked/docs-patterns.md",
+      "bytes": 7490,
+      "sha256": "8c0b502d24e251d8d4edf201d107393d007609e8107340316d2695a5c0228091"
+    },
+    {
+      "path": "linked/docs-topics.md",
+      "bytes": 8052,
+      "sha256": "c1f3a2afb6d45d5ff6f88449d66169448d527e4d7064bc06c321b4b3d9d86365"
+    },
+    {
+      "path": "linked/nitro.html",
+      "bytes": 190956,
+      "sha256": "910816f2263acbd7d2ab366b64cc7b11ba024c16102928ce5f9f336d91fb8826"
+    },
+    {
+      "path": "linked/nitro.txt",
+      "bytes": 12884,
+      "sha256": "4507a1e0fa616e22e598971401b2ac60e92f09e7f970ee003a98f626a85b2ed4"
+    },
+    {
+      "path": "snapshot.md",
+      "bytes": 10081,
+      "sha256": "8ca3702c3a27af8267c19238f8472c667032911a8188a66dc4c19b180bcf310c"
+    },
+    {
+      "path": "tweet-api.json",
+      "bytes": 1021,
+      "sha256": "87d28ffab0485450a2f9dd3c0b027290e1c6e03c342a264a0a7c3b209a80a42d"
+    }
+  ]
+}
