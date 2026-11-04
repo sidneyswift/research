@@ -107,3 +107,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## Open Inspect: Checkpoint, retirement and uncertain execution
 
 [[artifacts/projects/background-agents]] distinguishes recoverable workspace capture from confirmed retirement of the source execution. Generation/operation fences reject stale results; interrupted prompts are failed and continuation paused rather than automatically replayed. Ordinary non-destructive checkpoints have a narrower settlement path than shutdown. This complements Eve’s durable-step model: preserving a filesystem cannot undo an external effect or establish its safe replay. [[sources/open-inspect--background-agents#generation-fence]] [[sources/open-inspect--background-agents#checkpoint]] [[sources/open-inspect--background-agents#continuation]] [[sources/open-inspect--background-agents#shutdown-design]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] persists event/queue/execution state before notification and recovers through pending-state scans. Runner completion hashes make identical terminal reports idempotent, not arbitrary remote effects. Finalization waits for tracked work to drain. Critically, copied node configuration coexists with live graph routing: specify the snapshot unit before claiming deterministic replay. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#execution-state]]

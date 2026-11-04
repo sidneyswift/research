@@ -108,3 +108,7 @@ Portable design ledger; ★ marks the highest-leverage ideas. Concrete adaptatio
 ## Open Inspect: Trace export is a foundation, not the whole learning loop
 
 [[artifacts/projects/background-agents]] offers versioned pull-only NDJSON: one session’s collections share a transaction and size/page budgets, while multi-session pagination is best-effort. Explicit session-error records prevent success-shaped partial exports; compact references may point forward by event ID. Harness step metrics differ and upstream truncation is not recoverable. These boundaries should travel into any later cohort/eval pipeline; no automatic warehouse loading or learning loop was established. [[sources/open-inspect--background-agents#export]] [[sources/open-inspect--background-agents#export-code]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] supplies execution records and a staged log lifecycle, useful upstream material for a trace lake but not equivalent to semantic querying or an evaluation loop. The runner protocol acknowledges retained chunks; archive state, possible truncation and task result remain separate evidence. [[sources/superplanehq--superplane#log-lifecycle]] [[sources/superplanehq--superplane#runner-protocol]]

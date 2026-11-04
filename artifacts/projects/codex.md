@@ -202,3 +202,7 @@ Portable ledger; ★ marks priorities, not an adoption mandate. Evidence classes
 ## Downstream control-plane comparison
 
 [[artifacts/projects/background-agents]] wraps a pinned Codex `app-server` as one of several harnesses, but owns its own background queue, sandbox generations, recovery and multiplayer authority. Its terminal event and filesystem snapshot should not be confused with Codex’s inner thread history or task acceptance. The two source revisions are independent. [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#shutdown-design]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] studies the surrounding workflow layer rather than this harness: durable work identity, runner completion, external checks, mutation coordination and exact-head merging. The two source pins were not runtime-tested together in this study. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#runner-protocol]] [[sources/superplanehq--superplane#merge]]

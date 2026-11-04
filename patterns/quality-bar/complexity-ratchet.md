@@ -115,3 +115,7 @@ A falsifiable test for spotting the ratchet (`## Examples` are the positive fixt
 ### Open Inspect — complexity justified by measured pressure
 
 [[artifacts/projects/background-agents]] defers a retained view-delta log while bounded canonical snapshots suffice. Its portability guide documents baseline exceptions with ratcheted counts/reasons rather than rewriting old migrations or calling a planned backend supported. These are scoped architecture/maintenance choices, not universal reasons to avoid replay logs or database-specific features. [[sources/open-inspect--background-agents#snapshot-handoff]] [[sources/open-inspect--background-agents#portability]]
+
+## SuperPlane — 2026-11-04
+
+Supporting maintenance prescription: [[artifacts/projects/superplane]] forbids new implicit database access/duplicate transaction-wrapper APIs while tracking existing debt. This allows incremental removal of transaction escape hatches without demanding an all-at-once rewrite. Source contributor guidance inspected; CI enforcement was not executed. [[sources/superplanehq--superplane#contributor-checks]]

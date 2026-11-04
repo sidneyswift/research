@@ -15,6 +15,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Orgs
 
+- [[creators/superplane]] — workflow engine, software factory and integrated runners.
+
 - [[creators/open-inspect]] — background coding-session control plane and multi-harness sandbox runtime.
 
 - [[creators/nvidia]] — Auto-Ontology semantic context, curated MCP and companion evaluation tooling.

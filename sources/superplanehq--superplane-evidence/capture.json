@@ -1,0 +1,432 @@
+{
+  "repository": "https://github.com/superplanehq/superplane",
+  "retrieved": "2026-11-04",
+  "commit": "7d755d16b8ae836ecebf61639efc6266d74a4b0b",
+  "tree": "70fa6bc7d4d6ed612f4be713ec9e775aa347a1a0",
+  "commit_date": "2026-11-04T12:14:31Z",
+  "tracked_entries": 10205,
+  "shallow_history": true,
+  "preservation": "Complete tracked working tree and shallow Git metadata local-only; analysis, source map, hashes and restore registration committed. Restore depends on upstream availability.",
+  "inspection": "Selected architecture, engine, work-order lifecycle, approval, PR coordination/merge, runners, templates, authority and tests. No application build/test/deployment executed.",
+  "github": {
+    "stargazers_count": 8785,
+    "forks_count": 690,
+    "default_branch": "main",
+    "html_url": "https://github.com/superplanehq/superplane",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    }
+  },
+  "evidence_ranges": [
+    {
+      "anchor": "root",
+      "path": "README.md",
+      "start": 1,
+      "end": 98,
+      "sha256": "939ff8964b14de9f695c59a8f188a096981e4543c66d2f74a6e46b119efabdba"
+    },
+    {
+      "anchor": "architecture",
+      "path": "docs/contributing/architecture.md",
+      "start": 1,
+      "end": 126,
+      "sha256": "52aa5846b1300fd4cda8f3168f7659b19a5948907f47b1ffc984639974ed33d6"
+    },
+    {
+      "anchor": "factory-draft",
+      "path": "docs/prd/software-factory.md",
+      "start": 1,
+      "end": 105,
+      "sha256": "1f6f28d769c6986e8f7e27f2066cbc2bb6d392055d9b2aa9d9fd2a66d20d7ae4"
+    },
+    {
+      "anchor": "factory-draft",
+      "path": "docs/prd/software-factory.md",
+      "start": 187,
+      "end": 274,
+      "sha256": "1f6f28d769c6986e8f7e27f2066cbc2bb6d392055d9b2aa9d9fd2a66d20d7ae4"
+    },
+    {
+      "anchor": "work-order",
+      "path": "pkg/models/factory_work_order.go",
+      "start": 18,
+      "end": 100,
+      "sha256": "468a49c8e9126cea7611c827d492e85b3405985a56cf90a94ed85101186fb0f2"
+    },
+    {
+      "anchor": "work-order",
+      "path": "pkg/models/factory_work_order.go",
+      "start": 374,
+      "end": 497,
+      "sha256": "468a49c8e9126cea7611c827d492e85b3405985a56cf90a94ed85101186fb0f2"
+    },
+    {
+      "anchor": "work-order",
+      "path": "pkg/models/factory_work_order.go",
+      "start": 803,
+      "end": 831,
+      "sha256": "468a49c8e9126cea7611c827d492e85b3405985a56cf90a94ed85101186fb0f2"
+    },
+    {
+      "anchor": "event-routing",
+      "path": "pkg/workers/event_router.go",
+      "start": 45,
+      "end": 85,
+      "sha256": "577f9e375b28596d1d9c05c2cdfc515d780c0c4e472966d146c55ba99c9f8bc6"
+    },
+    {
+      "anchor": "event-routing",
+      "path": "pkg/workers/event_router.go",
+      "start": 158,
+      "end": 264,
+      "sha256": "577f9e375b28596d1d9c05c2cdfc515d780c0c4e472966d146c55ba99c9f8bc6"
+    },
+    {
+      "anchor": "event-routing",
+      "path": "pkg/workers/event_router.go",
+      "start": 396,
+      "end": 457,
+      "sha256": "577f9e375b28596d1d9c05c2cdfc515d780c0c4e472966d146c55ba99c9f8bc6"
+    },
+    {
+      "anchor": "queue",
+      "path": "pkg/workers/node_queue_worker.go",
+      "start": 244,
+      "end": 410,
+      "sha256": "528ae754f557cf4a615591aff062dc8d68e6a873ee66cbb5b5bceb5d85e2d1ba"
+    },
+    {
+      "anchor": "queue",
+      "path": "pkg/workers/node_queue_worker.go",
+      "start": 413,
+      "end": 483,
+      "sha256": "528ae754f557cf4a615591aff062dc8d68e6a873ee66cbb5b5bceb5d85e2d1ba"
+    },
+    {
+      "anchor": "queue-test",
+      "path": "pkg/workers/node_queue_worker_queueing_test.go",
+      "start": 436,
+      "end": 486,
+      "sha256": "83709e508c6fb72d84e1d1ef7fb276c606fa419a403afed0cd5545773421e0c3"
+    },
+    {
+      "anchor": "execution-state",
+      "path": "pkg/models/canvas_node_execution.go",
+      "start": 15,
+      "end": 103,
+      "sha256": "fc4b2183dd31c4202cadf68cd1c275d8333595cf4265b4af5a82eab5b545e16a"
+    },
+    {
+      "anchor": "execution-state",
+      "path": "pkg/models/canvas_node_execution.go",
+      "start": 479,
+      "end": 548,
+      "sha256": "fc4b2183dd31c4202cadf68cd1c275d8333595cf4265b4af5a82eab5b545e16a"
+    },
+    {
+      "anchor": "finalization",
+      "path": "pkg/workers/run_finalizer.go",
+      "start": 505,
+      "end": 569,
+      "sha256": "dc680231bad214532cbf672986ea028e4c9d35db762d34963ac367cf71da35c7"
+    },
+    {
+      "anchor": "staging",
+      "path": "pkg/grpc/actions/canvases/commit_canvas_staging.go",
+      "start": 27,
+      "end": 155,
+      "sha256": "3789fdc96c98315014d5e0550a3b15335049d49566fffbfb0e907e93369761b5"
+    },
+    {
+      "anchor": "approval",
+      "path": "pkg/components/approval/approval.go",
+      "start": 61,
+      "end": 229,
+      "sha256": "ff1abc65a03791a2bfcf9eb731fcaecc43c0965e2679df07d7d9f109e207cb9a"
+    },
+    {
+      "anchor": "approval",
+      "path": "pkg/components/approval/approval.go",
+      "start": 470,
+      "end": 511,
+      "sha256": "ff1abc65a03791a2bfcf9eb731fcaecc43c0965e2679df07d7d9f109e207cb9a"
+    },
+    {
+      "anchor": "approval",
+      "path": "pkg/components/approval/approval.go",
+      "start": 559,
+      "end": 620,
+      "sha256": "ff1abc65a03791a2bfcf9eb731fcaecc43c0965e2679df07d7d9f109e207cb9a"
+    },
+    {
+      "anchor": "pr-coordination",
+      "path": "pkg/models/factory_pull_request_activity.go",
+      "start": 301,
+      "end": 402,
+      "sha256": "bd6fbb64e83fc0ce2bdab77cc43c98aa9c7e954427c1dbfbf2999a0d7dc575ba"
+    },
+    {
+      "anchor": "repair-budget",
+      "path": "pkg/models/factory_pull_request_activity.go",
+      "start": 404,
+      "end": 471,
+      "sha256": "bd6fbb64e83fc0ce2bdab77cc43c98aa9c7e954427c1dbfbf2999a0d7dc575ba"
+    },
+    {
+      "anchor": "repair-budget",
+      "path": "pkg/models/factory_pull_request_activity_test.go",
+      "start": 299,
+      "end": 377,
+      "sha256": "45b1422f1035046bbe247e5f77d0c6497c31d1e4c5ccbb69a0794492791312ff"
+    },
+    {
+      "anchor": "coordination-test",
+      "path": "pkg/models/factory_pull_request_activity_test.go",
+      "start": 152,
+      "end": 182,
+      "sha256": "45b1422f1035046bbe247e5f77d0c6497c31d1e4c5ccbb69a0794492791312ff"
+    },
+    {
+      "anchor": "pr-revision",
+      "path": "pkg/models/factory_pull_request_revision.go",
+      "start": 48,
+      "end": 90,
+      "sha256": "5746fe30bf1fbe80a752f345d3a1add75e06459c04b9c7df4321fac5c271fbb7"
+    },
+    {
+      "anchor": "merge",
+      "path": "pkg/grpc/actions/factories/merge_factory_pull_request.go",
+      "start": 22,
+      "end": 157,
+      "sha256": "275dd2d96fb27b9e54173ac4ca9cb27223c94d7e0fad45e1aa78e150a3303812"
+    },
+    {
+      "anchor": "merge",
+      "path": "pkg/grpc/actions/factories/merge_factory_pull_request.go",
+      "start": 203,
+      "end": 230,
+      "sha256": "275dd2d96fb27b9e54173ac4ca9cb27223c94d7e0fad45e1aa78e150a3303812"
+    },
+    {
+      "anchor": "merge-tests",
+      "path": "pkg/grpc/actions/factories/factory_pull_request_merge_test.go",
+      "start": 473,
+      "end": 485,
+      "sha256": "6a46b3b3378b4c98e54cae7d0de339208cf8fb15678f842d2c380ba85561c976"
+    },
+    {
+      "anchor": "merge-tests",
+      "path": "pkg/grpc/actions/factories/factory_pull_request_merge_test.go",
+      "start": 488,
+      "end": 541,
+      "sha256": "6a46b3b3378b4c98e54cae7d0de339208cf8fb15678f842d2c380ba85561c976"
+    },
+    {
+      "anchor": "implementation-template",
+      "path": "pkg/grpc/actions/factories/templates/github/line-implementation.canvas.yaml",
+      "start": 7,
+      "end": 31,
+      "sha256": "d9eec1826a387e4a46b8c00c49b51c1340c2e9bc3cd711963a92dece0b8b54a5"
+    },
+    {
+      "anchor": "implementation-template",
+      "path": "pkg/grpc/actions/factories/templates/github/line-implementation.canvas.yaml",
+      "start": 70,
+      "end": 189,
+      "sha256": "d9eec1826a387e4a46b8c00c49b51c1340c2e9bc3cd711963a92dece0b8b54a5"
+    },
+    {
+      "anchor": "implementation-template",
+      "path": "pkg/grpc/actions/factories/templates/github/line-implementation.canvas.yaml",
+      "start": 209,
+      "end": 307,
+      "sha256": "d9eec1826a387e4a46b8c00c49b51c1340c2e9bc3cd711963a92dece0b8b54a5"
+    },
+    {
+      "anchor": "confidence",
+      "path": "pkg/components/factory/merge_confidence_check.go",
+      "start": 17,
+      "end": 143,
+      "sha256": "ae72cf1803554fb2ecb53ba1a6b3f91b86385e05876ff5a1a8d0324a0dda9c65"
+    },
+    {
+      "anchor": "confidence",
+      "path": "pkg/grpc/actions/factories/templates/github/risk-score.canvas.yaml",
+      "start": 65,
+      "end": 116,
+      "sha256": "9d4de31e6c2001e818425b9830bf97e51cbae42c466dcdb67de301252a47578c"
+    },
+    {
+      "anchor": "runner-protocol",
+      "path": "pkg/runners/README.md",
+      "start": 1,
+      "end": 21,
+      "sha256": "5a4332c7d2ff03561f5893369b7b0fdb7b49ba33709187196f3d4e99c1147590"
+    },
+    {
+      "anchor": "runner-protocol",
+      "path": "pkg/runners/README.md",
+      "start": 75,
+      "end": 119,
+      "sha256": "5a4332c7d2ff03561f5893369b7b0fdb7b49ba33709187196f3d4e99c1147590"
+    },
+    {
+      "anchor": "runner-completion",
+      "path": "pkg/models/runner_task.go",
+      "start": 403,
+      "end": 570,
+      "sha256": "1d4b64d51ab4dd1babf0d4fe75d2b1f57ce324f3786da8834d4a196d5639de17"
+    },
+    {
+      "anchor": "runner-completion",
+      "path": "pkg/public/runnerapi/websocket.go",
+      "start": 500,
+      "end": 637,
+      "sha256": "28ec3157e4f44d370d5b884d0ccc8ab20c9f052e3fce3152d8a31b1dba12b20c"
+    },
+    {
+      "anchor": "log-lifecycle",
+      "path": "pkg/models/runner_task.go",
+      "start": 573,
+      "end": 596,
+      "sha256": "1d4b64d51ab4dd1babf0d4fe75d2b1f57ce324f3786da8834d4a196d5639de17"
+    },
+    {
+      "anchor": "runner-admission",
+      "path": "pkg/models/runner_task_scheduler.go",
+      "start": 34,
+      "end": 87,
+      "sha256": "c5886390a89eb769bf689cc5aefd27032f95f5bcc3dcf0c399d49c662c443d43"
+    },
+    {
+      "anchor": "runner-admission",
+      "path": "docs/contributing/organization-runner-api-rollout.md",
+      "start": 15,
+      "end": 68,
+      "sha256": "a23fafc5f9d954464ad42dbc4dc50e3de33d78c1d96d52b8f6bf2184cdbcf21d"
+    },
+    {
+      "anchor": "result-file",
+      "path": "pkg/runners/agent/result_file.go",
+      "start": 48,
+      "end": 72,
+      "sha256": "459dbae2791339776c716b9e60e849248ad49d585efbb72faa1ddfe6ced47949"
+    },
+    {
+      "anchor": "scheduled-intake",
+      "path": "docs/contributing/scheduled-intake.md",
+      "start": 1,
+      "end": 33,
+      "sha256": "24215b3bd31d95b128802d382261914e0be62acd682a6097b52667b471d752cf"
+    },
+    {
+      "anchor": "scheduled-intake",
+      "path": "pkg/grpc/actions/factories/templates/github/scheduled-intake.canvas.yaml",
+      "start": 7,
+      "end": 73,
+      "sha256": "e56a4ac02cc0366e8db42294142746395fca9f4ad0bd1dc90cdab3106447f6a3"
+    },
+    {
+      "anchor": "authorization",
+      "path": "pkg/authorization/gateway_authorizer.go",
+      "start": 43,
+      "end": 126,
+      "sha256": "8e497b028c444353c6a9afda1f6b96583d9ef0128ee12ddbcaf2578b783eb63b"
+    },
+    {
+      "anchor": "network-policy",
+      "path": "pkg/networkpolicy/http.go",
+      "start": 40,
+      "end": 118,
+      "sha256": "0685d9b6fd8ba289c4e3eb9219d4dcd29dacfc27a6208ab3fdc0adcee7166b88"
+    },
+    {
+      "anchor": "component-contract",
+      "path": "docs/contributing/component-implementations.md",
+      "start": 5,
+      "end": 75,
+      "sha256": "38fcefcfa854fa7214b779461aad082783109a1511e77f447616c305751d83fe"
+    },
+    {
+      "anchor": "component-contract",
+      "path": "docs/contributing/component-implementations.md",
+      "start": 169,
+      "end": 220,
+      "sha256": "38fcefcfa854fa7214b779461aad082783109a1511e77f447616c305751d83fe"
+    },
+    {
+      "anchor": "operator-interface",
+      "path": "docs/contributing/component-design.md",
+      "start": 102,
+      "end": 147,
+      "sha256": "eb47c4d7b2650c48c8ca154acbd89adf69e11bfa76395427cc68493afee48c3f"
+    },
+    {
+      "anchor": "operator-interface",
+      "path": "docs/contributing/component-design.md",
+      "start": 485,
+      "end": 610,
+      "sha256": "eb47c4d7b2650c48c8ca154acbd89adf69e11bfa76395427cc68493afee48c3f"
+    },
+    {
+      "anchor": "operator-interface",
+      "path": "docs/contributing/component-design.md",
+      "start": 767,
+      "end": 875,
+      "sha256": "eb47c4d7b2650c48c8ca154acbd89adf69e11bfa76395427cc68493afee48c3f"
+    },
+    {
+      "anchor": "operator-interface",
+      "path": "docs/contributing/component-design.md",
+      "start": 881,
+      "end": 933,
+      "sha256": "eb47c4d7b2650c48c8ca154acbd89adf69e11bfa76395427cc68493afee48c3f"
+    },
+    {
+      "anchor": "license",
+      "path": "LICENSE",
+      "start": 1,
+      "end": 5,
+      "sha256": "63c7d0cadba0cfdbb22dade78a7e450438c72f668be3ce27287c338850a94499"
+    },
+    {
+      "anchor": "license",
+      "path": "ee/LICENSE",
+      "start": 1,
+      "end": 32,
+      "sha256": "c072e562fd0e75e941918468062afbf7ea28a491569e6674235a71979e038688"
+    },
+    {
+      "anchor": "license",
+      "path": "docs/contributing/enterprise-licensing.md",
+      "start": 27,
+      "end": 81,
+      "sha256": "b0314b188ee3ed417597be29f1e1b95566f55fc83b7fbd9a9972e62d6fb3a594"
+    },
+    {
+      "anchor": "contributor-checks",
+      "path": "AGENTS.md",
+      "start": 15,
+      "end": 32,
+      "sha256": "d35ad1a60d796ec65d4c5cc7dc2db2faf847900665f271fe9c7ff9cd667045eb"
+    },
+    {
+      "anchor": "contributor-checks",
+      "path": "AGENTS.md",
+      "start": 204,
+      "end": 241,
+      "sha256": "d35ad1a60d796ec65d4c5cc7dc2db2faf847900665f271fe9c7ff9cd667045eb"
+    },
+    {
+      "anchor": "contributor-checks",
+      "path": "pkg/models/AGENTS.md",
+      "start": 9,
+      "end": 59,
+      "sha256": "fb1a26d4211409346146a7f9229f94a618789726061a28201351e6477adaa02d"
+    }
+  ]
+}

@@ -113,3 +113,7 @@ These are source-grounded limitations and our counterarguments, not a documented
 ## Open Inspect: Real internal stack, explicit external fixtures
 
 [[artifacts/projects/background-agents]] documents an authenticated preview that runs real application, authorization, storage and WebSocket paths, while GitHub and a scripted sandbox peer are fixtures. It tests a different claim from a live model/provider run. Selected lifecycle/launch/export assertions were inspected in this ingestion, not executed. Keep those evidence classes distinct from measured fault tolerance or coding quality. [[sources/open-inspect--background-agents#preview]] [[sources/open-inspect--background-agents#lifecycle-tests]] [[sources/open-inspect--background-agents#automation-retry]] [[sources/open-inspect--background-agents#export-code]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] separates source-inspected gates from unmeasured agent review. The exact-head merge check and repair-budget tests constrain state transitions, whereas risk/security scores remain model judgments. A local transaction around a remote merge is not an atomic cross-system operation. No runtime or fault-injection benchmark was run in this study. [[sources/superplanehq--superplane#merge]] [[sources/superplanehq--superplane#merge-tests]] [[sources/superplanehq--superplane#confidence]]

@@ -80,3 +80,7 @@ Code can check stable identity, policy version and grants independently of a mod
 ### Open Inspect — access does not erase context
 
 [[artifacts/projects/background-agents]] distinguishes pinned context, live personal reads, original prompt identity, credential issuance and snapshots. Opt-out cannot erase already supplied information; cached credentials and persistent processes cross turn boundaries. Teams remain intra-organization controls, not tenant isolation. [[sources/open-inspect--background-agents#memory-boundary]] [[sources/open-inspect--background-agents#credentials]] [[sources/open-inspect--background-agents#authority]]
+
+## SuperPlane — 2026-11-04
+
+Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided task context, enabled report checks, eligible approval actors and organization/token authorization. Read-only review instructions remain prompt policy. Admission disablement preserves cleanup rights for already-running tasks. [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#approval]] [[sources/superplanehq--superplane#authorization]] [[sources/superplanehq--superplane#runner-admission]]

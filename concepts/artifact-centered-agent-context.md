@@ -93,3 +93,7 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 ## Open Inspect: Pinned context versus live information access
 
 [[artifacts/projects/background-agents]] pins skill and memory selections, but live fact bodies and authorization checks remain separate. Shared/directive memory writes are proposed for review, with old active memory retained until a replacement is approved. Opting out cannot erase injected context, transcripts or sandbox files. Context reproducibility, adoption approval and confidentiality are different contracts. [[sources/open-inspect--background-agents#memory-model]] [[sources/open-inspect--background-agents#memory-boundary]] [[sources/open-inspect--background-agents#skills-pinning]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] preserves intent above any one agent run and passes structured artifacts between phases. Its scheduled-intake template validates a proposal file, including an explicit no-proposal result; it does not infer structured output from final prose. The generic runner JSON reader is weaker, so output validation must be attributed to the actual consuming path. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#scheduled-intake]] [[sources/superplanehq--superplane#result-file]]

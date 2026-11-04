@@ -80,3 +80,7 @@ One verified artifact; the code-review and artifact-comment implementations are 
 ## Kody comparison — 2026-11-02
 
 [[artifacts/projects/kody]] supplies another narrower analogue: repo-session checks can expire after edits, locked publication approval refers to an exact commit, and pinned workflows refuse a moved publication. It does not establish the complete delta-view/feedback-anchor mechanism defined here, so the full-pattern status remains proposed. [[sources/kody-hq--kody#repo-sessions]], [[sources/kody-hq--kody#workflows]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] records PR revisions, invalidates mergeability when the head changes and requires an expected SHA at merge. This is an additional narrower revision-freshness analogue, not evidence of the complete delta-view/structured-feedback-anchor mechanism. Status remains proposed and full-pattern example count stays one. [[sources/superplanehq--superplane#pr-revision]] [[sources/superplanehq--superplane#merge]]

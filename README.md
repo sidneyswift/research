@@ -38,14 +38,14 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 | --- | --- | --- |
 | Skills cataloged | 5 paged | 2026-10-24 |
 | Plugins cataloged | 10 | 2026-10-24 |
-| Projects cataloged | 10 | 2026-11-04 |
+| Projects cataloged | 11 | 2026-11-04 |
 | MCP servers cataloged | 0 paged | 2026-10-24 |
 | Concepts cataloged | 22 | 2026-11-04 |
 | Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
-| Creators cataloged | 19 | 2026-11-04 |
-| Source citation pages | 43: 18 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
+| Creators cataloged | 20 | 2026-11-04 |
+| Source citation pages | 44: 19 repos, 6 docs-pages, 15 articles, 1 paper, 1 tweet, 2 purchased bundles | 2026-11-04 |
 
-Latest ingest: [[artifacts/projects/background-agents]] — Open Inspect at `4b7f4e4`; 43 portable principles on hosted sessions, checkpoint/retirement, authority, managed context and trace export. Complete source tree saved locally with restoration manifest and scoped hashes. Previous ingest: [[artifacts/projects/codex]]. Counts describe existing wiki pages, not refreshed older product claims.
+Latest ingest: [[artifacts/projects/superplane]] — source at `7d755d1`; 42 portable principles on durable workflows, PR coordination, bounded repairs, human gates and runner completion. Full source tree saved locally with pinned citations, hashes and restoration registration. Previous ingest: [[artifacts/projects/background-agents]]. Counts describe existing wiki pages, not refreshed older product claims.
 
 (Update this table after each ingestion.)
 

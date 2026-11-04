@@ -134,3 +134,7 @@ The instructive **inverse anti-pattern** is hard-coding genuine judgment: trying
 ### Open Inspect — deterministic admission around model work
 
 [[artifacts/projects/background-agents]] implements generation fences, prompt request identity, retry classification and export-budget failure outside the model. A runtime-owned no-retry boundary before ambiguous enqueue prevents a second launch from being mistaken for harmless recovery. The policy is narrower than exactly-once external effects. [[sources/open-inspect--background-agents#generation-fence]] [[sources/open-inspect--background-agents#automation-retry]] [[sources/open-inspect--background-agents#automation-delivery]] [[sources/open-inspect--background-agents#export-code]]
+
+## SuperPlane — 2026-11-04
+
+Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts for implementation and review, deterministic graph steps for structured output/PR attachment, and server-owned confidence bands. The boundary is explicit, but a syntactically valid output does not prove a semantically correct change. [[sources/superplanehq--superplane#implementation-template]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#scheduled-intake]]

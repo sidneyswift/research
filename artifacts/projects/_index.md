@@ -13,6 +13,8 @@ Use this directory when the unit of study is bigger than one artifact type but i
 
 ## Cataloged projects
 
+- [[artifacts/projects/superplane]] — durable engineering workflows, PR repair coordination and revision-bound merge gates; 42 principles.
+
 - [[artifacts/projects/background-agents]] — hosted sessions, checkpoint/retirement contracts, scoped delegation, pinned skills and trace export; 43 principles.
 
 - [[artifacts/projects/codex]] — full source preserved at `021fccb`; scoped runtime, authority, storage, skills, Goals and trace study with 44 principles.

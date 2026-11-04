@@ -542,3 +542,14 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 ## [2026-11-04] reflect | unknown outcomes and retained authority
 
 - Extended [[_schemas/project]] and builder routing from [[artifacts/projects/background-agents]]: retry boundaries and source retirement are distinct from acceptance, and revocation cannot retract retained context. Pass 24 in [[meta/self-improvements]]; no installed skill or deployed system changed.
+
+## [2026-11-04] ingest | SuperPlane source and software-factory architecture
+
+- Preserved all 10,205 tracked entries at `7d755d16b8ae836ecebf61639efc6266d74a4b0b` locally, with Git metadata; committed source map, capture hashes and restoration registration, not the ignored checkout. [[sources/superplanehq--superplane]].
+- Added [[artifacts/projects/superplane]] and [[creators/superplane]]: 42 portable principles covering durable work identity, event/queue/finalization, live-versus-pinned configuration, bounded PR repair, exact-head merge gates, approvals and runner completion. Docs/draft/test/code evidence distinguished; no source application tests or performance claims.
+- Extended related concepts, four comparison artifacts, pattern notes and builder navigation. Validation: 31 registered source anchors, 58 pinned line ranges, 36 file hashes and 156 new page/target links checked; restore availability and clean source tree confirmed. Wiki doctor stayed 50/100 with no new findings; pre-existing findings remain.
+- ratchet: links +156 · orphans +0 · patterns +0 (existing concepts extended; narrow analogues remain scoped).
+
+## [2026-11-04] reflect | snapshot granularity
+
+- Applied the per-task/run/node/action snapshot question to `_schemas/project.md`; added a factory/repair build-intent route. [[meta/self-improvements]] Pass 25. No runtime or installed skill changed.

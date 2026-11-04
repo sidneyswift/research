@@ -105,3 +105,7 @@ Steps 1–5 are a proposed practice, not a verbatim protocol or measured result 
 ## Trace Lake comparison — 2026-11-04
 
 [[concepts/trace-lake]] operationalizes the empirical side of verification-first review: retrieve comparable production cases, preserve their preconditions, and turn recurring issues into focused inexpensive evals. Spend open-ended investigation tokens on discovering what to measure; once understood, measure it continuously with a narrower check. Neither a generated finding nor a low score is proof of its proposed cause. [[sources/ankrgyl--trace-lake#trace-to-eval]] [[sources/ankrgyl--trace-lake#patterns-verification]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] provides a concrete tension with verification-first advice: its model-scored checks have server-owned names/thresholds and typed summaries, but calibration and defect-catching value are not established by that validation. PR repair is explicitly budgeted and mutation is serialized. Evaluate review value on defect escape, human attention and cost, not the presence of another reviewer. [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#repair-budget]] [[sources/superplanehq--superplane#pr-coordination]]

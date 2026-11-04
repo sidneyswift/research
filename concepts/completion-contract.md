@@ -114,3 +114,7 @@ The current source update in [[artifacts/projects/codex-goals]] narrows the earl
 ## Open Inspect: Terminal event, saved state and user outcome
 
 [[artifacts/projects/background-agents]] makes one activity supervisor select turn termination above interchangeable harnesses. That local once-only selection does not certify task correctness or exactly-once external delivery. Shutdown adds two more independently evidenced facts—saved state and source retirement—and pauses interrupted work. An “accepted” recovery command is still not a completed restoration. [[sources/open-inspect--background-agents#completion]] [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#shutdown-design]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] separates task intent, workflow quiescence, runner exit/result, retained-log acknowledgement, model judgment and revision-bound merge admission. A run with no queued work may be finished without proving the requested behavior; a schema-valid score is still a judgment. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-protocol]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#merge]]

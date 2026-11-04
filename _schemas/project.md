@@ -68,3 +68,7 @@ For agent runtimes, identify what the **model saw**, what tools/runtime actually
 ## Unknown outcomes and revocation boundaries
 
 For remote execution, state the retry cutoff, generation/operation fence, and evidence distinguishing request acceptance, saved state, retirement and safe continuation. For revocable context/credentials, name what remains in transcripts, pinned inputs, files and caches after access changes. This extends the existing recovery/authority questions with concrete observed failure cases, not a new blanket approval workflow. Grounding: [[artifacts/projects/background-agents]], [[patterns/behavioral/evidence-gated-completion]], [[patterns/behavioral/context-is-not-authority]] and [[sources/open-inspect--background-agents#automation-retry]] / [[sources/open-inspect--background-agents#shutdown-design]] / [[sources/open-inspect--background-agents#memory-boundary]].
+
+## Snapshot granularity and live dependencies
+
+For versioned workflows, list what is pinned **per task, run, node execution and action**: graph edges, node configuration, code revision, input artifacts and credentials. State which dependencies are read live. A versioned editor or copied configuration does not by itself establish a frozen/replayable run. This sharpens the existing recovery question using [[artifacts/projects/superplane]] and [[patterns/behavioral/evidence-gated-completion]]: [[sources/superplanehq--superplane#staging]], [[sources/superplanehq--superplane#execution-state]], [[sources/superplanehq--superplane#event-routing]].

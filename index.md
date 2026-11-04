@@ -29,6 +29,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/superplanehq--superplane]] | repo | 2026-11-04 | `7d755d1`; workflow engine, factory coordination, runner protocols |
 | [[sources/open-inspect--background-agents]] | repo | 2026-11-04 | `4b7f4e4`; background execution, lifecycle/authority and context boundaries |
 | [[sources/openai--codex]] | repo | 2026-11-04 | `021fccb`; complete source checkout saved, scoped harness investigation |
 | [[sources/nvidia--auto-ontology]] | repo | 2026-11-04 | `caced11e`; semantic context, SQL workflow, MCP and skills |
@@ -79,6 +80,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 | Creator | Type | Notes |
 | --- | --- | --- |
+| [[creators/superplane]] | org | Software factory and durable workflow engine |
 | [[creators/open-inspect]] | org | Background coding sessions, sandbox lifecycle and harness adapters |
 | [[creators/nvidia]] | org | Auto-Ontology and companion evaluation harness |
 | [[creators/hanrong-zhang]] | individual | Skill++ co-first author with Minghao Liang; growing-library routing research |
@@ -140,6 +142,7 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 
 | Project | Creator | Status | One-line |
 | --- | --- | --- | --- |
+| [[artifacts/projects/superplane]] | SuperPlane | source-investigated | Durable work identity, keyed queues, bounded repair and exact-head merging; 42 principles |
 | [[artifacts/projects/background-agents]] | Open Inspect | source-investigated | Hosted sessions, checkpoint/retirement, context and automation boundaries; 43 principles |
 | [[artifacts/projects/codex]] | OpenAI | source-investigated | Shared runtime, authority, history/recovery and evidence provenance; 44 principles |
 | [[artifacts/projects/auto-ontology]] | NVIDIA | source-investigated | Maintained business meaning, curated query tools and evidence-bound evaluation/publication; 26 principles |

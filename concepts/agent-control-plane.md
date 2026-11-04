@@ -124,3 +124,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## Open Inspect: Hosted background sessions
 
 [[artifacts/projects/background-agents]] separates client presence, canonical session/queue state and sandbox execution generation. Its reconnect design favors a bounded canonical snapshot, with synchronous final read/send/socket registration, over a duplicate retained view log. Lifecycle ownership also stays centralized: clients consume recovery eligibility rather than reconstructing provider policy. This is a concrete implementation beside the earlier domain-orchestrator proposal, not proof that all provider recovery paths have been exercised. [[sources/open-inspect--background-agents#architecture]] [[sources/open-inspect--background-agents#snapshot-handoff]] [[sources/open-inspect--background-agents#shutdown-design]]
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] adds a workflow-centered example: a Work Order persists across automation runs, while per-key queues, PR mutation ownership and runner fleets handle different coordination scopes. Human requirements and model confidence checks are different mechanisms; neither a canvas nor a score alone grants execution authority. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#queue]] [[sources/superplanehq--superplane#pr-coordination]] [[sources/superplanehq--superplane#approval]]

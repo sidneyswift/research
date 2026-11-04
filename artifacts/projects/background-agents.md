@@ -188,3 +188,7 @@ The evidence for these boundaries is in the mechanism sections above. Additional
 - What evidence would justify a retained delta log, semantic memory search or stronger hostile-tenant isolation? Require observed bottlenecks and explicit threat/workload models before extending the architecture.
 - Does a complete harness/provider matrix uphold process containment, authorization and usage semantics? Selected seams were read, not every adapter.
 - Source capture, hashes/ranges and wiki links are checked at ingestion. Tests above were **inspected, not executed**. No source system or installed skill was modified.
+
+## SuperPlane — 2026-11-04
+
+[[artifacts/projects/superplane]] is a workflow-centered complement to hosted sessions: durable Work Orders span automations; PR activities serialize mutation and bound repair; terminal runner reports are idempotent by payload hash. Its copied node config and live-edge routing add a separate snapshot-granularity question. No runtime superiority comparison is implied. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#pr-coordination]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#event-routing]]

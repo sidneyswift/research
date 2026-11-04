@@ -112,3 +112,7 @@ Lauren's screenshot-backed preference for empirical/formal verification over abs
 ### Open Inspect — checkpoints and terminal events
 
 [[artifacts/projects/background-agents]] treats a saved checkpoint and a retired source as separate facts, persists unknown outcomes and withholds automatic replay of interrupted prompts. Its supervisor’s terminal selection is local lifecycle evidence, not acceptance of the user’s goal. [[sources/open-inspect--background-agents#shutdown-design]] [[sources/open-inspect--background-agents#checkpoint]] [[sources/open-inspect--background-agents#continuation]] [[sources/open-inspect--background-agents#completion]]
+
+## SuperPlane — 2026-11-04
+
+Supporting implementation: [[artifacts/projects/superplane]] checks for open work before finalizing a run, binds runner terminal reports to completion hashes, and requires an expected PR head for merging. Each gate has a narrower meaning than user-goal success; a valid model review score is not executable evidence. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#merge]]
