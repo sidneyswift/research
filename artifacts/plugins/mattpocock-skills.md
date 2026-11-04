@@ -129,3 +129,7 @@ It earns the right to be a *pack* (over loose skills) because `ask-matt` chains 
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] is a useful engineering-craft comparison: short named principles coexist with substantial orchestration and formal-verification scripts. Its mostly disabled automatic invocation plus explicit file-reading composition cautions against treating discovery flags as universal file-access barriers. [[sources/cursor--plugins-pstack#inventory]] [[sources/cursor--plugins-pstack#PK07]]
+
+## Related architecture proposal — 2026-11-04
+
+In a supplied screenshot, Matt mentions `/chief-of-staff` as a possible local, long-running domain orchestrator attached to a software factory. The proposed principle is cataloged in [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]]. This does not change the pinned pack inventory above: the skill's current source, packaging, availability and actual use were not inspected, and no named factory implementation is supplied. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#provenance-limits]]

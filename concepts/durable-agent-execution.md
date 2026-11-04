@@ -95,3 +95,7 @@ Most agent failure modes at the edges are durability failures: a long task dies 
 ## Simulation replay is a different guarantee — 2026-11-03
 
 [[artifacts/projects/tibo-dog]] reports recomputing a deterministic game run from inputs to validate a high score. This is **simulation replay for verification**, not evidence of crash-safe agent execution or exactly-once external effects. Reusing the idea for an agent evaluation needs captured nondeterministic responses and controlled side effects; replaying a payment or publication is not equivalent to replaying game state. That adaptation is our boundary analysis, not an implementation claim about the game. [[sources/poteto--tibo-engineering#deterministic-replay]]
+
+## A long-running thread is not recovery evidence — 2026-11-04
+
+Matt Pocock proposes a persistent local domain thread coordinating a factory of sandboxed workers; the reusable coordination principle lives in [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]]. The screenshot specifies no checkpoint, replay, restart or effect-deduplication mechanism. It is a useful architecture proposal, not a new demonstrated example of this page's execution-durability guarantees. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#provenance-limits]]

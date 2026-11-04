@@ -479,3 +479,13 @@ Applied [[meta/self-improvements]] entry 52: added [[_schemas/project]] and rout
 ## [2026-11-03] reflect | verification-budget routing
 
 - Added a focused `for-builders.md` route to the existing canonical principle and fidelity concept; recorded in [[meta/self-improvements]]. The evidence loop here is source/readback plus mechanical link checks, not speculative review fan-out. No new validator or installed skill change was needed.
+
+## [2026-11-04] ingest | persistent domain orchestrator plus sandboxed factory
+
+- Added [[sources/mattpocock--domain-orchestrator-factory]] with the supplied screenshot, SHA-256 and visible-text transcription. Original URL/publication date unavailable; a bounded public lookup returned no result. The screenshot describes a possible trial, not a demonstrated deployment.
+- Extended [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] with the six-part principle: one-domain continuity, separate worker lifetimes, explicit CLI control, real isolation, retrospective/recurring-work loop and plain-language human steering. Linked super-agent architecture, execution-durability limits, Matt's creator/pack pages and indexes. Did not attribute Matt's proposal to the tibo game or alter pinned skill inventories.
+- Validation: 39 added unique page→target links checked, including 17 registered source-anchor references and 9 section-heading references; screenshot SHA-256 and 37-source/20-concept counts verified. Staged wiki doctor checked 2,259 pages, score 50/100 unchanged, with zero new broken links, orphans, missing sections, stale findings or gitlinks. Whitespace check passed; tibo page and earlier raw captures unchanged. Ratchet: links +39 (unique per page, excluding raw capture) · orphans +0 · patterns +0. Terminal state: success for screenshot-scoped proposal ingestion; canonical post URL/date and runtime outcomes remain unverified.
+
+## [2026-11-04] reflect | domain-orchestrator builder route
+
+- Added the canonical architecture-principle route to `for-builders.md`, distinguishing proposal from implementation evidence and linking durability limits; recorded in [[meta/self-improvements]]. No new runtime, cron, agent or installed skill changes were needed.

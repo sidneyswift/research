@@ -65,6 +65,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 | [[sources/cursor--plugins-pstack]] | repo | 2026-10-24 | `9580c23` (pstack 0.15.32) |
 | [[sources/poteto--tibo-engineering]] | article (long-form X post) | 2026-11-03 | published 2026-11-01; full post + four images |
 | [[sources/poteto--verification-over-adversarial-review]] | article (social-post screenshot) | 2026-11-03 | publication date/URL unknown; original image + transcription |
+| [[sources/mattpocock--domain-orchestrator-factory]] | article (social-post screenshot) | 2026-11-04 | proposed architecture; publication date/URL unknown |
 
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
@@ -148,7 +149,7 @@ Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md
 
 - [[concepts/review-cost-aware-workflows]] — Choose workflow depth around decision cost; prefer empirical/formal verification over abstract adversarial review of checkable behavior.
 - [[concepts/artifact-centered-agent-context]] — Give facts, decisions, design, and execution progress explicit artifact owners; pass bounded context into fresh sessions.
-- [[concepts/agent-control-plane]] — Separate durable tasks, access, artifacts, and review from provider-specific sessions and execution hosts.
+- [[concepts/agent-control-plane]] — Separate durable work from execution; includes the proposed persistent domain orchestrator + sandboxed factory principle.
 
 Ideas and techniques worth their own page — especially from essays, papers, and threads. A concept graduates to a [pattern](#patterns) once observed across ≥2 artifacts.
 

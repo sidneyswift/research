@@ -28,6 +28,7 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 | You're building… | Patterns / concepts to read first | Worked artifacts to study |
 | --- | --- | --- |
 
+| **Local domain assistant + sandboxed worker factory** | [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]], [[concepts/super-agent-architecture]], [[concepts/durable-agent-execution]] | [[sources/mattpocock--domain-orchestrator-factory]] (proposal); [[artifacts/projects/humanlayer]] (separate implementation comparison) |
 | **Persistent team agent / cross-channel coordination** | [[concepts/super-agent-architecture]], [[patterns/behavioral/context-is-not-authority]], [[concepts/durable-agent-execution]] | [[artifacts/projects/dsh-superagent-prototype]], [[artifacts/projects/humanlayer]] |
 | **Portable capabilities, memory and credential use** | [[concepts/code-mode-capability-interface]], [[patterns/behavioral/context-is-not-authority]] | [[artifacts/projects/kody]] |
 | **A single skill** (`SKILL.md` ± thin code) | [[concepts/convergent-agent-plugin-spec]], [[patterns/quality-bar/skill-pack-bundle]], [[patterns/behavioral/skill-as-method-call]], [[patterns/behavioral/latent-vs-deterministic-split]], [[patterns/structural/thin-harness-fat-skills]] | [[artifacts/plugins/gstack]], [[artifacts/plugins/compound-engineering]], [[artifacts/plugins/openai-codex-plugins-marketplace]] |

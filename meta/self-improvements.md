@@ -225,3 +225,8 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 
 - Applied the review-budget principle from [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] to the consumer front door: `for-builders.md` now routes that decision directly to its canonical principle and fidelity limits, rather than making builders infer it from the older Interrogate ledger. [[sources/poteto--verification-over-adversarial-review#verification-first]]
 - Status: **applied** 2026-11-03. Compounding budget: extended an existing concept and a routing row; no duplicate concept, new workflow, installed-skill change or additional review agents.
+
+## [2026-11-04] Pass 19 — route domain-orchestrator designs
+
+- Applied the explicit separation of human steering, domain coordination and worker execution from [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] as a focused build-intent route in `for-builders.md`. The row sends builders to the canonical principle, related architecture and durability boundaries, with the screenshot clearly labeled a proposal. [[sources/mattpocock--domain-orchestrator-factory#root]]
+- Status: **applied** 2026-11-04. Extended existing concepts instead of creating a near-duplicate architecture page. No orchestrator, worker, cron or installed skill was created; this is research ingestion, not authorization to build the proposed system.

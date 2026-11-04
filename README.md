@@ -40,12 +40,12 @@ Requires Git, Python 3, network access, and any credentials needed by private so
 | Plugins cataloged | 10 | 2026-10-24 |
 | Projects cataloged | 7 | 2026-11-03 |
 | MCP servers cataloged | 0 paged | 2026-10-24 |
-| Concepts cataloged | 20 | 2026-11-02 |
+| Concepts cataloged | 20 | 2026-11-04 |
 | Patterns extracted | 11 confirmed + 7 proposed with pages | 2026-11-02 |
 | Creators cataloged | 14 | 2026-11-02 |
-| Source citation pages | 36: 14 repos, 6 docs-pages, 13 articles, 1 tweet, 2 purchased bundles | 2026-11-03 |
+| Source citation pages | 37: 14 repos, 6 docs-pages, 14 articles, 1 tweet, 2 purchased bundles | 2026-11-04 |
 
-Latest ingest: [[artifacts/projects/tibo-dog]] — full engineering post, parent, four attached images and linked-site snapshots, plus a separate verification-over-review screenshot; 17 portable principles, with author assertions separated from verified implementation. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
+Latest ingest: [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] — Matt Pocock's proposed local domain orchestrator + sandboxed software factory, with screenshot provenance. Previous related ingest: [[artifacts/projects/tibo-dog]], including the verification-over-adversarial-review principle. Counts describe existing wiki pages; checking inventory does not refresh older source claims or popularity signals.
 
 (Update this table after each ingestion.)
 

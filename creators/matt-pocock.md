@@ -47,11 +47,15 @@ A coherent, unusually legible house style — and the **near-perfect inverse of 
 - **Dogfoods his own discipline.** The repo runs a `CONTEXT.md` glossary, a `docs/adr/`, and an `.out-of-scope/` registry of explicitly-rejected scope — the same `domain-modeling` / decision-recording habits his skills teach ([[sources/mattpocock--skills#CONTEXT.md]], [[sources/mattpocock--skills#out-of-scope]]).
 - **Bets against the test-bundle.** Notably ships **no test suite** — the deliberate counter-bet to Garry Tan's "a skill pack has tests" ([[patterns/quality-bar/skill-pack-bundle]]). The wager is that smallness + composability + fundamentals beats a heavy tested bundle for an individual's daily driver.
 
+**Architecture proposal (screenshot received 2026-11-04):** considering a trial pairing a local domain-specific orchestrator, possibly `/chief-of-staff`, with a CLI-managed factory of sandboxed workers. The human-facing coordinator would manage threads, retrospectives and cron jobs. This is a proposal, not an observed deployment or verified new skill release. [[sources/mattpocock--domain-orchestrator-factory#root]] [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]]
+
 ## Timeline (append-only)
 
 - 2026-02-03 — `mattpocock/skills` repository created ([[sources/mattpocock--skills#github-stars]]).
 - 2026-06-18 — snapshot HEAD `6eeb81b`, package `version: 1.0.1` ([[sources/mattpocock--skills#root]]).
 - 2026-06-19 — ingested into this wiki at **135,831 ★ / 11,770 forks** — surpassing gstack's ~105K as the highest star count in the corpus to date ([[sources/mattpocock--skills#github-stars]]).
+
+- 2026-11-04 — Ingested the domain-orchestrator/factory screenshot; original post date and URL unknown. [[sources/mattpocock--domain-orchestrator-factory#root]]
 
 ## Source citations
 

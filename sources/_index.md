@@ -66,6 +66,8 @@ External writing we cite. Always include retrieval date and a snapshot path (PDF
 
 - [[sources/poteto--verification-over-adversarial-review]] — supplied screenshot received 2026-11-03: Lauren prefers empirical/formal verification to abstract adversarial review, with Thorsten Ball endorsement; exact dates/URLs unknown. Extends [[concepts/review-cost-aware-workflows]].
 
+- [[sources/mattpocock--domain-orchestrator-factory]] — screenshot received 2026-11-04; proposed local domain orchestrator + CLI-managed sandboxed factory, with plain-language human steering. Extends [[concepts/agent-control-plane]].
+
 ## Release artifacts (ZIP / packaged products)
 
 Paid or otherwise non-clonable products distributed as packages. The extracted tree is **committed** (immutable evidence — unlike repo clones, there is no upstream to rebuild from); version stamp = the package version.

@@ -47,3 +47,7 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 ## Updated 2026-11-03
 
 - [[concepts/review-cost-aware-workflows#principle-verification-over-abstract-adversarial-review]] — prioritize empirical/formal evidence over abstract adversarial review; screenshot-backed author position, with bounded adaptation and preserved historical toolkit evidence.
+
+## Updated 2026-11-04
+
+- [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] — Matt Pocock's proposed domain coordinator/factory combination; connected to super-agent architecture without claiming tested durability or isolation.
