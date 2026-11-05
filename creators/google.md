@@ -33,3 +33,7 @@ Resource-oriented interfaces with standard methods, purposeful custom actions, a
 - [[sources/google--aip-121#resources]]
 - [[sources/google--aip-136#actions]]
 - [[sources/google--aip-151#operations]]
+
+## Documentation research — 2026-11-05
+
+[[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/README]] examine published writing guidance and/or product documentation mechanisms. Documentation inspection only; no comparative usability or runtime result claimed.

@@ -1,0 +1,23 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "docs-as-code.md",
+      "url": "https://www.writethedocs.org/guide/docs-as-code/",
+      "final_url": "https://www.writethedocs.org/guide/docs-as-code/",
+      "sha256": "2482699956f126ea3a2028b0fdb8c2c8e15341afad0813d63960377c505ace9a",
+      "bytes": 4707,
+      "title": "Docs as code \u2014 Write the Docs",
+      "http_status": 200
+    },
+    {
+      "file": "getting-started.md",
+      "url": "https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/",
+      "final_url": "https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/",
+      "sha256": "070f7f065f5e6a6a8cd06f89a33f198eff3165cf16409692ca4dcd8a1c5291df",
+      "bytes": 7515,
+      "title": "How to write software documentation \u2014 Write the Docs",
+      "http_status": 200
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+# Docs as code — Write the Docs
+
+Source: https://www.writethedocs.org/guide/docs-as-code/
+Final URL: https://www.writethedocs.org/guide/docs-as-code/
+Retrieved: 2026-11-05
+Capture: main-content text extracted from HTML; no UI interaction or code execution.
+
+Skip to content
+Australia 2026 tickets are on sale!
+Get your ticket
+.
+Conferences
+Write the Docs Australia 2026
+Write the Docs Portland 2027
+Talk videos
+Learn
+Documentation guide
+Hiring guide
+Content by topic
+Salary survey
+Community
+Slack
+Meetups
+Newsletter
+Blog
+Code of Conduct
+About
+Team
+Sponsor us
+Contribute
+Contact
+Join Slack
+On this page
+#
+Docs as code
+¶
+author
+:
+Eric Holscher
+& the Write the Docs community
+Documentation as Code (
+Docs as Code
+) refers to a philosophy that you should be writing documentation with the same tools as code:
+Issue Trackers
+Version Control (Git)
+Plain Text Markup (Markdown, reStructuredText, Asciidoc)
+Code Reviews
+Automated Tests
+This means following the same workflows as development teams,
+and being integrated in the product team.
+It enables a culture where writers and developers both feel ownership of documentation,
+and work together to make it as good as possible.
+Generally a
+Docs as Code
+approach gives you the following benefits:
+Writers integrate better with development teams
+Developers will often write a first draft of documentation
+You can block merging of new features if they don’t include documentation, which incentivizes developers to write about features while they are fresh
+There is a lot more to building a proper
+Docs as Code
+workflow.
+There are a couple books we recommend that you check out:
+Docs Like Code: Collaborate and Automate to Improve Technical Documentation
+- Anne Gentle
+Modern Technical Writing: An Introduction to Software Documentation
+- Andrew Etter
+Crafting Docs for Success: An End-to-End Approach to Developer Documentation
+- Diana Lakatos
+In addition, there is an open source tool-chain which shows how the docs-as-code approach can be implemented
+docToolchain
+##
+Docs as Code
+at Write the Docs
+¶
+Write the Docs has had a number of talks that touch on this topic over the years.
+2015 North America
+Riona MacNamara
+talked about how adopting
+Docs as Code
+has completely transformed how Google does documentation.
+2016 North America
+We had a
+panel
+with folks from Rackspace, Microsoft, Balsamiq, and Twitter, all talking about how they are adopting these practices.
+2016 Europe
+Margaret Eker and Jennifer Roundeau
+from Rackspace & Capital One, it was a great overview of
+Docs as Code
+.
+Rachel Whitten
+from Pantheon give a talk on their implementation of these approaches.
+2017 North America
+Jodie Putrino
+from F5 gave a practical account of her experience developing docs like code.
+2018 Europe
+Predrag Mandic
+talked about how the “documentation is code” principle saves money and time, empowers documentarians, simplifies processes around testing documentation and brings happiness to a diverse customer base.
+2019 Europe
+Jen Lambourne
+shared the UK Government Digital Service’s experience adopting a docs as code approach.
+2020 Europe
+Diana Lakatos
+showed various fully remote processes platformOS developed to help community members contribute content and code to their developer portal, including why they follow the docs as code approach, how they developed an editorial workflow that can work for all contributors, and how they implemented it through GitHub.
+2021 North America
+Swapnil Ogale
+provided his take on transitioning from traditional tech writing tools to a docs as code approach.
+2022 North America
+Marcia Riefer Johnston and Dave May
+from Amazon Web Services (AWS) told the story of their team’s move to docs as code: what worked, what didn’t, what’s next.
+The
+Docs as Code
+concepts are widely practiced in the software industry,
+and are gaining adoption in the writing community.
+##
+Docs as Code
+at other conferences, video casts and articles
+¶
+The approach has been presented at several other conferences or just video casts by different speakers.
+2017
+Software Architecture Summit 2017, Berlin, Germany: Gernot Starke, Ralf D. Müller:
+Hitchhiker’s Guide to Architecture Documentation
+. (Half-Day-Workshop)
+2018
+I’d rather be writing: Tom Johnson:
+Docs as code tools and workflows presentation
+Greach, Madrid, Spain: Ralf D. Müller:
+Docs as code: arc42, AsciiDoc, Gradle & Co combined
+FrOSCon, Sankt Augustin, Germany: Christoph Stoettner:
+Documentation with any Editor
+##
+Join our mailing list
+Get a monthly roundup of what the community is talking about, with over 12,000 other readers.
+Email address
+Subscribe
+Want conference news too?
+Choose your lists
+.
+##
+Supported by
+Website Hosting
+Docs as Code
+Become a sponsor

@@ -143,3 +143,7 @@ Admin version selection is not an indefinite pin: inaccessible requested version
 ## MCP research connection — 2026-11-04
 
 [[concepts/mcp-extension-architecture]] contrasts MCP extension compatibility with this page’s domain-specific UCP profile negotiation. [[artifacts/projects/mcp-apps]] studies embedded interfaces; neither establishes that Shopify implements those UI contracts. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#extension-negotiation]], [[sources/modelcontextprotocol--mcp-apps-docs#resource-contract]]
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

@@ -136,6 +136,15 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 | Creator | Type | Notes |
 | --- | --- | --- |
+| [[creators/daniele-procida]] | individual | Developer documentation research |
+| [[creators/writethedocs]] | org | Developer documentation research |
+| [[creators/gitlab]] | org | Developer documentation research |
+| [[creators/cloudflare]] | org | Developer documentation research |
+| [[creators/jeremy-howard]] | individual | Developer documentation research |
+| [[creators/github]] | org | Developer documentation research |
+| [[creators/twilio]] | org | Developer documentation research |
+| [[creators/alex-cummaudo]] | individual | Developer documentation research |
+| [[creators/daye-nam]] | individual | Developer documentation research |
 | [[creators/model-context-protocol]] | org | MCP specification and official extension maintainers |
 
 | [[creators/superplane]] | org | Software factory and durable workflow engine |
@@ -376,3 +385,30 @@ The wiki applied to itself — improvements to our own machinery, each traced to
 - [[meta/self-improvements]] — self-improvement ledger; applied/embodied wiki machinery changes traced to observed patterns and concepts, including routing, doctor tooling, page definitions of done, consumer-agent guidance, portability, and release/versioning principles.
 
 - [[meta/2026-11-02-persistent-agents-ingest-lint]] — scoped ingest checks and inherited health findings.
+
+
+
+
+
+
+
+
+
+
+## Developer documentation research
+
+- [[projects/writing-amazing-developer-docs/README]] — evidence map and continuing research.
+- [[concepts/developer-documentation-design]] — owning synthesis and portable practices.
+- [[projects/writing-amazing-developer-docs/page-blueprints]] — proposed page templates and review checklist.
+
+| Source citation page | Role |
+| --- | --- |
+| [[sources/diataxis--documentation-framework]] | Documentation research evidence |
+| [[sources/google--developer-documentation]] | Documentation research evidence |
+| [[sources/writethedocs--documentation-practice]] | Documentation research evidence |
+| [[sources/gitlab--documentation-engineering]] | Documentation research evidence |
+| [[sources/cloudflare--docs-for-agents]] | Documentation research evidence |
+| [[sources/answerai--llms-txt]] | Documentation research evidence |
+| [[sources/cummaudo--api-documentation-knowledge]] | Documentation research evidence |
+| [[sources/nam--documentation-use]] | Documentation research evidence |
+| [[sources/developer-docs--product-examples]] | Documentation research evidence |

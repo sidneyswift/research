@@ -175,3 +175,15 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/modelcontextprotocol--mcp-apps-docs]] — stable/draft UI specifications, SDK and security docs.
 - [[sources/modelcontextprotocol--mcp-authorization-docs]] — core OAuth, stable auth profiles, exact ID-JAG dependency and current draft.
 - [[sources/openai--mcp-extensions]] — ignored live clone pinned at `9e6d418`; citation page is the durable wiki record.
+
+## Developer documentation research — 2026-11-05
+
+- [[sources/answerai--llms-txt]] — collection scope and registered anchors.
+- [[sources/cloudflare--docs-for-agents]] — collection scope and registered anchors.
+- [[sources/cummaudo--api-documentation-knowledge]] — collection scope and registered anchors.
+- [[sources/developer-docs--product-examples]] — collection scope and registered anchors.
+- [[sources/diataxis--documentation-framework]] — collection scope and registered anchors.
+- [[sources/gitlab--documentation-engineering]] — collection scope and registered anchors.
+- [[sources/google--developer-documentation]] — collection scope and registered anchors.
+- [[sources/nam--documentation-use]] — collection scope and registered anchors.
+- [[sources/writethedocs--documentation-practice]] — collection scope and registered anchors.

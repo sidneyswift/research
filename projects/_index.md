@@ -13,3 +13,5 @@ Work we are designing and building from the research. External runnable systems 
 - [[projects/conversation-learning/README]] — preserve human–AI collaboration evidence, annotate corrections and task trajectories, and derive evaluations, skills, and training datasets.
 
 First run: [[projects/conversation-learning/pilots/commercial-redline-001/README]] — bounded chat extraction; annotations await human review.
+
+- [[projects/writing-amazing-developer-docs/README]] — developer documentation research and authoring blueprints.

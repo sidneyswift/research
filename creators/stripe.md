@@ -30,3 +30,7 @@ The case study records interface choices and limits from the captured documentat
 ## Source citations
 
 - [[sources/stripe--business-api-design#root]]
+
+## Documentation research — 2026-11-05
+
+[[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/README]] examine published writing guidance and/or product documentation mechanisms. Documentation inspection only; no comparative usability or runtime result claimed.

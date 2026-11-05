@@ -1,0 +1,14 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "agent-access.md",
+      "url": "https://developers.cloudflare.com/docs-for-agents/",
+      "final_url": "https://developers.cloudflare.com/docs-for-agents/",
+      "sha256": "23650f4950da66ac6a6f15ed7572792ff9f81cd6710020edeed59e32e21e30f8",
+      "bytes": 7112,
+      "title": "Docs for agents \u00b7 Docs for agents docs",
+      "http_status": 200
+    }
+  ]
+}

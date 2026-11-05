@@ -729,3 +729,14 @@ Verified all sixteen immutable snapshot hashes, new-page wikilinks/registered so
 ## [2026-11-04] query | consolidate and merge pending Research work
 
 User authorized committing, pushing and merging all pending Research work. Consolidated API/agent-commerce, MCP/extensions, conversation-learning sanitized metadata/tooling, and source updates; preserved newer upstream research through SuperPlane and runtime freshness notes. Private chat projections remain outside the public repository; ignored source clones and scratch artifacts remain local. Reconciled shared indexes and refreshed combined inventory counts. All 36 unit tests pass after reconciliation; wiki doctor reports 50/100 with the same seven imported-article broken-link occurrences, no orphan/missing-section/gitlink findings, and existing stale dates. Manifest-indexed capture hashes pass. Mutable wiki/code whitespace checks pass; whitespace in immutable captured sources is preserved. Analyses remain draft where review gates are pending. No provider execution or live business change implied by Git merge.
+
+## [2026-11-05] ingest | developer documentation design
+
+- Added [[projects/writing-amazing-developer-docs/README]], the owning [[concepts/developer-documentation-design]] synthesis and proposed [[projects/writing-amazing-developer-docs/page-blueprints]]. Studied reader/task modes, precise prose and procedures, examples, business/async contracts, troubleshooting, navigation, accessibility, maintenance/release workflow, agent access and evaluation.
+- Nine source collections: 37 documentation-page captures, two version-pinned paper metadata captures and two original paper-reading notes. SHA-256/byte receipts verify all 41 files. Long GitLab/multi-language pages have section-level reviewed scope; HTML-extracted text can lose link targets/code layout. Failed guessed URLs are excluded. No product code executed, visual usability audit performed or documentation effectiveness measured.
+- Product-example contributor performed a second review; corrected successful completion versus generic terminal state, added sentence/step guidance and direct Stripe version evidence. Existing patterns reused as applications; no documentation-only agreement promoted to a confirmed implementation pattern.
+- Ratchet before log/lint report: links +351 · orphans +0 · patterns +0. Domain/root indexes, creators, related concepts/artifacts/patterns and builder routes updated. [[meta/2026-11-05-developer-docs-ingest-lint]] records scope and inherited findings.
+
+## [2026-11-05] reflect | documentation review coverage
+
+- Applied [[patterns/quality-bar/revision-bound-review]] to [[_schemas/source]]: record reviewed sections, extraction limitations and guidance/documented/runtime/outcome boundaries. Ledger in [[meta/self-improvements]]. This small schema improvement addresses an actual long-page capture ambiguity; no additional harness/checklist system needed.

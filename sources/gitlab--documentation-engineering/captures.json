@@ -1,0 +1,59 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "topic-types.md",
+      "url": "https://docs.gitlab.com/development/documentation/topic_types/",
+      "final_url": "https://docs.gitlab.com/development/documentation/topic_types/",
+      "sha256": "9e7855d638e34c92743e719a1c75d50d2b2b712330ee56dcf33b5c6765bbdd2c",
+      "bytes": 2595,
+      "title": "Documentation topic types (CTRT) | GitLab Docs",
+      "http_status": 200
+    },
+    {
+      "file": "testing.md",
+      "url": "https://docs.gitlab.com/development/documentation/testing/",
+      "final_url": "https://docs.gitlab.com/development/documentation/testing/",
+      "sha256": "462b85b5230058db36bc82a02cd34f8e6058b5f48abedcbc4376d5d6dc0a7ec2",
+      "bytes": 21420,
+      "title": "Documentation testing | GitLab Docs",
+      "http_status": 200
+    },
+    {
+      "file": "workflow.md",
+      "url": "https://docs.gitlab.com/development/documentation/workflow/",
+      "final_url": "https://docs.gitlab.com/development/documentation/workflow/",
+      "sha256": "a703017e8ba0d122acce270e83c49488abfbbabe84c642d77337c12fefb63704",
+      "bytes": 30617,
+      "title": "Workflows | GitLab Docs",
+      "http_status": 200
+    },
+    {
+      "file": "styleguide.md",
+      "url": "https://docs.gitlab.com/development/documentation/styleguide/",
+      "final_url": "https://docs.gitlab.com/development/documentation/styleguide/",
+      "sha256": "5e8caba1852bfa99523ca16da493d9c018d1c0a56521a17d30473fe7ee0b25f2",
+      "bytes": 77796,
+      "title": "Documentation Style Guide | GitLab Docs",
+      "http_status": 200
+    },
+    {
+      "file": "tasks.md",
+      "url": "https://docs.gitlab.com/development/documentation/topic_types/task/",
+      "final_url": "https://docs.gitlab.com/development/documentation/topic_types/task/",
+      "sha256": "ddb03bb2846afac48063d1766b522ad710b733058760ddf5a2c3907ec66f1256",
+      "bytes": 5425,
+      "title": "Task topic type | GitLab Docs",
+      "http_status": 200
+    },
+    {
+      "file": "troubleshooting.md",
+      "url": "https://docs.gitlab.com/development/documentation/topic_types/troubleshooting/",
+      "final_url": "https://docs.gitlab.com/development/documentation/topic_types/troubleshooting/",
+      "sha256": "27219bebb3341645581705b2b8eba265ca0e12c6354f7bddda65f3e4335ed16f",
+      "bytes": 3882,
+      "title": "Troubleshooting topic type | GitLab Docs",
+      "http_status": 200
+    }
+  ]
+}
