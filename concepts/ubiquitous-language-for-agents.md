@@ -97,3 +97,7 @@ This is the same "concision pays off session after session" logic that motivates
 ## Executable business-meaning comparison — 2026-11-04
 
 [[artifacts/projects/auto-ontology]] moves beyond a prose glossary: terms bind to columns, measures to SQL and relationships to joins. Its modeling guidance requires identity, population, grain, units, denominators, validity and counterexamples. This complements Pocock's vocabulary discipline rather than replacing a small project glossary with a service by default. Similar names and matching sample rows do not establish equivalent business concepts. [[sources/nvidia--auto-ontology#architecture]] [[sources/nvidia--auto-ontology#measure-contracts]]
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

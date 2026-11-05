@@ -64,3 +64,7 @@ Apply [[patterns/quality-bar/revision-bound-review]] and [[patterns/behavioral/c
 Done when the citation map identifies the contract behind each load-bearing claim, records unsupported/unknown fallback and distinguishes documented support from executed acceptance. Motivating evidence: [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#documentation-conflicts]], [[sources/modelcontextprotocol--mcp-apps-docs#messages-context]], [[sources/openai--mcp-extensions#platforms]].
 
 For named document collections with a SHA-256/byte receipt, run `python3 scripts/check-document-captures.py <receipt.json> [...]`. It accepts a capture list or an object with `captures`; entries require `file`, `url`, `sha256`, and `bytes`. It verifies local bytes only, rejects missing/duplicate/escaping paths, and never fetches or assesses semantic support.
+
+## Documentation collection review scope
+
+Apply [[patterns/quality-bar/revision-bound-review]] and [[concepts/developer-documentation-design]]: list which captured pages/sections were actually reviewed, whether extraction preserves code indentation/link targets/interactive context, and distinguish published guidance, documented product behavior, runtime execution and measured reader outcomes. Capturing a large multi-language page does not establish that every variant was inspected. Keep this review scope in the citation page; never amend immutable evidence to add interpretation.

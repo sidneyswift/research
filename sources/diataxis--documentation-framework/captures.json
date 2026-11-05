@@ -1,0 +1,59 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "overview.md",
+      "url": "https://diataxis.fr/",
+      "final_url": "https://diataxis.fr/",
+      "sha256": "fb69112f25c5bc51310f80be9e4b51a011b043d96dab8c158851939051742f33",
+      "bytes": 2919,
+      "title": "Di\u00e1taxis",
+      "http_status": 200
+    },
+    {
+      "file": "tutorials.md",
+      "url": "https://diataxis.fr/tutorials/",
+      "final_url": "https://diataxis.fr/tutorials/",
+      "sha256": "d759dba519f677f22f65ff5c8fa360f5344f19f850c95e9050327986b41eabed",
+      "bytes": 16067,
+      "title": "Tutorials - Di\u00e1taxis",
+      "http_status": 200
+    },
+    {
+      "file": "how-to.md",
+      "url": "https://diataxis.fr/how-to-guides/",
+      "final_url": "https://diataxis.fr/how-to-guides/",
+      "sha256": "882d027bc56ef56ab5a309bb78dcef102028f1077a68eb486eb408d98487ce84",
+      "bytes": 10777,
+      "title": "How-to guides - Di\u00e1taxis",
+      "http_status": 200
+    },
+    {
+      "file": "reference.md",
+      "url": "https://diataxis.fr/reference/",
+      "final_url": "https://diataxis.fr/reference/",
+      "sha256": "7c629ba34b6bff42d88e0d89b221a0640f61106ac93e752f10fb0f72b9a854d2",
+      "bytes": 5723,
+      "title": "Reference - Di\u00e1taxis",
+      "http_status": 200
+    },
+    {
+      "file": "explanation.md",
+      "url": "https://diataxis.fr/explanation/",
+      "final_url": "https://diataxis.fr/explanation/",
+      "sha256": "d97a9368ff8ca2729b1aa9665fbe2e453a47a596b5052aab8a8d5d3d5f4d9955",
+      "bytes": 7331,
+      "title": "Explanation - Di\u00e1taxis",
+      "http_status": 200
+    },
+    {
+      "file": "workflow.md",
+      "url": "https://diataxis.fr/how-to-use-diataxis/",
+      "final_url": "https://diataxis.fr/how-to-use-diataxis/",
+      "sha256": "b904c19d43b41960168b2a1ce5924abf1508430340ae4b908e6a77572f3c5907",
+      "bytes": 7354,
+      "title": "Di\u00e1taxis as a guide to work - Di\u00e1taxis",
+      "http_status": 200
+    }
+  ]
+}

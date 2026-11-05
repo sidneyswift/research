@@ -78,3 +78,21 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 ## MCP project — 2026-11-04
 
 - [[creators/model-context-protocol]] — protocol and official extension maintainers; separate from vendor-specific [[creators/openai]] extensions.
+
+- [[creators/daniele-procida]] — documentation research contributor/publisher.
+
+- [[creators/writethedocs]] — documentation research contributor/publisher.
+
+- [[creators/gitlab]] — documentation research contributor/publisher.
+
+- [[creators/cloudflare]] — documentation research contributor/publisher.
+
+- [[creators/jeremy-howard]] — documentation research contributor/publisher.
+
+- [[creators/github]] — documentation research contributor/publisher.
+
+- [[creators/twilio]] — documentation research contributor/publisher.
+
+- [[creators/alex-cummaudo]] — documentation research contributor/publisher.
+
+- [[creators/daye-nam]] — documentation research contributor/publisher.

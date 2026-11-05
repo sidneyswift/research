@@ -89,3 +89,7 @@ Pilot application: [[projects/conversation-learning/pilots/commercial-redline-00
 ## Trace Lake comparison — 2026-11-04
 
 [[concepts/trace-lake]] is a related runtime-failure→eval loop. It does not supply the maintainer-fix corpus, mined lint rules and measured backvalidation required by this pattern. Keep the existing proposed status and example count unchanged. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

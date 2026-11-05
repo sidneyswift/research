@@ -112,3 +112,7 @@ Completed the first comparative documentation pass across nine systems. [[analys
 ## Shopify addition — 2026-11-04
 
 Added [[artifacts/projects/shopify-api]] as the tenth API case study, with sixteen official documentation captures. It connects established Admin/business contracts to negotiated agent discovery, cart/checkout phases, browser/server tools and current developer context. [[patterns/composition/negotiated-capability-intersection]] captures the new proposed mechanism; [[analyses/frontier-and-business-api-design]] incorporates its comparison. Auth/example discrepancies and untested runtime behavior remain explicit on the artifact page.
+
+## Related documentation research — 2026-11-05
+
+[[projects/writing-amazing-developer-docs/README]] studies how developers and agents discover, learn, implement and recover using published documentation. [[concepts/developer-documentation-design]] owns the writing and maintenance findings.

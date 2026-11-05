@@ -221,3 +221,7 @@ The lifecycle/freshness concerns follow from asynchronous/CQRS contracts; reques
 ## MCP research connection — 2026-11-04
 
 [[concepts/model-context-protocol]] is a host/service facade over domain operations, not a replacement for their effect and consistency contracts. [[analyses/mcp-and-extensions]] applies that distinction to Apps, authorization and Tasks; transport retries need domain idempotency/readback. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#tools-state-errors]], [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#http-recovery]]
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

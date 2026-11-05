@@ -1,0 +1,14 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "proposal.md",
+      "url": "https://llmstxt.org/",
+      "final_url": "https://llmstxt.org/",
+      "sha256": "d6a6e8da4c5a688de3c4b1a1f2c7f566680734984c62a04ec86ffdd74e609311",
+      "bytes": 11949,
+      "title": "The /llms.txt file, v2 \u2013 llms-txt",
+      "http_status": 200
+    }
+  ]
+}

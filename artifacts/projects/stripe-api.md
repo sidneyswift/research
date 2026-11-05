@@ -81,3 +81,7 @@ The docs contain installation/setup instructions aimed at coding agents. We capt
 - How do these contracts behave under real concurrent edits, duplicate delivery, worker failures, or permission changes? Not runtime-tested in this pass.
 - Which smaller capabilities deserve agent-facing wrappers for the target business domain? Requires task/permission evidence.
 - Source anchors and links are mechanically checked during batch integration; live provider behavior remains unverified.
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

@@ -1,0 +1,123 @@
+{
+  "retrieved": "2026-11-05",
+  "scope": "13 official pages inspected in web research; captures preserve textual evidence, not visual or runtime validation",
+  "captures": [
+    {
+      "file": "stripe-webhooks.md",
+      "url": "https://docs.stripe.com/webhooks",
+      "retrieved": "2026-11-05",
+      "sha256": "f7a7a5b372cde769f394195d0bcf861d8827cafdae68e37e0bb35eb2332c70bb",
+      "bytes": 46086,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://docs.stripe.com/webhooks"
+    },
+    {
+      "file": "stripe-errors.md",
+      "url": "https://docs.stripe.com/api/errors",
+      "retrieved": "2026-11-05",
+      "sha256": "45e1fc6ddcf66ca9a1659b28d72f00a9740a57f6f222c6dc78ccd06cfba63728",
+      "bytes": 5242,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://docs.stripe.com/api/errors"
+    },
+    {
+      "file": "stripe-versioning.md",
+      "url": "https://docs.stripe.com/api/versioning",
+      "retrieved": "2026-11-05",
+      "sha256": "93ef1e0775f4c0cee6e868a4e840326518f4dd378b9bd2744105e10eb54a857c",
+      "bytes": 8926,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://docs.stripe.com/api/versioning"
+    },
+    {
+      "file": "github-best-practices.md",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api",
+      "retrieved": "2026-11-05",
+      "sha256": "d74fd8115ab191037653908a24e601e56ab7062c58ec824a4224e1f17aad9ca2",
+      "bytes": 10199,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api"
+    },
+    {
+      "file": "github-quickstart.md",
+      "url": "https://docs.github.com/en/rest/quickstart",
+      "retrieved": "2026-11-05",
+      "sha256": "dac4ff672eecef6a85f823b85f96fb75719584373fca8b7840d079ae7fbc9c5b",
+      "bytes": 18909,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://docs.github.com/en/rest/quickstart"
+    },
+    {
+      "file": "github-troubleshooting.md",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/troubleshooting-the-rest-api",
+      "retrieved": "2026-11-05",
+      "sha256": "82c5ca72c02c314e56d27f5026522a8b7dcf67ef859a5770b439cafc4c58fb2b",
+      "bytes": 16183,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://docs.github.com/en/rest/using-the-rest-api/troubleshooting-the-rest-api"
+    },
+    {
+      "file": "github-webhook-testing.md",
+      "url": "https://docs.github.com/en/webhooks/testing-and-troubleshooting-webhooks/testing-webhooks",
+      "retrieved": "2026-11-05",
+      "sha256": "753b76768c76a589e9da8c3a5e59c8a688b7ef65b6cc0dba3acac14c74e459a1",
+      "bytes": 8230,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://docs.github.com/en/webhooks/testing-and-troubleshooting-webhooks/testing-webhooks"
+    },
+    {
+      "file": "twilio-webhook-security.md",
+      "url": "https://www.twilio.com/docs/usage/webhooks/webhooks-security",
+      "retrieved": "2026-11-05",
+      "sha256": "5496c41cfc00ba3d391836a9813222e38b98e5a53983ded698c46ab7265df0d3",
+      "bytes": 26195,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://www.twilio.com/docs/usage/webhooks/webhooks-security"
+    },
+    {
+      "file": "twilio-sms-quickstart.md",
+      "url": "https://www.twilio.com/docs/messaging/quickstart",
+      "retrieved": "2026-11-05",
+      "sha256": "097e0d9e430006214045e3aae33c34522528ff0c172abc72d6917f62c12bc3ef",
+      "bytes": 53779,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://www.twilio.com/docs/messaging/quickstart"
+    },
+    {
+      "file": "twilio-error-21610.md",
+      "url": "https://www.twilio.com/docs/api/errors/21610",
+      "retrieved": "2026-11-05",
+      "sha256": "2330fa61bd777c986da9c68e99b453c39082923fa1da155733679bcc0f7192e6",
+      "bytes": 2276,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://www.twilio.com/docs/api/errors/21610"
+    },
+    {
+      "file": "cloudflare-api-calls.md",
+      "url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls/",
+      "retrieved": "2026-11-05",
+      "sha256": "d48c948814742710829a589fb827dc3fd3ab1b5fccaaa873ef27ef49f2e695e7",
+      "bytes": 16102,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://developers.cloudflare.com/fundamentals/api/how-to/make-api-calls/"
+    },
+    {
+      "file": "cloudflare-workers-quickstart.md",
+      "url": "https://developers.cloudflare.com/workers/get-started/guide/",
+      "retrieved": "2026-11-05",
+      "sha256": "057cbf38448981bd07f8515712f1e16c862e0ac54b325b33f4550fc185a7db2e",
+      "bytes": 12637,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://developers.cloudflare.com/workers/get-started/guide/"
+    },
+    {
+      "file": "cloudflare-markdown-agents.md",
+      "url": "https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/",
+      "retrieved": "2026-11-05",
+      "sha256": "74025782d0e73389b795b387aba6088b21dff12e91eaabab9f32b33b68f2afd6",
+      "bytes": 16740,
+      "extraction": "server-provided Markdown",
+      "resolved_url": "https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/"
+    }
+  ]
+}

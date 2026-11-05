@@ -75,3 +75,7 @@ wiki page), boundaries you applied (what you did NOT steal and why), a
 portability note for shared-core vs harness-specific pieces, an out-of-domain
 flag for what the wiki didn't cover, and any gaps to file back.
 ```
+
+## Developer documentation
+
+For developer portals, API guides, examples, troubleshooting and agent-readable docs, start at [[projects/writing-amazing-developer-docs/README]], then read [[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/page-blueprints]].

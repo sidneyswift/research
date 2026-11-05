@@ -1,0 +1,21 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "abstract.md",
+      "url": "https://arxiv.org/abs/1907.13260v1",
+      "final_url": "https://arxiv.org/abs/1907.13260v1",
+      "sha256": "8ebb2733108626a7f5e4314e5c29d40f8e3588b942baef8a6fde3731da871629",
+      "bytes": 4694,
+      "title": "[1907.13260v1] What should I document? A preliminary systematic mapping study into API documentation knowledge",
+      "http_status": 200
+    },
+    {
+      "file": "research-notes.md",
+      "url": "https://arxiv.org/abs/1907.13260v1",
+      "sha256": "d3ca7d05f2786b352cd9207e1901dca1be34a644967245681998d0a45f037d43",
+      "bytes": 1605,
+      "kind": "original-research-notes-not-paper-reproduction"
+    }
+  ]
+}

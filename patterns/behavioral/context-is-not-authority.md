@@ -100,3 +100,7 @@ Schmid locates credential injection, schema validation and possible destructive-
 ## SuperPlane — 2026-11-04
 
 Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided task context, enabled report checks, eligible approval actors and organization/token authorization. Read-only review instructions remain prompt policy. Admission disablement preserves cleanup rights for already-running tasks. [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#approval]] [[sources/superplanehq--superplane#authorization]] [[sources/superplanehq--superplane#runner-admission]]
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

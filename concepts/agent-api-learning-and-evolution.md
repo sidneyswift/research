@@ -160,3 +160,7 @@ If a model performs better on a popular API, naming, documentation quality, tool
 ## Verification boundary
 
 This page synthesizes captured source text and inspected provider documentation pages. The Toolformer **abstract** is the evidence used; the full captured PDF was not analyzed for additional experimental claims. BFCL is a historical methodology source, not a current leaderboard assessment. No training, fine-tuning, agent benchmark, live API request or enterprise failure-injection experiment was run for this page.
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

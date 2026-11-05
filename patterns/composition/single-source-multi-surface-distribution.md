@@ -121,3 +121,7 @@ Internal design application: [[projects/conversation-learning/README]] proposes 
 ### Open Inspect — shared protocol with explicit normalization
 
 [[artifacts/projects/background-agents]] names shared session contracts as the source of truth across control plane and clients, while adapters normalize local representations and harness events. Shared transport vocabulary does not make every provider lifecycle or usage unit equivalent. [[sources/open-inspect--background-agents#protocol]] [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#export]]
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

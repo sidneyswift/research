@@ -90,3 +90,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] records PR revisions, invalidates mergeability when the head changes and requires an expected SHA at merge. This is an additional narrower revision-freshness analogue, not evidence of the complete delta-view/structured-feedback-anchor mechanism. Status remains proposed and full-pattern example count stays one. [[sources/superplanehq--superplane#pr-revision]] [[sources/superplanehq--superplane#merge]]
+
+## Documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.

@@ -1,0 +1,77 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "audience.md",
+      "url": "https://developers.google.com/tech-writing/one/audience",
+      "final_url": "https://developers.google.com/tech-writing/one/audience",
+      "sha256": "00a5e7917c48783bf1c92104d201aca228c8057014caa6c2898e0c59e3968e92",
+      "bytes": 11374,
+      "title": "Audience \u00a0|\u00a0 Technical Writing \u00a0|\u00a0 Google for Developers",
+      "http_status": 200
+    },
+    {
+      "file": "sample-code.md",
+      "url": "https://developers.google.com/tech-writing/two/sample-code",
+      "final_url": "https://developers.google.com/tech-writing/two/sample-code",
+      "sha256": "e45a2d06bb5d84a73201d8fd2ca8ebf3306ac739f7c14324444b7e0b62bcd2ea",
+      "bytes": 9362,
+      "title": "Creating sample code \u00a0|\u00a0 Technical Writing \u00a0|\u00a0 Google for Developers",
+      "http_status": 200
+    },
+    {
+      "file": "procedures.md",
+      "url": "https://developers.google.com/style/procedures",
+      "final_url": "https://developers.google.com/style/procedures",
+      "sha256": "b303a6d0aaca90ed3191fa5b39c01683db1fdba2ab9ff43f94143109cff4e542",
+      "bytes": 12772,
+      "title": "Procedures \u00a0|\u00a0 Google developer documentation style guide \u00a0|\u00a0 Google for Developers",
+      "http_status": 200
+    },
+    {
+      "file": "headings.md",
+      "url": "https://developers.google.com/style/headings",
+      "final_url": "https://developers.google.com/style/headings",
+      "sha256": "fe409973d4c48b6c0c0c575d090c5e7a2406faddb00c9bc534f9c3e618605367",
+      "bytes": 9033,
+      "title": "Headings and titles \u00a0|\u00a0 Google developer documentation style guide \u00a0|\u00a0 Google for Developers",
+      "http_status": 200
+    },
+    {
+      "file": "links.md",
+      "url": "https://developers.google.com/style/link-text",
+      "final_url": "https://developers.google.com/style/cross-references",
+      "sha256": "8515a2bf5912aeca3cb20393ebdfc121ec9bea8e193b57490a00c1e5a9e58f98",
+      "bytes": 13922,
+      "title": "Cross-references and linking \u00a0|\u00a0 Google developer documentation style guide \u00a0|\u00a0 Google for Developers",
+      "http_status": 200
+    },
+    {
+      "file": "accessibility.md",
+      "url": "https://developers.google.com/style/accessibility",
+      "final_url": "https://developers.google.com/style/accessibility",
+      "sha256": "4dfb60f2118b25da1fc66947bc17d13f8830b014511e871862a546698702e35a",
+      "bytes": 11887,
+      "title": "Write accessible documentation \u00a0|\u00a0 Google developer documentation style guide \u00a0|\u00a0 Google for Developers",
+      "http_status": 200
+    },
+    {
+      "file": "maintenance.md",
+      "url": "https://google.github.io/styleguide/docguide/best_practices.html",
+      "final_url": "https://google.github.io/styleguide/docguide/best_practices.html",
+      "sha256": "b51db2680436e7e6fa3144769d5856cc3daa6e3bbe5e0a8c103466315e5dfb2a",
+      "bytes": 6063,
+      "title": "Documentation Best Practices | Google Style Guides",
+      "http_status": 200
+    },
+    {
+      "file": "documents.md",
+      "url": "https://developers.google.com/tech-writing/one/documents",
+      "final_url": "https://developers.google.com/tech-writing/one/documents",
+      "sha256": "81f3c84cd427ab319f8206b5c5d1ab8edd6c3ea77763689c378d574d013e2d8f",
+      "bytes": 7375,
+      "title": "Documents \u00a0|\u00a0 Technical Writing \u00a0|\u00a0 Google for Developers",
+      "http_status": 200
+    }
+  ]
+}

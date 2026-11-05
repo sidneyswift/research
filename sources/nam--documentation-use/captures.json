@@ -1,0 +1,21 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "abstract.md",
+      "url": "https://arxiv.org/abs/2310.10817v2",
+      "final_url": "https://arxiv.org/abs/2310.10817v2",
+      "sha256": "b9550899ace78887cbb803aae3da7e62d471f8fd00d0da5ec4a9bed8516955d8",
+      "bytes": 4753,
+      "title": "[2310.10817v2] Understanding Documentation Use Through Log Analysis: An Exploratory Case Study of Four Cloud Services",
+      "http_status": 200
+    },
+    {
+      "file": "research-notes.md",
+      "url": "https://arxiv.org/abs/2310.10817v2",
+      "sha256": "10cb09c399706e8e4314db36328c468588ea83dcaaa0b0eb825ac656f1cef723",
+      "bytes": 2064,
+      "kind": "original-research-notes-not-paper-reproduction"
+    }
+  ]
+}
