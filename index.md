@@ -25,6 +25,9 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/thinking-machines--inkling-2-small]] — November 5 model announcement; full HTML, tables, forecast replay and images.
+- [[sources/thinking-machines--inkling-2-support]] — model card, release policy, expert-label study, Tinker contracts and pinned async source.
+
 - [[sources/vercel--introducing-schedules]] — November 4 announcement, captured November 6.
 - [[sources/vercel--schedules-docs]] — seventeen primary documentation/resources with contracts, drift and scoped read records.
 
@@ -114,6 +117,8 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
 ## Creators
+
+- [[creators/thinking-machines]] — Inkling models and Tinker; scoped to the new model release and its supporting evidence.
 
 - [[creators/luis-hector-chavez]] — managed-agent-environment advisory.
 - [[creators/replit]] — Agent Habitat reference architecture proposal.
@@ -216,6 +221,8 @@ Candidate queue (dozens more from `mattpocock/skills`, `anthropic/skills`, gstac
 Candidate queue: see [artifacts/mcp-servers/_index.md](artifacts/mcp-servers/_index.md).
 
 ## Artifacts — Projects
+
+- [[artifacts/projects/inkling-2-small]] — 44 model-adaptation/evaluation/control principles; dated release state and service limits.
 
 - [[artifacts/projects/vercel-schedules]] — public-beta static/dynamic scheduling; 44 principles, target-dependent retry, current authority and completion boundaries.
 

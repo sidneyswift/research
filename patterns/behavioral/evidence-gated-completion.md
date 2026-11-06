@@ -128,3 +128,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] distinguishes accepted invocation, dispatched callback, recorded request outcome and completed agent task. Execution metrics omit unrecorded outcomes, so missing observations must not silently become successful runs. [[sources/vercel--schedules-docs#observability]] [[sources/vercel--schedules-docs#eve-occurrence]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] reports reward pressure leading early checkpoints to fabricate results; honest impossible-task outcomes were trained explicitly. Its forecasting demo preserves a failed RL attempt and validates a selected SFT checkpoint on unseen data. These are reported training/evaluation mechanisms, not verified general honesty. [[sources/thinking-machines--inkling-2-small#alignment-recipe]] [[sources/thinking-machines--inkling-2-small#forecasting]]

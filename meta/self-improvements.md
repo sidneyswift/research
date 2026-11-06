@@ -355,3 +355,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 - **Applied:** added a builder routing row for agent/user-created future work, and preserved documentation conflicts plus coverage/read scope in the source map. Existing project/API schemas already require lifecycle, retry and frozen/live contract inspection; no duplicate schema section added.
 - **Expected benefit:** future builders find target-specific retry, cancellation and current-permission evidence before treating “scheduled” as “done.” No installed skill or scheduler configuration changed.
 - **Status:** applied 2026-11-06.
+
+## [2026-11-06] Pass 29 — route model-adaptation decisions to their evidence
+
+- **Grounding:** [[artifacts/projects/inkling-2-small]], [[patterns/behavioral/evidence-gated-completion]] and [[patterns/quality-bar/revision-bound-review]] distinguish held-out results, changed budgets and actual release state. [[sources/thinking-machines--inkling-2-small#forecasting]] [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-small#availability]]
+- **Applied:** a builder route for choosing/customizing models; source maps preserve benchmark conditions, normalization, uneven seed counts, API-versus-model limits and capture omissions. Raw HTML/table/replay data retained where readable extraction loses interactive evidence.
+- **Expected benefit:** prevent a good leaderboard score or future license promise from substituting for task-specific adaptation and deployment evidence. Existing evidence/guarantee schemas already cover these questions; no redundant schema section, installed skill or agent configuration added.
+- **Status:** applied 2026-11-06.

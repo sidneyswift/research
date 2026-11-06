@@ -42,12 +42,12 @@ See [[projects/_index]] for projects created from the research, starting with [[
 | --- | --- | --- |
 | Skills cataloged | 6 paged | 2026-11-06 |
 | Plugins cataloged | 10 | 2026-11-04 |
-| Projects cataloged | 24 | 2026-11-06 |
+| Projects cataloged | 25 | 2026-11-06 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
 | Concepts cataloged | 30 | 2026-11-06 |
 | Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
-| Creators cataloged | 46 | 2026-11-06 |
-| Source citation pages | 89: 20 article, 37 docs-page, 5 other, 4 paper, 22 repo, 1 tweet | 2026-11-06 |
+| Creators cataloged | 47 | 2026-11-06 |
+| Source citation pages | 91: 21 article, 38 docs-page, 5 other, 4 paper, 22 repo, 1 tweet | 2026-11-06 |
 
 Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
 
@@ -71,4 +71,4 @@ Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverag
 
 Latest concept ingest: [[concepts/agent-habitat-architecture]] — 44 independent-enforcement and authority/recovery principles; full X article and images preserved, linked reference captures qualified. Reference proposal, not an installed control system or verified vendor maturity level.
 
-Latest project ingest: [[artifacts/projects/vercel-schedules]] — 44 scheduling/delivery/authority principles, announcement plus seventeen named documentation resources preserved. Public-beta documentation study; no schedules created or migration performed.
+Latest project ingest: [[artifacts/projects/inkling-2-small]] — 44 adaptation/evaluation/containment principles, 25 preserved evidence files. Hosted access and promised weights kept separate; no model training or benchmark replication.

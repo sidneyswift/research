@@ -116,3 +116,7 @@ Portable design ledger; ★ marks the highest-leverage ideas. Concrete adaptatio
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] distinguishes model/tool investigation traces from off-host, tamper-evident enforcement records. A record of a warning is not prevention if the action ran first; the Manus case supplies that attributed counterexample. [[sources/replit--agent-habitat-architecture#audit]] [[sources/lhchavez--managed-agent-environments#cloud-counterexample]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] supplies two distinct uses for traces: asynchronous monitoring feeds incident remediation, while token-to-sequence provenance makes sampled data eligible for a particular training loss. Storing a trace does not preserve same-session sequence identity, stability records or reuse deadlines automatically. [[sources/thinking-machines--inkling-2-small#monitors-incident]] [[sources/thinking-machines--inkling-2-support#stable-reinforce]] [[sources/thinking-machines--inkling-2-support#datum-provenance]]

@@ -770,3 +770,13 @@ User authorized committing, pushing and merging all pending Research work. Conso
 ## [2026-11-06] reflect | discover time-shifted execution contracts
 
 - Added source-grounded builder route; existing project/API schemas already cover lifecycle and revision scope, so no duplicate checklist. See [[meta/self-improvements]].
+
+## [2026-11-06] ingest | Inkling 2 Small
+
+- Added [[artifacts/projects/inkling-2-small]], [[creators/thinking-machines]] and two source maps with 44 principles. Full announcement/HTML, 12 tables, replay JSON, seven chart fragments and two images preserved; model card, release policy, financial-task study, Tinker contracts/pricing and selected pinned cookbook code/license included (25 evidence files).
+- Distinguished hosted access from planned Apache weights, context from cumulative trajectory/service limits, normalized score from raw error, validation from unseen results, skill selection from execution, author-reported monitoring from enforced controls. PMPP body unavailable; videos not reviewed; partial visual rendering noted. No model invoked or training expense incurred.
+- Validation: 25 capture hashes/byte counts, 12-table structure, exact embedded replay JSON, complete extracted article, five pinned source ranges, 29 registered anchors and 108 new page-target links (62 source-anchor links) checked; no new wiki-doctor findings. No orphan introduced or pattern promoted. Source tables/JSON support numeric claims; no model performance test claimed.
+
+## [2026-11-06] reflect | model selection is an evaluation-contract decision
+
+- Added a grounded builder route, preserving complete comparison conditions and availability state. Existing templates suffice; no speculative new pattern or duplicated schema checklist. See [[meta/self-improvements]].

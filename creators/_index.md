@@ -100,3 +100,5 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/daye-nam]] — documentation research contributor/publisher.
 
 - [[creators/replit]] — publisher of the proposed Agent Habitat architecture and maturity rubric.
+
+- [[creators/thinking-machines]] — Inkling 2 Small and scoped Tinker supporting evidence.

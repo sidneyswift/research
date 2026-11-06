@@ -175,3 +175,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] includes a captured skill with import/path/command signals and prompt exclusions for meetings/calendar events. This is declared routing metadata beside Skill++’s measured routing experiments, not evidence those selectors improve accuracy. [[sources/vercel--schedules-docs#skill]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] explicitly acknowledges imperfect tool selection in codebases with many skills. This motivates testing routes separately from execution and complements Skill++’s controlled study; it does not show that access forgetting caused this model’s failures or that Skill++ fixes them. [[sources/thinking-machines--inkling-2-small#limitations]]

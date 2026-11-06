@@ -64,3 +64,5 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 - [[artifacts/projects/openai-mcp-extensions]] — pinned ChatGPT-specific SDK and app/plugin contracts.
 
 - [[artifacts/projects/vercel-schedules]] — managed schedule resources; 44 principles from the announcement, delivery/API docs and experimental eve integration. Documentation-inspected, not runtime-tested.
+
+- [[artifacts/projects/inkling-2-small]] — 44 principles from the model release, supporting contracts and selected async source; no model benchmark run.

@@ -197,3 +197,6 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 
 - [[sources/vercel--introducing-schedules]] — full official announcement and both examples.
 - [[sources/vercel--schedules-docs]] — seventeen named captures; retry/cancellation/version/time/identity contracts and documented conflicts.
+
+- [[sources/thinking-machines--inkling-2-small]] — full article/HTML, 12 tables, embedded replay, seven chart fragments and two images.
+- [[sources/thinking-machines--inkling-2-support]] — model card, release policy, Bridgewater study, Tinker contracts/pricing and pinned cookbook file; incomplete PMPP capture marked.

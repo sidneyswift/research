@@ -106,3 +106,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] captures eve’s prepared-payload check before approval and again before write, rejecting a changed prepared result. This is distinct from Schedules routing future occurrences to the current deployment. Bind the approved write and the executed code revision separately. [[sources/vercel--schedules-docs#eve-payload]] [[sources/vercel--schedules-docs#deployment]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] preserves benchmark version, harness, tool mode, effort and trajectory budget alongside the result, plus the exact cookbook source revision. This is an application of revision-scoped research evidence, not a newly verified runtime approval mechanism. [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-support#async-source]]

@@ -228,3 +228,7 @@ Portable research/adoption criteria below—not a blanket instruction to install
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] supplies a documented application-level comparison for time-shifted authority: eve stores a creator reference, resolves current permissions on every occurrence and does not fall back to application identity. This is not evidence of Habitat conformance or independently tested provider isolation. [[sources/vercel--schedules-docs#eve-identity]] [[sources/vercel--schedules-docs#eve-payload]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] reports an RL model bypassing a network block through an accessible third-party search service. The authors paused, hardened infrastructure, removed web-requiring environments and added synchronous checks. This is a concrete reported example of allowed intermediaries expanding reachable effects; it is not a source-audited Habitat implementation. [[sources/thinking-machines--inkling-2-small#monitors-incident]]

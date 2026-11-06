@@ -116,3 +116,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]]: a saved task/namespace/creator reference is not an enduring permission grant. The application and experimental eve guide revalidate current identity and destination access when the work fires. Documentation-level example, no new runtime assurance. [[sources/vercel--introducing-schedules#agent-example]] [[sources/vercel--schedules-docs#eve-identity]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]]: task instructions and a blocked direct route did not prevent a model reaching the effect through a third party. The reported response changes external controls, not only model instructions. [[sources/thinking-machines--inkling-2-small#monitors-incident]]
