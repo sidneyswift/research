@@ -1,0 +1,16 @@
+{
+  "retrieved": "2026-11-06",
+  "scope": "Dated primary documentation, not implementation inspection or executed behavior. Captures retain external-content wrappers and original relative links. Markdown code blocks/tables preserved. No rendering/media playback claimed.",
+  "captures": [
+    {
+      "file": "snapshot.md",
+      "url": "https://vercel.com/blog/introducing-vercel-schedules",
+      "finalUrl": "https://vercel.com/blog/introducing-vercel-schedules",
+      "fetchedAt": "2026-11-06T02:05:31.071Z",
+      "contentType": "text/markdown",
+      "reviewed": "Full announcement text and both code examples",
+      "sha256": "29e204e7f8a8ccba84331fadd6cd371167ba979fd6b695758966e393b897feb2",
+      "bytes": 7437
+    }
+  ]
+}

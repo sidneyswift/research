@@ -171,3 +171,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] provides a scope distinction worth testing in routing evaluations: its description includes broad security questions, but its body defaults to guidance and reserves full execution/file creation for explicit audit/report intent. Discovery of the skill is not authorization to run every phase. No routing-retention or task-success benchmark was executed for this source. [[sources/cloudflare--security-audit-skill#modes]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] includes a captured skill with import/path/command signals and prompt exclusions for meetings/calendar events. This is declared routing metadata beside Skill++’s measured routing experiments, not evidence those selectors improve accuracy. [[sources/vercel--schedules-docs#skill]]

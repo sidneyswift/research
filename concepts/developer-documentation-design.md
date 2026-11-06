@@ -312,3 +312,7 @@ Choose representative novices and experienced integrators, several business task
 - Do scoped Markdown indexes or documentation search tools improve correctness for our actual agents, compared with ordinary page retrieval?
 - Which supported languages and shells have enough readers to justify maintained executable examples?
 - Can agent-assisted drafts reduce authoring time without increasing technical-review burden? No result is claimed here.
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] preserves source drift between a launch example, product configuration, skill guidance and framework envelopes rather than blending them into a fictional contract. The capture records 8/16/64 KB scope differences and a source-path/build-output-path conflict. [[sources/vercel--schedules-docs#documentation-conflicts]]

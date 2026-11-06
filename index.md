@@ -25,6 +25,9 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/vercel--introducing-schedules]] — November 4 announcement, captured November 6.
+- [[sources/vercel--schedules-docs]] — seventeen primary documentation/resources with contracts, drift and scoped read records.
+
 - [[sources/lhchavez--managed-agent-environments]] — X article, full body/images and qualified incident/survey evidence; 2026-11-06 capture.
 - [[sources/replit--agent-habitat-architecture]] — living white paper; proposed architecture and eleven-track evidence rubric, 2026-11-06 capture.
 
@@ -213,6 +216,8 @@ Candidate queue (dozens more from `mattpocock/skills`, `anthropic/skills`, gstac
 Candidate queue: see [artifacts/mcp-servers/_index.md](artifacts/mcp-servers/_index.md).
 
 ## Artifacts — Projects
+
+- [[artifacts/projects/vercel-schedules]] — public-beta static/dynamic scheduling; 44 principles, target-dependent retry, current authority and completion boundaries.
 
 - [[artifacts/projects/shopify-api]] — commerce/Admin and agent-facing APIs; documentation-investigated, no live execution.
 

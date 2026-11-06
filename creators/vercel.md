@@ -59,3 +59,7 @@ last-reviewed: 2026-06-20
 ## Related sandbox integration — 2026-11-04
 
 [[artifacts/projects/background-agents]] documents Vercel Sandbox as one supported execution backend. This is Open Inspect’s integration, distinct from [[artifacts/projects/eve]], and no provider deployment was exercised during ingestion. [[sources/open-inspect--background-agents#architecture]]
+
+## Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] adds runtime-managed one-time and recurring triggers to the catalog. The announcement distinguishes scheduled delivery from application work and calls for checking the user's current permissions at execution. The current docs add target-specific retry behavior, environment routing and experimental eve creator revalidation; no backend or live scheduler was tested here. [[sources/vercel--introducing-schedules#agent-example]] [[sources/vercel--schedules-docs#targets]] [[sources/vercel--schedules-docs#eve-identity]]

@@ -759,3 +759,14 @@ User authorized committing, pushing and merging all pending Research work. Conso
 ## [2026-11-06] reflect | security-state restore and downstream revocation
 
 - Applied the source-grounded project-schema check and builder routing; see [[meta/self-improvements]]. Proposal-derived assessment criteria remain distinct from implementation evidence.
+
+## [2026-11-06] ingest | Vercel Schedules
+
+- Added [[artifacts/projects/vercel-schedules]] with 44 principles and two source citation pages; full requested announcement/two examples plus seventeen primary documentation/resources preserved. Linked integrations/navigation not all read; full-corpus attempt timed out; selected Queues contract sections explicitly recorded.
+- Captured target-specific retries, current-deployment selection, duplicate/overlapping/late occurrences, cancellation cutoff, OIDC/tenant scope, API unknown-write outcomes and experimental eve identity/approval/session contracts. Recorded skill/docs/changelog discrepancies instead of resolving them by assumption.
+- Validation: 18 immutable capture hashes/byte counts, 66 source-anchor links and 22 relative links pass; wiki doctor remains baseline50 with no new findings. All captured Markdown code fences are paired. No installed skill, scheduled job, deployment or migration changed; documentation study, not runtime benchmark.
+- ratchet: page-target links +110 · new orphans +0 · confirmed patterns +0.
+
+## [2026-11-06] reflect | discover time-shifted execution contracts
+
+- Added source-grounded builder route; existing project/API schemas already cover lifecycle and revision scope, so no duplicate checklist. See [[meta/self-improvements]].

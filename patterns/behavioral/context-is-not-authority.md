@@ -112,3 +112,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] is a proposed specialization: attested identity grants no permissions; public trigger provenance caps authority; hiding service credentials does not constrain all requested effects. Proposal evidence is not another independently executed artifact example. [[sources/replit--agent-habitat-architecture#identity]] [[sources/lhchavez--managed-agent-environments#credential-authority]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]]: a saved task/namespace/creator reference is not an enduring permission grant. The application and experimental eve guide revalidate current identity and destination access when the work fires. Documentation-level example, no new runtime assurance. [[sources/vercel--introducing-schedules#agent-example]] [[sources/vercel--schedules-docs#eve-identity]]

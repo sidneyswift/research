@@ -225,3 +225,7 @@ The lifecycle/freshness concerns follow from asynchronous/CQRS contracts; reques
 ## Documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] is a schedule-resource API case study: name/ID/occurrence identity, OIDC environment scope, partial read projections, cursor-complete pagination and retry-after-write ambiguity. HTTP and SDK shapes differ; invoke is not generally retry-idempotent. [[sources/vercel--schedules-docs#api]] [[sources/vercel--schedules-docs#sdk]] [[sources/vercel--schedules-docs#retry-boundary]]

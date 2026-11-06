@@ -111,3 +111,7 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] selects attack-domain guidance from concrete source-visible trust boundaries. Each assignment receives exact selected rule blocks plus explicit exclusions; merely listing a companion filename is insufficient. This is a bounded internal routing/disclosure example, not a tested global skill-selection guarantee. [[sources/cloudflare--security-audit-skill#context-selection]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] includes an authoring skill with positive/negative prompt selectors and path/import/command signals. The experimental eve integration exposes per-operation tools directly or via deferred discovery while retaining scope checks. Declared selectors and discovery parity were not evaluated here. [[sources/vercel--schedules-docs#skill]] [[sources/vercel--schedules-docs#eve-tools]]

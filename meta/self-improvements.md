@@ -348,3 +348,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 - **Applied:** added a scoped security-state/residual-delegation question to `_schemas/project.md`, grounded in [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/evidence-gated-completion]]. Added a builder route to [[concepts/agent-habitat-architecture]].
 - **Expected benefit:** future source studies name the actual restore/revocation boundary instead of upgrading credential custody or process termination into stronger guarantees. No installed skill, runtime policy or approval flow changed.
 - **Status:** applied 2026-11-06; schema criteria only, with proposal status retained.
+
+## [2026-11-06] Pass 28 — route time-shifted work to its real contracts
+
+- **Grounding:** [[artifacts/projects/vercel-schedules]], [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/evidence-gated-completion]] separate permission revalidation and accepted/dispatched/completed work. [[sources/vercel--schedules-docs#eve-identity]] [[sources/vercel--schedules-docs#eve-occurrence]]
+- **Applied:** added a builder routing row for agent/user-created future work, and preserved documentation conflicts plus coverage/read scope in the source map. Existing project/API schemas already require lifecycle, retry and frozen/live contract inspection; no duplicate schema section added.
+- **Expected benefit:** future builders find target-specific retry, cancellation and current-permission evidence before treating “scheduled” as “done.” No installed skill or scheduler configuration changed.
+- **Status:** applied 2026-11-06.

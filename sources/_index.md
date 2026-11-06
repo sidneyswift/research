@@ -194,3 +194,6 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 
 - [[sources/lhchavez--managed-agent-environments]] — complete X advisory and three images, twelve supporting captures with partial/evidence limits.
 - [[sources/replit--agent-habitat-architecture]] — separate dated white-paper capture; proposed controls and maturity criteria.
+
+- [[sources/vercel--introducing-schedules]] — full official announcement and both examples.
+- [[sources/vercel--schedules-docs]] — seventeen named captures; retry/cancellation/version/time/identity contracts and documented conflicts.

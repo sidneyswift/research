@@ -127,3 +127,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] adds a proposed **security-state recovery** contract: restore attenuations, spent budgets, consumed approvals and action history with work progress. Journaled model replay is not universal exactly-once external effect; reconcile unknown outcomes. [[sources/replit--agent-habitat-architecture#durability]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] separates timer occurrences, queue delivery and workflow recovery. Stable execution IDs do not make external effects exactly once; scheduler occurrence expiry and queue retention are separate windows. The newer experimental eve docs distinguish callback dispatch from agent completion. [[sources/vercel--schedules-docs#timing]] [[sources/vercel--schedules-docs#queue-contract]] [[sources/vercel--schedules-docs#eve-occurrence]]

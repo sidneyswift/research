@@ -124,3 +124,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] requires evidence for separate isolation, containment and recovery contracts. A stopped process, revoked original credential and removed downstream delegation are different outcomes; the eleven-track maturity rubric remains a proposal. [[sources/replit--agent-habitat-architecture#containment]] [[sources/replit--agent-habitat-architecture#maturity]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] distinguishes accepted invocation, dispatched callback, recorded request outcome and completed agent task. Execution metrics omit unrecorded outcomes, so missing observations must not silently become successful runs. [[sources/vercel--schedules-docs#observability]] [[sources/vercel--schedules-docs#eve-occurrence]]

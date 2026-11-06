@@ -102,3 +102,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] proposes binding approvals to actual actions and audit records to policy/build versions. Resuming a run must preserve consumed approvals rather than silently renew them. No deployment verification is implied. [[sources/replit--agent-habitat-architecture#approval]] [[sources/replit--agent-habitat-architecture#durability]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] captures eve’s prepared-payload check before approval and again before write, rejecting a changed prepared result. This is distinct from Schedules routing future occurrences to the current deployment. Bind the approved write and the executed code revision separately. [[sources/vercel--schedules-docs#eve-payload]] [[sources/vercel--schedules-docs#deployment]]

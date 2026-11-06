@@ -224,3 +224,7 @@ Portable research/adoption criteria below—not a blanket instruction to install
 - Can data-flow tracking survive model transformations, encoding and multihop tools without unacceptable false positives or leaks?
 - What negative tests, independent reviews and comparative outcome data would justify a specific product's claimed maturity level?
 - Which controls earn their implementation cost at the required scope, rather than recreating the entire proposal before a bounded use case exists?
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] supplies a documented application-level comparison for time-shifted authority: eve stores a creator reference, resolves current permissions on every occurrence and does not fall back to application identity. This is not evidence of Habitat conformance or independently tested provider isolation. [[sources/vercel--schedules-docs#eve-identity]] [[sources/vercel--schedules-docs#eve-payload]]
