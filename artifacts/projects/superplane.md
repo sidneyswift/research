@@ -159,3 +159,7 @@ Portable mechanisms from the inspected scope; ★ marks priorities, not evidence
 - Compare task success, human review time, defect escape rate, repair attempts and cost with/without model-scored review on a representative corpus. Score validity is not calibration.
 - Audit supported deployment modes for authentication-rule coverage, host/container isolation, network policy enforcement and credential revocation. This source pass does not certify them.
 - **Preservation and validation:** complete pinned tracked tree local-only; immutable source links and hashes in [[sources/superplanehq--superplane]]. Source application tests not run. Research link/range/hash checks and wiki-doctor delta are the ingestion checks, not product runtime verification.
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] provides a proposed action-authorization comparison: approval should bind the actual operation, target and destination, and recovery must retain consumed approvals. This does not upgrade existing SuperPlane guarantees or claim Habitat compliance. [[sources/replit--agent-habitat-architecture#approval]] [[sources/replit--agent-habitat-architecture#durability]]

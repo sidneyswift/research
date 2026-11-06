@@ -61,6 +61,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Individuals
 
+- [[creators/luis-hector-chavez]] — Replit-affiliated author of the managed-agent-environment advisory.
+
 - [[creators/hanrong-zhang]] — co-first author of Skill++ with Minghao Liang; skill access stability/plasticity.
 
 - [[creators/ankur-goyal]] — author of The Trace Lake; production evidence and evaluation loops.
@@ -96,3 +98,5 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/alex-cummaudo]] — documentation research contributor/publisher.
 
 - [[creators/daye-nam]] — documentation research contributor/publisher.
+
+- [[creators/replit]] — publisher of the proposed Agent Habitat architecture and maturity rubric.

@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-11-06",
+  "review_scope": "Full extracted white-paper text, component descriptions, 12 principles and 11 maturity tracks reviewed. Readable extraction flattens tables and preserves figure captions but not diagram pixels. Direct HTML retrieval returned 403; diagram visuals and downstream illustrative links not exhaustively verified. Proposed architecture, not deployed implementation evidence.",
+  "captures": [
+    {
+      "url": "https://frontier.replit.com/agent-habitat-architecture/",
+      "finalUrl": "https://frontier.replit.com/agent-habitat-architecture/",
+      "fetchedAt": "2026-11-06T01:51:07.063Z",
+      "file": "snapshot.md",
+      "extraction": "web_fetch readable Markdown; full spill used when returned",
+      "name": "replit-agent-habitat",
+      "partial": false,
+      "sha256": "f56486ba1d611725ce40c9013f758a071ab9840299103dd3a83628b8cd03ad75",
+      "bytes": 42941
+    }
+  ]
+}

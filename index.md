@@ -25,6 +25,9 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/lhchavez--managed-agent-environments]] — X article, full body/images and qualified incident/survey evidence; 2026-11-06 capture.
+- [[sources/replit--agent-habitat-architecture]] — living white paper; proposed architecture and eleven-track evidence rubric, 2026-11-06 capture.
+
 Cloned repo snapshots and their citation pages. Repo files live at `sources/<creator>--<repo>/`; the `.md` page is the citation target.
 
 | Source | Type | Snapshot date | Commit |
@@ -108,6 +111,9 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
 ## Creators
+
+- [[creators/luis-hector-chavez]] — managed-agent-environment advisory.
+- [[creators/replit]] — Agent Habitat reference architecture proposal.
 
 - [[creators/shopify]] — [[artifacts/projects/shopify-api]].
 
@@ -250,6 +256,8 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/agent-habitat-architecture]] — 44 principles for independent enforcement, effect authorization, attenuation, recovery and containment; proposed architecture, not product certification.
 
 - [[concepts/model-context-protocol]] — roles, primitives, current core and legacy compatibility.
 - [[concepts/mcp-extension-architecture]] — extension lifecycle, negotiation, Tasks, discovery and support limits.

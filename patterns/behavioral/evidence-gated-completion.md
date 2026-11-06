@@ -120,3 +120,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] requires independently decided verdict records and preserves unvalidated candidates outside `findings.json`. Its executable validators check status/evidence consistency, not exploit truth or complete coverage. This is a prompt-defined evidence gate with deterministic bookkeeping, not an enforced end-to-end audit engine. [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] requires evidence for separate isolation, containment and recovery contracts. A stopped process, revoked original credential and removed downstream delegation are different outcomes; the eleven-track maturity rubric remains a proposal. [[sources/replit--agent-habitat-architecture#containment]] [[sources/replit--agent-habitat-architecture#maturity]]

@@ -69,3 +69,5 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 - [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] — Matt Pocock's proposed domain coordinator/factory combination; connected to super-agent architecture without claiming tested durability or isolation.
 
 - [[concepts/developer-documentation-design]] — reader tasks, examples, recovery, navigation, docs engineering, agent access and evaluation.
+
+- [[concepts/agent-habitat-architecture]] — independent authority and containment around untrusted execution; 44 portable principles; proposed eleven-track rubric, no runtime assurance.

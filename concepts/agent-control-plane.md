@@ -140,3 +140,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] adds a workflow-centered example: a Work Order persists across automation runs, while per-key queues, PR mutation ownership and runner fleets handle different coordination scopes. Human requirements and model confidence checks are different mechanisms; neither a canvas nor a score alone grants execution authority. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#queue]] [[sources/superplanehq--superplane#pr-coordination]] [[sources/superplanehq--superplane#approval]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] adds a proposed independent enforcement layer around the coordination plane: identity, trigger, run ceiling, brokerage and containment are separate responsibilities. A persistent coordinator is not itself that security boundary. [[sources/replit--agent-habitat-architecture#components]] [[sources/replit--agent-habitat-architecture#identity]]

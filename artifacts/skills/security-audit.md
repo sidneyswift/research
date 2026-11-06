@@ -229,3 +229,7 @@ Portable research principles below, not an instruction to install the skill or a
 - Ownership, coverage, independent decisions and replacement rules: [[sources/cloudflare--security-audit-skill#coverage-contract]], [[sources/cloudflare--security-audit-skill#hunter-result]], [[sources/cloudflare--security-audit-skill#independent-validation]], [[sources/cloudflare--security-audit-skill#material-reverification]].
 - Executable checks and observed fixture outcome: [[sources/cloudflare--security-audit-skill#findings-code]], [[sources/cloudflare--security-audit-skill#coverage-code]], [[sources/cloudflare--security-audit-skill#test-execution]].
 - Full inventory, pinned domain references and historical context: [[sources/cloudflare--security-audit-skill#root]], [[sources/cloudflare--security-audit-skill#harness-context]].
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] supplies concrete runtime claims an evidence-oriented audit can investigate. Structural evidence validators do not prove complete mediation, credential secrecy or containment; assess those boundaries separately with scoped experiments. [[sources/lhchavez--managed-agent-environments#adoption-limits]] [[sources/replit--agent-habitat-architecture#maturity]]

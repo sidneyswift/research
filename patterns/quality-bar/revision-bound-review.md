@@ -98,3 +98,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] prescribes a narrower claim-revision gate: promoting or materially changing a final finding requires another fresh verifier; budget exhaustion removes the disputed record from findings and leaves incomplete ledger work. Cosmetic edits are distinguished from changed root cause, trace, input/result, impact or severity. This is not a second implementation of the full content-version/human-publication pattern, so proposed status and example count remain unchanged. [[sources/cloudflare--security-audit-skill#material-reverification]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] proposes binding approvals to actual actions and audit records to policy/build versions. Resuming a run must preserve consumed approvals rather than silently renew them. No deployment verification is implied. [[sources/replit--agent-habitat-architecture#approval]] [[sources/replit--agent-habitat-architecture#durability]]

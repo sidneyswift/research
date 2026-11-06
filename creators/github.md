@@ -28,3 +28,7 @@ See the observed practices and limits in [[concepts/developer-documentation-desi
 ## Timeline
 
 - 2026-11-05 — Added during the documentation research pass.
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] includes Invariant’s attributed GitHub MCP demonstration: legitimate tools can compose a cross-repository leak when public content is treated as instructions. This is not a claim of malicious GitHub server code. [[sources/lhchavez--managed-agent-environments#toxic-flow]]

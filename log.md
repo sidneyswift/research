@@ -748,3 +748,14 @@ User authorized committing, pushing and merging all pending Research work. Conso
 - Executed both bundled Node validator suites: **65 passed / 0 failed / 0 skipped**. Checks support fixture behavior and record consistency, not vulnerability recall, physical evidence existence, host isolation or complete audit execution. No skill installation or target audit. Historical fleet-harness claims remain separate.
 - REFLECT applied: added claim-lifecycle/enforcement boundaries to `_schemas/skill.md` and the security-review builder route; [[meta/self-improvements]] records the adoption trigger. Citation/hash/link checks passed with no new wiki-doctor findings versus the pulled baseline (score 50 unchanged; pre-existing issues retained).
 - Quality ratchet: at least **140 new page→target links** before this log/index follow-through; **orphans +0**, **new patterns +0**, existing comparisons extended. Terminal state: success for research ingestion and source preservation, not completion of a security audit.
+
+## [2026-11-06] ingest | managed agent environments and Agent Habitat
+
+- Read Chávez’s complete 57-block X article and all three images; captured twelve supporting references plus the separate living Replit white paper. Two linked captures are partial and labeled; white-paper diagrams and downstream reference tree not exhaustively inspected.
+- Added [[concepts/agent-habitat-architecture]] with 44 portable principles, two citation pages and two creators; propagated authority, recovery, evidence and containment comparisons without claiming deployed conformance or comparative breach rates. Incident allegations, research demonstrations, vendor reports and the non-AI signing analogy stay distinct.
+- Validation: all 57 article blocks and two captions retained; 20 capture hashes/byte counts, 69 new source-anchor links and 39 new relative links pass. Wiki doctor stays at its baseline score 50 with no new findings. No controls installed, exploits run or user-system security settings changed.
+- ratchet: page-target links +124 · new orphans +0 · confirmed patterns +0 (proposal not promoted).
+
+## [2026-11-06] reflect | security-state restore and downstream revocation
+
+- Applied the source-grounded project-schema check and builder routing; see [[meta/self-improvements]]. Proposal-derived assessment criteria remain distinct from implementation evidence.

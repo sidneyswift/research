@@ -150,3 +150,7 @@ Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts 
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] leaves source interpretation and falsification to investigators while code checks canonical identities, owners, state invariants, verdict-specific fields and bounded inputs. The split has an explicit limit: readable paths and nonempty observation text are not source existence or empirical proof. Both provided validator suites passed locally (65 tests); no full audit was exercised. [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]] [[sources/cloudflare--security-audit-skill#test-execution]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] proposes adaptive gates that can deny/escalate but never grant beyond a static ceiling, and moves exactly expressible history rules into policy. This documents a design application without promoting the proposal into tested implementation evidence. [[sources/replit--agent-habitat-architecture#filters]]

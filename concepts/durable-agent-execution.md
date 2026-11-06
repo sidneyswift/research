@@ -123,3 +123,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] persists event/queue/execution state before notification and recovers through pending-state scans. Runner completion hashes make identical terminal reports idempotent, not arbitrary remote effects. Finalization waits for tracked work to drain. Critically, copied node configuration coexists with live graph routing: specify the snapshot unit before claiming deterministic replay. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#execution-state]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] adds a proposed **security-state recovery** contract: restore attenuations, spent budgets, consumed approvals and action history with work progress. Journaled model replay is not universal exactly-once external effect; reconcile unknown outcomes. [[sources/replit--agent-habitat-architecture#durability]]

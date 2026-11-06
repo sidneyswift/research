@@ -341,3 +341,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 - Added a security-review evidence/coverage builder route and extended existing concepts instead of inventing another verification concept. Preserved the earlier verification-first argument: concrete falsification is not abstract adversarial nitpicking.
 - Status: **applied**. No installed skill, permission, production configuration or full audit changed. The only upstream execution was the dependency-free validator fixture suites (65 passing tests).
 - Promotion trigger for additional automation: actually adopt a scoped audit with a supplied sandbox and evidence-promoter implementation; then test cross-file completeness and worker identity with fixtures. Research alone does not justify building a new security harness.
+
+## [2026-11-06] Pass 27 — restore constraints, revoke effects
+
+- **Learning:** a resumed task may restore its work but accidentally renew authority; stopping/revoking the initiator may leave downstream grants. [[sources/replit--agent-habitat-architecture#durability]] [[sources/lhchavez--managed-agent-environments#containment]]
+- **Applied:** added a scoped security-state/residual-delegation question to `_schemas/project.md`, grounded in [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/evidence-gated-completion]]. Added a builder route to [[concepts/agent-habitat-architecture]].
+- **Expected benefit:** future source studies name the actual restore/revocation boundary instead of upgrading credential custody or process termination into stronger guarantees. No installed skill, runtime policy or approval flow changed.
+- **Status:** applied 2026-11-06; schema criteria only, with proposal status retained.

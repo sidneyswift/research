@@ -1,0 +1,202 @@
+{
+  "retrieved": "2026-11-06",
+  "post_id": "2117496522656841766",
+  "article_id": "2117493533749944320",
+  "created_at": "2026-11-03T05:58:06.000Z",
+  "modified_at": "2026-11-03T06:00:46.000Z",
+  "block_count": 57,
+  "block_types": {
+    "atomic": 2,
+    "header-one": 6,
+    "unordered-list-item": 15,
+    "unstyled": 34
+  },
+  "projection": "Ordered text, heading/list types, link entities, two media captions and images retained; bold ranges remain in raw JSON. Tool wrappers retained in linked readable captures.",
+  "review_scope": "Full article and all three images reviewed. Linked sources inspected at claim-bearing sections; SO2025 and WIRED-extension captures flagged partial. Reference diagrams/videos and every downstream link not independently inspected. No exploit or product deployed.",
+  "captures": [
+    {
+      "file": "article-response.json",
+      "url": "https://api.fxtwitter.com/lhchavez/status/2117496522656841766",
+      "sha256": "b2a300378c27b6b9419633a62ce75f8ef82bcf508670537d3726ec2bf7a41b62",
+      "bytes": 31438
+    },
+    {
+      "file": "blocks.json",
+      "url": "https://x.com/lhchavez/status/2117496522656841766",
+      "sha256": "6535a9c09c3cf917ca5312fd1dfbc77b5b4ed25fb7d8156f4ef808e22a1bf57b",
+      "bytes": 21834
+    },
+    {
+      "file": "cover.jpg",
+      "url": "https://pbs.twimg.com/media/HWLbDjvbkAA9Gbi.jpg",
+      "sha256": "43bd558f40070799b515931f46d7f730aed2bf5570e7896cb4ac65b1eeb919ad",
+      "bytes": 44837
+    },
+    {
+      "file": "figure-1.jpg",
+      "url": "https://pbs.twimg.com/media/HWLbFR9bcAAfhCd.jpg",
+      "sha256": "228ba9da2043cb59d147e3073830075b482dfe318304a8fe548d0a63ee024064",
+      "bytes": 73747
+    },
+    {
+      "file": "figure-2.jpg",
+      "url": "https://pbs.twimg.com/media/HWLbjaWbwAEDP69.jpg",
+      "sha256": "4e620c566042064b77e80500d1e458eaa2a0a30e480bfd3ce9cdb43d708cdb3a",
+      "bytes": 52583
+    },
+    {
+      "file": "post.json",
+      "url": "https://x.com/lhchavez/status/2117496522656841766",
+      "sha256": "69e4245543728e6c4105470bcf5b80ef23e2601f50b51360fd2dd58b7ba5b379",
+      "bytes": 1119
+    },
+    {
+      "url": "https://www.coderabbit.ai/blog/our-response-to-the-january-2025-kudelski-security-vulnerability-disclosure-action-and-continuous-improvement",
+      "finalUrl": "https://www.coderabbit.ai/blog/our-response-to-the-january-2025-kudelski-security-vulnerability-disclosure-action-and-continuous-improvement",
+      "fetchedAt": "2026-11-06T01:52:07.212Z",
+      "file": "references/coderabbit-response.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "coderabbit-response",
+      "partial": false,
+      "sha256": "cd9b31410b0a9438e47544e6d8e0cd1e06478d25b2a76c918242325c38d78b35",
+      "bytes": 5988
+    },
+    {
+      "url": "https://cloudsecurityalliance.org/press-releases/2026/04/16/more-than-half-of-organizations-experience-ai-agent-scope-violations-cloud-security-alliance-study-finds",
+      "finalUrl": "https://cloudsecurityalliance.org/press-releases/2026/04/16/more-than-half-of-organizations-experience-ai-agent-scope-violations-cloud-security-alliance-study-finds",
+      "fetchedAt": "2026-11-06T01:52:04.279Z",
+      "file": "references/csa-survey.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "csa-survey",
+      "partial": false,
+      "sha256": "47e3713f4cf9148fecde9f3c2c25c0c413e1e42ce3d96cb63ec8727fd7dc372f",
+      "bytes": 9590
+    },
+    {
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "finalUrl": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "fetchedAt": "2026-11-06T01:51:06.731Z",
+      "file": "references/cursor-extension-notice.md",
+      "extraction": "web_fetch readable Markdown; full spill used when returned",
+      "name": "cursor-extension-notice",
+      "partial": false,
+      "sha256": "ed5563b25751f744ebe6ecfa8372d97c2319fb6b3df934c36da00b1fa53f97d4",
+      "bytes": 9490
+    },
+    {
+      "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/",
+      "finalUrl": "https://www.elliptic.co/insights/binance-largest-hack-in-history/",
+      "fetchedAt": "2026-11-06T01:52:07.989Z",
+      "file": "references/elliptic-binance.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "elliptic-binance",
+      "partial": false,
+      "sha256": "a03d19d3ff81cdd8d24656eb8df8c5d011e322bfef98ce2e4ed76af337ac813a",
+      "bytes": 20562
+    },
+    {
+      "url": "https://invariantlabs.ai/blog/mcp-github-vulnerability",
+      "finalUrl": "https://invariantlabs.ai/blog/mcp-github-vulnerability",
+      "fetchedAt": "2026-11-06T01:52:06.819Z",
+      "file": "references/invariant-github.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "invariant-github",
+      "partial": false,
+      "sha256": "1e97e02740b628daa202f6dc8cba52afc276835023d48142afece000fe912ffa",
+      "bytes": 12761
+    },
+    {
+      "url": "https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email",
+      "finalUrl": "https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email",
+      "fetchedAt": "2026-11-06T01:51:07.515Z",
+      "file": "references/salt-manus.md",
+      "extraction": "web_fetch readable Markdown; full spill used when returned",
+      "name": "salt-manus",
+      "partial": false,
+      "sha256": "c1f24b94c9d0e84f98d9f3785ad6b87f4ae735873974531e9a4c8dc57c990353",
+      "bytes": 26099
+    },
+    {
+      "url": "https://salt.security/press-releases/state-of-agentic-ai-and-api-security-2h-2026",
+      "finalUrl": "https://salt.security/press-releases/state-of-agentic-ai-and-api-security-2h-2026",
+      "fetchedAt": "2026-11-06T01:52:04.986Z",
+      "file": "references/salt-survey.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "salt-survey",
+      "partial": false,
+      "sha256": "c999818c48b985d9ad2a5b5010a79e2fb7c4ddc73f394a1dc4f665fa894fbf6b",
+      "bytes": 6300
+    },
+    {
+      "url": "https://survey.stackoverflow.co/2024/ai",
+      "finalUrl": "https://survey.stackoverflow.co/2024/ai",
+      "fetchedAt": "2026-11-06T01:52:03.584Z",
+      "file": "references/so2024.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "so2024",
+      "partial": false,
+      "sha256": "e87a8cf373ceed479253a8594cce23ec676c36b2697d644bff804e005e620c65",
+      "bytes": 6230
+    },
+    {
+      "url": "https://survey.stackoverflow.co/2025/ai",
+      "finalUrl": "https://survey.stackoverflow.co/2025/ai",
+      "fetchedAt": "2026-11-06T01:52:03.829Z",
+      "file": "references/so2025.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "so2025",
+      "partial": true,
+      "sha256": "4f1cc0fc0bda9b7a2e29f22c34aaf4cb108f2d31ef530cc2145bf5c8499022f5",
+      "bytes": 10212
+    },
+    {
+      "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+      "finalUrl": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+      "fetchedAt": "2026-11-06T01:52:05.387Z",
+      "file": "references/wired-contractor.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "wired-contractor",
+      "partial": false,
+      "sha256": "7686082850d4a20d4fecfc0ceb1e475e2e3f0050c15efce6b8652b9ecc92954b",
+      "bytes": 13650
+    },
+    {
+      "url": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
+      "finalUrl": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
+      "fetchedAt": "2026-11-06T01:52:05.758Z",
+      "file": "references/wired-extension.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "wired-extension",
+      "partial": true,
+      "sha256": "d85619a85e1a16a60310503b075a15ea254572255f1cef4983dd5c47ff182350",
+      "bytes": 3473
+    },
+    {
+      "url": "https://www.wiz.io/blog/s1ngularity-supply-chain-attack",
+      "finalUrl": "https://www.wiz.io/blog/s1ngularity-supply-chain-attack",
+      "fetchedAt": "2026-11-06T01:52:06.192Z",
+      "file": "references/wiz-nx.md",
+      "extraction": "web_fetch readable Markdown; full spill used if available",
+      "status": 200,
+      "name": "wiz-nx",
+      "partial": false,
+      "sha256": "892384eb96873126599e8ee85bd37356df0abe6ea8192609ae152c84172baefe",
+      "bytes": 8771
+    },
+    {
+      "file": "snapshot.md",
+      "url": "https://x.com/lhchavez/status/2117496522656841766",
+      "sha256": "742506945996099fc3e5b24114d3a9f7c890e735e9b263004ff9431d3a5ad0fd",
+      "bytes": 19060
+    }
+  ]
+}

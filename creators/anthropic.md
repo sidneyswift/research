@@ -60,3 +60,7 @@ last-reviewed: 2026-06-01
 ## Independent routing study — 2026-11-04
 
 [[concepts/lifelong-skill-routing]] uses Claude Haiku 4.5 as its main frozen router in a selected-confusability skill-growth benchmark. This is independent author-reported research, not an Anthropic publication, endorsement or current documentation refresh. [[sources/zhang--skill-plus-plus#benchmark-construction]] [[sources/zhang--skill-plus-plus#metrics]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] preserves the distinction between a tampered Claude Code extension distributed through Cursor’s marketplace and an official Anthropic release. The vendor notice and article do not support blaming model identity for every delivery-chain or runtime-authority failure. [[sources/lhchavez--managed-agent-environments#extension]]
