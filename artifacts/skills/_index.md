@@ -40,6 +40,9 @@ Individual skills cataloged. Each page uses [../../\_schemas/skill.md](../../_sc
 **Forward Future** ([[creators/forward-future]], from [[sources/forward-future--loop-library]]):
 - [[artifacts/skills/loop-library]] — find/adapt/design a bounded agent loop; bundles the 31-loop catalog.
 
+**Cloudflare** ([[creators/cloudflare]]):
+- [[artifacts/skills/security-audit]] — coverage-led security review, independently checked verdicts, evidence ownership and bounded validators; 48 portable principles.
+
 ## Candidate list (not yet deep-dived)
 
 Add candidates here as one-line entries before promoting to a full page. Keep a `source:` URL on each candidate so future-you knows where to look.

@@ -342,3 +342,7 @@ The ledger's PK/PP/RE anchors, and the child pages' OR/VE anchors, all resolve t
 ## Related application report — 2026-11-03
 
 [[artifacts/projects/tibo-dog]] records the same creator's account of defect-derived lint, subsystem-specific formal-verification skills, path-scoped allocation policy, and build budgets. This offers a concrete comparison to pstack's principles, **not evidence that the game used this pinned package or every prescribed workflow**. The game's source and skill files were not inspected. [[sources/poteto--tibo-engineering#defect-lints]] [[sources/poteto--tibo-engineering#formal-verification]] [[sources/poteto--tibo-engineering#hot-paths]] [[sources/poteto--tibo-engineering#download-budget]]
+
+## Cloudflare security audit — 2026-11-06
+
+Research comparison: [[artifacts/skills/security-audit]] narrows independent review to source-grounded, falsifiable security claims with explicit unresolved/refuted states and mechanical record checks. It complements this artifact's evidence-calibration techniques; it does not establish that more reviewers or different model families produce independent truth. No integration or matched-budget comparison was executed. [[sources/cloudflare--security-audit-skill#independent-validation]] [[sources/cloudflare--security-audit-skill#verdict-contract]]

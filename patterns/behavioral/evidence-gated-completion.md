@@ -116,3 +116,7 @@ Lauren's screenshot-backed preference for empirical/formal verification over abs
 ## SuperPlane — 2026-11-04
 
 Supporting implementation: [[artifacts/projects/superplane]] checks for open work before finalizing a run, binds runner terminal reports to completion hashes, and requires an expected PR head for merging. Each gate has a narrower meaning than user-goal success; a valid model review score is not executable evidence. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#merge]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] requires independently decided verdict records and preserves unvalidated candidates outside `findings.json`. Its executable validators check status/evidence consistency, not exploit truth or complete coverage. This is a prompt-defined evidence gate with deterministic bookkeeping, not an enforced end-to-end audit engine. [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]]

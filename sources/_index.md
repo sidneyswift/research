@@ -187,3 +187,7 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/google--developer-documentation]] — collection scope and registered anchors.
 - [[sources/nam--documentation-use]] — collection scope and registered anchors.
 - [[sources/writethedocs--documentation-practice]] — collection scope and registered anchors.
+
+## Security audit skill — 2026-11-06
+
+- [[sources/cloudflare--security-audit-skill]] — pinned local source at `c1c8a8c`, all 22 file hashes, 49 line ranges and executed validator-test receipt; findings in [[artifacts/skills/security-audit]].

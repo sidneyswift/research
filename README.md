@@ -40,14 +40,14 @@ See [[projects/_index]] for projects created from the research, starting with [[
 
 | Domain | Count | Inventory checked |
 | --- | --- | --- |
-| Skills cataloged | 5 paged | 2026-11-04 |
+| Skills cataloged | 6 paged | 2026-11-06 |
 | Plugins cataloged | 10 | 2026-11-04 |
 | Projects cataloged | 23 | 2026-11-04 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
 | Concepts cataloged | 29 | 2026-11-05 |
 | Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
 | Creators cataloged | 44 | 2026-11-05 |
-| Source citation pages | 84: 18 article, 35 docs-page, 5 other, 4 paper, 21 repo, 1 tweet | 2026-11-05 |
+| Source citation pages | 85: 18 article, 35 docs-page, 5 other, 4 paper, 22 repo, 1 tweet | 2026-11-06 |
 
 Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
 
@@ -66,3 +66,5 @@ Latest MCP ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension
 7. **Reflect, don't just collect.** This wiki researches how to build great agents/skills — so it must improve *itself* with what it learns. After ingests, ask whether new patterns apply to our own machinery and log candidates in [meta/self-improvements.md](meta/self-improvements.md).
 
 Latest documentation research: [[projects/writing-amazing-developer-docs/README]] → [[concepts/developer-documentation-design]], with practical [[projects/writing-amazing-developer-docs/page-blueprints]].
+
+Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverage/review principles, full source pinned locally, and 65 bundled validator tests passed. This is not a completed target audit or detection benchmark.

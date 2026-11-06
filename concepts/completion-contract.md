@@ -122,3 +122,9 @@ The current source update in [[artifacts/projects/codex-goals]] narrows the earl
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] separates task intent, workflow quiescence, runner exit/result, retained-log acknowledgement, model judgment and revision-bound merge admission. A run with no queued work may be finished without proving the requested behavior; a schema-valid score is still a judgment. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-protocol]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#merge]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] separates completion of a declared review process from exhaustive absence of vulnerabilities. A quick/scoped pass can finish its declared procedure while retaining explicit gaps; validation-budget exhaustion instead leaves unresolved candidates and an incomplete run. `confirmed`, reviewed-but-blocked `needs_validation`, `rejected`, and never-validated candidates are not interchangeable terminal outcomes. A clean report may contain zero confirmed records. [[sources/cloudflare--security-audit-skill#profiles-budget]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#reporting]]
+
+No shipped validator reads run metadata, both ledgers and report prose together, so cross-file completeness and actual verifier independence remain orchestration obligations. [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]]

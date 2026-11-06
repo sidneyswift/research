@@ -29,6 +29,7 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/cloudflare--security-audit-skill]] | repo | 2026-11-06 | `c1c8a8c` |
 | [[sources/modelcontextprotocol--mcp-core-and-extensions-docs]] | docs-page | 2026-11-04 | modern core + pinned extension specs; capture map |
 | [[sources/modelcontextprotocol--mcp-apps-docs]] | docs-page | 2026-11-04 | stable UI wire + draft/SDK collection |
 | [[sources/modelcontextprotocol--mcp-authorization-docs]] | docs-page | 2026-11-04 | stable auth profiles + ID-JAG revision pair |
@@ -139,7 +140,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[creators/daniele-procida]] | individual | Developer documentation research |
 | [[creators/writethedocs]] | org | Developer documentation research |
 | [[creators/gitlab]] | org | Developer documentation research |
-| [[creators/cloudflare]] | org | Developer documentation research |
+| [[creators/cloudflare]] | org | Developer documentation and security-audit skill |
 | [[creators/jeremy-howard]] | individual | Developer documentation research |
 | [[creators/github]] | org | Developer documentation research |
 | [[creators/twilio]] | org | Developer documentation research |
@@ -190,6 +191,7 @@ Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/
 
 | Skill | Creator | Status | One-line |
 | --- | --- | --- | --- |
+| [[artifacts/skills/security-audit]] | Cloudflare | source-inspected; validator tests passed | Coverage ledger, independent falsification, distinct verdict contracts and material-change reverification |
 | [[artifacts/skills/grilling]] | Matt Pocock | active | Relentless one-question-at-a-time alignment interview; the reusable loop behind `grill-me`/`grill-with-docs`. The wiki's **first individual skill page** |
 | [[artifacts/skills/writing-great-skills]] | Matt Pocock | active | Reference for *authoring* skills — predictability, the two loads, the info-hierarchy ladder, leading words, the five failure modes; the most self-applicable artifact in the wiki |
 | [[artifacts/skills/loop-library]] | Forward Future | active | Find/adapt/design a **bounded agent loop** (task + observable verify + named stop); bundles a 31-loop catalog from ~14 builders. The **confirming 2nd artifact** for [[patterns/behavioral/evidence-gated-completion]] |

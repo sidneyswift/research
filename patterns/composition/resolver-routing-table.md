@@ -107,3 +107,7 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 ## Resolve identity before semantic relevance — 2026-11-04
 
 [[artifacts/projects/codex]] prioritizes explicit skill paths, rejects ambiguous names and skill/connector collisions, and observes budget-induced omissions. Its cheap-selector interface supports shadow evaluation without changing the visible catalog. This is complementary routing machinery, not measured universal selection accuracy. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#skill-shadow]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] selects attack-domain guidance from concrete source-visible trust boundaries. Each assignment receives exact selected rule blocks plus explicit exclusions; merely listing a companion filename is insufficient. This is a bounded internal routing/disclosure example, not a tested global skill-selection guarantee. [[sources/cloudflare--security-audit-skill#context-selection]]

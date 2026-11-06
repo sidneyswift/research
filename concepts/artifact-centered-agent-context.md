@@ -97,3 +97,9 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] preserves intent above any one agent run and passes structured artifacts between phases. Its scheduled-intake template validates a proposal file, including an explicit no-proposal result; it does not infer structured output from final prose. The generic runner JSON reader is weaker, so output validation must be attributed to the actual consuming path. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#scheduled-intake]] [[sources/superplanehq--superplane#result-file]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] makes artifacts an evidence-ownership interface: parent-owned shared records, per-worker scratch, attributed checks, and retained artifact paths tied to each check's owner. A critic-triggered reassignment archives the old terminal attempt before starting a fresh live attempt, preventing the new worker from inheriting credit for the old evidence. [[sources/cloudflare--security-audit-skill#hunter-result]] [[sources/cloudflare--security-audit-skill#coverage-code]]
+
+A syntactically confined artifact path is not safe evidence promotion. The source separately prescribes no-follow descriptor-relative reads, link/type/size checks and exclusive destinations after target processes stop; that procedure needs a host implementation. [[sources/cloudflare--security-audit-skill#promotion]]

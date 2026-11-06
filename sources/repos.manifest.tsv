@@ -27,3 +27,4 @@ nvidia--auto-ontology-eval	https://github.com/NVIDIA/auto-ontology-eval.git	ec41
 openai--codex	https://github.com/openai/codex.git	021fccb046508938c4754982efccfb51d6e8356e	-
 open-inspect--background-agents	https://github.com/open-inspect/background-agents.git	4b7f4e430dbb5c29cf776de41151365d1196d737	-
 superplanehq--superplane	https://github.com/superplanehq/superplane.git	7d755d16b8ae836ecebf61639efc6266d74a4b0b	-
+cloudflare--security-audit-skill	https://github.com/cloudflare/security-audit-skill.git	c1c8a8c1471069fb0e188eeaff69b8e8db6564a8	-

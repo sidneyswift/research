@@ -104,3 +104,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]]'s AI companion distinguishes authorization from intent binding: a user may possess authority for an action yet never have intentionally requested the model-induced action. It also treats MCP metadata, tool schemas, model output and memory as inputs rather than permission sources. The skill's own sandbox and artifact-promotion requirements remain host obligations, not capability restrictions created by Markdown. [[sources/cloudflare--security-audit-skill#ai-authority]] [[sources/cloudflare--security-audit-skill#execution-boundary]] [[sources/cloudflare--security-audit-skill#promotion]]

@@ -146,3 +146,7 @@ Schmid illustrates the model generating a script while code handles API composit
 ## SuperPlane — 2026-11-04
 
 Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts for implementation and review, deterministic graph steps for structured output/PR attachment, and server-owned confidence bands. The boundary is explicit, but a syntactically valid output does not prove a semantically correct change. [[sources/superplanehq--superplane#implementation-template]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#scheduled-intake]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] leaves source interpretation and falsification to investigators while code checks canonical identities, owners, state invariants, verdict-specific fields and bounded inputs. The split has an explicit limit: readable paths and nonempty observation text are not source existence or empirical proof. Both provided validator suites passed locally (65 tests); no full audit was exercised. [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]] [[sources/cloudflare--security-audit-skill#test-execution]]

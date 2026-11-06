@@ -740,3 +740,11 @@ User authorized committing, pushing and merging all pending Research work. Conso
 ## [2026-11-05] reflect | documentation review coverage
 
 - Applied [[patterns/quality-bar/revision-bound-review]] to [[_schemas/source]]: record reviewed sections, extraction limitations and guidance/documented/runtime/outcome boundaries. Ledger in [[meta/self-improvements]]. This small schema improvement addresses an actual long-page capture ambiguity; no additional harness/checklist system needed.
+
+## [2026-11-06] ingest | Cloudflare security-audit skill
+
+- Added [[artifacts/skills/security-audit]] with **48 portable principles**, distinct unvalidated/unresolved/confirmed/rejected states, evidence ownership, coverage critics, verification-budget reserves, material-change reverification and domain-boundary guidance. Extended existing review/evidence/context/routing concepts and patterns; no duplicate concept or pattern promotion.
+- Preserved all **22 tracked files** locally at `c1c8a8c1471069fb0e188eeaff69b8e8db6564a8`, with shallow Git metadata; committed [[sources/cloudflare--security-audit-skill]] plus 37 anchors, 49 pinned ranges, all-file hashes, restore registration and validator test output. Checkout remains ignored; restoration depends on upstream availability.
+- Executed both bundled Node validator suites: **65 passed / 0 failed / 0 skipped**. Checks support fixture behavior and record consistency, not vulnerability recall, physical evidence existence, host isolation or complete audit execution. No skill installation or target audit. Historical fleet-harness claims remain separate.
+- REFLECT applied: added claim-lifecycle/enforcement boundaries to `_schemas/skill.md` and the security-review builder route; [[meta/self-improvements]] records the adoption trigger. Citation/hash/link checks passed with no new wiki-doctor findings versus the pulled baseline (score 50 unchanged; pre-existing issues retained).
+- Quality ratchet: at least **140 new page→target links** before this log/index follow-through; **orphans +0**, **new patterns +0**, existing comparisons extended. Terminal state: success for research ingestion and source preservation, not completion of a security audit.

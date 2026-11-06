@@ -114,3 +114,9 @@ A coverage map also makes the next step cheaper. “Unknown because the relevant
 ## Benchmark-health boundary — 2026-11-04
 
 [[artifacts/projects/auto-ontology]]'s companion evaluator refuses default headline reporting when broken-run failures exceed 5% or dispatched tasks have no results. Completeness depends on retained input sidecars; an explicit override exists. This supplies a concrete guard against presenting infrastructure failure as model weakness, not an independent replication of application accuracy. [[sources/nvidia--auto-ontology-eval#health-gate]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] distinguishes four states useful outside security: an unvalidated claim; a reviewed, source-grounded lead blocked on an exact fact; a confirmed claim with observed evidence; and a rejected claim with its refutation retained. A strict budget does not permit relabeling unchecked work as `needs_validation`. Reports inherit final record status rather than upgrading it during prose synthesis. [[sources/cloudflare--security-audit-skill#profiles-budget]] [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#reporting]]
+
+The shipped validators establish record structure and internal consistency, not physical source/artifact existence, independent agent execution or semantic truth. Their 65 passing local fixture tests demonstrate that narrower layer. Treat a changed causal account or stronger replacement conclusion as new verification work, not a harmless edit. [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]] [[sources/cloudflare--security-audit-skill#test-execution]] [[sources/cloudflare--security-audit-skill#material-reverification]]

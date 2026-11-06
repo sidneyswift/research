@@ -27,6 +27,7 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 
 | You're building… | Patterns / concepts to read first | Worked artifacts to study |
 | --- | --- | --- |
+| **Security-review evidence / coverage ledgers / independent claim checks** | [[concepts/evidence-calibrated-research]], [[concepts/review-cost-aware-workflows]], [[patterns/behavioral/evidence-gated-completion]] | [[artifacts/skills/security-audit]] (48 principles; source-inspected and validator fixtures executed, not an audit-quality benchmark) |
 | **Issue-to-PR factory / repair loops / shared mutation ownership** | [[concepts/agent-control-plane]], [[concepts/durable-agent-execution]], [[concepts/review-cost-aware-workflows]] | [[artifacts/projects/superplane]] (keyed admission, repair budgets, exact-head merge and completion boundaries; source-inspected) |
 | **Hosted background coding / sandbox recovery / automation retries** | [[concepts/agent-control-plane]], [[concepts/durable-agent-execution]], [[patterns/behavioral/context-is-not-authority]] | [[artifacts/projects/background-agents]] (saved state versus retirement, uncertain delivery and effective context; source-inspected) |
 | **Embed an agent runtime / audit recovery and authority** | [[concepts/agent-control-plane]], [[concepts/durable-agent-execution]], [[patterns/behavioral/context-is-not-authority]] | [[artifacts/projects/codex]] (shared runtime, model-visible evidence and scoped resume; source-inspected, not benchmarked) |

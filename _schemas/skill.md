@@ -73,3 +73,9 @@ Bullet list of every non-obvious claim above with its `[[sources/...#anchor]]`.
 ## Open questions / what's unclear
 
 Things we'd want to ask the creator or test ourselves before copying.
+
+## Evidence lifecycle and enforcement boundary
+
+For a skill that discovers, verifies or publishes claims, distinguish **unvalidated candidate → independently assessed unresolved/confirmed/rejected record → final presentation**. Identify who may advance each state, what material edits invalidate prior verification, and which checks are implemented versus prescribed. Record whether validators establish syntax, internal consistency, physical evidence existence, observed behavior or actual reviewer independence; do not infer the stronger property from the weaker one.
+
+Apply only when the artifact has such a claim lifecycle, not as mandatory multi-agent ceremony for ordinary skills. Grounding: [[artifacts/skills/security-audit]], [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]]

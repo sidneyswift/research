@@ -85,7 +85,7 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 - [[creators/gitlab]] — documentation research contributor/publisher.
 
-- [[creators/cloudflare]] — documentation research contributor/publisher.
+- [[creators/cloudflare]] — documentation research publisher and creator of [[artifacts/skills/security-audit]].
 
 - [[creators/jeremy-howard]] — documentation research contributor/publisher.
 

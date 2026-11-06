@@ -334,3 +334,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 ### [2026-11-05] Documentation collections retain reading scope
 
 **Applied** 2026-11-05 to [[_schemas/source]]. [[patterns/quality-bar/revision-bound-review]] applies to the evidence actually reviewed, not merely the files captured. [[concepts/developer-documentation-design]] exposed this distinction in long multi-language product pages and HTML text extraction. Added a citation-page requirement for reviewed sections, representation limitations and guidance/documented/runtime/outcome boundaries. Expected benefit: prevent capture count from being mistaken for comprehensive inspection; no new harness or duplicate validator needed.
+
+## [2026-11-06] Pass 26 — verification belongs to the claim actually checked
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] and the narrower claim-revision analogue of [[patterns/quality-bar/revision-bound-review]] to `_schemas/skill.md`: distinguish unchecked candidates from reviewed unresolved claims; separate structural validators from semantic or runtime evidence; identify edits that invalidate verification. [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]]
+- Added a security-review evidence/coverage builder route and extended existing concepts instead of inventing another verification concept. Preserved the earlier verification-first argument: concrete falsification is not abstract adversarial nitpicking.
+- Status: **applied**. No installed skill, permission, production configuration or full audit changed. The only upstream execution was the dependency-free validator fixture suites (65 passing tests).
+- Promotion trigger for additional automation: actually adopt a scoped audit with a supplied sandbox and evidence-promoter implementation; then test cross-file completeness and worker identity with fixtures. Research alone does not justify building a new security harness.

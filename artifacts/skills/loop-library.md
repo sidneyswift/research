@@ -143,3 +143,7 @@ The skill refuses the two failure modes that ruin most "automation prompt" packs
 - **How real is the verification?** The catalog *prescribes* observable gates, but the loops are prompts, not harnesses — whether a given agent actually honors "exhausted ≠ done" is unverified. Loop #005 (100% coverage) even encodes a gate its own `note` admits is gameable.
 - **Adoption vs. age.** 92★ at one week is a weak signal; the stronger signal is the named-builder submissions (Steinberger, Shah, Marks, Kucinski). Re-check stars in 30 days.
 - **Overlap with the `agentic-loop` concept page.** Keep this page about the *runnable skill + catalog*; keep the idea (loop vs one-shot, terminal states) on [[concepts/agentic-loop]] to avoid duplication.
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] supplies a domain-specific loop with explicit budget exhaustion, deferred coverage, independent validation and material-replacement reverification. It is a comparison, not a declared invocation of this library or a new general loop taxonomy. [[sources/cloudflare--security-audit-skill#profiles-budget]] [[sources/cloudflare--security-audit-skill#coverage-critics]] [[sources/cloudflare--security-audit-skill#material-reverification]]

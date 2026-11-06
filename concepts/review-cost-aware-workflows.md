@@ -109,3 +109,9 @@ Steps 1–5 are a proposed practice, not a verbatim protocol or measured result 
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] provides a concrete tension with verification-first advice: its model-scored checks have server-owned names/thresholds and typed summaries, but calibration and defect-catching value are not established by that validation. PR repair is explicitly budgeted and mutation is serialized. Evaluate review value on defect escape, human attention and cost, not the presence of another reviewer. [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#repair-budget]] [[sources/superplanehq--superplane#pr-coordination]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] gives a concrete limit to the phrase “adversarial review”: a fresh verifier reconstructs a particular source trace, checks the strongest preventing layer and independently reproduces decisive behavior when possible. This is targeted falsification, not a request to generate objections in the abstract. It therefore complements the earlier verification-first position rather than disproving it. The skill supplies no controlled comparison against empirical tests, formal checks or matched-budget alternatives. [[sources/cloudflare--security-audit-skill#independent-validation]]
+
+Its quick profile merges candidate/record verification; standard/deep retain separate passes. Budget is reserved for verification before further hunting. A materially stronger replacement needs a new independent verifier; inability to fund that review leaves an incomplete candidate, not a publishable finding. These are prescribed workflow rules, not a bundled scheduler. [[sources/cloudflare--security-audit-skill#profiles-budget]] [[sources/cloudflare--security-audit-skill#material-reverification]]

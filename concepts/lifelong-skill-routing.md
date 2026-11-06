@@ -167,3 +167,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Open Inspect: A pinned skill can still lose effective availability
 
 [[artifacts/projects/background-agents]] exposes a pre-routing boundary: session-pinned managed skills can be dropped when names collide with repository/user/bundled discovery. Its installer reports those drops. Differential routing evaluations should hold the effective installed catalog explicit; better descriptions cannot repair an entry absent from the harness’s discovery tree. [[sources/open-inspect--background-agents#skills-pinning]] [[sources/open-inspect--background-agents#skills-install]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] provides a scope distinction worth testing in routing evaluations: its description includes broad security questions, but its body defaults to guidance and reserves full execution/file creation for explicit audit/report intent. Discovery of the skill is not authorization to run every phase. No routing-retention or task-success benchmark was executed for this source. [[sources/cloudflare--security-audit-skill#modes]]
