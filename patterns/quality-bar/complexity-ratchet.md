@@ -119,3 +119,7 @@ A falsifiable test for spotting the ratchet (`## Examples` are the positive fixt
 ## SuperPlane — 2026-11-04
 
 Supporting maintenance prescription: [[artifacts/projects/superplane]] forbids new implicit database access/duplicate transaction-wrapper APIs while tracking existing debt. This allows incremental removal of transaction escape hatches without demanding an all-at-once rewrite. Source contributor guidance inspected; CI enforcement was not executed. [[sources/superplanehq--superplane#contributor-checks]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] qualifies a structural ratchet: valid links and fewer orphans are necessary hygiene, not evidence of better answers. A wiki can grow larger than its sources without abstraction; measure task performance against raw search and total upkeep. [[sources/anthropic--components-of-agent-memory#expansion]] [[sources/anthropic--components-of-agent-memory#wiki-search]] [[sources/anthropic--components-of-agent-memory#compute-budget]]

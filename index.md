@@ -25,6 +25,9 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/anthropic--components-of-agent-memory]] — complete article and fifteen figures; November 6 research report.
+- [[sources/anthropic--agent-memory-support]] — memory/Dreams contracts, scoped cookbook and pinned quickstart context; November 7 capture.
+
 - [[sources/thinking-machines--inkling-2-small]] — November 5 model announcement; full HTML, tables, forecast replay and images.
 - [[sources/thinking-machines--inkling-2-support]] — model card, release policy, expert-label study, Tinker contracts and pinned async source.
 
@@ -268,6 +271,8 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/agent-memory-consolidation]] — 40 principles: four memory layers, evidence-backed consolidation, hybrid search, explicit adoption and consistency boundaries.
 
 - [[concepts/agent-habitat-architecture]] — 44 principles for independent enforcement, effect authorization, attenuation, recovery and containment; proposed architecture, not product certification.
 

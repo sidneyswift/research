@@ -780,3 +780,13 @@ User authorized committing, pushing and merging all pending Research work. Conso
 ## [2026-11-06] reflect | model selection is an evaluation-contract decision
 
 - Added a grounded builder route, preserving complete comparison conditions and availability state. Existing templates suffice; no speculative new pattern or duplicated schema checklist. See [[meta/self-improvements]].
+
+## [2026-11-07] ingest | Anthropic components of agent memory
+
+- Added [[concepts/agent-memory-consolidation]] with 40 reusable principles and two source maps. Full article/HTML, cover and all fifteen figures plus supporting docs, cookbook and pinned quickstart README/license preserved: 31 hashed evidence files.
+- Kept search-only baseline, task scope, trial/error-bar definitions, budget-versus-spend distinction and bundled intervention limits explicit. Documented clone-and-adopt versus in-place dreaming, sync conflict/read-only boundaries, retention and nightly input gaps. Partial CL-Bench release marked; no model/dream invoked or live memory changed.
+- Cross-linked seventeen existing entity/concept/artifact/pattern pages, both indexes and builder guidance. Validated 31 capture hashes, 78 source-anchor links and 17 relative links; wiki-doctor 50→50, no new findings. ratchet: new page-target links +129 · orphans +0 · patterns +0. Checks establish preserved bytes and structural integrity, not replicated model performance.
+
+## [2026-11-07] reflect | memory accumulation must earn its maintenance cost
+
+- Added the evidence-grounded memory-design route and an explicit adoption trigger; no duplicate generic pattern or live consolidation machinery. See [[meta/self-improvements]].

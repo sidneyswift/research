@@ -1,0 +1,231 @@
+{
+  "images": [
+    {
+      "alt": "Illustration of two offset half circles with a grid pattern, one green and one pink, facing each other across a gap on a light blue background.",
+      "loading": "lazy",
+      "width": "870",
+      "height": "489.375",
+      "decoding": "async",
+      "data-nimg": "1",
+      "class": "VYxBBq_CoverImage",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F31b7b06af6c391aa4f93ad9747d00ae248ea3c63-2000x1125.jpg&w=1080&q=75 1x, /_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F31b7b06af6c391aa4f93ad9747d00ae248ea3c63-2000x1125.jpg&w=1920&q=75 2x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F31b7b06af6c391aa4f93ad9747d00ae248ea3c63-2000x1125.jpg&w=1920&q=75"
+    },
+    {
+      "alt": "Diagram of a memory hierarchy between one session and the next. From bottom to top: transcripts (a searchable event log), memory notes written by Claude, memory representations such as wikis, and injected context loaded into every session. Inside a box labeled \u201cDreaming,\u201d arrows run from transcripts up to each layer, and in both directions between neighboring upper layers.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "1754",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa0bcfa203214d817d2b4261b7188aba8be6db5b2-3840x1754.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa0bcfa203214d817d2b4261b7188aba8be6db5b2-3840x1754.png&w=3840&q=75"
+    },
+    {
+      "alt": "The same memory hierarchy, with the memory notes layer highlighted. An arrow runs from the session directly to the memory notes, described as salient observations written by Claude.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "1754",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2ef2bf5c81ea6d578749782782eff10cf3136de4-3840x1754.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2ef2bf5c81ea6d578749782782eff10cf3136de4-3840x1754.png&w=3840&q=75"
+    },
+    {
+      "alt": "Left: bar chart of mean reward on the CL-Bench database task, stateless baseline versus memory store. Opus 5.5: 0.655, 0.838. Sonnet 5.5: 0.644, 0.833. Opus 5: 0.564, 0.828. Opus 4.7: 0.383, 0.700. Sonnet 5: 0.306, 0.610. Sonnet 4.6: 0.330, 0.364. Right: line chart of running-mean reward over 30 questions for the same models, with and without memory.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "2160",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbb0d44c78cc431fb5e84fbf2cb17c4303bc6bd65-3840x2160.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbb0d44c78cc431fb5e84fbf2cb17c4303bc6bd65-3840x2160.png&w=3840&q=75"
+    },
+    {
+      "alt": "Two treemaps of Pok\u00e9mon memory directories at the same scale, where area shows characters of memory. Claude Sonnet 3.7\u2019s is large and crowded, with 413 files and 977,930 characters across folders such as locations, main, battles, and several \u201cconsolidated\u201d folders. Claude Fable 5\u2019s is small, with 10 files and 43,406 characters in locations, gameplay, and global.md.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "2545",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5e15e10f665773050d90fafc38ab8dd76ae5368b-3840x2545.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5e15e10f665773050d90fafc38ab8dd76ae5368b-3840x2545.png&w=3840&q=75"
+    },
+    {
+      "alt": "Left: bar chart of Sonnet 4.6\u2019s mean reward on the CL-Bench database task: 0.330 at baseline, 0.364 with memory, and 0.641 with memory and refined instruction. Reference lines mark Opus 4.7 with memory at 0.700 and Opus 5 with memory at 0.828. Right: change in memory gain when told to record only failures: Opus 5, \u22120.234; Opus 4.7, \u22120.150; Sonnet 4.6, \u22120.020.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "2310",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fda03e864e4eba93a91314fa5f2a5d0e4c14b2a0f-3840x2310.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fda03e864e4eba93a91314fa5f2a5d0e4c14b2a0f-3840x2310.png&w=3840&q=75"
+    },
+    {
+      "alt": "The memory hierarchy with dreaming, highlighting an arrow from the transcripts layer up to the memory notes layer, which shows dreaming correcting notes against transcripts.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "1754",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F55ce85bd12860090704a5543a3da7504334ad9a9-3840x1754.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F55ce85bd12860090704a5543a3da7504334ad9a9-3840x1754.png&w=3840&q=75"
+    },
+    {
+      "alt": "Two Pok\u00e9mon map panels with the agent next to a ledge. Left, \u201cRaw memory,\u201d where the stored note is wrong: an arrow shows the agent heading for the next city. Right, \u201cMemory + dreaming,\u201d where an offline pass corrected the note: an arrow shows the agent heading back to the cave entrance.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "2101",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd906d6ed9ac92db36631a624ad517183b07a545d-3840x2101.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd906d6ed9ac92db36631a624ad517183b07a545d-3840x2101.png&w=3840&q=75"
+    },
+    {
+      "alt": "Line chart of progress toward Cerulean over 3,000 cumulative actions. The memory plus dreaming run reaches Cerulean at action 1,935. The raw memory run falls off the ledge and backtracks to Pewter. The run with no memory never reaches Cerulean.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "2636",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2eb2bfe6d01e9a1fca74a41e952d948c09d42008-3840x2636.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2eb2bfe6d01e9a1fca74a41e952d948c09d42008-3840x2636.png&w=3840&q=75"
+    },
+    {
+      "alt": "The memory hierarchy with dreaming, highlighting arrows from transcripts and from memory notes up to the memory representations layer, such as wikis.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "1754",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F30923242548d746ee77784c87826cadc46574c34-3840x1754.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F30923242548d746ee77784c87826cadc46574c34-3840x1754.png&w=3840&q=75"
+    },
+    {
+      "alt": "Center: line chart of graded criteria met as wiki generation grows from 2M to 128M dreaming tokens. Wiki plus search tool rises from 54% to 61%, wiki alone rises from 13% to 48%, and the search tool with no wiki is flat at 53%. Left and right: network graphs of an example wiki, with 103 pages and 766 links after 2 sessions and 222 pages and 12,893 links after 128 sessions.",
+      "loading": "lazy",
+      "width": "3136",
+      "height": "1432",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F336832b5015f1bfcfd7d786fae8120c533f26ecd-3136x1432.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F336832b5015f1bfcfd7d786fae8120c533f26ecd-3136x1432.png&w=3840&q=75"
+    },
+    {
+      "alt": "Two diagrams linking graded criteria to source documents. Left, the task where the wiki showed more benefit: most of the 24 criteria connect to two or more of 10 documents, and nine need judgment or arithmetic. Right, the task where the wiki showed less benefit: most of the 57 criteria can be found by text search in a single document, usually the deal overview memo.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "3694",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3677eab5e938466cc41fbac4d47f3118135d0563-3840x3694.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3677eab5e938466cc41fbac4d47f3118135d0563-3840x3694.png&w=3840&q=75"
+    },
+    {
+      "alt": "Diagram of a wiki build and second pass. On the left, a circle holds the corpus: 10 documents, 115 KB of text. An arrow leads to a larger circle holding the wiki built from it: 68 pages, 255 links, and 203 KB, or 1.77 times the corpus. Some of the wiki\u2019s pages have no links.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "2150",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fffa35479b1dea63b7948f76995b488d08854e86d-3840x2150.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fffa35479b1dea63b7948f76995b488d08854e86d-3840x2150.png&w=3840&q=75"
+    },
+    {
+      "alt": "The memory hierarchy with dreaming, highlighting arrows from transcripts and from memory representations up to the injected context layer at the top, which feeds into the next session.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "1754",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc88bcc04c5d0e77db5828c9dbe72faf1c4421f8f-3840x1754.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc88bcc04c5d0e77db5828c9dbe72faf1c4421f8f-3840x1754.png&w=3840&q=75"
+    },
+    {
+      "alt": "Two diagrams. Before: four agents write to the same shared page, provisions.md, and one agent\u2019s save erases another\u2019s lines; 41 of 57 graded facts survived. After: four agents each write their own contract\u2019s page, with terms copied word for word; all 57 of 57 graded facts survived.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "1822",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F592f604d38e90537553ab7127d1d3115924fda92-3840x1822.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F592f604d38e90537553ab7127d1d3115924fda92-3840x1822.png&w=3840&q=75"
+    },
+    {
+      "alt": "Two network graphs of a wiki. Before the second pass: 38 entries and 225 links, with nine links from six pages pointing to \u201cescrow-agreement,\u201d a page that doesn\u2019t exist. After: 41 entries and 278 links, with all nine links pointing to \u201cbuyer-form-escrow-agreement\u201d and three new pages: index, instructions email, and escalations.",
+      "loading": "lazy",
+      "width": "3840",
+      "height": "1812",
+      "decoding": "async",
+      "data-nimg": "1",
+      "style": "color:transparent",
+      "srcset": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff1afeef9a2d986a6155c0789db46b8fa372a20eb-3840x1812.png&w=3840&q=75 1x",
+      "src": "/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff1afeef9a2d986a6155c0789db46b8fa372a20eb-3840x1812.png&w=3840&q=75"
+    }
+  ],
+  "links": [
+    "#main-content",
+    "/news",
+    "/",
+    "/search",
+    "/engineering",
+    "/search?topic=agents",
+    "/search?topic=context-engineering",
+    "/search?topic=agent-memory",
+    "/research/harness-design-long-running-apps",
+    "/research/building-c-compiler",
+    "/research/effective-harnesses-for-long-running-agents",
+    "/research/effective-context-engineering-for-ai-agents",
+    "https://stanford.edu/~jlmcc/papers/McCMcNaughtonOReilly95.pdf",
+    "https://www.science.org/doi/10.1126/science.adk8261?referrer=https%3A%2F%2Fwww.google.com%2F",
+    "https://www.nature.com/articles/s41467-018-06213-1",
+    "https://www.nature.com/articles/s41593-019-0467-3",
+    "https://arxiv.org/abs/2504.13171",
+    "https://platform.claude.com/docs/en/managed-agents/dreams",
+    "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+    "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
+    "https://platform.claude.com/docs/en/build-with-claude/compaction",
+    "https://www.nature.com/articles/385533a0",
+    "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool",
+    "https://continual-learning-bench.com/news/cl-bench-1-0/",
+    "https://platform.claude.com/docs/en/managed-agents/overview",
+    "https://platform.claude.com/docs/en/managed-agents/memory",
+    "https://www.youtube.com/watch?v=CXhYDOvgpuU",
+    "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+    "https://github.com/harveyai/harvey-labs",
+    "https://code.claude.com/docs/en/memory",
+    "https://support.claude.com/en/articles/17631495-get-started-with-claude-duet",
+    "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+    "https://github.com/anthropics/claude-quickstarts/tree/main/managed-agents/knowledge-wiki",
+    "https://claude.ai/",
+    "https://platform.claude.com/",
+    "https://www.youtube.com/@anthropic-ai",
+    "https://x.com/AnthropicAI",
+    "https://www.linkedin.com/company/anthropicresearch"
+  ],
+  "meta": [
+    {
+      "property": "article:published_time",
+      "content": "2026-11-06T00:00:00.000Z"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "2026-11-06T21:15:32.000Z"
+    }
+  ]
+}

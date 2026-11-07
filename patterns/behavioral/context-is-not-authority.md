@@ -120,3 +120,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]]: task instructions and a blocked direct route did not prevent a model reaching the effect through a third party. The reported response changes external controls, not only model instructions. [[sources/thinking-machines--inkling-2-small#monitors-incident]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]]: learned memory can persist poisoned text, and promotion into a system-context slot increases exposure without establishing authority. A read-only consumer is not immune to influence; host tools and policies remain separate. [[sources/anthropic--agent-memory-support#dynamic-trust]] [[sources/anthropic--agent-memory-support#code-injection]]

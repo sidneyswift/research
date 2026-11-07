@@ -115,3 +115,7 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] includes an authoring skill with positive/negative prompt selectors and path/import/command signals. The experimental eve integration exposes per-operation tools directly or via deferred discovery while retaining scope checks. Declared selectors and discovery parity were not evaluated here. [[sources/vercel--schedules-docs#skill]] [[sources/vercel--schedules-docs#eve-tools]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] applies the resolver role to injected memory: compact index now, detailed topic files on demand. Saving beyond the consumer's load cutoff does not make the tail available. [[sources/anthropic--components-of-agent-memory#injection]] [[sources/anthropic--agent-memory-support#code-injection]]

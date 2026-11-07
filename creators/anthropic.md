@@ -64,3 +64,7 @@ last-reviewed: 2026-06-01
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] preserves the distinction between a tampered Claude Code extension distributed through Cursor’s marketplace and an official Anthropic release. The vendor notice and article do not support blaming model identity for every delivery-chain or runtime-authority failure. [[sources/lhchavez--managed-agent-environments#extension]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] adds the November 6 four-layer memory report and dated contracts for Managed memory, Dreams, client-side memory, Claude Code and custom consolidation. Article experiments are reported; source capture is not a runtime audit. [[sources/anthropic--components-of-agent-memory#root]] [[sources/anthropic--agent-memory-support#root]]

@@ -124,3 +124,7 @@ The shipped validators establish record structure and internal consistency, not 
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] makes comparison conditions part of the claim: maximum trajectory changed between model generations; tool-assisted vision differs from original mode; short-table rank depends on the comparator set. Its forecasting replay separates validation from unseen data and a normalized skill ratio from raw-error reduction. The source map explicitly marks unavailable benchmark-body and unreviewed-media coverage. [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-small#forecasting]] [[sources/thinking-machines--inkling-2-support#incomplete-context]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] preserves the 53% search baseline beside 13→48% wiki-only improvement, keeps token allowance separate from measured spend, and identifies trial counts/error-bar definitions. The 41/57→57/57 contract repair bundles ownership, representation and instruction changes; no isolated causal attribution. [[sources/anthropic--components-of-agent-memory#wiki-search]] [[sources/anthropic--components-of-agent-memory#compute-budget]] [[sources/anthropic--components-of-agent-memory#steering]] [[sources/anthropic--components-of-agent-memory#goal-ownership]]

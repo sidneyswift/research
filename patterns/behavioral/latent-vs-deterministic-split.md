@@ -158,3 +158,7 @@ Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts 
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] describes deterministic task-policy/circumvention checks before tool execution with uncertain cases escalated to an LLM, plus asynchronous review after execution. Public cookbook provenance checks supply a narrower inspected mechanism; the private monitor implementation was not audited. [[sources/thinking-machines--inkling-2-small#monitors-incident]] [[sources/thinking-machines--inkling-2-support#async-source]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] separates model-judged salience/correction from client-enforced path containment and optimistic write preconditions. Prompted merge discipline does not itself supply atomic storage semantics. [[sources/anthropic--components-of-agent-memory#learning-loop]] [[sources/anthropic--agent-memory-support#client-memory]] [[sources/anthropic--agent-memory-support#store-versions]]

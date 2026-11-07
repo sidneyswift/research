@@ -200,3 +200,6 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 
 - [[sources/thinking-machines--inkling-2-small]] — full article/HTML, 12 tables, embedded replay, seven chart fragments and two images.
 - [[sources/thinking-machines--inkling-2-support]] — model card, release policy, Bridgewater study, Tinker contracts/pricing and pinned cookbook file; incomplete PMPP capture marked.
+
+- [[sources/anthropic--components-of-agent-memory]] — full article/HTML and all fifteen figures; 20 hashed files.
+- [[sources/anthropic--agent-memory-support]] — eleven supporting evidence files; partial CL-Bench capture explicitly marked.

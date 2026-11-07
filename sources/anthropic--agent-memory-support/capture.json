@@ -1,0 +1,103 @@
+{
+  "captures": [
+    {
+      "file": "code-memory.md",
+      "url": "https://code.claude.com/docs/en/memory",
+      "sha256": "275fe39e8501741ad308ab8ecd4552327cf34e53654841d7a121de80fbe6b595",
+      "bytes": 55364,
+      "fetchedAt": "2026-11-07T02:14:06.174Z",
+      "kind": "readable capture",
+      "reviewed": "CLAUDE.md versus auto memory, loaded context, auto-memory storage/limits and troubleshooting; not a complete audit of all instruction-file settings."
+    },
+    {
+      "file": "self-hosted-memory.md",
+      "url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-memory",
+      "sha256": "75c4229499c4a309122f6af293bda1ecfbbf818c3477553be789561840283f5e",
+      "bytes": 15327,
+      "fetchedAt": "2026-11-07T02:14:06.441Z",
+      "kind": "readable capture",
+      "reviewed": "Full page prose and Python example, including sync, conflicts, read-only limits and crash cleanup; commands not run."
+    },
+    {
+      "file": "memory-tool.md",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool",
+      "sha256": "4f4e2e11f088536257967b8d75b188281bd8ce293fe496fea6bd21d57d17042d",
+      "bytes": 41993,
+      "fetchedAt": "2026-11-07T02:14:06.773Z",
+      "kind": "readable capture",
+      "reviewed": "Architecture/handler ownership, commands, security and retention sections; not every SDK implementation example."
+    },
+    {
+      "file": "dynamic-dreaming.txt",
+      "url": "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+      "sha256": "25841518a1d2690b7acd7adb0369e253e1c3fcccf55d6034be0a6f791f13ba70",
+      "bytes": 61160,
+      "fetchedAt": "2026-11-07T02:14:07.365Z",
+      "kind": "readable capture",
+      "reviewed": "Workflow overview, analyzer/organizer prompts, adoption, nightly selection/retry/retention and limitations; displayed code loses indentation, no runtime or helper-module audit."
+    },
+    {
+      "file": "dreams.md",
+      "url": "https://platform.claude.com/docs/en/managed-agents/dreams",
+      "sha256": "cb5cfadbc446209988ccf661662e1528f5fab595c0ad95fab0bb95fd9dcd3b00",
+      "bytes": 29002,
+      "fetchedAt": "2026-11-07T02:11:36.900Z",
+      "kind": "readable capture",
+      "reviewed": "Lifecycle, input/output, access, cancellation, archiving, usage, limits and errors prose; representative cURL examples; not every SDK variant."
+    },
+    {
+      "file": "managed-memory.md",
+      "url": "https://platform.claude.com/docs/en/managed-agents/memory",
+      "sha256": "233cafa7cc9c6ece91170766121d4ef381330ce871d0a7210f281ad90c998986",
+      "bytes": 54312,
+      "fetchedAt": "2026-11-07T02:11:37.739Z",
+      "kind": "readable capture",
+      "reviewed": "Storage/access, concurrent updates, versioning, recovery, retention and limits prose; representative examples, not every SDK variant."
+    },
+    {
+      "file": "cl-bench.md",
+      "url": "https://continual-learning-bench.com/news/cl-bench-1-0/",
+      "sha256": "a353f37d2e3b6948ea65627702480fa35a4f8e91b2308dcd9f99a5a9f1a711c0",
+      "bytes": 149,
+      "fetchedAt": "2026-11-07T02:11:37.281Z",
+      "kind": "readable capture",
+      "reviewed": "Title/byline only; substantive benchmark body not recovered. Article results are not independently verified."
+    },
+    {
+      "file": "sleep.md",
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "sha256": "bbf8cc3589666c7db07dc7bcc6268eb0e73cedcfa7f36bef8e990cf4c0e3a205",
+      "bytes": 10654,
+      "fetchedAt": "2026-11-07T02:11:38.071Z",
+      "kind": "readable capture",
+      "reviewed": "Full blog text; external-memory versus model-weight mechanism contrast only; papers/benchmarks not independently reviewed."
+    },
+    {
+      "file": "dynamic-dreaming.html",
+      "url": "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+      "sha256": "c43e3f7b4631fdf14a62a4991bd06d15a3b1a8b2c7e48ee5cf3615756877dff4",
+      "bytes": 283209,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original HTML",
+      "reviewed": "Preserved for rendering/code-format fidelity; not executed."
+    },
+    {
+      "file": "knowledge-wiki-readme.md",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/4a4224bdf0e9cfb3332167b69c90457403813625/managed-agents/knowledge-wiki/README.md",
+      "sha256": "6260d83265b331416485dbc7d9ad8a971ccfb565320332fb29dd5a0e97305d32",
+      "bytes": 7747,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "pinned README",
+      "reviewed": "Full README read. Notebook, helper code and benchmark runs not inspected; price/quality/loss claims are reported."
+    },
+    {
+      "file": "quickstarts-LICENSE",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-quickstarts/4a4224bdf0e9cfb3332167b69c90457403813625/LICENSE",
+      "sha256": "d7a04bf11ce24a7b79cd44b4a78dcc9971eaeb3b565821de437e0ecb7723e634",
+      "bytes": 1065,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "license",
+      "reviewed": "Repository license accompanying pinned README."
+    }
+  ]
+}

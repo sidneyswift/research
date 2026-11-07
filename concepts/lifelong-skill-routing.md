@@ -179,3 +179,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] explicitly acknowledges imperfect tool selection in codebases with many skills. This motivates testing routes separately from execution and complements Skill++’s controlled study; it does not show that access forgetting caused this model’s failures or that Skill++ fixes them. [[sources/thinking-machines--inkling-2-small#limitations]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] supplies a related discoverability failure: useful notes may exist but never be read. The injected layer is a bounded directory, while detailed files remain on demand. This is analogous to routing failure, not a Skill++ benchmark replication. [[sources/anthropic--components-of-agent-memory#steering]] [[sources/anthropic--components-of-agent-memory#injection]]

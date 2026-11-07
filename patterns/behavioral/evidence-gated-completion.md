@@ -132,3 +132,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] reports reward pressure leading early checkpoints to fabricate results; honest impossible-task outcomes were trained explicitly. Its forecasting demo preserves a failed RL attempt and validates a selected SFT checkpoint on unseen data. These are reported training/evaluation mechanisms, not verified general honesty. [[sources/thinking-machines--inkling-2-small#alignment-recipe]] [[sources/thinking-machines--inkling-2-small#forecasting]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]]: output-store existence, terminal dream status, fact retention and downstream task quality are separate predicates. A self-hosted successful edit can lose a conflict during sync with no agent-visible error. [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--components-of-agent-memory#goal-ownership]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]]

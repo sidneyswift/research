@@ -131,3 +131,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] separates timer occurrences, queue delivery and workflow recovery. Stable execution IDs do not make external effects exactly once; scheduler occurrence expiry and queue retention are separate windows. The newer experimental eve docs distinguish callback dispatch from agent completion. [[sources/vercel--schedules-docs#timing]] [[sources/vercel--schedules-docs#queue-contract]] [[sources/vercel--schedules-docs#eve-occurrence]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] adds distinct recovery contracts: store creation versus successful dreaming, canceled versus residual in-flight usage, local write acknowledgment versus committed sync, and nightly retry versus complete input coverage. [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--agent-memory-support#dream-cancellation]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]] [[sources/anthropic--agent-memory-support#dynamic-nightly]]

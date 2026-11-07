@@ -37,3 +37,7 @@ Resource-oriented interfaces with standard methods, purposeful custom actions, a
 ## Documentation research — 2026-11-05
 
 [[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/README]] examine published writing guidance and/or product documentation mechanisms. Documentation inspection only; no comparative usability or runtime result claimed.
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] records a terminology boundary from the linked Google Sleep blog: it updates memory weights, unlike external-context consolidation. This is a scoped blog mechanism comparison, not a new runnable artifact or replicated learning benchmark. [[sources/anthropic--agent-memory-support#sleep-contrast]]

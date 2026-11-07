@@ -164,3 +164,7 @@ This page synthesizes captured source text and inspected provider documentation 
 ## Documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] separates external rules retained between sessions from learning in weights and current-turn feedback. A memory tool delegates persistence/validation to its client handler; durable notes do not imply safe application execution. [[sources/anthropic--components-of-agent-memory#layers]] [[sources/anthropic--agent-memory-support#client-memory]]

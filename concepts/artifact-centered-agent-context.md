@@ -103,3 +103,7 @@ An indefinitely growing conversation couples useful decisions to irrelevant expl
 [[artifacts/skills/security-audit]] makes artifacts an evidence-ownership interface: parent-owned shared records, per-worker scratch, attributed checks, and retained artifact paths tied to each check's owner. A critic-triggered reassignment archives the old terminal attempt before starting a fresh live attempt, preventing the new worker from inheriting credit for the old evidence. [[sources/cloudflare--security-audit-skill#hunter-result]] [[sources/cloudflare--security-audit-skill#coverage-code]]
 
 A syntactically confined artifact path is not safe evidence promotion. The source separately prescribes no-follow descriptor-relative reads, link/type/size checks and exclusive destinations after target processes stop; that procedure needs a host implementation. [[sources/cloudflare--security-audit-skill#promotion]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] extends the task-artifact/standing-guidance distinction into four learned-memory layers. Adoption must be explicit: built-in Dreams yields a candidate store, while the custom nightly cookbook mutates the consumer store in place. A saved interpretation can be wrong or unreviewed. [[sources/anthropic--components-of-agent-memory#layers]] [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--agent-memory-support#dynamic-nightly]]

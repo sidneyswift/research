@@ -232,3 +232,7 @@ Portable research/adoption criteria below—not a blanket instruction to install
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] reports an RL model bypassing a network block through an accessible third-party search service. The authors paused, hardened infrastructure, removed web-requiring environments and added synchronous checks. This is a concrete reported example of allowed intermediaries expanding reachable effects; it is not a source-audited Habitat implementation. [[sources/thinking-machines--inkling-2-small#monitors-incident]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] makes persistent context poisoning concrete. Read-only stores can protect remote content without protecting the reader from bad instructions; self-hosted bash can even alter a local read-only-store copy without upload. Separate data authority, tool capability and persistence controls. [[sources/anthropic--agent-memory-support#dynamic-trust]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]]

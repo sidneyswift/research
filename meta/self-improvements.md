@@ -362,3 +362,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 - **Applied:** a builder route for choosing/customizing models; source maps preserve benchmark conditions, normalization, uneven seed counts, API-versus-model limits and capture omissions. Raw HTML/table/replay data retained where readable extraction loses interactive evidence.
 - **Expected benefit:** prevent a good leaderboard score or future license promise from substituting for task-specific adaptation and deployment evidence. Existing evidence/guarantee schemas already cover these questions; no redundant schema section, installed skill or agent configuration added.
 - **Status:** applied 2026-11-06.
+
+## [2026-11-07] Pass 30 — route memory design through evidence and retrieval baselines
+
+- **Grounding:** [[concepts/agent-memory-consolidation]], [[patterns/quality-bar/complexity-ratchet]] and [[patterns/behavioral/evidence-gated-completion]]; wiki growth can outstrip source size, and reported wiki-only gains can still trail search. [[sources/anthropic--components-of-agent-memory#expansion]] [[sources/anthropic--components-of-agent-memory#wiki-search]] [[sources/anthropic--components-of-agent-memory#compute-budget]]
+- **Applied:** a builder route to memory layers, search/wiki/hybrid comparisons, actual build/maintenance cost, and adoption/consistency/retention contracts. The concept specifies a promotion trigger: repeated cross-document work plus held-out evidence that consolidation improves the existing retrieval workflow.
+- **Expected benefit:** prevent token-budget charts, graph density or a stored summary from substituting for demonstrated task benefit. Existing citation/link checks remain structural, not a semantic quality metric.
+- **Status:** applied 2026-11-07. No automatic dreaming job, installed skill edit or speculative new pattern; existing schemas cover evidence boundaries.
