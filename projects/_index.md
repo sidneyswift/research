@@ -15,3 +15,5 @@ Work we are designing and building from the research. External runnable systems 
 First run: [[projects/conversation-learning/pilots/commercial-redline-001/README]] — bounded chat extraction; annotations await human review.
 
 - [[projects/writing-amazing-developer-docs/README]] — developer documentation research and authoring blueprints.
+
+- [[projects/writing-amazing-developer-docs/platform-documentation-system]] — proposed large-platform documentation ownership, delivery and evaluation.

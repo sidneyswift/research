@@ -28,3 +28,7 @@ See the observed practices and limits in [[concepts/developer-documentation-desi
 ## Timeline
 
 - 2026-11-05 — Added during the documentation research pass.
+
+## Wider documentation study — 2026-11-05
+
+[[concepts/developer-documentation-design]] extends the previous study using [[sources/docs-research--discovery-governance-20261105#reuse]]. Captured guidance/contract only; no runtime or adoption result.

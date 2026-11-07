@@ -1,0 +1,102 @@
+{
+  "retrieved": "2026-11-05",
+  "scope": "First-party documentation captures; no runtime MCP/API calls, install, configuration, or visual audit. Reviewed prose scope documented in /tmp/frontier-docs-platforms.md.",
+  "captures": [
+    {
+      "file": "context7-api-guide.md",
+      "url": "https://context7.com/docs/api-guide",
+      "resolved_url": "https://context7.com/docs/api-guide",
+      "sha256": "65882284148cd3b6c86f68797c508c50ec83bf999546ee18f24d5c50412cdb6d",
+      "bytes": 14604,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "context7-search-api.md",
+      "url": "https://context7.com/docs/search-api",
+      "resolved_url": "https://context7.com/docs/search-api",
+      "sha256": "8e78f79cdef4960f0f9cd3f9c1964f511fc74dcb2a1c8629c2fb1bf2732dfafb",
+      "bytes": 8611,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "context7-search-contract.md",
+      "url": "https://context7.com/docs/api-reference/search/search-documentation-in-one-request",
+      "resolved_url": "https://context7.com/docs/api-reference/search/search-documentation-in-one-request",
+      "sha256": "25bdd5e41df0aa558c6fd426fa80ffe86459f027eb3405f79ca4bc3168f48dc0",
+      "bytes": 28278,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "fern-mcp.md",
+      "url": "https://buildwithfern.com/learn/docs/ai-features/mcp-server",
+      "resolved_url": "https://buildwithfern.com/learn/docs/ai-features/mcp-server",
+      "sha256": "e22295db4bebc71925ca92ade9ff2663cfcf4f6fa28d1eab78bcb64c1ec9249c",
+      "bytes": 7091,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "fern-llms.md",
+      "url": "https://buildwithfern.com/learn/docs/ai-features/llms-txt",
+      "resolved_url": "https://buildwithfern.com/learn/docs/ai-features/llms-txt",
+      "sha256": "94dfbdf978ac95e52fa8182f05aaeb0a64cfa60a3db488504b8647cb86ddf0d0",
+      "bytes": 4781,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "fern-skills.md",
+      "url": "https://buildwithfern.com/learn/docs/ai-features/host-skills",
+      "resolved_url": "https://buildwithfern.com/learn/docs/ai-features/host-skills",
+      "sha256": "a22878abd965023d80426950ed94562e01a338be908b82d94e27ab461ff6207b",
+      "bytes": 7259,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "fern-markdown.md",
+      "url": "https://buildwithfern.com/learn/docs/ai-features/markdown",
+      "resolved_url": "https://buildwithfern.com/learn/docs/ai-features/markdown",
+      "sha256": "519bd916c757264091ef5dd67bd1a89086efd085a9fbbe9984cd45235c46c4cc",
+      "bytes": 6286,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "fern-catalog.md",
+      "url": "https://buildwithfern.com/learn/docs/ai-features/api-catalog",
+      "resolved_url": "https://buildwithfern.com/learn/docs/ai-features/api-catalog",
+      "sha256": "a537213ec7d0309ba538b1ebb49b135835e19d38f733eafdddc9c82f9d633930",
+      "bytes": 2881,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "readme-mcp.md",
+      "url": "https://docs.readme.com/main/docs/mcp",
+      "resolved_url": "https://docs.readme.com/main/docs/mcp",
+      "sha256": "c3030d6347d3e5d3840b6389d5bfad5470cb1676c14053107c988e2c9347a3ed",
+      "bytes": 15129,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "readme-discoverability.md",
+      "url": "https://docs.readme.com/main/docs/ai-discoverability",
+      "resolved_url": "https://docs.readme.com/main/docs/ai-discoverability",
+      "sha256": "fefaac76dee700c290270c8f852d16bbb77c1763bfe0cb7b705f134f0c111bd2",
+      "bytes": 8549,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "readme-ai-ready.md",
+      "url": "https://docs.readme.com/main/docs/ai-ready-docs",
+      "resolved_url": "https://docs.readme.com/main/docs/ai-ready-docs",
+      "sha256": "d8515ae4e891d2c3ca0a8561d89821734883f9535eb36c5aab1e0f144a98f6c3",
+      "bytes": 9091,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "readme-llms-upgrade.md",
+      "url": "https://docs.readme.com/main/changelog/upgraded-llms-txt",
+      "resolved_url": "https://docs.readme.com/main/changelog/upgraded-llms-txt",
+      "sha256": "a9a3203f85c775da5fd79a044d9359cb91df6e582e35c0344220a7de635506ff",
+      "bytes": 5184,
+      "representation": "server-provided textual representation"
+    }
+  ]
+}

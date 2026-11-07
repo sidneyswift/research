@@ -1,0 +1,34 @@
+{
+  "retrieved": "2026-11-05",
+  "scope": "Three original paper-reading notes and PDF version/hash restoration metadata. Full PDFs remain temporary uncommitted reading aids. No study, benchmark or provider execution replicated.",
+  "captures": [
+    {
+      "file": "webapi-notes.md",
+      "url": "https://aclanthology.org/2025.findings-acl.577.pdf",
+      "sha256": "b531ec3f53c3b9415a6d0a9aa8cbe5675890943ca50ef5bfe5b4ec1b139c2c2e",
+      "bytes": 3706,
+      "kind": "original-research-notes-and-metadata-not-full-paper"
+    },
+    {
+      "file": "api-learning-notes.md",
+      "url": "https://aclanthology.org/2025.findings-emnlp.994.pdf",
+      "sha256": "ab3c1649b13983cd3f2c247db233e929df32bb0221fce6818292f491b66efcf3",
+      "bytes": 4070,
+      "kind": "original-research-notes-and-metadata-not-full-paper"
+    },
+    {
+      "file": "agentdiff-notes.md",
+      "url": "https://arxiv.org/pdf/2602.11224v1",
+      "sha256": "991d2289cbbc0adc561c3663b0469a4a1dc92aef2862fa9271cd0bb96d1cf1d6",
+      "bytes": 3968,
+      "kind": "original-research-notes-and-metadata-not-full-paper"
+    },
+    {
+      "file": "papers.json",
+      "url": "https://arxiv.org/abs/2602.11224v1",
+      "sha256": "28dbb0832ca5348318a5b4bf1b73021d848b83f2d63593961a0a1a5029823359",
+      "bytes": 1387,
+      "kind": "original-restoration-metadata-not-full-papers"
+    }
+  ]
+}

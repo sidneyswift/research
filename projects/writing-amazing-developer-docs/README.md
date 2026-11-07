@@ -51,6 +51,22 @@ Coverage: **37 documentation pages captured plus two paper metadata pages and tw
 
 These are selected mechanisms, not a vendor ranking or blanket endorsement. Large mixed-context pages can lose prerequisites when a reader extracts only one snippet. No support or conversion gains were measured.
 
+## Wider research — second pass, 2026-11-05
+
+The owning [[concepts/developer-documentation-design]] now includes internal architecture/ADRs, runbooks/live incident records/postmortems, migrations, SDK reference, executable examples, search/versioning/reuse/accessibility and more empirical evidence. [[projects/writing-amazing-developer-docs/platform-documentation-system]] proposes a large-platform operating model. [[projects/writing-amazing-developer-docs/experiments/README]] records a narrowly executed synthetic doctest probe.
+
+| New collection | Added scope | Evidence boundary |
+| --- | --- | --- |
+| [[sources/docs-research--architecture-20261105#root]] | Fourteen primary pages: Nygard, AWS/GDS, C4, arc42, Backstage | Prose/process inspection; figures and Backstage runtime not tested |
+| [[sources/docs-research--operations-20261105#root]] | Ten unique pages: Google SRE, PagerDuty, Kubernetes, Django, Stripe | Four UTF8 supplements preserve first captures; four diagram assets retained, not visually audited; no operations executed |
+| [[sources/docs-research--executable-reference-20261105#root]] | Four pages: Rust/rustdoc, Python doctest, Sphinx | Selected sections on setup/skip/run/output semantics; no Rust/Sphinx execution |
+| [[sources/docs-research--discovery-governance-20261105#root]] | Seven pages: Algolia/Docusaurus, Read the Docs, GitHub reuse/writing, W3C | Published mechanisms, not search/accessibility performance measurements |
+| [[sources/docs-research--empirical-20261105#root]] | Five additional papers: API learning/observation, randomized redesign, DoGBench, local agent traces | Original reading notes/restoration preserved; full papers not reproduced; two 2026 preprints |
+
+Second-pass totals: **35 additional unique documentation pages and five papers**, preserved in50files across five receipts (35page captures, four alternate UTF8 representations, four assets, five paper notes, one restoration manifest and one correction). Together with the initial pass:72documentation pages, seven papers;91receipt-checked files across14collections. Count does not imply every section/language/visual was reviewed; source maps retain actual scope.
+
+The intervention evidence changes the interpretation: a small bundled redesign improved task accuracy without a statistically significant overall task-time improvement. The first pass's task-purpose separation is also qualified: readers need task-language routes and necessary concepts reconnected at decision points. [[sources/docs-research--empirical-20261105#meng-intervention]] [[sources/docs-research--empirical-20261105#meng-information-seeking]]
+
 ## Next investigations
 
 1. Observe fresh developers completing three real platform integration tasks using current docs; record setup, discovery, correctness and recovery separately.
@@ -58,7 +74,7 @@ These are selected mechanisms, not a vendor ranking or blanket endorsement. Larg
 3. Test real supported languages/shells from clean environments and verify business results.
 4. Compare scoped Markdown retrieval, docs search and ordinary HTML for the same bounded agent tasks.
 5. Investigate ownership and release tooling before adding a second independently authored documentation surface.
-6. Extend research to internal architecture docs, ADRs and runbooks; current coverage emphasizes product/API integration docs.
+6. Inspect real implementation/history against one ADR log and run an authorized incident drill; this pass studies the guidance and intended structures, not their adoption.
 
 ## Adding to the group
 
@@ -67,3 +83,35 @@ Use INGEST; deduplicate against the owning concept, capture evidence immutably, 
 ## Activity
 
 - 2026-11-05 — Initial deep research collection and practical blueprints created; no production docs were replaced, no examples executed and no usability experiment performed.
+
+- 2026-11-05 — Wider/deeper second pass added architecture, operational, toolchain and empirical evidence; local synthetic probe executed, proposed platform model and reusable study supplement added.
+
+## Mintlify case study — 2026-11-05
+
+[[artifacts/projects/mintlify]] investigates the platform's approach to discovery, content representations, capability skills, MCP retrieval, feedback, assistants and agent-driven maintenance. It owns the detailed findings and portable-idea ledger.
+
+| Evidence | Scope |
+| --- | --- |
+| [[sources/mintlify--agent-documentation-docs#root]] | Twenty current product docs/index pages; actual reviewed sections and authentication/representation distinctions |
+| [[sources/mintlify--agent-docs-research#root]] | Thirteen dated or living first-party articles/report surfaces plus six preserved figures |
+| [[sources/mintlify--docs-url-discovery-bench#root]] | Selected source and static result inventory at5f055a8; aggregate rows present, claimed proxy logs absent |
+
+Two immutable capture receipts verify39files. The benchmark clone is ignored and manifest-restorable; it is not copied into the research Git tree. No service configuration, authenticated calls, feedback, deployment or benchmark rerun performed. These counts are additional to the earlier two research passes.
+
+Distinctive takeaways include retaining semantic index coverage, testing exported content rather than assuming Markdown fidelity, separating product skills from assistant/authoring guidance, and assessing actual tasks beyond traffic/readiness or estimated savings. The historical Index announcement is marked discontinued; dated research and current product state remain separate.
+
+## Frontier agent interfaces — third pass, 2026-11-05
+
+Start with [[concepts/agent-documentation-interfaces]]; then follow the concrete case studies below. This pass adds **four evidence collections, 24 direct documentation/specification captures, two dated Anthropic articles, one original Edge article note, and three original paper-reading notes**. The four receipts verify 31 preserved capture/notes/metadata files; full research PDFs are restored from recorded version/hash metadata rather than reproduced here. Capture counts do not imply exhaustive platform review.
+
+| Case | Distinct contribution |
+| --- | --- |
+| [[artifacts/projects/context7]] | Automatic versus explicit retrieval, source/version provenance, fallback, background indexing |
+| [[artifacts/projects/fern]] | Hosted answer generation versus self-hosted retrieval, semantic Markdown, skill packages/catalogs |
+| [[artifacts/projects/readme]] | Documentation retrieval plus API execution; separate credentials and discovery controls |
+| [[artifacts/projects/webmcp]] | Draft/browser contract, page state, forms, origin gates, cancellation and documentation drift |
+| [[artifacts/projects/dokimi]] | Controlled context evaluation, selection/reach, grounded judges, task tests and missing checks |
+| [[sources/frontier-docs--empirical-20261105#root]] | Three independent studies: hybrid agents, contract learning from examples, enterprise state-diff ablations |
+| [[sources/frontier-docs--tool-design-evaluation-20261105#root]] | Anthropic tool design/search/examples and Intel evaluator documentation |
+
+No platform connection, provider call, browser flag, tool execution or benchmark rerun occurred. [[meta/2026-11-05-frontier-docs-lint]] records scoped checks and inherited lint issues.

@@ -116,3 +116,7 @@ This split keeps the trust story legible: an admin can never silently inject beh
 ## Open Inspect: Session-pinned managed materialization
 
 [[artifacts/projects/background-agents]] validates paged skill content and file hashes, stages an installation, and uses a recoverable journal/rename swap before harness discovery. Selected revisions survive restart, but name collisions deliberately drop managed entries in favor of discovered skills. Track selected, validated, installed and discoverable sets separately. This is installation evidence, not a measured routing improvement. [[sources/open-inspect--background-agents#skills-pinning]] [[sources/open-inspect--background-agents#skills-validation]] [[sources/open-inspect--background-agents#skills-install]]
+
+## Mintlify documentation application — 2026-11-05
+
+[[artifacts/projects/mintlify]] examines documented index, skill, retrieval and editing surfaces with distinct authority and lifecycle boundaries. Its cited external discovery/protocol schema versions are not independently conformance-verified here. Source inspection is limited to the public URL benchmark; no hosted runtime guarantee or confirmed platform-implementation example is added.

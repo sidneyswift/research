@@ -27,6 +27,7 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 
 | You're building… | Patterns / concepts to read first | Worked artifacts to study |
 | --- | --- | --- |
+| **Documentation retrieval / API guidance / WebMCP** | [[concepts/agent-documentation-interfaces]], [[concepts/developer-documentation-design]], [[concepts/business-platform-api-design]] | [[artifacts/projects/context7]], [[artifacts/projects/fern]], [[artifacts/projects/readme]], [[artifacts/projects/webmcp]], [[artifacts/projects/dokimi]] |
 | **Issue-to-PR factory / repair loops / shared mutation ownership** | [[concepts/agent-control-plane]], [[concepts/durable-agent-execution]], [[concepts/review-cost-aware-workflows]] | [[artifacts/projects/superplane]] (keyed admission, repair budgets, exact-head merge and completion boundaries; source-inspected) |
 | **Hosted background coding / sandbox recovery / automation retries** | [[concepts/agent-control-plane]], [[concepts/durable-agent-execution]], [[patterns/behavioral/context-is-not-authority]] | [[artifacts/projects/background-agents]] (saved state versus retirement, uncertain delivery and effective context; source-inspected) |
 | **Embed an agent runtime / audit recovery and authority** | [[concepts/agent-control-plane]], [[concepts/durable-agent-execution]], [[patterns/behavioral/context-is-not-authority]] | [[artifacts/projects/codex]] (shared runtime, model-visible evidence and scoped resume; source-inspected, not benchmarked) |
@@ -79,3 +80,7 @@ flag for what the wiki didn't cover, and any gaps to file back.
 ## Developer documentation
 
 For developer portals, API guides, examples, troubleshooting and agent-readable docs, start at [[projects/writing-amazing-developer-docs/README]], then read [[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/page-blueprints]].
+
+For internal architecture, runbooks, migrations and documentation delivery/evaluation, follow [[concepts/developer-documentation-design]] into [[projects/writing-amazing-developer-docs/platform-documentation-system]]. [[_schemas/documentation-case-study]] is the reusable study matrix.
+
+For a concrete documentation platform with indexes, Markdown conversion, skills, MCP and agent-maintenance workflows, study [[artifacts/projects/mintlify]]; retain its research-method and access-boundary caveats.

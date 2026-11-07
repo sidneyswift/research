@@ -412,3 +412,86 @@ The wiki applied to itself — improvements to our own machinery, each traced to
 | [[sources/cummaudo--api-documentation-knowledge]] | Documentation research evidence |
 | [[sources/nam--documentation-use]] | Documentation research evidence |
 | [[sources/developer-docs--product-examples]] | Documentation research evidence |
+
+## Developer documentation research — wider pass
+
+- [[sources/docs-research--architecture-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--operations-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--executable-reference-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--discovery-governance-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--empirical-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+
+- [[projects/writing-amazing-developer-docs/platform-documentation-system]] — proposed ownership, delivery and task-evaluation model.
+- [[projects/writing-amazing-developer-docs/experiments/README]] — executed synthetic doctest-context/output probe.
+- [[_schemas/documentation-case-study]] — reusable evidence/review matrix.
+
+- [[creators/michael-nygard]] — documentation research creator/maintainer context.
+
+- [[creators/simon-brown]] — documentation research creator/maintainer context.
+
+- [[creators/arc42]] — documentation research creator/maintainer context.
+
+- [[creators/backstage]] — documentation research creator/maintainer context.
+
+- [[creators/pagerduty]] — documentation research creator/maintainer context.
+
+- [[creators/kubernetes]] — documentation research creator/maintainer context.
+
+- [[creators/django]] — documentation research creator/maintainer context.
+
+- [[creators/rust]] — documentation research creator/maintainer context.
+
+- [[creators/python]] — documentation research creator/maintainer context.
+
+- [[creators/sphinx]] — documentation research creator/maintainer context.
+
+- [[creators/algolia]] — documentation research creator/maintainer context.
+
+- [[creators/docusaurus]] — documentation research creator/maintainer context.
+
+- [[creators/read-the-docs]] — documentation research creator/maintainer context.
+
+- [[creators/w3c]] — documentation research creator/maintainer context.
+
+- [[creators/martin-robillard]] — documentation research creator/maintainer context.
+
+- [[creators/michael-meng]] — documentation research creator/maintainer context.
+
+- [[creators/frances-liu]] — documentation research creator/maintainer context.
+
+- [[creators/zhijun-gao]] — documentation research creator/maintainer context.
+
+- [[meta/2026-11-05-developer-docs-expanded-lint]] — wider documentation research validation and remaining limits.
+
+- [[artifacts/projects/mintlify]] — documentation discovery/delivery/skills/retrieval/maintenance; current docs and vendor research, selected benchmark source/data inspected.
+
+## Mintlify agent-documentation evidence
+
+- [[sources/mintlify--agent-documentation-docs]] — scope, evidence and registered source anchors.
+- [[sources/mintlify--agent-docs-research]] — scope, evidence and registered source anchors.
+- [[sources/mintlify--docs-url-discovery-bench]] — scope, evidence and registered source anchors.
+
+- [[creators/mintlify]] — agent documentation platform and first-party engineering research.
+
+- [[meta/2026-11-05-mintlify-ingest-lint]] — Mintlify evidence/citation/restoration checks and remaining limits.
+
+## Frontier agent documentation interfaces — 2026-11-05
+
+- [[concepts/agent-documentation-interfaces]] — owning cross-system findings and portable design ledger.
+- [[artifacts/projects/context7]] — source-specific case study.
+- [[artifacts/projects/fern]] — source-specific case study.
+- [[artifacts/projects/readme]] — source-specific case study.
+- [[artifacts/projects/webmcp]] — source-specific case study.
+- [[artifacts/projects/dokimi]] — source-specific case study.
+
+- [[sources/frontier-docs--platforms-20261105]] — immutable evidence, reviewed scope and registered anchors.
+- [[sources/frontier-docs--webmcp-20261105]] — immutable evidence, reviewed scope and registered anchors.
+- [[sources/frontier-docs--empirical-20261105]] — immutable evidence, reviewed scope and registered anchors.
+- [[sources/frontier-docs--tool-design-evaluation-20261105]] — immutable evidence, reviewed scope and registered anchors.
+
+- [[creators/upstash]] — publisher context.
+- [[creators/fern]] — publisher context.
+- [[creators/readme]] — publisher context.
+- [[creators/intel]] — publisher context.
+
+- [[meta/2026-11-05-frontier-docs-lint]] — capture/link checks and research limits.

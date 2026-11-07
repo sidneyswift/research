@@ -85,3 +85,7 @@ The docs contain installation/setup instructions aimed at coding agents. We capt
 ## Documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
+
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.

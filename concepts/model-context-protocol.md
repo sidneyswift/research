@@ -113,3 +113,13 @@ Protocol standardization does not remove large-catalog discovery, context cost o
 - Which precise SDK/host releases implement the modern core and each extension together? This pass captures documentation, not a certified interoperability matrix.
 - Which mutation APIs expose an idempotency key, durable operation ID and authoritative readback after a dropped stream?
 - What are the measured discovery/context/latency tradeoffs for a direct tool catalog versus Code Mode on our actual workloads?
+
+## Mintlify documentation application — 2026-11-05
+
+[[artifacts/projects/mintlify]] examines documented index, skill, retrieval and editing surfaces with distinct authority and lifecycle boundaries. Its cited external discovery/protocol schema versions are not independently conformance-verified here. Source inspection is limited to the public URL benchmark; no hosted runtime guarantee or confirmed platform-implementation example is added.
+
+## WebMCP and agent documentation follow-up — 2026-11-05
+
+[[artifacts/projects/webmcp]] records current CG draft/browser/testing contracts separately: `document.modelContext` in the captured draft/Chrome guidance, older `navigator.modelContext` vocabulary in other current documentation, and declarative forms outside the current CG specification. This qualifies earlier evidence without editing its immutable snapshots. It is a documentation disagreement, not a reproduced interoperability failure. [[sources/frontier-docs--webmcp-20261105#documentation-drift]] [[sources/frontier-docs--webmcp-20261105#declarative-proposal]]
+
+[[concepts/agent-documentation-interfaces]] compares page-local tools with documentation retrieval, generated answers, backend execution and administration.

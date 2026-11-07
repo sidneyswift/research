@@ -187,3 +187,17 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/google--developer-documentation]] — collection scope and registered anchors.
 - [[sources/nam--documentation-use]] — collection scope and registered anchors.
 - [[sources/writethedocs--documentation-practice]] — collection scope and registered anchors.
+
+## Developer documentation research — wider pass
+
+- [[sources/docs-research--architecture-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--operations-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--executable-reference-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--discovery-governance-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--empirical-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+
+## Mintlify agent-documentation evidence
+
+- [[sources/mintlify--agent-documentation-docs]] — scope, evidence and registered source anchors.
+- [[sources/mintlify--agent-docs-research]] — scope, evidence and registered source anchors.
+- [[sources/mintlify--docs-url-discovery-bench]] — scope, evidence and registered source anchors.

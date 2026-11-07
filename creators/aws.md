@@ -31,3 +31,7 @@ Caller intent, retry-safe effects, atomic request recording, and auditable reque
 ## Source citations
 
 - [[sources/aws--idempotent-apis#retries]]
+
+## Wider documentation study — 2026-11-05
+
+[[concepts/developer-documentation-design]] extends the previous study using [[sources/docs-research--architecture-20261105#aws-adr]]. Captured guidance/contract only; no runtime or adoption result.

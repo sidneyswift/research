@@ -1,0 +1,118 @@
+{
+  "retrieved": "2026-11-05",
+  "scope": "Published prose and examples from fourteen official architecture documentation pages; Backstage catalog reviewed only relation, lifecycle, ownership and system/domain fields; no execution or visual diagram inspection",
+  "captures": [
+    {
+      "file": "nygard-adr.md",
+      "url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions",
+      "resolved_url": "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions",
+      "sha256": "13e19dd3aeb05d86d80f3c150951ffeb7f94010ab784c6cdefa1229476f1a661",
+      "bytes": 8820,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "gds-adr.md",
+      "url": "https://gds-way.digital.cabinet-office.gov.uk/standards/architecture-decisions.html",
+      "resolved_url": "https://gds-way.digital.cabinet-office.gov.uk/standards/architecture-decisions.html",
+      "sha256": "27b185f329d44e3f70b27a30f5aea8c3d323ecba65026bdb4bcb3f455a0d338e",
+      "bytes": 5695,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "aws-adr.md",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html",
+      "resolved_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html",
+      "sha256": "eb6f568678f2f0b18491d6a21f08a5a28bbcfad8c558d81592462a4613e27915",
+      "bytes": 7079,
+      "extraction": "server-provided Markdown"
+    },
+    {
+      "file": "c4-diagrams.md",
+      "url": "https://c4model.com/diagrams",
+      "resolved_url": "https://c4model.com/diagrams",
+      "sha256": "3cf116abaabeac0c52a30217c444e1ff766b4afaf9c88a78ebdb524f098421e0",
+      "bytes": 907,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "c4-checklist.md",
+      "url": "https://c4model.com/diagrams/checklist",
+      "resolved_url": "https://c4model.com/diagrams/checklist",
+      "sha256": "0d0cc053a1c21e983280c51d63a9ba50ebde09bf36d5bb2fcd4fd522a5be7579",
+      "bytes": 1865,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "c4-context.md",
+      "url": "https://c4model.com/diagrams/system-context",
+      "resolved_url": "https://c4model.com/diagrams/system-context",
+      "sha256": "653feeb093ef528d891357268e2205f512f1b87bc1b87e05defc034d21492976",
+      "bytes": 1586,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "c4-container.md",
+      "url": "https://c4model.com/diagrams/container",
+      "resolved_url": "https://c4model.com/diagrams/container",
+      "sha256": "d0d26f979cb3daa6d5c490b629f50c7b32b619ff7fcadbeac52a7fb274d22b7d",
+      "bytes": 1871,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "c4-dynamic.md",
+      "url": "https://c4model.com/diagrams/dynamic",
+      "resolved_url": "https://c4model.com/diagrams/dynamic",
+      "sha256": "466b1e990c353fee2df2a38001813cd1244e72a42cf8d04c65e6a5823d55da7a",
+      "bytes": 1383,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "arc42-overview.md",
+      "url": "https://arc42.org/overview/",
+      "resolved_url": "https://arc42.org/overview/",
+      "sha256": "7803d5e25c430d38e73d17ae574bf15c373a2905aea990ffeddbed67f1e8679b",
+      "bytes": 2427,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "arc42-context.md",
+      "url": "https://docs.arc42.org/section-3/",
+      "resolved_url": "https://docs.arc42.org/section-3/",
+      "sha256": "374a6dd61b168bc4c83ace6b3530effdb70663fd99fc33865bfae3675b497519",
+      "bytes": 6203,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "arc42-runtime.md",
+      "url": "https://docs.arc42.org/section-6/",
+      "resolved_url": "https://docs.arc42.org/section-6/",
+      "sha256": "c19c1cf02116197d87f0252d9f9c9ca77e8ae065a09fb2ebdab96968c9091682",
+      "bytes": 4679,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "backstage-publishing.md",
+      "url": "https://backstage.io/docs/features/techdocs/creating-and-publishing/",
+      "resolved_url": "https://backstage.io/docs/features/techdocs/creating-and-publishing/",
+      "sha256": "d5fa886c2f32819bfefb6bb66ed9ef3686a685ece484746216b7ca8edd8c4f84",
+      "bytes": 5855,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "backstage-architecture.md",
+      "url": "https://backstage.io/docs/features/techdocs/architecture/",
+      "resolved_url": "https://backstage.io/docs/features/techdocs/architecture/",
+      "sha256": "485e20912fa5b1f67630a74d19830f2c146a11e6a97e14caae4f8400014f90fa",
+      "bytes": 6375,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    },
+    {
+      "file": "backstage-catalog.md",
+      "url": "https://backstage.io/docs/features/software-catalog/descriptor-format/",
+      "resolved_url": "https://backstage.io/docs/features/software-catalog/descriptor-format/",
+      "sha256": "db4484198eb0ced095fb76251de680f223a7e34b82618b60b02843426ce119b7",
+      "bytes": 49876,
+      "extraction": "HTML main-content text; link targets, diagram content and code indentation may be lost"
+    }
+  ]
+}

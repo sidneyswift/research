@@ -153,3 +153,9 @@ Current official OpenAI guides confirm both ordinary tool-linked views and globa
 Preserve two new compatibility qualifications. The public extension guide now says composer mentions are Desktop-only while the pinned repository table lists Desktop/Web. The general UI guide discusses picture-in-picture while this pinned extension contract excludes it. Resolve the exact capability in the target host rather than silently replacing either source. [[sources/modelcontextprotocol--mcp-apps-docs#openai-implementation-guides]], [[sources/openai--mcp-extensions#platforms]], [[sources/openai--mcp-extensions#display-onboarding]]
 
 Public npm metadata confirms OpenAI Extensions 0.2.1 and Apps 2.0.4 exist, but their declared app-side peer ranges differ. The Apps migration guide separates wire compatibility from SDK class/type compatibility. A consuming project should prove a pinned combination rather than force peer installation or infer compatibility from similar API names. No package was installed or host executed in this follow-up. [[sources/modelcontextprotocol--mcp-apps-docs#registry-compatibility-followup]], [[sources/modelcontextprotocol--mcp-apps-docs#sdk-version]]
+
+## WebMCP and agent documentation follow-up — 2026-11-05
+
+[[artifacts/projects/webmcp]] records current CG draft/browser/testing contracts separately: `document.modelContext` in the captured draft/Chrome guidance, older `navigator.modelContext` vocabulary in other current documentation, and declarative forms outside the current CG specification. This qualifies earlier evidence without editing its immutable snapshots. It is a documentation disagreement, not a reproduced interoperability failure. [[sources/frontier-docs--webmcp-20261105#documentation-drift]] [[sources/frontier-docs--webmcp-20261105#declarative-proposal]]
+
+[[concepts/agent-documentation-interfaces]] compares page-local tools with documentation retrieval, generated answers, backend execution and administration.

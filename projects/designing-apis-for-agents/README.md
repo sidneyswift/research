@@ -116,3 +116,15 @@ Added [[artifacts/projects/shopify-api]] as the tenth API case study, with sixte
 ## Related documentation research — 2026-11-05
 
 [[projects/writing-amazing-developer-docs/README]] studies how developers and agents discover, learn, implement and recover using published documentation. [[concepts/developer-documentation-design]] owns the writing and maintenance findings.
+
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
+## Mintlify documentation application — 2026-11-05
+
+[[artifacts/projects/mintlify]] examines documented index, skill, retrieval and editing surfaces with distinct authority and lifecycle boundaries. Its cited external discovery/protocol schema versions are not independently conformance-verified here. Source inspection is limited to the public URL benchmark; no hosted runtime guarantee or confirmed platform-implementation example is added.
+
+## Agent documentation and browser interfaces — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] connects this API-design research with discovery, exact-version retrieval, skills and executable interfaces. [[artifacts/projects/context7]] documents retrieval-triggered background indexing; [[artifacts/projects/readme]] combines docs tools and live API execution; [[artifacts/projects/webmcp]] adds page-local tools with different lifecycle/authority. These are source-specific cases, not a requirement to combine responsibilities. [[sources/frontier-docs--platforms-20261105#context7-search-contract]] [[sources/frontier-docs--platforms-20261105#readme-mcp]] [[sources/frontier-docs--webmcp-20261105#browser-vs-backend]]

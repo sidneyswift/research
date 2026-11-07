@@ -1,0 +1,61 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "algolia-indexing.md",
+      "url": "https://docsearch.algolia.com/docs/how-does-it-work/",
+      "resolved_url": "https://docsearch.algolia.com/docs/how-does-it-work/",
+      "sha256": "7b3f6880d78f9462f4ad578dd09f2acb50ffe12ec44edeec25bf22897a01354d",
+      "bytes": 3063,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "docusaurus-search.md",
+      "url": "https://docusaurus.io/docs/search",
+      "resolved_url": "https://docusaurus.io/docs/search",
+      "sha256": "9b148c24d0dc4a1a46880b5bbe09b9a4756a7a6f23f8cef4df3e7a7b52b671d3",
+      "bytes": 18863,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "rtd-versions.md",
+      "url": "https://docs.readthedocs.com/platform/stable/versions.html",
+      "resolved_url": "https://docs.readthedocs.com/platform/stable/versions.html",
+      "sha256": "408bbdaf2d03a13d69165eeb859ad26d558a55809c2b1bd683178fc2d108b49c",
+      "bytes": 11475,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "github-reuse.md",
+      "url": "https://docs.github.com/en/contributing/writing-for-github-docs/creating-reusable-content",
+      "resolved_url": "https://docs.github.com/en/contributing/writing-for-github-docs/creating-reusable-content",
+      "sha256": "53e32c8ccbe4005b6ddcb35b2ac221116397b4fb633868b0480ad41acb08b5f2",
+      "bytes": 2417,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "github-content-design.md",
+      "url": "https://docs.github.com/en/contributing/writing-for-github-docs/best-practices-for-github-docs",
+      "resolved_url": "https://docs.github.com/en/contributing/writing-for-github-docs/best-practices-for-github-docs",
+      "sha256": "db687e1ecc3de05a53dcc805238c32dd006454680345a613da9d9273f52a206d",
+      "bytes": 7097,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "wai-tables.md",
+      "url": "https://www.w3.org/WAI/tutorials/tables/",
+      "resolved_url": "https://www.w3.org/WAI/tutorials/tables/",
+      "sha256": "8dfd9073013fdfe32ed0dd87c1e58ff4e70f27b9d4ad1aa5d47410c24ee11cb4",
+      "bytes": 5695,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "wai-complex-images.md",
+      "url": "https://www.w3.org/WAI/tutorials/images/complex/",
+      "resolved_url": "https://www.w3.org/WAI/tutorials/images/complex/",
+      "sha256": "937dd3d2a87e76230012cecbf633f97de88c64df5a8de9438f86d36e449b9a58",
+      "bytes": 9744,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    }
+  ]
+}

@@ -62,3 +62,11 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 
 - [[artifacts/projects/mcp-apps]] — shared UI wire protocol, sandbox/bridge and SDK/draft differences.
 - [[artifacts/projects/openai-mcp-extensions]] — pinned ChatGPT-specific SDK and app/plugin contracts.
+
+- [[artifacts/projects/mintlify]] — documentation discovery/delivery/skills/retrieval/maintenance; current docs and vendor research, selected benchmark source/data inspected.
+
+- [[artifacts/projects/context7]] — frontier agent documentation case study; documented contracts, no runtime test.
+- [[artifacts/projects/fern]] — frontier agent documentation case study; documented contracts, no runtime test.
+- [[artifacts/projects/readme]] — frontier agent documentation case study; documented contracts, no runtime test.
+- [[artifacts/projects/webmcp]] — frontier agent documentation case study; documented contracts, no runtime test.
+- [[artifacts/projects/dokimi]] — frontier agent documentation case study; documented contracts, no runtime test.

@@ -1,0 +1,57 @@
+{
+  "retrieved": "2026-11-05",
+  "papers": [
+    {
+      "key": "robillard2009",
+      "title": "What Makes APIs Hard to Learn? Answers from Developers",
+      "authors": "Martin P. Robillard",
+      "publication": "IEEE Software 26(6), 27\u201334, November/December 2009",
+      "version": "Published article author-hosted copy; DOI10.1109/MS.2009.193",
+      "pdf_url": "https://www.cs.mcgill.ca/~martin/papers/software2009a.pdf",
+      "pdf_sha256": "f2206f981e11caa55442dbdce89b118138924a192d69290dc62e1ee34666b3a6",
+      "pdf_bytes": 919368,
+      "pdf_pages": 9,
+      "preserved_notes": "robillard2009-notes.md",
+      "full_pdf_committed": false
+    },
+    {
+      "key": "meng2019",
+      "title": "How Developers Use API Documentation: An Observation Study",
+      "authors": "Michael Meng; Stephanie Steinhardt; Andreas Schubert",
+      "publication": "Communication Design Quarterly, online first January29,2019; DOI10.1145/3274995.3274999",
+      "version": "Published article PDF bearing author copyright; online-first2019, observation spring2016",
+      "pdf_url": "https://www.mangold-international.com/_Resources/Persistent/a/7/1/2/a712bdd99343412abc60642ea624ae047ef00b27/Meng_et_al_How-Developers-Use-API-Documentation_2019.pdf",
+      "pdf_sha256": "16da25c48f22200b5cd561f8293bd5c7597e0194f21bfcd15aaa847e5d88cb3f",
+      "pdf_bytes": 709856,
+      "pdf_pages": 11,
+      "preserved_notes": "meng2019-notes.md",
+      "full_pdf_committed": false
+    },
+    {
+      "key": "dogbench",
+      "title": "DoGBench: Can Agents Meet Expert Standards for User-Facing Documentation?",
+      "authors": "Frances Liu; Manny Silva; Paige Calvert; Ayu Adiati; Sarah Sanders",
+      "publication": "arXiv2609.39909v1, September30,2026; preprint",
+      "version": "arXiv2609.39909v1; living author HTMLhttps://dogbench.ai/paper inspected separately",
+      "pdf_url": "https://arxiv.org/pdf/2609.39909v1",
+      "pdf_sha256": "765be71adac1196335e8e534fb4607b9ac6c3e594913cf40e34f1eb9612de5d1",
+      "pdf_bytes": 1987222,
+      "pdf_pages": 28,
+      "preserved_notes": "dogbench-notes.md",
+      "full_pdf_committed": false
+    },
+    {
+      "key": "gao2026",
+      "title": "From Agent Behaviour to Agent-Friendly Documentation: An Empirical Study of How Coding Agents Discover, Read, and Write Technical Documentation",
+      "authors": "Zhijun Gao; Jing Chen",
+      "publication": "arXiv2608.20195v1, August20,2026; preprint",
+      "version": "arXiv2608.20195v1; HTMLhttps://arxiv.org/html/2608.20195v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20195v1",
+      "pdf_sha256": "a9b97c3f2c5d5692f5f9c629d2bd19f7f47ad0c92e1b18cdb7683dba69ad7ba8",
+      "pdf_bytes": 967907,
+      "pdf_pages": 14,
+      "preserved_notes": "gao2026-notes.md",
+      "full_pdf_committed": false
+    }
+  ]
+}

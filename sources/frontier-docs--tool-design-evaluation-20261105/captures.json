@@ -1,0 +1,37 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "dokimi-methodology.md",
+      "url": "https://intel.github.io/dokimi/methodology/",
+      "resolved_url": "https://intel.github.io/dokimi/methodology/",
+      "sha256": "cb34014853649aa90458cfdfef5eca5674c2662377bd02d69f874c95c458a80f",
+      "bytes": 20187,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "dokimi-measurement.md",
+      "url": "https://intel.github.io/dokimi/what-it-measures/",
+      "resolved_url": "https://intel.github.io/dokimi/what-it-measures/",
+      "sha256": "5ef9387d6a7c1695788b37b234c26c03d7b7e18badcd8a10841ea0cd0d1afd02",
+      "bytes": 5325,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "anthropic-writing-tools.md",
+      "url": "https://www.anthropic.com/research/writing-tools-for-agents",
+      "resolved_url": "https://www.anthropic.com/research/writing-tools-for-agents",
+      "sha256": "93e53847d533cfbf750a859717c88f2995f6ba99c5ca5be256de6cae5e9303cc",
+      "bytes": 26086,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "anthropic-advanced-tools.md",
+      "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+      "resolved_url": "https://www.anthropic.com/research/advanced-tool-use",
+      "sha256": "00d40f7d73649200eea029e8aaaaa159b433fc060689c969143dcf25fe40290b",
+      "bytes": 26926,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    }
+  ]
+}

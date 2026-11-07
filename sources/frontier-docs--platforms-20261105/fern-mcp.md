@@ -1,0 +1,132 @@
+# Capture: fern-mcp
+
+Canonical URL: https://buildwithfern.com/learn/docs/ai-features/mcp-server
+Resolved URL: https://buildwithfern.com/learn/docs/ai-features/mcp-server
+Retrieved: 2026-11-05
+Representation: server-provided textual representation
+Content-Type: text/markdown; charset=utf-8
+
+---
+
+> This page is for Docs.
+
+> For clean Markdown content of this page, append .md to this URL. For the complete documentation index, see https://buildwithfern.com/learn/llms.txt.
+
+# MCP server for your site
+
+> Give your readers' AI clients an MCP server that answers questions about your product from your documentation site.
+
+Fern automatically generates and hosts a production-ready [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server for every documentation site with [Ask Fern](/learn/docs/ai-features/ask-fern/overview) enabled. The server connects AI clients like Claude Code, Cursor, and Windsurf to your documentation as an external data source, so your readers can get instant answers about your product directly within their development environment.
+
+This is the server your readers connect to, and it serves your content. To point your own agent at Fern's product documentation while you build your site, or at your organization's Fern data, use [Fern's MCP server](/learn/docs/ai-features/fern-mcp-servers). To give agents tools that call your API, generate one with the [MCP Generator](/learn/mcp-generator/get-started/quickstart).
+
+Your MCP server is available at `your-documentation-site.com/_mcp/server`. For example, the MCP server for this site is at [https://buildwithfern.com/learn/\_mcp/server](https://buildwithfern.com/learn/_mcp/server).
+
+## How it works
+
+The server exposes a single tool that answers questions about your documentation site using the same Retrieval Augmented Generation (RAG) pipeline as [Ask Fern](/learn/docs/ai-features/ask-fern/overview). Queries are semantic rather than keyword-based — the tool searches indexed content and synthesizes an answer, not a list of raw results.
+
+Each message sent through the MCP server runs Ask Fern under the hood and consumes 2 [AI credits](/learn/docs/ai-features/overview#ai-credits), the same as an Ask Fern query.
+
+## Self-hosted containers
+
+[Self-hosted](/learn/docs/self-hosted/overview) containers also serve `/_mcp/server`, without Ask Fern or AI credits. Instead of the RAG pipeline, the self-hosted server exposes two tools:
+
+* **`searchDocs`** runs keyword search against the container's built-in search index and returns matching pages rather than a synthesized answer.
+* **`fetchPage`** returns a page's [Markdown](/learn/docs/ai-features/markdown).
+
+Both tools enforce the same access control as a browser request. A result is only returned for a page the caller could open, based on their roles and credentials (including a [`FERN_TOKEN` header](#authenticated-sites)). Setting `mcp: false` [disables the server](#disable-the-mcp-server) on self-hosted containers too.
+
+## Connect to your MCP server
+
+For Claude Code and Cursor, [page action](/learn/docs/configuration/site-level-settings#page-actions-configuration) buttons let users connect in one click:
+
+* **Connect to Claude Code** copies a `claude mcp add` command to the clipboard to register the server.
+* **Connect to Cursor** opens Cursor with the server URL pre-filled for one-click install.
+
+Both buttons are enabled by default on sites with Ask Fern.
+
+All other clients (including Claude Desktop, Windsurf, and VS Code) connect using the server URL directly. Add `your-documentation-site.com/_mcp/server` to your MCP configuration. For CLI clients, that looks like:
+
+```bash
+claude mcp add --transport http \
+  fern_mcp_docs.example.com https://docs.example.com/_mcp/server
+```
+
+## Authenticated sites
+
+On sites with [authentication](/learn/docs/authentication/overview) enabled, MCP clients must include a `FERN_TOKEN` header containing a valid JWT. Without it, the server only returns publicly visible content (if any).
+
+#### Get a token
+
+Exchange your credentials for a JWT. The endpoint depends on how your site authenticates users.
+
+#### API key (JWT / OAuth)
+
+Exchange a [Fern API key](/learn/cli-api-reference/cli-reference/general-commands#fern-token) for a JWT via the [get-jwt endpoint](/learn/docs/fern-api-reference/get-jwt):
+
+```bash
+curl https://docs.example.com/api/fern-docs/get-jwt \
+  -H "FERN_API_KEY: $FERN_TOKEN"
+# → { "fern_token": "eyJ...", "roles": [] }
+```
+
+#### Password protection
+
+Exchange the site password for a JWT:
+
+```bash
+curl -s -D - https://docs.example.com/api/fern-docs/auth/password \
+  -H "Content-Type: application/json" \
+  -d '{"password": "your-site-password"}'
+```
+
+Extract the `fern_token` value from the `Set-Cookie` header in the response.
+
+#### Configure your MCP client
+
+Register the server manually, as the [page action](/learn/docs/configuration/site-level-settings#page-actions-configuration) buttons can't carry credentials. Then, add the JWT as a `FERN_TOKEN` header. In Claude Code:
+
+```bash
+claude mcp add --transport http \
+  --header "FERN_TOKEN: <jwt>" \
+  fern_mcp_docs.example.com https://docs.example.com/_mcp/server
+```
+
+For Cursor, VS Code, and other clients, add `FERN_TOKEN: <jwt>` to the `headers` field in your MCP server configuration if the client supports custom headers.
+
+> **Note**
+>
+> JWTs expire. Re-run the token exchange when the token lapses. There is no automatic refresh mechanism in the MCP transport.
+
+## Exclude test and eval traffic from analytics
+
+By default, every request through the MCP server is recorded as a conversation in the [Ask Fern analytics dashboard](/learn/docs/ai-features/ask-fern/overview). Automated tests or evals that call the server are recorded alongside real user queries, which can skew the data.
+
+To prevent a request from being recorded, include the header `x-fern-skip-save-query: true` (or `x-fern-skip-save-query: 1`) on the MCP HTTP request. The request is still answered normally and still consumes AI credits — only the analytics recording is skipped.
+
+In Claude Code, pass the header with `--header`:
+
+```bash
+claude mcp add --transport http \
+  --header "x-fern-skip-save-query: true" \
+  fern_mcp_docs.example.com https://docs.example.com/_mcp/server
+```
+
+## Disable the MCP server
+
+To turn the server off entirely, set `mcp` to `false` in your [`page-actions` configuration](/learn/docs/configuration/site-level-settings#page-actionsoptionsmcp):
+
+**`docs.yml`**
+
+```yaml docs.yml
+page-actions:
+  options:
+    mcp: false
+```
+
+This is especially useful on [authenticated sites](/learn/docs/authentication/overview) because unauthenticated agents can discover the MCP endpoint but can't read its content. Disabling the server returns 404 from the endpoint, hides the connection buttons, and stops agents from discovering it through `llms.txt` or agent prompts.
+
+## Other ways agents can access your docs
+
+Agents can also fetch documentation directly over HTTP. Fern serves clean Markdown via [per-page URLs and `llms.txt`](/learn/docs/ai-features/markdown) — including on authenticated sites.

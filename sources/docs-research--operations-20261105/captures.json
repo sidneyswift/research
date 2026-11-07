@@ -1,0 +1,153 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "google-incident-response.md",
+      "url": "https://sre.google/workbook/incident-response/",
+      "resolved_url": "https://sre.google/workbook/incident-response/",
+      "sha256": "316ed5f8fd50067c581f40d16fe1271c3b3aa3527c0742c9bf10324be9be293b",
+      "bytes": 52579,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "google-managing-incidents.md",
+      "url": "https://sre.google/sre-book/managing-incidents/",
+      "resolved_url": "https://sre.google/sre-book/managing-incidents/",
+      "sha256": "200367471e5d44bd75a84fbae23ccaf2f261c73f98ba0eabdb23ead887310357",
+      "bytes": 18908,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "google-troubleshooting.md",
+      "url": "https://sre.google/sre-book/effective-troubleshooting/",
+      "resolved_url": "https://sre.google/sre-book/effective-troubleshooting/",
+      "sha256": "9bf21cbb287b1a578e34c4e51fae77125dfc2b7110e84f5bb71b913b360cf8cc",
+      "bytes": 47174,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "google-postmortem.md",
+      "url": "https://sre.google/sre-book/postmortem-culture/",
+      "resolved_url": "https://sre.google/sre-book/postmortem-culture/",
+      "sha256": "0fcf623b2d25cdadb7b5fbf6869383e7a4eed7b3f1a8942226523e7e0d989077",
+      "bytes": 18980,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "pagerduty-during-incident.md",
+      "url": "https://response.pagerduty.com/during/during_an_incident/",
+      "resolved_url": "https://response.pagerduty.com/during/during_an_incident/",
+      "sha256": "63aeaf9031b6bc6766464131f98ccc45d8d5009edea31b143698117ded3d9c80",
+      "bytes": 8539,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "pagerduty-antipatterns.md",
+      "url": "https://response.pagerduty.com/resources/anti_patterns/",
+      "resolved_url": "https://response.pagerduty.com/resources/anti_patterns/",
+      "sha256": "dcff070cf647ced1f51fd219405d09002ef38ea2e6127df9892552f5bdff9c73",
+      "bytes": 16278,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "kubernetes-deprecation-policy.md",
+      "url": "https://kubernetes.io/docs/reference/deprecation-policy/",
+      "resolved_url": "https://kubernetes.io/docs/reference/deprecation-policy/",
+      "sha256": "1f9cea17476d591b72f4e4d07855218a667ad88fbf083b2b4102e9635c885d7e",
+      "bytes": 19381,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "kubernetes-migration.md",
+      "url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+      "resolved_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+      "sha256": "8f8a2b09e0ed6421ef18c91e9e9fe0974308f3a4814622bfd9bca05e97f8c47c",
+      "bytes": 21650,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "django-upgrade.md",
+      "url": "https://docs.djangoproject.com/en/5.2/howto/upgrade-version/",
+      "resolved_url": "https://docs.djangoproject.com/en/5.2/howto/upgrade-version/",
+      "sha256": "397ba01c95860114f7a6907ea4095d9af776ae0edf102276ecd59264a6ad67e7",
+      "bytes": 6297,
+      "extraction": "HTML main/article converted to Markdown; visual layout not preserved"
+    },
+    {
+      "file": "stripe-upgrade.md",
+      "url": "https://docs.stripe.com/upgrades",
+      "resolved_url": "https://docs.stripe.com/upgrades",
+      "sha256": "185bee7c59fa2c7313145a81c04074799ac5385a245d2cce59e32934ccb26b56",
+      "bytes": 14768,
+      "extraction": "server-provided Markdown"
+    },
+    {
+      "file": "assets/stripe-upgrade-stage-1.png",
+      "url": "https://b.stripecdn.com/docs-statics-srv/assets/diagram-1.ac21ab637180179813f503649b543e99.png",
+      "sha256": "85ebb9ac9e851cfc977554b87c151949a397fabb6287833e09d41506878c2466",
+      "bytes": 27331,
+      "kind": "referenced-meaning-bearing-diagram"
+    },
+    {
+      "file": "assets/stripe-upgrade-stage-2.png",
+      "url": "https://b.stripecdn.com/docs-statics-srv/assets/diagram-2.f6b4d3cc0c78971b721fe173f19d5e28.png",
+      "sha256": "5561cd02f24d2866ac9f0245397a2afcb7c077c3976da8893a49ad075009faa4",
+      "bytes": 32944,
+      "kind": "referenced-meaning-bearing-diagram"
+    },
+    {
+      "file": "assets/stripe-upgrade-stage-3.png",
+      "url": "https://b.stripecdn.com/docs-statics-srv/assets/diagram-3.8a8b9da70ed66eca60434d406c82f476.png",
+      "sha256": "454e395cdcec305b25eea4736159452e905d23a0f99969c622a2183735bddc3d",
+      "bytes": 33086,
+      "kind": "referenced-meaning-bearing-diagram"
+    },
+    {
+      "file": "assets/stripe-upgrade-stage-4.png",
+      "url": "https://b.stripecdn.com/docs-statics-srv/assets/diagram-4.907bbd1016f9fbe79283e8c35be7f3cd.png",
+      "sha256": "986f27994ca5f33e10a9ac7c47586633d6a176f8e163d94d5e5f0d50a6ddbfaa",
+      "bytes": 27602,
+      "kind": "referenced-meaning-bearing-diagram"
+    },
+    {
+      "file": "google-incident-response.utf8.md",
+      "url": "https://sre.google/workbook/incident-response/",
+      "resolved_url": "https://sre.google/workbook/incident-response/",
+      "sha256": "37a1abfae7fbb3eabe8bba79db63e4a82b625b7ffa85b007d1017a80e1b2aa2b",
+      "bytes": 52364,
+      "extraction": "HTML bytes decoded explicitly as UTF-8 then main/article converted to Markdown",
+      "kind": "supplemental-correctly-decoded-capture",
+      "supplements": "google-incident-response.md"
+    },
+    {
+      "file": "google-managing-incidents.utf8.md",
+      "url": "https://sre.google/sre-book/managing-incidents/",
+      "resolved_url": "https://sre.google/sre-book/managing-incidents/",
+      "sha256": "29e3128c81399e4e97b93ad712028af6d694313a39e43f488e1b97d046a74fc0",
+      "bytes": 18964,
+      "extraction": "HTML bytes decoded explicitly as UTF-8 then main/article converted to Markdown",
+      "kind": "supplemental-correctly-decoded-capture",
+      "supplements": "google-managing-incidents.md"
+    },
+    {
+      "file": "google-troubleshooting.utf8.md",
+      "url": "https://sre.google/sre-book/effective-troubleshooting/",
+      "resolved_url": "https://sre.google/sre-book/effective-troubleshooting/",
+      "sha256": "470bb55bff1c29ddcfad318bd733d94ee7986bb20be6dc3f25897ee2dbdb699d",
+      "bytes": 46813,
+      "extraction": "HTML bytes decoded explicitly as UTF-8 then main/article converted to Markdown",
+      "kind": "supplemental-correctly-decoded-capture",
+      "supplements": "google-troubleshooting.md"
+    },
+    {
+      "file": "google-postmortem.utf8.md",
+      "url": "https://sre.google/sre-book/postmortem-culture/",
+      "resolved_url": "https://sre.google/sre-book/postmortem-culture/",
+      "sha256": "25ebe1344cc1e9cf2968f43a37961609cad707aad00fcabb4963ca9f65e55462",
+      "bytes": 19091,
+      "extraction": "HTML bytes decoded explicitly as UTF-8 then main/article converted to Markdown",
+      "kind": "supplemental-correctly-decoded-capture",
+      "supplements": "google-postmortem.md"
+    }
+  ]
+}

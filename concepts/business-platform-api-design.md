@@ -225,3 +225,9 @@ The lifecycle/freshness concerns follow from asynchronous/CQRS contracts; reques
 ## Documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
+
+## Frontier documentation interfaces — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] specializes the delivery/interaction boundary: source retrieval versus synthesized answers versus API execution; version fallback and retrieval-triggered indexing; browser-local tool lifecycle; novel/internal API task evaluation. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--webmcp-20261105#root]] [[sources/frontier-docs--empirical-20261105#root]]
+
+The owned findings preserve source-specific controls and uncertainty; no universal context budget or future training-data guarantee is inferred. See [[artifacts/projects/dokimi]] for the documented evaluator, and [[artifacts/projects/webmcp]] for the dated browser contract.

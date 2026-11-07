@@ -123,3 +123,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] persists event/queue/execution state before notification and recovers through pending-state scans. Runner completion hashes make identical terminal reports idempotent, not arbitrary remote effects. Finalization waits for tracked work to drain. Critically, copied node configuration coexists with live graph routing: specify the snapshot unit before claiming deterministic replay. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#execution-state]]
+
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.

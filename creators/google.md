@@ -37,3 +37,11 @@ Resource-oriented interfaces with standard methods, purposeful custom actions, a
 ## Documentation research — 2026-11-05
 
 [[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/README]] examine published writing guidance and/or product documentation mechanisms. Documentation inspection only; no comparative usability or runtime result claimed.
+
+## Wider documentation study — 2026-11-05
+
+[[concepts/developer-documentation-design]] extends the previous study using [[sources/docs-research--operations-20261105#google-managing-incidents]]. Captured guidance/contract only; no runtime or adoption result.
+
+## WebMCP research connection — 2026-11-05
+
+[[artifacts/projects/webmcp]] studies the community design and browser publications with separate draft/implementation/support boundaries. Institutional participation does not establish a W3C Standard or universal browser availability. [[sources/frontier-docs--webmcp-20261105#draft-status]] [[sources/frontier-docs--webmcp-20261105#browser-availability]] [[sources/frontier-docs--webmcp-20261105#edge-preview]]

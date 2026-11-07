@@ -60,3 +60,7 @@ last-reviewed: 2026-06-01
 ## Independent routing study — 2026-11-04
 
 [[concepts/lifelong-skill-routing]] uses Claude Haiku 4.5 as its main frozen router in a selected-confusability skill-growth benchmark. This is independent author-reported research, not an Anthropic publication, endorsement or current documentation refresh. [[sources/zhang--skill-plus-plus#benchmark-construction]] [[sources/zhang--skill-plus-plus#metrics]]
+
+## Agent-facing documentation follow-up — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] extends [[artifacts/projects/anthropic-agent-api]] with dated tool-description, input-example and deferred-discovery design reports. [[sources/frontier-docs--tool-design-evaluation-20261105#anthropic-writing-tools]] [[sources/frontier-docs--tool-design-evaluation-20261105#anthropic-advanced-tools]]

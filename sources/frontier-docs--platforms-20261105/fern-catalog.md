@@ -1,0 +1,67 @@
+# Capture: fern-catalog
+
+Canonical URL: https://buildwithfern.com/learn/docs/ai-features/api-catalog
+Resolved URL: https://buildwithfern.com/learn/docs/ai-features/api-catalog
+Retrieved: 2026-11-05
+Representation: server-provided textual representation
+Content-Type: text/markdown; charset=utf-8
+
+---
+
+> This page is for Docs.
+
+> For clean Markdown content of this page, append .md to this URL. For the complete documentation index, see https://buildwithfern.com/learn/llms.txt.
+
+# API catalog discovery
+
+> Fern docs sites expose a standards-based API catalog endpoint so AI agents, MCP clients, and API catalog crawlers can discover your APIs automatically.
+
+Fern Docs sites implement [RFC 9727](https://www.rfc-editor.org/rfc/rfc9727) to let AI agents, MCP clients, and API catalog crawlers discover your APIs without scraping HTML. The catalog is generated from your visible [API Reference](/learn/docs/api-references/overview) navigation and advertised on every page via a [`Link`](https://www.rfc-editor.org/rfc/rfc8288) response header — no configuration required. References hidden via `hidden: true` (or with all endpoints hidden) are excluded.
+
+Your API catalog is available at `your-documentation-site.com/.well-known/api-catalog`. For example, this site's catalog is at [buildwithfern.com/learn/.well-known/api-catalog](https://buildwithfern.com/learn/.well-known/api-catalog):
+
+```bash
+curl -s https://buildwithfern.com/learn/.well-known/api-catalog | jq .
+```
+
+For sites with a basepath like `/docs`, the catalog lives under that basepath (e.g. `https://example.com/docs/.well-known/api-catalog`).
+
+## Visibility
+
+The catalog mirrors what the viewer can see:
+
+* Sites with [authentication](/learn/docs/authentication/overview) configured return an empty catalog (`{"linkset": []}`) to unauthenticated requests.
+* API references hidden from the viewer through [role-based access control](/learn/docs/authentication/features/rbac) are excluded.
+* References hidden via `hidden: true` (or with all endpoints hidden) are excluded.
+
+## Response format
+
+The endpoint returns a [Linkset document](https://www.rfc-editor.org/rfc/rfc9264) listing each visible API. Each entry contains:
+
+* **`anchor`** — the URL of the human-readable API Reference page
+* **`service-desc`** — the machine-readable [OpenAPI spec](/learn/docs/developer-tools/openapi-spec)
+* **`service-doc`** — the same reference page as the anchor
+
+**`Example response`**
+
+```json title="Example response"
+{
+  "linkset": [
+    {
+      "anchor": "https://example.docs.com/api-reference",
+      "service-desc": [
+        {
+          "href": "https://example.docs.com/openapi.yaml?api=abc123",
+          "type": "application/yaml"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://example.docs.com/api-reference",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}
+```

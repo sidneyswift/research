@@ -116,3 +116,7 @@ Lauren's screenshot-backed preference for empirical/formal verification over abs
 ## SuperPlane — 2026-11-04
 
 Supporting implementation: [[artifacts/projects/superplane]] checks for open work before finalizing a run, binds runner terminal reports to completion hashes, and requires an expected PR head for merging. Each gate has a narrower meaning than user-goal success; a valid model review score is not executable evidence. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#merge]]
+
+## Frontier documentation application — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] and [[artifacts/projects/webmcp]] apply this pattern to delivery transformations, page-local tool authority, versioned evidence and measured task outcomes. [[artifacts/projects/dokimi]] supplies documented evaluation controls. This adds a research application, not a newly runtime-verified example or pattern promotion. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]

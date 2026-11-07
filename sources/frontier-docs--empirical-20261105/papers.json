@@ -1,0 +1,33 @@
+{
+  "retrieved": "2026-11-05",
+  "storage": "Full PDFs are uncommitted temporary reading aids; restore from exact URL and verify sha256/bytes. Original notes only are preserved in the wiki.",
+  "papers": [
+    {
+      "slug": "webapi",
+      "url": "https://aclanthology.org/2025.findings-acl.577.pdf",
+      "version": "ACL Findings 2025, DOI 10.18653/v1/2025.findings-acl.577",
+      "sha256": "8e83e3e413979e7112430725d02b40a8246a348dc6bbb06686f2d88f5abf73c5",
+      "bytes": 1513525,
+      "pages": 20,
+      "local_reading_path": "/tmp/frontier-docs-papers/webapi.pdf"
+    },
+    {
+      "slug": "api-learning",
+      "url": "https://aclanthology.org/2025.findings-emnlp.994.pdf",
+      "version": "EMNLP Findings 2025, DOI 10.18653/v1/2025.findings-emnlp.994",
+      "sha256": "d92dff197246792f0ed24fd99492a1a030cf6427a3c48ea4d2488cbd86294904",
+      "bytes": 6034923,
+      "pages": 19,
+      "local_reading_path": "/tmp/frontier-docs-papers/api-learning.pdf"
+    },
+    {
+      "slug": "agentdiff",
+      "url": "https://arxiv.org/pdf/2602.11224v1",
+      "version": "arXiv:2602.11224v1, submitted 2026-02-11; preprint, not a verified proceedings publication",
+      "sha256": "099242eba6c0e292eafd67224b3be160f72f8b9c9353f85ea506d34627721c4f",
+      "bytes": 1490804,
+      "pages": 47,
+      "local_reading_path": "/tmp/frontier-docs-papers/agentdiff-arxiv-v1.pdf"
+    }
+  ]
+}

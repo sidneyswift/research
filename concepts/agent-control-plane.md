@@ -140,3 +140,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] adds a workflow-centered example: a Work Order persists across automation runs, while per-key queues, PR mutation ownership and runner fleets handle different coordination scopes. Human requirements and model confidence checks are different mechanisms; neither a canvas nor a score alone grants execution authority. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#queue]] [[sources/superplanehq--superplane#pr-coordination]] [[sources/superplanehq--superplane#approval]]
+
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.

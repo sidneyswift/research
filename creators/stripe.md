@@ -34,3 +34,7 @@ The case study records interface choices and limits from the captured documentat
 ## Documentation research — 2026-11-05
 
 [[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/README]] examine published writing guidance and/or product documentation mechanisms. Documentation inspection only; no comparative usability or runtime result claimed.
+
+## Wider documentation study — 2026-11-05
+
+[[concepts/developer-documentation-design]] extends the previous study using [[sources/docs-research--operations-20261105#stripe-upgrade]]. Captured guidance/contract only; no runtime or adoption result.

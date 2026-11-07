@@ -1,0 +1,24 @@
+{
+  "inspected": "2026-11-05",
+  "commit": "5f055a89336cb94050e36eaa479374b390e92462",
+  "scope": "static Git tree and JSON data inventory; no vendor benchmark/code execution",
+  "tracked_file_count": 25,
+  "proxy_log_files_in_tree": 0,
+  "snapshot_files_in_tree": 0,
+  "datasets": {
+    "data/full/results.jsonl": {
+      "sha256": "0cd2963e02456696dcd99a06d4522b0d6eb354e42fe0a12af5ed43027f5869c4",
+      "bytes": 1139474,
+      "rows": 2672,
+      "valid_rows": 2400,
+      "error_rows": 272
+    },
+    "data/multimodel/results.jsonl": {
+      "sha256": "559445f57e283300a59b831f887db1a62182db52c5ef87234c8ad28242ed28cb",
+      "bytes": 1829271,
+      "rows": 3756,
+      "valid_rows": 3600,
+      "error_rows": 156
+    }
+  }
+}
