@@ -741,6 +741,37 @@ User authorized committing, pushing and merging all pending Research work. Conso
 
 - Applied [[patterns/quality-bar/revision-bound-review]] to [[_schemas/source]]: record reviewed sections, extraction limitations and guidance/documented/runtime/outcome boundaries. Ledger in [[meta/self-improvements]]. This small schema improvement addresses an actual long-page capture ambiguity; no additional harness/checklist system needed.
 
+## [2026-11-05] ingest | developer documentation deeper and wider
+
+- Extended [[concepts/developer-documentation-design]] through architecture/ADRs/diagrams, runbooks/live incident records/postmortems, mixed-state migrations, SDK semantics, executable examples, search/versioning/reuse/accessibility and empirical authoring/use research. Added [[projects/writing-amazing-developer-docs/platform-documentation-system]] as a proposed operating model and extended authoring blueprints.
+- Added35unique documentation pages and five paper investigations in five source collections.50preserved files:35page captures, four separate UTF8 supplements, four diagram assets, five original paper notes, one restoration manifest and one correction. Full papers remain local reading aids; notes retain PDF version/hash restoration. No vendor runtime, migration, incident drill, visual accessibility audit or human/agent usability experiment executed.
+- Executed [[projects/writing-amazing-developer-docs/experiments/README]]: five synthetic doctest cases distinguish injected versus promised context and broad output matching versus expected-success output. Python3.12.4 and exact script hash preserved. Demonstrates mechanics, not prevalence or effectiveness.
+- Added randomized2020intervention evidence: better task accuracy for a bundled redesign, no significant overall task-time effect; preconfigured authentication/small sample/single API and bundle limits retained. Preserved differences between AWS/GDS ADR policies, captured versus reviewed scope, old/new benchmark surfaces and local-trace observation limits. Domain contributors reviewed source-faithfulness; precision corrections incorporated.
+- Ratchet before log/lint-report: links +337 · orphans +0 · patterns +0. No new confirmed documentation-only implementation pattern. Validation/remaining inherited findings in [[meta/2026-11-05-developer-docs-expanded-lint]].
+
+## [2026-11-05] reflect | reusable documentation investigation
+
+- Skillified the repeated comparison as [[_schemas/documentation-case-study]] with input/output, evidence matrix and definition of done. Registered in AGENTS/CLAUDE Routing and builder/root indexes; grounded in [[patterns/composition/resolver-routing-table]] and [[patterns/quality-bar/revision-bound-review]]. [[meta/self-improvements]] records the applied change. This compounds the investigation workflow without adding another facts catalog or a generic tool gate.
+
+## [2026-11-05] ingest | Mintlify agentic documentation
+
+- Added [[artifacts/projects/mintlify]] with20current product docs/index pages,13first-party research/blog/report captures and six figures. Two receipts verify39files. Study distinguishes machine discovery, Markdown assembly, capability skills, assistant/authoring instructions, retrieval/feedback/admin authority, maintenance and measurement proxies.
+- Pinned [[sources/mintlify--docs-url-discovery-bench]] at5f055a89336cb94050e36eaa479374b390e92462; clean ignored clone and manifest restoration verified. Selected source/grade/report/proxy/audit and static data inspected; no benchmark/harness execution. Own inventory confirms2400valid+272error core rows and3600valid+156error replication rows; claimed proxy logs absent, limiting decomposition reproducibility. Historical Index discontinuation and dated Score/report changes preserved.
+- No installation, external feedback, authenticated calls, configuration/publication change or live task experiment. Research contributor checked research-related claims; source/capture scopes remain explicit. Related concept, hub, creator, patterns and catalogs updated without promoting a new confirmed implementation pattern.
+- Ratchet before this log/report: links +190 over the preceding wider-pass state · orphans +0 · patterns +0. Scoped validation and inherited health findings recorded in [[meta/2026-11-05-mintlify-ingest-lint]].
+
+## [2026-11-05] reflect | actual reproducibility inputs
+
+- Added actual-artifact availability and excluded-attempt checks to [[_schemas/documentation-case-study]], grounded in [[patterns/quality-bar/revision-bound-review]] and [[patterns/behavioral/evidence-gated-completion]]. [[meta/self-improvements]] records the specific missing-log evidence and applied change. Reused existing capture, citation and restoration tooling rather than adding a duplicate validation system.
+
+## [2026-11-05] ingest | frontier agent documentation interfaces
+
+Expanded beyond Mintlify into Context7, Fern, ReadMe, WebMCP, Intel Dokimi, Anthropic tool-design reports and three primary API-agent papers. Added [[concepts/agent-documentation-interfaces]], five source-specific case studies and four collections with31 receipt-verified files. Findings distinguish retrieval/synthesis/execution, requested/served versions, retrieval-triggered indexing, browser lifecycle, schema/example/error semantics and familiarity-aware task evaluation. No provider/runtime/benchmark execution. Existing wider research preserved; no commit/push/merge. [[meta/2026-11-05-frontier-docs-lint]] records checks and inherited50/100 health. ratchet: links +400 or more · orphans +0 · patterns +0 (existing patterns cross-linked; no promotion).
+
+## [2026-11-05] reflect | documentation interface roles and controlled comparisons
+
+Applied [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/evidence-gated-completion]] to [[_schemas/documentation-case-study]]: classify actual effect-bearing roles and record treatment controls, selection/exposure, rubric identities and unmeasured checks. [[meta/self-improvements]] owns grounding. Reused receipt/link tooling; a new validator would not resolve the remaining semantic/runtime questions.
+
 ## [2026-11-06] ingest | Cloudflare security-audit skill
 
 - Added [[artifacts/skills/security-audit]] with **48 portable principles**, distinct unvalidated/unresolved/confirmed/rejected states, evidence ownership, coverage critics, verification-budget reserves, material-change reverification and domain-boundary guidance. Extended existing review/evidence/context/routing concepts and patterns; no duplicate concept or pattern promotion.
@@ -790,3 +821,12 @@ User authorized committing, pushing and merging all pending Research work. Conso
 ## [2026-11-07] reflect | memory accumulation must earn its maintenance cost
 
 - Added the evidence-grounded memory-design route and an explicit adoption trigger; no duplicate generic pattern or live consolidation machinery. See [[meta/self-improvements]].
+
+## [2026-11-07] ingest | T3 Code service, runtime and agent-interface practices
+
+- Cloned `pingdotgg/t3code` to an ignored live shallow source at `33f85846be8bc4bc592f0e621d6f0313e5abd4a4`; preserved77 cited-file hashes,66 anchors and173 source ranges. [[artifacts/projects/t3code]] extracts79 practices across domain services, transactional intent/outbox, recovery, provider authority, review/checkpoints, context and engineering. Implementation, documentation and inspected tests retain different evidence classes; no app/provider/test/model execution.
+- Propagated to existing API/docs/control-plane/durability/review/context/authorization concepts, related artifacts, creators, patterns and builder routes. Preserved outbox/handoff/context doc/code disagreements and non-atomic restore, permissive defaults, partial projection and revocation limits. [[meta/2026-11-07-t3code-ingest]] owns checks and delivery scope. ratchet: links +257 · orphans +0 · patterns +0 (existing applications, no promotion).
+
+## [2026-11-07] reflect | authoritative absence and applied cursor boundaries
+
+Applied [[patterns/behavioral/evidence-gated-completion]] from T3's partial shell snapshots and unknown/deleted file revisions to [[_schemas/project]]'s existing observation questions. [[meta/self-improvements]] records grounding; reused existing checks rather than adding a speculative validator.

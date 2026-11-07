@@ -16,11 +16,11 @@ last-reviewed: 2026-11-05
 
 Developer documentation is a product interface with several reading modes: learning, doing, consulting a contract, understanding a design, and diagnosing a problem. Diátaxis separates four underlying needs; GitLab adds explicit troubleshooting topics and allows several topic types on one page. Treat these as tools for deciding what belongs together, rather than a mandatory folder taxonomy. [[sources/diataxis--documentation-framework#overview]] [[sources/gitlab--documentation-engineering#topic-types]]
 
-This page is the owning synthesis and recommendation ledger. [[projects/writing-amazing-developer-docs/README]] is its research navigation hub. Recommendations below are our interpretation of the named evidence, not measured universal rules. No product examples were executed, no docs site was visually usability-tested, and no ranking of vendors is claimed.
+This page is the owning synthesis and recommendation ledger. [[projects/writing-amazing-developer-docs/README]] is its research navigation hub. Recommendations below are our interpretation of the named evidence, not measured universal rules. No vendor product examples were executed, no docs site was visually usability-tested, and no ranking of vendors is claimed. A separate local synthetic doctest probe was executed; its narrow scope is recorded below.
 
 ## Where it came from
 
-The evidence combines Daniele Procida's Diátaxis framework, Google's technical-writing courses and style guidance, Write the Docs' community practice, GitLab's published documentation workflow, concrete product documentation, and two academic studies. The 2019 mapping study covers 21 selected studies; the 2024 CHI paper analyzes documentation-use logs for four Google cloud services. Neither establishes that following this checklist causes a particular productivity gain. [[sources/diataxis--documentation-framework#root]] [[sources/google--developer-documentation#root]] [[sources/writethedocs--documentation-practice#root]] [[sources/gitlab--documentation-engineering#root]] [[sources/cummaudo--api-documentation-knowledge#study]] [[sources/nam--documentation-use#study]]
+The evidence combines Daniele Procida's Diátaxis framework, Google's technical-writing courses and style guidance, Write the Docs' community practice, GitLab's published documentation workflow, concrete product documentation, and an expanding empirical literature. The initial two-study pass is extended below with five additional papers, including two 2026 preprints. The 2019 mapping study covers 21 selected studies; the 2024 CHI paper analyzes documentation-use logs for four Google cloud services. Neither establishes that following this checklist causes a particular productivity gain. [[sources/diataxis--documentation-framework#root]] [[sources/google--developer-documentation#root]] [[sources/writethedocs--documentation-practice#root]] [[sources/gitlab--documentation-engineering#root]] [[sources/cummaudo--api-documentation-knowledge#study]] [[sources/nam--documentation-use#study]]
 
 ## Why it matters
 
@@ -228,6 +228,111 @@ Our proposed task evaluation:
 
 Choose representative novices and experienced integrators, several business tasks and deliberate failure scenarios. Observe where readers hesitate; repair the page and repeat the same bounded task with another reader. For agents, use the same task corpus to compare retrieval paths and record unsupported assumptions. This experiment is proposed, not performed here. [[sources/diataxis--documentation-framework#tutorials]] [[sources/nam--documentation-use#study]] [[concepts/agent-api-learning-and-evolution]]
 
+### 13. Separate current architecture, decisions and proposed changes
+
+An architecture account should let a reader distinguish **what exists**, **why a choice was made**, **what is proposed**, and **what was actually implemented or deployed**. GDS treats acceptance and implementation separately and says an ADR does not replace the architecture description. Nygard's original purpose is preserving the context and consequences behind a significant choice for future maintainers. A merged decision record is evidence of agreement in a particular process, not evidence the running system conforms. [[sources/docs-research--architecture-20261105#gds-adr]] [[sources/docs-research--architecture-20261105#nygard-adr]]
+
+Do not prescribe universal ADR immutability. AWS makes accepted/rejected records immutable and uses supersession. GDS allows clarifications and discovered consequences, permits changing an unimplemented decision with agreement, and asks for a new ADR when changing a decision that has already been implemented. Choose and document a local amendment policy; preserve the previous rationale and replacement links. GDS's page has an overdue review date, so these are the captured published rules, not a claim of freshly audited GDS practice. [[sources/docs-research--architecture-20261105#aws-adr]] [[sources/docs-research--architecture-20261105#gds-adr]]
+
+Our minimum internal bundle is a service entry point, a current architecture brief, selected runtime scenarios, a decision log and operational links. Scale it to the system's complexity. A small utility need not carry every arc42 section; the template is a coverage aid for constraints, quality goals, risks, boundaries and terminology. Keep one owner for each current fact and link historical rationale where needed. [[sources/docs-research--architecture-20261105#arc42-overview]] [[sources/docs-research--architecture-20261105#backstage-publishing]]
+
+### 14. Make each diagram answer a question
+
+C4 distinguishes context, containers, components, code, dynamic behavior and deployment. Its author recommends that many teams can stop at context and container views; this is guidance, not a measured proportion of teams. C4's container means an application/data store, not specifically Docker. Do not mistake a logical container view for environment-specific deployment topology; C4 places clustering, replication and failover in deployment views. [[sources/docs-research--architecture-20261105#c4-diagrams]] [[sources/docs-research--architecture-20261105#c4-context]] [[sources/docs-research--architecture-20261105#c4-container]]
+
+Use a small number of representative business events to connect components through time. C4 recommends dynamic views sparingly; arc42 includes critical interfaces, startup/shutdown and exception scenarios. For a background workflow, a scenario such as external timeout or worker recovery can reveal a boundary a static “worker” box cannot explain. That scenario selection is our application of the frameworks, not verification of a specific runtime. [[sources/docs-research--architecture-20261105#c4-dynamic]] [[sources/docs-research--architecture-20261105#arc42-runtime]]
+
+Give each view a title, scope, level, defined visual vocabulary and labeled directed relationships. Map business partners and meaningful inputs/outputs to technical interfaces. A context table may communicate this better than an image. C4 supplies legibility checks; arc42 explicitly separates business meaning from transport. [[sources/docs-research--architecture-20261105#c4-checklist]] [[sources/docs-research--architecture-20261105#arc42-context]]
+
+Accessibility requires more than labeling an image “architecture diagram.” W3C's complex-image guidance provides a short identifying alternative plus a detailed textual account of essential relationships where needed. Its `aria-describedby` example warns that complex structure may be flattened to a single paragraph. Tables also need real header/data associations, which can be lost in conversion. Review the rendered and exported representations for preserved meaning; no visual or assistive-technology audit was executed in this pass. [[sources/docs-research--discovery-governance-20261105#accessible-diagrams]] [[sources/docs-research--discovery-governance-20261105#accessible-tables]]
+
+### 15. Operational documentation coordinates people, evidence and authority
+
+Our operational separation is **runbook / current incident record / retrospective**. Google's incident-management chapter uses a live document and explicit roles; its postmortem guidance provides the later reviewed learning record. PagerDuty distinguishes responsibilities during response. Reusable procedure, current observation, hypothesis and retrospective explanation should remain recognizable as different kinds of information. This separation is our synthesis, not an independently tested optimal document architecture. [[sources/docs-research--operations-20261105#google-managing-incidents]] [[sources/docs-research--operations-20261105#google-postmortem]] [[sources/docs-research--operations-20261105#pagerduty-during-incident]]
+
+A runbook should identify the trigger, applicable environment, authorized role, preconditions, expected evidence, consequential actions, stop/escalation conditions and supported recovery. During an incident, record who is coordinating, what is known, which tests/changes were made and their results. Google emphasizes acknowledged handoff; a reader of the procedure does not acquire incident authority merely by possessing the text. These fields are our authoring contract grounded in the cited processes. [[sources/docs-research--operations-20261105#google-managing-incidents]] [[sources/docs-research--operations-20261105#pagerduty-during-incident]] [[patterns/behavioral/context-is-not-authority]]
+
+Keep instructions and contact paths available during an outage of the service being repaired. Mitigation can precede complete diagnosis, and restored service does not establish the underlying cause is corrected. [[sources/docs-research--operations-20261105#google-managing-incidents]] [[sources/docs-research--operations-20261105#google-troubleshooting]]
+
+A checklist can precompute familiar coordination, but diagnosis still needs a system model and discriminating tests. Google frames troubleshooting as iterative hypotheses, inspection and treatment, with attention to side effects and uncertainty. A diagnostic step should state what evidence it obtains and what that result cannot conclude. If the system lacks relevant observability, improving the documentation may require product work rather than more prose. [[sources/docs-research--operations-20261105#google-troubleshooting]]
+
+Practice matters. Google's workbook recommends preparedness and exercises; PagerDuty reports that silently changing policy docs and assuming responders read them did not work for its team. Consequently, our release process for consequential operating instructions includes dissemination and rehearsal, not just publication. Neither source establishes a universal incident-time reduction or staffing model. [[sources/docs-research--operations-20261105#google-incident-response]] [[sources/docs-research--operations-20261105#pagerduty-antipatterns]]
+
+### 16. Migration guides describe the intermediate system
+
+A migration guide should explain the starting state, target, affected dependencies, changed semantics, intermediate states, checks to advance, supported reversal and retirement conditions. This is our authoring model grounded in Kubernetes, Django and Stripe; it is not a claim that every migration is reversible. [[sources/docs-research--operations-20261105#kubernetes-migration]] [[sources/docs-research--operations-20261105#django-upgrade]] [[sources/docs-research--operations-20261105#stripe-upgrade]]
+
+Kubernetes illustrates why a renamed API is insufficient: replacements may change defaults, required fields and validation. Its deprecation policy distinguishes serving an endpoint from decoding stored representations, and supplies warnings/usage signals. Do not project its timelines onto other systems. A converter or updated manifest is evidence of transformation, not equivalent application behavior. [[sources/docs-research--operations-20261105#kubernetes-deprecation-policy]] [[sources/docs-research--operations-20261105#kubernetes-migration]]
+
+Django's version-specific guide makes dependencies, intervening release notes, warning visibility, tests and post-deployment runtime state part of upgrading. Stripe's guide stages old/new webhook handling, controls which route processes effects, monitors before retirement and describes provider-specific retry/reversal behavior. Write down the intermediate states and duplicated-work constraints, rather than presenting only the desired final configuration. Neither guide was executed here. [[sources/docs-research--operations-20261105#django-upgrade]] [[sources/docs-research--operations-20261105#stripe-upgrade]]
+
+### 17. Expand SDK reference beyond signatures
+
+Rust's API guidelines add error, panic and safety considerations; unsafe-call documentation identifies invariants the caller must uphold. They also explain that an example may need to demonstrate why to use an item, rather than merely syntax, and allow linking an applicable example instead of mechanically duplicating one on every symbol. These are Rust guidelines, not universal mandates for every language. [[sources/docs-research--executable-reference-20261105#reference-semantics]]
+
+Our transferable reference questions are: what does the operation mean; what can fail; what state can change before failure; what must the caller guarantee; and which supported usage demonstrates its purpose? Hide irrelevant implementation details while preserving constraints that affect correct use. Document release changes where the consumer will look. This extends the earlier HTTP-focused contract model to libraries without pretending HTTP errors, exceptions and Rust panics are interchangeable. [[sources/docs-research--executable-reference-20261105#reference-semantics]] [[concepts/business-platform-api-design]]
+
+### 18. Audit what documentation tests actually exercise
+
+The statement “all examples pass” needs a denominator and a test mode. Rustdoc distinguishes normal execution, compilation-only `no_run`, skipped `ignore`, expected panic and expected compile failure. It preprocesses examples and can hide setup lines in rendered documentation. An example compiling, being executed and asserting its promised result are different claims. [[sources/docs-research--executable-reference-20261105#rust-tests]]
+
+Python doctest may run with module globals or injected context. Sphinx supports hidden setup/cleanup, groups and conditional skips; presentation can omit test flags. These are useful mechanisms, not defects by themselves. Review whether the reader can obtain the required context and whether skipping an unavailable dependency leaves an important path untested. Python's output flags also alter what a match proves: broad ellipses can match too much, while unstable ordering/addresses make exact text brittle. [[sources/docs-research--executable-reference-20261105#python-context]] [[sources/docs-research--executable-reference-20261105#python-flags]] [[sources/docs-research--executable-reference-20261105#sphinx-fixtures]]
+
+We executed a bounded **synthetic local probe**, not a vendor audit. An injected-context fragment passed; the same fragment without that context failed; the complete context-bearing example passed. Separately, an output check using a broad ellipsis accepted an intentionally failed-job string, while an exact expected-success output check rejected it. This demonstrates the mechanics in Python 3.12.4; it does not measure how often real docs suffer these problems or the impact on developers/agents. Reproduction, script hash and results: [[projects/writing-amazing-developer-docs/experiments/README]]. The documented tool mechanisms above supply context; the probe result is our own measured artifact.
+
+Our recommended report separates total runnable examples, selected examples, compiled examples, executed examples, skipped examples and explicit outcome assertions. For external integrations, record fixture/mocked/live scope separately. Test a copied fragment with its promised setup, not solely the expanded program used internally. This coverage policy is proposed; we did not audit an actual documentation site's coverage. [[sources/docs-research--executable-reference-20261105#rust-tests]] [[sources/docs-research--executable-reference-20261105#sphinx-fixtures]]
+
+### 19. Treat discovery as a delivery pipeline
+
+Backstage demonstrates code-local authorship with shared catalog discovery and a build/publish/serve pipeline. A source merge can succeed before a particular revision is built, published or served. TechDocs supports separate cross-cutting documentation entities as well as service-linked docs; central discovery does not require a single central authoring repository. This is a documented architecture, not a Backstage deployment tested here. [[sources/docs-research--architecture-20261105#backstage-publishing]] [[sources/docs-research--architecture-20261105#backstage-architecture]]
+
+Search adds another stage. Algolia's documentation separates URL selection, content-hierarchy extraction, record inspection, recurring crawls and the frontend. Docusaurus filters results by version/language; missing or inconsistent indexed facets can produce no results even when pages exist. A content problem and an indexing/filter problem need different fixes. Its captured configuration is version-specific; no search engine was installed or benchmarked. [[sources/docs-research--discovery-governance-20261105#search-index]] [[sources/docs-research--discovery-governance-20261105#search-filters]]
+
+Read the Docs distinguishes `latest` development docs from `stable`, and offers notifications about applicability. Hidden versions remain accessible by URL; privacy is separate. Changing an active version's slug can remove old artifacts and require a rebuild/redirect. Thus a documentation lifecycle includes access policy, version routing and compatibility of old links, not just a visible version selector. These are Read the Docs' published behaviors, not assertions about all hosting systems. [[sources/docs-research--discovery-governance-20261105#rtd-lifecycle]]
+
+Our platform verification chain is source revision → built artifact → published version → served page → indexed record → query context → retrieved passage → task outcome. Record the boundary actually checked. Documentation search permissions must be enforced by the chosen system; hiding navigation or adding ownership metadata is insufficient. Backstage explicitly separates owner metadata from runtime authorization. [[sources/docs-research--architecture-20261105#backstage-catalog]] [[sources/docs-research--discovery-governance-20261105#rtd-lifecycle]] [[patterns/behavioral/context-is-not-authority]]
+
+### 20. Reuse includes applicability and localization
+
+GitHub's documentation describes long Markdown reusables, short variables, task-oriented grouping and version-dependent rendering. Its reason for Markdown includes localization segmentation and reduced translation churn. This gives a concrete implementation behind the earlier “canonical fact plus local context” recommendation; it does not establish that every team needs GitHub's Liquid/YAML setup. [[sources/docs-research--discovery-governance-20261105#reuse]]
+
+A reused instruction should carry the right version, role, environment and consequence when rendered into a task. A correct source fragment can still be assembled into an inapplicable page. Preview and review the rendered combinations that matter, including exported Markdown and translated variants, rather than approving only the fragment in isolation. This is our proposed assembly check, grounded in conditional reuse and the observed semantic risks of conversion. [[sources/docs-research--discovery-governance-20261105#reuse]] [[sources/docs-research--discovery-governance-20261105#accessible-tables]]
+
+GitHub's writing guidance also makes progressive disclosure concrete: start with initial context and conclusions, prioritize the core task, use meaningful subheadings and keep optional depth later. Avoid interpreting a publisher's numeric style limits as measured universal optima. The goal is preserving what the reader needs to act while reducing irrelevant decisions. [[sources/docs-research--discovery-governance-20261105#content-design]]
+
+### 21. Reconnect concepts and examples to the task
+
+Robillard's 2009 article reports 80 analyzed survey responses and 12 exploratory interviews at Microsoft, with a low survey response rate and retrospective accounts. Its examples include composition/resource-lifecycle gaps: a small working call did not tell a developer how to continue a multi-call task. This motivates separate criteria for an example being runnable, current, recommended and sufficient for the intended task. It does not establish population prevalence or that an architecture-first reading order works best. [[sources/docs-research--empirical-20261105#robillard-learning]]
+
+Meng and colleagues observed 11 developers working on shipping-API tasks. Readers struggled to predict where concepts, samples, recipes and references held the needed information; samples that omitted shared code to avoid redundancy could impede copy/adapt use. That is distinct from a clearly explained credential placeholder. The study is small, single-API and qualitative, with language and observation limitations, so it does not validate a universal navigation taxonomy or fixed developer learning styles. [[sources/docs-research--empirical-20261105#meng-information-seeking]]
+
+This qualifies the first pass: separate deep explanation from procedure **while reconnecting necessary concepts where the reader needs them**. Provide task-language entry points, map domain terms to actual symbols, and offer complete examples assembled from maintained code. Include a return task in usability tests: can a developer find a fact again after leaving the page? These are proposed applications of the observed breakdowns, not experimentally established fixes in this research. [[sources/docs-research--empirical-20261105#meng-information-seeking]] [[sources/docs-research--empirical-20261105#robillard-learning]]
+
+A later 2020 study by Meng and colleagues randomly assigned22participants to a bundled documentation redesign or control for five shipping-API tasks. The authors found better task accuracy under their18-subtask measure, but no statistically significant overall task-time difference; perceived documentation quality also did not differ significantly. A secondary outside-document viewing-time measure improved, but it is a rough planning/action proxy rather than end-to-end speed. Authentication was preconfigured; the small sample, one API, basic tasks and jointly changed structure/concepts/examples/search limit generalization and prevent attributing the effect to one technique. [[sources/docs-research--empirical-20261105#meng-intervention]]
+
+This adds intervention evidence while qualifying the goal: fewer errors, faster completion, less reading and higher satisfaction are different outcomes. Define correctness at the business-task level, separate assisted from independent completion, record setup excluded from the test and retain failed/partial attempts. Do not optimize page dwell or user ratings as substitutes for accurate work. These are our proposed evaluation practices informed by the study, not a promised effect size. [[sources/docs-research--empirical-20261105#meng-intervention]]
+
+### 22. Evaluate documentation changes, abstention and actual evidence use
+
+DoGBench's version-pinned 2026 preprint studies repository-triggered documentation updates and abstention cases using task-specific criteria rather than textual similarity alone. Its failure analysis includes missing prerequisites, incorrect defaults/scope/lifecycle and stopping after an initially plausible surface. A real symbol or an accurate sentence can still produce an inadequate task guide. The portable question is “what changed for the reader, and which surfaces now owe an update?” rather than “how much documentation did the agent write?” [[sources/docs-research--empirical-20261105#dogbench]]
+
+Keep its limits explicit: model-generated criteria/scoring have human validation on subsets; one-run performance, abstention labels, critical-defect caps and maintainer judgments are study-design choices. The paper, author HTML and landing-page leaderboard differ in evaluated scope and denominators. This wiki does not combine them into a single success percentage or claim an independent benchmark replication. A correct no-op can be valuable; absence of prior documentation does not prove a change should remain undocumented. [[sources/docs-research--empirical-20261105#dogbench]] [[sources/docs-research--empirical-20261105#restoration]]
+
+Gao and Chen's separate 2026 preprint examines recorded local coding-agent documentation interactions and repository changes. It distinguishes observation populations and explicitly limits visibility into browser docs, docstrings, preloaded context and model knowledge. Its LLM-disambiguated category labels lack human validation. A small observed API-reference share cannot establish agents ignore API docs, and file reads cannot establish comprehension or successful use. It does not experimentally compare HTML, Markdown, llms.txt or executable examples. [[sources/docs-research--empirical-20261105#agent-traces]]
+
+Our proposed agent evaluation records exposure, retrieved version, selected evidence, constraints applied, action, validation and outcome separately, with task-specific critical requirements and correct abstention. A human review should distinguish technical correctness, missing task coverage and editorial preferences. Run the same bounded task from the same starting state when comparing documentation variants; do not count a page visit, a plausible answer or a green build as the final result. [[sources/docs-research--empirical-20261105#dogbench]] [[sources/docs-research--empirical-20261105#agent-traces]] [[concepts/agent-api-learning-and-evolution]]
+
+
+### 23. Mintlify supplies a concrete agent-documentation case study
+
+[[artifacts/projects/mintlify]] owns the detailed case study: discovery indexes and headers, representation-aware Markdown, capability skills, search/section retrieval, an assistant, authoring agents and feedback. The transferable design is a connected content lifecycle with explicit consumer, applicability and authority boundaries—not merely another text export. [[sources/mintlify--agent-documentation-docs#overview]] [[sources/mintlify--agent-documentation-docs#markdown]]
+
+Its large-index work makes discovery coverage concrete: semantically split child indexes replace a cutoff that omitted pages. Its URL benchmark principally measures source-location efficiency; high URL accuracy is not evidence of correct integration. The pinned public data permit aggregate inspection, while missing claimed proxy logs limit cause-decomposition reproduction. Detailed methods and limitations stay on the case study rather than creating a parallel vendor-results catalog here. [[sources/mintlify--agent-docs-research#scaling-index]] [[sources/mintlify--docs-url-discovery-bench#grading]] [[sources/mintlify--docs-url-discovery-bench#reproducibility-gap]]
+
+The case also sharpens authority: a docs search server can contain a feedback-writing tool; inline visibility is different from restricted page access; privileged REST keys and user-authenticated retrieval do not have interchangeable filtering guarantees. Generated capability summaries add synthesis latency, and different authoring/assistant/editor instruction surfaces require different configuration. These are documented contracts, not runtime tests. [[sources/mintlify--agent-documentation-docs#search-mcp]] [[sources/mintlify--agent-documentation-docs#visibility]] [[sources/mintlify--agent-documentation-docs#api-search]] [[sources/mintlify--agent-documentation-docs#skill]] [[sources/mintlify--agent-documentation-docs#agent-customize]]
+
+Traffic, technical readiness, suggested-change acceptance and heuristic savings are separate proxies. Mintlify's quality guidance itself recommends interpreting metrics alongside feedback and observed task walkthroughs. Use these mechanisms to form testable hypotheses for the platform, keeping actual task success as a separate outcome. [[sources/mintlify--agent-docs-research#midyear-traffic]] [[sources/mintlify--agent-documentation-docs#quality-guide]] [[sources/mintlify--agent-documentation-docs#savings]]
+
 ## Patterns demonstrated
 
 - [[patterns/composition/single-source-multi-surface-distribution]] — apply the existing pattern to canonical facts, reusable examples and human/agent exports; no new inspected-artifact example count claimed. [[sources/google--developer-documentation#maintenance]] [[sources/cloudflare--docs-for-agents#agent-access]]
@@ -249,7 +354,14 @@ Choose representative novices and experienced integrators, several business task
 
 - 2026-11-05 — Initial deep documentation research: primary frameworks, style/maintenance guides, live product examples, two studies and current agent-access formats. Documentation behavior inspected; no live examples or audience experiment executed. [[sources/google--developer-documentation#root]] [[sources/developer-docs--product-examples#root]]
 
+- 2026-11-05 — Second pass broadened to internal architecture/ADRs, operational documentation, migration, SDK reference/testing, search/versioning/reuse/accessibility and five additional empirical papers; local synthetic probe executed. No vendor runtime or human/agent task experiment performed. [[sources/docs-research--empirical-20261105#root]]
+
 ## Related
+
+- [[artifacts/projects/mintlify]] — concrete agent-documentation platform, vendor research and selected benchmark source/data.
+
+- [[projects/writing-amazing-developer-docs/platform-documentation-system]] — proposed ownership, delivery and evaluation model for a large platform.
+- [[projects/writing-amazing-developer-docs/experiments/README]] — executed synthetic probe with exact runtime and result.
 
 - [[projects/writing-amazing-developer-docs/README]] — collection navigation and next investigations.
 - [[concepts/business-platform-api-design]] — domain contracts the docs must explain.
@@ -303,6 +415,57 @@ Choose representative novices and experienced integrators, several business task
 - Logs used to discover questions, with task observation to interpret them.
 - Incremental improvements to actual pages instead of an empty taxonomy rollout.
 
+## Second-pass portable additions
+
+The sections above own the evidence and qualifications for this additional steal ledger.
+
+- ★ Current architecture, proposal, accepted decision and deployed result as distinct states.
+- ★ Explicit local ADR amendment/supersession policy; accepted does not imply implemented.
+- ★ Scoped diagrams with a question, level, vocabulary and labeled relationships.
+- ★ Representative failure/operations scenarios alongside static structure.
+- ★ Runbooks, live incident records and retrospectives with separate jobs/owners.
+- ★ Diagnostic steps that state their evidence, uncertainty and stop/escalation branch.
+- ★ Role-specific authority and acknowledged handoff.
+- ★ Migration intermediate states, mixed-version behavior and retirement gates.
+- ★ Compiled/executed/skipped/asserted example counts reported separately.
+- ★ Test context versus reader-promised setup audited explicitly.
+- ★ Source/build/publish/serve/index/retrieve/use checked as distinct boundaries.
+- ★ Correct documentation no-op decisions and cross-surface obligation checks.
+- One significant decision per ADR, with tradeoffs and replacement links.
+- Architecture constraints, risks, debt and quality goals alongside components.
+- Business input/output meaning mapped to transport/API realization.
+- Logical component views separated from environment topology.
+- Accessible detailed diagram descriptions and semantic table headers.
+- Preservation of meaning across rendered, translated and agent-readable surfaces.
+- A service scaffold that includes its documentation/catalog entry.
+- Code-local owners with central discovery and cross-cutting guides.
+- Ownership metadata separated from runtime authorization.
+- Prepared incident channels and a record of actions, tests and results.
+- Rehearsal and dissemination after consequential policy changes.
+- Mitigation distinguished from diagnosis and permanent correction.
+- Retrospective follow-ups assigned and distributed, not merely written.
+- Changed defaults/validation/required fields in migrations, not only renamed endpoints.
+- Warning visibility, dependency compatibility and retained runtime state checked during upgrades.
+- Provider-specific rollback/replay rules kept attached to their contract.
+- SDK errors/panics/caller invariants treated as first-class reference semantics.
+- Examples explaining purpose and composition, not only syntax.
+- Explicit hidden fixtures, conditional skips and weak matcher limits.
+- Stable semantic assertions instead of brittle incidental output where appropriate.
+- Language/version-aware search facets and inspected extracted records.
+- Hidden versus private content treated as different controls.
+- Version-slug/redirect/artifact lifecycle included in documentation release planning.
+- Reusables carry version/context and are reviewed after assembly.
+- Task-language routes reconnect concepts to relevant symbols and decisions.
+- Find-it-again tasks supplement first-discovery tests.
+- Runnable/current/recommended/task-suitable properties tracked separately.
+- Critical omissions distinguished from editorial preferences in reviews.
+- Agent exposure, reading, action and verified result counted separately.
+- Version-specific benchmark denominators and unvalidated classification limits preserved.
+
+## Mintlify portable additions
+
+The exhaustive vendor-specific ledger lives on [[artifacts/projects/mintlify]], keeping one owner for its details. Highest-priority applications here are semantic discovery coverage, content-representation verification, narrow retrieval/feedback/authoring authority, explicit summary freshness, and task-based evidence beyond traffic/readiness/acceptance proxies. [[sources/mintlify--agent-documentation-docs#llms]] [[sources/mintlify--agent-documentation-docs#visibility]] [[sources/mintlify--agent-documentation-docs#skill]] [[sources/mintlify--agent-documentation-docs#quality-guide]]
+
 ## Open questions
 
 - Which three real Flex integration tasks should supply the first baseline usability study?
@@ -313,6 +476,16 @@ Choose representative novices and experienced integrators, several business task
 - Which supported languages and shells have enough readers to justify maintained executable examples?
 - Can agent-assisted drafts reduce authoring time without increasing technical-review burden? No result is claimed here.
 
+## Frontier documentation interfaces — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] specializes the delivery/interaction boundary: source retrieval versus synthesized answers versus API execution; version fallback and retrieval-triggered indexing; browser-local tool lifecycle; novel/internal API task evaluation. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--webmcp-20261105#root]] [[sources/frontier-docs--empirical-20261105#root]]
+
+The owned findings preserve source-specific controls and uncertainty; no universal context budget or future training-data guarantee is inferred. See [[artifacts/projects/dokimi]] for the documented evaluator, and [[artifacts/projects/webmcp]] for the dated browser contract.
+
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] preserves source drift between a launch example, product configuration, skill guidance and framework envelopes rather than blending them into a fictional contract. The capture records 8/16/64 KB scope differences and a source-path/build-output-path conflict. [[sources/vercel--schedules-docs#documentation-conflicts]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Keep internal cross-boundary reasons, user tasks and operational procedures distinct. Preserve three doc/code disagreements at the pin rather than merge them into one fictional contract; code/test evidence is still not runtime proof. [[sources/pingdotgg--t3code#eng-documentation-boundaries]] [[sources/pingdotgg--t3code#context-handoff-drift]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

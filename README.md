@@ -42,12 +42,12 @@ See [[projects/_index]] for projects created from the research, starting with [[
 | --- | --- | --- |
 | Skills cataloged | 6 paged | 2026-11-06 |
 | Plugins cataloged | 10 | 2026-11-04 |
-| Projects cataloged | 25 | 2026-11-06 |
+| Projects cataloged | 32 | 2026-11-07 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
-| Concepts cataloged | 31 | 2026-11-07 |
+| Concepts cataloged | 32 | 2026-11-07 |
 | Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
-| Creators cataloged | 47 | 2026-11-06 |
-| Source citation pages | 93: 22 article, 39 docs-page, 5 other, 4 paper, 22 repo, 1 tweet | 2026-11-07 |
+| Creators cataloged | 71 | 2026-11-07 |
+| Source citation pages | 106: 23 article, 47 docs-page, 5 other, 6 paper, 24 repo, 1 tweet | 2026-11-07 |
 
 Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
 
@@ -67,8 +67,16 @@ Latest MCP ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension
 
 Latest documentation research: [[projects/writing-amazing-developer-docs/README]] → [[concepts/developer-documentation-design]], with practical [[projects/writing-amazing-developer-docs/page-blueprints]].
 
+Wider documentation research now includes [[projects/writing-amazing-developer-docs/platform-documentation-system]] and an [[projects/writing-amazing-developer-docs/experiments/README|executed synthetic documentation-test probe]].
+
+Mintlify investigation: [[artifacts/projects/mintlify]] — current docs, first-party research and pinned URL-benchmark source/data; evidence limits explicit.
+
+Frontier agent-documentation follow-up: [[concepts/agent-documentation-interfaces]] — Context7, Fern, ReadMe, WebMCP, Dokimi and three independent API-agent papers; documentation/specification investigation, no runtime integration.
+
 Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverage/review principles, full source pinned locally, and 65 bundled validator tests passed. This is not a completed target audit or detection benchmark.
 
 Latest concept ingest: [[concepts/agent-memory-consolidation]] — 40 principles; full article, fifteen figures and supporting captures preserved. External-memory evidence and documented product guarantees kept separate; no memory system installed.
 
 Latest project ingest: [[artifacts/projects/inkling-2-small]] — 44 adaptation/evaluation/containment principles, 25 preserved evidence files. Hosted access and promised weights kept separate; no model training or benchmark replication.
+
+Latest project investigation: [[artifacts/projects/t3code]] —79 source-backed service, runtime, authority, review, context and engineering practices; full SHA and restore manifest, selected tests inspected rather than executed.

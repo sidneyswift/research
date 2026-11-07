@@ -1,0 +1,78 @@
+# Capture: fern-llms
+
+Canonical URL: https://buildwithfern.com/learn/docs/ai-features/llms-txt
+Resolved URL: https://buildwithfern.com/learn/docs/ai-features/llms-txt
+Retrieved: 2026-11-05
+Representation: server-provided textual representation
+Content-Type: text/markdown; charset=utf-8
+
+---
+
+> This page is for Docs.
+
+> For clean Markdown content of this page, append .md to this URL. For the complete documentation index, see https://buildwithfern.com/learn/llms.txt.
+
+# `llms.txt`
+
+> Fern automatically generates an llms.txt Markdown file so AI tools can discover and index your documentation.
+
+[`llms.txt`](https://llmstxt.org/) is a standard for exposing website content to AI developer tools. Fern implements this standard, automatically generating and maintaining an `llms.txt` Markdown file so AI tools can discover and index your documentation. For single pages, agents can also fetch [Markdown directly](/learn/docs/ai-features/markdown).
+
+`llms.txt` is a root-level file Fern serves to non-human consumers, alongside [`robots.txt`](/learn/docs/seo/robots-txt). `robots.txt` decides which crawlers reach your site and what AI training signals you broadcast; `llms.txt` shapes what AI agents receive once they do.
+
+![Example of using llms.txt](/learn/_fern-files/_img/1c185b18406eca1fab6e4bb38b78cccf02f4eb6de5fbb5f179230f1ccd600730.webp)
+
+## What `llms.txt` contains
+
+`llms.txt` contains a lightweight summary of your documentation site with each page distilled into a one-sentence description and URL. For sites with API endpoints, it also links to your [OpenAPI specification](/learn/docs/developer-tools/openapi-spec) as a standalone, machine-readable file so AI tools can parse your full API schema directly. For sites with WebSocket channels, it also links to your [AsyncAPI specification](/learn/docs/developer-tools/asyncapi-spec). Fetching an endpoint page listed in `llms.txt` returns its [parameters, body, response, and authentication as a readable property list](/learn/docs/ai-features/markdown#api-reference-pages).
+
+Fern serves `llms.txt` at the site root and for every navigation node that contains pages: sections, products, versions, tabs, API References, and changelogs (`/llms.txt`, `/docs/llms.txt`, `/docs/ai-features/llms.txt`, etc.). Individual pages don't have their own `llms.txt`. A request for `/<page>/llms.txt` returns a `301` redirect to the page's [Markdown](/learn/docs/ai-features/markdown) at `/<page>.md`, with the query string preserved (for example, `?lang=python`), so existing links and crawlers still receive the page content.
+
+Example: [Eleven Labs llms.txt](https://elevenlabs.io/docs/llms.txt).
+
+> **Note**
+>
+> Fern doesn't generate `llms-full.txt`. Full-site concatenation exceeded most model context windows, added heavy serving overhead, and saw little use compared to `llms.txt` combined with per-page [Markdown access](/learn/docs/ai-features/markdown). Use `llms.txt` to discover pages and fetch them individually.
+
+## Localized sites
+
+For sites with [localization](/learn/docs/localization/overview) enabled, each non-default locale gets its own `llms.txt` index at `/{locale}/llms.txt` (or `/{basepath}/{locale}/llms.txt` on basepath-mounted sites). Every link in that index is locale-prefixed, so `guides/intro.md` becomes `/ja/guides/intro.md`.
+
+Section-level indexes work the same way: `/{locale}/{section}/llms.txt` returns the translated section index with locale-prefixed links. Pages that fall back to default-language content in a locale are marked `noindex` and left out of that locale's index.
+
+Custom `llms.txt` files (configured via `agents` in `docs.yml`) are only served for the default locale. Non-default locales always receive the auto-generated index.
+
+## Page descriptions
+
+`llms.txt` includes page descriptions pulled from [frontmatter](/learn/docs/configuration/page-level-settings). Fern uses the `description` field if present, otherwise falls back to `subtitle`.
+
+**`Frontmatter`**
+
+```mdx title="Frontmatter"
+---
+title: Fern Docs
+subtitle: Build beautiful documentation websites with Fern.
+---
+```
+
+Each page appears in its section's `llms.txt` as a link followed by its description:
+
+**`.../section/llms.txt`**
+
+```txt title=".../section/llms.txt"
+- [Fern Docs](https://example.com/docs): Build beautiful documentation websites with Fern.
+```
+
+## Learn more
+
+#### [Customize LLM output](/learn/docs/ai-features/customize-llm-output)
+
+Exclude pages, filter content with tags, or serve your own custom files.
+
+#### [Agent directives](/learn/docs/ai-features/agent-directives)
+
+Configure the default directive prepended to every page served to AI agents.
+
+#### [Analytics and integration](/learn/docs/ai-features/llms-txt-analytics)
+
+Track LLM traffic and surface `llms.txt` endpoints to readers.

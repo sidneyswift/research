@@ -1,0 +1,473 @@
+{
+  "retrieved": "2026-11-07",
+  "source_url": "https://github.com/pingdotgg/t3code",
+  "upstream_commit": "33f85846be8bc4bc592f0e621d6f0313e5abd4a4",
+  "tracked_tree_files": 31763,
+  "review_scope": "Exact cited spans inspected, often selected sections of large files; inventory is not whole-file/whole-repository coverage. Vendor reference trees and full native/mobile paths excluded. Tests inspected, not executed.",
+  "anchors": 66,
+  "line_ranges": 173,
+  "cited_files": [
+    {
+      "path": ".agents/skills/test-t3-app/SKILL.md",
+      "bytes": 2936,
+      "sha256": "d99d42723e430d0fc66e9e4429fd4e06e67535cf237abbc190588f945dbef966",
+      "lines": 59
+    },
+    {
+      "path": ".github/workflows/agent-context-budget.yml",
+      "bytes": 2177,
+      "sha256": "967fd42cf1fd712c2861999aff87a15581fa3075c6edfabd04bf5e9da68451e2",
+      "lines": 55
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 24670,
+      "sha256": "e23ff5c104eeba941d767dc369c1464b22137f0451c6c1639e571637378fc98c",
+      "lines": 212
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "935d8f2af0c703f9c39517ee57cc4930b19d02d533be930b63f0e82f93614b43",
+      "lines": 21
+    },
+    {
+      "path": "README.md",
+      "bytes": 5256,
+      "sha256": "b03870d0c6d53e6401a07fd7abaf6a1e3830050926eb759c2406ec1aa0cf46ab",
+      "lines": 153
+    },
+    {
+      "path": "apps/server/package.json",
+      "bytes": 4081,
+      "sha256": "57653c19d043385889c2a0f47ab7ad95db23e381ebd7646c32c16d511290e406",
+      "lines": 106
+    },
+    {
+      "path": "apps/server/src/assets/AssetAccess.ts",
+      "bytes": 38044,
+      "sha256": "1df0288c82b424cf49c07da16cea713a717e299024e7c7bcd02445cb090c4eb5",
+      "lines": 1035
+    },
+    {
+      "path": "apps/server/src/auth/EnvironmentAuth.ts",
+      "bytes": 55027,
+      "sha256": "8a2e41dd45597b8d2b8ba728015eebd08ffabf7630a49d47616371a533ba0c38",
+      "lines": 1470
+    },
+    {
+      "path": "apps/server/src/auth/McpOAuth.ts",
+      "bytes": 23568,
+      "sha256": "a08c370025d8423380819ed30e7ece5a97f135a69d7429b98b2caac390a1afcb",
+      "lines": 628
+    },
+    {
+      "path": "apps/server/src/auth/RpcAuthorization.test.ts",
+      "bytes": 14794,
+      "sha256": "48bfc8d8578f4c09070722dffe8e328b4060d548b0c345deea1abcc851f9ed91",
+      "lines": 409
+    },
+    {
+      "path": "apps/server/src/auth/RpcAuthorization.ts",
+      "bytes": 16397,
+      "sha256": "1e46ad4c96975bbfbefef23aa6d0f9fc4f4cbc9b54ef4818518d30be4132200b",
+      "lines": 299
+    },
+    {
+      "path": "apps/server/src/auth/SessionStore.ts",
+      "bytes": 36814,
+      "sha256": "3ae0fbebdcac4174af32e02b43fd92d8452ea527446c4b4c8f108c1e9a4c77c7",
+      "lines": 1120
+    },
+    {
+      "path": "apps/server/src/auth/dpop.ts",
+      "bytes": 4325,
+      "sha256": "f8d149e0f4d806ad4494e29def80eed12ebce7213a748ad444469e640cc260c6",
+      "lines": 127
+    },
+    {
+      "path": "apps/server/src/auth/http.ts",
+      "bytes": 20875,
+      "sha256": "4add15463e63e6673f54bb2856fa69b25a19dfe8c564d18526fc79e00d3df93e",
+      "lines": 522
+    },
+    {
+      "path": "apps/server/src/checkpointing/CheckpointDiffQuery.ts",
+      "bytes": 11197,
+      "sha256": "50a3cb8bdf0d4732c87feb3661b6eaaa6ad5859559035d68df5e386b61e1d9b4",
+      "lines": 320
+    },
+    {
+      "path": "apps/server/src/mcp/McpHttpServer.ts",
+      "bytes": 48814,
+      "sha256": "db5991c125a4db32083fb6e779f8f659eeeaddcd03886d0f2e53577f006f3069",
+      "lines": 1246
+    },
+    {
+      "path": "apps/server/src/mcp/McpInvocationContext.ts",
+      "bytes": 8489,
+      "sha256": "c0bf05105036c1e05a872219a2e548d05ba4ae1b7fc79bde581dd5dec63782f0",
+      "lines": 228
+    },
+    {
+      "path": "apps/server/src/mcp/McpToolAccess.race.test.ts",
+      "bytes": 7347,
+      "sha256": "7417888d2bea2e9adc2d50e18cc4fb244142746b53fd8cc153abe28da021f68d",
+      "lines": 191
+    },
+    {
+      "path": "apps/server/src/mcp/McpToolAccess.ts",
+      "bytes": 15891,
+      "sha256": "17a5a70ffa74153911e3092c4358a6e6d3dd3703d78512914434850df1250df1",
+      "lines": 423
+    },
+    {
+      "path": "apps/server/src/mcp/threadAccess.ts",
+      "bytes": 7967,
+      "sha256": "a8e9d2ca932736b4826ae3b9166937dc7e57f2cab50c3c807b5db6da415a577a",
+      "lines": 211
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts",
+      "bytes": 514106,
+      "sha256": "7e212d616f62538bc0297973fd272ae20cf306abb46a56519f7959e2b7e1f86b",
+      "lines": 12403
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Adapters/CodexAdapterV2.ts",
+      "bytes": 338975,
+      "sha256": "5913ec92bde020cbb23f5cbe3714b314fc9466406a22cc9721cf432418977c74",
+      "lines": 8059
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointCaptureService.ts",
+      "bytes": 10460,
+      "sha256": "3d85f1903cf0e242f39af67fbe8f0bd4c6f12e4b18bde6d041a03a4322779c72",
+      "lines": 284
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRestoreSafety.test.ts",
+      "bytes": 10199,
+      "sha256": "152f8ac9de7e388b1c8f19a6d2898db7765717f3f32c93d2e7e9dc68db78fa3c",
+      "lines": 254
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRestoreSafety.ts",
+      "bytes": 4850,
+      "sha256": "752cec9d6ccb763e3a3970ea2395af087dfc5a21217ecab4c55cdc4a234b9db0",
+      "lines": 106
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRollbackService.ts",
+      "bytes": 16017,
+      "sha256": "0e538d9e9a8d7dea6919ff92b66b494a8b99c43a8919f839e8489b9076c34ec4",
+      "lines": 398
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffDelivery.ts",
+      "bytes": 6965,
+      "sha256": "5158accf6934f472048ac8be4dafb0b1ff166490f00ee5d543a452e9e94f0af0",
+      "lines": 154
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffService.ts",
+      "bytes": 24275,
+      "sha256": "e20ee7314a067d18262d9fae07913b899b10755eb351c96629bb53ea93fbfeea",
+      "lines": 616
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectOutbox.ts",
+      "bytes": 26207,
+      "sha256": "43c0e9dca2c6339409713ff6b4dfe5aa31821f107e5ad3a0cb2348944910ea66",
+      "lines": 710
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.test.ts",
+      "bytes": 23748,
+      "sha256": "22197b4b87371bf433dff2dbf896910e0c723d29fb0a7f072e1891e4d9503912",
+      "lines": 637
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "bytes": 40654,
+      "sha256": "725ab817da46219c6ffcd5b71158dce257796bd14250094a377958153291d141",
+      "lines": 955
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EventSink.ts",
+      "bytes": 45524,
+      "sha256": "12e8d75d1f731f9d157a17138fa3003100a5cfff1d05898eda70c04a430fff3b",
+      "lines": 1137
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.receipt-race.test.ts",
+      "bytes": 6877,
+      "sha256": "dd9a6f08ca7c8397e086ad1376e16506538ac7cffa419c8da58ed2be82a56918",
+      "lines": 168
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.ts",
+      "bytes": 552249,
+      "sha256": "fd0644826587f652d05fae07961f1674b6ccc39bfc75000fa79359e693a64efd",
+      "lines": 14607
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.test.ts",
+      "bytes": 14094,
+      "sha256": "7ffa9b8f58af7ca706e2195d8c3af012a5a3afa6bf2e6a09a61d356459875abb",
+      "lines": 385
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.ts",
+      "bytes": 14206,
+      "sha256": "ab3a6d8547167e767c08f0c72f734d5bf4a49868205f78a961feedd0c03c53bd",
+      "lines": 319
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderRuntimeRecoveryService.ts",
+      "bytes": 40406,
+      "sha256": "62d4cdfeb1f2623133c709ed41ef104e6864f0ae78be3c2770c73f21982307eb",
+      "lines": 1019
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderSwitchService.ts",
+      "bytes": 8374,
+      "sha256": "d8fa953cd0b21e22794d55d3ec9bcd12c3e2dc08b9fbff0ab4debd78c8484de8",
+      "lines": 195
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/RunFinalizationQueue.test.ts",
+      "bytes": 5809,
+      "sha256": "6e9c1ee2e11452b7dcf991b0c11e04b225db8ec934eca78b6be4b19dbbf06204",
+      "lines": 132
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/RunFinalizationService.ts",
+      "bytes": 5269,
+      "sha256": "93593a0c4f9b57a81ececcd925813555c7877504ff0ffb9f094c6a379bef1a8a",
+      "lines": 131
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ThreadStream.ts",
+      "bytes": 3931,
+      "sha256": "0dad3a00c9fb5fb8c1023dd30a8e32c5b32fed5e77ffd030ab6b9c2dc230bfa9",
+      "lines": 118
+    },
+    {
+      "path": "apps/server/src/policy/ManagedPolicy.ts",
+      "bytes": 8063,
+      "sha256": "88c85fcd795ba6fe7e46782cd88a28a90f6c74887b7bf2a99dec076d130a511f",
+      "lines": 219
+    },
+    {
+      "path": "apps/server/src/project/ManagedProjectFolders.ts",
+      "bytes": 16420,
+      "sha256": "994035ce69f0d102843e978bd0724701fb5a50f58619f196145381874d989e39",
+      "lines": 472
+    },
+    {
+      "path": "apps/server/src/provider/AgentContextBudget.test.ts",
+      "bytes": 6958,
+      "sha256": "d01f3a8623e9df3505b0402518feaab3fc95f6b9969b713b84c470cfb306da50",
+      "lines": 152
+    },
+    {
+      "path": "apps/server/src/pullRequest/pullRequestViewedFiles.ts",
+      "bytes": 13314,
+      "sha256": "301f2e8c5f706771725ac1bf9992e869f829895e9196a3992ccf596c216d360a",
+      "lines": 347
+    },
+    {
+      "path": "apps/server/src/serverActivation.ts",
+      "bytes": 1114,
+      "sha256": "b2e789b118c7e7f7614aff1b9b36647d270adfc5bbaf48d99bb7f87fd64e9e1d",
+      "lines": 29
+    },
+    {
+      "path": "apps/server/src/serviceLauncher.test.ts",
+      "bytes": 26173,
+      "sha256": "fb181be3f2d04675af5bc4a34c75707aac9a2d34f1117249f12d1d2a9358c95e",
+      "lines": 677
+    },
+    {
+      "path": "apps/server/src/serviceLauncher.ts",
+      "bytes": 30783,
+      "sha256": "2108510af0eceded95a7b51148d74f0ab420cba82937cd6fe7cf1dcf9d22d9e9",
+      "lines": 841
+    },
+    {
+      "path": "apps/server/src/vcs/GitVcsDriver.ts",
+      "bytes": 55985,
+      "sha256": "b91b817baa7ae1a3c81e2e03f5e3250acf2eac3824f765cb1890a82f73c43b2b",
+      "lines": 1597
+    },
+    {
+      "path": "apps/server/src/ws.ts",
+      "bytes": 163795,
+      "sha256": "976ee2745245d997ee29e441c6796b4eb8415f58084454f6574719f296feffc2",
+      "lines": 3646
+    },
+    {
+      "path": "apps/web/src/worktreeCleanup.ts",
+      "bytes": 1378,
+      "sha256": "1bf685c190e9f93768dedf6a59e5dbf265e9272e306eaacd99ef3d5e04de166f",
+      "lines": 42
+    },
+    {
+      "path": "docs/internals/composer-context-references.md",
+      "bytes": 12905,
+      "sha256": "a15c1ba3983835a2211436b0966a9faf6a93c7ee1c6c35708ef3ffbf7036ea76",
+      "lines": 207
+    },
+    {
+      "path": "docs/internals/connection-runtime.md",
+      "bytes": 8036,
+      "sha256": "9047116695d889c21669d04d5001b3e40d6c3414007ed62d85ac76c1deb4b18d",
+      "lines": 132
+    },
+    {
+      "path": "docs/internals/context-handoffs.md",
+      "bytes": 1215,
+      "sha256": "120d3679073437744585626eab1eac5945effc25a2985a0d6b6d3d769cedd875",
+      "lines": 19
+    },
+    {
+      "path": "docs/internals/effect-services.md",
+      "bytes": 9899,
+      "sha256": "9914cbd22c6603a71ebfd27896eac6a6cd0e6b7f45d445e6a4a5426c07887294",
+      "lines": 163
+    },
+    {
+      "path": "docs/internals/environment-auth.md",
+      "bytes": 8990,
+      "sha256": "42075a771c74e4148cb353460a5b6b3afab2759015c7f09d4d7dc9ac31e18c9e",
+      "lines": 149
+    },
+    {
+      "path": "docs/internals/overview.md",
+      "bytes": 8997,
+      "sha256": "d28053f13a2ce8dfa71df93eb0c8d10bd0d5dd50ce33bf7ee327e5a55f379a25",
+      "lines": 133
+    },
+    {
+      "path": "docs/internals/pull-request-file-revisions.md",
+      "bytes": 4210,
+      "sha256": "8c017e6560e0afe9fce3fce0fcf1046498dfa0519802ea85288f97b984e7b4f2",
+      "lines": 65
+    },
+    {
+      "path": "docs/internals/remote.md",
+      "bytes": 11401,
+      "sha256": "f2af1959177f638f91daa0f30d84604bf79268a0f03221a734d821e95dafe95a",
+      "lines": 186
+    },
+    {
+      "path": "docs/internals/server-updates.md",
+      "bytes": 6663,
+      "sha256": "10a6efcf227d1b7ccabb15f946d60bf9f83bc03accd1b1a9bb0bddf8da5db29c",
+      "lines": 106
+    },
+    {
+      "path": "docs/internals/testing.md",
+      "bytes": 4419,
+      "sha256": "a82b28ba9cf64237e4b5f93f3333a1cd164086d73dbec5bb285025f7f41feed2",
+      "lines": 43
+    },
+    {
+      "path": "docs/orchestration-v2/README.md",
+      "bytes": 9075,
+      "sha256": "219efc384c1d5c2ba4ccee91bd91eb979b16d5519496757ee440327e49ee40c5",
+      "lines": 166
+    },
+    {
+      "path": "docs/user/managed-policy.md",
+      "bytes": 17215,
+      "sha256": "09a233aa8b41d9e86b88595e0796181d8184e329e840a9fa3feef488261354e8",
+      "lines": 305
+    },
+    {
+      "path": "docs/user/permission-modes.md",
+      "bytes": 3939,
+      "sha256": "a71e836a1315dda4c8cebd9035a4b5bff0dae617aea5e2e5f7ca38ee00a6d841",
+      "lines": 60
+    },
+    {
+      "path": "docs/user/source-control.md",
+      "bytes": 19923,
+      "sha256": "d2fe0bb83d0d057ca3d884cad661b0e29756259e6632e33b68852291c74aefbf",
+      "lines": 335
+    },
+    {
+      "path": "evals/README.md",
+      "bytes": 4307,
+      "sha256": "f400498f86df633788a749b9f18634ce4f4258515edad153e207ea2e02deaaea",
+      "lines": 55
+    },
+    {
+      "path": "evals/pr-content/README.md",
+      "bytes": 1205,
+      "sha256": "da60b010044720f4767c6a55b4b44422237daf0c686296cfbce2172731f1b408",
+      "lines": 13
+    },
+    {
+      "path": "evals/test-signal/README.md",
+      "bytes": 1683,
+      "sha256": "713f2eb8886d2b34cef37323d2daba1a31f2a2ad3905ee2fa138683b2e908b29",
+      "lines": 23
+    },
+    {
+      "path": "oxlint-plugin-t3code/rules/no-raw-mcp-registration.ts",
+      "bytes": 5201,
+      "sha256": "b8e046a8d631f8b2bce2d8ecf5b367668d15302057e328b19da084d1b3d0a276",
+      "lines": 131
+    },
+    {
+      "path": "packages/client-runtime/src/state/threads.ts",
+      "bytes": 44052,
+      "sha256": "014ee6198b7733cbe0fd2c4fb6f89119ad2f04ecb2d872c965e688662bd274b5",
+      "lines": 1141
+    },
+    {
+      "path": "packages/contracts/src/auth.ts",
+      "bytes": 22243,
+      "sha256": "afede6403875da53c432f92f947d38a074404553859c95bab2785c57d69a7b5e",
+      "lines": 578
+    },
+    {
+      "path": "packages/contracts/src/composerContext.ts",
+      "bytes": 11264,
+      "sha256": "0e35cae19e8643c91761283dbfc3e524570814c128608c4f8a63f00f16646a53",
+      "lines": 305
+    },
+    {
+      "path": "packages/provider-core/src/server/handoffBudget.ts",
+      "bytes": 9958,
+      "sha256": "1131a61306ada8297e1687fdba56ece2eb14f368886d05dc29ad7a747507c205",
+      "lines": 266
+    },
+    {
+      "path": "packages/provider-core/src/server/orchestrationInstructions.test.ts",
+      "bytes": 3604,
+      "sha256": "5dd2ddc02db5718d2c2da51552cf5e2b081f80e6b8c04334cc840bc57ca175a1",
+      "lines": 85
+    },
+    {
+      "path": "packages/provider-core/src/server/orchestrationInstructions.ts",
+      "bytes": 11228,
+      "sha256": "556cddc92597ed3831934aa550b70042608ab961045b2e00bfe9b37f74d06b95",
+      "lines": 141
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.test.ts",
+      "bytes": 20433,
+      "sha256": "e647bf090ffbe067ebd3fdce6a60573312cbb8fd54ce981f7922090f4be2c92e",
+      "lines": 543
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.ts",
+      "bytes": 16989,
+      "sha256": "6f892cb25ea101c5248b8df53ad7d084a3a6554fd397c9a2c9a9c33796197849",
+      "lines": 452
+    }
+  ]
+}

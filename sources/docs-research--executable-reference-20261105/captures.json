@@ -1,0 +1,37 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "rust-doctests.md",
+      "url": "https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html",
+      "resolved_url": "https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html",
+      "sha256": "5f23a14664c8dbd731a4f85d72bcc963eb2988ed7c1e72b9deed1879cfa02df1",
+      "bytes": 22678,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "rust-api-guidelines.md",
+      "url": "https://rust-lang.github.io/api-guidelines/documentation.html",
+      "resolved_url": "https://rust-lang.github.io/api-guidelines/documentation.html",
+      "sha256": "c9602c9654b1d142c66e9c17d0df7f59911c2c845caac0d5967cd5c87f2ca4f9",
+      "bytes": 10582,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "python-doctest.md",
+      "url": "https://docs.python.org/3/library/doctest.html",
+      "resolved_url": "https://docs.python.org/3/library/doctest.html",
+      "sha256": "104a7ba6f80a7920d7e6618813b76d3b6a0e4161266812cdd849e97d714adf9e",
+      "bytes": 98934,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "sphinx-doctest.md",
+      "url": "https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html",
+      "resolved_url": "https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html",
+      "sha256": "a8a976803d4060834552fca0990496f0ba3f5270239685c387ed7a3f56450beb",
+      "bytes": 27466,
+      "representation": "server-provided textual representation"
+    }
+  ]
+}

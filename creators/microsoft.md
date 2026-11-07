@@ -38,3 +38,7 @@ Business-capability boundaries and explicit architectural tradeoffs, including s
 ## API design research — 2026-11-04
 
 - [[artifacts/projects/business-central-api]] — ERP contract study from [[sources/microsoft--business-central-api-design#root]], grouped in [[projects/designing-apis-for-agents/README]]. Documentation-level evidence; no live API verification.
+
+## WebMCP research connection — 2026-11-05
+
+[[artifacts/projects/webmcp]] studies the community design and browser publications with separate draft/implementation/support boundaries. Institutional participation does not establish a W3C Standard or universal browser availability. [[sources/frontier-docs--webmcp-20261105#draft-status]] [[sources/frontier-docs--webmcp-20261105#browser-availability]] [[sources/frontier-docs--webmcp-20261105#edge-preview]]

@@ -171,3 +171,7 @@ The official overview documents TypeScript client-secret and private-key provide
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] separates authenticated identity and credential custody from authorized effects. Trusted MCP tools can still compose a public-input → private-read → public-write leak; resource, operation, destination and trigger controls remain distinct. [[sources/lhchavez--managed-agent-environments#toxic-flow]] [[sources/lhchavez--managed-agent-environments#credential-authority]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Narrow external MCP tokens are rejected by broader HTTP/RPC interfaces; issuer/recipient/ceiling checks differ from immediate revocation of downstream asset URLs. [[sources/pingdotgg--t3code#auth-mcp-audience]] [[sources/pingdotgg--t3code#auth-asset-authority]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

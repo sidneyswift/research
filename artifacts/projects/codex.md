@@ -214,3 +214,7 @@ Portable ledger; ★ marks priorities, not an adoption mandate. Evidence classes
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] is a complementary proposed evaluation frame for permission, network, credential and recovery boundaries. The reference architecture is not evidence that Codex implements all eleven maturity tracks, and the article’s managed-cloud recommendation is not a measured local/cloud comparison. [[sources/replit--agent-habitat-architecture#maturity]] [[sources/lhchavez--managed-agent-environments#adoption-limits]]
+
+## T3 Code comparison — 2026-11-07
+
+[[artifacts/projects/t3code]]: A downstream multi-provider control surface adapts Codex but keeps app identity, permission labels and finalization distinct from native runtime state. [[sources/pingdotgg--t3code#auth-provider-permissions]] The projects remain independently pinned and were not run together.

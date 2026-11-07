@@ -200,3 +200,7 @@ The evidence for these boundaries is in the mechanism sections above. Additional
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] extends the preserved-state/retirement distinction to authority: a stopped process may leave credentials or downstream grants usable, while resumed work must not replenish spent permission budgets. These are proposed criteria, not newly tested Open Inspect guarantees. [[sources/replit--agent-habitat-architecture#durability]] [[sources/replit--agent-habitat-architecture#containment]]
+
+## T3 Code comparison — 2026-11-07
+
+[[artifacts/projects/t3code]]: Process loss retires unreplayable effects; new durable continuation is distinct from resuming the old callback. [[sources/pingdotgg--t3code#rt-restart-continuation]] The projects remain independently pinned and were not run together.

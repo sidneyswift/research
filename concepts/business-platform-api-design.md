@@ -226,6 +226,16 @@ The lifecycle/freshness concerns follow from asynchronous/CQRS contracts; reques
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
 
+## Frontier documentation interfaces — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] specializes the delivery/interaction boundary: source retrieval versus synthesized answers versus API execution; version fallback and retrieval-triggered indexing; browser-local tool lifecycle; novel/internal API task evaluation. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--webmcp-20261105#root]] [[sources/frontier-docs--empirical-20261105#root]]
+
+The owned findings preserve source-specific controls and uncertainty; no universal context budget or future training-data guarantee is inferred. See [[artifacts/projects/dokimi]] for the documented evaluator, and [[artifacts/projects/webmcp]] for the dated browser contract.
+
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] is a schedule-resource API case study: name/ID/occurrence identity, OIDC environment scope, partial read projections, cursor-complete pagination and retry-after-write ambiguity. HTTP and SDK shapes differ; invoke is not generally retry-idempotent. [[sources/vercel--schedules-docs#api]] [[sources/vercel--schedules-docs#sdk]] [[sources/vercel--schedules-docs#retry-boundary]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Implement reusable domain capabilities before adapting user RPC/MCP/jobs. Decoded flags can make a retrieval-shaped method effectful and change its required authority; one route label is not an effect contract. [[sources/pingdotgg--t3code#service-reach]] [[sources/pingdotgg--t3code#auth-rpc-authorization]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

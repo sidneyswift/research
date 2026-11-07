@@ -99,6 +99,51 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 - [[creators/daye-nam]] — documentation research contributor/publisher.
 
+- [[creators/michael-nygard]] — documentation research creator/maintainer context.
+
+- [[creators/simon-brown]] — documentation research creator/maintainer context.
+
+- [[creators/arc42]] — documentation research creator/maintainer context.
+
+- [[creators/backstage]] — documentation research creator/maintainer context.
+
+- [[creators/pagerduty]] — documentation research creator/maintainer context.
+
+- [[creators/kubernetes]] — documentation research creator/maintainer context.
+
+- [[creators/django]] — documentation research creator/maintainer context.
+
+- [[creators/rust]] — documentation research creator/maintainer context.
+
+- [[creators/python]] — documentation research creator/maintainer context.
+
+- [[creators/sphinx]] — documentation research creator/maintainer context.
+
+- [[creators/algolia]] — documentation research creator/maintainer context.
+
+- [[creators/docusaurus]] — documentation research creator/maintainer context.
+
+- [[creators/read-the-docs]] — documentation research creator/maintainer context.
+
+- [[creators/w3c]] — documentation research creator/maintainer context.
+
+- [[creators/martin-robillard]] — documentation research creator/maintainer context.
+
+- [[creators/michael-meng]] — documentation research creator/maintainer context.
+
+- [[creators/frances-liu]] — documentation research creator/maintainer context.
+
+- [[creators/zhijun-gao]] — documentation research creator/maintainer context.
+
+- [[creators/mintlify]] — agent documentation platform and first-party engineering research.
+
+- [[creators/upstash]] — publisher of a studied agent documentation/evaluation platform.
+- [[creators/fern]] — publisher of a studied agent documentation/evaluation platform.
+- [[creators/readme]] — publisher of a studied agent documentation/evaluation platform.
+- [[creators/intel]] — publisher of a studied agent documentation/evaluation platform.
+
 - [[creators/replit]] — publisher of the proposed Agent Habitat architecture and maturity rubric.
 
 - [[creators/thinking-machines]] — Inkling 2 Small and scoped Tinker supporting evidence.
+
+- [[creators/pingdotgg]] — Ping.gg organization; T3 Code publisher.

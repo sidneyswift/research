@@ -1,0 +1,27 @@
+{
+  "scope": "synthetic Python doctest mechanics; no human or agent usability result",
+  "python": "3.12.4",
+  "script_sha256": "239e76c95bf0b8865a1adb0cd99ee1e142bc77d2c873d60fafe0023b27837845",
+  "cases": {
+    "fragment_with_injected_context": {
+      "attempted": 1,
+      "failed": 0
+    },
+    "same_fragment_without_injected_context": {
+      "attempted": 1,
+      "failed": 1
+    },
+    "complete_example_without_injected_context": {
+      "attempted": 2,
+      "failed": 0
+    },
+    "failed_job_matches_broad_output": {
+      "attempted": 1,
+      "failed": 0
+    },
+    "failed_job_fails_success_assertion": {
+      "attempted": 1,
+      "failed": 1
+    }
+  }
+}

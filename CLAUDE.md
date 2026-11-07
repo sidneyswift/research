@@ -43,6 +43,7 @@ A resolver table, the way `gstack`/`gbrain` ship a `RESOLVER.md` (see [[patterns
 | Paper | `paper` | committed `sources/<slug>/` (PDF/text) | `concept` |
 | Docs-page | `docs-page` | committed `sources/<slug>/snapshot.md` | artifact or `concept` |
 | API system documentation collection | `docs-page` | committed named immutable captures + URL/version/hash map in `sources/<slug>/` | project + `_schemas/api-case-study.md` supplement |
+| Documentation design / delivery study | `docs-page` (or `paper` for studies) | immutable captures or original notes + version/hash receipt in `sources/<slug>/` | concept or existing project + `_schemas/documentation-case-study.md` supplement |
 | Packaged release (ZIP/installer — e.g. a paid product with no public repo) | `other` (note the package kind + version) | committed extracted tree `sources/<slug>/` (+ the original archive); immutable like an article — there is no upstream to re-clone | artifact (usually `plugin`) |
 
 Each operation is a **parameterized call** — same procedure, different argument → different result (per [[patterns/behavioral/skill-as-method-call]], applied to ourselves): `INGEST(<source>)` · `QUERY(<question>)` · `LINT(<scope?>)` · `REFLECT(<since?>)`. Likewise a `_schemas/` template is a parameterized page: same template, different artifact.

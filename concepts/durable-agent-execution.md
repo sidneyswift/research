@@ -124,6 +124,10 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 
 [[artifacts/projects/superplane]] persists event/queue/execution state before notification and recovers through pending-state scans. Runner completion hashes make identical terminal reports idempotent, not arbitrary remote effects. Finalization waits for tracked work to drain. Critically, copied node configuration coexists with live graph routing: specify the snapshot unit before claiming deterministic replay. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#execution-state]]
 
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] adds a proposed **security-state recovery** contract: restore attenuations, spent budgets, consumed approvals and action history with work progress. Journaled model replay is not universal exactly-once external effect; reconcile unknown outcomes. [[sources/replit--agent-habitat-architecture#durability]]
@@ -135,3 +139,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] adds distinct recovery contracts: store creation versus successful dreaming, canceled versus residual in-flight usage, local write acknowledgment versus committed sync, and nightly retry versus complete input coverage. [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--agent-memory-support#dream-cancellation]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]] [[sources/anthropic--agent-memory-support#dynamic-nightly]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Separate atomic accepted intent, process-bound versus replay-safe effects, retained receipt versus pruned replay history, and new restart-continuation intent. Provider/file rollback remains sequential. [[sources/pingdotgg--t3code#rt-replay-classification]] [[sources/pingdotgg--t3code#rt-dedup-lifetime]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

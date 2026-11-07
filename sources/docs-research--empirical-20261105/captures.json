@@ -1,0 +1,55 @@
+{
+  "retrieved": "2026-11-05",
+  "scope": "Original paper-reading notes, not full-paper reproductions. Reading scope and limitations in each note.",
+  "captures": [
+    {
+      "file": "robillard2009-notes.md",
+      "url": "https://www.cs.mcgill.ca/~martin/papers/software2009a.pdf",
+      "sha256": "d14478503c8a337e38c5a661a88116a8cd8b724a1b09e3cb0a67e47c57ed6db1",
+      "bytes": 4041,
+      "kind": "original-research-notes-and-metadata-not-full-paper"
+    },
+    {
+      "file": "meng2019-notes.md",
+      "url": "https://www.mangold-international.com/_Resources/Persistent/a/7/1/2/a712bdd99343412abc60642ea624ae047ef00b27/Meng_et_al_How-Developers-Use-API-Documentation_2019.pdf",
+      "sha256": "2c58e5ae0f81bc7b8ca2209410d5d8c5e2c0222060ac9ff7b93d979cdf87fa9b",
+      "bytes": 4735,
+      "kind": "original-research-notes-and-metadata-not-full-paper"
+    },
+    {
+      "file": "dogbench-notes.md",
+      "url": "https://arxiv.org/pdf/2609.39909v1",
+      "sha256": "467fd735a0e0f1274daab74e72780d5313215ac7d747265f035ef687df2b49c6",
+      "bytes": 5724,
+      "kind": "original-research-notes-and-metadata-not-full-paper"
+    },
+    {
+      "file": "gao2026-notes.md",
+      "url": "https://arxiv.org/pdf/2608.20195v1",
+      "sha256": "5b15cd45852bbaa197120ad38a0af3087eba6fdb5ccccf94adcf0cbaf18e406b",
+      "bytes": 4752,
+      "kind": "original-research-notes-and-metadata-not-full-paper"
+    },
+    {
+      "file": "papers.json",
+      "url": "https://arxiv.org/abs/2609.39909v1",
+      "sha256": "89e5a8a039d61a80cd260c84dd025e1621dbd35f06ec6c94e66079a7d4cd5c78",
+      "bytes": 2804,
+      "kind": "original-bibliographic-restoration-manifest"
+    },
+    {
+      "file": "corrections.md",
+      "url": "https://arxiv.org/pdf/2609.39909v1",
+      "sha256": "9c7abccce54a15a113e9e8635e0d1a07473703c0585b8950c6fa677f3b003e96",
+      "bytes": 484,
+      "kind": "original-bibliographic-correction"
+    },
+    {
+      "file": "meng2020-intervention-notes.md",
+      "url": "https://doi.org/10.1145/3380851.3416759",
+      "sha256": "bacf9703cb0362814f719fbb3e7663753770f72bedba68c62eae7f4f92b67a39",
+      "bytes": 7170,
+      "kind": "original-intervention-paper-notes-and-restoration-metadata-not-full-paper"
+    }
+  ]
+}

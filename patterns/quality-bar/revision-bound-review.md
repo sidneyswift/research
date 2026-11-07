@@ -95,6 +95,18 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
 
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
+## Mintlify documentation application — 2026-11-05
+
+[[artifacts/projects/mintlify]] examines documented index, skill, retrieval and editing surfaces with distinct authority and lifecycle boundaries. Its cited external discovery/protocol schema versions are not independently conformance-verified here. Source inspection is limited to the public URL benchmark; no hosted runtime guarantee or confirmed platform-implementation example is added.
+
+## Frontier documentation application — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] and [[artifacts/projects/webmcp]] apply this pattern to delivery transformations, page-local tool authority, versioned evidence and measured task outcomes. [[artifacts/projects/dokimi]] supplies documented evaluation controls. This adds a research application, not a newly runtime-verified example or pattern promotion. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]
+
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] prescribes a narrower claim-revision gate: promoting or materially changing a final finding requires another fresh verifier; budget exhaustion removes the disputed record from findings and leaves incomplete ledger work. Cosmetic edits are distinguished from changed root cause, trace, input/result, impact or severity. This is not a second implementation of the full content-version/human-publication pattern, so proposed status and example count remain unchanged. [[sources/cloudflare--security-audit-skill#material-reverification]]
@@ -110,3 +122,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] preserves benchmark version, harness, tool mode, effort and trajectory budget alongside the result, plus the exact cookbook source revision. This is an application of revision-scoped research evidence, not a newly verified runtime approval mechanism. [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-support#async-source]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#auth-authority-race]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

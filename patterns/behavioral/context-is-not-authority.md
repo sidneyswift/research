@@ -105,6 +105,18 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
 
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
+## Mintlify documentation application — 2026-11-05
+
+[[artifacts/projects/mintlify]] examines documented index, skill, retrieval and editing surfaces with distinct authority and lifecycle boundaries. Its cited external discovery/protocol schema versions are not independently conformance-verified here. Source inspection is limited to the public URL benchmark; no hosted runtime guarantee or confirmed platform-implementation example is added.
+
+## Frontier documentation application — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] and [[artifacts/projects/webmcp]] apply this pattern to delivery transformations, page-local tool authority, versioned evidence and measured task outcomes. [[artifacts/projects/dokimi]] supplies documented evaluation controls. This adds a research application, not a newly runtime-verified example or pattern promotion. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]
+
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]]'s AI companion distinguishes authorization from intent binding: a user may possess authority for an action yet never have intentionally requested the model-induced action. It also treats MCP metadata, tool schemas, model output and memory as inputs rather than permission sources. The skill's own sandbox and artifact-promotion requirements remain host obligations, not capability restrictions created by Markdown. [[sources/cloudflare--security-audit-skill#ai-authority]] [[sources/cloudflare--security-audit-skill#execution-boundary]] [[sources/cloudflare--security-audit-skill#promotion]]
@@ -124,3 +136,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]]: learned memory can persist poisoned text, and promotion into a system-context slot increases exposure without establishing authority. A read-only consumer is not immune to influence; host tools and policies remain separate. [[sources/anthropic--agent-memory-support#dynamic-trust]] [[sources/anthropic--agent-memory-support#code-injection]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#auth-mcp-caller-limits]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

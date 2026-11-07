@@ -108,6 +108,10 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 
 [[artifacts/projects/codex]] prioritizes explicit skill paths, rejects ambiguous names and skill/connector collisions, and observes budget-induced omissions. Its cheap-selector interface supports shadow evaluation without changing the visible catalog. This is complementary routing machinery, not measured universal selection accuracy. [[sources/openai--codex#skill-selection]] [[sources/openai--codex#skill-shadow]]
 
+## Mintlify documentation application — 2026-11-05
+
+[[artifacts/projects/mintlify]] examines documented index, skill, retrieval and editing surfaces with distinct authority and lifecycle boundaries. Its cited external discovery/protocol schema versions are not independently conformance-verified here. Source inspection is limited to the public URL benchmark; no hosted runtime guarantee or confirmed platform-implementation example is added.
+
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] selects attack-domain guidance from concrete source-visible trust boundaries. Each assignment receives exact selected rule blocks plus explicit exclusions; merely listing a companion filename is insufficient. This is a bounded internal routing/disclosure example, not a tested global skill-selection guarantee. [[sources/cloudflare--security-audit-skill#context-selection]]

@@ -1,0 +1,158 @@
+{
+  "retrieved": "2026-11-05",
+  "scope": "Mintlify first-party blogs, reports and strategy surfaces; textual evidence, not independent tests or visual audit",
+  "captures": [
+    {
+      "file": "url-benchmark.md",
+      "url": "https://www.mintlify.com/blog/llms-txt-agent-benchmark",
+      "resolved_url": "https://www.mintlify.com/blog/llms-txt-agent-benchmark",
+      "sha256": "cfcd8e85940975ffe9019f4c45c629d003eb92032b2d6203ca6717d34d3f5d4b",
+      "bytes": 5701,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "scaling-index.md",
+      "url": "https://www.mintlify.com/blog/scaling-llms-txt",
+      "resolved_url": "https://www.mintlify.com/blog/scaling-llms-txt",
+      "sha256": "c43068e2819f22c7e39759955932147a770275ea8113dbab7408661eb2f28c3a",
+      "bytes": 6356,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "midyear-traffic.md",
+      "url": "https://www.mintlify.com/blog/state-of-docs-traffic",
+      "resolved_url": "https://www.mintlify.com/blog/state-of-docs-traffic",
+      "sha256": "3f70b8ef337d86971524d6246aa2ddbb1c54f892f8da6da6adfe9fb9ec5367da",
+      "bytes": 8468,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "state-of-knowledge.md",
+      "url": "https://www.mintlify.com/state-of-knowledge/2026",
+      "resolved_url": "https://www.mintlify.com/state-of-knowledge/2026",
+      "sha256": "f55e2b7ee62e2b150e090416fdf990fd343600d4ef9f9936daf35a4bcd138ac4",
+      "bytes": 22283,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "agent-score-announcement.md",
+      "url": "https://www.mintlify.com/blog/agent-score",
+      "resolved_url": "https://www.mintlify.com/blog/agent-score",
+      "sha256": "6c67a4e89d42c9a40b4ba397a705a57a7ff98e0e82b526632a49b337a2308ed5",
+      "bytes": 5348,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "agent-score-snapshot.md",
+      "url": "https://www.mintlify.com/score/mintlify",
+      "resolved_url": "https://www.mintlify.com/score/mintlify",
+      "sha256": "6df41e66449867c77e68272d92d65b5faee3142878ae0a87cfa5c0ff9bca713e",
+      "bytes": 1274,
+      "representation": "HTML main/article converted to Markdown; widgets/visual layout not audited"
+    },
+    {
+      "file": "index-announcement.md",
+      "url": "https://www.mintlify.com/blog/mintlify-index",
+      "resolved_url": "https://www.mintlify.com/blog/mintlify-index",
+      "sha256": "24839178c6e8e0eb8351ff0c0cc5aba5e0c68a5eebf56c19078fc1f04edf9dbb",
+      "bytes": 3670,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "index-current.md",
+      "url": "https://www.mintlify.com/index",
+      "resolved_url": "https://www.mintlify.com/index",
+      "sha256": "6121fc74317a3022d791f92101846639faca712bc3efb46c0b016461eb3243dc",
+      "bytes": 1831,
+      "representation": "HTML main/article converted to Markdown; widgets/visual layout not audited"
+    },
+    {
+      "file": "agent-discovery-guide.md",
+      "url": "https://www.mintlify.com/library/how-to-help-ai-coding-agents-find-your-docs",
+      "resolved_url": "https://www.mintlify.com/library/how-to-help-ai-coding-agents-find-your-docs",
+      "sha256": "85457881a0f93f53b5c0106802e760861f5a557454aa5e6373920412ec2d9f62",
+      "bytes": 35553,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "self-updating-harness.md",
+      "url": "https://www.mintlify.com/blog/harness-and-memory-architecture-behind-self-updating-docs",
+      "resolved_url": "https://www.mintlify.com/blog/harness-and-memory-architecture-behind-self-updating-docs",
+      "sha256": "677323eaebc7da6e5f09327e25c5146852afadbbd9cae1e68ce3362e7d8cae63",
+      "bytes": 10220,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "agent-traffic-guide.md",
+      "url": "https://www.mintlify.com/library/how-to-track-ai-traffic-to-your-documentation",
+      "resolved_url": "https://www.mintlify.com/library/how-to-track-ai-traffic-to-your-documentation",
+      "sha256": "4e677a8da537bee495fa96a16791d3d3ee12cce373604bc5ae44beab4c59fc69",
+      "bytes": 15420,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "march-traffic.md",
+      "url": "https://www.mintlify.com/blog/state-of-ai",
+      "resolved_url": "https://www.mintlify.com/blog/state-of-ai",
+      "sha256": "e4ffa9d8510841e641a107706fab411c7ca64114a37832807e8297ab9f38c76d",
+      "bytes": 5234,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "early-index-traffic.md",
+      "url": "https://www.mintlify.com/blog/how-often-do-llms-visit-llms-txt",
+      "resolved_url": "https://www.mintlify.com/blog/how-often-do-llms-visit-llms-txt",
+      "sha256": "7d8571e275341f29cfe4494494830f5bb0063c3c15063167f79b151452b15a6b",
+      "bytes": 5800,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "assets/url-benchmark-1.webp",
+      "url": "https://www.mintlify.com/images/blog/llms-txt-agent-benchmark/404s-by-docs-format.webp",
+      "sha256": "65f221f6f268a686d4208329e8bade156bef631429c955602bfac32378bcf1af",
+      "bytes": 25576,
+      "kind": "referenced-meaning-bearing-figure",
+      "alt": "Average number of 404 errors per task across HTML, markdown, and markdown with llms.txt, dropping from 2.23 to 1.42 to 0.11"
+    },
+    {
+      "file": "assets/url-benchmark-2.webp",
+      "url": "https://www.mintlify.com/images/blog/llms-txt-agent-benchmark/404-composition.webp",
+      "sha256": "e48d8790d6101dbfaa609be25be7ac3cec9e74dfcee7ffa5b1b0bc314f408ee2",
+      "bytes": 19466,
+      "kind": "referenced-meaning-bearing-figure",
+      "alt": "Composition of 404s by cause across HTML, markdown, and markdown with llms.txt: agents requesting .md pages that exist, requesting /llms.txt, and guessing wrong pages entirely"
+    },
+    {
+      "file": "assets/scaling-index-1.png",
+      "url": "https://www.mintlify.com/images/blog/scaling-llms-txt/scaling-llms-txt-chart.png",
+      "sha256": "969615b97c13a1ee192b4f00746f24b7cbd7dc6e0824fafbb81295ae9871b16b",
+      "bytes": 74725,
+      "kind": "referenced-meaning-bearing-figure",
+      "alt": "Time taken to find a page and tokens used per task fell for Claude Sonnet 5 and GPT-5.6 Terra with llms.txt v2"
+    },
+    {
+      "file": "assets/midyear-traffic-1.webp",
+      "url": "https://www.mintlify.com/images/blog/state-of-docs-traffic/agents-vs-human-traffic.webp",
+      "sha256": "1e80cd38037900ff0409ebeed41bfeb5662094e057834426c7e157eff8d0c276",
+      "bytes": 22278,
+      "kind": "referenced-meaning-bearing-figure",
+      "alt": "Monthly agent requests and human visits from January through July 2026, ending at 213 million agent requests and 105 million human visits"
+    },
+    {
+      "file": "assets/midyear-traffic-2.webp",
+      "url": "https://www.mintlify.com/images/blog/state-of-docs-traffic/direct-information.webp",
+      "sha256": "85108cf9415ec30e4a8a3f7cca528eed0ad14fc109251838e8c4c75205029e9d",
+      "bytes": 29494,
+      "kind": "referenced-meaning-bearing-figure",
+      "alt": "The share of explicit machine-route requests by response type from February through July 2026, with direct Markdown requests growing to 54.4%"
+    },
+    {
+      "file": "assets/midyear-traffic-3.webp",
+      "url": "https://www.mintlify.com/images/blog/state-of-docs-traffic/url-errors-benchmark.webp",
+      "sha256": "76f224a563b31482b632c7079f4570c6b64a07fddb5e29493c48dad8a509b9bb",
+      "bytes": 16216,
+      "kind": "referenced-meaning-bearing-figure",
+      "alt": "Average 404 errors per retrieval request across HTML, Markdown, and Markdown with llms.txt linked or inlined, falling from 2.23 to 1.42 to 0.11"
+    }
+  ]
+}

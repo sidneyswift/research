@@ -1,0 +1,99 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "spec.md",
+      "url": "https://webmachinelearning.github.io/webmcp/",
+      "resolved_url": "https://webmachinelearning.github.io/webmcp/",
+      "sha256": "3a122f75517bf3732020860e560336fe021a3b7334fa90105dfe772036c93645",
+      "bytes": 129960,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "chrome-overview.md",
+      "url": "https://developer.chrome.com/docs/ai/webmcp",
+      "resolved_url": "https://developer.chrome.com/docs/ai/webmcp",
+      "sha256": "6a7d4e1945021129814108851b3203278235146fb1a1c60440b46e21d00b1e5c",
+      "bytes": 11882,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "chrome-imperative.md",
+      "url": "https://developer.chrome.com/docs/ai/webmcp/imperative-api",
+      "resolved_url": "https://developer.chrome.com/docs/ai/webmcp/imperative-api",
+      "sha256": "69599e6f55021b5076d6b50a86a817fc32bf1c5588dcc019233ced45fed39322",
+      "bytes": 14630,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "chrome-declarative.md",
+      "url": "https://developer.chrome.com/docs/ai/webmcp/declarative-api",
+      "resolved_url": "https://developer.chrome.com/docs/ai/webmcp/declarative-api",
+      "sha256": "3fba2ee3bb7aa3231363fd80680ba1e31184f0c149858fa897c45d586a24dbf4",
+      "bytes": 8895,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "chrome-tool-security.md",
+      "url": "https://developer.chrome.com/docs/ai/webmcp/secure-tools",
+      "resolved_url": "https://developer.chrome.com/docs/ai/webmcp/secure-tools",
+      "sha256": "1faa0c5a2b3752e4a94d859ea5cad3dec4aaa58cd61c4df20a1e7c3c52d664e8",
+      "bytes": 7324,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "chrome-agent-security.md",
+      "url": "https://developer.chrome.com/docs/agents/security",
+      "resolved_url": "https://developer.chrome.com/docs/agents/security",
+      "sha256": "3db774f26dd256ce02229747904cd280180e436758fb8c42b94722579e2711a5",
+      "bytes": 11769,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "playwright-webmcp.md",
+      "url": "https://playwright.dev/docs/api/class-webmcp",
+      "resolved_url": "https://playwright.dev/docs/api/class-webmcp",
+      "sha256": "62be74e96868bdd046ac7abac90abf5900d49a60a19ed93680401421214835f6",
+      "bytes": 7074,
+      "representation": "HTML main/article converted to Markdown via markdownify; visual widgets and assets not captured"
+    },
+    {
+      "file": "explainer.md",
+      "url": "https://raw.githubusercontent.com/webmachinelearning/webmcp/main/README.md",
+      "resolved_url": "https://raw.githubusercontent.com/webmachinelearning/webmcp/main/README.md",
+      "sha256": "1c6e432b3fb853143236bca2e8c5e8e2e70ef1a9107191d69ac4e0075515ee29",
+      "bytes": 37729,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "chrome-best-practices.md",
+      "url": "https://developer.chrome.com/docs/ai/webmcp/best-practices",
+      "resolved_url": "https://developer.chrome.com/docs/ai/webmcp/best-practices",
+      "sha256": "86b4a601c2e5944e90142cac0f6a96e52de4459d9ac880cbb1fe87138d958236",
+      "bytes": 10499,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "declarative-explainer.md",
+      "url": "https://raw.githubusercontent.com/webmachinelearning/webmcp/main/declarative-api-explainer.md",
+      "resolved_url": "https://raw.githubusercontent.com/webmachinelearning/webmcp/main/declarative-api-explainer.md",
+      "sha256": "d3fc29df6d15ff6f71bcbb4dceb7275b135fca58ef6da0f09c8b7e72d5471611",
+      "bytes": 10791,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "edge-preview-notes.md",
+      "url": "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/",
+      "sha256": "96cba5172f8b0ec5a2daffb9b947449d0ec2cfe0c1941c58f38a67a23576510f",
+      "bytes": 1033,
+      "representation": "Original retrieval notes; direct HTTP403; rendered page inspected with web tool"
+    }
+  ],
+  "retrieval_failures": [
+    {
+      "file": "edge-preview.md",
+      "url": "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/",
+      "error": "Direct HTTP403; captured original notes instead"
+    }
+  ]
+}

@@ -183,3 +183,45 @@ Applications of [[patterns/quality-bar/revision-bound-review]] and [[patterns/co
 ## What we'd steal
 
 Use the brief, choose one appropriate blueprint, then review a real task. Preserve technical qualifications when making prose shorter. Keep the templates subordinate to observed reader needs.
+
+## Wider-pass blueprints
+
+These additions apply the later sections of [[concepts/developer-documentation-design]]. They are proposed fields for a concrete task, not a mandate to fill every section on every page.
+
+### Decision record
+
+- Choice in the title and a stable identifier.
+- Context/constraints and options considered.
+- Decision, positive/negative consequences and accountable owner/reviewers.
+- Status under the team's explicit amendment policy.
+- Link to implementation work and current architecture; superseding decision when applicable.
+
+Choose local lifecycle rules: AWS and GDS do not prescribe identical amendment behavior. Agreement and implementation are separate. [[sources/docs-research--architecture-20261105#nygard-adr]] [[sources/docs-research--architecture-20261105#aws-adr]] [[sources/docs-research--architecture-20261105#gds-adr]]
+
+### Operational runbook
+
+- Trigger, symptoms, environment and when this procedure does not apply.
+- Required authority, access, current incident link and role responsibilities.
+- Checks: expected/actual evidence, interpretation and uncertainty.
+- Actions: consequence, predicted result, checkpoint and next branch.
+- Stop/escalate conditions, supported reversal or reconciliation, and handoff.
+- Verification, changes that remain active and follow-up owner.
+
+Keep live observations in the incident record and later causal analysis in the retrospective. Make instructions/contact paths available even if the affected system is down. Do not treat possessing a runbook as permission to execute it. [[sources/docs-research--operations-20261105#google-managing-incidents]] [[sources/docs-research--operations-20261105#google-troubleshooting]]
+
+### Migration guide
+
+- Affected consumers, starting state, target/version and dependencies.
+- Old/new behavior, changed defaults and newly required data.
+- Intermediate states, which path processes effects and duplicate/concurrency concerns.
+- Detection methods and preflight tests.
+- Checkpoints for advancing, monitoring and explicit reversal limits.
+- Conditions for retiring the old path and evidence of the intended business result.
+
+A rename/conversion does not establish equivalent behavior. Rollback may depend on stored representation, replay and accumulated state. Use the actual provider contract; Stripe's retry/status policy is not universal. [[sources/docs-research--operations-20261105#kubernetes-migration]] [[sources/docs-research--operations-20261105#stripe-upgrade]]
+
+### Example verification record
+
+Record example source/version, displayed fragment, complete runnable project/setup, execution context, test mode, dependencies and outcome check. Report compiled, executed, skipped and asserted examples separately. State which setup was supplied by the runner but not the reader-facing page. Preserve the distinction between mocked/fixture tests and live integrations. [[sources/docs-research--executable-reference-20261105#rust-tests]] [[sources/docs-research--executable-reference-20261105#python-context]] [[sources/docs-research--executable-reference-20261105#sphinx-fixtures]]
+
+A reproducible narrowly scoped example of why this matters is the [[projects/writing-amazing-developer-docs/experiments/README|local synthetic probe]]. It is not an audit of the cited vendors' examples.

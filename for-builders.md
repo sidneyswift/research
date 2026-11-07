@@ -27,6 +27,8 @@ This is a wiki about **how to architect agents, skills, plugins, and agent-produ
 
 | You're building… | Patterns / concepts to read first | Worked artifacts to study |
 | --- | --- | --- |
+| **Multi-provider agent app / reusable service facade / reconnect and review** | [[concepts/agent-control-plane]], [[concepts/durable-agent-execution]], [[concepts/review-cost-aware-workflows]] | [[artifacts/projects/t3code]]:79 practices; atomic intent, replay classification, auth ceilings and authored review versus full restore |
+| **Documentation retrieval / API guidance / WebMCP** | [[concepts/agent-documentation-interfaces]], [[concepts/developer-documentation-design]], [[concepts/business-platform-api-design]] | [[artifacts/projects/context7]], [[artifacts/projects/fern]], [[artifacts/projects/readme]], [[artifacts/projects/webmcp]], [[artifacts/projects/dokimi]] |
 | **Cross-session memory / dreaming / knowledge-wiki consolidation** | [[concepts/agent-memory-consolidation]], [[concepts/artifact-centered-agent-context]], [[concepts/trace-lake]] | [[sources/anthropic--components-of-agent-memory]]: raw-search/wiki/hybrid baselines, measured construction/maintenance cost and claim provenance; [[sources/anthropic--agent-memory-support]]: adoption, concurrency, retention and session-coverage boundaries. |
 | **Choose/customize an agent model or assess an RL result** | [[concepts/evidence-calibrated-research]], [[concepts/imitation-vs-correctness-eval]], [[concepts/agent-habitat-architecture]] | [[artifacts/projects/inkling-2-small]]: held-out adaptation curves, expert-label routing, complete eval budgets, sampler provenance and independent execution controls; source-reported, not replicated. |
 | **User/agent-created reminders, recurring jobs or deferred tasks** | [[concepts/durable-agent-execution]], [[concepts/completion-contract]], [[patterns/behavioral/context-is-not-authority]] | [[artifacts/projects/vercel-schedules]]: target-specific retries, current-permission checks, deployment selection, cancellation cutoff and timing/retention windows; documentation evidence only. |
@@ -84,3 +86,7 @@ flag for what the wiki didn't cover, and any gaps to file back.
 ## Developer documentation
 
 For developer portals, API guides, examples, troubleshooting and agent-readable docs, start at [[projects/writing-amazing-developer-docs/README]], then read [[concepts/developer-documentation-design]] and [[projects/writing-amazing-developer-docs/page-blueprints]].
+
+For internal architecture, runbooks, migrations and documentation delivery/evaluation, follow [[concepts/developer-documentation-design]] into [[projects/writing-amazing-developer-docs/platform-documentation-system]]. [[_schemas/documentation-case-study]] is the reusable study matrix.
+
+For a concrete documentation platform with indexes, Markdown conversion, skills, MCP and agent-maintenance workflows, study [[artifacts/projects/mintlify]]; retain its research-method and access-boundary caveats.

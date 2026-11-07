@@ -117,3 +117,7 @@ Permission policies govern server-executed agent/MCP tools, while application-ex
 - When does a consolidated action tool improve agent selection versus separate named tools on the target business task corpus?
 - What is the precise interaction between runtime permission policies, provider credentials, and tenant-level business authorization in a deployed integration?
 - Source hashes and all registered anchors were validated locally; whole-wiki registration and index propagation are handled by the coordinating ingest. No confirmed new pattern was promoted.
+
+## Tool definitions as runtime documentation — 2026-11-05
+
+[[concepts/agent-documentation-interfaces]] adds Anthropic's tool-design and advanced-tool-use articles: names, input descriptions, actionable errors, bounded responses, deferred discovery and example calls. These are dated design reports and internal test claims, not fresh runtime compatibility tests or a universal optimal tool granularity. [[sources/frontier-docs--tool-design-evaluation-20261105#anthropic-writing-tools]] [[sources/frontier-docs--tool-design-evaluation-20261105#anthropic-advanced-tools]]

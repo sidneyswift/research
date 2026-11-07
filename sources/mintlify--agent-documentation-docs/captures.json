@@ -1,0 +1,165 @@
+{
+  "retrieved": "2026-11-05",
+  "captures": [
+    {
+      "file": "overview.md",
+      "url": "https://www.mintlify.com/docs/ai-native.md",
+      "resolved_url": "https://www.mintlify.com/docs/ai-native.md",
+      "sha256": "ac400c3298dbd45c134acc5148e32ab23bb553ea37f899c1e1ef814d866b9316",
+      "bytes": 7248,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "markdown.md",
+      "url": "https://www.mintlify.com/docs/ai/markdown-export.md",
+      "resolved_url": "https://www.mintlify.com/docs/ai/markdown-export.md",
+      "sha256": "e85e11a4d9637caed3d62691fd051266e351aba50f7af2834c691b28641f0573",
+      "bytes": 14892,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "llms.md",
+      "url": "https://www.mintlify.com/docs/ai/llmstxt.md",
+      "resolved_url": "https://www.mintlify.com/docs/ai/llmstxt.md",
+      "sha256": "670fbe12cc1f37d94b435e4c860e407bd8dc1d37d08a78f9a6a7783e548ccc7c",
+      "bytes": 12554,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "skill.md",
+      "url": "https://www.mintlify.com/docs/ai/skillmd.md",
+      "resolved_url": "https://www.mintlify.com/docs/ai/skillmd.md",
+      "sha256": "ef6613929253008e790e12b6da0eff8d3860a6024022727e8d72be863eaa6ce0",
+      "bytes": 16007,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "search-mcp.md",
+      "url": "https://www.mintlify.com/docs/ai/model-context-protocol.md",
+      "resolved_url": "https://www.mintlify.com/docs/ai/model-context-protocol.md",
+      "sha256": "ade16bff15aa55b84c12d39105e6a26ddcb79b44d1858b5601f4c13b32969e77",
+      "bytes": 34797,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "admin-mcp.md",
+      "url": "https://www.mintlify.com/docs/ai/mintlify-mcp.md",
+      "resolved_url": "https://www.mintlify.com/docs/ai/mintlify-mcp.md",
+      "sha256": "deac3cfdba08e08763c90078d40ea3b833c2ded1c64cec30897930e00e807b47",
+      "bytes": 49158,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "visibility.md",
+      "url": "https://www.mintlify.com/docs/components/visibility.md",
+      "resolved_url": "https://www.mintlify.com/docs/components/visibility.md",
+      "sha256": "0acf686ebd9459d51c1d3352494e00a60d1ebdd4c2ef9016a0ad9ae0c02df7ee",
+      "bytes": 9592,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "agent.md",
+      "url": "https://www.mintlify.com/docs/agent/index.md",
+      "resolved_url": "https://www.mintlify.com/docs/agent/index.md",
+      "sha256": "8123391a29c1ef2f3cca702ff2ff2b40162118faf56caa814f370aca07a41d31",
+      "bytes": 8736,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "autopilot.md",
+      "url": "https://www.mintlify.com/docs/autopilot.md",
+      "resolved_url": "https://www.mintlify.com/docs/autopilot.md",
+      "sha256": "86869dbd54affc92c3a75d2f9fe80f24fb7166df135a765b89214bc3efe8761c",
+      "bytes": 17612,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "agent-customize.md",
+      "url": "https://www.mintlify.com/docs/agent/customize.md",
+      "resolved_url": "https://www.mintlify.com/docs/agent/customize.md",
+      "sha256": "2a2e9bcb5336c6fe61508fa1c69272ac574a9001d194dd899763637e10db6d57",
+      "bytes": 6315,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "assistant-customize.md",
+      "url": "https://www.mintlify.com/docs/assistant/customize.md",
+      "resolved_url": "https://www.mintlify.com/docs/assistant/customize.md",
+      "sha256": "c8007e4cfcb58a89483f51cb6e5068fd4dbfb95b245726ca8e6999077eabab3b",
+      "bytes": 5071,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "assistant-skills.md",
+      "url": "https://www.mintlify.com/docs/assistant/skills.md",
+      "resolved_url": "https://www.mintlify.com/docs/assistant/skills.md",
+      "sha256": "b8a51043a9919ab0948cdfeb59d958a7d04e56cfbe87ae35713b4b3de58f2c86",
+      "bytes": 6416,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "feedback.md",
+      "url": "https://www.mintlify.com/docs/optimize/feedback.md",
+      "resolved_url": "https://www.mintlify.com/docs/optimize/feedback.md",
+      "sha256": "b68041047d9a072a7e64b0cf54613f6e01ce7559c7b922e89784e8690a699240",
+      "bytes": 8641,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "traffic.md",
+      "url": "https://www.mintlify.com/docs/analytics/traffic.md",
+      "resolved_url": "https://www.mintlify.com/docs/analytics/traffic.md",
+      "sha256": "9f3c78c3ebba6904b307df2305968ee63ef8ed4d6b6e65ea75b2f95c9f4dd6b1",
+      "bytes": 5409,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "quality-guide.md",
+      "url": "https://www.mintlify.com/docs/guides/improving-docs.md",
+      "resolved_url": "https://www.mintlify.com/docs/guides/improving-docs.md",
+      "sha256": "77be3c595c8b36f3069173b6ece1c1318ebc1e14c09b779ba516b49e415cf0dc",
+      "bytes": 11086,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "savings.md",
+      "url": "https://www.mintlify.com/docs/analytics/savings.md",
+      "resolved_url": "https://www.mintlify.com/docs/analytics/savings.md",
+      "sha256": "3315fea951d98678a5a65d0a573fd5c28b4d5001f133e352ecdcd4169e2becbd",
+      "bytes": 5394,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "api-search.md",
+      "url": "https://www.mintlify.com/docs/api/assistant/search.md",
+      "resolved_url": "https://www.mintlify.com/docs/api/assistant/search.md",
+      "sha256": "ac160163a841ec0af73cbefabf7d208a3e804fb970572b6b3f98c32af9762b0b",
+      "bytes": 8326,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "api-page.md",
+      "url": "https://www.mintlify.com/docs/api/assistant/get-page-content.md",
+      "resolved_url": "https://www.mintlify.com/docs/api/assistant/get-page-content.md",
+      "sha256": "7722116fe49988f3f8268188afd0bbc81cf257e735605edd8b63e7890b0f26a5",
+      "bytes": 7425,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "knowledge-graph.md",
+      "url": "https://www.mintlify.com/docs/guides/codebase-knowledge-graph.md",
+      "resolved_url": "https://www.mintlify.com/docs/guides/codebase-knowledge-graph.md",
+      "sha256": "0fbd94d2103ed8fdcc4d9c2c044915dafa7277df420d8620e5e9795770ee9434",
+      "bytes": 17163,
+      "representation": "server-provided textual representation"
+    },
+    {
+      "file": "index.md",
+      "url": "https://www.mintlify.com/docs/llms.txt",
+      "resolved_url": "https://www.mintlify.com/docs/llms.txt",
+      "sha256": "0b1265bde58d7415dcc3a8cdf0923bcc63de923f3a98bc62bf4d0551b4ee7dbe",
+      "bytes": 25523,
+      "representation": "server-provided textual representation"
+    }
+  ]
+}

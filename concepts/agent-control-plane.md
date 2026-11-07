@@ -141,6 +141,10 @@ Portable adaptations, not extra claims about the proposed system:
 
 [[artifacts/projects/superplane]] adds a workflow-centered example: a Work Order persists across automation runs, while per-key queues, PR mutation ownership and runner fleets handle different coordination scopes. Human requirements and model confidence checks are different mechanisms; neither a canvas nor a score alone grants execution authority. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#queue]] [[sources/superplanehq--superplane#pr-coordination]] [[sources/superplanehq--superplane#approval]]
 
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] adds a proposed independent enforcement layer around the coordination plane: identity, trigger, run ceiling, brokerage and containment are separate responsibilities. A persistent coordinator is not itself that security boundary. [[sources/replit--agent-habitat-architecture#components]] [[sources/replit--agent-habitat-architecture#identity]]
@@ -148,3 +152,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] gives future intent its own mutable resource and separates code-owned static schedules from user-owned runtime schedules. Dispatch follows the current environment deployment; already delivered work survives deleting its schedule. Coordination state is not execution retirement. [[sources/vercel--schedules-docs#configuration]] [[sources/vercel--schedules-docs#deployment]] [[sources/vercel--schedules-docs#lifecycle]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Shared services and explicit command/effect ownership; normalized domain state is independent of client transport and provider callbacks. [[sources/pingdotgg--t3code#service-reach]] [[sources/pingdotgg--t3code#rt-atomic-intent]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

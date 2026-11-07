@@ -123,6 +123,10 @@ The current source update in [[artifacts/projects/codex-goals]] narrows the earl
 
 [[artifacts/projects/superplane]] separates task intent, workflow quiescence, runner exit/result, retained-log acknowledgement, model judgment and revision-bound merge admission. A run with no queued work may be finished without proving the requested behavior; a schema-valid score is still a judgment. [[sources/superplanehq--superplane#finalization]] [[sources/superplanehq--superplane#runner-protocol]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#merge]]
 
+## Wider documentation application — 2026-11-05
+
+[[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] separates completion of a declared review process from exhaustive absence of vulnerabilities. A quick/scoped pass can finish its declared procedure while retaining explicit gaps; validation-budget exhaustion instead leaves unresolved candidates and an incomplete run. `confirmed`, reviewed-but-blocked `needs_validation`, `rejected`, and never-validated candidates are not interchangeable terminal outcomes. A clean report may contain zero confirmed records. [[sources/cloudflare--security-audit-skill#profiles-budget]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#reporting]]
@@ -132,3 +136,7 @@ No shipped validator reads run metadata, both ledgers and report prose together,
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] exposes several non-terminal success labels: invoke accepted, one-time resource still active, recorded consumer success and eve occurrence.dispatched. Each observes a different stage; none alone certifies the user’s intended result. [[sources/vercel--schedules-docs#lifecycle]] [[sources/vercel--schedules-docs#observability]] [[sources/vercel--schedules-docs#eve-occurrence]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Accepted receipt, ended provider turn, checkpoint finalization and display refresh differ. A failed Stop can remain unresponsive rather than claim successful cancellation. [[sources/pingdotgg--t3code#rt-finalization]] [[sources/pingdotgg--t3code#rt-bounded-stop]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

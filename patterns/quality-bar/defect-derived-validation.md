@@ -97,3 +97,7 @@ Pilot application: [[projects/conversation-learning/pilots/commercial-redline-00
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] reports adding synchronous monitoring and hardening environments after asynchronous review found a network-block workaround. Related incident-derived control, not evidence of the full maintainer-fix mining/backvalidation mechanism; pattern status remains unchanged. [[sources/thinking-machines--inkling-2-small#monitors-incident]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#eng-model-facing-evals]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

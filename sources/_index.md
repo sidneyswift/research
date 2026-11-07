@@ -188,6 +188,20 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/nam--documentation-use]] — collection scope and registered anchors.
 - [[sources/writethedocs--documentation-practice]] — collection scope and registered anchors.
 
+## Developer documentation research — wider pass
+
+- [[sources/docs-research--architecture-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--operations-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--executable-reference-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--discovery-governance-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+- [[sources/docs-research--empirical-20261105]] — second-pass collection; exact reviewed scope and evidence limits on the citation page.
+
+## Mintlify agent-documentation evidence
+
+- [[sources/mintlify--agent-documentation-docs]] — scope, evidence and registered source anchors.
+- [[sources/mintlify--agent-docs-research]] — scope, evidence and registered source anchors.
+- [[sources/mintlify--docs-url-discovery-bench]] — scope, evidence and registered source anchors.
+
 ## Security audit skill — 2026-11-06
 
 - [[sources/cloudflare--security-audit-skill]] — pinned local source at `c1c8a8c`, all 22 file hashes, 49 line ranges and executed validator-test receipt; findings in [[artifacts/skills/security-audit]].
@@ -203,3 +217,7 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 
 - [[sources/anthropic--components-of-agent-memory]] — full article/HTML and all fifteen figures; 20 hashed files.
 - [[sources/anthropic--agent-memory-support]] — eleven supporting evidence files; partial CL-Bench capture explicitly marked.
+
+## T3 Code — 2026-11-07
+
+- [[sources/pingdotgg--t3code]] — full pinned shallow Git clone;66 registered anchors,173 source ranges and77 cited-file hashes. Ignored clone restored by manifest; case study in [[artifacts/projects/t3code]].

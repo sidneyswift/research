@@ -365,3 +365,7 @@ Source and wiki checks are recorded in [[log]] under the October 23, 2026 HumanL
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] adds a distinct review/coordination example: PR revision tracking and expected-head merge checks, plus queued mutation ownership and repair budgets. These narrower mechanisms do not establish HumanLayer's full content-delta and structured-feedback pattern. [[sources/superplanehq--superplane#pr-revision]] [[sources/superplanehq--superplane#merge]] [[sources/superplanehq--superplane#repair-budget]]
+
+## T3 Code comparison — 2026-11-07
+
+[[artifacts/projects/t3code]]: A second task/review control surface separates authored diffs, recovery state and shared workspace ownership. [[sources/pingdotgg--t3code#review-authored-diff]] The projects remain independently pinned and were not run together.

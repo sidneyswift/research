@@ -132,3 +132,7 @@ Read together: Anthropic optimizes for **developer control of the connector**; O
 ## MCP research connection — 2026-11-04
 
 [[concepts/skills-over-mcp]] separates standardized skill content from its MCP transport. [[artifacts/projects/mcp-apps]] and [[artifacts/projects/openai-mcp-extensions]] separate shared UI wire from vendor host behavior; neither establishes a unified installable plugin format. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#skills]], [[sources/openai--mcp-extensions#platforms]]
+
+## Mintlify documentation application — 2026-11-05
+
+[[artifacts/projects/mintlify]] examines documented index, skill, retrieval and editing surfaces with distinct authority and lifecycle boundaries. Its cited external discovery/protocol schema versions are not independently conformance-verified here. Source inspection is limited to the public URL benchmark; no hosted runtime guarantee or confirmed platform-implementation example is added.
