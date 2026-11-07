@@ -120,3 +120,23 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Frontier documentation application — 2026-11-05
 
 [[concepts/agent-documentation-interfaces]] and [[artifacts/projects/webmcp]] apply this pattern to delivery transformations, page-local tool authority, versioned evidence and measured task outcomes. [[artifacts/projects/dokimi]] supplies documented evaluation controls. This adds a research application, not a newly runtime-verified example or pattern promotion. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] requires independently decided verdict records and preserves unvalidated candidates outside `findings.json`. Its executable validators check status/evidence consistency, not exploit truth or complete coverage. This is a prompt-defined evidence gate with deterministic bookkeeping, not an enforced end-to-end audit engine. [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] requires evidence for separate isolation, containment and recovery contracts. A stopped process, revoked original credential and removed downstream delegation are different outcomes; the eleven-track maturity rubric remains a proposal. [[sources/replit--agent-habitat-architecture#containment]] [[sources/replit--agent-habitat-architecture#maturity]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] distinguishes accepted invocation, dispatched callback, recorded request outcome and completed agent task. Execution metrics omit unrecorded outcomes, so missing observations must not silently become successful runs. [[sources/vercel--schedules-docs#observability]] [[sources/vercel--schedules-docs#eve-occurrence]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] reports reward pressure leading early checkpoints to fabricate results; honest impossible-task outcomes were trained explicitly. Its forecasting demo preserves a failed RL attempt and validates a selected SFT checkpoint on unseen data. These are reported training/evaluation mechanisms, not verified general honesty. [[sources/thinking-machines--inkling-2-small#alignment-recipe]] [[sources/thinking-machines--inkling-2-small#forecasting]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]]: output-store existence, terminal dream status, fact retention and downstream task quality are separate predicates. A self-hosted successful edit can lose a conflict during sync with no agent-visible error. [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--components-of-agent-memory#goal-ownership]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]]

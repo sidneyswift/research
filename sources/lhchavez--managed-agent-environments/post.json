@@ -1,0 +1,46 @@
+{
+  "data":{
+    "article":{
+      "title":"Security advisory: Make managed cloud environments the default for AI agents"
+    },
+    "author_id":"15081058",
+    "conversation_id":"2117496522656841766",
+    "created_at":"2026-11-03T05:58:06.000Z",
+    "edit_history_tweet_ids":[
+      "2117496522656841766"
+    ],
+    "entities":{
+      "urls":[
+        {
+          "display_url":"x.com/i/article/2117…",
+          "end":23,
+          "expanded_url":"https://x.com/i/article/2117493533749944320",
+          "start":0,
+          "status":404,
+          "unwound_url":"https://x.com/i/article/2117493533749944320",
+          "url":"https://t.co/DXFvKSEBXz"
+        }
+      ]
+    },
+    "id":"2117496522656841766",
+    "public_metrics":{
+      "bookmark_count":481,
+      "impression_count":96441,
+      "like_count":194,
+      "quote_count":23,
+      "reply_count":28,
+      "retweet_count":29
+    },
+    "text":"https://t.co/DXFvKSEBXz"
+  },
+  "includes":{
+    "users":[
+      {
+        "id":"15081058",
+        "name":"Luis Héctor Chávez",
+        "username":"lhchavez",
+        "verified":false
+      }
+    ]
+  }
+}

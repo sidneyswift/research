@@ -206,3 +206,11 @@ Portable ledger; ★ marks priorities, not an adoption mandate. Evidence classes
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] studies the surrounding workflow layer rather than this harness: durable work identity, runner completion, external checks, mutation coordination and exact-head merging. The two source pins were not runtime-tested together in this study. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#runner-protocol]] [[sources/superplanehq--superplane#merge]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] is a prompt-defined workload that needs a real host for target-code isolation and scratch-to-evidence promotion. Its role adapters do not prove a tested Codex integration, and its JSON validators do not supply those runtime controls. [[sources/cloudflare--security-audit-skill#modes]] [[sources/cloudflare--security-audit-skill#execution-boundary]] [[sources/cloudflare--security-audit-skill#promotion]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] is a complementary proposed evaluation frame for permission, network, credential and recovery boundaries. The reference architecture is not evidence that Codex implements all eleven maturity tracks, and the article’s managed-cloud recommendation is not a measured local/cloud comparison. [[sources/replit--agent-habitat-architecture#maturity]] [[sources/lhchavez--managed-agent-environments#adoption-limits]]

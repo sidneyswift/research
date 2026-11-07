@@ -45,3 +45,7 @@ Resource-oriented interfaces with standard methods, purposeful custom actions, a
 ## WebMCP research connection — 2026-11-05
 
 [[artifacts/projects/webmcp]] studies the community design and browser publications with separate draft/implementation/support boundaries. Institutional participation does not establish a W3C Standard or universal browser availability. [[sources/frontier-docs--webmcp-20261105#draft-status]] [[sources/frontier-docs--webmcp-20261105#browser-availability]] [[sources/frontier-docs--webmcp-20261105#edge-preview]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] records a terminology boundary from the linked Google Sleep blog: it updates memory weights, unlike external-context consolidation. This is a scoped blog mechanism comparison, not a new runnable artifact or replicated learning benchmark. [[sources/anthropic--agent-memory-support#sleep-contrast]]

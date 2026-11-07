@@ -146,3 +146,19 @@ Schmid illustrates the model generating a script while code handles API composit
 ## SuperPlane — 2026-11-04
 
 Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts for implementation and review, deterministic graph steps for structured output/PR attachment, and server-owned confidence bands. The boundary is explicit, but a syntactically valid output does not prove a semantically correct change. [[sources/superplanehq--superplane#implementation-template]] [[sources/superplanehq--superplane#confidence]] [[sources/superplanehq--superplane#scheduled-intake]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] leaves source interpretation and falsification to investigators while code checks canonical identities, owners, state invariants, verdict-specific fields and bounded inputs. The split has an explicit limit: readable paths and nonempty observation text are not source existence or empirical proof. Both provided validator suites passed locally (65 tests); no full audit was exercised. [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]] [[sources/cloudflare--security-audit-skill#test-execution]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] proposes adaptive gates that can deny/escalate but never grant beyond a static ceiling, and moves exactly expressible history rules into policy. This documents a design application without promoting the proposal into tested implementation evidence. [[sources/replit--agent-habitat-architecture#filters]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] describes deterministic task-policy/circumvention checks before tool execution with uncertain cases escalated to an LLM, plus asynchronous review after execution. Public cookbook provenance checks supply a narrower inspected mechanism; the private monitor implementation was not audited. [[sources/thinking-machines--inkling-2-small#monitors-incident]] [[sources/thinking-machines--inkling-2-support#async-source]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] separates model-judged salience/correction from client-enforced path containment and optimistic write preconditions. Prompted merge discipline does not itself supply atomic storage semantics. [[sources/anthropic--components-of-agent-memory#learning-loop]] [[sources/anthropic--agent-memory-support#client-memory]] [[sources/anthropic--agent-memory-support#store-versions]]

@@ -771,3 +771,53 @@ Expanded beyond Mintlify into Context7, Fern, ReadMe, WebMCP, Intel Dokimi, Anth
 ## [2026-11-05] reflect | documentation interface roles and controlled comparisons
 
 Applied [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/evidence-gated-completion]] to [[_schemas/documentation-case-study]]: classify actual effect-bearing roles and record treatment controls, selection/exposure, rubric identities and unmeasured checks. [[meta/self-improvements]] owns grounding. Reused receipt/link tooling; a new validator would not resolve the remaining semantic/runtime questions.
+
+## [2026-11-06] ingest | Cloudflare security-audit skill
+
+- Added [[artifacts/skills/security-audit]] with **48 portable principles**, distinct unvalidated/unresolved/confirmed/rejected states, evidence ownership, coverage critics, verification-budget reserves, material-change reverification and domain-boundary guidance. Extended existing review/evidence/context/routing concepts and patterns; no duplicate concept or pattern promotion.
+- Preserved all **22 tracked files** locally at `c1c8a8c1471069fb0e188eeaff69b8e8db6564a8`, with shallow Git metadata; committed [[sources/cloudflare--security-audit-skill]] plus 37 anchors, 49 pinned ranges, all-file hashes, restore registration and validator test output. Checkout remains ignored; restoration depends on upstream availability.
+- Executed both bundled Node validator suites: **65 passed / 0 failed / 0 skipped**. Checks support fixture behavior and record consistency, not vulnerability recall, physical evidence existence, host isolation or complete audit execution. No skill installation or target audit. Historical fleet-harness claims remain separate.
+- REFLECT applied: added claim-lifecycle/enforcement boundaries to `_schemas/skill.md` and the security-review builder route; [[meta/self-improvements]] records the adoption trigger. Citation/hash/link checks passed with no new wiki-doctor findings versus the pulled baseline (score 50 unchanged; pre-existing issues retained).
+- Quality ratchet: at least **140 new page→target links** before this log/index follow-through; **orphans +0**, **new patterns +0**, existing comparisons extended. Terminal state: success for research ingestion and source preservation, not completion of a security audit.
+
+## [2026-11-06] ingest | managed agent environments and Agent Habitat
+
+- Read Chávez’s complete 57-block X article and all three images; captured twelve supporting references plus the separate living Replit white paper. Two linked captures are partial and labeled; white-paper diagrams and downstream reference tree not exhaustively inspected.
+- Added [[concepts/agent-habitat-architecture]] with 44 portable principles, two citation pages and two creators; propagated authority, recovery, evidence and containment comparisons without claiming deployed conformance or comparative breach rates. Incident allegations, research demonstrations, vendor reports and the non-AI signing analogy stay distinct.
+- Validation: all 57 article blocks and two captions retained; 20 capture hashes/byte counts, 69 new source-anchor links and 39 new relative links pass. Wiki doctor stays at its baseline score 50 with no new findings. No controls installed, exploits run or user-system security settings changed.
+- ratchet: page-target links +124 · new orphans +0 · confirmed patterns +0 (proposal not promoted).
+
+## [2026-11-06] reflect | security-state restore and downstream revocation
+
+- Applied the source-grounded project-schema check and builder routing; see [[meta/self-improvements]]. Proposal-derived assessment criteria remain distinct from implementation evidence.
+
+## [2026-11-06] ingest | Vercel Schedules
+
+- Added [[artifacts/projects/vercel-schedules]] with 44 principles and two source citation pages; full requested announcement/two examples plus seventeen primary documentation/resources preserved. Linked integrations/navigation not all read; full-corpus attempt timed out; selected Queues contract sections explicitly recorded.
+- Captured target-specific retries, current-deployment selection, duplicate/overlapping/late occurrences, cancellation cutoff, OIDC/tenant scope, API unknown-write outcomes and experimental eve identity/approval/session contracts. Recorded skill/docs/changelog discrepancies instead of resolving them by assumption.
+- Validation: 18 immutable capture hashes/byte counts, 66 source-anchor links and 22 relative links pass; wiki doctor remains baseline50 with no new findings. All captured Markdown code fences are paired. No installed skill, scheduled job, deployment or migration changed; documentation study, not runtime benchmark.
+- ratchet: page-target links +110 · new orphans +0 · confirmed patterns +0.
+
+## [2026-11-06] reflect | discover time-shifted execution contracts
+
+- Added source-grounded builder route; existing project/API schemas already cover lifecycle and revision scope, so no duplicate checklist. See [[meta/self-improvements]].
+
+## [2026-11-06] ingest | Inkling 2 Small
+
+- Added [[artifacts/projects/inkling-2-small]], [[creators/thinking-machines]] and two source maps with 44 principles. Full announcement/HTML, 12 tables, replay JSON, seven chart fragments and two images preserved; model card, release policy, financial-task study, Tinker contracts/pricing and selected pinned cookbook code/license included (25 evidence files).
+- Distinguished hosted access from planned Apache weights, context from cumulative trajectory/service limits, normalized score from raw error, validation from unseen results, skill selection from execution, author-reported monitoring from enforced controls. PMPP body unavailable; videos not reviewed; partial visual rendering noted. No model invoked or training expense incurred.
+- Validation: 25 capture hashes/byte counts, 12-table structure, exact embedded replay JSON, complete extracted article, five pinned source ranges, 29 registered anchors and 108 new page-target links (62 source-anchor links) checked; no new wiki-doctor findings. No orphan introduced or pattern promoted. Source tables/JSON support numeric claims; no model performance test claimed.
+
+## [2026-11-06] reflect | model selection is an evaluation-contract decision
+
+- Added a grounded builder route, preserving complete comparison conditions and availability state. Existing templates suffice; no speculative new pattern or duplicated schema checklist. See [[meta/self-improvements]].
+
+## [2026-11-07] ingest | Anthropic components of agent memory
+
+- Added [[concepts/agent-memory-consolidation]] with 40 reusable principles and two source maps. Full article/HTML, cover and all fifteen figures plus supporting docs, cookbook and pinned quickstart README/license preserved: 31 hashed evidence files.
+- Kept search-only baseline, task scope, trial/error-bar definitions, budget-versus-spend distinction and bundled intervention limits explicit. Documented clone-and-adopt versus in-place dreaming, sync conflict/read-only boundaries, retention and nightly input gaps. Partial CL-Bench release marked; no model/dream invoked or live memory changed.
+- Cross-linked seventeen existing entity/concept/artifact/pattern pages, both indexes and builder guidance. Validated 31 capture hashes, 78 source-anchor links and 17 relative links; wiki-doctor 50→50, no new findings. ratchet: new page-target links +129 · orphans +0 · patterns +0. Checks establish preserved bytes and structural integrity, not replicated model performance.
+
+## [2026-11-07] reflect | memory accumulation must earn its maintenance cost
+
+- Added the evidence-grounded memory-design route and an explicit adoption trigger; no duplicate generic pattern or live consolidation machinery. See [[meta/self-improvements]].

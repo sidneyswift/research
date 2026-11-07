@@ -40,7 +40,7 @@ See [[projects/_index]] for projects created from the research, starting with [[
 
 | Domain | Count | Inventory checked |
 | --- | --- | --- |
-| Skills cataloged | 5 paged | 2026-11-04 |
+| Skills cataloged | 6 paged | 2026-11-06 |
 | Plugins cataloged | 10 | 2026-11-04 |
 | Projects cataloged | 29 | 2026-11-05 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
@@ -72,3 +72,9 @@ Wider documentation research now includes [[projects/writing-amazing-developer-d
 Mintlify investigation: [[artifacts/projects/mintlify]] — current docs, first-party research and pinned URL-benchmark source/data; evidence limits explicit.
 
 Frontier agent-documentation follow-up: [[concepts/agent-documentation-interfaces]] — Context7, Fern, ReadMe, WebMCP, Dokimi and three independent API-agent papers; documentation/specification investigation, no runtime integration.
+
+Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverage/review principles, full source pinned locally, and 65 bundled validator tests passed. This is not a completed target audit or detection benchmark.
+
+Latest concept ingest: [[concepts/agent-memory-consolidation]] — 40 principles; full article, fifteen figures and supporting captures preserved. External-memory evidence and documented product guarantees kept separate; no memory system installed.
+
+Latest project ingest: [[artifacts/projects/inkling-2-small]] — 44 adaptation/evaluation/containment principles, 25 preserved evidence files. Hosted access and promised weights kept separate; no model training or benchmark replication.

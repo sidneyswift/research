@@ -201,3 +201,19 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/mintlify--agent-documentation-docs]] — scope, evidence and registered source anchors.
 - [[sources/mintlify--agent-docs-research]] — scope, evidence and registered source anchors.
 - [[sources/mintlify--docs-url-discovery-bench]] — scope, evidence and registered source anchors.
+
+## Security audit skill — 2026-11-06
+
+- [[sources/cloudflare--security-audit-skill]] — pinned local source at `c1c8a8c`, all 22 file hashes, 49 line ranges and executed validator-test receipt; findings in [[artifacts/skills/security-audit]].
+
+- [[sources/lhchavez--managed-agent-environments]] — complete X advisory and three images, twelve supporting captures with partial/evidence limits.
+- [[sources/replit--agent-habitat-architecture]] — separate dated white-paper capture; proposed controls and maturity criteria.
+
+- [[sources/vercel--introducing-schedules]] — full official announcement and both examples.
+- [[sources/vercel--schedules-docs]] — seventeen named captures; retry/cancellation/version/time/identity contracts and documented conflicts.
+
+- [[sources/thinking-machines--inkling-2-small]] — full article/HTML, 12 tables, embedded replay, seven chart fragments and two images.
+- [[sources/thinking-machines--inkling-2-support]] — model card, release policy, Bridgewater study, Tinker contracts/pricing and pinned cookbook file; incomplete PMPP capture marked.
+
+- [[sources/anthropic--components-of-agent-memory]] — full article/HTML and all fifteen figures; 20 hashed files.
+- [[sources/anthropic--agent-memory-support]] — eleven supporting evidence files; partial CL-Bench capture explicitly marked.

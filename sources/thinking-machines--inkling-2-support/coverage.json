@@ -1,0 +1,149 @@
+{
+  "scope": "Requested announcement plus model card, release policy, financial-task study, Tinker loss/provenance/pricing and selected pinned async RL source. No deployed model invocation or training.",
+  "links": [
+    {
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "status": "captured/read as scoped in receipt"
+    },
+    {
+      "url": "https://tinker.thinkingmachines.ai/playground?utm_source=blog&utm_campaign=inkling_2_model_release",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+      "status": "captured and read; original relative link resolved against publisher origin"
+    },
+    {
+      "url": "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/",
+      "status": "captured/read as scoped in receipt"
+    },
+    {
+      "url": "https://media.thinkingmachines.ai/inkling-2-small/city-simulator-final-45s.mp4",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://media.thinkingmachines.ai/inkling-2-small/linux-simulator-updated.mov",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://media.thinkingmachines.ai/inkling-2-small/paper-ink-cranes-r1793905809.mp4",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://media.thinkingmachines.ai/inkling-2-small/map-to-video-r1793904080.mp4",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://opencode.ai/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://blog.sinatras.dev/PMPP-Hard",
+      "status": "captured/read as scoped in receipt"
+    },
+    {
+      "url": "https://www.proximal.so/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2504.13181",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "http://designarena.ai",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://www.designarena.ai/leaderboard?section=website",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://thinkingmachines.ai/news/learning-to-replicate-expert-judgment-in-financial-tasks/",
+      "status": "captured/read as scoped in receipt"
+    },
+    {
+      "url": "https://github.com/thinking-machines-lab/tinker-cookbook",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://github.com/thinking-machines-lab/tinker-cookbook/blob/4a3a2829190b45999021e423bc90b7523108edf4/tinker_cookbook/rl/train.py#L421",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/losses/stable-reinforce/",
+      "status": "captured/read as scoped in receipt"
+    },
+    {
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+      "status": "captured/read as scoped in receipt"
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.18734",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://arena.ai/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://artificialanalysis.ai/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://datacurve.ai/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "http://scale.com",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://surgehq.ai/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://www.mercor.com/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://www.thoughtfullab.com/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://www.vals.ai/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/ThinkingMachines",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://x.com/thinkymachines",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://www.linkedin.com/company/thinkingmachinesai/",
+      "status": "linked only; not independently read"
+    },
+    {
+      "url": "https://www.youtube.com/@thinkymachines",
+      "status": "linked only; not independently read"
+    }
+  ],
+  "limitations": [
+    "PMPP-Hard fetch returned only a title; benchmark-specific methodology is attributed to the announcement.",
+    "Four demo videos not downloaded or played; captions/URLs retained, no independent artifact verification.",
+    "Full replay transcript and all 100 eval examples were not rerun; embedded replay data and terminal poster retained.",
+    "SVG fragments preserve chart structure; standalone Quick Look renderings lacked CSS and are not faithful screenshots. Numeric claims come from tables, text or embedded JSON.",
+    "Background papers, external leaderboard sites, navigation and mission links were not independently investigated.",
+    "No checkpoint weights downloaded; no claim of Apache-licensed weights being available at capture."
+  ]
+}

@@ -32,3 +32,7 @@ See the observed practices and limits in [[concepts/developer-documentation-desi
 ## Wider documentation study — 2026-11-05
 
 [[concepts/developer-documentation-design]] extends the previous study using [[sources/docs-research--discovery-governance-20261105#reuse]]. Captured guidance/contract only; no runtime or adoption result.
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] includes Invariant’s attributed GitHub MCP demonstration: legitimate tools can compose a cross-repository leak when public content is treated as instructions. This is not a claim of malicious GitHub server code. [[sources/lhchavez--managed-agent-environments#toxic-flow]]

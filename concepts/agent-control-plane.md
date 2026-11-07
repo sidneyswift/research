@@ -144,3 +144,11 @@ Portable adaptations, not extra claims about the proposed system:
 ## Wider documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] adds a proposed independent enforcement layer around the coordination plane: identity, trigger, run ceiling, brokerage and containment are separate responsibilities. A persistent coordinator is not itself that security boundary. [[sources/replit--agent-habitat-architecture#components]] [[sources/replit--agent-habitat-architecture#identity]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] gives future intent its own mutable resource and separates code-owned static schedules from user-owned runtime schedules. Dispatch follows the current environment deployment; already delivered work survives deleting its schedule. Coordination state is not execution retirement. [[sources/vercel--schedules-docs#configuration]] [[sources/vercel--schedules-docs#deployment]] [[sources/vercel--schedules-docs#lifecycle]]

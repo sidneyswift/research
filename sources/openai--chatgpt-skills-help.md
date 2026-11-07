@@ -1,48 +1,80 @@
----
-domain: sources
-type: docs-page
-url: https://help.openai.com/en/articles/20001066-skills-in-chatgpt
-retrieved: 2026-06-04
-snapshot-location: sources/openai--chatgpt-skills-help/ (⚠ partial — search-extracted, Cloudflare-gated upstream)
-upstream-commit: n/a (living page)
-last-reviewed: 2026-06-04
-capture-fidelity: secondary (search-engine extraction of the exact article URL; quoted strings verbatim across two independent passes; browser re-capture TODO)
----
+# AI & Agents Research
 
-# OpenAI Help Center — "Skills in ChatGPT" (article 20001066)
+A research wiki cataloging the most important and talked-about work across the AI and agent ecosystem — skills, plugins, MCP servers, frontier projects/systems, and the essays, papers, and threads explaining where the field is going — to understand what makes them great so we can build our own.
 
-> The doc that puts **agent skills inside ChatGPT itself** (beta: Business, Enterprise, Edu, Teachers, Healthcare) — same SKILL.md open standard ("download them from one product and install them in another"), invoked **automatically**, with a workspace skill library and **five admin permissions**, the standout being **"Enable skills installing": install skills *for other workspace members* so they're used automatically**. The first first-party mechanism we've seen for *pushing* skills to an organization rather than waiting for each user to pull.
+**Scope (broadened 2026-06-01):** frontier-facing and cross-platform. Anthropic *and* OpenAI, Cursor, Google, open-source projects, individual builders, and research labs are all in scope. We catalog **artifacts** (runnable things), **concepts** (ideas/techniques worth a page), and **patterns** (techniques recurring across ≥2 artifacts). *Originally (2026-05-21) scoped to the Anthropic ecosystem only; widened once the Garry Tan essay ingests showed the research naturally spans the whole frontier.*
 
-## Snapshot details
+**Output format:** Wiki-style knowledge base — typed entity pages with `domain:` + `type:` frontmatter, `## Attributes` + `## Relationships` sections, source citations via `[[sources/...#anchor]]`.
 
-- **Retrieved**: 2026-06-04 — **partial capture**. help.openai.com blocks automated fetch (Cloudflare/Intercom); content reconstructed from search-engine extraction of this exact article URL via two independent research passes that agreed on all quoted items. Quoted strings are verbatim; surrounding prose may paraphrase. ⚠ Re-capture from a browser is a TODO before leaning harder on this source.
-- **Where it lives in this wiki**: `sources/openai--chatgpt-skills-help/snapshot.md`
-- **Upstream URL**: https://help.openai.com/en/articles/20001066-skills-in-chatgpt
-- **Upstream identifier**: n/a — living help-center page.
+**Collection mode:** Curated. Sidney provides candidate artifacts; we deep-dive each one and extract patterns as we go.
 
-## Anchor map
+## Shared across projects
 
-- `#root` — the article as a whole
-- `#open-standard` — "OpenAI skills follow the Agent Skills open standard, so you can download them from one product and install them in another"
-- `#availability` — beta plans (Business, Enterprise, Edu, Teachers, Healthcare); also Codex + OpenAI API; off-by-default for Enterprise/Edu early access
-- `#auto-invocation` — "ChatGPT can automatically use one or more skills when they are helpful" (no manual activation)
-- `#five-permissions` — the Permissions & roles set: Enable skills / Enable skill uploading / Share skills / Publish skills to workspace / Enable skills installing
-- `#install-for-others` — "Enable skills installing": install skills "for other workspace members so they are used automatically" — the admin-push mechanism
-- `#admin-skills-page` — the separate admin Skills page for reviewing/managing every skill in the workspace
-- `#shared-with-you` — member install flow: Skills > Shared with you > ••• > Install
+Canonical local home: `Projects/Research`. This repository supports research across Sidney, Flex, Recoup, and other projects. Source code lives in ignored clones under `sources/`; the manifest records exactly how to restore it.
 
-## Why we cite this
+```bash
+git clone https://github.com/sidneyswift/research.git Research
+cd Research
+./setup.sh
+```
 
-- **The admin-push distribution mechanism** (`#install-for-others`) — centrally installing skills for an entire workspace, auto-applied. Grounds [[concepts/workspace-skill-distribution]]; the consumer-side counterpart to Codex's repo-scope skills.
-- **Cross-product portability as a product promise** (`#open-standard`) — OpenAI marketing the open standard to end users, not just developers; further evidence for [[concepts/convergent-agent-plugin-spec]]'s standardization turn.
-- **Governance shape** (`#five-permissions`, `#admin-skills-page`) — a worked example of role-based capability permissions + a separate inventory/review surface for org-distributed agent assets.
+Requires Git, Python 3, network access, and any credentials needed by private source repositories. For selective downloads and storage rules, see [remote-setup.md](remote-setup.md).
 
-## Popularity signals
+## Start here
 
-- **Signal type**: official vendor help-center doc — authoritative for the ChatGPT skills surface. As-of 2026-06-04. (Feature is beta; plan list per `#availability`.)
+- **For everyone — master catalog:** [index.md](index.md) — single front door listing every page.
+- **For agents (LLM sessions):** read [CLAUDE.md](CLAUDE.md) before any operation. It defines the four operations (Ingest / Query / Lint / Reflect) per [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+- **For agents mining the wiki from another project (to build something):** start at [for-builders.md](for-builders.md) — the consumer front door, with a build-intent→pages routing table, an extraction protocol, and a copy-paste prompt.
+- **For "what was done when":** [log.md](log.md) — append-only chronological record.
+- **For browsing patterns:** [patterns/](patterns/) — the research output. What separates great artifacts from the rest.
+- **For browsing artifacts:** [artifacts/skills/](artifacts/skills/), [artifacts/plugins/](artifacts/plugins/), [artifacts/mcp-servers/](artifacts/mcp-servers/), [artifacts/projects/](artifacts/projects/).
+- **For browsing concepts:** [concepts/](concepts/) — ideas and techniques (often from essays & papers) that aren't runnable artifacts.
+- **For evidence:** [sources/](sources/) — every claim in the wiki points here.
+- **For tooling:** [scripts/](scripts/) — `wiki-search.sh` (search), `wiki-doctor.py` (health check + score). Run `python3 scripts/wiki-doctor.py` anytime to see wiki health.
 
-## Related sources
+## Internal builds
 
-- [[sources/openai--codex-skills-doc]] — the developer-side skills surface (same standard, repo/user/admin scope ladder instead of workspace library).
-- [[sources/agentskills--specification]] — the open standard both surfaces implement.
-- [[sources/openai--plugins]] — the Codex marketplace; its "Shared with you" workspace-sharing category is the plugin-level sibling of this article's skill sharing.
+See [[projects/_index]] for projects created from the research, starting with [[projects/conversation-learning/README]]. These design projects are separate from the external artifact counts below.
+
+## Status
+
+| Domain | Count | Inventory checked |
+| --- | --- | --- |
+| Skills cataloged | 6 paged | 2026-11-06 |
+| Plugins cataloged | 10 | 2026-11-04 |
+| Projects cataloged | 31 | 2026-11-07 |
+| MCP servers cataloged | 0 paged | 2026-11-04 |
+| Concepts cataloged | 32 | 2026-11-07 |
+| Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
+| Creators cataloged | 70 | 2026-11-07 |
+| Source citation pages | 105: 23 article, 47 docs-page, 5 other, 6 paper, 23 repo, 1 tweet | 2026-11-07 |
+
+Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
+
+Latest MCP ingest: [[concepts/model-context-protocol]], [[concepts/mcp-extension-architecture]], [[artifacts/projects/mcp-apps]], [[artifacts/projects/openai-mcp-extensions]], [[concepts/mcp-enterprise-managed-authorization]] and [[concepts/skills-over-mcp]]. The synthesis [[analyses/mcp-and-extensions]] remains draft pending cross-family review. Counts describe existing wiki pages, including prior local drafts; inventory does not refresh older source claims or popularity signals.
+
+(Update this table after each ingestion.)
+
+## Working agreements
+
+1. **Every claim cites a source.** No exceptions, no "everyone knows."
+2. **Patterns require ≥2 artifact examples.** One example is a coincidence.
+3. **"What we'd steal" is an exhaustive ledger** on every artifact/concept page — capture *everything* portable (★-mark the best), never a curated top-3. A thin list narrows our attention over time.
+4. **Sources are cloned, not linked.** Repos are kept as live local clones (git-ignored, re-clonable via [sources/clone-all.sh](sources/clone-all.sh) from [sources/repos.manifest.tsv](sources/repos.manifest.tsv), pinned to the cited commit); captured articles/papers are normally committed snapshots. Full-paper redistribution exceptions retain local evidence plus tracked version pins, hashes and restoration notes (see [Skill++ evidence](sources/zhang--skill-plus-plus/README.md)). Either way we point at evidence, never a bare URL. **On a fresh checkout, run `sources/clone-all.sh` to rebuild the repo evidence cache.**
+5. **Every ingest gets a log entry.** Append to `log.md` — `## [YYYY-MM-DD] ingest | <subject>` plus 1–3 bullets. Future-you needs this.
+6. **Lint periodically.** Karpathy's whole point: the LLM is the maintainer. Run a Lint pass after every batch of ingests and on demand.
+7. **Reflect, don't just collect.** This wiki researches how to build great agents/skills — so it must improve *itself* with what it learns. After ingests, ask whether new patterns apply to our own machinery and log candidates in [meta/self-improvements.md](meta/self-improvements.md).
+
+Latest documentation research: [[projects/writing-amazing-developer-docs/README]] → [[concepts/developer-documentation-design]], with practical [[projects/writing-amazing-developer-docs/page-blueprints]].
+
+Wider documentation research now includes [[projects/writing-amazing-developer-docs/platform-documentation-system]] and an [[projects/writing-amazing-developer-docs/experiments/README|executed synthetic documentation-test probe]].
+
+Mintlify investigation: [[artifacts/projects/mintlify]] — current docs, first-party research and pinned URL-benchmark source/data; evidence limits explicit.
+
+Frontier agent-documentation follow-up: [[concepts/agent-documentation-interfaces]] — Context7, Fern, ReadMe, WebMCP, Dokimi and three independent API-agent papers; documentation/specification investigation, no runtime integration.
+
+Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverage/review principles, full source pinned locally, and 65 bundled validator tests passed. This is not a completed target audit or detection benchmark.
+
+Latest concept ingest: [[concepts/agent-memory-consolidation]] — 40 principles; full article, fifteen figures and supporting captures preserved. External-memory evidence and documented product guarantees kept separate; no memory system installed.
+
+Latest project ingest: [[artifacts/projects/inkling-2-small]] — 44 adaptation/evaluation/containment principles, 25 preserved evidence files. Hosted access and promised weights kept separate; no model training or benchmark replication.

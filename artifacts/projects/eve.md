@@ -166,3 +166,7 @@ Open comparison: qualify framework-owned execution against managed agent service
 ## Documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
+
+## Vercel Schedules — 2026-11-06
+
+**Later documentation supplement, not a rewrite of the original pin:** [[artifacts/projects/vercel-schedules]] includes the experimental defineDynamicSchedules guide captured 2026-11-06. It documents creator-scoped management, current-access revalidation, approval-bound preparation, callback/session dedupe and provider-specific local clock behavior. Payload replacement can change the creator; dispatch does not mean the agent finished. The older source snapshot above remains historical. [[sources/vercel--schedules-docs#eve-identity]] [[sources/vercel--schedules-docs#eve-tools]] [[sources/vercel--schedules-docs#eve-payload]] [[sources/vercel--schedules-docs#eve-occurrence]]

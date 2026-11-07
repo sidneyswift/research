@@ -231,3 +231,7 @@ The lifecycle/freshness concerns follow from asynchronous/CQRS contracts; reques
 [[concepts/agent-documentation-interfaces]] specializes the delivery/interaction boundary: source retrieval versus synthesized answers versus API execution; version fallback and retrieval-triggered indexing; browser-local tool lifecycle; novel/internal API task evaluation. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--webmcp-20261105#root]] [[sources/frontier-docs--empirical-20261105#root]]
 
 The owned findings preserve source-specific controls and uncertainty; no universal context budget or future training-data guarantee is inferred. See [[artifacts/projects/dokimi]] for the documented evaluator, and [[artifacts/projects/webmcp]] for the dated browser contract.
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] is a schedule-resource API case study: name/ID/occurrence identity, OIDC environment scope, partial read projections, cursor-complete pagination and retry-after-write ambiguity. HTTP and SDK shapes differ; invoke is not generally retry-idempotent. [[sources/vercel--schedules-docs#api]] [[sources/vercel--schedules-docs#sdk]] [[sources/vercel--schedules-docs#retry-boundary]]

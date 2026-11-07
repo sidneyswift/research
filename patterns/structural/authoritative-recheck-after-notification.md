@@ -81,3 +81,7 @@ Only one artifact has been verified; multiple modules inside HumanLayer do not c
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] supplies a transactional analogue: notification consumers reload records, then lock and process authoritative event/node state; polling recovers missed wakeups. It does not duplicate HumanLayer's session-actor/remote-read mechanism. Keep the proposed full-pattern count unchanged rather than equating all DB queues with that sequence. [[sources/superplanehq--superplane#event-routing]] [[sources/superplanehq--superplane#queue]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] provides a documented time-shifted example: schedule delivery wakes work, then the app resolves the creator’s current authority; stale creation-time roles/credentials are not replayed. [[sources/vercel--schedules-docs#eve-identity]]

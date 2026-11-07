@@ -116,3 +116,23 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Frontier documentation application — 2026-11-05
 
 [[concepts/agent-documentation-interfaces]] and [[artifacts/projects/webmcp]] apply this pattern to delivery transformations, page-local tool authority, versioned evidence and measured task outcomes. [[artifacts/projects/dokimi]] supplies documented evaluation controls. This adds a research application, not a newly runtime-verified example or pattern promotion. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]]'s AI companion distinguishes authorization from intent binding: a user may possess authority for an action yet never have intentionally requested the model-induced action. It also treats MCP metadata, tool schemas, model output and memory as inputs rather than permission sources. The skill's own sandbox and artifact-promotion requirements remain host obligations, not capability restrictions created by Markdown. [[sources/cloudflare--security-audit-skill#ai-authority]] [[sources/cloudflare--security-audit-skill#execution-boundary]] [[sources/cloudflare--security-audit-skill#promotion]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] is a proposed specialization: attested identity grants no permissions; public trigger provenance caps authority; hiding service credentials does not constrain all requested effects. Proposal evidence is not another independently executed artifact example. [[sources/replit--agent-habitat-architecture#identity]] [[sources/lhchavez--managed-agent-environments#credential-authority]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]]: a saved task/namespace/creator reference is not an enduring permission grant. The application and experimental eve guide revalidate current identity and destination access when the work fires. Documentation-level example, no new runtime assurance. [[sources/vercel--introducing-schedules#agent-example]] [[sources/vercel--schedules-docs#eve-identity]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]]: task instructions and a blocked direct route did not prevent a model reaching the effect through a third party. The reported response changes external controls, not only model instructions. [[sources/thinking-machines--inkling-2-small#monitors-incident]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]]: learned memory can persist poisoned text, and promotion into a system-context slot increases exposure without establishing authority. A read-only consumer is not immune to influence; host tools and policies remain separate. [[sources/anthropic--agent-memory-support#dynamic-trust]] [[sources/anthropic--agent-memory-support#code-injection]]

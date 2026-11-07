@@ -1,0 +1,184 @@
+{
+  "captures": [
+    {
+      "file": "snapshot.md",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "sha256": "a0baea7f615cb784ef747eaf587912e9d8af40128b2bf51d017d1abfb6b51c30",
+      "bytes": 22947,
+      "fetchedAt": "2026-11-07T02:10:58.725Z",
+      "kind": "readable capture",
+      "reviewed": "Full extracted body, all 15 figures inspected; figure 5/10/11 labels enlarged. No independent experiments."
+    },
+    {
+      "file": "page.html",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "sha256": "e66b59be6ecac790203fd58485f0b796f4afa49d1f9b172a4f76edaccea0f036",
+      "bytes": 242416,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original HTML",
+      "reviewed": "Metadata, source links, figure URLs/alt text extracted; scripts not run."
+    },
+    {
+      "file": "extracted-page.json",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "sha256": "ad7710ed25ce4a60beefb96f16d3deb9a1822288e50ab6c9e3ab85ccb1caca02",
+      "bytes": 15565,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "derived HTML extraction",
+      "reviewed": "Original image attributes/links/metadata for coverage, not an independent source."
+    },
+    {
+      "file": "figures.json",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "sha256": "7beb47812717681ab447e6e54c6bd413437c3775fe303fd5fa89c92d2b91371e",
+      "bytes": 7979,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "derived figure inventory",
+      "reviewed": "Figure filenames, URLs and original alt text."
+    },
+    {
+      "file": "images/cover.jpg",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/31b7b06af6c391aa4f93ad9747d00ae248ea3c63-2000x1125.jpg",
+      "sha256": "3ffe356c215444a39516726541e945ded09053af91b3d7cd596e2c087588d0b0",
+      "bytes": 171177,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Decorative cover preserved, not used as evidence."
+    },
+    {
+      "file": "images/figure-01.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a0bcfa203214d817d2b4261b7188aba8be6db5b2-3840x1754.png",
+      "sha256": "71a52614d7ec77aaed15978ff19fd9f67b64da45c389f841b9162604ff4e3175",
+      "bytes": 149735,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-02.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2ef2bf5c81ea6d578749782782eff10cf3136de4-3840x1754.png",
+      "sha256": "62452337c4fe4a1194908bbef04ca2a70a5c249f9c5a627bd64a960cbaf0af08",
+      "bytes": 141778,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-03.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/bb0d44c78cc431fb5e84fbf2cb17c4303bc6bd65-3840x2160.png",
+      "sha256": "8fa45d19f8f3f1c66f3f578999e14cc69be918f3723dd85ed647075c398fcc5e",
+      "bytes": 465155,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-04.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/5e15e10f665773050d90fafc38ab8dd76ae5368b-3840x2545.png",
+      "sha256": "2b46d5123163fc19856b477f071a47fffe877671349ddd54103bf91d8122c050",
+      "bytes": 226873,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-05.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/da03e864e4eba93a91314fa5f2a5d0e4c14b2a0f-3840x2310.png",
+      "sha256": "b1863eedbd5597967eadc42ccf425b299c36c3801ce9097ce1908be5c90e1633",
+      "bytes": 207947,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-06.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/55ce85bd12860090704a5543a3da7504334ad9a9-3840x1754.png",
+      "sha256": "8087f771064bcbfb6aa6f7786f17e0252d16bda3d8ee02e018f25dc7cf31482c",
+      "bytes": 159873,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-07.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d906d6ed9ac92db36631a624ad517183b07a545d-3840x2101.png",
+      "sha256": "17ace339e07b9b2a46b5e4ac47eadcf828e98ddc5b49c0eab68dcc5b601f0011",
+      "bytes": 685561,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-08.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2eb2bfe6d01e9a1fca74a41e952d948c09d42008-3840x2636.png",
+      "sha256": "1559f93f783382b885c6fc99c7929e1f1cc6699ed632b5b7fdbf77bc78f60234",
+      "bytes": 358540,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-09.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/30923242548d746ee77784c87826cadc46574c34-3840x1754.png",
+      "sha256": "1f195b10c18d03fabc5aa2681c3a09b6d47ccd8c892dfb2067821431bc362daf",
+      "bytes": 160072,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-10.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/336832b5015f1bfcfd7d786fae8120c533f26ecd-3136x1432.png",
+      "sha256": "abb569202529bac7c5ed7d32e60b371529757b6c5dfc0ef11a982dd690ebc5da",
+      "bytes": 1139658,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-11.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/3677eab5e938466cc41fbac4d47f3118135d0563-3840x3694.png",
+      "sha256": "c8f3a5253171b6d17547907cbe4d589b93580ee71d1606f2bdb27774b64cea50",
+      "bytes": 1206380,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-12.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/ffa35479b1dea63b7948f76995b488d08854e86d-3840x2150.png",
+      "sha256": "8accaa79cff73029704edd79c02db7f67ddaa296434da0e7d8e8313543f7c3bd",
+      "bytes": 396076,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-13.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/c88bcc04c5d0e77db5828c9dbe72faf1c4421f8f-3840x1754.png",
+      "sha256": "bcf2a3afd4f4179f84fe7a86f64e873955ef52e3dced17cfe73ddf3ed81922b7",
+      "bytes": 162063,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-14.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/592f604d38e90537553ab7127d1d3115924fda92-3840x1822.png",
+      "sha256": "0d93ccc7cb9d63247063791c1eae898928b67414fbde6a71028d5be145f93ca1",
+      "bytes": 224791,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    },
+    {
+      "file": "images/figure-15.png",
+      "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f1afeef9a2d986a6155c0789db46b8fa372a20eb-3840x1812.png",
+      "sha256": "ad40204190967fa12d51664e8a8a61b0b74ff9c8f9ec4e2bcf8dcd7e7cf2165f",
+      "bytes": 903268,
+      "fetchedAt": "2026-11-07T02:15:50.340572+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected in contact sheet; critical chart labels enlarged."
+    }
+  ]
+}

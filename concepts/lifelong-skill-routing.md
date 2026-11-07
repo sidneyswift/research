@@ -167,3 +167,19 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Open Inspect: A pinned skill can still lose effective availability
 
 [[artifacts/projects/background-agents]] exposes a pre-routing boundary: session-pinned managed skills can be dropped when names collide with repository/user/bundled discovery. Its installer reports those drops. Differential routing evaluations should hold the effective installed catalog explicit; better descriptions cannot repair an entry absent from the harness’s discovery tree. [[sources/open-inspect--background-agents#skills-pinning]] [[sources/open-inspect--background-agents#skills-install]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] provides a scope distinction worth testing in routing evaluations: its description includes broad security questions, but its body defaults to guidance and reserves full execution/file creation for explicit audit/report intent. Discovery of the skill is not authorization to run every phase. No routing-retention or task-success benchmark was executed for this source. [[sources/cloudflare--security-audit-skill#modes]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] includes a captured skill with import/path/command signals and prompt exclusions for meetings/calendar events. This is declared routing metadata beside Skill++’s measured routing experiments, not evidence those selectors improve accuracy. [[sources/vercel--schedules-docs#skill]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] explicitly acknowledges imperfect tool selection in codebases with many skills. This motivates testing routes separately from execution and complements Skill++’s controlled study; it does not show that access forgetting caused this model’s failures or that Skill++ fixes them. [[sources/thinking-machines--inkling-2-small#limitations]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] supplies a related discoverability failure: useful notes may exist but never be read. The injected layer is a bounded directory, while detailed files remain on demand. This is analogous to routing failure, not a Skill++ benchmark replication. [[sources/anthropic--components-of-agent-memory#steering]] [[sources/anthropic--components-of-agent-memory#injection]]

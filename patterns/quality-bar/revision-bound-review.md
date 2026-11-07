@@ -106,3 +106,19 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## Frontier documentation application — 2026-11-05
 
 [[concepts/agent-documentation-interfaces]] and [[artifacts/projects/webmcp]] apply this pattern to delivery transformations, page-local tool authority, versioned evidence and measured task outcomes. [[artifacts/projects/dokimi]] supplies documented evaluation controls. This adds a research application, not a newly runtime-verified example or pattern promotion. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] prescribes a narrower claim-revision gate: promoting or materially changing a final finding requires another fresh verifier; budget exhaustion removes the disputed record from findings and leaves incomplete ledger work. Cosmetic edits are distinguished from changed root cause, trace, input/result, impact or severity. This is not a second implementation of the full content-version/human-publication pattern, so proposed status and example count remain unchanged. [[sources/cloudflare--security-audit-skill#material-reverification]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] proposes binding approvals to actual actions and audit records to policy/build versions. Resuming a run must preserve consumed approvals rather than silently renew them. No deployment verification is implied. [[sources/replit--agent-habitat-architecture#approval]] [[sources/replit--agent-habitat-architecture#durability]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] captures eve’s prepared-payload check before approval and again before write, rejecting a changed prepared result. This is distinct from Schedules routing future occurrences to the current deployment. Bind the approved write and the executed code revision separately. [[sources/vercel--schedules-docs#eve-payload]] [[sources/vercel--schedules-docs#deployment]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] preserves benchmark version, harness, tool mode, effort and trajectory budget alongside the result, plus the exact cookbook source revision. This is an application of revision-scoped research evidence, not a newly verified runtime approval mechanism. [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-support#async-source]]

@@ -1,0 +1,401 @@
+[
+  {
+    "number": 1,
+    "anchor": "block-01",
+    "key": "f7t2t",
+    "type": "unstyled",
+    "text": "AI agents should operate in dedicated, organization-controlled environments with limited access to the resources each task requires."
+  },
+  {
+    "number": 2,
+    "anchor": "block-02",
+    "key": "5esbo",
+    "type": "unstyled",
+    "text": "Recent security incidents [5], [6] and research demonstrate why this is a growing necessity. Supply-chain attacks have always been able to compromise developer machines and recruit installed AI tools to search for sensitive corporate information and data. Agent harnesses are typically given broad privileges and have a shrinking amount of human oversight. Combined, these two effects are making agents an increasingly interesting target for attackers. Even unattended automations are being targeted: instructions hidden in a GitHub issue or email can redirect an agent toward private data and unauthorized actions. The rise of personal agents increases the risk even more, since they are insufficiently managed by organizations, mostly controlled by individuals, run with an inconsistent set of guardrails, and are incentivized to be proactive above all else: they read every email, every calendar invite; Every interaction is an opportunity to get prompt-injected."
+  },
+  {
+    "number": 3,
+    "anchor": "block-03",
+    "key": "fahur",
+    "type": "unstyled",
+    "text": "There is a better way forward: Organizations can continue adopting agents by giving them execution environments designed for software that reads untrusted content, runs code, and acts on a user’s behalf."
+  },
+  {
+    "number": 4,
+    "anchor": "block-04",
+    "key": "emaor",
+    "type": "unstyled",
+    "text": "In a world where agents are becoming more prevalent, @Replit believes that organizations must make managed, isolated cloud agents the default for autonomous development, with credentials, permissions, network access, and production changes controlled outside the agent’s reach."
+  },
+  {
+    "number": 5,
+    "anchor": "block-05",
+    "key": "4lsrf",
+    "type": "header-one",
+    "text": "Adoption is growing faster than control"
+  },
+  {
+    "number": 6,
+    "anchor": "block-06",
+    "key": "dj60c",
+    "type": "unstyled",
+    "text": "AI development tools are becoming standard. Stack Overflow reports that the share of respondents using or planning to use AI tools rose from 70% in 2023 to 76% in 2024 [1] and 84% in 2025 [2]. This establishes the scale of AI-tool adoption and intent across annual respondent samples. Autonomous-agent usage falls outside the specific scope of this measure."
+  },
+  {
+    "number": 7,
+    "anchor": "block-07",
+    "key": "e40bf",
+    "type": "unstyled",
+    "text": "Agent infrastructure is also expanding. Salt Labs [3] detected MCP-related infrastructure in 16.7% of its customer environments in January 2026 and 21.6% in August: a 4.9-percentage-point increase. These observations are limited to the vendor’s customer environments. Their applicability to the wider industry and the consistency of the customer cohort remain unestablished."
+  },
+  {
+    "number": 8,
+    "anchor": "block-08",
+    "key": "b2snm",
+    "type": "unstyled",
+    "text": "The more consequential finding is the gap between deployment and control. In Salt Security’s October 2026 survey [3], 86.4% of respondents reported at least one agent operating in their organization, but only 17.5% could automatically stop an agent behaving unexpectedly in production. Only 12.5% could consistently trace complete agent paths across all agents."
+  },
+  {
+    "number": 9,
+    "anchor": "block-09",
+    "key": "75bhh",
+    "type": "atomic",
+    "text": " "
+  },
+  {
+    "number": 10,
+    "anchor": "block-10",
+    "key": "3p6to",
+    "type": "unstyled",
+    "text": "A separate Cloud Security Alliance study reinforces the concern [4]: 47% of respondents reported an agent-related security incident in the preceding year, 54% reported between one and 100 unsanctioned agents, and only 31% reported formally adopted agent-governance policies. The study surveyed 445 IT and security professionals in September and November 2025 and was published in April 2026. Zenity financed the research and co-developed the questionnaire. These findings corroborate a governance problem; they should not be combined with Salt’s results into a single incident-rate trend."
+  },
+  {
+    "number": 11,
+    "anchor": "block-11",
+    "key": "642n5",
+    "type": "header-one",
+    "text": "Different attacks, recurring boundary failures"
+  },
+  {
+    "number": 12,
+    "anchor": "block-12",
+    "key": "259pk",
+    "type": "unstyled",
+    "text": "The evidence extends beyond any one model, vendor, or delivery mechanism."
+  },
+  {
+    "number": 13,
+    "anchor": "block-13",
+    "key": "cqlkj",
+    "type": "unordered-list-item",
+    "text": "Sensitive-system access through a personal agent. WIRED reports that an Accenture contractor connected a personal Claude Code account to a sensitive Department of Defense environment and that credentials and system information appear to have reached a third-party service [5]. Accenture disputes the allegations, saying an independent investigation found them without merit. WIRED reports no indication that attackers accessed classified or top-secret systems. The risk illustrated is an uncontrolled connection between sensitive infrastructure and personal agent tooling."
+  },
+  {
+    "number": 14,
+    "anchor": "block-14",
+    "key": "1mejg",
+    "type": "unordered-list-item",
+    "text": "A malicious extension on developer machines. WIRED reports that a tampered Claude Code extension distributed through Cursor’s marketplace was downloaded by at most 5,000 users [6]. It was not an Anthropic-published release. Cursor describes host-information collection and attempts to install a persistent SSH backdoor [7]. Implementation errors limited the backdoor’s effectiveness on most affected macOS and Windows hosts, but uninstalling the extension alone may not remove its persistence mechanisms. We cannot rely on attacker mistakes in the future."
+  },
+  {
+    "number": 15,
+    "anchor": "block-15",
+    "key": "1giei",
+    "type": "unordered-list-item",
+    "text": "Compromised packages recruiting AI tools to find secrets. In the August 2025 Nx “s1ngularity” campaign, malicious packages used previously-installed Claude, Gemini, and Q command-line tools to assist reconnaissance. Wiz [8] observed successful AI-assisted activity in hundreds of cases and more than 1,000 valid GitHub tokens exposed. A subsequent phase used leaked tokens to make over 5,500 private repositories public, affecting more than 400 users or organizations. Developer machines and some build pipelines were affected."
+  },
+  {
+    "number": 16,
+    "anchor": "block-16",
+    "key": "3fsk",
+    "type": "unordered-list-item",
+    "text": "Private data leaked through legitimate tools. Invariant [9] demonstrated that a malicious public GitHub issue could persuade an agent using GitHub MCP to retrieve private-repository information and publish it in a public pull request. The researchers demonstrated this attack using an uncompromised MCP server. The demonstration establishes a possible attack path; the source reports no mass breach. An approved tool and destination can still carry an unauthorized data transfer."
+  },
+  {
+    "number": 17,
+    "anchor": "block-17",
+    "key": "33jtp",
+    "type": "unordered-list-item",
+    "text": "A tool running outside its intended sandbox. CodeRabbit confirmed that researchers discovered RuboCop operating outside its sandbox in January 2025 [10]. The company says it deployed a comprehensive fix within 12 hours and found no evidence of customer-data access or malicious activity. The lesson is that isolation must extend from the primary agent runtime to every executable tool and subprocess."
+  },
+  {
+    "number": 18,
+    "anchor": "block-18",
+    "key": "7hhpc",
+    "type": "unordered-list-item",
+    "text": "A cloud agent exposing connected-account credentials. Salt Labs demonstrated that malicious email content could induce code execution in Manus’s cloud sandbox, where connected-service tokens were accessible [11]. A security warning appeared after the payload was executed. Salt says the flaw has since been resolved. This research is an important counterexample to the idea that cloud hosting alone provides security."
+  },
+  {
+    "number": 19,
+    "anchor": "block-19",
+    "key": "83cv3",
+    "type": "unordered-list-item",
+    "text": "Compromised infrastructure misusing legitimate signing authority. Elliptic’s analysis of the October 29 Binance theft suggests attackers induced Binance’s own systems to sign unauthorized transactions. Binance initially reported a possible compromised DevOps laptop and later disclosed additional breach points; the full intrusion path remains unresolved. On Ethereum, signed EIP-7702 authorizations delegated a hot wallet’s behavior to an attacker-controlled contract, with delegation persisting beyond the initial transaction [12]. This is not evidence of an AI-agent attack. It illustrates a relevant control requirement: protecting credentials is insufficient if a compromised caller can use them to authorize harmful actions."
+  },
+  {
+    "number": 20,
+    "anchor": "block-20",
+    "key": "5pjtn",
+    "type": "unstyled",
+    "text": "Together, these cases illustrate three recurring problems: untrusted software executing with excessive access, untrusted content being treated as instructions, and controls that do not prevent the resulting action."
+  },
+  {
+    "number": 21,
+    "anchor": "block-21",
+    "key": "f2ooi",
+    "type": "header-one",
+    "text": "Why managed cloud agents are the better default"
+  },
+  {
+    "number": 22,
+    "anchor": "block-22",
+    "key": "6ja6c",
+    "type": "unstyled",
+    "text": "An employee workstation may contain browser sessions, SSH keys, cloud credentials, private repositories, internal-network access, and unrelated business data. That is far more access than most agent tasks require."
+  },
+  {
+    "number": 23,
+    "anchor": "block-23",
+    "key": "1gbai",
+    "type": "unstyled",
+    "text": "A dedicated cloud environment makes it possible to separate agent execution from that workstation. The organization can provision only the necessary workspace, enforce access centrally, record actions independently, and stop or rebuild the environment without rebuilding the employee’s laptop."
+  },
+  {
+    "number": 24,
+    "anchor": "block-24",
+    "key": "dqjv8",
+    "type": "unstyled",
+    "text": "Realizing that benefit requires moving execution, policy enforcement, and observability into the controlled environment. A local extension that sends prompts to a cloud model still executes local code. Likewise, a remote agent with copied production credentials and unrestricted network access reproduces the same risks elsewhere."
+  },
+  {
+    "number": 25,
+    "anchor": "block-25",
+    "key": "20dgc",
+    "type": "unstyled",
+    "text": "The objective is to contain a compromised agent or dependency within a limited workspace. Organizational policy must govern the agent’s access independently of the employee’s broader authority."
+  },
+  {
+    "number": 26,
+    "anchor": "block-26",
+    "key": "eg67k",
+    "type": "atomic",
+    "text": " "
+  },
+  {
+    "number": 27,
+    "anchor": "block-27",
+    "key": "clpun",
+    "type": "header-one",
+    "text": "Required controls"
+  },
+  {
+    "number": 28,
+    "anchor": "block-28",
+    "key": "8mttq",
+    "type": "unstyled",
+    "text": "It is recommended to treat agent execution as untrusted and enforce boundaries independently of the agent’s cooperation. Organizations should require:"
+  },
+  {
+    "number": 29,
+    "anchor": "block-29",
+    "key": "ng52",
+    "type": "unordered-list-item",
+    "text": "Verified execution isolation. Keep agents, installation scripts, tools, and dependencies inside dedicated sandboxes. Place security enforcement outside their control. Do not inherit employee home directories, browser sessions, or unrestricted corporate-network access."
+  },
+  {
+    "number": 30,
+    "anchor": "block-30",
+    "key": "791mc",
+    "type": "unordered-list-item",
+    "text": "Brokered credentials and distinct identities. Keep external-service credentials out of agent-readable memory, files, and environment variables. Authorize requests through a broker, bound to the agent, initiating principal, organization, and task."
+  },
+  {
+    "number": 31,
+    "anchor": "block-31",
+    "key": "1bmbg",
+    "type": "unordered-list-item",
+    "text": "Step-up Authorization: Credential isolation must be paired with independent checks on the requested operation, target resource, destination, and any change in delegated authority. Require explicit approval for high-impact actions; possession of a valid identity or access to a signing service is not sufficient authorization."
+  },
+  {
+    "number": 32,
+    "anchor": "block-32",
+    "key": "8cth5",
+    "type": "unordered-list-item",
+    "text": "Task-scoped permissions. Give each run only the resources and operations it needs. Agents must not be able to raise their own permissions or alter the policy that governs them."
+  },
+  {
+    "number": 33,
+    "anchor": "block-33",
+    "key": "18d2a",
+    "type": "unordered-list-item",
+    "text": "Network and data-flow restrictions. Control DNS, direct-IP traffic, cloud-metadata access, and external requests. Distinguish permitted operations and data destinations within approved services; allowing GitHub must not imply allowing private data to be published anywhere on GitHub."
+  },
+  {
+    "number": 34,
+    "anchor": "block-34",
+    "key": "5skvc",
+    "type": "unordered-list-item",
+    "text": "A separate production boundary. Let agents propose changes without standing production-write authority. Apply consequential changes through trusted approval and deployment systems that display the actual action being authorized."
+  },
+  {
+    "number": 35,
+    "anchor": "block-35",
+    "key": "57lgf",
+    "type": "unordered-list-item",
+    "text": "Controlled software supply chains. Verify provenance, pin approved versions, and review tool and MCP configuration changes. Install dependencies without production credentials."
+  },
+  {
+    "number": 36,
+    "anchor": "block-36",
+    "key": "2s14s",
+    "type": "unordered-list-item",
+    "text": "Independent audit and containment. Record actions and enforcement decisions somewhere the agent cannot alter. Support automatic containment and revocation without depending on the agent’s cooperation. Containment must also revoke downstream delegations and permissions already granted, not just stop the initiating process or rotate its credentials."
+  },
+  {
+    "number": 37,
+    "anchor": "block-37",
+    "key": "2m0ur",
+    "type": "header-one",
+    "text": "Recommended action"
+  },
+  {
+    "number": 38,
+    "anchor": "block-38",
+    "key": "fhluv",
+    "type": "unstyled",
+    "text": "Make approved, managed cloud-agent environments the standard path for autonomous development. Inventory existing local agents and extensions, remove unnecessary access, and prohibit personal agent accounts from connecting to sensitive production systems."
+  },
+  {
+    "number": 39,
+    "anchor": "block-39",
+    "key": "4tpv0",
+    "type": "unstyled",
+    "text": "Require vendors to demonstrate their boundaries: that an agent cannot read service credentials, bypass network controls, expand its permissions, modify audit records, or make unapproved production changes. Verify containment through practical tests, including whether the kill switch actually stops agent activity."
+  },
+  {
+    "number": 40,
+    "anchor": "block-40",
+    "key": "c0m9t",
+    "type": "unstyled",
+    "text": "For potentially affected Cursor installations, follow the vendor’s incident-response guidance now. Moving future work to the cloud does not remediate an already compromised endpoint [7]."
+  },
+  {
+    "number": 41,
+    "anchor": "block-41",
+    "key": "708to",
+    "type": "unstyled",
+    "text": "For regulated and government workloads, use only environments authorized for the relevant data and systems. Assess model endpoints, logs, storage, and external tools against residency, retention, contractual, and accreditation requirements."
+  },
+  {
+    "number": 42,
+    "anchor": "block-42",
+    "key": "85brp",
+    "type": "unstyled",
+    "text": "The recommendation is cloud execution backed by verified security controls. The sources reviewed do not establish a comparative breach rate for local versus cloud agents. They establish why isolation, limited authority, credential separation, and independent enforcement matter."
+  },
+  {
+    "number": 43,
+    "anchor": "block-43",
+    "key": "dvtsg",
+    "type": "unstyled",
+    "text": "Agents’ access should be scoped to the requirements of each task."
+  },
+  {
+    "number": 44,
+    "anchor": "block-44",
+    "key": "a9l39",
+    "type": "unstyled",
+    "text": "For a concrete framework to evaluate these controls, see Replit’s proposed Agent Habitat Architecture and its evidence-based maturity scale. It provides a reference architecture for independently enforced permissions, brokered credentials, controlled data flows, and out-of-band containment. Each cloud-agent product should be assessed separately to verify which controls it implements."
+  },
+  {
+    "number": 45,
+    "anchor": "block-45",
+    "key": "eoqrc",
+    "type": "header-one",
+    "text": "References"
+  },
+  {
+    "number": 46,
+    "anchor": "block-46",
+    "key": "6k24t",
+    "type": "unstyled",
+    "text": "[1] Stack Overflow, “AI | 2024 Developer Survey”. Accessed: Nov. 1, 2026. [Online]. Available: https://survey.stackoverflow.co/2024/ai"
+  },
+  {
+    "number": 47,
+    "anchor": "block-47",
+    "key": "2ic44",
+    "type": "unstyled",
+    "text": "[2] Stack Overflow, “AI | 2025 Developer Survey”. Accessed: Nov. 1, 2026. [Online]. Available: https://survey.stackoverflow.co/2025/ai"
+  },
+  {
+    "number": 48,
+    "anchor": "block-48",
+    "key": "eaa82",
+    "type": "unstyled",
+    "text": "[3] Salt Security, “Nearly half of enterprises report an AI agent took an unauthorized action last year, Salt Security research finds,” Oct. 13, 2026. Accessed: Nov. 1, 2026. [Online]. Available: https://salt.security/press-releases/state-of-agentic-ai-and-api-security-2h-2026"
+  },
+  {
+    "number": 49,
+    "anchor": "block-49",
+    "key": "cl9lf",
+    "type": "unstyled",
+    "text": "[4] Cloud Security Alliance, “More than half of organizations experience AI agent scope violations, Cloud Security Alliance study finds,” Apr. 16, 2026. Accessed: Nov. 1, 2026. [Online]. Available: https://cloudsecurityalliance.org/press-releases/2026/04/16/more-than-half-of-organizations-experience-ai-agent-scope-violations-cloud-security-alliance-study-finds"
+  },
+  {
+    "number": 50,
+    "anchor": "block-50",
+    "key": "3k7ja",
+    "type": "unstyled",
+    "text": "[5] V. Elliott, “A defense contractor gave their personal AI agent access to a secure Pentagon system | WIRED”. Accessed: Nov. 1, 2026. [Online]. Available: https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/"
+  },
+  {
+    "number": 51,
+    "anchor": "block-51",
+    "key": "9srt5",
+    "type": "unstyled",
+    "text": "[6] L. H. Newman, “A supply chain attack put malicious Anthropic Claude extensions on thousands of devices | WIRED”. Accessed: Nov. 1, 2026. [Online]. Available: https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/"
+  },
+  {
+    "number": 52,
+    "anchor": "block-52",
+    "key": "274l4",
+    "type": "unstyled",
+    "text": "[7] Cursor, “Claude Code extension security notice,” updated Oct. 30, 2026. Accessed: Nov. 1, 2026. [Online]. Available: https://cursor.com/blog/claude-code-extension-security-notice"
+  },
+  {
+    "number": 53,
+    "anchor": "block-53",
+    "key": "6t835",
+    "type": "unstyled",
+    "text": "[8] M. Bar and R. McCarthy, “s1ngularity: Supply chain attack leaks secrets on GitHub: Everything you need to know | Wiz Blog,” Aug. 27, 2025, updated Aug. 29, 2025. Accessed: Nov. 1, 2026. [Online]. Available: https://www.wiz.io/blog/s1ngularity-supply-chain-attack"
+  },
+  {
+    "number": 54,
+    "anchor": "block-54",
+    "key": "euoj2",
+    "type": "unstyled",
+    "text": "[9] Invariant Labs, GitHub MCP vulnerability research. Accessed: Nov. 1, 2026. [Online]. Available: https://invariantlabs.ai/blog/mcp-github-vulnerability"
+  },
+  {
+    "number": 55,
+    "anchor": "block-55",
+    "key": "2p458",
+    "type": "unstyled",
+    "text": "[10] H. Gill, “Our response to the January 2025 Kudelski Security vulnerability disclosure: Action and continuous improvement,” CodeRabbit, Aug. 19, 2025. Accessed: Nov. 1, 2026. [Online]. Available: https://www.coderabbit.ai/blog/our-response-to-the-january-2025-kudelski-security-vulnerability-disclosure-action-and-continuous-improvement"
+  },
+  {
+    "number": 56,
+    "anchor": "block-56",
+    "key": "1pdrr",
+    "type": "unstyled",
+    "text": "[11] Salt Labs, “How we hijacked an AI agent with a single email,” Salt Security, Oct. 1, 2026. Accessed: Nov. 1, 2026. [Online]. Available: https://salt.security/blog/how-we-hijacked-an-ai-agent-with-a-single-email"
+  },
+  {
+    "number": 57,
+    "anchor": "block-57",
+    "key": "ei3lq",
+    "type": "unstyled",
+    "text": "[12] T. Robinson, “The largest theft in history: North Korea behind the $6.4 billion Binance hack,” Elliptic, Oct. 30, 2026, updated Nov. 1, 2026. Accessed: Nov. 1, 2026. Available: https://www.elliptic.co/insights/binance-largest-hack-in-history/"
+  }
+]

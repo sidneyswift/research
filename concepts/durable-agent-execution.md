@@ -127,3 +127,15 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## Wider documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] now studies architecture/operational records, migration states, executable examples and delivery/evaluation boundaries. [[projects/writing-amazing-developer-docs/platform-documentation-system]] is the proposed application; no new vendor runtime guarantee or confirmed implementation example is claimed.
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] adds a proposed **security-state recovery** contract: restore attenuations, spent budgets, consumed approvals and action history with work progress. Journaled model replay is not universal exactly-once external effect; reconcile unknown outcomes. [[sources/replit--agent-habitat-architecture#durability]]
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] separates timer occurrences, queue delivery and workflow recovery. Stable execution IDs do not make external effects exactly once; scheduler occurrence expiry and queue retention are separate windows. The newer experimental eve docs distinguish callback dispatch from agent completion. [[sources/vercel--schedules-docs#timing]] [[sources/vercel--schedules-docs#queue-contract]] [[sources/vercel--schedules-docs#eve-occurrence]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] adds distinct recovery contracts: store creation versus successful dreaming, canceled versus residual in-flight usage, local write acknowledgment versus committed sync, and nightly retry versus complete input coverage. [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--agent-memory-support#dream-cancellation]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]] [[sources/anthropic--agent-memory-support#dynamic-nightly]]

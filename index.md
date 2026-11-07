@@ -25,10 +25,23 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/anthropic--components-of-agent-memory]] — complete article and fifteen figures; November 6 research report.
+- [[sources/anthropic--agent-memory-support]] — memory/Dreams contracts, scoped cookbook and pinned quickstart context; November 7 capture.
+
+- [[sources/thinking-machines--inkling-2-small]] — November 5 model announcement; full HTML, tables, forecast replay and images.
+- [[sources/thinking-machines--inkling-2-support]] — model card, release policy, expert-label study, Tinker contracts and pinned async source.
+
+- [[sources/vercel--introducing-schedules]] — November 4 announcement, captured November 6.
+- [[sources/vercel--schedules-docs]] — seventeen primary documentation/resources with contracts, drift and scoped read records.
+
+- [[sources/lhchavez--managed-agent-environments]] — X article, full body/images and qualified incident/survey evidence; 2026-11-06 capture.
+- [[sources/replit--agent-habitat-architecture]] — living white paper; proposed architecture and eleven-track evidence rubric, 2026-11-06 capture.
+
 Cloned repo snapshots and their citation pages. Repo files live at `sources/<creator>--<repo>/`; the `.md` page is the citation target.
 
 | Source | Type | Snapshot date | Commit |
 | --- | --- | --- | --- |
+| [[sources/cloudflare--security-audit-skill]] | repo | 2026-11-06 | `c1c8a8c` |
 | [[sources/modelcontextprotocol--mcp-core-and-extensions-docs]] | docs-page | 2026-11-04 | modern core + pinned extension specs; capture map |
 | [[sources/modelcontextprotocol--mcp-apps-docs]] | docs-page | 2026-11-04 | stable UI wire + draft/SDK collection |
 | [[sources/modelcontextprotocol--mcp-authorization-docs]] | docs-page | 2026-11-04 | stable auth profiles + ID-JAG revision pair |
@@ -108,6 +121,11 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 ## Creators
 
+- [[creators/thinking-machines]] — Inkling models and Tinker; scoped to the new model release and its supporting evidence.
+
+- [[creators/luis-hector-chavez]] — managed-agent-environment advisory.
+- [[creators/replit]] — Agent Habitat reference architecture proposal.
+
 - [[creators/shopify]] — [[artifacts/projects/shopify-api]].
 
 - [[creators/timo-schick]] — [[concepts/agent-api-learning-and-evolution]].
@@ -139,7 +157,7 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 | [[creators/daniele-procida]] | individual | Developer documentation research |
 | [[creators/writethedocs]] | org | Developer documentation research |
 | [[creators/gitlab]] | org | Developer documentation research |
-| [[creators/cloudflare]] | org | Developer documentation research |
+| [[creators/cloudflare]] | org | Developer documentation and security-audit skill |
 | [[creators/jeremy-howard]] | individual | Developer documentation research |
 | [[creators/github]] | org | Developer documentation research |
 | [[creators/twilio]] | org | Developer documentation research |
@@ -190,6 +208,7 @@ Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/
 
 | Skill | Creator | Status | One-line |
 | --- | --- | --- | --- |
+| [[artifacts/skills/security-audit]] | Cloudflare | source-inspected; validator tests passed | Coverage ledger, independent falsification, distinct verdict contracts and material-change reverification |
 | [[artifacts/skills/grilling]] | Matt Pocock | active | Relentless one-question-at-a-time alignment interview; the reusable loop behind `grill-me`/`grill-with-docs`. The wiki's **first individual skill page** |
 | [[artifacts/skills/writing-great-skills]] | Matt Pocock | active | Reference for *authoring* skills — predictability, the two loads, the info-hierarchy ladder, leading words, the five failure modes; the most self-applicable artifact in the wiki |
 | [[artifacts/skills/loop-library]] | Forward Future | active | Find/adapt/design a **bounded agent loop** (task + observable verify + named stop); bundles a 31-loop catalog from ~14 builders. The **confirming 2nd artifact** for [[patterns/behavioral/evidence-gated-completion]] |
@@ -205,6 +224,10 @@ Candidate queue (dozens more from `mattpocock/skills`, `anthropic/skills`, gstac
 Candidate queue: see [artifacts/mcp-servers/_index.md](artifacts/mcp-servers/_index.md).
 
 ## Artifacts — Projects
+
+- [[artifacts/projects/inkling-2-small]] — 44 model-adaptation/evaluation/control principles; dated release state and service limits.
+
+- [[artifacts/projects/vercel-schedules]] — public-beta static/dynamic scheduling; 44 principles, target-dependent retry, current authority and completion boundaries.
 
 - [[artifacts/projects/shopify-api]] — commerce/Admin and agent-facing APIs; documentation-investigated, no live execution.
 
@@ -248,6 +271,10 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/agent-memory-consolidation]] — 40 principles: four memory layers, evidence-backed consolidation, hybrid search, explicit adoption and consistency boundaries.
+
+- [[concepts/agent-habitat-architecture]] — 44 principles for independent enforcement, effect authorization, attenuation, recovery and containment; proposed architecture, not product certification.
 
 - [[concepts/model-context-protocol]] — roles, primitives, current core and legacy compatibility.
 - [[concepts/mcp-extension-architecture]] — extension lifecycle, negotiation, Tasks, discovery and support limits.

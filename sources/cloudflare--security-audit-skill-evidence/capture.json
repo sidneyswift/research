@@ -1,0 +1,516 @@
+{
+  "repository": "https://github.com/cloudflare/security-audit-skill",
+  "retrieved": "2026-11-06",
+  "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+  "tree": "8cd03bb3941496e441d6248aaae2429a35b93cc3",
+  "commit_date": "2026-09-14T20:28:54+01:00",
+  "tracked_entries": 22,
+  "shallow_history": true,
+  "preservation": "Complete tracked tree and shallow Git metadata local-only. Citation map, all-file hashes, test receipt and restoration registration committed; restore depends on upstream availability.",
+  "inspection": "All 15 skill Markdown files, README and license; schema and both validators, with detailed review of core state/identity/ownership, schema/semantic and bounded-input paths; selected fixture bodies and full test-name inventory. Not every test body independently reviewed.",
+  "github": {
+    "stargazers_count": 61558,
+    "forks_count": 3997,
+    "default_branch": "main",
+    "html_url": "https://github.com/cloudflare/security-audit-skill",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit"
+    }
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1078,
+      "lines": 21,
+      "sha256": "e598e694aa506650c7192d5ea3be0e50aca0d356ea00551c53429f0b01eb6391"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6950,
+      "lines": 106,
+      "sha256": "55e793bbea3563f8246735997c07aaee360e043eeb626f0b56ea6161c8618ae7"
+    },
+    {
+      "path": "skills/security-audit/AI-AND-LLM.md",
+      "bytes": 10617,
+      "lines": 83,
+      "sha256": "7335a95c43554eadefcf03ece639291bb0e038c398a179299e3887ffe06bd2ef"
+    },
+    {
+      "path": "skills/security-audit/ATTACK-CLASSES.md",
+      "bytes": 15695,
+      "lines": 130,
+      "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83"
+    },
+    {
+      "path": "skills/security-audit/CLIENT-SIDE.md",
+      "bytes": 8594,
+      "lines": 83,
+      "sha256": "613f6b98f86083e045525c5b60154ffdab122bac35f1e05eb17488e6e453370c"
+    },
+    {
+      "path": "skills/security-audit/CLOUD-AND-DEPLOYMENT.md",
+      "bytes": 8291,
+      "lines": 86,
+      "sha256": "3c80f3088be22345e07b057c056d6ed99fe2b0304f794398964f7ccd5a496ca3"
+    },
+    {
+      "path": "skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md",
+      "bytes": 7798,
+      "lines": 84,
+      "sha256": "307dcb3e24d292715c4a041190e7bb135646a37eb6187619ae01d000a634a4ad"
+    },
+    {
+      "path": "skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+      "bytes": 8739,
+      "lines": 89,
+      "sha256": "58eae8ee0ca6a46611c501ec5a3ab47fdff88dd7db0d8d74789bbf8bb19d8cb2"
+    },
+    {
+      "path": "skills/security-audit/HUNTING.md",
+      "bytes": 22446,
+      "lines": 251,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "path": "skills/security-audit/MEMORY-SAFETY-AND-BINARY.md",
+      "bytes": 10513,
+      "lines": 101,
+      "sha256": "7c8b0dccfb35315cca2455509674d49632b2fe37e1f3aac16c1a496a7e9924a7"
+    },
+    {
+      "path": "skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md",
+      "bytes": 7483,
+      "lines": 81,
+      "sha256": "8b73816fa5b3697c9c40977f0c836b40f01d6e81929ff2720fe83ce089e9a619"
+    },
+    {
+      "path": "skills/security-audit/RECONNAISSANCE.md",
+      "bytes": 15902,
+      "lines": 156,
+      "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2"
+    },
+    {
+      "path": "skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+      "bytes": 7476,
+      "lines": 78,
+      "sha256": "4326fab5c92a0b4c420a70196254040105cd794026562130b59bf1a6db3e4baa"
+    },
+    {
+      "path": "skills/security-audit/SKILL.md",
+      "bytes": 22026,
+      "lines": 192,
+      "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85"
+    },
+    {
+      "path": "skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md",
+      "bytes": 7258,
+      "lines": 73,
+      "sha256": "f372e919940e335468ba1ae09f99026c3986a345f7fe26f8068f132e199f52a5"
+    },
+    {
+      "path": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "bytes": 17843,
+      "lines": 186,
+      "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449"
+    },
+    {
+      "path": "skills/security-audit/WEB-PROTOCOL-AND-AUTH.md",
+      "bytes": 12300,
+      "lines": 105,
+      "sha256": "4f3066dffa23c5635859187be9b96c32f2aff29a688186b91ff0c63e47d62b5c"
+    },
+    {
+      "path": "skills/security-audit/report-schema.json",
+      "bytes": 14494,
+      "lines": 461,
+      "sha256": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519"
+    },
+    {
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "bytes": 33522,
+      "lines": 872,
+      "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8"
+    },
+    {
+      "path": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "bytes": 28483,
+      "lines": 740,
+      "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648"
+    },
+    {
+      "path": "skills/security-audit/validate-findings.cjs",
+      "bytes": 28806,
+      "lines": 773,
+      "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283"
+    },
+    {
+      "path": "skills/security-audit/validate-findings.test.cjs",
+      "bytes": 26384,
+      "lines": 652,
+      "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b"
+    }
+  ],
+  "evidence_ranges": [
+    {
+      "anchor": "root",
+      "path": "README.md",
+      "start": 1,
+      "end": 106,
+      "sha256": "55e793bbea3563f8246735997c07aaee360e043eeb626f0b56ea6161c8618ae7"
+    },
+    {
+      "anchor": "modes",
+      "path": "skills/security-audit/SKILL.md",
+      "start": 1,
+      "end": 29,
+      "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85"
+    },
+    {
+      "anchor": "execution-boundary",
+      "path": "skills/security-audit/SKILL.md",
+      "start": 31,
+      "end": 86,
+      "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85"
+    },
+    {
+      "anchor": "prior-evidence",
+      "path": "skills/security-audit/SKILL.md",
+      "start": 88,
+      "end": 105,
+      "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85"
+    },
+    {
+      "anchor": "prior-evidence",
+      "path": "skills/security-audit/RECONNAISSANCE.md",
+      "start": 59,
+      "end": 71,
+      "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2"
+    },
+    {
+      "anchor": "profiles-budget",
+      "path": "skills/security-audit/SKILL.md",
+      "start": 107,
+      "end": 134,
+      "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85"
+    },
+    {
+      "anchor": "claim-standard",
+      "path": "skills/security-audit/SKILL.md",
+      "start": 136,
+      "end": 192,
+      "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85"
+    },
+    {
+      "anchor": "recon",
+      "path": "skills/security-audit/RECONNAISSANCE.md",
+      "start": 1,
+      "end": 57,
+      "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2"
+    },
+    {
+      "anchor": "context-selection",
+      "path": "skills/security-audit/RECONNAISSANCE.md",
+      "start": 73,
+      "end": 88,
+      "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2"
+    },
+    {
+      "anchor": "context-selection",
+      "path": "skills/security-audit/HUNTING.md",
+      "start": 11,
+      "end": 25,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "anchor": "coverage-contract",
+      "path": "skills/security-audit/RECONNAISSANCE.md",
+      "start": 90,
+      "end": 156,
+      "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2"
+    },
+    {
+      "anchor": "hunting",
+      "path": "skills/security-audit/HUNTING.md",
+      "start": 3,
+      "end": 9,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "anchor": "hunting",
+      "path": "skills/security-audit/HUNTING.md",
+      "start": 27,
+      "end": 97,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "anchor": "promotion",
+      "path": "skills/security-audit/HUNTING.md",
+      "start": 99,
+      "end": 136,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "anchor": "candidate-gate",
+      "path": "skills/security-audit/HUNTING.md",
+      "start": 138,
+      "end": 157,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "anchor": "hunter-result",
+      "path": "skills/security-audit/HUNTING.md",
+      "start": 168,
+      "end": 219,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "anchor": "coverage-critics",
+      "path": "skills/security-audit/HUNTING.md",
+      "start": 221,
+      "end": 251,
+      "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09"
+    },
+    {
+      "anchor": "independent-validation",
+      "path": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "start": 3,
+      "end": 93,
+      "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449"
+    },
+    {
+      "anchor": "verdict-contract",
+      "path": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "start": 95,
+      "end": 118,
+      "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449"
+    },
+    {
+      "anchor": "verdict-contract",
+      "path": "skills/security-audit/report-schema.json",
+      "start": 1,
+      "end": 461,
+      "sha256": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519"
+    },
+    {
+      "anchor": "material-reverification",
+      "path": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "start": 120,
+      "end": 149,
+      "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449"
+    },
+    {
+      "anchor": "reporting",
+      "path": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "start": 151,
+      "end": 186,
+      "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449"
+    },
+    {
+      "anchor": "attack-classes",
+      "path": "skills/security-audit/ATTACK-CLASSES.md",
+      "start": 1,
+      "end": 130,
+      "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83"
+    },
+    {
+      "anchor": "ai-authority",
+      "path": "skills/security-audit/AI-AND-LLM.md",
+      "start": 1,
+      "end": 83,
+      "sha256": "7335a95c43554eadefcf03ece639291bb0e038c398a179299e3887ffe06bd2ef"
+    },
+    {
+      "anchor": "data-lifecycle",
+      "path": "skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md",
+      "start": 1,
+      "end": 84,
+      "sha256": "307dcb3e24d292715c4a041190e7bb135646a37eb6187619ae01d000a634a4ad"
+    },
+    {
+      "anchor": "supply-chain",
+      "path": "skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md",
+      "start": 1,
+      "end": 73,
+      "sha256": "f372e919940e335468ba1ae09f99026c3986a345f7fe26f8068f132e199f52a5"
+    },
+    {
+      "anchor": "cloud-policy",
+      "path": "skills/security-audit/CLOUD-AND-DEPLOYMENT.md",
+      "start": 1,
+      "end": 86,
+      "sha256": "3c80f3088be22345e07b057c056d6ed99fe2b0304f794398964f7ccd5a496ca3"
+    },
+    {
+      "anchor": "web-identity",
+      "path": "skills/security-audit/WEB-PROTOCOL-AND-AUTH.md",
+      "start": 1,
+      "end": 105,
+      "sha256": "4f3066dffa23c5635859187be9b96c32f2aff29a688186b91ff0c63e47d62b5c"
+    },
+    {
+      "anchor": "browser",
+      "path": "skills/security-audit/CLIENT-SIDE.md",
+      "start": 1,
+      "end": 83,
+      "sha256": "613f6b98f86083e045525c5b60154ffdab122bac35f1e05eb17488e6e453370c"
+    },
+    {
+      "anchor": "native",
+      "path": "skills/security-audit/MEMORY-SAFETY-AND-BINARY.md",
+      "start": 1,
+      "end": 101,
+      "sha256": "7c8b0dccfb35315cca2455509674d49632b2fe37e1f3aac16c1a496a7e9924a7"
+    },
+    {
+      "anchor": "ipc",
+      "path": "skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+      "start": 1,
+      "end": 89,
+      "sha256": "58eae8ee0ca6a46611c501ec5a3ab47fdff88dd7db0d8d74789bbf8bb19d8cb2"
+    },
+    {
+      "anchor": "protocols",
+      "path": "skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md",
+      "start": 1,
+      "end": 81,
+      "sha256": "8b73816fa5b3697c9c40977f0c836b40f01d6e81929ff2720fe83ce089e9a619"
+    },
+    {
+      "anchor": "availability",
+      "path": "skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+      "start": 1,
+      "end": 78,
+      "sha256": "4326fab5c92a0b4c420a70196254040105cd794026562130b59bf1a6db3e4baa"
+    },
+    {
+      "anchor": "findings-code",
+      "path": "skills/security-audit/validate-findings.cjs",
+      "start": 247,
+      "end": 348,
+      "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283"
+    },
+    {
+      "anchor": "findings-code",
+      "path": "skills/security-audit/validate-findings.cjs",
+      "start": 361,
+      "end": 595,
+      "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283"
+    },
+    {
+      "anchor": "findings-input",
+      "path": "skills/security-audit/validate-findings.cjs",
+      "start": 40,
+      "end": 103,
+      "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283"
+    },
+    {
+      "anchor": "findings-input",
+      "path": "skills/security-audit/validate-findings.cjs",
+      "start": 604,
+      "end": 773,
+      "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283"
+    },
+    {
+      "anchor": "coverage-code",
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 340,
+      "end": 566,
+      "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8"
+    },
+    {
+      "anchor": "coverage-code",
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 568,
+      "end": 719,
+      "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8"
+    },
+    {
+      "anchor": "coverage-code",
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 761,
+      "end": 806,
+      "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8"
+    },
+    {
+      "anchor": "coverage-input",
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 11,
+      "end": 20,
+      "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8"
+    },
+    {
+      "anchor": "coverage-input",
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 141,
+      "end": 319,
+      "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8"
+    },
+    {
+      "anchor": "coverage-input",
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 721,
+      "end": 759,
+      "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8"
+    },
+    {
+      "anchor": "validator-tests",
+      "path": "skills/security-audit/validate-findings.test.cjs",
+      "start": 151,
+      "end": 232,
+      "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b"
+    },
+    {
+      "anchor": "validator-tests",
+      "path": "skills/security-audit/validate-findings.test.cjs",
+      "start": 305,
+      "end": 361,
+      "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b"
+    },
+    {
+      "anchor": "validator-tests",
+      "path": "skills/security-audit/validate-findings.test.cjs",
+      "start": 465,
+      "end": 652,
+      "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b"
+    },
+    {
+      "anchor": "validator-tests",
+      "path": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "start": 407,
+      "end": 491,
+      "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648"
+    },
+    {
+      "anchor": "validator-tests",
+      "path": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "start": 536,
+      "end": 740,
+      "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648"
+    },
+    {
+      "anchor": "license",
+      "path": "LICENSE",
+      "start": 1,
+      "end": 21,
+      "sha256": "e598e694aa506650c7192d5ea3be0e50aca0d356ea00551c53429f0b01eb6391"
+    }
+  ],
+  "validator_test_run": {
+    "command": "node --test skills/security-audit/validate-findings.test.cjs skills/security-audit/validate-coverage-ledger.test.cjs",
+    "node": "v25.9.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "tests": 65,
+    "passed": 65,
+    "failed": 0,
+    "skipped": 0,
+    "log": "validator-tests.txt",
+    "sha256": "8766efea71ec039ce373ae97cb3bf031ba7ea6310a7107e50e9fe4c9f59d9bcf",
+    "scope": "Bundled validator fixtures only; not an end-to-end audit, target-code sandbox exercise, promotion implementation test or vulnerability-detection benchmark."
+  }
+}

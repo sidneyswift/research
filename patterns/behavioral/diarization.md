@@ -91,3 +91,7 @@ A falsifiable test for spotting diarization in a new artifact (its `## Examples`
 ## Pstack comparison — 2026-10-24
 
 [[artifacts/plugins/pstack]] contributes source-backed synthesis and retained uncertainty through [[concepts/evidence-calibrated-research]]; durable notes should not convert a speculative inference into established history. Supporting comparison, not an added independent full-pattern count. [[sources/cursor--plugins-pstack#RE08]] [[sources/cursor--plugins-pstack#RE09]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] complements judgment distillation with explicit correction: reconcile notes against observations, preserve conflicts and source dates, and avoid converting uncertainty into settled fact. Corpus silence is not contradiction. [[sources/anthropic--components-of-agent-memory#correction]] [[sources/anthropic--agent-memory-support#dynamic-workflow]]

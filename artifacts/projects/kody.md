@@ -133,3 +133,7 @@ Host commands require both local machine opt-in and a grant; remote controls can
 ## MCP research connection — 2026-11-04
 
 [[concepts/model-context-protocol]] and [[analyses/mcp-and-extensions]] place Kody’s compact capability facade within the wider protocol/application stack. This adds protocol evidence, not a new live validation or a refresh of the pinned implementation. [[sources/modelcontextprotocol--mcp-core-and-extensions-docs#architecture]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] supplies a separate reference proposal for credential brokerage. Its lesson is narrower than compliance: hiding secret values does not by itself authorize every effect those secrets enable. No equivalence between Kody implementation and Habitat guarantees is asserted. [[sources/lhchavez--managed-agent-environments#credential-authority]]

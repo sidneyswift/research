@@ -114,3 +114,17 @@ A coverage map also makes the next step cheaper. “Unknown because the relevant
 ## Benchmark-health boundary — 2026-11-04
 
 [[artifacts/projects/auto-ontology]]'s companion evaluator refuses default headline reporting when broken-run failures exceed 5% or dispatched tasks have no results. Completeness depends on retained input sidecars; an explicit override exists. This supplies a concrete guard against presenting infrastructure failure as model weakness, not an independent replication of application accuracy. [[sources/nvidia--auto-ontology-eval#health-gate]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] distinguishes four states useful outside security: an unvalidated claim; a reviewed, source-grounded lead blocked on an exact fact; a confirmed claim with observed evidence; and a rejected claim with its refutation retained. A strict budget does not permit relabeling unchecked work as `needs_validation`. Reports inherit final record status rather than upgrading it during prose synthesis. [[sources/cloudflare--security-audit-skill#profiles-budget]] [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#reporting]]
+
+The shipped validators establish record structure and internal consistency, not physical source/artifact existence, independent agent execution or semantic truth. Their 65 passing local fixture tests demonstrate that narrower layer. Treat a changed causal account or stronger replacement conclusion as new verification work, not a harmless edit. [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]] [[sources/cloudflare--security-audit-skill#test-execution]] [[sources/cloudflare--security-audit-skill#material-reverification]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] makes comparison conditions part of the claim: maximum trajectory changed between model generations; tool-assisted vision differs from original mode; short-table rank depends on the comparator set. Its forecasting replay separates validation from unseen data and a normalized skill ratio from raw-error reduction. The source map explicitly marks unavailable benchmark-body and unreviewed-media coverage. [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-small#forecasting]] [[sources/thinking-machines--inkling-2-support#incomplete-context]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] preserves the 53% search baseline beside 13→48% wiki-only improvement, keeps token allowance separate from measured spend, and identifies trial counts/error-bar definitions. The 41/57→57/57 contract repair bundles ownership, representation and instruction changes; no isolated causal attribution. [[sources/anthropic--components-of-agent-memory#wiki-search]] [[sources/anthropic--components-of-agent-memory#compute-budget]] [[sources/anthropic--components-of-agent-memory#steering]] [[sources/anthropic--components-of-agent-memory#goal-ownership]]

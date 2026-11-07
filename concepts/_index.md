@@ -71,3 +71,9 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 - [[concepts/developer-documentation-design]] — reader tasks, examples, recovery, navigation, docs engineering, agent access and evaluation.
 
 - [[concepts/agent-documentation-interfaces]] — discovery/evidence/answer/guidance/execution interfaces; version, authority and measured task outcomes.
+
+- [[concepts/agent-habitat-architecture]] — independent authority and containment around untrusted execution; 44 portable principles; proposed eleven-track rubric, no runtime assurance.
+
+## Added 2026-11-07
+
+- [[concepts/agent-memory-consolidation]] — four-layer external memory, consolidation evidence, cost-sensitive retrieval and runtime contracts; no benchmark replication.

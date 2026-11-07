@@ -61,6 +61,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Individuals
 
+- [[creators/luis-hector-chavez]] — Replit-affiliated author of the managed-agent-environment advisory.
+
 - [[creators/hanrong-zhang]] — co-first author of Skill++ with Minghao Liang; skill access stability/plasticity.
 
 - [[creators/ankur-goyal]] — author of The Trace Lake; production evidence and evaluation loops.
@@ -85,7 +87,7 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 - [[creators/gitlab]] — documentation research contributor/publisher.
 
-- [[creators/cloudflare]] — documentation research contributor/publisher.
+- [[creators/cloudflare]] — documentation research publisher and creator of [[artifacts/skills/security-audit]].
 
 - [[creators/jeremy-howard]] — documentation research contributor/publisher.
 
@@ -139,3 +141,7 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/fern]] — publisher of a studied agent documentation/evaluation platform.
 - [[creators/readme]] — publisher of a studied agent documentation/evaluation platform.
 - [[creators/intel]] — publisher of a studied agent documentation/evaluation platform.
+
+- [[creators/replit]] — publisher of the proposed Agent Habitat architecture and maturity rubric.
+
+- [[creators/thinking-machines]] — Inkling 2 Small and scoped Tinker supporting evidence.

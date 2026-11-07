@@ -1,0 +1,113 @@
+{
+  "captured": "2026-11-06",
+  "captures": [
+    {
+      "file": "safe-open-weights.md",
+      "url": "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/",
+      "sha256": "7ae73c754c6144f3d64ddd5198d7968d8c411e1b7947dd8b96ce1f0cd8f84ea8",
+      "bytes": 15998,
+      "fetchedAt": "2026-11-06T06:34:40.118Z",
+      "kind": "readable extraction",
+      "reviewed": "Full extracted text read"
+    },
+    {
+      "file": "expert-financial-judgment.md",
+      "url": "https://thinkingmachines.ai/news/learning-to-replicate-expert-judgment-in-financial-tasks/",
+      "sha256": "f27d5e471c1a7e4f257388dd7dad0864493d72d98e647ec328e86c00fe57d53b",
+      "bytes": 12534,
+      "fetchedAt": "2026-11-06T06:34:40.736Z",
+      "kind": "readable extraction",
+      "reviewed": "Full extracted text read"
+    },
+    {
+      "file": "stable-reinforce.md",
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/losses/stable-reinforce/",
+      "sha256": "93e1a439de02f998fea516623705fd2a8c96079ee8e5afcdbf8ef7dbf40afee3",
+      "bytes": 6135,
+      "fetchedAt": "2026-11-06T06:34:41.333Z",
+      "kind": "readable extraction",
+      "reviewed": "Full extracted text read"
+    },
+    {
+      "file": "models-and-pricing.md",
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/",
+      "sha256": "67cc219022250fb6bb14212af577c2a5545c56f4e026f814e64d5484878d3767",
+      "bytes": 13436,
+      "fetchedAt": "2026-11-06T06:34:41.741Z",
+      "kind": "readable extraction",
+      "reviewed": "Full extracted text read"
+    },
+    {
+      "file": "pmpp-hard-attempt.md",
+      "url": "https://blog.sinatras.dev/PMPP-Hard",
+      "sha256": "821a5641cf1ac832b1c96357adb0f06e625962701dbabc07035eae837af5da0e",
+      "bytes": 21,
+      "fetchedAt": "2026-11-06T06:35:00.547Z",
+      "kind": "readable extraction",
+      "reviewed": "Title only; body unavailable"
+    },
+    {
+      "file": "datum.md",
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/datum/",
+      "sha256": "26fdb6de2f0011b2b0277044b5d7a4332b09996c3fd1d46be6609f86488ee210",
+      "bytes": 6989,
+      "fetchedAt": "2026-11-06T06:35:00.883Z",
+      "kind": "readable extraction",
+      "reviewed": "Full extracted text read"
+    },
+    {
+      "file": "model-card.md",
+      "url": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+      "sha256": "f1165373e68e4978b990984e72099cf471995728e0c2a832cb9a08976c118d22",
+      "bytes": 18385,
+      "fetchedAt": "2026-11-06T06:35:20.741Z",
+      "kind": "readable extraction",
+      "reviewed": "Full extracted text read"
+    },
+    {
+      "file": "model-card.html",
+      "url": "https://thinkingmachines.ai/model-card/inkling-2-small/",
+      "sha256": "80cfe2190ae15b69bcc8f8573039148ed27afa128d8c3df4f0c43c80c10e3f46",
+      "bytes": 269522,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "original HTML",
+      "reviewed": "Architecture, release/license, benchmark headings and selected results checked"
+    },
+    {
+      "file": "models.json",
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/models.json",
+      "sha256": "483f6f4fc255a6be13b012e3221912fbec550330f4ae50849f6e365f8322e9d9",
+      "bytes": 17432,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "original bytes",
+      "reviewed": "Inkling 2 Small entries checked against pricing page"
+    },
+    {
+      "file": "serverless.json",
+      "url": "https://tinker-docs.thinkingmachines.ai/tinker/serverless.json",
+      "sha256": "55d31c42e9a6d52543fae3cfd6addb014e9cf26346e423e5b1639c6968c02f20",
+      "bytes": 776,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "original bytes",
+      "reviewed": "Inkling 2 Small entry checked"
+    },
+    {
+      "file": "rl-train.py",
+      "url": "https://raw.githubusercontent.com/thinking-machines-lab/tinker-cookbook/4a3a2829190b45999021e423bc90b7523108edf4/tinker_cookbook/rl/train.py",
+      "sha256": "4d661826ce13fa6e0bced3f9a55024a81aff00a97b572ec2dd80b205145bc0dd",
+      "bytes": 113413,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "original bytes",
+      "reviewed": "Selected provenance/AsyncConfig/scheduler/staleness sections inspected; not whole file or repository"
+    },
+    {
+      "file": "cookbook-LICENSE",
+      "url": "https://raw.githubusercontent.com/thinking-machines-lab/tinker-cookbook/4a3a2829190b45999021e423bc90b7523108edf4/LICENSE",
+      "bytes": 11352,
+      "sha256": "d13899cd96d284a6d9f130dfcf19fb3ee5f7e3be3ec627cefa5ff9d9d6023136",
+      "fetchedAt": "2026-11-06T06:41:51.281919+00:00",
+      "kind": "original license",
+      "reviewed": "Apache-2.0 notice accompanying pinned source file"
+    }
+  ]
+}

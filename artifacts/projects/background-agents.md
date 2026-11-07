@@ -192,3 +192,11 @@ The evidence for these boundaries is in the mechanism sections above. Additional
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] is a workflow-centered complement to hosted sessions: durable Work Orders span automations; PR activities serialize mutation and bound repair; terminal runner reports are idempotent by payload hash. Its copied node config and live-edge routing add a separate snapshot-granularity question. No runtime superiority comparison is implied. [[sources/superplanehq--superplane#work-order]] [[sources/superplanehq--superplane#pr-coordination]] [[sources/superplanehq--superplane#runner-completion]] [[sources/superplanehq--superplane#event-routing]]
+
+## Cloudflare security audit — 2026-11-06
+
+[[artifacts/skills/security-audit]] adds a research comparison for evidence lifecycle: worker scratch remains untrusted after execution ends, and retained evidence needs controlled parent promotion. This is a prescribed contract, not a tested integration with this hosting system. [[sources/cloudflare--security-audit-skill#promotion]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] extends the preserved-state/retirement distinction to authority: a stopped process may leave credentials or downstream grants usable, while resumed work must not replenish spent permission budgets. These are proposed criteria, not newly tested Open Inspect guarantees. [[sources/replit--agent-habitat-architecture#durability]] [[sources/replit--agent-habitat-architecture#containment]]

@@ -1,0 +1,122 @@
+{
+  "captured": "2026-11-06",
+  "captures": [
+    {
+      "file": "snapshot.md",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "d9cc12311caeee6dab1e123e49e1f78fd4429ab254c53b86c6f326d9d4b21319",
+      "bytes": 40523,
+      "fetchedAt": "2026-11-06T06:32:51.644Z",
+      "kind": "readable extraction",
+      "reviewed": "Full prose, tables and captions; interactive data separately extracted"
+    },
+    {
+      "file": "page.html",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "76b20dd0c33dd9ce5026cd22a906220dbe1a8f827575414311a9d9ee1238b846",
+      "bytes": 718779,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "original HTML",
+      "reviewed": "Metadata, table cells, embedded chart/replay data; page scripts not executed"
+    },
+    {
+      "file": "tables.json",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "030d4c67248762355e43d01a4a702f879f6df1e07e0a221fdf92087a0302c2d3",
+      "bytes": 33641,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "derived table-cell extraction",
+      "reviewed": "All 12 tables retained; headers and selected cited results checked"
+    },
+    {
+      "file": "forecast-replay.json",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "a1eb75dfd9b4bdb9f8e4b62f04c3dd41b9e5606169897b6b85c8c9139a4d40b7",
+      "bytes": 60787,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "embedded application/json extraction",
+      "reviewed": "Run log, evaluations, spend, schedule and submission; sampled forecast tiles not independently reproduced"
+    },
+    {
+      "file": "figures/figure-11.svg",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "4a71d437ad6409f9f0e6392cf0a3a19c43cf1da661b0a4d15645340403f156f5",
+      "bytes": 57980,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "exact inline SVG fragment",
+      "reviewed": "Axes/captions inspected; standalone rendering incomplete without page CSS; no pixel-derived numeric claims"
+    },
+    {
+      "file": "figures/figure-20.svg",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "36e82bb7321df17ffed22d3b4cea2b9926311e85748d7e36a2362a9165f6e7bd",
+      "bytes": 7192,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "exact inline SVG fragment",
+      "reviewed": "Axes/captions inspected; standalone rendering incomplete without page CSS; no pixel-derived numeric claims"
+    },
+    {
+      "file": "figures/figure-34.svg",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "79a2dcad3e12382d6bd338aaade1958c406e3b094ca37de26af49d02245e6d90",
+      "bytes": 21668,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "exact inline SVG fragment",
+      "reviewed": "Axes/captions inspected; standalone rendering incomplete without page CSS; no pixel-derived numeric claims"
+    },
+    {
+      "file": "figures/figure-35.svg",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "f60167020dbf529d4b4bdd629adcb584290464f95986c1ccb12bfc9cc6936afd",
+      "bytes": 21680,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "exact inline SVG fragment",
+      "reviewed": "Axes/captions inspected; standalone rendering incomplete without page CSS; no pixel-derived numeric claims"
+    },
+    {
+      "file": "figures/figure-40.svg",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "4ae4175705b18f80a7c8c1660b935138bed8a102872af620be0329ef0546d6a3",
+      "bytes": 12941,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "exact inline SVG fragment",
+      "reviewed": "Axes/captions inspected; standalone rendering incomplete without page CSS; no pixel-derived numeric claims"
+    },
+    {
+      "file": "figures/figure-41.svg",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "38732c0a728146c0490dc6e9e99570129d06b7215e6fad8f143b3df324467aeb",
+      "bytes": 2640,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "exact inline SVG fragment",
+      "reviewed": "Axes/captions inspected; standalone rendering incomplete without page CSS; no pixel-derived numeric claims"
+    },
+    {
+      "file": "figures/figure-42.svg",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "sha256": "6ded0951b32ef89c787f2b91af87dd91c46f0d33ec342e22944fc6805749d8d4",
+      "bytes": 2649,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "exact inline SVG fragment",
+      "reviewed": "Axes/captions inspected; standalone rendering incomplete without page CSS; no pixel-derived numeric claims"
+    },
+    {
+      "file": "images/forecast-poster.png",
+      "url": "https://thinkingmachines.ai/_astro/tinkerbench-replay-poster.DZeJZVkT.png",
+      "sha256": "bcdcb86c8e70701392695371cccf6c2a97bebf055edd639c5fc4a49002be6445",
+      "bytes": 145295,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected"
+    },
+    {
+      "file": "images/wine.webp",
+      "url": "https://thinkingmachines.ai/_astro/wine-tasting-three-glasses.aWBtNGl4_1ivKwy.webp",
+      "sha256": "d7ebc69afedd1fdcaa31cb6984075b72b4c44def196030a28c849bd275c82999",
+      "bytes": 88900,
+      "fetchedAt": "2026-11-06T06:37:13.585002+00:00",
+      "kind": "original image",
+      "reviewed": "Visually inspected"
+    }
+  ]
+}

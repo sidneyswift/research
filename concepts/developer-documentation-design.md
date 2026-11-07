@@ -481,3 +481,7 @@ The exhaustive vendor-specific ledger lives on [[artifacts/projects/mintlify]], 
 [[concepts/agent-documentation-interfaces]] specializes the delivery/interaction boundary: source retrieval versus synthesized answers versus API execution; version fallback and retrieval-triggered indexing; browser-local tool lifecycle; novel/internal API task evaluation. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--webmcp-20261105#root]] [[sources/frontier-docs--empirical-20261105#root]]
 
 The owned findings preserve source-specific controls and uncertainty; no universal context budget or future training-data guarantee is inferred. See [[artifacts/projects/dokimi]] for the documented evaluator, and [[artifacts/projects/webmcp]] for the dated browser contract.
+
+## Vercel Schedules — 2026-11-06
+
+[[artifacts/projects/vercel-schedules]] preserves source drift between a launch example, product configuration, skill guidance and framework envelopes rather than blending them into a fictional contract. The capture records 8/16/64 KB scope differences and a source-path/build-output-path conflict. [[sources/vercel--schedules-docs#documentation-conflicts]]

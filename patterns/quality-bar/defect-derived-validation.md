@@ -93,3 +93,7 @@ Pilot application: [[projects/conversation-learning/pilots/commercial-redline-00
 ## Documentation application — 2026-11-05
 
 [[concepts/developer-documentation-design]] applies this research to documentation authoring, distribution or review. See [[projects/writing-amazing-developer-docs/README]] for the evidence map. This cross-reference adds no inspected runtime example or benchmark result.
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] reports adding synchronous monitoring and hardening environments after asynchronous review found a network-block workaround. Related incident-derived control, not evidence of the full maintainer-fix mining/backvalidation mechanism; pattern status remains unchanged. [[sources/thinking-machines--inkling-2-small#monitors-incident]]

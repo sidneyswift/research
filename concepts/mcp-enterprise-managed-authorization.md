@@ -167,3 +167,7 @@ The official overview documents TypeScript client-secret and private-key provide
 - Which secret-auth method resolves the pinned client-credentials spec's `client_secret_basic` advertisement versus body-secret example mismatch?
 - Which installed SDK versions actually implement the documented provider APIs and refresh behavior? No SDK execution was performed.
 - Which domain actions require human confirmation beyond issuance policy, and where is the resulting audit event recorded? That is outside this extension's documented visibility.
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] separates authenticated identity and credential custody from authorized effects. Trusted MCP tools can still compose a public-input → private-read → public-write leak; resource, operation, destination and trigger controls remain distinct. [[sources/lhchavez--managed-agent-environments#toxic-flow]] [[sources/lhchavez--managed-agent-environments#credential-authority]]

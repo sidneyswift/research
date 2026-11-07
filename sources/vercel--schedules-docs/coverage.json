@@ -1,0 +1,112 @@
+{
+  "requested_url": "https://vercel.com/blog/introducing-vercel-schedules",
+  "blog_links": [
+    {
+      "url": "https://eve.dev/docs/experimental/dynamic-schedules",
+      "status": "captured and reviewed"
+    },
+    {
+      "url": "https://github.com/earendil-works/pi/blob/main/packages/agent/README.md",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://github.com/vercel-labs/fx/blob/main/sdk/README.md",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://github.com/vercel/vercel-plugin/blob/main/skills/vercel-schedules/SKILL.md",
+      "status": "captured/read through equivalent raw.githubusercontent URL; no installation"
+    },
+    {
+      "url": "https://nitro.build/deploy/providers/vercel#vercel-schedules",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/blog/sitemap.md",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/changelog/sitemap.md",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+      "status": "captured and reviewed"
+    },
+    {
+      "url": "https://vercel.com/docs/build-output-api/configuration",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/docs/cli",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/docs/cli/dev",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/docs/cli/schedules",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/docs/cron-jobs",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/docs/deployments/environments",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/docs/queues",
+      "status": "captured and reviewed"
+    },
+    {
+      "url": "https://vercel.com/docs/queues/quickstart",
+      "status": "not separately inspected; referenced context only"
+    },
+    {
+      "url": "https://vercel.com/docs/schedules",
+      "status": "captured and reviewed"
+    },
+    {
+      "url": "https://vercel.com/docs/schedules/http-api",
+      "status": "captured and reviewed"
+    },
+    {
+      "url": "https://vercel.com/docs/schedules/sdk",
+      "status": "captured and reviewed"
+    }
+  ],
+  "failed_routes": [
+    {
+      "url": "https://vercel.com/docs/schedules/limits-and-pricing",
+      "result": "No usable document; resolved scope to /limits"
+    },
+    {
+      "url": "https://vercel.com/docs/queues/delivery-guarantees",
+      "result": "No usable document; resolved scope to /concepts"
+    }
+  ],
+  "corpus_index": "llms.md read; full documentation corpus requested but read timed out. Scoped named captures used; not a site-wide corpus read.",
+  "read_scope": {
+    "schedules.md": "Full captured text",
+    "sdk.md": "Full captured text",
+    "http-api.md": "Full captured text",
+    "queues.md": "Full captured text",
+    "eve-dynamic.md": "Full captured text",
+    "skill.md": "Full captured text",
+    "llms.md": "Full captured text",
+    "configuration.md": "Full captured text",
+    "handle-runs.md": "Full captured text",
+    "manage.md": "Full captured text",
+    "local-development.md": "Full captured text",
+    "concepts.md": "Full captured text",
+    "limits.md": "Full captured text",
+    "multi-tenant.md": "Full captured text",
+    "migration.md": "Full captured text",
+    "queue-concepts.md": "Selected sections: durability, at-least-once, visibility, lifecycle, residency/failover, deployments, delayed delivery, idempotency, retries, ordering",
+    "beta.md": "Full captured text"
+  },
+  "limits": "General CLI, Build Output, Nitro, libfx/Pi and unrelated navigation destinations not independently studied. Queue concepts read in selected contract sections; not every queue API or SDK. No backend source or live scheduler exercised."
+}

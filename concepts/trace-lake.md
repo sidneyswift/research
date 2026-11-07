@@ -112,3 +112,15 @@ Portable design ledger; ★ marks the highest-leverage ideas. Concrete adaptatio
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] supplies execution records and a staged log lifecycle, useful upstream material for a trace lake but not equivalent to semantic querying or an evaluation loop. The runner protocol acknowledges retained chunks; archive state, possible truncation and task result remain separate evidence. [[sources/superplanehq--superplane#log-lifecycle]] [[sources/superplanehq--superplane#runner-protocol]]
+
+## Agent Habitat comparison — 2026-11-06
+
+[[concepts/agent-habitat-architecture]] distinguishes model/tool investigation traces from off-host, tamper-evident enforcement records. A record of a warning is not prevention if the action ran first; the Manus case supplies that attributed counterexample. [[sources/replit--agent-habitat-architecture#audit]] [[sources/lhchavez--managed-agent-environments#cloud-counterexample]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] supplies two distinct uses for traces: asynchronous monitoring feeds incident remediation, while token-to-sequence provenance makes sampled data eligible for a particular training loss. Storing a trace does not preserve same-session sequence identity, stability records or reuse deadlines automatically. [[sources/thinking-machines--inkling-2-small#monitors-incident]] [[sources/thinking-machines--inkling-2-support#stable-reinforce]] [[sources/thinking-machines--inkling-2-support#datum-provenance]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] gives retained execution evidence another use: falsifying and correcting learned notes. Keep observation and agent narration separate; the best Stainless configuration combines compiled wiki with raw search. Neither trace retention nor a polished summary establishes truth. [[sources/anthropic--components-of-agent-memory#correction]] [[sources/anthropic--components-of-agent-memory#wiki-search]]

@@ -182,3 +182,7 @@ agent-maintained systems" is a real field-level idea, not one builder's habit.
 ## Trace Lake comparison — 2026-11-04
 
 [[concepts/trace-lake]] supplies a production-evidence version of the compounding loop: retained executions → investigated cohorts → reproducible examples → durable, inexpensive evals. The useful accumulated asset is a runnable check tied to evidence, not merely more logs or retrospective prose. This is our comparison with Braintrust's article/docs, not measured proof of compounding gains. [[sources/ankrgyl--trace-lake#trace-to-eval]]
+
+## Memory consolidation — 2026-11-07
+
+[[concepts/agent-memory-consolidation]] connects failure→tested rule→future reuse to offline consolidation. Its wiki experiment also shows why more pages are not automatically compounding value: evaluate retrieval workload, source fidelity and maintenance cost. [[sources/anthropic--components-of-agent-memory#learning-loop]] [[sources/anthropic--components-of-agent-memory#expansion]] [[sources/anthropic--components-of-agent-memory#task-fit]]

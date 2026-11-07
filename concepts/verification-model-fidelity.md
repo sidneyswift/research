@@ -117,3 +117,7 @@ These are source-grounded limitations and our counterarguments, not a documented
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] separates source-inspected gates from unmeasured agent review. The exact-head merge check and repair-budget tests constrain state transitions, whereas risk/security scores remain model judgments. A local transaction around a remote merge is not an atomic cross-system operation. No runtime or fault-injection benchmark was run in this study. [[sources/superplanehq--superplane#merge]] [[sources/superplanehq--superplane#merge-tests]] [[sources/superplanehq--superplane#confidence]]
+
+## Inkling 2 Small — 2026-11-06
+
+[[artifacts/projects/inkling-2-small]] records different input preprocessing, tool access, harnesses and trajectory budgets across reported evaluations. Correctness tolerances and a not-B300-tuned kernel baseline define a narrower claim than whole-training speed. These are evaluation-fidelity examples, not formal verification of the new model. [[sources/thinking-machines--inkling-2-small#kernel-baseline]] [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-support#harness-results]]

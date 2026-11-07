@@ -346,3 +346,38 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 ### [2026-11-05] Classify the interface and isolate the treatment
 
 **Applied** 2026-11-05 to [[_schemas/documentation-case-study]]. [[patterns/behavioral/context-is-not-authority]] maps to documentation servers that can execute APIs or trigger indexing; [[patterns/behavioral/evidence-gated-completion]] maps to forced versus discovered context, grounded versus ungrounded scoring and PASS with unmeasured checks. Added two matrix rows for interface role/effects/version/caller and controlled treatment/accounting. Grounding: [[sources/frontier-docs--platforms-20261105#readme-mcp]], [[sources/frontier-docs--platforms-20261105#context7-search-contract]], [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]. Expected benefit: future investigations will not mistake a transport label or overall score for an authority/completion guarantee. Existing receipt/link scripts suffice; no speculative new linter or installed skill.
+
+## [2026-11-06] Pass 26 — verification belongs to the claim actually checked
+
+- Applied [[patterns/behavioral/evidence-gated-completion]] and the narrower claim-revision analogue of [[patterns/quality-bar/revision-bound-review]] to `_schemas/skill.md`: distinguish unchecked candidates from reviewed unresolved claims; separate structural validators from semantic or runtime evidence; identify edits that invalidate verification. [[sources/cloudflare--security-audit-skill#verdict-contract]] [[sources/cloudflare--security-audit-skill#material-reverification]] [[sources/cloudflare--security-audit-skill#findings-code]] [[sources/cloudflare--security-audit-skill#coverage-code]]
+- Added a security-review evidence/coverage builder route and extended existing concepts instead of inventing another verification concept. Preserved the earlier verification-first argument: concrete falsification is not abstract adversarial nitpicking.
+- Status: **applied**. No installed skill, permission, production configuration or full audit changed. The only upstream execution was the dependency-free validator fixture suites (65 passing tests).
+- Promotion trigger for additional automation: actually adopt a scoped audit with a supplied sandbox and evidence-promoter implementation; then test cross-file completeness and worker identity with fixtures. Research alone does not justify building a new security harness.
+
+## [2026-11-06] Pass 27 — restore constraints, revoke effects
+
+- **Learning:** a resumed task may restore its work but accidentally renew authority; stopping/revoking the initiator may leave downstream grants. [[sources/replit--agent-habitat-architecture#durability]] [[sources/lhchavez--managed-agent-environments#containment]]
+- **Applied:** added a scoped security-state/residual-delegation question to `_schemas/project.md`, grounded in [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/evidence-gated-completion]]. Added a builder route to [[concepts/agent-habitat-architecture]].
+- **Expected benefit:** future source studies name the actual restore/revocation boundary instead of upgrading credential custody or process termination into stronger guarantees. No installed skill, runtime policy or approval flow changed.
+- **Status:** applied 2026-11-06; schema criteria only, with proposal status retained.
+
+## [2026-11-06] Pass 28 — route time-shifted work to its real contracts
+
+- **Grounding:** [[artifacts/projects/vercel-schedules]], [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/evidence-gated-completion]] separate permission revalidation and accepted/dispatched/completed work. [[sources/vercel--schedules-docs#eve-identity]] [[sources/vercel--schedules-docs#eve-occurrence]]
+- **Applied:** added a builder routing row for agent/user-created future work, and preserved documentation conflicts plus coverage/read scope in the source map. Existing project/API schemas already require lifecycle, retry and frozen/live contract inspection; no duplicate schema section added.
+- **Expected benefit:** future builders find target-specific retry, cancellation and current-permission evidence before treating “scheduled” as “done.” No installed skill or scheduler configuration changed.
+- **Status:** applied 2026-11-06.
+
+## [2026-11-06] Pass 29 — route model-adaptation decisions to their evidence
+
+- **Grounding:** [[artifacts/projects/inkling-2-small]], [[patterns/behavioral/evidence-gated-completion]] and [[patterns/quality-bar/revision-bound-review]] distinguish held-out results, changed budgets and actual release state. [[sources/thinking-machines--inkling-2-small#forecasting]] [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-small#availability]]
+- **Applied:** a builder route for choosing/customizing models; source maps preserve benchmark conditions, normalization, uneven seed counts, API-versus-model limits and capture omissions. Raw HTML/table/replay data retained where readable extraction loses interactive evidence.
+- **Expected benefit:** prevent a good leaderboard score or future license promise from substituting for task-specific adaptation and deployment evidence. Existing evidence/guarantee schemas already cover these questions; no redundant schema section, installed skill or agent configuration added.
+- **Status:** applied 2026-11-06.
+
+## [2026-11-07] Pass 30 — route memory design through evidence and retrieval baselines
+
+- **Grounding:** [[concepts/agent-memory-consolidation]], [[patterns/quality-bar/complexity-ratchet]] and [[patterns/behavioral/evidence-gated-completion]]; wiki growth can outstrip source size, and reported wiki-only gains can still trail search. [[sources/anthropic--components-of-agent-memory#expansion]] [[sources/anthropic--components-of-agent-memory#wiki-search]] [[sources/anthropic--components-of-agent-memory#compute-budget]]
+- **Applied:** a builder route to memory layers, search/wiki/hybrid comparisons, actual build/maintenance cost, and adoption/consistency/retention contracts. The concept specifies a promotion trigger: repeated cross-document work plus held-out evidence that consolidation improves the existing retrieval workflow.
+- **Expected benefit:** prevent token-budget charts, graph density or a stored summary from substituting for demonstrated task benefit. Existing citation/link checks remain structural, not a semantic quality metric.
+- **Status:** applied 2026-11-07. No automatic dreaming job, installed skill edit or speculative new pattern; existing schemas cover evidence boundaries.
