@@ -107,3 +107,7 @@ A syntactically confined artifact path is not safe evidence promotion. The sourc
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] extends the task-artifact/standing-guidance distinction into four learned-memory layers. Adoption must be explicit: built-in Dreams yields a candidate store, while the custom nightly cookbook mutates the consumer store in place. A saved interpretation can be wrong or unreviewed. [[sources/anthropic--components-of-agent-memory#layers]] [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--agent-memory-support#dynamic-nightly]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Typed context identity, ordered references, explicit omission metadata and conservative pending/injected/inline handoff delivery make context inspectable without claiming identical provider state. [[sources/pingdotgg--t3code#typed-context]] [[sources/pingdotgg--t3code#context-delivery-uncertainty]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

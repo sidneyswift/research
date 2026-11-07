@@ -143,3 +143,7 @@ These are applications/analogues; documentation inspection adds no independently
 - What is the measurable cost of wrong-version evidence versus no evidence?
 - Which task failures come from missing APIs, inaccurate docs, retrieval misses, planning or permission boundaries?
 - How should explicit refresh/index jobs coexist with query-only calls when background work has material cost?
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Model-facing context/tool descriptions come from real code paths; UTF-8 byte budgets and deterministic grader tests remain separate from paid behavioral evals. Shared tool registration can require authority declarations. [[sources/pingdotgg--t3code#eng-context-budget]] [[sources/pingdotgg--t3code#auth-mcp-tool-access]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

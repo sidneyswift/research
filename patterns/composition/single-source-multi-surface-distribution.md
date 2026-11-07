@@ -137,3 +137,7 @@ Internal design application: [[projects/conversation-learning/README]] proposes 
 ## Frontier documentation application — 2026-11-05
 
 [[concepts/agent-documentation-interfaces]] and [[artifacts/projects/webmcp]] apply this pattern to delivery transformations, page-local tool authority, versioned evidence and measured task outcomes. [[artifacts/projects/dokimi]] supplies documented evaluation controls. This adds a research application, not a newly runtime-verified example or pattern promotion. [[sources/frontier-docs--platforms-20261105#root]] [[sources/frontier-docs--tool-design-evaluation-20261105#dokimi-methodology]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#service-reach]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

@@ -236,3 +236,7 @@ Portable research/adoption criteria below—not a blanket instruction to install
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] makes persistent context poisoning concrete. Read-only stores can protect remote content without protecting the reader from bad instructions; self-hosted bash can even alter a local read-only-store copy without upload. Separate data authority, tool capability and persistence controls. [[sources/anthropic--agent-memory-support#dynamic-trust]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Transport, project/worktree organization and app-level mode checks do not supply OS containment. Narrow external MCP audiences and live command-lock ceiling checks are concrete implementation comparisons, not Habitat compliance. [[sources/pingdotgg--t3code#auth-mcp-audience]] [[sources/pingdotgg--t3code#auth-authority-race]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

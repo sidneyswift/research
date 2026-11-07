@@ -136,3 +136,7 @@ No shipped validator reads run metadata, both ledgers and report prose together,
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] exposes several non-terminal success labels: invoke accepted, one-time resource still active, recorded consumer success and eve occurrence.dispatched. Each observes a different stage; none alone certifies the user’s intended result. [[sources/vercel--schedules-docs#lifecycle]] [[sources/vercel--schedules-docs#observability]] [[sources/vercel--schedules-docs#eve-occurrence]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Accepted receipt, ended provider turn, checkpoint finalization and display refresh differ. A failed Stop can remain unresponsive rather than claim successful cancellation. [[sources/pingdotgg--t3code#rt-finalization]] [[sources/pingdotgg--t3code#rt-bounded-stop]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

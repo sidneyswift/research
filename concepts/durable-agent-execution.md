@@ -139,3 +139,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] adds distinct recovery contracts: store creation versus successful dreaming, canceled versus residual in-flight usage, local write acknowledgment versus committed sync, and nightly retry versus complete input coverage. [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--agent-memory-support#dream-cancellation]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]] [[sources/anthropic--agent-memory-support#dynamic-nightly]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Separate atomic accepted intent, process-bound versus replay-safe effects, retained receipt versus pruned replay history, and new restart-continuation intent. Provider/file rollback remains sequential. [[sources/pingdotgg--t3code#rt-replay-classification]] [[sources/pingdotgg--t3code#rt-dedup-lifetime]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

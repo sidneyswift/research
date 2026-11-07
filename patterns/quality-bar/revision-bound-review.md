@@ -122,3 +122,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## Inkling 2 Small — 2026-11-06
 
 [[artifacts/projects/inkling-2-small]] preserves benchmark version, harness, tool mode, effort and trajectory budget alongside the result, plus the exact cookbook source revision. This is an application of revision-scoped research evidence, not a newly verified runtime approval mechanism. [[sources/thinking-machines--inkling-2-small#benchmark-contract]] [[sources/thinking-machines--inkling-2-support#async-source]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#auth-authority-race]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

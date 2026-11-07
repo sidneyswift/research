@@ -1,0 +1,1172 @@
+{
+  "root": [
+    {
+      "path": "README.md",
+      "start": 1,
+      "end": 48,
+      "note": "Project identity, provider prerequisites and distribution; not installation verified."
+    },
+    {
+      "path": "LICENSE",
+      "start": 1,
+      "end": 21,
+      "note": "MIT license."
+    },
+    {
+      "path": "apps/server/package.json",
+      "start": 1,
+      "end": 16,
+      "note": "Checked-in package identity/version0.1.7, not release verification."
+    }
+  ],
+  "service-reach": [
+    {
+      "path": "docs/internals/effect-services.md",
+      "start": 1,
+      "end": 34,
+      "note": "Published service ownership, transport adapters and reach across clients/MCP/jobs."
+    },
+    {
+      "path": "apps/server/src/ws.ts",
+      "start": 2892,
+      "end": 2918,
+      "note": "Named project handler delegates to managed service; clone start/cancel/retry/stream entrypoints."
+    },
+    {
+      "path": "apps/server/src/project/ManagedProjectFolders.ts",
+      "start": 422,
+      "end": 459,
+      "note": "Concrete composite service, ownership-aware compensation, partial commitError result."
+    }
+  ],
+  "service-partial-success": [
+    {
+      "path": "apps/server/src/project/ManagedProjectFolders.ts",
+      "start": 378,
+      "end": 459,
+      "note": "Repository scaffold, Git commit failure retained as warning, owner check before cleanup."
+    },
+    {
+      "path": "apps/server/src/ws.ts",
+      "start": 2855,
+      "end": 2890,
+      "note": "Clone transport still injects callbacks/enrichment; prescribed thin-handler rule is not universal implementation."
+    }
+  ],
+  "service-errors": [
+    {
+      "path": "docs/internals/effect-services.md",
+      "start": 124,
+      "end": 154,
+      "note": "Structured safe error attributes, bounded diagnostics exception and transport translation; prescribed practice."
+    },
+    {
+      "path": "apps/server/src/project/ManagedProjectFolders.ts",
+      "start": 28,
+      "end": 85,
+      "note": "Concrete tagged errors keep fixed public messages and causes."
+    }
+  ],
+  "client-consistency": [
+    {
+      "path": "docs/internals/connection-runtime.md",
+      "start": 1,
+      "end": 76,
+      "note": "Shared environment connection owner; retry vs renewal vs data freshness."
+    },
+    {
+      "path": "docs/internals/connection-runtime.md",
+      "start": 78,
+      "end": 132,
+      "note": "Partial shell membership, generations, cache/cursor lifetime, no automatic mutation replay."
+    },
+    {
+      "path": "packages/client-runtime/src/state/threads.ts",
+      "start": 278,
+      "end": 305,
+      "note": "Applied state and sequence remembered with cache owner check."
+    },
+    {
+      "path": "packages/client-runtime/src/state/threads.ts",
+      "start": 421,
+      "end": 449,
+      "note": "Atomic projection/history update to avoid lost concurrent paging state."
+    }
+  ],
+  "typed-context": [
+    {
+      "path": "packages/contracts/src/composerContext.ts",
+      "start": 15,
+      "end": 67,
+      "note": "Context kinds, identity and bounds."
+    },
+    {
+      "path": "packages/contracts/src/composerContext.ts",
+      "start": 230,
+      "end": 265,
+      "note": "Unknown-kind bounded JSON, distinct known union."
+    },
+    {
+      "path": "packages/contracts/src/composerContext.ts",
+      "start": 283,
+      "end": 300,
+      "note": "Record count/serialized bounds and forward-compatible decoding."
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.ts",
+      "start": 225,
+      "end": 258,
+      "note": "Escaping envelope structure, not semantic injection prevention."
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.ts",
+      "start": 361,
+      "end": 406,
+      "note": "Repeated refs deduped, duplicate identity unavailable, record kind authoritative."
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.test.ts",
+      "start": 262,
+      "end": 365,
+      "note": "Tests inspected for escaping, ID semantics, lazy thread references and duplicate ambiguity; not executed."
+    }
+  ],
+  "context-documentation-drift": [
+    {
+      "path": "docs/internals/composer-context-references.md",
+      "start": 58,
+      "end": 71,
+      "note": "Prose says mention/skill marker without entry."
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.test.ts",
+      "start": 280,
+      "end": 307,
+      "note": "Current tests expect skill and mention envelope payload, contrary to older prose."
+    }
+  ],
+  "update-activation": [
+    {
+      "path": "docs/internals/server-updates.md",
+      "start": 1,
+      "end": 64,
+      "note": "Launcher authority, prepared/committed/ready, database/file rollback boundary, client correlation."
+    },
+    {
+      "path": "apps/server/src/serviceLauncher.ts",
+      "start": 691,
+      "end": 741,
+      "note": "Persist pending before acknowledgement, validate trial identity/version then commit state before child release."
+    },
+    {
+      "path": "apps/server/src/serverActivation.ts",
+      "start": 1,
+      "end": 29,
+      "note": "Park fibers until activation when gate supplied; ordinary launch no gate."
+    },
+    {
+      "path": "apps/server/src/serviceLauncher.test.ts",
+      "start": 259,
+      "end": 309,
+      "note": "Inspected subprocess trial flow assertions, not executed."
+    }
+  ],
+  "architecture-documentation-drift": [
+    {
+      "path": "docs/internals/overview.md",
+      "start": 45,
+      "end": 81,
+      "note": "Current overview describes implemented transaction/outbox, retained receipts and pruning limits."
+    },
+    {
+      "path": "docs/orchestration-v2/README.md",
+      "start": 1,
+      "end": 12,
+      "note": "Target architecture framing."
+    },
+    {
+      "path": "docs/orchestration-v2/README.md",
+      "start": 121,
+      "end": 166,
+      "note": "Durable outbox still described as conditional follow-up."
+    }
+  ],
+  "rt-atomic-intent": [
+    {
+      "path": "apps/server/src/orchestration-v2/EventSink.ts",
+      "start": 665,
+      "end": 740,
+      "note": "Persist accepted intent atomically with the work it entails"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EventSink.ts",
+      "start": 285,
+      "end": 311,
+      "note": "Persist accepted intent atomically with the work it entails"
+    }
+  ],
+  "rt-publication-order": [
+    {
+      "path": "apps/server/src/orchestration-v2/EventSink.ts",
+      "start": 267,
+      "end": 311,
+      "note": "Serialize publication as well as database mutation"
+    }
+  ],
+  "rt-receipt-identity": [
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.ts",
+      "start": 13767,
+      "end": 13790,
+      "note": "Bind idempotency receipts to their intended aggregate"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.ts",
+      "start": 13998,
+      "end": 14013,
+      "note": "Bind idempotency receipts to their intended aggregate"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.receipt-race.test.ts",
+      "start": 47,
+      "end": 111,
+      "note": "Bind idempotency receipts to their intended aggregate"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.receipt-race.test.ts",
+      "start": 150,
+      "end": 165,
+      "note": "Bind idempotency receipts to their intended aggregate"
+    }
+  ],
+  "rt-lock-order": [
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.ts",
+      "start": 14044,
+      "end": 14090,
+      "note": "Keep lock ordering explicit across parent/child mutations"
+    }
+  ],
+  "rt-delivery-liveness": [
+    {
+      "path": "apps/server/src/orchestration-v2/EventSink.ts",
+      "start": 245,
+      "end": 282,
+      "note": "Separate durable state from transient delivery channels"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 885,
+      "end": 940,
+      "note": "Separate durable state from transient delivery channels"
+    }
+  ],
+  "rt-replay-classification": [
+    {
+      "path": "apps/server/src/orchestration-v2/EffectOutbox.ts",
+      "start": 125,
+      "end": 156,
+      "note": "Classify effects by replay safety after process loss"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectOutbox.ts",
+      "start": 487,
+      "end": 518,
+      "note": "Classify effects by replay safety after process loss"
+    }
+  ],
+  "rt-ambiguous-settlement": [
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 659,
+      "end": 738,
+      "note": "Separate pre-execution failure from post-execution settlement failure"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 794,
+      "end": 806,
+      "note": "Separate pre-execution failure from post-execution settlement failure"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.test.ts",
+      "start": 325,
+      "end": 394,
+      "note": "Separate pre-execution failure from post-execution settlement failure"
+    }
+  ],
+  "rt-cancellation-race": [
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 758,
+      "end": 806,
+      "note": "Close the cancellation registration/read race"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.test.ts",
+      "start": 396,
+      "end": 456,
+      "note": "Close the cancellation registration/read race"
+    }
+  ],
+  "rt-retry-order": [
+    {
+      "path": "apps/server/src/orchestration-v2/EffectOutbox.ts",
+      "start": 313,
+      "end": 352,
+      "note": "Use retry timing as an ordering constraint, not only a delay"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectOutbox.ts",
+      "start": 520,
+      "end": 548,
+      "note": "Use retry timing as an ordering constraint, not only a delay"
+    }
+  ],
+  "rt-bounded-stop": [
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 581,
+      "end": 599,
+      "note": "Bound hanging control operations to preserve queue liveness"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 648,
+      "end": 649,
+      "note": "Bound hanging control operations to preserve queue liveness"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 809,
+      "end": 833,
+      "note": "Bound hanging control operations to preserve queue liveness"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.ts",
+      "start": 885,
+      "end": 901,
+      "note": "Bound hanging control operations to preserve queue liveness"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EffectWorker.test.ts",
+      "start": 172,
+      "end": 216,
+      "note": "Bound hanging control operations to preserve queue liveness"
+    }
+  ],
+  "rt-lost-callbacks": [
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderRuntimeRecoveryService.ts",
+      "start": 241,
+      "end": 280,
+      "note": "Reconcile lost callbacks differently from durable questions"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderRuntimeRecoveryService.ts",
+      "start": 497,
+      "end": 525,
+      "note": "Reconcile lost callbacks differently from durable questions"
+    }
+  ],
+  "rt-restart-continuation": [
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderRuntimeRecoveryService.ts",
+      "start": 215,
+      "end": 239,
+      "note": "Record restart continuation as new durable work"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderRuntimeRecoveryService.ts",
+      "start": 805,
+      "end": 870,
+      "note": "Record restart continuation as new durable work"
+    }
+  ],
+  "rt-finalization": [
+    {
+      "path": "apps/server/src/orchestration-v2/RunFinalizationService.ts",
+      "start": 58,
+      "end": 87,
+      "note": "Separate provider completion from finalization and display refresh"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/RunFinalizationQueue.test.ts",
+      "start": 25,
+      "end": 38,
+      "note": "Separate provider completion from finalization and display refresh"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/RunFinalizationQueue.test.ts",
+      "start": 100,
+      "end": 131,
+      "note": "Separate provider completion from finalization and display refresh"
+    }
+  ],
+  "rt-stale-enrichment": [
+    {
+      "path": "apps/server/src/orchestration-v2/RunFinalizationService.ts",
+      "start": 103,
+      "end": 127,
+      "note": "Guard delayed enrichment against newer work"
+    }
+  ],
+  "rt-pruned-history": [
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.ts",
+      "start": 41,
+      "end": 45,
+      "note": "Define what remains authoritative after history pruning"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.ts",
+      "start": 121,
+      "end": 145,
+      "note": "Define what remains authoritative after history pruning"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.ts",
+      "start": 255,
+      "end": 299,
+      "note": "Define what remains authoritative after history pruning"
+    },
+    {
+      "path": "docs/internals/overview.md",
+      "start": 65,
+      "end": 81,
+      "note": "Explicit inability to rebuild projections from retained event history."
+    }
+  ],
+  "rt-compaction-references": [
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.ts",
+      "start": 73,
+      "end": 116,
+      "note": "Preserve reference integrity during compaction, including concurrent writers"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.ts",
+      "start": 146,
+      "end": 183,
+      "note": "Preserve reference integrity during compaction, including concurrent writers"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.test.ts",
+      "start": 248,
+      "end": 301,
+      "note": "Preserve reference integrity during compaction, including concurrent writers"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.test.ts",
+      "start": 305,
+      "end": 335,
+      "note": "Preserve reference integrity during compaction, including concurrent writers"
+    }
+  ],
+  "rt-dedup-lifetime": [
+    {
+      "path": "apps/server/src/orchestration-v2/ProjectionMaintenance.ts",
+      "start": 222,
+      "end": 256,
+      "note": "Keep deduplication lifetime distinct from replay lifetime"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/EventSink.ts",
+      "start": 649,
+      "end": 662,
+      "note": "Keep deduplication lifetime distinct from replay lifetime"
+    }
+  ],
+  "rt-bounded-reconnect": [
+    {
+      "path": "apps/server/src/orchestration-v2/ThreadStream.ts",
+      "start": 18,
+      "end": 44,
+      "note": "Bound reconnect recovery by actual payload costs"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ThreadStream.ts",
+      "start": 52,
+      "end": 84,
+      "note": "Bound reconnect recovery by actual payload costs"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ThreadStream.ts",
+      "start": 99,
+      "end": 118,
+      "note": "Bound reconnect recovery by actual payload costs"
+    }
+  ],
+  "rt-rollback-boundary": [
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRollbackService.ts",
+      "start": 147,
+      "end": 173,
+      "note": "Treat rollback as coordinated provider and workspace state, with limits"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRollbackService.ts",
+      "start": 237,
+      "end": 292,
+      "note": "Treat rollback as coordinated provider and workspace state, with limits"
+    }
+  ],
+  "rt-context-handoff": [
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffService.ts",
+      "start": 348,
+      "end": 353,
+      "note": "Model context transfer as an inspectable, bounded artifact"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffService.ts",
+      "start": 495,
+      "end": 560,
+      "note": "Model context transfer as an inspectable, bounded artifact"
+    }
+  ],
+  "rt-provider-transition": [
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderSwitchService.ts",
+      "start": 73,
+      "end": 112,
+      "note": "Plan provider transitions from negotiated capabilities and identity"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ProviderSwitchService.ts",
+      "start": 113,
+      "end": 160,
+      "note": "Plan provider transitions from negotiated capabilities and identity"
+    }
+  ],
+  "auth-authority-model": [
+    {
+      "path": "docs/internals/environment-auth.md",
+      "start": 7,
+      "end": 28,
+      "note": "Effective authority and delegate narrowing; shell/full-agent authority can mint sessions."
+    },
+    {
+      "path": "apps/server/src/auth/http.ts",
+      "start": 443,
+      "end": 461,
+      "note": "Pairing delegation checks issuing session access:write and every delegated scope."
+    }
+  ],
+  "auth-rpc-authorization": [
+    {
+      "path": "apps/server/src/auth/RpcAuthorization.ts",
+      "start": 213,
+      "end": 299,
+      "note": "Unknown-method failure, decoded payload checks, scope middleware and device list side-effect flags."
+    },
+    {
+      "path": "apps/server/src/auth/RpcAuthorization.test.ts",
+      "start": 33,
+      "end": 91,
+      "note": "Exhaustive map, sensitive logs, shell side effects and query flag assertions; inspected only."
+    }
+  ],
+  "auth-mcp-audience": [
+    {
+      "path": "apps/server/src/auth/EnvironmentAuth.ts",
+      "start": 612,
+      "end": 619,
+      "note": "External MCP audience rejected outside /mcp."
+    },
+    {
+      "path": "apps/server/src/auth/EnvironmentAuth.ts",
+      "start": 1298,
+      "end": 1342,
+      "note": "External MCP bearer audience, read-only/runtime ceiling and issuance."
+    },
+    {
+      "path": "apps/server/src/mcp/McpHttpServer.ts",
+      "start": 197,
+      "end": 247,
+      "note": "Per-request MCP registry/client authentication and managed ceiling."
+    }
+  ],
+  "auth-mcp-tool-access": [
+    {
+      "path": "apps/server/src/mcp/McpToolAccess.ts",
+      "start": 37,
+      "end": 110,
+      "note": "Typed/module-token construction and read-only-client refusal."
+    },
+    {
+      "path": "apps/server/src/mcp/McpToolAccess.ts",
+      "start": 121,
+      "end": 207,
+      "note": "Read/write/acts-as-caller declarations and target checks."
+    },
+    {
+      "path": "apps/server/src/mcp/McpToolAccess.ts",
+      "start": 231,
+      "end": 258,
+      "note": "Starts-thread mode attenuation and linked origin stamping."
+    },
+    {
+      "path": "oxlint-plugin-t3code/rules/no-raw-mcp-registration.ts",
+      "start": 6,
+      "end": 28,
+      "note": "Raw MCP registration targets and central checked registration prescription."
+    },
+    {
+      "path": "oxlint-plugin-t3code/rules/no-raw-mcp-registration.ts",
+      "start": 99,
+      "end": 128,
+      "note": "Static direct-registration bypass detection."
+    }
+  ],
+  "auth-mcp-caller-limits": [
+    {
+      "path": "apps/server/src/mcp/McpInvocationContext.ts",
+      "start": 52,
+      "end": 121,
+      "note": "Runtime and interaction lattice; caller and administrator attenuation."
+    },
+    {
+      "path": "apps/server/src/mcp/threadAccess.ts",
+      "start": 86,
+      "end": 156,
+      "note": "Live caller lookup, provider ownership, background-subagent exception and full-access check."
+    },
+    {
+      "path": "apps/server/src/mcp/McpHttpServer.ts",
+      "start": 159,
+      "end": 185,
+      "note": "Malformed request limits rejected; transport metadata narrows approved ceiling."
+    }
+  ],
+  "auth-authority-race": [
+    {
+      "path": "apps/server/src/orchestration-v2/Orchestrator.ts",
+      "start": 13837,
+      "end": 13885,
+      "note": "Receipt replay then under-lock target-mode recheck; mutable mode refusals do not poison retry receipt."
+    },
+    {
+      "path": "apps/server/src/mcp/McpToolAccess.race.test.ts",
+      "start": 94,
+      "end": 131,
+      "note": "Injected user permission raise between facade check and command."
+    },
+    {
+      "path": "apps/server/src/mcp/McpToolAccess.race.test.ts",
+      "start": 171,
+      "end": 181,
+      "note": "Expected escalation refusal and unchanged title; test inspected, not executed."
+    }
+  ],
+  "auth-provider-permissions": [
+    {
+      "path": "apps/server/src/orchestration-v2/Adapters/CodexAdapterV2.ts",
+      "start": 717,
+      "end": 755,
+      "note": "Codex mode to approval/reviewer/sandbox mapping."
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts",
+      "start": 2800,
+      "end": 2892,
+      "note": "Claude mode/override conversion, unavailable bypass downgrade and callback setup."
+    },
+    {
+      "path": "docs/user/permission-modes.md",
+      "start": 3,
+      "end": 58,
+      "note": "Full-access default, configuration and provider-specific fallbacks."
+    }
+  ],
+  "auth-managed-policy": [
+    {
+      "path": "apps/server/src/policy/ManagedPolicy.ts",
+      "start": 78,
+      "end": 124,
+      "note": "Policy settings/provider validation; ceiling shapes launch configuration."
+    },
+    {
+      "path": "docs/user/managed-policy.md",
+      "start": 45,
+      "end": 59,
+      "note": "Policy source ownership/ambiguity and administrator-write deployment requirement."
+    },
+    {
+      "path": "docs/user/managed-policy.md",
+      "start": 94,
+      "end": 137,
+      "note": "Installed/loaded identity, restart requirement, fail-closed policy parsing, defaults versus locks."
+    }
+  ],
+  "auth-permission-compatibility": [
+    {
+      "path": "packages/contracts/src/auth.ts",
+      "start": 79,
+      "end": 115,
+      "note": "Legacy scopes plus exact permissions and client-only fallback."
+    },
+    {
+      "path": "docs/internals/environment-auth.md",
+      "start": 87,
+      "end": 99,
+      "note": "Grant narrowing and version-compatible permission responses."
+    }
+  ],
+  "auth-proof-and-tickets": [
+    {
+      "path": "apps/server/src/auth/EnvironmentAuth.ts",
+      "start": 792,
+      "end": 819,
+      "note": "DPoP binding cannot fall back to bearer or accept unbound proof."
+    },
+    {
+      "path": "apps/server/src/auth/EnvironmentAuth.ts",
+      "start": 1213,
+      "end": 1295,
+      "note": "RPC/media ticket exceptions, route audiences and fresh proof."
+    },
+    {
+      "path": "apps/server/src/auth/dpop.ts",
+      "start": 43,
+      "end": 95,
+      "note": "Request binding and replay rejection; selected verification path."
+    }
+  ],
+  "auth-session-invalidation": [
+    {
+      "path": "apps/server/src/auth/SessionStore.ts",
+      "start": 790,
+      "end": 847,
+      "note": "Current session signature/expiry/revocation lookup and stored scopes."
+    },
+    {
+      "path": "apps/server/src/auth/SessionStore.ts",
+      "start": 1042,
+      "end": 1095,
+      "note": "Subscribe-before-read invalidation, renewal chain and original-scope preservation."
+    },
+    {
+      "path": "apps/server/src/ws.ts",
+      "start": 3623,
+      "end": 3637,
+      "note": "Socket lifetime races revocation/expiry invalidation."
+    }
+  ],
+  "auth-mcp-oauth": [
+    {
+      "path": "apps/server/src/auth/McpOAuth.ts",
+      "start": 104,
+      "end": 127,
+      "note": "Allowed callback recipients and exact HTTPS/loopback-port matching."
+    },
+    {
+      "path": "apps/server/src/auth/McpOAuth.ts",
+      "start": 319,
+      "end": 355,
+      "note": "Stateless signed client registration and public PKCE."
+    },
+    {
+      "path": "apps/server/src/auth/McpOAuth.ts",
+      "start": 448,
+      "end": 475,
+      "note": "Pairing or browser approval with CSRF/grant checks."
+    },
+    {
+      "path": "apps/server/src/auth/McpOAuth.ts",
+      "start": 515,
+      "end": 555,
+      "note": "Authorization code consumption/bindings/PKCE and session minting."
+    }
+  ],
+  "auth-asset-authority": [
+    {
+      "path": "docs/internals/environment-auth.md",
+      "start": 127,
+      "end": 144,
+      "note": "Filesystem scope is environment-wide; asset capabilities survive minting-session revocation."
+    },
+    {
+      "path": "apps/server/src/assets/AssetAccess.ts",
+      "start": 374,
+      "end": 429,
+      "note": "Canonical-file/device/inode identity bound into asset capability."
+    },
+    {
+      "path": "apps/server/src/assets/AssetAccess.ts",
+      "start": 878,
+      "end": 893,
+      "note": "Asset signature and expiry checks."
+    },
+    {
+      "path": "apps/server/src/assets/AssetAccess.ts",
+      "start": 974,
+      "end": 1007,
+      "note": "Exact media path and opened-file identity verification."
+    }
+  ],
+  "auth-remote-boundaries": [
+    {
+      "path": "docs/internals/remote.md",
+      "start": 9,
+      "end": 56,
+      "note": "Stable environment identity, route preflight/fallback and encrypted-token route learning."
+    },
+    {
+      "path": "docs/internals/remote.md",
+      "start": 93,
+      "end": 140,
+      "note": "Delegated ceilings, caller-namespaced keys, bounded waits, link-origin write fence and full-access non-isolation."
+    }
+  ],
+  "review-authored-diff": [
+    {
+      "path": "docs/user/source-control.md",
+      "start": 6,
+      "end": 14,
+      "note": "Keep the review projection narrower than the recovery snapshot"
+    },
+    {
+      "path": "apps/server/src/vcs/GitVcsDriver.ts",
+      "start": 1499,
+      "end": 1554,
+      "note": "Keep the review projection narrower than the recovery snapshot"
+    },
+    {
+      "path": "apps/server/src/checkpointing/CheckpointDiffQuery.ts",
+      "start": 205,
+      "end": 249,
+      "note": "Keep the review projection narrower than the recovery snapshot"
+    }
+  ],
+  "review-checkpoint-index": [
+    {
+      "path": "apps/server/src/vcs/GitVcsDriver.ts",
+      "start": 905,
+      "end": 935,
+      "note": "Checkpoint without consuming the developer staging area"
+    },
+    {
+      "path": "apps/server/src/vcs/GitVcsDriver.ts",
+      "start": 1247,
+      "end": 1295,
+      "note": "Checkpoint without consuming the developer staging area"
+    }
+  ],
+  "review-restore-isolation": [
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRestoreSafety.ts",
+      "start": 9,
+      "end": 104,
+      "note": "A file restore requires current isolation, not just historical ownership"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRollbackService.ts",
+      "start": 237,
+      "end": 252,
+      "note": "A file restore requires current isolation, not just historical ownership"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRestoreSafety.test.ts",
+      "start": 30,
+      "end": 37,
+      "note": "A file restore requires current isolation, not just historical ownership"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRestoreSafety.test.ts",
+      "start": 168,
+      "end": 180,
+      "note": "A file restore requires current isolation, not just historical ownership"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRestoreSafety.test.ts",
+      "start": 207,
+      "end": 250,
+      "note": "A file restore requires current isolation, not just historical ownership"
+    }
+  ],
+  "review-rewind-boundaries": [
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRollbackService.ts",
+      "start": 149,
+      "end": 174,
+      "note": "Conversation rewind and file restoration are separate operations"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointRollbackService.ts",
+      "start": 284,
+      "end": 300,
+      "note": "Conversation rewind and file restoration are separate operations"
+    },
+    {
+      "path": "apps/server/src/vcs/GitVcsDriver.ts",
+      "start": 1303,
+      "end": 1336,
+      "note": "Conversation rewind and file restoration are separate operations"
+    },
+    {
+      "path": "apps/server/src/vcs/GitVcsDriver.ts",
+      "start": 1351,
+      "end": 1394,
+      "note": "Conversation rewind and file restoration are separate operations"
+    }
+  ],
+  "review-capture-idempotency": [
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointCaptureService.ts",
+      "start": 68,
+      "end": 99,
+      "note": "Idempotent checkpoint finalization must preserve cancellation semantics"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointCaptureService.ts",
+      "start": 123,
+      "end": 140,
+      "note": "Idempotent checkpoint finalization must preserve cancellation semantics"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/CheckpointCaptureService.ts",
+      "start": 199,
+      "end": 215,
+      "note": "Idempotent checkpoint finalization must preserve cancellation semantics"
+    }
+  ],
+  "review-shared-cleanup": [
+    {
+      "path": "apps/web/src/worktreeCleanup.ts",
+      "start": 1,
+      "end": 29,
+      "note": "Resource cleanup needs shared-ownership awareness"
+    }
+  ],
+  "context-payload-identity": [
+    {
+      "path": "docs/internals/composer-context-references.md",
+      "start": 11,
+      "end": 37,
+      "note": "Bind context to typed payload identity and preserve its position in prose"
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.ts",
+      "start": 375,
+      "end": 406,
+      "note": "Bind context to typed payload identity and preserve its position in prose"
+    }
+  ],
+  "context-forward-compatibility": [
+    {
+      "path": "packages/contracts/src/composerContext.ts",
+      "start": 229,
+      "end": 268,
+      "note": "Preserve unknown extensions without letting malformed known data bypass validation"
+    },
+    {
+      "path": "docs/internals/composer-context-references.md",
+      "start": 20,
+      "end": 27,
+      "note": "Preserve unknown extensions without letting malformed known data bypass validation"
+    }
+  ],
+  "context-envelope-boundary": [
+    {
+      "path": "packages/shared/src/composerContextReferences.ts",
+      "start": 245,
+      "end": 258,
+      "note": "Escape structural boundaries in untrusted context; do not claim complete injection immunity"
+    },
+    {
+      "path": "packages/shared/src/composerContextReferences.ts",
+      "start": 350,
+      "end": 372,
+      "note": "Escape structural boundaries in untrusted context; do not claim complete injection immunity"
+    }
+  ],
+  "context-historical-migration": [
+    {
+      "path": "docs/internals/composer-context-references.md",
+      "start": 58,
+      "end": 86,
+      "note": "Do not rewrite historical events to migrate presentation"
+    },
+    {
+      "path": "docs/internals/composer-context-references.md",
+      "start": 122,
+      "end": 142,
+      "note": "Do not rewrite historical events to migrate presentation"
+    }
+  ],
+  "context-intact-history": [
+    {
+      "path": "packages/provider-core/src/server/handoffBudget.ts",
+      "start": 214,
+      "end": 265,
+      "note": "Budget intact historical units and explicitly expose omissions"
+    }
+  ],
+  "context-handoff-drift": [
+    {
+      "path": "docs/internals/context-handoffs.md",
+      "start": 1,
+      "end": 19,
+      "note": "Context handoff documentation must follow the actual mechanism"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffService.ts",
+      "start": 107,
+      "end": 114,
+      "note": "Context handoff documentation must follow the actual mechanism"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffService.ts",
+      "start": 448,
+      "end": 480,
+      "note": "Context handoff documentation must follow the actual mechanism"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffService.ts",
+      "start": 523,
+      "end": 557,
+      "note": "Context handoff documentation must follow the actual mechanism"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffDelivery.ts",
+      "start": 112,
+      "end": 143,
+      "note": "Context handoff documentation must follow the actual mechanism"
+    }
+  ],
+  "context-delivery-uncertainty": [
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffDelivery.ts",
+      "start": 19,
+      "end": 38,
+      "note": "Persist context-delivery uncertainty around the provider boundary"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffDelivery.ts",
+      "start": 55,
+      "end": 111,
+      "note": "Persist context-delivery uncertainty around the provider boundary"
+    },
+    {
+      "path": "apps/server/src/orchestration-v2/ContextHandoffDelivery.ts",
+      "start": 112,
+      "end": 153,
+      "note": "Persist context-delivery uncertainty around the provider boundary"
+    }
+  ],
+  "context-provider-channels": [
+    {
+      "path": "packages/provider-core/src/server/orchestrationInstructions.ts",
+      "start": 3,
+      "end": 25,
+      "note": "Adapt instruction delivery to provider channel and lifecycle"
+    },
+    {
+      "path": "packages/provider-core/src/server/orchestrationInstructions.ts",
+      "start": 76,
+      "end": 140,
+      "note": "Adapt instruction delivery to provider channel and lifecycle"
+    },
+    {
+      "path": "packages/provider-core/src/server/orchestrationInstructions.test.ts",
+      "start": 42,
+      "end": 84,
+      "note": "Adapt instruction delivery to provider channel and lifecycle"
+    }
+  ],
+  "eng-context-budget": [
+    {
+      "path": "apps/server/src/provider/AgentContextBudget.test.ts",
+      "start": 85,
+      "end": 151,
+      "note": "Measure model-facing context from the real code path and ratchet it deliberately"
+    },
+    {
+      "path": ".github/workflows/agent-context-budget.yml",
+      "start": 1,
+      "end": 55,
+      "note": "Measure model-facing context from the real code path and ratchet it deliberately"
+    }
+  ],
+  "eng-model-facing-evals": [
+    {
+      "path": "evals/README.md",
+      "start": 3,
+      "end": 15,
+      "note": "Evaluate model-facing prose like executable behavior"
+    },
+    {
+      "path": "evals/README.md",
+      "start": 26,
+      "end": 48,
+      "note": "Evaluate model-facing prose like executable behavior"
+    }
+  ],
+  "eng-grader-scope": [
+    {
+      "path": "evals/README.md",
+      "start": 17,
+      "end": 24,
+      "note": "Separate deterministic grader correctness from paid model efficacy"
+    },
+    {
+      "path": "evals/test-signal/README.md",
+      "start": 1,
+      "end": 19,
+      "note": "Separate deterministic grader correctness from paid model efficacy"
+    },
+    {
+      "path": "evals/pr-content/README.md",
+      "start": 3,
+      "end": 13,
+      "note": "Separate deterministic grader correctness from paid model efficacy"
+    }
+  ],
+  "eng-test-milestones": [
+    {
+      "path": "docs/internals/testing.md",
+      "start": 5,
+      "end": 24,
+      "note": "Test the actual failure milestone instead of elapsed time or extra layers"
+    }
+  ],
+  "eng-replay-provider": [
+    {
+      "path": ".agents/skills/test-t3-app/SKILL.md",
+      "start": 13,
+      "end": 35,
+      "note": "Replay UI turns through real adapters when testing presentation"
+    }
+  ],
+  "eng-surface-matrix": [
+    {
+      "path": "AGENTS.md",
+      "start": 65,
+      "end": 76,
+      "note": "Test multi-surface completeness and reverse states explicitly"
+    }
+  ],
+  "eng-documentation-boundaries": [
+    {
+      "path": "AGENTS.md",
+      "start": 159,
+      "end": 177,
+      "note": "Use documentation for durable cross-boundary reasons; let code own implementation facts"
+    }
+  ],
+  "review-revision-absence": [
+    {
+      "path": "docs/internals/pull-request-file-revisions.md",
+      "start": 1,
+      "end": 61,
+      "note": "Do not collapse absent, deleted and unknown revision states"
+    },
+    {
+      "path": "apps/server/src/pullRequest/pullRequestViewedFiles.ts",
+      "start": 71,
+      "end": 149,
+      "note": "Do not collapse absent, deleted and unknown revision states"
+    }
+  ]
+}

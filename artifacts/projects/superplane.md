@@ -163,3 +163,7 @@ Portable mechanisms from the inspected scope; ★ marks priorities, not evidence
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] provides a proposed action-authorization comparison: approval should bind the actual operation, target and destination, and recovery must retain consumed approvals. This does not upgrade existing SuperPlane guarantees or claim Habitat compliance. [[sources/replit--agent-habitat-architecture#approval]] [[sources/replit--agent-habitat-architecture#durability]]
+
+## T3 Code comparison — 2026-11-07
+
+[[artifacts/projects/t3code]]: Atomic local command receipts/outbox and per-thread effect ordering are a comparison for durable business workflows; provider effects are not in the same transaction. [[sources/pingdotgg--t3code#rt-atomic-intent]] The projects remain independently pinned and were not run together.

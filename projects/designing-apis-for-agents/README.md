@@ -128,3 +128,7 @@ Added [[artifacts/projects/shopify-api]] as the tenth API case study, with sixte
 ## Agent documentation and browser interfaces — 2026-11-05
 
 [[concepts/agent-documentation-interfaces]] connects this API-design research with discovery, exact-version retrieval, skills and executable interfaces. [[artifacts/projects/context7]] documents retrieval-triggered background indexing; [[artifacts/projects/readme]] combines docs tools and live API execution; [[artifacts/projects/webmcp]] adds page-local tools with different lifecycle/authority. These are source-specific cases, not a requirement to combine responsibilities. [[sources/frontier-docs--platforms-20261105#context7-search-contract]] [[sources/frontier-docs--platforms-20261105#readme-mcp]] [[sources/frontier-docs--webmcp-20261105#browser-vs-backend]]
+
+## T3 Code implementation comparison — 2026-11-07
+
+[[artifacts/projects/t3code]] supplies a concrete service/RPC/MCP/jobs model, payload-sensitive authority, receipt/outbox workflows and result/recovery boundaries. The79-practice ledger includes limits relevant to applying a local coding-agent app to a shared business platform. [[sources/pingdotgg--t3code#service-reach]] [[sources/pingdotgg--t3code#auth-rpc-authorization]] [[sources/pingdotgg--t3code#rt-atomic-intent]]

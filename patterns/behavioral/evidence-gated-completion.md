@@ -140,3 +140,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]]: output-store existence, terminal dream status, fact retention and downstream task quality are separate predicates. A self-hosted successful edit can lose a conflict during sync with no agent-visible error. [[sources/anthropic--agent-memory-support#dream-lifecycle]] [[sources/anthropic--components-of-agent-memory#goal-ownership]] [[sources/anthropic--agent-memory-support#self-hosted-conflicts]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#rt-finalization]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

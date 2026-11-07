@@ -136,3 +136,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]]: learned memory can persist poisoned text, and promotion into a system-context slot increases exposure without establishing authority. A read-only consumer is not immune to influence; host tools and policies remain separate. [[sources/anthropic--agent-memory-support#dynamic-trust]] [[sources/anthropic--agent-memory-support#code-injection]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#auth-mcp-caller-limits]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

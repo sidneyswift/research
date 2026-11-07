@@ -49,3 +49,7 @@ Resource-oriented interfaces with standard methods, purposeful custom actions, a
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] records a terminology boundary from the linked Google Sleep blog: it updates memory weights, unlike external-context consolidation. This is a scoped blog mechanism comparison, not a new runnable artifact or replicated learning benchmark. [[sources/anthropic--agent-memory-support#sleep-contrast]]
+
+## T3 Code integration study — 2026-11-07
+
+[[artifacts/projects/t3code]] is a third-party control surface integrating provider/runtime/source-control concepts. Its adapters, credentials and UI modes are not official guarantees from every integrated vendor. [[sources/pingdotgg--t3code#root]] [[sources/pingdotgg--t3code#auth-provider-permissions]]

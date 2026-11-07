@@ -74,3 +74,5 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 - [[artifacts/projects/vercel-schedules]] — managed schedule resources; 44 principles from the announcement, delivery/API docs and experimental eve integration. Documentation-inspected, not runtime-tested.
 
 - [[artifacts/projects/inkling-2-small]] — 44 principles from the model release, supporting contracts and selected async source; no model benchmark run.
+
+- [[artifacts/projects/t3code]] — pinned multi-provider control surface:79 service/runtime/authority/review/context/engineering practices; source and selected tests inspected, no app/provider execution.

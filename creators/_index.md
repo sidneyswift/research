@@ -145,3 +145,5 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/replit]] — publisher of the proposed Agent Habitat architecture and maturity rubric.
 
 - [[creators/thinking-machines]] — Inkling 2 Small and scoped Tinker supporting evidence.
+
+- [[creators/pingdotgg]] — Ping.gg organization; T3 Code publisher.

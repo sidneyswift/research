@@ -235,3 +235,7 @@ The owned findings preserve source-specific controls and uncertainty; no univers
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] is a schedule-resource API case study: name/ID/occurrence identity, OIDC environment scope, partial read projections, cursor-complete pagination and retry-after-write ambiguity. HTTP and SDK shapes differ; invoke is not generally retry-idempotent. [[sources/vercel--schedules-docs#api]] [[sources/vercel--schedules-docs#sdk]] [[sources/vercel--schedules-docs#retry-boundary]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Implement reusable domain capabilities before adapting user RPC/MCP/jobs. Decoded flags can make a retrieval-shaped method effectful and change its required authority; one route label is not an effect contract. [[sources/pingdotgg--t3code#service-reach]] [[sources/pingdotgg--t3code#auth-rpc-authorization]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

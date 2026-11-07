@@ -485,3 +485,7 @@ The owned findings preserve source-specific controls and uncertainty; no univers
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] preserves source drift between a launch example, product configuration, skill guidance and framework envelopes rather than blending them into a fictional contract. The capture records 8/16/64 KB scope differences and a source-path/build-output-path conflict. [[sources/vercel--schedules-docs#documentation-conflicts]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Keep internal cross-boundary reasons, user tasks and operational procedures distinct. Preserve three doc/code disagreements at the pin rather than merge them into one fictional contract; code/test evidence is still not runtime proof. [[sources/pingdotgg--t3code#eng-documentation-boundaries]] [[sources/pingdotgg--t3code#context-handoff-drift]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

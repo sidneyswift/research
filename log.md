@@ -821,3 +821,12 @@ Applied [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavior
 ## [2026-11-07] reflect | memory accumulation must earn its maintenance cost
 
 - Added the evidence-grounded memory-design route and an explicit adoption trigger; no duplicate generic pattern or live consolidation machinery. See [[meta/self-improvements]].
+
+## [2026-11-07] ingest | T3 Code service, runtime and agent-interface practices
+
+- Cloned `pingdotgg/t3code` to an ignored live shallow source at `33f85846be8bc4bc592f0e621d6f0313e5abd4a4`; preserved77 cited-file hashes,66 anchors and173 source ranges. [[artifacts/projects/t3code]] extracts79 practices across domain services, transactional intent/outbox, recovery, provider authority, review/checkpoints, context and engineering. Implementation, documentation and inspected tests retain different evidence classes; no app/provider/test/model execution.
+- Propagated to existing API/docs/control-plane/durability/review/context/authorization concepts, related artifacts, creators, patterns and builder routes. Preserved outbox/handoff/context doc/code disagreements and non-atomic restore, permissive defaults, partial projection and revocation limits. [[meta/2026-11-07-t3code-ingest]] owns checks and delivery scope. ratchet: links +257 · orphans +0 · patterns +0 (existing applications, no promotion).
+
+## [2026-11-07] reflect | authoritative absence and applied cursor boundaries
+
+Applied [[patterns/behavioral/evidence-gated-completion]] from T3's partial shell snapshots and unknown/deleted file revisions to [[_schemas/project]]'s existing observation questions. [[meta/self-improvements]] records grounding; reused existing checks rather than adding a speculative validator.

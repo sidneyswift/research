@@ -152,3 +152,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## Vercel Schedules — 2026-11-06
 
 [[artifacts/projects/vercel-schedules]] gives future intent its own mutable resource and separates code-owned static schedules from user-owned runtime schedules. Dispatch follows the current environment deployment; already delivered work survives deleting its schedule. Coordination state is not execution retirement. [[sources/vercel--schedules-docs#configuration]] [[sources/vercel--schedules-docs#deployment]] [[sources/vercel--schedules-docs#lifecycle]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Shared services and explicit command/effect ownership; normalized domain state is independent of client transport and provider callbacks. [[sources/pingdotgg--t3code#service-reach]] [[sources/pingdotgg--t3code#rt-atomic-intent]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

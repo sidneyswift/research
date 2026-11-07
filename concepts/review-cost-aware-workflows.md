@@ -119,3 +119,7 @@ Its quick profile merges candidate/record verification; standard/deep retain sep
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] turns assurance language into testable boundary questions: credential readability, unauthorized actions, bypass paths, restart limits and containment latency. A maturity rubric is not a substitute for empirical boundary evidence. [[sources/lhchavez--managed-agent-environments#adoption-limits]] [[sources/replit--agent-habitat-architecture#maturity]]
+
+## T3 Code — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a pinned source case: Review only authored-change projections while preserving broader recovery snapshots; recheck workspace isolation before restore and distinguish unknown revision from deletion. [[sources/pingdotgg--t3code#review-authored-diff]] [[sources/pingdotgg--t3code#review-revision-absence]] Source/test inspection only; no hosted/provider outcome or new model score claimed.

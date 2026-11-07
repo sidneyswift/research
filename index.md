@@ -522,3 +522,12 @@ The wiki applied to itself — improvements to our own machinery, each traced to
 - [[creators/intel]] — publisher context.
 
 - [[meta/2026-11-05-frontier-docs-lint]] — capture/link checks and research limits.
+
+## T3 Code research — 2026-11-07
+
+| Page | Role |
+| --- | --- |
+| [[artifacts/projects/t3code]] | Source-investigated control surface;79 portable practices and counterexamples |
+| [[creators/pingdotgg]] | Publisher context |
+| [[sources/pingdotgg--t3code]] | Pinned Git evidence, exact ranges and restoration inventory |
+| [[meta/2026-11-07-t3code-ingest]] | Verification, inherited lint findings and delivery record |

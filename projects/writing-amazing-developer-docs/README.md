@@ -115,3 +115,7 @@ Start with [[concepts/agent-documentation-interfaces]]; then follow the concrete
 | [[sources/frontier-docs--tool-design-evaluation-20261105#root]] | Anthropic tool design/search/examples and Intel evaluator documentation |
 
 No platform connection, provider call, browser flag, tool execution or benchmark rerun occurred. [[meta/2026-11-05-frontier-docs-lint]] records scoped checks and inherited lint issues.
+
+## T3 Code model-facing documentation — 2026-11-07
+
+[[artifacts/projects/t3code]] adds real-code context-budget checks, incident-derived behavioral eval guidance, durable internal/user/operations documentation boundaries and three pinned doc/code drift examples. Structural byte/grader checks do not prove model success. [[sources/pingdotgg--t3code#eng-context-budget]] [[sources/pingdotgg--t3code#eng-model-facing-evals]] [[sources/pingdotgg--t3code#context-documentation-drift]]

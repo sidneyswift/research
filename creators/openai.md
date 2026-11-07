@@ -84,3 +84,7 @@ Schmid names Codex among adopting harnesses; this remains a third-party claim re
 ## Downstream integration evidence — 2026-11-04
 
 [[artifacts/projects/background-agents]], maintained by [[creators/open-inspect]], documents and implements a Codex app-server harness alongside other vendors. It is a separate project, not an OpenAI-authored control plane or proof of endorsement. [[sources/open-inspect--background-agents#harness]]
+
+## T3 Code integration study — 2026-11-07
+
+[[artifacts/projects/t3code]] is a third-party control surface integrating provider/runtime/source-control concepts. Its adapters, credentials and UI modes are not official guarantees from every integrated vendor. [[sources/pingdotgg--t3code#root]] [[sources/pingdotgg--t3code#auth-provider-permissions]]

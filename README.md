@@ -42,12 +42,12 @@ See [[projects/_index]] for projects created from the research, starting with [[
 | --- | --- | --- |
 | Skills cataloged | 6 paged | 2026-11-06 |
 | Plugins cataloged | 10 | 2026-11-04 |
-| Projects cataloged | 29 | 2026-11-05 |
+| Projects cataloged | 32 | 2026-11-07 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
-| Concepts cataloged | 30 | 2026-11-05 |
+| Concepts cataloged | 32 | 2026-11-07 |
 | Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
-| Creators cataloged | 67 | 2026-11-05 |
-| Source citation pages | 96: 19 article, 43 docs-page, 5 other, 6 paper, 22 repo, 1 tweet | 2026-11-05 |
+| Creators cataloged | 71 | 2026-11-07 |
+| Source citation pages | 106: 23 article, 47 docs-page, 5 other, 6 paper, 24 repo, 1 tweet | 2026-11-07 |
 
 Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
 
@@ -78,3 +78,5 @@ Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverag
 Latest concept ingest: [[concepts/agent-memory-consolidation]] — 40 principles; full article, fifteen figures and supporting captures preserved. External-memory evidence and documented product guarantees kept separate; no memory system installed.
 
 Latest project ingest: [[artifacts/projects/inkling-2-small]] — 44 adaptation/evaluation/containment principles, 25 preserved evidence files. Hosted access and promised weights kept separate; no model training or benchmark replication.
+
+Latest project investigation: [[artifacts/projects/t3code]] —79 source-backed service, runtime, authority, review, context and engineering practices; full SHA and restore manifest, selected tests inspected rather than executed.

@@ -162,3 +162,7 @@ Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts 
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] separates model-judged salience/correction from client-enforced path containment and optimistic write preconditions. Prompted merge discipline does not itself supply atomic storage semantics. [[sources/anthropic--components-of-agent-memory#learning-loop]] [[sources/anthropic--agent-memory-support#client-memory]] [[sources/anthropic--agent-memory-support#store-versions]]
+
+## T3 Code application — 2026-11-07
+
+[[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#rt-atomic-intent]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.

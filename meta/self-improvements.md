@@ -381,3 +381,7 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 - **Applied:** a builder route to memory layers, search/wiki/hybrid comparisons, actual build/maintenance cost, and adoption/consistency/retention contracts. The concept specifies a promotion trigger: repeated cross-document work plus held-out evidence that consolidation improves the existing retrieval workflow.
 - **Expected benefit:** prevent token-budget charts, graph density or a stored summary from substituting for demonstrated task benefit. Existing citation/link checks remain structural, not a semantic quality metric.
 - **Status:** applied 2026-11-07. No automatic dreaming job, installed skill edit or speculative new pattern; existing schemas cover evidence boundaries.
+
+## [2026-11-07] T3 Code — partial views cannot authorize destructive inference
+
+**Applied**2026-11-07. [[patterns/behavioral/evidence-gated-completion]] maps to two concrete T3 boundaries: partial shell membership is not deletion, and absent/empty/null file-revision answers differ. Extended [[_schemas/project]]'s existing observation/persistence questions with completeness/authoritative-absence and applied-state/cursor checks. Grounding: [[sources/pingdotgg--t3code#client-consistency]] and [[sources/pingdotgg--t3code#review-revision-absence]]. This is a focused schema refinement; no new pattern promotion, installable skill or generic linter. The existing source/link checks already cover preservation; runtime semantics still need actual acceptance tests.

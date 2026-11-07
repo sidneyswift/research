@@ -217,3 +217,7 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 
 - [[sources/anthropic--components-of-agent-memory]] — full article/HTML and all fifteen figures; 20 hashed files.
 - [[sources/anthropic--agent-memory-support]] — eleven supporting evidence files; partial CL-Bench capture explicitly marked.
+
+## T3 Code — 2026-11-07
+
+- [[sources/pingdotgg--t3code]] — full pinned shallow Git clone;66 registered anchors,173 source ranges and77 cited-file hashes. Ignored clone restored by manifest; case study in [[artifacts/projects/t3code]].
