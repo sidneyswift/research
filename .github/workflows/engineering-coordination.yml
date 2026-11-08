@@ -1,0 +1,187 @@
+# Managed source: Swift-Response/engineering/.github/scripts/coordination-check.cjs
+# Source SHA-256: 967d851b4c56812db1d5ec56d413f26ad5791081bf6a508e68a2284d07f2f3cc
+# Render with .github/scripts/render-coordination-workflow.cjs in Engineering.
+name: Engineering coordination (advisory)
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review]
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+jobs:
+  coordination:
+    name: Engineering coordination (advisory)
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    continue-on-error: true
+    steps:
+      - name: Inspect work links without checking out PR code
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        with:
+          script: |
+            'use strict';
+
+            // Read-only advisory metadata inspection. The rendered workflow runs this code inline,
+            // without checking out a PR or downloading private shared code at runtime.
+            const PROJECT = { owner: 'Swift-Response', number: 1 };
+            const CENTRAL = 'Swift-Response/engineering';
+            const MAX_ISSUES = 5;
+
+            function visibleText(body) {
+              let fence;
+              return String(body || '').replace(/<!--[\s\S]*?(?:-->|$)/g, '').split('\n').filter(line => {
+                const marker = line.match(/^\s{0,3}(`{3,}|~{3,})/);
+                if (fence) {
+                  if (marker && marker[1][0] === fence[0] && marker[1].length >= fence.length && /^\s*[`~]+\s*$/.test(line)) fence = undefined;
+                  return false;
+                }
+                if (marker) { fence = marker[1]; return false; }
+                return !/^ {4}/.test(line);
+              }).join('\n').replace(/(?<!`)(`+)(?!`)[\s\S]*?(?<!`)\1(?!`)/g, '');
+            }
+
+            function issueIdentity(value, current) {
+              const input = String(value || '').trim();
+              let match = input.match(/^https:\/\/github\.com\/([\w.-]+)\/([\w.-]+)\/issues\/([1-9]\d*)(?:[?#].*)?$/i);
+              if (!match) {
+                match = input.match(/^(?:([\w.-]+)\/([\w.-]+))?#([1-9]\d*)$/);
+                if (!match) return null;
+                match[1] ||= current.owner; match[2] ||= current.repo;
+              }
+              const number = Number(match[3]);
+              if (!Number.isSafeInteger(number)) return null;
+              // Inspect only company work or this caller's own repository. A body cannot make
+              // the workflow enumerate another private personal repository.
+              if (match[1].toLowerCase() !== PROJECT.owner.toLowerCase() &&
+                  `${match[1]}/${match[2]}`.toLowerCase() !== `${current.owner}/${current.repo}`.toLowerCase()) return null;
+              return { owner: match[1], repo: match[2], number,
+                url: `https://github.com/${match[1]}/${match[2]}/issues/${number}` };
+            }
+
+            function declaredWork(body, current) {
+              const text = visibleText(body);
+              const refs = [];
+              let inSection = false;
+              for (const line of text.split('\n')) {
+                if (/^\s*#{1,6}\s/.test(line)) {
+                  inSection = /^\s*#{1,6}\s+(?:work items?|delivery issues?|tracking)\s*$/i.test(line);
+                }
+                const plain = line.replace(/\*\*/g, '');
+                if (inSection || /^\s*(?:[-*]\s*)?(?:work items?|delivery issues?|issue|tracking)\s*:/i.test(plain) ||
+                    /^\s*(?:[-*]\s*)?(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+/i.test(plain)) {
+                  for (const m of plain.matchAll(/https:\/\/[^\s)<>]+/g)) {
+                    const ref = issueIdentity(m[0], current); if (ref) refs.push(ref);
+                  }
+                  const withoutUrls = plain.replace(/https?:\/\/[^\s)<>]+/g, '');
+                  for (const m of withoutUrls.matchAll(/(?<![\w/.:?&=])(?:[\w.-]+\/[\w.-]+)?#[1-9]\d*(?![\w/])/g)) {
+                    const ref = issueIdentity(m[0], current); if (ref) refs.push(ref);
+                  }
+                }
+              }
+              const rawReason = text.match(/^\s*(?:[-*]\s*)?(?:\*\*)?Standalone(?:\*\*)?\s*:\s*(.+)$/im)?.[1]?.trim();
+              const standalone = Boolean(rawReason && !/^(?:<.*>|\[.*\]|n\/?a|none|todo|tbd|reason(?: here)?|explain(?: here)?)[.!]?$/i.test(rawReason));
+              return { refs, standalone };
+            }
+
+            function safeStatus(error) {
+              const n = Number(error?.status); return Number.isInteger(n) ? ` (HTTP ${n})` : '';
+            }
+
+            async function inspect({ github, context }) {
+              const rows = [];
+              const add = (state, check, detail) => rows.push({ state, check, detail });
+              const pr = context.payload?.pull_request;
+              if (!pr) { add('UNKNOWN', 'PR context', 'No pull request payload; no work was changed.'); return rows; }
+              const current = context.repo;
+              const declared = declaredWork(pr.body, current);
+              const refs = [...declared.refs];
+              let nativeComplete = false;
+              try {
+                const r = await github.graphql(`query($owner:String!,$repo:String!,$number:Int!){
+                  repository(owner:$owner,name:$repo){pullRequest(number:$number){
+                    body headRefOid
+                    closingIssuesReferences(first:50){nodes{url} pageInfo{hasNextPage}}
+                  }}
+                }`, { owner: current.owner, repo: current.repo, number: pr.number });
+                const live = r?.repository?.pullRequest;
+                if (live && typeof live.body === 'string' && live.headRefOid &&
+                    (live.body !== String(pr.body || '') || live.headRefOid !== pr.head?.sha)) {
+                  add('UNKNOWN', 'PR snapshot', 'The PR body or head changed after the triggering event. Rerun against the current PR; no link assessment is certified.');
+                  return rows;
+                }
+                if (!live || typeof live.body !== 'string' || !live.headRefOid) add('UNKNOWN', 'PR snapshot', 'Current PR metadata is incomplete; declared links come from the triggering event snapshot.');
+                const conn = live?.closingIssuesReferences;
+                if (conn && Array.isArray(conn.nodes)) {
+                  nativeComplete = !conn.pageInfo?.hasNextPage && conn.nodes.every(Boolean);
+                  for (const node of conn.nodes) {
+                    const ref = issueIdentity(node?.url, current); if (ref) refs.push(ref);
+                  }
+                }
+                if (!nativeComplete) add('UNKNOWN', 'Native issue links', 'Native link results are redacted or incomplete; inspect GitHub directly.');
+              } catch (e) { add('UNKNOWN', 'Native issue links', `The token could not read all native PR links${safeStatus(e)}.`); }
+              const unique = [...new Map(refs.map(r => [r.url.toLowerCase(), r])).values()];
+              if (declared.standalone) add('OK', 'Standalone declaration', 'A reason is supplied; review whether the small standalone scope is appropriate. No ticket was created.');
+              if (!unique.length && !declared.standalone) add(nativeComplete ? 'ATTENTION' : 'UNKNOWN', 'Work item', nativeComplete
+                ? 'Link existing delivery work using Work item: or native issue links; small standalone fixes can declare Standalone: with a reason. Preserve existing work while reconciling tracking.'
+                : 'No declared work link is visible in the event body, but native references could not be read completely. Inspect the current PR before treating tracking as missing.');
+              if (unique.length > MAX_ISSUES) add('UNKNOWN', 'Inspection bound', `Only the first ${MAX_ISSUES} distinct work items are inspected; review additional links directly.`);
+              let projectId;
+              if (unique.length) {
+                try {
+                  const p = await github.graphql(`query($owner:String!,$number:Int!){organization(login:$owner){projectV2(number:$number){id}}}`, PROJECT);
+                  projectId = p?.organization?.projectV2?.id;
+                  if (!projectId) add('UNKNOWN', 'Project access', 'The shared private Project is not visible to this token; absence cannot be established.');
+                } catch (e) { add('UNKNOWN', 'Project access', `Shared Project access is unavailable${safeStatus(e)}; no broader token or permission change is requested.`); }
+              }
+              for (const ref of unique.slice(0, MAX_ISSUES)) {
+                const label = `${ref.owner}/${ref.repo}#${ref.number}`;
+                let issue;
+                try { issue = (await github.rest.issues.get({ owner: ref.owner, repo: ref.repo, issue_number: ref.number })).data; }
+                catch (e) { add('UNKNOWN', label, `Issue identity is unreadable or unavailable${safeStatus(e)}; 404 is not proof of missing private work.`); continue; }
+                if (issue.pull_request) { add('ATTENTION', label, 'This reference resolves to a pull request. Link the delivery issue or declare a justified standalone change.'); continue; }
+                if (!issue.node_id || !issueIdentity(issue.html_url, current)) { add('UNKNOWN', label, 'The provider did not return a verifiable Issue identity.'); continue; }
+                add('OK', label, `Issue identity verified (${issue.state === 'closed' ? 'closed; review its disposition before reusing' : 'open'}).`);
+                let cursor = issueIdentity(issue.html_url, current);
+                const seen = new Set(); let centralFound = false;
+                for (let depth = 0; depth < 5; depth++) {
+                  const key = `${cursor.owner}/${cursor.repo}`.toLowerCase();
+                  if (key === CENTRAL.toLowerCase()) { centralFound = true; add('OK', `${label} parent`, 'A central Engineering issue is visible in the work ancestry; review scope and acceptance separately.'); break; }
+                  if (seen.has(cursor.url.toLowerCase())) { add('UNKNOWN', `${label} parent`, 'Repeated ancestry identity; inspect the relationship directly.'); break; }
+                  seen.add(cursor.url.toLowerCase());
+                  try {
+                    const parent = (await github.request('GET /repos/{owner}/{repo}/issues/{issue_number}/parent', { owner: cursor.owner, repo: cursor.repo, issue_number: cursor.number })).data;
+                    const next = issueIdentity(parent?.html_url, current);
+                    if (!next || parent.pull_request) { add('UNKNOWN', `${label} parent`, 'Parent metadata is missing or outside the permitted inspection scope.'); break; }
+                    cursor = next;
+                  } catch (e) { add('UNKNOWN', `${label} parent`, `A parent could not be verified${safeStatus(e)}; it may be absent or private. Inspect before adding or reparenting.`); break; }
+                }
+                if (!centralFound && seen.size >= 5) add('UNKNOWN', `${label} parent`, 'The bounded ancestry read did not establish a central parent; no relationship was changed.');
+                if (projectId) {
+                  try {
+                    const p = await github.graphql(`query($id:ID!){node(id:$id){... on Issue{projectItems(first:100){nodes{project{id}} pageInfo{hasNextPage}}}}}`, { id: issue.node_id });
+                    const conn = p?.node?.projectItems;
+                    if (conn?.nodes?.some(n => n?.project?.id === projectId)) add('OK', `${label} Project`, 'Membership in the shared Project is visible.');
+                    else if (!conn || !Array.isArray(conn.nodes) || conn.pageInfo?.hasNextPage || conn.nodes.some(n => !n?.project?.id)) add('UNKNOWN', `${label} Project`, 'Project membership results are redacted or incomplete; absence cannot be established.');
+                    else add('ATTENTION', `${label} Project`, 'The shared Project is readable but this issue was not found in its complete visible membership results. Reconcile through the authorized tracker workflow.');
+                  } catch (e) { add('UNKNOWN', `${label} Project`, `Membership could not be read${safeStatus(e)}; do not infer absence or claim an update.`); }
+                }
+              }
+              return rows;
+            }
+
+            function escape(value) { return String(value).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c])); }
+            async function run({ github, context, core }) {
+              let rows;
+              try { rows = await inspect({ github, context }); }
+              catch (_) { rows = [{ state:'UNKNOWN', check:'Advisory inspection', detail:'Unexpected inspection failure; no coordination result is certified and no work was changed.' }]; }
+              const table = rows.map(r => `<tr><td>${escape(r.state)}</td><td>${escape(r.check)}</td><td>${escape(r.detail)}</td></tr>`).join('');
+              await core.summary.addRaw(`<h2>Engineering coordination — advisory</h2><p>This read-only check does not block merges, mutate tracking, approve work or validate the truth of a user story. ATTENTION is a reconciliation hint; UNKNOWN is an access/evidence gap.</p><table><tr><th>Signal</th><th>Check</th><th>Evidence</th></tr>${table}</table><p>Preserve existing branches and work. Review outcome, business value, acceptance, competing claims and exact validation evidence. No human assignee is required. Follow the <a href="https://github.com/Swift-Response/engineering/blob/main/docs/systems/team-workflow.md">shared workflow</a>; use the Code Review post skill under its actual authorization. Existing review, CI and release gates remain in force.</p>`).write();
+              return rows;
+            }
+
+
+            await run({ github, context, core });
