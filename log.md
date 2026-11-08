@@ -840,3 +840,7 @@ Applied [[patterns/behavioral/evidence-gated-completion]] from T3's partial shel
 ## [2026-11-08] reflect | always-on is not always-acting
 
 - Added a scoped builder route with abstention and decision-boundary evidence, not a new autonomy rule. See [[meta/self-improvements]].
+
+## [2026-11-08] instructions | Engineering coordination
+
+- Added scoped Flex Engineering epic/issue and handoff rules without changing research evidence, scheduled routines or source permissions.
