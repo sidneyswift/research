@@ -147,3 +147,5 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/thinking-machines]] — Inkling 2 Small and scoped Tinker supporting evidence.
 
 - [[creators/pingdotgg]] — Ping.gg organization; T3 Code publisher.
+
+- [[creators/rubric-labs]] — architecture/decision-model field guides; no runtime audited.

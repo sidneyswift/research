@@ -231,3 +231,7 @@ Keep immutable source captures underneath mutable wiki judgment. Continue mechan
 ## Evidence boundary
 
 **31 preserved evidence files** with URL/byte/hash receipts. Full article and fifteen figures read; supporting-doc scope and incomplete CL-Bench capture disclosed in the citation maps. Current docs and pinned README are separate evidence from the original research experiments. No memory API calls, benchmark replication, installed skills or production policy changes.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] supplies a new downstream memory use: remember explicit reactions to proactive interventions and consult them before repeating a behavior. Keep ownership, dates and provenance; silence is ambiguous rather than approval, and reaction memory is not an authorization mechanism. [[sources/rubriclabs--always-on-agents#learning-lane]]

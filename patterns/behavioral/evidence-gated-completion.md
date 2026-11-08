@@ -144,3 +144,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## T3 Code application — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#rt-finalization]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] adds a pre-completion question: was this the right task to start? A polished design document can be unwanted busywork when mandate/access/context were missing; output volume is not evidence of helpfulness. [[sources/rubriclabs--always-on-agents#discernment]]

@@ -1,0 +1,100 @@
+{
+  "captures": [
+    {
+      "file": "snapshot.md",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "d84a8eb3232a1dc70a64b32ac5b339c28dc1fd2028a96511fce575c7a5695921",
+      "bytes": 11018,
+      "fetchedAt": "2026-11-08T00:58:23.601Z",
+      "kind": "full readable article"
+    },
+    {
+      "file": "page.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "3f396a755cabd34b45742b730da7ad8a631c83171e8b83a25c395a6adccda203",
+      "bytes": 204570,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "original HTML"
+    },
+    {
+      "file": "extracted-page.json",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "90f769f7231bf43ef9de44ba01820a15a6620ecd401dbcc8a18e50fbf87473ce",
+      "bytes": 7350,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "derived metadata/links/initial figures; Jev includes table"
+    },
+    {
+      "file": "figure-text.json",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "57c50bcb769eaa101f9b8b57907681e2950aa203cfc43673a5a7818d478fe11c",
+      "bytes": 819,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "seven static figure/caption text records"
+    },
+    {
+      "file": "banner.webp",
+      "url": "https://rubriclabs.com/images/designing-an-always-on-agent/banner.webp",
+      "sha256": "83bc58cf55938f633c879d53c8d4f7881aa41332a49dbf9658381a54648552cf",
+      "bytes": 423724,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "decorative social banner"
+    },
+    {
+      "file": "figures/figure-01.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "bf372f4c8ea3531a928a20df718b67dce7c90e5503772af770943c25ef54861a",
+      "bytes": 8801,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "exact HTML figure fragment; scripts and external CSS not bundled"
+    },
+    {
+      "file": "figures/figure-02.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "f7a8b8d28af3caabd668ae3052e2fdccba4ad57db923ee0de43188685645b875",
+      "bytes": 7883,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "exact HTML figure fragment; scripts and external CSS not bundled"
+    },
+    {
+      "file": "figures/figure-03.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "1454df33c153c0a064d4be41a5dd09a63fa87d2a26e5c3b6d783d0bcccc2a726",
+      "bytes": 5691,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "exact HTML figure fragment; scripts and external CSS not bundled"
+    },
+    {
+      "file": "figures/figure-04.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "b17969596e72bf754fedb95ed4384c67e7596838ebce81d6c8cbb86aa29edca9",
+      "bytes": 11869,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "exact HTML figure fragment; scripts and external CSS not bundled"
+    },
+    {
+      "file": "figures/figure-05.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "e73af20afecee371833761a1d8b3bba12e3a4c341e73e938d71c71d87d6fc409",
+      "bytes": 12990,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "exact HTML figure fragment; scripts and external CSS not bundled"
+    },
+    {
+      "file": "figures/figure-06.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "33cc72990cb2224f026cd1e411d4a893eb87a5cb600296117849a06f8939d22c",
+      "bytes": 11652,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "exact HTML figure fragment; scripts and external CSS not bundled"
+    },
+    {
+      "file": "figures/figure-07.html",
+      "url": "https://rubriclabs.com/blog/always-on-agents",
+      "sha256": "0a9f02d995d87bf34d633d06ddeb1d0558753d04f2f42eb15a3551eea8d58bd1",
+      "bytes": 5149,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "exact HTML figure fragment; scripts and external CSS not bundled"
+    }
+  ]
+}

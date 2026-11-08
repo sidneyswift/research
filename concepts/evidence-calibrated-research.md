@@ -128,3 +128,7 @@ The shipped validators establish record structure and internal consistency, not 
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] preserves the 53% search baseline beside 13→48% wiki-only improvement, keeps token allowance separate from measured spend, and identifies trial counts/error-bar definitions. The 41/57→57/57 contract repair bundles ownership, representation and instruction changes; no isolated causal attribution. [[sources/anthropic--components-of-agent-memory#wiki-search]] [[sources/anthropic--components-of-agent-memory#compute-budget]] [[sources/anthropic--components-of-agent-memory#steering]] [[sources/anthropic--components-of-agent-memory#goal-ownership]]
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] preserves the Jev comparison's 101 hand-labeled scenarios, three repeated runs, Jev-tuned prompts and post-first-run label revisions. Neither consistency nor probability-shaped output establishes calibration or always-on intervention quality. [[sources/rubriclabs--jev-use-cases#comparison]] [[sources/rubriclabs--jev-use-cases#root]]

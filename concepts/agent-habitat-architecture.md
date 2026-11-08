@@ -240,3 +240,7 @@ Portable research/adoption criteria below—not a blanket instruction to install
 ## T3 Code — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a pinned source case: Transport, project/worktree organization and app-level mode checks do not supply OS containment. Narrow external MCP audiences and live command-lock ceiling checks are concrete implementation comparisons, not Habitat compliance. [[sources/pingdotgg--t3code#auth-mcp-audience]] [[sources/pingdotgg--t3code#auth-authority-race]] Source/test inspection only; no hosted/provider outcome or new model score claimed.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] distinguishes discovering context from holding a mandate: broad access and a high relevance/urgency score do not authorize effects. Rubric's unwanted-Slack-response example shows why responsibility must be checked before task execution. [[sources/rubriclabs--always-on-agents#awareness]] [[sources/rubriclabs--always-on-agents#discernment]] [[sources/rubriclabs--agent-harness#tools-authority]]

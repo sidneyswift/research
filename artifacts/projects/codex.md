@@ -218,3 +218,7 @@ Portable ledger; ★ marks priorities, not an adoption mandate. Evidence classes
 ## T3 Code comparison — 2026-11-07
 
 [[artifacts/projects/t3code]]: A downstream multi-provider control surface adapts Codex but keeps app identity, permission labels and finalization distinct from native runtime state. [[sources/pingdotgg--t3code#auth-provider-permissions]] The projects remain independently pinned and were not run together.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] studies a different context design: Rubric describes model-selected fold/drop operations and per-turn budget visibility. Its harness essay generalizes about planning/permissions; use this artifact's pinned source for Codex-specific contracts instead. [[sources/rubriclabs--always-on-agents#context]] [[sources/rubriclabs--agent-harness#orchestration]] [[sources/rubriclabs--agent-harness#permissions]]

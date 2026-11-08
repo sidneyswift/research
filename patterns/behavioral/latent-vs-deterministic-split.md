@@ -166,3 +166,7 @@ Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts 
 ## T3 Code application — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#rt-atomic-intent]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] separates model probability estimates from application-owned thresholds, wake rules and permission checks. Jev's 80% urgency/action example is a chosen policy threshold, not a learned authorization rule. [[sources/rubriclabs--jev-use-cases#notifications]] [[sources/rubriclabs--agent-harness#tools-authority]]

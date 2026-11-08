@@ -77,3 +77,5 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 ## Added 2026-11-07
 
 - [[concepts/agent-memory-consolidation]] — four-layer external memory, consolidation evidence, cost-sensitive retrieval and runtime contracts; no benchmark replication.
+
+- [[concepts/proactive-agent-discernment]] — separate wake, authorized useful work and user interruption; Rubric architecture with qualified classifier examples.

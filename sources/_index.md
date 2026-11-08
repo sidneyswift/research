@@ -221,3 +221,7 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 ## T3 Code — 2026-11-07
 
 - [[sources/pingdotgg--t3code]] — full pinned shallow Git clone;66 registered anchors,173 source ranges and77 cited-file hashes. Ignored clone restored by manifest; case study in [[artifacts/projects/t3code]].
+
+- [[sources/rubriclabs--always-on-agents]] — full article and seven static figure fragments; Nov 8 capture.
+- [[sources/rubriclabs--agent-harness]] — full harness article/HTML.
+- [[sources/rubriclabs--jev-use-cases]] — full Jev examples/HTML and comparison table; live demos not run.

@@ -25,6 +25,10 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/rubriclabs--always-on-agents]] — always-on architecture and discernment; November 5 article, complete HTML/prose and seven initial-state figure fragments.
+- [[sources/rubriclabs--agent-harness]] — harness taxonomy, contextual background.
+- [[sources/rubriclabs--jev-use-cases]] — decision-model examples and explicitly exploratory comparison.
+
 - [[sources/anthropic--components-of-agent-memory]] — complete article and fifteen figures; November 6 research report.
 - [[sources/anthropic--agent-memory-support]] — memory/Dreams contracts, scoped cookbook and pinned quickstart context; November 7 capture.
 
@@ -120,6 +124,8 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
 ## Creators
+
+- [[creators/rubric-labs]] — always-on-agent, harness and Jev field guides.
 
 - [[creators/thinking-machines]] — Inkling models and Tinker; scoped to the new model release and its supporting evidence.
 
@@ -271,6 +277,8 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/proactive-agent-discernment]] — 32 principles for wake/action/message separation, feedback-scoped initiative and bounded event triage.
 
 - [[concepts/agent-memory-consolidation]] — 40 principles: four memory layers, evidence-backed consolidation, hybrid search, explicit adoption and consistency boundaries.
 

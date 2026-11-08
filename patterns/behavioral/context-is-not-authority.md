@@ -140,3 +140,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## T3 Code application — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#auth-mcp-caller-limits]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]]: ambient Slack context, classifier confidence and remembered positive reaction do not create a new mandate. The author's warning about unsolicited busywork supplies a behavioral example; effect enforcement remains a host contract. [[sources/rubriclabs--always-on-agents#discernment]] [[sources/rubriclabs--always-on-agents#learning-lane]]

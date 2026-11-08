@@ -1,0 +1,132 @@
+{
+  "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"articleSection\":\"Field guide\",\"author\":[{\"@type\":\"Person\",\"name\":\"Sarim Malik\",\"url\":\"https://x.com/sarimrmalik\"}],\"dateModified\":\"2026-10-28T15:21:21.000Z\",\"datePublished\":\"2026-10-07\",\"description\":\"Jev is a frontier model that answers questions with probabilities in milliseconds, helping you make decisions. See five live demos of what you can build.\",\"headline\":\"What can you build with Jev?\",\"image\":\"https://rubriclabs.com/images/jev-use-cases/banner.webp\",\"inLanguage\":\"en\",\"mainEntityOfPage\":{\"@id\":\"https://rubriclabs.com/blog/what-can-you-build-with-jev\",\"@type\":\"WebPage\"},\"publisher\":{\"@id\":\"https://rubriclabs.com/#organization\",\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://rubriclabs.com/brand/logo-black.png\"},\"name\":\"Rubric Labs\",\"url\":\"https://rubriclabs.com\"},\"url\":\"https://rubriclabs.com/blog/what-can-you-build-with-jev\"}"
+  ],
+  "links": [
+    "/",
+    "/work",
+    "/lab",
+    "/blog",
+    "/contact",
+    "/team",
+    "/careers",
+    "/newsletter",
+    "/brand",
+    "/privacy",
+    "https://github.com/RubricLab",
+    "https://x.com/RubricLabs",
+    "https://www.linkedin.com/company/RubricLabs",
+    "/blog?category=field-guide",
+    "/team/sarim",
+    "#what-can-you-ask-jev",
+    "https://docs.typesafe.ai/primitives/noul",
+    "https://developers.openai.com/api/docs/guides/decisions",
+    "#examples",
+    "#prioritizing-notifications",
+    "#jev-notification-pill",
+    "#searching-by-meaning",
+    "https://en.wikipedia.org/w/index.php?title=Platypus&oldid=1376973599",
+    "#jev-search-refresh",
+    "https://docs.typesafe.ai/cookbooks/semantic_find",
+    "#checking-spelling",
+    "#finding-settings",
+    "#jev-settings-phone-refresh",
+    "#rewriting-emails",
+    "#jev-rewrite-refresh",
+    "#how-does-jev-compare",
+    "https://www.cloudflare.com/resource/clef-rl-interest",
+    "#whats-next",
+    "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "https://www.together.ai/blog/how-to-train-your-own-jev",
+    "https://openrouter.ai/jaredpalmer/kev-4b",
+    "https://www.liquid.ai/blog/d1-decision-model",
+    "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b",
+    "/blog/challenging-the-chatbot",
+    "#top"
+  ],
+  "tables": [
+    [
+      [
+        "Measure",
+        "Jev 1.13",
+        "GPT-6 Luna Decisions",
+        "Clef 27B"
+      ],
+      [
+        "Accuracy",
+        "96 %",
+        "91 %",
+        "86 %"
+      ],
+      [
+        "Spelling   ( 36  scenarios )",
+        "86 %",
+        "69 %",
+        "81 %"
+      ],
+      [
+        "Notifications   ( 20  scenarios )",
+        "100 %",
+        "95 %",
+        "95 %"
+      ],
+      [
+        "Search   ( 25  scenarios )",
+        "100 %",
+        "100 %",
+        "100 %"
+      ],
+      [
+        "Settings   ( 20  scenarios )",
+        "98 %",
+        "100 %",
+        "70 %"
+      ],
+      [
+        "Latency"
+      ],
+      [
+        "Fastest 10%",
+        "182 ms",
+        "191 ms",
+        "321 ms"
+      ],
+      [
+        "Median",
+        "211 ms",
+        "239 ms",
+        "471 ms"
+      ],
+      [
+        "Slowest 10%",
+        "298 ms",
+        "339 ms",
+        "1850 ms"
+      ],
+      [
+        "Cost per 1,000 requests",
+        "$ 0 . 13",
+        "$ 0 . 23",
+        "$ 0 . 73"
+      ],
+      [
+        "Consistency   ( same answer each run )",
+        "99 %",
+        "100 %",
+        "100 %"
+      ]
+    ]
+  ],
+  "figures_initial_text": [
+    "Friday, October 23 9:41 GitHub acme/app now CI failed on main. 2 checks did not pass. GitHub acme/app CI failed on main. 2 checks did not pass. Does this need you right now? Yes 0 % No 0 % One question, fixed answers, a probability for each",
+    "Which emoji best represents \u201c Q4 revenue report \u201d? Choosing an emoji Live Using Choice to find the emoji that best represents the title",
+    "How well does the \u201c \ud83d\udcca \u201d emoji represent the title \u201c Q4 revenue report \u201d? 1 2 3 4 5 Live Using Score to rate how well an emoji represents the title",
+    "The \u201c \ud83d\udcc5 \u201d emoji is a suitable match for the title \u201c Office lunch menu \u201d. Live Using Bool to test whether an emoji represents the title",
+    "Threshold: 80 % Live \u00b7 0 \u00a2 \u00b7 0 / 8 requests \u00b7 0 priority Prioritizing incoming notifications with Jev",
+    "Live Showing 0 of 211 results Searching an article on the platypus with Jev",
+    "I just recieved the first draft form the design team. The layout looks great, but we should check the spelling before we publsh it. \u200b I just recieved the first draft form the design team. The layout looks great, but we should check the spelling before we publsh it. Live \u00b7 Total cost: 0 \u00a2 Checking spelling as you type",
+    "9 : 41 Settings Apple Account Airplane Mode Wi-Fi Bluetooth Cellular Personal Hotspot Battery General Accessibility Action Button Apple Intelligence & Siri Camera Control Center Display & Brightness Home Screen & App Library Search StandBy Wallpaper Notifications Sounds & Haptics Focus Screen Time Face ID & Passcode Emergency SOS Privacy & Security Game Center Wallet & Apple Pay Apps Settings Live Finding a setting in iPhone Settings",
+    "Draft 1 Sam,\n\nThe launch deck was due yesterday and I still don't have it. This is the second time this month this has happened, and honestly I'm tired of chasing you for it.\n\nThe whole team is waiting on your slides before we can do the dry run, and now we're going to have to push it. I need the deck today, no excuses.\n\nJordan Sounds friendly Makes one clear ask Doesn't blame anyone Explains why it matters Live Rewriting an email until it meets the writer's criteria",
+    "Measure Jev 1.13 GPT-6 Luna Decisions Clef 27B Accuracy 96 % 91 % 86 % Spelling ( 36 scenarios ) 86 % 69 % 81 % Notifications ( 20 scenarios ) 100 % 95 % 95 % Search ( 25 scenarios ) 100 % 100 % 100 % Settings ( 20 scenarios ) 98 % 100 % 70 % Latency Fastest 10% 182 ms 191 ms 321 ms Median 211 ms 239 ms 471 ms Slowest 10% 298 ms 339 ms 1850 ms Cost per 1,000 requests $ 0 . 13 $ 0 . 23 $ 0 . 73 Consistency ( same answer each run ) 99 % 100 % 100 % Three decision models on 101 hand-labeled examples"
+  ]
+}

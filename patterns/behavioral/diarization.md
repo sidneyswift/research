@@ -95,3 +95,7 @@ A falsifiable test for spotting diarization in a new artifact (its `## Examples`
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] complements judgment distillation with explicit correction: reconcile notes against observations, preserve conflicts and source dates, and avoid converting uncertainty into settled fact. Corpus silence is not contradiction. [[sources/anthropic--components-of-agent-memory#correction]] [[sources/anthropic--agent-memory-support#dynamic-workflow]]
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] proposes retaining user reactions to autonomous actions for later judgment. A useful distillation preserves scope and observed response without inventing an enduring preference or interpreting silence as endorsement. [[sources/rubriclabs--always-on-agents#learning-lane]]

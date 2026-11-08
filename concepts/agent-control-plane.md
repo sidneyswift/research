@@ -156,3 +156,7 @@ Portable adaptations, not extra claims about the proposed system:
 ## T3 Code — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a pinned source case: Shared services and explicit command/effect ownership; normalized domain state is independent of client transport and provider callbacks. [[sources/pingdotgg--t3code#service-reach]] [[sources/pingdotgg--t3code#rt-atomic-intent]] Source/test inspection only; no hosted/provider outcome or new model score claimed.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] qualifies the continuous-conversation model: single-threaded is the user interface, while slow workers proceed concurrently. Durable task/permission state is still needed underneath heartbeat and messaging tools; the article does not specify those recovery contracts. [[sources/rubriclabs--always-on-agents#continuity]] [[sources/rubriclabs--always-on-agents#dispatch]] [[sources/rubriclabs--always-on-agents#wake]]

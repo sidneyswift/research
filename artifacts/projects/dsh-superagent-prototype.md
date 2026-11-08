@@ -105,3 +105,7 @@ Every entry is an **adaptation**, not a recommendation to deploy this prototype 
 - TODO: test prompt injection through subscribed review comments and scope expansion beyond a Mandate under constrained credentials.
 - TODO: measure real human interruptions, accepted results, provider spend and completed coding tasks; the essay's synthetic scheduling benchmark cannot settle these.
 - Source SHA/path/line and wiki link checks are recorded in [[log]]; no source application or provider behavior was verified.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] compares Rubric's lane/feedback guidance with this prototype's explicit context-versus-Mandate separation. A relevant notification is an input to work selection, not authority by itself; no runtime equivalence is claimed. [[sources/rubriclabs--always-on-agents#discernment]] [[sources/rubriclabs--always-on-agents#learning-lane]] [[sources/deepseek-ai--dsh-superagent-prototype#authorization]]

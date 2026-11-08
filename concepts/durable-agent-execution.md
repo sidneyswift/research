@@ -143,3 +143,7 @@ Matt Pocock proposes a persistent local domain thread coordinating a factory of 
 ## T3 Code — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a pinned source case: Separate atomic accepted intent, process-bound versus replay-safe effects, retained receipt versus pruned replay history, and new restart-continuation intent. Provider/file rollback remains sequential. [[sources/pingdotgg--t3code#rt-replay-classification]] [[sources/pingdotgg--t3code#rt-dedup-lifetime]] Source/test inspection only; no hosted/provider outcome or new model score claimed.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]]: heartbeat availability and scheduled follow-up are design triggers, not evidence of durable wakeups, deduplicated effects or completed user work. No retry, cancelation or overlap behavior is specified in the source. [[sources/rubriclabs--always-on-agents#wake]] [[sources/rubriclabs--always-on-agents#communication]]

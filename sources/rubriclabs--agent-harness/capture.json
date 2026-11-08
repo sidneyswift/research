@@ -1,0 +1,28 @@
+{
+  "captures": [
+    {
+      "file": "snapshot.md",
+      "url": "https://rubriclabs.com/blog/what-is-an-agent-harness",
+      "sha256": "c0e3b0b9aea897093ecea36ac24e8bc04d85e19d42dd7eb8f39c3c69421c7c02",
+      "bytes": 10104,
+      "fetchedAt": "2026-11-08T00:58:39.291Z",
+      "kind": "full readable article"
+    },
+    {
+      "file": "page.html",
+      "url": "https://rubriclabs.com/blog/what-is-an-agent-harness",
+      "sha256": "096b185ad0ec31b89dfe5bfe7627a8d03c3020d3a5b423836419a0a65e5fa109",
+      "bytes": 191635,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "original HTML"
+    },
+    {
+      "file": "extracted-page.json",
+      "url": "https://rubriclabs.com/blog/what-is-an-agent-harness",
+      "sha256": "751a121762d0627f1c079cf4c6a7ae3966e6df50fbbfc6d9363d61f5803e0dc6",
+      "bytes": 4425,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "derived metadata/links/initial figures; Jev includes table"
+    }
+  ]
+}

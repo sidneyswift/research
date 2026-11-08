@@ -385,3 +385,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 ## [2026-11-07] T3 Code — partial views cannot authorize destructive inference
 
 **Applied**2026-11-07. [[patterns/behavioral/evidence-gated-completion]] maps to two concrete T3 boundaries: partial shell membership is not deletion, and absent/empty/null file-revision answers differ. Extended [[_schemas/project]]'s existing observation/persistence questions with completeness/authoritative-absence and applied-state/cursor checks. Grounding: [[sources/pingdotgg--t3code#client-consistency]] and [[sources/pingdotgg--t3code#review-revision-absence]]. This is a focused schema refinement; no new pattern promotion, installable skill or generic linter. The existing source/link checks already cover preservation; runtime semantics still need actual acceptance tests.
+
+## [2026-11-08] Rubric — route proactive behavior through responsibility and evidence
+
+- **Grounding:** [[concepts/proactive-agent-discernment]], [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavioral/latent-vs-deterministic-split]]; a classifier can predict relevance without a mandate, and some events should be deferred. [[sources/rubriclabs--always-on-agents#discernment]] [[sources/rubriclabs--always-on-agents#triage]] [[sources/rubriclabs--jev-use-cases#notifications]]
+- **Applied:** builder route for always-on/event-triage/notification decisions, with explicit limits on classifier evidence. The concept defines a concrete adoption trigger and separate missed-opportunity, intervention and interruption measures.
+- **Expected benefit:** distinguish useful autonomy from activity and token volume; carry existing authorization without inferring new authority from reaction memory.
+- **Status:** applied 2026-11-08. Existing schemas suffice; no new installed skill, heartbeat or local message-transport rule. The source's proposal is research, not a command to reconfigure this agent.

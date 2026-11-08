@@ -830,3 +830,13 @@ Applied [[patterns/behavioral/context-is-not-authority]] and [[patterns/behavior
 ## [2026-11-07] reflect | authoritative absence and applied cursor boundaries
 
 Applied [[patterns/behavioral/evidence-gated-completion]] from T3's partial shell snapshots and unknown/deleted file revisions to [[_schemas/project]]'s existing observation questions. [[meta/self-improvements]] records grounding; reused existing checks rather than adding a speculative validator.
+
+## [2026-11-08] ingest | Rubric always-on agents and discernment
+
+- Added [[concepts/proactive-agent-discernment]] with 32 principles, [[creators/rubric-labs]] and three article citation maps. Preserved 18 evidence files: full prose/original HTML, primary banner/seven figure fragments/labels, metadata and the Jev table. Both substantive primary links read; external second-level links and live animations/demos untested.
+- Separated user-facing continuity from concurrency, wake/action/message decisions, relevance from mandate, application thresholds from calibration, reaction memory from permission and exploratory classifier scores from production outcomes. Cross-linked fifteen existing concept/artifact/pattern pages.
+- Validation: 18 capture hashes, 68 new source-anchor links, 15 relative links, full three-body and seven-figure readback, Jev table integrity; wiki-doctor 50→50 with no new findings. ratchet: new page-target links +136 · orphans +0 · patterns +0. Structural validation, not replicated model performance. No installed policy, memory workflow, schedule or external integration changed.
+
+## [2026-11-08] reflect | always-on is not always-acting
+
+- Added a scoped builder route with abstention and decision-boundary evidence, not a new autonomy rule. See [[meta/self-improvements]].

@@ -1,0 +1,152 @@
+{
+  "links": [
+    "/",
+    "/work",
+    "/lab",
+    "/blog",
+    "/contact",
+    "/team",
+    "/careers",
+    "/newsletter",
+    "/brand",
+    "/privacy",
+    "https://github.com/RubricLab",
+    "https://x.com/RubricLabs",
+    "https://www.linkedin.com/company/RubricLabs",
+    "/blog?category=field-guide",
+    "/team/dexter",
+    "#single-threaded",
+    "/blog/what-is-an-agent-harness#context",
+    "#compaction",
+    "#dispatch",
+    "#proactive",
+    "#heartbeat",
+    "#messaging",
+    "#situational-awareness",
+    "#broad-access",
+    "#notifications",
+    "/blog/what-can-you-build-with-jev",
+    "#discernment",
+    "#designing-for-discernment",
+    "#back-to-jarvis",
+    "/blog/what-is-an-agent-harness",
+    "#top"
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "alt": "",
+      "data-original-src": "/_next/static/media/dexter-storey.3bb2c482.webp",
+      "loading": "lazy",
+      "decoding": "async",
+      "data-nimg": "fill",
+      "class": "object-cover",
+      "style": "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='data:image/webp;base64,UklGRhwBAABXRUJQVlA4TBABAAAvB8ABAM1VICICHgiADQIAAIDa9feXAAA4AAAAAAAAAAAAAAAAAAAAAJAIIOgHAICgwgM/BR7V61cPAADAAwHIQQAAADj//bb/v82vUgAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAABBUMGPvgQCkMAAAAJz/fzUAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA4BWv6+7fkXW9w1RIB0IJyH5XeOUzxMR5gpc3LZ2mTF4UVBiISYSDOvbXrU5H21OAFpZYWY61dLpwWc32ZrLvGNEZhCeuhErZlmxdoUDTNkvH96v9Mt4JB6USXjDso3RIng+/uK7aNoiz61+ZqY+9Y7G9Or8FDV+EUyOBQ=='/%3E%3C/svg%3E\")",
+      "sizes": "36px",
+      "srcset": "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=32&q=80 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=48&q=80 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=64&q=80 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=96&q=80 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=128&q=80 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=256&q=80 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=384&q=80 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=640&q=80 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=750&q=80 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=828&q=80 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=1080&q=80 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=1200&q=80 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=1920&q=80 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=2048&q=80 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=3840&q=80 3840w",
+      "src": "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdexter-storey.3bb2c482.webp&w=3840&q=80"
+    }
+  ],
+  "meta": [
+    {
+      "charset": "utf-8"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+    },
+    {
+      "name": "theme-color",
+      "media": "(prefers-color-scheme: light)",
+      "content": "#f7f7f8"
+    },
+    {
+      "name": "theme-color",
+      "media": "(prefers-color-scheme: dark)",
+      "content": "#000000"
+    },
+    {
+      "name": "next-size-adjust",
+      "content": ""
+    },
+    {
+      "name": "description",
+      "content": "Chatbots wait for a message. An always-on agent is single-threaded, proactive and situationally aware. Here's how we design them, and what models still lack."
+    },
+    {
+      "property": "og:title",
+      "content": "Designing an Always-On Agent"
+    },
+    {
+      "property": "og:description",
+      "content": "Chatbots wait for a message. An always-on agent is single-threaded, proactive and situationally aware. Here's how we design them, and what models still lack."
+    },
+    {
+      "property": "og:url",
+      "content": "https://rubriclabs.com/blog/always-on-agents"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Rubric Labs"
+    },
+    {
+      "property": "og:image:alt",
+      "content": "Designing an Always-On Agent"
+    },
+    {
+      "property": "og:image",
+      "content": "https://rubriclabs.com/blog/always-on-agents/opengraph-image"
+    },
+    {
+      "property": "og:type",
+      "content": "article"
+    },
+    {
+      "property": "article:published_time",
+      "content": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "property": "article:modified_time",
+      "content": "2026-11-05T21:47:23.000Z"
+    },
+    {
+      "property": "article:author",
+      "content": "Dexter Storey"
+    },
+    {
+      "property": "article:section",
+      "content": "Field guide"
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:site",
+      "content": "@RubricLabs"
+    },
+    {
+      "name": "twitter:creator",
+      "content": "@dexterstorey"
+    },
+    {
+      "name": "twitter:title",
+      "content": "Designing an Always-On Agent"
+    },
+    {
+      "name": "twitter:description",
+      "content": "Chatbots wait for a message. An always-on agent is single-threaded, proactive and situationally aware. Here's how we design them, and what models still lack."
+    },
+    {
+      "name": "twitter:image:alt",
+      "content": "Designing an Always-On Agent"
+    },
+    {
+      "name": "twitter:image",
+      "content": "https://rubriclabs.com/blog/always-on-agents/opengraph-image"
+    }
+  ],
+  "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"articleSection\":\"Field guide\",\"author\":[{\"@type\":\"Person\",\"name\":\"Dexter Storey\",\"url\":\"https://x.com/dexterstorey\"}],\"dateModified\":\"2026-11-05T21:47:23.000Z\",\"datePublished\":\"2026-11-05\",\"description\":\"Chatbots wait for a message. An always-on agent is single-threaded, proactive and situationally aware. Here's how we design them, and what models still lack.\",\"headline\":\"Designing an Always-On Agent\",\"image\":\"https://rubriclabs.com/images/designing-an-always-on-agent/banner.webp\",\"inLanguage\":\"en\",\"mainEntityOfPage\":{\"@id\":\"https://rubriclabs.com/blog/always-on-agents\",\"@type\":\"WebPage\"},\"publisher\":{\"@id\":\"https://rubriclabs.com/#organization\",\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://rubriclabs.com/brand/logo-black.png\"},\"name\":\"Rubric Labs\",\"url\":\"https://rubriclabs.com\"},\"url\":\"https://rubriclabs.com/blog/always-on-agents\"}"
+  ]
+}

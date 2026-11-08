@@ -1,0 +1,53 @@
+{
+  "retrieved": "2026-11-08T00:59:52.806040+00:00",
+  "read": "Full article prose. Static figure labels/captions and Jev comparison table inspected in extracted HTML.",
+  "not_exercised": [
+    "Interactive animations not played; live Jev demos not invoked.",
+    "No backend, implementation repository, raw benchmark records or provider API acceptance test."
+  ],
+  "links": [
+    "/",
+    "/work",
+    "/lab",
+    "/blog",
+    "/contact",
+    "/team",
+    "/careers",
+    "/newsletter",
+    "/brand",
+    "/privacy",
+    "https://github.com/RubricLab",
+    "https://x.com/RubricLabs",
+    "https://www.linkedin.com/company/RubricLabs",
+    "/blog?category=field-guide",
+    "/team/ted",
+    "/team/dexter",
+    "/team/sarim",
+    "https://pi.dev/",
+    "/blog/how-does-claude-code-actually-work",
+    "#loop",
+    "#context",
+    "#compaction",
+    "https://x.com/OpenAI/status/2082616640144048433",
+    "#memory",
+    "https://www.psychologytoday.com/ca/basics/memory/types-of-memory",
+    "#orchestration",
+    "#planning",
+    "/blog/what-is-an-agent-harness#dispatch",
+    "#dispatch",
+    "#tools",
+    "#execution",
+    "#mcp",
+    "#verification",
+    "#permissions",
+    "#future",
+    "https://www.primeintellect.ai/blog/prime-agent",
+    "https://x.com/liquidai/status/2084640701669613906",
+    "#top"
+  ],
+  "followed_primary_body_links": [
+    "https://rubriclabs.com/blog/what-is-an-agent-harness#context",
+    "https://rubriclabs.com/blog/what-can-you-build-with-jev"
+  ],
+  "unvisited_scope": "Navigation/team/contact/social links and second-level external references were not separately ingested. External performance/provider claims remain author-attributed."
+}

@@ -111,3 +111,7 @@ A syntactically confined artifact path is not safe evidence promotion. The sourc
 ## T3 Code — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a pinned source case: Typed context identity, ordered references, explicit omission metadata and conservative pending/injected/inline handoff delivery make context inspectable without claiming identical provider state. [[sources/pingdotgg--t3code#typed-context]] [[sources/pingdotgg--t3code#context-delivery-uncertainty]] Source/test inspection only; no hosted/provider outcome or new model score claimed.
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] links main-thread continuity to delegated execution and source-proposed fold/drop tools. Keeping active commitments through a context edit and retaining auditable raw history are additional harness contracts, not guaranteed by a self-written summary. [[sources/rubriclabs--always-on-agents#context]] [[sources/rubriclabs--always-on-agents#dispatch]]

@@ -102,3 +102,7 @@ The neutral prompt never delegated in five runs; delegation-first delegated in f
 ## Domain-scoped coordinator comparison — 2026-11-04
 
 [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]] captures Matt Pocock's proposed local, long-running domain thread attached to a sandboxed software factory through a CLI. It shares the continuity/execution separation, but it is **not** evidence of DeepSeek's entire router/pass-through architecture: the proposed coordinator manages retrospectives and cron jobs, is scoped to one domain, and is not stated to be routing-only. It is a proposed trial with no reported result. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#operating-loop]] [[sources/mattpocock--domain-orchestrator-factory#proposal-status]]
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] adds a behavioral layer to continuous routing: distinguish an event worth inspecting, a useful authorized action and an interruption worth sending. Rubric proposes retained low-priority batches, explicit message delivery and feedback-informed responsibility; its essay supplies no intervention-quality benchmark. [[sources/rubriclabs--always-on-agents#triage]] [[sources/rubriclabs--always-on-agents#communication]] [[sources/rubriclabs--always-on-agents#learning-lane]]

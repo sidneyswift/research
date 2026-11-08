@@ -225,3 +225,7 @@ Documentation-grounded design criteria and adaptations; not instructions to depl
 - What delivery latency, loss/duplication frequency and end-to-end task success occur under fault injection? None were measured in this ingest.
 
 **Adoption trigger:** user- or agent-selected future work that genuinely needs runtime management. A fixed maintenance task can remain static. Use the existing application data model where business state, approvals, idempotency or audit requirements exceed the schedule payload/history contract. This is our scoped design inference from the documented separation, not a requirement to migrate existing jobs. [[sources/vercel--introducing-schedules#static-dynamic]] [[sources/vercel--schedules-docs#workflow-boundary]]
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] provides a motivation for self-scheduled wakeups and timing delivery to user need. Rubric's design does not establish scheduler guarantees; this project's documented delivery/overlap/retry boundaries remain separate. [[sources/rubriclabs--always-on-agents#wake]] [[sources/rubriclabs--always-on-agents#communication]]

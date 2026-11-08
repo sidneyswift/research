@@ -44,10 +44,10 @@ See [[projects/_index]] for projects created from the research, starting with [[
 | Plugins cataloged | 10 | 2026-11-04 |
 | Projects cataloged | 32 | 2026-11-07 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
-| Concepts cataloged | 32 | 2026-11-07 |
+| Concepts cataloged | 33 | 2026-11-08 |
 | Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
-| Creators cataloged | 71 | 2026-11-07 |
-| Source citation pages | 106: 23 article, 47 docs-page, 5 other, 6 paper, 24 repo, 1 tweet | 2026-11-07 |
+| Creators cataloged | 72 | 2026-11-08 |
+| Source citation pages | 109: 26 article, 47 docs-page, 5 other, 6 paper, 24 repo, 1 tweet | 2026-11-08 |
 
 Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
 
@@ -75,7 +75,7 @@ Frontier agent-documentation follow-up: [[concepts/agent-documentation-interface
 
 Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverage/review principles, full source pinned locally, and 65 bundled validator tests passed. This is not a completed target audit or detection benchmark.
 
-Latest concept ingest: [[concepts/agent-memory-consolidation]] — 40 principles; full article, fifteen figures and supporting captures preserved. External-memory evidence and documented product guarantees kept separate; no memory system installed.
+Latest concept ingest: [[concepts/proactive-agent-discernment]] — 32 principles from three Rubric field guides, 18 evidence files preserved. Distinguishes wake, authorized work and interruption; no live policy or automation changed.
 
 Latest project ingest: [[artifacts/projects/inkling-2-small]] — 44 adaptation/evaluation/containment principles, 25 preserved evidence files. Hosted access and promised weights kept separate; no model training or benchmark replication.
 

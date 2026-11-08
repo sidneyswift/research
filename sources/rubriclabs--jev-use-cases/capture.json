@@ -1,0 +1,28 @@
+{
+  "captures": [
+    {
+      "file": "snapshot.md",
+      "url": "https://rubriclabs.com/blog/what-can-you-build-with-jev",
+      "sha256": "03e7bbc78921eb95a66478134be4441da7c9acde9df1e29dc55df122ad40c26a",
+      "bytes": 11657,
+      "fetchedAt": "2026-11-08T00:58:39.765Z",
+      "kind": "full readable article"
+    },
+    {
+      "file": "page.html",
+      "url": "https://rubriclabs.com/blog/what-can-you-build-with-jev",
+      "sha256": "ed44cd43f31b618c796f24463f3ddf83943a25cb839c8ecfc65bd047a3f54391",
+      "bytes": 236196,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "original HTML"
+    },
+    {
+      "file": "extracted-page.json",
+      "url": "https://rubriclabs.com/blog/what-can-you-build-with-jev",
+      "sha256": "598b69279ffde544fa5b3a4291c22f76af86211567e768ad41732e4e344ec539",
+      "bytes": 6341,
+      "fetchedAt": "2026-11-08T00:59:52.806040+00:00",
+      "kind": "derived metadata/links/initial figures; Jev includes table"
+    }
+  ]
+}

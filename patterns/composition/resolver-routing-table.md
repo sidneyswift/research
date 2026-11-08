@@ -123,3 +123,7 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] applies the resolver role to injected memory: compact index now, detailed topic files on demand. Saving beyond the consumer's load cutoff does not make the tail available. [[sources/anthropic--components-of-agent-memory#injection]] [[sources/anthropic--agent-memory-support#code-injection]]
+
+## Proactive discernment — 2026-11-08
+
+[[concepts/proactive-agent-discernment]] shows why a router needs a none/defer path. The Jev semantic-find example ranks a sentence even when none answers; separate relevance testing supports abstention before committing to a branch. [[sources/rubriclabs--jev-use-cases#relevance]]
