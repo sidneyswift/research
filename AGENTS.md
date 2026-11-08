@@ -226,11 +226,15 @@ See `README.md` for current ingestion counts and `log.md` for the chronological 
 
 ## Engineering planning and cross-repository work
 
+
+- Adopt existing work in place at the next authorized task or PR update: inspect and reuse its branch, changes, plan and tracking; add missing useful links without restarting or backdating work. Agents need no human assignee. Record a bounded claim and recheck overlap before shared edits or publication.
+- Use the Code Review post skill for meaningful routine Engineering updates under the [approved channel policy](https://github.com/Swift-Response/engineering/blob/main/docs/systems/team-workflow.md#routine-engineering-code-review-updates). Current draft-only, audience and access restrictions prevail; unavailable delivery leaves a usable draft and explicit pending receipt.
+
 For Flex Engineering work, use the [shared Engineering instructions](https://github.com/Swift-Response/engineering/blob/main/AGENTS.md), [team workflow](https://github.com/Swift-Response/engineering/blob/main/docs/systems/team-workflow.md) and [Engineering Project](https://github.com/orgs/Swift-Response/projects/1). These links also apply when this repository is opened without the parent workspace.
 
 - Keep Engineering epics/programs in `Swift-Response/engineering`; keep implementation issues and detailed technical plans in the repository that owns the change. Preserve restricted audiences and separate business ownership.
 - Search existing open/closed issues and the central epic before creating work. Reuse existing scope; do not create duplicate central implementation tickets. Small standalone fixes need no forced epic or planning ceremony.
 - Add delivery issues to the shared Project and as native sub-issues of their existing central epic. An issue has one primary parent; other initiatives link dependencies instead of silently reparenting it. If tooling/access prevents a relationship update, retain explicit links and report the missing update.
 - Before substantial tracked work, read the current issue, related PRs and dependencies; claim a bounded slice with its owning branch/PR and next evidence checkpoint. Distinguish prerequisites for starting from prerequisites for completion. Preserve concurrent changes and use an isolated branch/worktree when needed.
-- Update the issue and Project at meaningful transitions and handoff. Record scope, owner or explicit ownership gap, exact revision, checks, remaining dependency and next action; for cross-repo changes include contract compatibility and consumer/release order. Do not invent assignments, priorities or deadlines.
+- Update the issue and Project at meaningful transitions and handoff. Record scope, current bounded claim or availability, exact revision, checks, remaining dependency and next action; for cross-repo changes include contract compatibility and consumer/release order. Do not invent assignments, priorities or deadlines.
 - Keep plan agreement, implementation, review, merge, deployment and user/business acceptance distinct. Close work only against its defined evidence. A ticket or board status grants no new access or execution/publication authority; retain this repository's implementation, security and release rules.
