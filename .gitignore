@@ -82,3 +82,6 @@ sources/openai--mcp-extensions/
 
 # Supporting evidence for typed decision cascades
 sources/nutlope--jev-fraud/
+
+# Pinned evidence for untangle-codebase
+sources/caldoai--skills/

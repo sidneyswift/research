@@ -22,6 +22,8 @@ See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, pre
 
 ## Cloned repos
 
+- [[sources/caldoai--skills]] — full four-file source pinned at `f3cf477`; refactor procedure, metadata, license and all-file hashes.
+
 - [[sources/nutlope--jev-fraud]] — pinned implementation and stored recording; twelve mock tests passed, no fresh inference.
 
 - [[sources/rhys-sullivan--executor]] — selected capability contracts, OpenAPI compilation, persisted catalog, discovery and sandbox dispatch at `3cf6e5465`; source inspection, with package reuse qualification separate.

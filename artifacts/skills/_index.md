@@ -2,7 +2,7 @@
 domain: artifacts
 type: index
 subdomain: skills
-last-reviewed: 2026-05-21
+last-reviewed: 2026-11-09
 ---
 
 # Skills
@@ -18,6 +18,8 @@ Individual skills cataloged. Each page uses [../../\_schemas/skill.md](../../_sc
 *(none yet)*
 
 ### Skills that work in both
+
+- [[artifacts/skills/untangle-codebase]] — change-affinity refactoring, many-symptoms-to-one-fix ledger and optional comment/test cleanup; 32 principles, source-inspected only.
 - [[artifacts/skills/grilling]] — Matt Pocock's relentless one-question-at-a-time alignment interview (model-invoked; the reusable loop behind `grill-me`/`grill-with-docs`). The wiki's **first individual skill page**.
 - [[artifacts/skills/writing-great-skills]] — Matt Pocock's reference skill for *authoring* skills (predictability, the two loads, the information-hierarchy ladder, leading words, the five failure modes); the most self-applicable artifact in the wiki.
 - [[artifacts/skills/loop-library]] — Forward Future's find/adapt/design skill for **bounded agent loops**; routes a request to the smallest path and bundles a 31-loop catalog. Installs via skills.sh + ships a Codex `agents/openai.yaml`. Grounds [[concepts/agentic-loop]]; confirming 2nd artifact for [[patterns/behavioral/evidence-gated-completion]].
@@ -76,3 +78,10 @@ Add candidates here as one-line entries before promoting to a full page. Keep a 
 - `pptx-author` / `xlsx-author` (financial-analysis) — *headless* document authoring skills, used in Managed Agent mode (no open Office doc).
 - `skill-creator` (financial-analysis) — FSI's own copy of the meta-skill; compare to Anthropic's and gbrain's variants once deep-dived.
 - *(full enumeration: 7 verticals × skills lists in [[sources/anthropic--financial-services#README]] skill+command reference)*
+
+## Caldo source study — 2026-11-09
+
+- [[creators/caldoai]] — Caldo Skills publisher; untangle-codebase methodology.
+- [[artifacts/skills/untangle-codebase]] — change-affinity refactoring, many-symptoms-to-one-fix ledger and optional comment/test cleanup; 32 principles, source-inspected only.
+
+Cross-platform support is advertised by the source; host invocation behavior and installation remain untested.

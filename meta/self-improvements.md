@@ -399,3 +399,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 - **Applied:** a conditional evidence question in [[_schemas/concept]] and a builder route for bounded decisions/cascade economics. Future studies should state statistic semantics, calibration coverage and the full comparison/billing contract.
 - **Expected benefit:** prevent unlike confidence fields, historical runs or unequal-quality cost baselines from being silently combined. Existing structural validators suffice; no speculative new test framework.
 - **Status:** applied 2026-11-09 to repository research guidance only. No installed skill, provider integration or live routing policy changed. Production adoption remains conditional on a recurring costly decision and held-out evidence.
+
+## [2026-11-09] Untangle-codebase — route redesign through problem-to-fix evidence
+
+- **Grounding:** [[artifacts/skills/untangle-codebase]], [[patterns/behavioral/diarization]] and [[patterns/behavioral/evidence-gated-completion]]: the decision log maps several symptoms to one design decision while the completion criteria remain qualitative. [[sources/caldoai--skills#decision-log]] [[sources/caldoai--skills#completion]]
+- **Applied:** a builder route to the change-affinity method, explicit behavior evidence and separately scoped comment/test pruning. Existing context/completion schemas already cover evidence ownership; no duplicate concept, checklist or validator added.
+- **Expected benefit:** future architecture studies can find a concrete diagnostic vocabulary and preserve the distinction between cleaner structure and verified behavior.
+- **Status:** applied to research navigation on 2026-11-09. No installed skill or codebase refactor. Adoption trigger: repeated real changes span unrelated files or force broad agent reading; evaluate representative before/after changes and retain a regression baseline before considering cleanup.

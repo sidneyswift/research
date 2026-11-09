@@ -124,3 +124,7 @@ This split keeps the trust story legible: an admin can never silently inject beh
 ## T3 Code — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a pinned source case: Provider instruction channels and byte truncation differ; test actual delivered text/configuration while keeping prompt instructions separate from executable permissions. [[sources/pingdotgg--t3code#context-provider-channels]] [[sources/pingdotgg--t3code#eng-context-budget]] Source/test inspection only; no hosted/provider outcome or new model score claimed.
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] offers the same folder through the skills CLI, a Claude marketplace entry and manual copy. Its marketplace uses `strict: false`, root source and an explicit skill path. Local path resolution checks are weaker evidence than an actual host install or invocation. [[sources/caldoai--skills#marketplace]] [[sources/caldoai--skills#root]]

@@ -1,0 +1,9 @@
+{
+  "source_pin": "f3cf47774975a7d9fca45730babf4ff7ad765ada",
+  "source_files_and_hashes": 4,
+  "checkout_clean": true,
+  "marketplace_local_paths_resolve": true,
+  "internal_example_anchor_resolves": true,
+  "trigger_preserved_verbatim": true,
+  "test_scope": "Structural evidence only; no install, host invocation, target refactor or behavioral benchmark."
+}

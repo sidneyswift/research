@@ -141,3 +141,7 @@ Internal design application: [[projects/conversation-learning/README]] proposes 
 ## T3 Code application — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#service-reach]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] offers one source folder through skills CLI, explicit marketplace registration and manual copying. The four-file source and paths were checked; no installer or cross-host conformance test was run. [[sources/caldoai--skills#root]] [[sources/caldoai--skills#marketplace]]

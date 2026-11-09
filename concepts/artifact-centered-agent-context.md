@@ -115,3 +115,7 @@ A syntactically confined artifact path is not safe evidence promotion. The sourc
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]] links main-thread continuity to delegated execution and source-proposed fold/drop tools. Keeping active commitments through a context edit and retaining auditable raw history are additional harness contracts, not guaranteed by a self-written summary. [[sources/rubriclabs--always-on-agents#context]] [[sources/rubriclabs--always-on-agents#dispatch]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] prescribes a persistent decision log that groups exact symptoms under the fix they justify, plus skeletons and bounded summaries for broad navigation. The log preserves reasoning across compaction; compressed views still require source readback when behavior or hidden dependencies matter. [[sources/caldoai--skills#decision-log]] [[sources/caldoai--skills#context-tools]]

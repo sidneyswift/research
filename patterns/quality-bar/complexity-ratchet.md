@@ -123,3 +123,7 @@ Supporting maintenance prescription: [[artifacts/projects/superplane]] forbids n
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] qualifies a structural ratchet: valid links and fewer orphans are necessary hygiene, not evidence of better answers. A wiki can grow larger than its sources without abstraction; measure task performance against raw search and total upkeep. [[sources/anthropic--components-of-agent-memory#expansion]] [[sources/anthropic--components-of-agent-memory#wiki-search]] [[sources/anthropic--components-of-agent-memory#compute-budget]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] keeps tests through the structural work and performs optional cleanup last, while challenging vacuous or implementation-coupled checks. This is a prompt-level safety-net prescription, not an enforced non-regression floor; test deletion can still lose coverage without behavioral evidence. [[sources/caldoai--skills#tests]]

@@ -152,3 +152,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Typed decision cascades — 2026-11-09
 
 In [[concepts/typed-decision-cascades]], a schema-valid label or self-reported certainty is not verified correctness. Distinguish failed/unresolved reviews, accepted classifications, downstream effects and measured task outcomes; the twelve mock tests establish fixture behavior only. [[sources/buzzoni--jev-engineering#cascade]] [[sources/nutlope--jev-fraud#verification]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] prescribes final behavior preservation but also uses reviewer agreement and fewer special cases as completion signals. No baseline or validator is bundled. Structural simplification and qualitative review must not be promoted into verified equivalence. [[sources/caldoai--skills#completion]] [[sources/caldoai--skills#inventory-receipt]]

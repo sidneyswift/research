@@ -133,3 +133,7 @@ It earns the right to be a *pack* (over loose skills) because `ask-matt` chains 
 ## Related architecture proposal — 2026-11-04
 
 In a supplied screenshot, Matt mentions `/chief-of-staff` as a possible local, long-running domain orchestrator attached to a software factory. The proposed principle is cataloged in [[concepts/agent-control-plane#principle-persistent-domain-orchestration-with-sandboxed-execution]]. This does not change the pinned pack inventory above: the skill's current source, packaging, availability and actual use were not inspected, and no named factory implementation is supplied. [[sources/mattpocock--domain-orchestrator-factory#domain-orchestrator]] [[sources/mattpocock--domain-orchestrator-factory#provenance-limits]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] is a separate-source comparison for codebase-design/architecture-improvement practice: it uses change affinity and a many-problems-to-one-fix ledger for an end-to-end refactor. This is a methodological comparison, not a claimed fork or influence. Its broader qualitative completion criterion contrasts with choosing a bounded improvement. [[sources/caldoai--skills#inventory]] [[sources/caldoai--skills#decision-log]] [[sources/caldoai--skills#completion]]

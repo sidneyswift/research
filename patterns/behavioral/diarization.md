@@ -99,3 +99,7 @@ A falsifiable test for spotting diarization in a new artifact (its `## Examples`
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]] proposes retaining user reactions to autonomous actions for later judgment. A useful distillation preserves scope and observed response without inventing an enduring preference or interpreting silence as endorsement. [[sources/rubriclabs--always-on-agents#learning-lane]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] retains a decision log that nests multiple located symptoms beneath each structural fix. It is a concrete record format for preserving design reasoning through compaction, not a fresh proof that the fix works. [[sources/caldoai--skills#decision-log]] [[sources/caldoai--skills#context-tools]]

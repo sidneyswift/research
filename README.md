@@ -40,14 +40,14 @@ See [[projects/_index]] for projects created from the research, starting with [[
 
 | Domain | Count | Inventory checked |
 | --- | --- | --- |
-| Skills cataloged | 6 paged | 2026-11-06 |
+| Skills cataloged | 7 paged | 2026-11-09 |
 | Plugins cataloged | 10 | 2026-11-04 |
 | Projects cataloged | 32 | 2026-11-07 |
 | MCP servers cataloged | 0 paged | 2026-11-04 |
 | Concepts cataloged | 34 | 2026-11-09 |
 | Patterns extracted | 11 confirmed + 8 proposed with pages | 2026-11-04 |
-| Creators cataloged | 75 | 2026-11-09 |
-| Source citation pages | 112: 27 article, 48 docs-page, 5 other, 6 paper, 25 repo, 1 tweet | 2026-11-09 |
+| Creators cataloged | 76 | 2026-11-09 |
+| Source citation pages | 113: 27 article, 48 docs-page, 5 other, 6 paper, 26 repo, 1 tweet | 2026-11-09 |
 
 Consolidated research includes [[artifacts/projects/shopify-api]], [[analyses/frontier-and-business-api-design]], [[projects/conversation-learning/README]] and the newer upstream studies through [[artifacts/projects/superplane]]. Analyses retain their existing draft/review status.
 
@@ -73,7 +73,7 @@ Mintlify investigation: [[artifacts/projects/mintlify]] — current docs, first-
 
 Frontier agent-documentation follow-up: [[concepts/agent-documentation-interfaces]] — Context7, Fern, ReadMe, WebMCP, Dokimi and three independent API-agent papers; documentation/specification investigation, no runtime integration.
 
-Latest skill ingest: [[artifacts/skills/security-audit]] — 48 evidence/coverage/review principles, full source pinned locally, and 65 bundled validator tests passed. This is not a completed target audit or detection benchmark.
+Latest skill ingest: [[artifacts/skills/untangle-codebase]] — 32 change-affinity, refactor-scope and evidence principles; complete four-file source pinned locally. No bundled test suite, installation or target refactor; claimed efficiency gains remain unmeasured.
 
 Latest concept ingest: [[concepts/typed-decision-cascades]] — 40 principles, 27 external captures and a pinned full demo checkout plus two verification/hash records. Twelve mock tests passed; cost arithmetic and stored results checked, not fresh model inference or calibration.
 

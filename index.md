@@ -25,6 +25,8 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/caldoai--skills]] — full four-file source pinned at `f3cf477`; refactor procedure, metadata, license and all-file hashes.
+
 - [[sources/nutlope--jev-fraud]] — pinned implementation and stored recording; twelve mock tests passed, no fresh inference.
 - [[sources/buzzoni--jev-engineering]] — full 115-block article, ten embedded Markdown entities and nine images.
 - [[sources/typesafe--decision-model-docs]] — November contracts, confidence semantics and batching evidence; historical drift explicit.
@@ -129,6 +131,8 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 
 ## Creators
 
+- [[creators/caldoai]] — Caldo Skills publisher; untangle-codebase methodology.
+
 - [[creators/typesafe-ai]] — Jev typed-decision API and model-contract documentation.
 - [[creators/mr-buzzoni]] — Jev engineering/cascade playbook, with cost and version claims qualified.
 - [[creators/nutlope]] — source and recorded evidence for the Jev/Kimi fraud demo.
@@ -219,6 +223,8 @@ The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a lo
 Candidate queue (not yet ingested): see [artifacts/plugins/_index.md](artifacts/plugins/_index.md).
 
 ## Artifacts — Skills
+
+- [[artifacts/skills/untangle-codebase]] — change-affinity refactoring, many-symptoms-to-one-fix ledger and optional comment/test cleanup; 32 principles, source-inspected only.
 
 | Skill | Creator | Status | One-line |
 | --- | --- | --- | --- |

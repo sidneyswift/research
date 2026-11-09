@@ -19,6 +19,8 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Orgs
 
+- [[creators/caldoai]] — Caldo Skills publisher; untangle-codebase methodology.
+
 - [[creators/typesafe-ai]] — Jev typed-decision API and model-contract documentation.
 
 - [[creators/shopify]] — commerce APIs and negotiated agent-facing shopping capabilities.

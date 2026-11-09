@@ -187,3 +187,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Typed decision cascades — 2026-11-09
 
 [[concepts/typed-decision-cascades]] gives a complementary bounded-router case. Changing option membership, order or criteria can change both predictions and the interpretation of a normalized confidence threshold. Regression-test the decision interface alongside the model pin; this is a design inference, not a Skill++ replication. [[sources/typesafe--decision-model-docs#confidence]] [[sources/typesafe--decision-model-docs#jaggedness]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] provides a useful routing-neighborhood comparison: broad structural refactoring is distinct from a targeted bug hunt, with comment/test cleanup separately selected. The descriptive metadata is paired with an explicit model-invocation disable flag; neither old-route retention nor downstream success has been evaluated. [[sources/caldoai--skills#invocation]] [[sources/caldoai--skills#scope]] [[sources/caldoai--skills#redesign]]

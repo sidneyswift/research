@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-11-09T04:05:35.602584+00:00",
+  "source": "https://api.github.com/repos/caldoai/skills",
+  "data": {
+    "archived": false,
+    "default_branch": "main",
+    "description": "Caldo's skills",
+    "forks_count": 23,
+    "full_name": "caldoai/skills",
+    "license": "MIT",
+    "owner": "caldoai",
+    "pushed_at": "2026-11-05T19:07:22Z",
+    "stargazers_count": 966
+  }
+}

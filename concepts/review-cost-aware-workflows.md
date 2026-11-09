@@ -127,3 +127,7 @@ Its quick profile merges candidate/record verification; standard/deep retain sep
 ## Typed decision cascades — 2026-11-09
 
 [[concepts/typed-decision-cascades]] applies selective review to bounded decisions. Measure escalation coverage, errors among automatically accepted cases, fallback fixes AND regressions, and review backlog/cost. Independent input and separate queues reduce particular coupling problems, but a valid second-model answer is not ground truth. [[sources/nutlope--jev-fraud#pipeline]] [[sources/nutlope--jev-fraud#queues]] [[sources/nutlope--jev-fraud#recording]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] focuses review on hidden links, needless links, surplus and special cases, and uses one redesign to resolve several symptoms. The remaining risk is an unbounded style-review loop; tie proposed work to change scenarios and behavior evidence. Optional test cleanup is deliberately last. [[sources/caldoai--skills#inventory]] [[sources/caldoai--skills#tests]] [[sources/caldoai--skills#completion]]

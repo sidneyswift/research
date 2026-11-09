@@ -854,3 +854,13 @@ Applied [[patterns/behavioral/evidence-gated-completion]] from T3's partial shel
 ## [2026-11-09] reflect | pin confidence units and cost-comparison contracts
 
 - Added a conditional evidence question to [[_schemas/concept]] and a focused builder route, grounded in existing revision-bound-review and latent/deterministic patterns. [[meta/self-improvements]] records scope and adoption trigger; no installed skill or live model gateway changed.
+
+## [2026-11-09] ingest | Caldo untangle-codebase
+
+- Added [[artifacts/skills/untangle-codebase]] with 32 portable principles, [[creators/caldoai]] and [[sources/caldoai--skills]]. Read all four tracked source files; preserved the full local Git checkout at `f3cf47774975a7d9fca45730babf4ff7ad765ada`, all-file hashes, GitHub metadata, restoration manifest and structural-check receipt.
+- Captured change-affinity diagnostics, grouped problem-to-fix decisions, separately scoped comment/test cleanup, regression safety-net ordering, context compression and Git/import evidence. Kept qualitative completion, unbounded iteration, necessary exceptions and unmeasured productivity claims explicit. No skill installation, target refactor, subagent workflow or model benchmark performed; no bundled executable test suite exists at the pin.
+- Extended sixteen related concept/artifact/pattern pages plus indexes and builder guidance. Validated four source hashes, nineteen source anchors, seventeen pinned ranges, local marketplace paths and the exact trigger; new wiki links resolve and wiki-doctor remains 50→50 with no new findings. ratchet before final log/receipt links: +107 page-target links · orphans +0 · patterns +0. Structural checks are not refactor safety or behavioral-equivalence evidence.
+
+## [2026-11-09] reflect | evidence-backed architecture cleanup
+
+- Added a scoped refactor builder route through existing context, completion and review concepts; [[meta/self-improvements]] records the rationale and adoption trigger. Existing schemas already own evidence checks, so no duplicated checklist or speculative refactor automation was added.

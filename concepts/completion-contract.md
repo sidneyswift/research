@@ -144,3 +144,7 @@ No shipped validator reads run metadata, both ledgers and report prose together,
 ## Typed decision cascades — 2026-11-09
 
 [[concepts/typed-decision-cascades]] treats learned done/not-done checks as signals, not completion evidence. The article proposes cheap swarm completion checks; its illustrative loop does not establish a correct stopping rule. A failed fallback remains unresolved, and a valid classification proves neither authorized execution nor the user outcome. [[sources/buzzoni--jev-engineering#swarm]] [[sources/nutlope--jev-fraud#pipeline]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] explicitly requires preserved intended behavior and local typical changes, but stops on qualitative reviewer satisfaction with no supplied baseline, iteration budget or machine-enforced gate. Treat “nothing worth fixing” as a scoped judgment, not behavioral-equivalence proof. [[sources/caldoai--skills#completion]]

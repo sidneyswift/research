@@ -147,3 +147,7 @@ The skill refuses the two failure modes that ruin most "automation prompt" packs
 ## Cloudflare security audit — 2026-11-06
 
 [[artifacts/skills/security-audit]] supplies a domain-specific loop with explicit budget exhaustion, deferred coverage, independent validation and material-replacement reverification. It is a comparison, not a declared invocation of this library or a new general loop taxonomy. [[sources/cloudflare--security-audit-skill#profiles-budget]] [[sources/cloudflare--security-audit-skill#coverage-critics]] [[sources/cloudflare--security-audit-skill#material-reverification]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] supplies a contrasting refactor loop: repeat category-led inspection until no worthwhile problems remain. It does not encode the bounded terminal-state taxonomy here; adopting it needs separate scope/budget and residual-finding decisions. [[sources/caldoai--skills#completion]]

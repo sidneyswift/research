@@ -106,3 +106,7 @@ A falsifiable test for spotting the architecture (`## Examples` are the positive
 ### Open Inspect — substantial shared runtime, replaceable harnesses
 
 [[artifacts/projects/background-agents]] puts process ownership and prompt execution behind separate harness contracts, with one supervisor selecting terminal outcomes. Managed skills are independently pinned, validated and materialized. The reusable center is a shared responsibility contract, not a promise that a production harness has little code. [[sources/open-inspect--background-agents#harness]] [[sources/open-inspect--background-agents#completion]] [[sources/open-inspect--background-agents#skills-install]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] places the complete method in one 142-line skill with no bundled execution or test code. This supports the prose-capability half of the pattern, not a claim about a verified thin runtime or deterministic safety layer. [[sources/caldoai--skills#inventory-receipt]]

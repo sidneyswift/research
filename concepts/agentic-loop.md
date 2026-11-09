@@ -93,3 +93,7 @@ It relocates the most dangerous decision — *am I done?* — from the model's c
 ## SuperPlane — 2026-11-04
 
 [[artifacts/projects/superplane]] wraps coding and review turns in persistent workflow state. Its repair loop reserves attempts when a participating activity gains mutation access, stops at the configured limit and uses explicit continuation/passed-evaluation boundaries for reset. This is a scoped repair budget, not a global cap across all external actors. [[sources/superplanehq--superplane#repair-budget]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] illustrates an intentionally open-ended refactor/reinspect loop. Its source does not define blocked, exhausted or stagnated exits, so a host adopting it must supply those bounds rather than claiming the prompt enforces termination. [[sources/caldoai--skills#completion]]

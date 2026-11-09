@@ -1,0 +1,30 @@
+{
+  "commit": "f3cf47774975a7d9fca45730babf4ff7ad765ada",
+  "tracked_entries": 4,
+  "files": [
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "bytes": 453,
+      "lines": 18,
+      "sha256": "a5636a36cb869c7355d273db8202c072500145bc8d9c5e353c0fda116476ce62"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1061,
+      "lines": 21,
+      "sha256": "cbe11503c54a6eeecf65772e66fbbca7a37750bff9812c742b11dca47ceb539c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 981,
+      "lines": 41,
+      "sha256": "1c4ca38bd0c39d63631f70efe84ab3533e539fe950c4857d0dd9e71a712da852"
+    },
+    {
+      "path": "skills/untangle-codebase/SKILL.md",
+      "bytes": 8881,
+      "lines": 142,
+      "sha256": "b4eb6b5130c38ca04532601e99d2d174cf4faa4df520b5b7ba609e8707e55761"
+    }
+  ]
+}

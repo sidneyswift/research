@@ -233,3 +233,7 @@ Portable research principles below, not an instruction to install the skill or a
 ## Agent Habitat comparison — 2026-11-06
 
 [[concepts/agent-habitat-architecture]] supplies concrete runtime claims an evidence-oriented audit can investigate. Structural evidence validators do not prove complete mediation, credential secrecy or containment; assess those boundaries separately with scoped experiments. [[sources/lhchavez--managed-agent-environments#adoption-limits]] [[sources/replit--agent-habitat-architecture#maturity]]
+
+## Untangle-codebase — 2026-11-09
+
+[[artifacts/skills/untangle-codebase]] provides a prose-only comparison: inventories and re-review are prescribed, but no finding-state schema or validators are supplied. Do not transfer this audit skill’s structural-check guarantees to a workflow merely because both request subagent review. [[sources/caldoai--skills#inventory-receipt]] [[sources/caldoai--skills#completion]]
