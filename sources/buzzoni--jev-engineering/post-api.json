@@ -1,0 +1,46 @@
+{
+  "data":{
+    "article":{
+      "title":"How to Cut Your Agent Bill by 90% With Jev Engineering and Kimi K3"
+    },
+    "author_id":"1412131273280212996",
+    "conversation_id":"2104783226833186920",
+    "created_at":"2026-09-29T04:00:00.000Z",
+    "edit_history_tweet_ids":[
+      "2104783226833186920"
+    ],
+    "entities":{
+      "urls":[
+        {
+          "display_url":"x.com/i/article/2104…",
+          "end":23,
+          "expanded_url":"https://x.com/i/article/2104561908137283584",
+          "start":0,
+          "status":404,
+          "unwound_url":"https://x.com/i/article/2104561908137283584",
+          "url":"https://t.co/SxHnsCMK6g"
+        }
+      ]
+    },
+    "id":"2104783226833186920",
+    "public_metrics":{
+      "bookmark_count":1343,
+      "impression_count":1096356,
+      "like_count":487,
+      "quote_count":30,
+      "reply_count":17,
+      "retweet_count":61
+    },
+    "text":"https://t.co/SxHnsCMK6g"
+  },
+  "includes":{
+    "users":[
+      {
+        "id":"1412131273280212996",
+        "name":"Mr. Buzzoni",
+        "username":"Mr_Buzzoni",
+        "verified":false
+      }
+    ]
+  }
+}

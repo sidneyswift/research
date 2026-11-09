@@ -79,3 +79,6 @@ sources/openai--mcp-extensions/
 /sources/mintlify--docs-url-discovery-bench/
 /sources/cloudflare--security-audit-skill/
 /sources/pingdotgg--t3code/
+
+# Supporting evidence for typed decision cascades
+sources/nutlope--jev-fraud/

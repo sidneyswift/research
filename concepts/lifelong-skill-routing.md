@@ -183,3 +183,7 @@ These are portable design lessons derived from the evidence above, not claims th
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] supplies a related discoverability failure: useful notes may exist but never be read. The injected layer is a bounded directory, while detailed files remain on demand. This is analogous to routing failure, not a Skill++ benchmark replication. [[sources/anthropic--components-of-agent-memory#steering]] [[sources/anthropic--components-of-agent-memory#injection]]
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] gives a complementary bounded-router case. Changing option membership, order or criteria can change both predictions and the interpretation of a normalized confidence threshold. Regression-test the decision interface alongside the model pin; this is a design inference, not a Skill++ replication. [[sources/typesafe--decision-model-docs#confidence]] [[sources/typesafe--decision-model-docs#jaggedness]]

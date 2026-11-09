@@ -148,3 +148,7 @@ Supporting implementation: [[artifacts/projects/superplane]] checks for open wor
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]] adds a pre-completion question: was this the right task to start? A polished design document can be unwanted busywork when mandate/access/context were missing; output volume is not evidence of helpfulness. [[sources/rubriclabs--always-on-agents#discernment]]
+
+## Typed decision cascades — 2026-11-09
+
+In [[concepts/typed-decision-cascades]], a schema-valid label or self-reported certainty is not verified correctness. Distinguish failed/unresolved reviews, accepted classifications, downstream effects and measured task outcomes; the twelve mock tests establish fixture behavior only. [[sources/buzzoni--jev-engineering#cascade]] [[sources/nutlope--jev-fraud#verification]]

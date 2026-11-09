@@ -126,3 +126,7 @@ Internal pilot: [[projects/conversation-learning/pilots/commercial-redline-001/R
 ## T3 Code application — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a source-inspected application or narrower analogue through [[sources/pingdotgg--t3code#auth-authority-race]]. The artifact retains exact implementation/test/policy boundaries and79 portable practices. No runtime effectiveness claim or automatic status/example-count promotion is added.
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] binds thresholds to model, question wording, candidate set and numerical field—not just a model alias. The article and pinned demo record different runs; current image/primitive contracts also differ from September descriptions. Preserve each version instead of silently reconciling it. [[sources/buzzoni--jev-engineering#rollout]] [[sources/nutlope--jev-fraud#recording]] [[sources/typesafe--decision-model-docs#models]]

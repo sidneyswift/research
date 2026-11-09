@@ -25,6 +25,10 @@ For local or remote source reconstruction, see [remote-setup.md](remote-setup.md
 
 ## Sources
 
+- [[sources/nutlope--jev-fraud]] — pinned implementation and stored recording; twelve mock tests passed, no fresh inference.
+- [[sources/buzzoni--jev-engineering]] — full 115-block article, ten embedded Markdown entities and nine images.
+- [[sources/typesafe--decision-model-docs]] — November contracts, confidence semantics and batching evidence; historical drift explicit.
+
 - [[sources/rubriclabs--always-on-agents]] — always-on architecture and discernment; November 5 article, complete HTML/prose and seven initial-state figure fragments.
 - [[sources/rubriclabs--agent-harness]] — harness taxonomy, contextual background.
 - [[sources/rubriclabs--jev-use-cases]] — decision-model examples and explicitly exploratory comparison.
@@ -124,6 +128,10 @@ Cloned repo snapshots and their citation pages. Repo files live at `sources/<cre
 The 8 `garrytan--*` essays form one **"AI Explainer" series** (#1–#8) — a longitudinal record of `gstack`/`gbrain`'s growth (stars climb 72K→75K→87K→93K→105K across the run). See also: [sources/_index.md](sources/_index.md) for citation conventions.
 
 ## Creators
+
+- [[creators/typesafe-ai]] — Jev typed-decision API and model-contract documentation.
+- [[creators/mr-buzzoni]] — Jev engineering/cascade playbook, with cost and version claims qualified.
+- [[creators/nutlope]] — source and recorded evidence for the Jev/Kimi fraud demo.
 
 - [[creators/rubric-labs]] — always-on-agent, harness and Jev field guides.
 
@@ -277,6 +285,8 @@ Frontier projects/systems/products that aren't reducible to a single skill, plug
 Candidate queue: see [artifacts/projects/_index.md](artifacts/projects/_index.md).
 
 ## Concepts
+
+- [[concepts/typed-decision-cascades]] — 40 principles for bounded semantic decisions, calibrated escalation, shared-state batching and quality-aware cost accounting.
 
 - [[concepts/proactive-agent-discernment]] — 32 principles for wake/action/message separation, feedback-scoped initiative and bounded event triage.
 

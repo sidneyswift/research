@@ -1,7 +1,7 @@
 ---
 domain: creators
 type: index
-last-reviewed: 2026-11-04
+last-reviewed: 2026-11-09
 ---
 
 # Creators
@@ -18,6 +18,8 @@ The people and orgs producing the artifacts we study. Context, not the main even
 Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 
 ## Orgs
+
+- [[creators/typesafe-ai]] — Jev typed-decision API and model-contract documentation.
 
 - [[creators/shopify]] — commerce APIs and negotiated agent-facing shopping capabilities.
 
@@ -60,6 +62,9 @@ Each creator page uses [../_schemas/creator.md](../_schemas/creator.md).
 - [[creators/prodmgmt-world]] — independent commercial publisher of [[artifacts/plugins/pm-os]] (paid PM skill bundle, claude-code + cursor + cowork). The wiki's first **commercial** creator — sells agent content as a versioned product (CHANGELOG, upgrade-migration skill) rather than sharing a repo.
 
 ## Individuals
+
+- [[creators/mr-buzzoni]] — Jev engineering/cascade playbook, with cost and version claims qualified.
+- [[creators/nutlope]] — source and recorded evidence for the Jev/Kimi fraud demo.
 
 - [[creators/luis-hector-chavez]] — Replit-affiliated author of the managed-agent-environment advisory.
 

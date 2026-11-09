@@ -127,3 +127,7 @@ A falsifiable test for spotting a resolver-routing-table (`## Examples` are the 
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]] shows why a router needs a none/defer path. The Jev semantic-find example ranks a sentence even when none answers; separate relevance testing supports abstention before committing to a branch. [[sources/rubriclabs--jev-use-cases#relevance]]
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] uses bounded labels to select stronger models or review. Preserve an explicit no-fit/abstain path, version candidate membership and order, and calibrate the actual threshold statistic. The routing menu exposes capabilities but does not confer authority. [[sources/typesafe--decision-model-docs#primitives]] [[sources/typesafe--decision-model-docs#jaggedness]] [[sources/typesafe--decision-model-docs#routing]]

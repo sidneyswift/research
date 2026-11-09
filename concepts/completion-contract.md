@@ -140,3 +140,7 @@ No shipped validator reads run metadata, both ledgers and report prose together,
 ## T3 Code — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a pinned source case: Accepted receipt, ended provider turn, checkpoint finalization and display refresh differ. A failed Stop can remain unresponsive rather than claim successful cancellation. [[sources/pingdotgg--t3code#rt-finalization]] [[sources/pingdotgg--t3code#rt-bounded-stop]] Source/test inspection only; no hosted/provider outcome or new model score claimed.
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] treats learned done/not-done checks as signals, not completion evidence. The article proposes cheap swarm completion checks; its illustrative loop does not establish a correct stopping rule. A failed fallback remains unresolved, and a valid classification proves neither authorized execution nor the user outcome. [[sources/buzzoni--jev-engineering#swarm]] [[sources/nutlope--jev-fraud#pipeline]]

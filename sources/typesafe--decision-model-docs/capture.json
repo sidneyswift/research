@@ -1,0 +1,124 @@
+{
+  "captures": [
+    {
+      "file": "confidence.md",
+      "url": "https://docs.typesafe.ai/confidence.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 14159,
+      "sha256": "3f15502effc8da348b7e5cf395632a9e7971c7cad91660f56995a9c6beb90ee3",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "primitives.md",
+      "url": "https://docs.typesafe.ai/primitives.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 16368,
+      "sha256": "cc7a8b0a455b8146bb8db3e12c309bf185fa2abc31f82d88b61ec1e63bc86be0",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "patterns--fan-out.md",
+      "url": "https://docs.typesafe.ai/patterns/fan-out.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 4389,
+      "sha256": "9113aae0c8a1322cc40f279c8ebf5e4f8b11f589b8ab7dcfb8a73ed5341385da",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "model-jaggedness.md",
+      "url": "https://docs.typesafe.ai/model-jaggedness.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 9536,
+      "sha256": "346df70d89d593fa0a0bb65c35410d70cc8f163059e9f127267209fd95ad39ed",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "models.md",
+      "url": "https://docs.typesafe.ai/models.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 8177,
+      "sha256": "09ff62cff4c56b2d4d1827541e2af06f1d15c21f0ef8879dd488e72a373b34ca",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "api--errors.md",
+      "url": "https://docs.typesafe.ai/api/errors.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 2722,
+      "sha256": "e0465b1d78a056ea4f2cf3bff66290dadc0feee39c96e99b0ad4b78852c01632",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images.md",
+      "url": "https://docs.typesafe.ai/images.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 21186,
+      "sha256": "bfd4f8aa9f7af7548fffc1b8868b8ee54eb3ed23c9711e02595df624d663b6c1",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "patterns--probability-routing.md",
+      "url": "https://docs.typesafe.ai/patterns/probability-routing.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 5348,
+      "sha256": "51851a1d89444f60568348cf696c729047b972be3e853c272414c327c9d222e3",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "patterns--confidence-routing.md",
+      "url": "https://docs.typesafe.ai/patterns/confidence-routing.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 6041,
+      "sha256": "306f9aa152ee7db6f729b033d7a4b1d301efcd12f0e53c51a0f876723fb4b430",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "concepts--how-to-build-with-system-one.md",
+      "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 19802,
+      "sha256": "959269398d5306e69fd98271a5370a090b255b38127f597e9405a341997a6342",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "cookbooks--parallel_questions.md",
+      "url": "https://docs.typesafe.ai/cookbooks/parallel_questions.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 48243,
+      "sha256": "4cff480c25f8963b466e96f73258f84a44515c39de409eb0ac7b387c8f2207a1",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "api--system-one.md",
+      "url": "https://docs.typesafe.ai/api/system-one.md",
+      "kind": "official Markdown; scope in citation page",
+      "bytes": 29761,
+      "sha256": "a5c68bb00afd2c75504b5a9a07a497253f2b03380953b56934ddd80767f63c3d",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "llms.txt",
+      "url": "https://docs.typesafe.ai/llms.txt",
+      "kind": "discovery index, not evidence all listed pages read",
+      "bytes": 21279,
+      "sha256": "836e6b3b60da10df42ab572951eee59f2f9508bfa16280938f990cf4fb1a20ab",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "typesafe-home.md",
+      "url": "https://typesafe.ai",
+      "kind": "readable provider page",
+      "bytes": 4778,
+      "sha256": "e397ecf4f2801ef35be8c349575235261b15d69fde926c41e02c4857c672e40a",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "kimi-platform.md",
+      "url": "https://platform.kimi.ai",
+      "kind": "readable provider page",
+      "bytes": 1035,
+      "sha256": "e2d2370596e24404f6400c01486c693a785ad68462ed85fcde81a65f8880e44c",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    }
+  ]
+}

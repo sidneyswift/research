@@ -35,6 +35,8 @@ The consequence. What does believing/using this change about how you build AI/ag
 
 The specific claims made about it, each with a citation. Flag claims that are asserted vs. demonstrated.
 
+For confidence or cost claims, name the statistic/formula and option set, calibration dataset (or its absence), dated model/API contract, baseline, token prices, escalation rate and billing basis. Separate observed task quality and full operating cost from illustrative arithmetic. This applies [[patterns/quality-bar/revision-bound-review]] and [[patterns/behavioral/latent-vs-deterministic-split]]; see [[concepts/typed-decision-cascades]].
+
 - *claim* — citation: [[sources/...#anchor]]
 
 ## Patterns demonstrated

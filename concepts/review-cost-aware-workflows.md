@@ -123,3 +123,7 @@ Its quick profile merges candidate/record verification; standard/deep retain sep
 ## T3 Code — 2026-11-07
 
 [[artifacts/projects/t3code]] adds a pinned source case: Review only authored-change projections while preserving broader recovery snapshots; recheck workspace isolation before restore and distinguish unknown revision from deletion. [[sources/pingdotgg--t3code#review-authored-diff]] [[sources/pingdotgg--t3code#review-revision-absence]] Source/test inspection only; no hosted/provider outcome or new model score claimed.
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] applies selective review to bounded decisions. Measure escalation coverage, errors among automatically accepted cases, fallback fixes AND regressions, and review backlog/cost. Independent input and separate queues reduce particular coupling problems, but a valid second-model answer is not ground truth. [[sources/nutlope--jev-fraud#pipeline]] [[sources/nutlope--jev-fraud#queues]] [[sources/nutlope--jev-fraud#recording]]

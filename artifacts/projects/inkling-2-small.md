@@ -23,6 +23,8 @@ last-reviewed: 2026-11-06
 
 ## Relationships
 
+- [[concepts/typed-decision-cascades]] — complementary selection axis: specialize bounded decisions before spending on generation; compare task quality, fallback rate and complete costs, not headline savings. [[sources/buzzoni--jev-engineering#economics]] [[sources/nutlope--jev-fraud#accounting]]
+
 - Creator [[creators/thinking-machines]]; evidence [[sources/thinking-machines--inkling-2-small]], [[sources/thinking-machines--inkling-2-support]].
 - [[concepts/evidence-calibrated-research]], [[concepts/imitation-vs-correctness-eval]] and [[concepts/verification-model-fidelity]] — metric, judge, baseline and held-out evidence boundaries.
 - [[concepts/lifelong-skill-routing]] — the authors acknowledge tool-selection weaknesses in large skill libraries; no tested Skill++ integration is implied.

@@ -23,6 +23,8 @@ No new runnable artifact cataloged. Concept: [[concepts/proactive-agent-discernm
 
 ## Design philosophy
 
+Related investigation: [[concepts/typed-decision-cascades]] checks current TypeSafe confidence contracts and a separately authored Jev/Kimi cascade. This extends the earlier Jev use-case context without treating Rubric as the author of those sources. [[sources/typesafe--decision-model-docs#confidence]] [[sources/buzzoni--jev-engineering#root]]
+
 Keep a continuous conversational interface while distributing execution; distinguish waking from messaging; use contextual judgment and feedback to learn when intervention is useful. [[sources/rubriclabs--always-on-agents#continuity]] [[sources/rubriclabs--always-on-agents#communication]] [[sources/rubriclabs--always-on-agents#learning-lane]]
 
 ## Timeline

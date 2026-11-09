@@ -1,7 +1,7 @@
 ---
 domain: concepts
 type: index
-last-reviewed: 2026-11-04
+last-reviewed: 2026-11-09
 ---
 
 # Concepts
@@ -15,6 +15,8 @@ Ideas and techniques worth their own page — especially from essays, papers, an
 A concept becomes a **pattern** (in `patterns/`) once we've observed it as a concrete technique across **≥2 artifacts** in this wiki. Until then it lives here (or as a `proposed` pattern on an artifact page).
 
 ## Cataloged concepts
+
+- [[concepts/typed-decision-cascades]] — 40 principles for bounded semantic decisions, calibrated escalation, shared-state batching and quality-aware cost accounting.
 
 - [[concepts/agent-api-learning-and-evolution]] — distinguish training priors, tool-use training, runtime discovery and feedback; conditional 2027/2031/2036 scenarios.
 - [[concepts/business-platform-api-design]] — domain naming, queries/commands, durable operations, retries, and modularity under uncertain future use.

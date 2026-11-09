@@ -204,3 +204,7 @@ Promote this architecture when recurring, time-sensitive opportunities are actua
 ## Evidence boundary
 
 Three full articles read, **18 evidence files preserved**, including original HTML, seven primary figure fragments, static labels and the Jev table. Interactive animations and live demos were not run. This is a design and author-reported empirical account, not a source-code audit, calibrated decision-model benchmark or production reliability test. No local assistant policy, heartbeat, installed skill or external integration changed.
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] adds the numerical contract behind a cheap event filter: Choice confidence is normalized relative to option count, not selected-class probability or measured accuracy. Keep relevance, urgency, uncertainty and permission distinct; the September playbook, November API docs and Rubric exploratory comparison are different evidence. [[sources/typesafe--decision-model-docs#confidence]] [[sources/buzzoni--jev-engineering#rollout]]

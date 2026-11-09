@@ -392,3 +392,10 @@ Compounding budget: a small schema guard addresses the observed truncation failu
 - **Applied:** builder route for always-on/event-triage/notification decisions, with explicit limits on classifier evidence. The concept defines a concrete adoption trigger and separate missed-opportunity, intervention and interruption measures.
 - **Expected benefit:** distinguish useful autonomy from activity and token volume; carry existing authorization without inferring new authority from reaction memory.
 - **Status:** applied 2026-11-08. Existing schemas suffice; no new installed skill, heartbeat or local message-transport rule. The source's proposal is research, not a command to reconfigure this agent.
+
+## [2026-11-09] Decision cascades — pin the statistic and comparison contract
+
+- **Grounding:** [[concepts/typed-decision-cascades]], [[patterns/quality-bar/revision-bound-review]] and [[patterns/behavioral/latent-vs-deterministic-split]]. The gateway can substitute selected-answer probability for normalized confidence; savings also change with the baseline and escalation rate. [[sources/typesafe--decision-model-docs#confidence]] [[sources/nutlope--jev-fraud#pipeline]] [[sources/buzzoni--jev-engineering#economics]]
+- **Applied:** a conditional evidence question in [[_schemas/concept]] and a builder route for bounded decisions/cascade economics. Future studies should state statistic semantics, calibration coverage and the full comparison/billing contract.
+- **Expected benefit:** prevent unlike confidence fields, historical runs or unequal-quality cost baselines from being silently combined. Existing structural validators suffice; no speculative new test framework.
+- **Status:** applied 2026-11-09 to repository research guidance only. No installed skill, provider integration or live routing policy changed. Production adoption remains conditional on a recurring costly decision and held-out evidence.

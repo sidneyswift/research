@@ -144,3 +144,7 @@ Supporting comparison: [[artifacts/projects/superplane]] distinguishes provided 
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]]: ambient Slack context, classifier confidence and remembered positive reaction do not create a new mandate. The author's warning about unsolicited busywork supplies a behavioral example; effect enforcement remains a host contract. [[sources/rubriclabs--always-on-agents#discernment]] [[sources/rubriclabs--always-on-agents#learning-lane]]
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] adds a concrete intent-versus-effect example: a high-probability transfer classification can open confirmation, not authorize the transfer itself. Model-visible options and confidence are not a permission grant. [[sources/typesafe--decision-model-docs#routing]]

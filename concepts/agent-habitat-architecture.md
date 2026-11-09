@@ -244,3 +244,7 @@ Portable research/adoption criteria below—not a blanket instruction to install
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]] distinguishes discovering context from holding a mandate: broad access and a high relevance/urgency score do not authorize effects. Rubric's unwanted-Slack-response example shows why responsibility must be checked before task execution. [[sources/rubriclabs--always-on-agents#awareness]] [[sources/rubriclabs--always-on-agents#discernment]] [[sources/rubriclabs--agent-harness#tools-authority]]
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] can classify intent or risk but cannot own the authority boundary. TypeSafe explicitly separates a probable transfer intent from confirmation; its jaggedness guide also warns about adversarial input. Keep authorization and containment outside that prediction, while honoring permission already granted. [[sources/typesafe--decision-model-docs#routing]] [[sources/typesafe--decision-model-docs#jaggedness]]

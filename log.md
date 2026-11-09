@@ -844,3 +844,13 @@ Applied [[patterns/behavioral/evidence-gated-completion]] from T3's partial shel
 ## [2026-11-08] instructions | Engineering coordination
 
 - Added scoped Flex Engineering epic/issue and handoff rules without changing research evidence, scheduled routines or source permissions.
+
+## [2026-11-09] ingest | typed decision cascades and Jev cost evidence
+
+- Added [[concepts/typed-decision-cascades]] with 40 principles, three source maps and three creators. Read all 115 article blocks, ten embedded Markdown tables/code blocks and nine images; preserved 27 external captures plus a full ignored demo checkout at `9b015f5782f555424107f6b4bb9d67811df62b7d` and two tracked verification/hash records.
+- Kept confidence/probability/calibration, historical/current API contracts, illustrative savings/equal-quality costs and announcement/recorded demo outcomes distinct. The article reports 96/100; the pinned recording contains 92/100, 84% fraud recall and a mixed reported/estimated cost basis. Twelve mock tests passed; recorded aggregates and cost arithmetic checked offline. No fresh inference, production routing or policy change; capture and evidence limitations documented.
+- Cross-linked fourteen existing pages, indexes and builder guidance. Validation: 27 capture hashes, eleven selected source hashes, nine pinned ranges and all new wiki links pass; source checkout clean. Wiki-doctor 50→50 with no new findings. ratchet before log additions: page-target links +148 · orphans +0 · patterns +0. Structural checks and mocks do not establish model accuracy or calibration.
+
+## [2026-11-09] reflect | pin confidence units and cost-comparison contracts
+
+- Added a conditional evidence question to [[_schemas/concept]] and a focused builder route, grounded in existing revision-bound-review and latent/deterministic patterns. [[meta/self-improvements]] records scope and adoption trigger; no installed skill or live model gateway changed.

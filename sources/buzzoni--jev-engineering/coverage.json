@@ -1,0 +1,11 @@
+{
+  "blocks": 115,
+  "markdown_entities": 10,
+  "code_blocks": 3,
+  "tables": 7,
+  "images": 9,
+  "all_text_read": true,
+  "images_viewed": true,
+  "source_body": "FxTwitter mirror; title, tweet and article IDs match authenticated X metadata",
+  "live_inference": false
+}

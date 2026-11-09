@@ -1,0 +1,100 @@
+{
+  "captures": [
+    {
+      "file": "post-api.json",
+      "url": "https://x.com/mr_buzzoni/status/2104783226833186920",
+      "kind": "authenticated X metadata",
+      "bytes": 1127,
+      "sha256": "a63f4330fcbb53690c7376359de83b3d8138545f8d6d8faf64358a2bc143aa46",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "article-mirror.json",
+      "url": "https://api.fxtwitter.com/mr_buzzoni/status/2104783226833186920",
+      "kind": "full public mirror; identity matched to API",
+      "bytes": 47254,
+      "sha256": "37aa86ff0b5e74ffa130a3016c1f23ef6bc84ff28866009df3d336b48a22780e",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "snapshot.md",
+      "url": "https://x.com/mr_buzzoni/status/2104783226833186920",
+      "kind": "full article projection including all ten embedded markdown sections",
+      "bytes": 21323,
+      "sha256": "fec312aeb4dda5142ccafd4bcd0924373ac58794786e5d05b3cf7514578790ef",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104574819387756544.png",
+      "url": "https://pbs.twimg.com/media/HTTzpdDW0AALBQ8.png",
+      "kind": "original image; visually inspected",
+      "bytes": 115155,
+      "sha256": "11ae4458b4b54a41e7809fe9041b6d71998e0e8e16d939aa3ab93bedd0bf6b53",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104575193205112833.png",
+      "url": "https://pbs.twimg.com/media/HTTz_NoXAAEq5tO.png",
+      "kind": "original image; visually inspected",
+      "bytes": 89213,
+      "sha256": "3f3d2fb4b89472ad49db0e7e150bc588b365cac311c47e48c62c9f307a1231f6",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104575065484312577.png",
+      "url": "https://pbs.twimg.com/media/HTTz3x1WQAE3sTe.png",
+      "kind": "original image; visually inspected",
+      "bytes": 139247,
+      "sha256": "7bdc30ab33b3b9d96ca85b3881b4230060d3ed896fc598b729b68a241a9500e7",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104574908785115138.jpg",
+      "url": "https://pbs.twimg.com/media/HTTzuqFWQAIwNLl.jpg",
+      "kind": "original image; visually inspected",
+      "bytes": 92905,
+      "sha256": "ec576082d33f242eefb7741a45af314f1a26ac15738a5e72aaeac07d1691f8e9",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104575742512173056.jpg",
+      "url": "https://pbs.twimg.com/media/HTT0fL9XkAASctf.jpg",
+      "kind": "original image; visually inspected",
+      "bytes": 133941,
+      "sha256": "c595d6c868a51d75776b8c3d9ab0c3d08c35e041741418002803e949f75ad4a5",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104574647824011266.png",
+      "url": "https://pbs.twimg.com/media/HTTzfd7X0AI0i_8.png",
+      "kind": "original image; visually inspected",
+      "bytes": 98041,
+      "sha256": "8f12e196d7a1fff3fd71334e8429a872c1c979198983b75d8549a42cc3cf69b4",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104574568769667072.png",
+      "url": "https://pbs.twimg.com/media/HTTza3bWQAAFOY3.png",
+      "kind": "original image; visually inspected",
+      "bytes": 117261,
+      "sha256": "7f7fa28f8a2e3edb8bbd45c0d1df7e47716f463ac9c200adacde233c363f85b0",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104574151084134401.jpg",
+      "url": "https://pbs.twimg.com/media/HTTzCjbW0AErh0X.jpg",
+      "kind": "original image; visually inspected",
+      "bytes": 62280,
+      "sha256": "92eebbece3026e64bd88dc806abe8b93eac89aadc9e9812e69bde3605e7a65f0",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    },
+    {
+      "file": "images/2104563431978205184.png",
+      "url": "https://pbs.twimg.com/media/HTTpSnpWgAA4Vth.png",
+      "kind": "original image; visually inspected",
+      "bytes": 134698,
+      "sha256": "f8559a1f929a43d22311025d63c0652cfc79ebe9c74ee7dd1dc4d10dcb1e4932",
+      "fetchedAt": "2026-11-09T03:56:46.143057+00:00"
+    }
+  ]
+}

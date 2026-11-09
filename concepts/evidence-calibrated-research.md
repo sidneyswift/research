@@ -132,3 +132,7 @@ The shipped validators establish record structure and internal consistency, not 
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]] preserves the Jev comparison's 101 hand-labeled scenarios, three repeated runs, Jev-tuned prompts and post-first-run label revisions. Neither consistency nor probability-shaped output establishes calibration or always-on intervention quality. [[sources/rubriclabs--jev-use-cases#comparison]] [[sources/rubriclabs--jev-use-cases#root]]
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] distinguishes a numerical model statistic from calibration evidence, a historical 96/100 report from a pinned 92/100 recording, and an illustrative 89.53% cost reduction from equal-quality savings. Offline arithmetic and twelve mock tests verify narrower properties than fresh inference. Preserve the denominator, baseline, cost basis and revision rather than merging different runs. [[sources/buzzoni--jev-engineering#economics]] [[sources/nutlope--jev-fraud#recording]] [[sources/nutlope--jev-fraud#verification]]

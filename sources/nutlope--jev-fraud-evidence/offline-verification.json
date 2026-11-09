@@ -1,0 +1,47 @@
+{
+  "verifiedAt": "2026-11-09T03:56:31.099Z",
+  "scope": "Offline arithmetic and stored-recording aggregation; no live inference",
+  "recordingSummaryMatches": true,
+  "numericTolerance": 1e-9,
+  "summary": {
+    "completed": 100,
+    "escalated": 30,
+    "reviewed": 30,
+    "accepted": 70,
+    "errors": 0,
+    "correct": 92,
+    "jevCorrect": 90,
+    "jevCount": 100,
+    "fraud": 42,
+    "tp": 42,
+    "fp": 0,
+    "fn": 8,
+    "precision": 1,
+    "recall": 0.84,
+    "changed": 2,
+    "fixed": 2,
+    "regressed": 0,
+    "cost": 0.101775,
+    "unknownCosts": 0,
+    "estimatedCosts": 30,
+    "jevCost": 0,
+    "kimiCost": 0.101775,
+    "inputTokens": 86278,
+    "outputTokens": 7429,
+    "jevMedianMs": 256
+  },
+  "articleCostAssumptions": {
+    "frontier": 300,
+    "kimi": 90,
+    "jev": 0.42,
+    "cascade": 9.42,
+    "savingsVsKimi": 0.8953333333333333,
+    "savingsVsFrontier": 0.9686
+  },
+  "mockTests": {
+    "command": "node --test tests/*.test.mjs",
+    "passed": 12,
+    "failed": 0,
+    "network": "provider requests mocked / stubbed"
+  }
+}

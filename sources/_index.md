@@ -1,7 +1,7 @@
 ---
 domain: sources
 type: index
-last-reviewed: 2026-11-04
+last-reviewed: 2026-11-09
 ---
 
 # Sources
@@ -21,6 +21,8 @@ Wikilinks to sources use **anchors that are defined on the source page itself**.
 See [remote setup](../remote-setup.md) for `./setup.sh`, selective restores, preserved forks, and sources moved from the former standalone `Projects/Sources` collection. Cache membership does not mean a source has received a full wiki investigation.
 
 ## Cloned repos
+
+- [[sources/nutlope--jev-fraud]] — pinned implementation and stored recording; twelve mock tests passed, no fresh inference.
 
 - [[sources/rhys-sullivan--executor]] — selected capability contracts, OpenAPI compilation, persisted catalog, discovery and sandbox dispatch at `3cf6e5465`; source inspection, with package reuse qualification separate.
 
@@ -225,3 +227,8 @@ Official Anthropic / Cowork / vendor docs we cite as authoritative. Living pages
 - [[sources/rubriclabs--always-on-agents]] — full article and seven static figure fragments; Nov 8 capture.
 - [[sources/rubriclabs--agent-harness]] — full harness article/HTML.
 - [[sources/rubriclabs--jev-use-cases]] — full Jev examples/HTML and comparison table; live demos not run.
+
+## Typed decision cascade evidence — 2026-11-09
+
+- [[sources/buzzoni--jev-engineering]] — full 115-block article, ten embedded Markdown entities and nine images.
+- [[sources/typesafe--decision-model-docs]] — November contracts, confidence semantics and batching evidence; historical drift explicit.

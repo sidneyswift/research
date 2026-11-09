@@ -124,3 +124,7 @@ Portable design ledger; ★ marks the highest-leverage ideas. Concrete adaptatio
 ## Memory consolidation — 2026-11-07
 
 [[concepts/agent-memory-consolidation]] gives retained execution evidence another use: falsifying and correcting learned notes. Keep observation and agent narration separate; the best Stainless configuration combines compiled wiki with raw search. Neither trace retention nor a polished summary establishes truth. [[sources/anthropic--components-of-agent-memory#correction]] [[sources/anthropic--components-of-agent-memory#wiki-search]]
+
+## Typed decision cascades — 2026-11-09
+
+For [[concepts/typed-decision-cascades]], retain model identity, question/criteria version, full distributions, the threshold statistic, route, cost basis and downstream labels. Those traces let reviewers measure accepted-case errors and fallback fixes/regressions, then promote failures into held-out cases. A trace with an estimated price is not an invoice or proof of calibration. [[sources/buzzoni--jev-engineering#rollout]] [[sources/nutlope--jev-fraud#accounting]]

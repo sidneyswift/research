@@ -170,3 +170,7 @@ Supporting implementation: [[artifacts/projects/superplane]] uses agent prompts 
 ## Proactive discernment — 2026-11-08
 
 [[concepts/proactive-agent-discernment]] separates model probability estimates from application-owned thresholds, wake rules and permission checks. Jev's 80% urgency/action example is a chosen policy threshold, not a learned authorization rule. [[sources/rubriclabs--jev-use-cases#notifications]] [[sources/rubriclabs--agent-harness#tools-authority]]
+
+## Typed decision cascades — 2026-11-09
+
+[[concepts/typed-decision-cascades]] separates semantic judgment from exact dates, arithmetic, queues and permissions. Typed output constrains form; deterministic acceptance/routing code and measured calibration still have work to do. The pinned demo provides source-level parsing, queue and error-handling evidence, not a general model-accuracy guarantee. [[sources/buzzoni--jev-engineering#decomposition]] [[sources/nutlope--jev-fraud#pipeline]]
